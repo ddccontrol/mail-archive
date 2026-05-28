@@ -1,0 +1,2113 @@
+From pabloglez92@...46... Fri Nov 01 08:14:24 2024
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20230601; t=1730448852; x=1731053652;
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+ :from:to:cc:subject:date:message-id:reply-to;
+ bh=X5x5PNGWnBbZhGAOCRK6lPKCFZDD2az23UokPOXsJWA=;
+ b=CaDP2c94d6trk1fHStixDrgZVSaMZwsUvXJYEDcHXKD2hnkvaw+OOb7FIK44AizMsK
+ EzRptgrNz2xhEyd3QnTlRle3zqwLDvkO1xeUF9Nu+I+SK5wqJVjEVYkJjOQQIrxGltor
+ 9vziOLWFREpS10c8QofvuEV86D9p0IGswWeoJJiRY9S5ALKRbha5O8ogTB+vLzk8v3is
+ OIT3n1d0htQ2J5BF3QdtLgwEcTbBH8C5uvoaJEemHgqWgNrPAHOY7w8/jsUf432K12pL
+ D4AusGN3FYyyW/wAANKM/FrHitZJYcGS5+WNEm+6jm8BC/y3/ufG/z0LC3OavnjjLQfS
+ JRjg==
+X-Gm-Message-State: AOJu0YyR42swKZ5Vt/Rvt6XFD9MPhiCmXwOoHB8FSWOqwRimOGsjzECs
+ q40uPIYZnFW0TkcGMRg6jshHyEgczYgu+3KLLMk0zK2PWFCN96WvLsBD5HVWrlXJWgD+ChPU+++
+ dVkmFrvAhW3jX5oA3AYLRw5WvUcKgvHZNFHY=
+X-Google-Smtp-Source: AGHT+IHhFyUIp7mRJzxtfUTKOC7y/RGSR+ApIREf6Om+MgSzZfGbzzXjdsxDhpq7xgbqOuQqJiLuD3SW+MBjM1WuNeQ=
+X-Received: by 2002:a2e:4c01:0:b0:2fb:4ca9:8e2 with SMTP id
+ 38308e7fff4ca-2fcbe062390mr81327421fa.28.1730448851310; Fri, 01 Nov 2024
+ 01:14:11 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Pablo_Gonz=C3=A1lez_Navarro?= <pabloglez92@...46...>
+Message-ID: <CALLStDGwDd5O24JwwBO=mxops6cZ7Vw85JOmyDA6CzzsFoVWXw@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/mixed; boundary="000000000000165c600625d58576"
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hello, As indicated in the program instructions,
+ I am attaching
+ the output of the command "LANG= LC_ALL= ddccontrol -p -c -d" in a plain
+ text file. The monitor is an Alienware 3423DWF (AW3423DWF).
+ Content analysis details:   (0.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+ in digit [pabloglez92[at]gmail.com]
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [pabloglez92[at]gmail.com]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.208.180 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.208.180 listed in list.dnswl.org]
+X-Headers-End: 1t6mnX-0002jv-IZ
+X-Mailman-Approved-At: Mon, 18 Nov 2024 11:43:43 +0000
+Subject: [ddccontrol-users] AW3423DWF
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+Date: Fri, 01 Nov 2024 08:14:24 -0000
+X-Original-Date: Fri, 1 Nov 2024 09:13:34 +0100
+X-List-Received-Date: Fri, 01 Nov 2024 08:14:24 -0000
+
+--000000000000165c600625d58576
+Content-Type: multipart/alternative; boundary="000000000000165c5d0625d58574"
+
+--000000000000165c5d0625d58574
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+As indicated in the program instructions, I am attaching the output of the
+command "LANG= LC_ALL= ddccontrol -p -c -d" in a plain text file.
+
+The monitor is an Alienware 3423DWF (AW3423DWF).
+
+Thank you very much for the program.
+
+--000000000000165c5d0625d58574
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p>Hello,</p><p>As indicated in the program instructions, =
+I am attaching the output of the command &quot;LANG=3D LC_ALL=3D ddccontrol=
+ -p -c -d&quot; in a plain text file.</p><p>The monitor is an Alienware 342=
+3DWF (AW3423DWF).</p><p>Thank you very much for the program.<br></p></div>
+
+--000000000000165c5d0625d58574--
+
+--000000000000165c600625d58576
+Content-Type: application/octet-stream; name=AW3423DWF
+Content-Disposition: attachment; filename=AW3423DWF
+Content-Transfer-Encoding: base64
+Content-ID: <f_m2ygfeh10>
+X-Attachment-Id: f_m2ygfeh10
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNi4wCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
+IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
+Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
+dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KCkRldGVj
+dGVkIG1vbml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMtMTAKICAgRERDL0NJIHN1cHBv
+cnRlZDogWWVzCiAgIE1vbml0b3IgTmFtZTogVkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0
+IHR5cGU6IERpZ2l0YWwKICAoQXV0b21hdGljYWxseSBzZWxlY3RlZCkKUmVhZGluZyBFRElEIGFu
+ZCBpbml0aWFsaXppbmcgRERDL0NJIGF0IGJ1cyBkZXY6L2Rldi9pMmMtMTAuLi4KSS9PIHdhcm5p
+bmcgOiBmYWlsZWQgdG8gbG9hZCBleHRlcm5hbCBlbnRpdHkgIi91c3Ivc2hhcmUvZGRjY29udHJv
+bC1kYi9tb25pdG9yL0RFTEEyMTEueG1sIgpEb2N1bWVudCBub3QgcGFyc2VkIHN1Y2Nlc3NmdWxs
+eS4KCkVESUQgcmVhZGluZ3M6CglQbHVnIGFuZCBQbGF5IElEOiBERUxBMjExIFtWRVNBIHN0YW5k
+YXJkIG1vbml0b3JdCglJbnB1dCB0eXBlOiBBbmFsb2cKPT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KVGhlcmUgaXMg
+bm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGluIHRoZSBkYXRhYmFzZSwgYnV0IGRkY2NvbnRy
+b2wgaXMKdXNpbmcgYSBiYXNpYyBnZW5lcmljIHByb2ZpbGUuIE1hbnkgY29udHJvbHMgd2lsbCBu
+b3QgYmUgc3VwcG9ydGVkLCBhbmQKc29tZSBjb250cm9scyBtYXkgbm90IHdvcmsgYXMgZXhwZWN0
+ZWQuClBsZWFzZSB1cGRhdGUgZGRjY29udHJvbC1kYiwgb3IsIGlmIHlvdSBhcmUgYWxyZWFkeSB1
+c2luZyB0aGUgbGF0ZXN0CnZlcnNpb24sIHBsZWFzZSBzZW5kIHRoZSBvdXRwdXQgb2YgdGhlIGZv
+bGxvd2luZyBjb21tYW5kIHRvCmRkY2NvbnRyb2wtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0
+OgoKTEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1wIC1jIC1kCgpUaGFuayB5b3UuCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09CgpDYXBhYmlsaXRpZXM6CmlvY3RsKCk6IEluYXBwcm9wcmlhdGUgaW9jdGwgZm9yIGRl
+dmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJpYXRlIGlvY3RsIGZvciBk
+ZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3ByaWF0ZSBpb2N0bCBmb3Ig
+ZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBwcm9wcmlhdGUgaW9jdGwgZm9y
+IGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJpYXRlIGlvY3RsIGZv
+ciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3ByaWF0ZSBpb2N0bCBm
+b3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBwcm9wcmlhdGUgaW9jdGwg
+Zm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJpYXRlIGlvY3Rs
+IGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3ByaWF0ZSBpb2N0
+bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCkNhcGFiaWxpdGllcyByZWFkIGZhaWwuCgpD
+b250cm9scyAodmFsaWQvY3VycmVudC9tYXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpD
+b250cm9sIDB4MDA6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgwMTogKy8wLzY1NTM1ICAg
+Wz8/P10KQ29udHJvbCAweDAyOiArLzIvMjU1IEMgW05ldyBDb250cm9sIFZhbHVlIC0gU29tZSB2
+YWx1ZXMgY2hhbmdlZF0KQ29udHJvbCAweDAzOiArLzIvMjU1ICAgWz8/P10KQ29udHJvbCAweDA0
+OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdHNdCkNvbnRyb2wgMHgwNTogKy8wLzEg
+QyBbUmVzdG9yZSBCcmlnaHRuZXNzIGFuZCBDb250cmFzdF0KQ29udHJvbCAweDA2OiArLzAvMSAg
+IFs/Pz9dCkNvbnRyb2wgMHgwNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDA4OiArLzAv
+MSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl0KQ29udHJvbCAweDA5OiArLzAvNjU1
+MzUgICBbPz8/XQpDb250cm9sIDB4MGE6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgwYjog
+Ky8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDBjOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9s
+IDB4MGQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgwZTogKy81MC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4MGY6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgxMDogKy8yMC8xMDAgQyBb
+QnJpZ2h0bmVzc10KQ29udHJvbCAweDExOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MTI6
+ICsvNjcvMTAwIEMgW0NvbnRyYXN0XQpDb250cm9sIDB4MTM6ICsvMC82NTUzNSAgIFs/Pz9dCkNv
+bnRyb2wgMHgxNDogKy8xMi8xMiBDIFs/Pz9dCkNvbnRyb2wgMHgxNTogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweDE2OiArLzEwMC8xMDAgQyBbUmVkIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wg
+MHgxNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDE4OiArLzEwMC8xMDAgQyBbR3JlZW4g
+bWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDE5OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4
+MWE6ICsvMTAwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxYjogKy8wLzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweDFjOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MWQ6
+ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgxZTogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4
+MWY6ICsvMS8xICAgWz8/P10KQ29udHJvbCAweDIwOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wg
+MHgyMTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDIyOiArLzAvNjU1MzUgICBbPz8/XQpD
+b250cm9sIDB4MjM6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgyNDogKy8wLzY1NTM1ICAg
+Wz8/P10KQ29udHJvbCAweDI1OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MjY6ICsvMC82
+NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgyNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDI4
+OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4Mjk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRy
+b2wgMHgyYTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDJiOiArLzAvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4MmM6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgyZDogKy8wLzY1NTM1
+ICAgWz8/P10KQ29udHJvbCAweDJlOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MmY6ICsv
+MC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgzMDogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4
+MzE6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgzMjogKy8wLzY1NTM1ICAgWz8/P10KQ29u
+dHJvbCAweDMzOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MzQ6ICsvMC82NTUzNSAgIFs/
+Pz9dCkNvbnRyb2wgMHgzNTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDM2OiArLzAvNjU1
+MzUgICBbPz8/XQpDb250cm9sIDB4Mzc6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgzODog
+Ky8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDM5OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9s
+IDB4M2E6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHgzYjogKy8wLzY1NTM1ICAgWz8/P10K
+Q29udHJvbCAweDNjOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4M2Q6ICsvMC82NTUzNSAg
+IFs/Pz9dCkNvbnRyb2wgMHgzZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4M2Y6ICsvMC82
+NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg0MDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDQx
+OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NDI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRy
+b2wgMHg0MzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDQ0OiArLzAvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4NDU6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg0NjogKy8wLzY1NTM1
+ICAgWz8/P10KQ29udHJvbCAweDQ3OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NDg6ICsv
+MC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg0OTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAw
+eDRhOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NGI6ICsvMC82NTUzNSAgIFs/Pz9dCkNv
+bnRyb2wgMHg0YzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDRkOiArLzAvNjU1MzUgICBb
+Pz8/XQpDb250cm9sIDB4NGU6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg0ZjogKy8wLzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweDUwOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NTE6
+ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg1MjogKy8xNi8yNTUgQyBbPz8/XQpDb250cm9s
+IDB4NTM6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg1NDogKy8wLzY1NTM1ICAgWz8/P10K
+Q29udHJvbCAweDU1OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NTY6ICsvMC82NTUzNSAg
+IFs/Pz9dCkNvbnRyb2wgMHg1NzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDU4OiArLzAv
+NjU1MzUgICBbPz8/XQpDb250cm9sIDB4NTk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg1
+YTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDViOiArLzAvNjU1MzUgICBbPz8/XQpDb250
+cm9sIDB4NWM6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg1ZDogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweDVlOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NWY6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHg2MDogKy8zODU1LzQ2MjYgQyBbSW5wdXQgU291cmNlIFNlbGVj
+dCAoTWFpbildCkNvbnRyb2wgMHg2MTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDYyOiAr
+LzAvMTAwIEMgW0F1ZGlvIFNwZWFrZXIgVm9sdW1lIEFkanVzdF0KQ29udHJvbCAweDYzOiArLzAv
+NjU1MzUgICBbPz8/XQpDb250cm9sIDB4NjQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg2
+NTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDY2OiArLzAvNjU1MzUgICBbPz8/XQpDb250
+cm9sIDB4Njc6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg2ODogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweDY5OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NmE6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHg2YjogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDZjOiAr
+LzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NmQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wg
+MHg2ZTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDZmOiArLzAvNjU1MzUgICBbPz8/XQpD
+b250cm9sIDB4NzA6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg3MTogKy8wLzY1NTM1ICAg
+Wz8/P10KQ29udHJvbCAweDcyOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NzM6ICsvMC82
+NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg3NDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDc1
+OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4NzY6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRy
+b2wgMHg3NzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDc4OiArLzAvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4Nzk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg3YTogKy8wLzY1NTM1
+ICAgWz8/P10KQ29udHJvbCAweDdiOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4N2M6ICsv
+MC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg3ZDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAw
+eDdlOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4N2Y6ICsvMC82NTUzNSAgIFs/Pz9dCkNv
+bnRyb2wgMHg4MDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDgxOiArLzAvNjU1MzUgICBb
+Pz8/XQpDb250cm9sIDB4ODI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg4MzogKy8wLzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweDg0OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ODU6
+ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg4NjogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJv
+bCAweDg3OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ODg6ICsvMC82NTUzNSAgIFs/Pz9d
+CkNvbnRyb2wgMHg4OTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDhhOiArLzAvNjU1MzUg
+ICBbPz8/XQpDb250cm9sIDB4OGI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg4YzogKy8w
+LzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDhkOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4
+OGU6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg4ZjogKy8wLzY1NTM1ICAgWz8/P10KQ29u
+dHJvbCAweDkwOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4OTE6ICsvMC82NTUzNSAgIFs/
+Pz9dCkNvbnRyb2wgMHg5MjogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDkzOiArLzAvNjU1
+MzUgICBbPz8/XQpDb250cm9sIDB4OTQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg5NTog
+Ky8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDk2OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9s
+IDB4OTc6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg5ODogKy8wLzY1NTM1ICAgWz8/P10K
+Q29udHJvbCAweDk5OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4OWE6ICsvMC82NTUzNSAg
+IFs/Pz9dCkNvbnRyb2wgMHg5YjogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDljOiArLzAv
+NjU1MzUgICBbPz8/XQpDb250cm9sIDB4OWQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHg5
+ZTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweDlmOiArLzAvNjU1MzUgICBbPz8/XQpDb250
+cm9sIDB4YTA6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhhMTogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweGEyOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YTM6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHhhNDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGE1OiAr
+LzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YTY6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wg
+MHhhNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGE4OiArLzAvNjU1MzUgICBbPz8/XQpD
+b250cm9sIDB4YTk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhhYTogKy8xLzQgICBbPz8/
+XQpDb250cm9sIDB4YWI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhhYzogKy8yMTg1Ni80
+IEMgWz8/P10KQ29udHJvbCAweGFkOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YWU6ICsv
+MTY0OTAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4YWY6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRy
+b2wgMHhiMDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGIxOiArLzAvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4YjI6ICsvMS8xIEMgWz8/P10KQ29udHJvbCAweGIzOiArLzAvNjU1MzUgICBb
+Pz8/XQpDb250cm9sIDB4YjQ6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhiNTogKy8wLzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweGI2OiArLzMvNSBDIFs/Pz9dCkNvbnRyb2wgMHhiNzogKy8w
+LzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGI4OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4
+Yjk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhiYTogKy8wLzY1NTM1ICAgWz8/P10KQ29u
+dHJvbCAweGJiOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YmM6ICsvMC82NTUzNSAgIFs/
+Pz9dCkNvbnRyb2wgMHhiZDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGJlOiArLzAvNjU1
+MzUgICBbPz8/XQpDb250cm9sIDB4YmY6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhjMDog
+Ky8xOTgwLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGMxOiArLzAvNjU1MzUgICBbPz8/XQpDb250
+cm9sIDB4YzI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhjMzogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweGM0OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzU6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHhjNjogKy8xNzg2OC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhj
+NzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGM4OiArLzU4OTcvMzkgQyBbPz8/XQpDb250
+cm9sIDB4Yzk6ICsvMTY2NDcvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4Y2E6ICsvMi8yIEMgWz8/
+P10KQ29udHJvbCAweGNiOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4Y2M6ICsvMi8xMyBD
+IFs/Pz9dCkNvbnRyb2wgMHhjZDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGNlOiArLzAv
+NjU1MzUgICBbPz8/XQpDb250cm9sIDB4Y2Y6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhk
+MDogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGQxOiArLzAvNjU1MzUgICBbPz8/XQpDb250
+cm9sIDB4ZDI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhkMzogKy8wLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweGQ0OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZDU6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHhkNjogKy8xLzUgQyBbRFBNUyBDb250cm9sIC0gT25dCkNvbnRy
+b2wgMHhkNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGQ4OiArLzAvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4ZDk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhkYTogKy8wLzY1NTM1
+ICAgWz8/P10KQ29udHJvbCAweGRiOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZGM6ICsv
+MC81IEMgWz8/P10KQ29udHJvbCAweGRkOiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZGU6
+ICsvMC8wICAgWz8/P10KQ29udHJvbCAweGRmOiArLzUxMy82NTUzNSBDIFs/Pz9dCkNvbnRyb2wg
+MHhlMDogKy8wLzEgQyBbPz8/XQpDb250cm9sIDB4ZTE6ICsvMC8xIEMgW1Bvd2VyIGNvbnRyb2wg
+LSBPZmZdCkNvbnRyb2wgMHhlMjogKy8yMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4ZTM6ICsvMC82
+NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhlNDogKy8wLzIgICBbPz8/XQpDb250cm9sIDB4ZTU6ICsv
+MC8yNTUgQyBbPz8/XQpDb250cm9sIDB4ZTY6ICsvMC8wICAgWz8/P10KQ29udHJvbCAweGU3OiAr
+LzQyLzYzICAgWz8/P10KQ29udHJvbCAweGU4OiArLzE3LzY1NTM1IEMgWz8/P10KQ29udHJvbCAw
+eGU5OiArLzAvMjU1IEMgWz8/P10KQ29udHJvbCAweGVhOiArLzY1MDI1LzY1NTM1ICAgWz8/P10K
+Q29udHJvbCAweGViOiArLzEvMSAgIFs/Pz9dCkNvbnRyb2wgMHhlYzogKy8zODQwLzM4NDYgQyBb
+Pz8/XQpDb250cm9sIDB4ZWQ6ICsvMC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhlZTogKy8wLzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweGVmOiArLzAvMjU1ICAgWz8/P10KQ29udHJvbCAweGYwOiAr
+LzAvMjU1IEMgWz8/P10KQ29udHJvbCAweGYxOiArLzMyNzk0LzY1NTM1IEMgWz8/P10KQ29udHJv
+bCAweGYyOiArLzAvMjU1IEMgWz8/P10KQ29udHJvbCAweGY0OiArLzY1NTM1LzY1NTM1IEMgWz8/
+P10KQ29udHJvbCAweGY1OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZjY6ICsvMC82NTUz
+NSAgIFs/Pz9dCkNvbnRyb2wgMHhmNzogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGY4OiAr
+LzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4Zjk6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wg
+MHhmYTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGZiOiArLzAvNjU1MzUgICBbPz8/XQpD
+b250cm9sIDB4ZmM6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhmZDogKy85OC8yNTUgQyBb
+Pz8/XQpDb250cm9sIDB4ZmU6ICsvNDUvMjU1ICAgWz8/P10KQ29udHJvbCAweGZmOiArLzQ1LzI1
+NSAgIFs/Pz9dCg==
+--000000000000165c600625d58576--
+
+
+From david@...3024... Mon Nov 04 11:11:13 2024
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20230601; t=1730718659; x=1731323459;
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+ :from:to:cc:subject:date:message-id:reply-to;
+ bh=e2LnTL0f9I9KnPtBgPO4NlQg2FSAXetMqlAkPlgj6Fs=;
+ b=dAfijBymxYQqger9e1XboUQVOfLpuhLJFlceVvT7mz+1SjRs+DsqJ6ed2h3fWqEgJ8
+ dK4DFL9eqv50S3kmrZqPeZOaqmPrJAB5usGBpX8dTDH4j7vtGAxBJuC0/6FWXvIaoMXI
+ GhQbpBY1bTFO5meOk178TSWoV0DMVIujGroKlesHkLFvdJn9eSSoanCWTfqlaPekn6UH
+ AK9OytFHX8NF8uekrMWpUvsMIIcZsyl0hExuM3o7sVOdzhLQzsPQS7zTSa7PAM2+DkBh
+ 9rO/IVs/qvSNHGZamqrx+V8Y/gwbs8soF9EKgn0MfaShIQgZQ4UoLqBhtAn8cCKspejK
+ 7v6g==
+X-Gm-Message-State: AOJu0YwiGPCGYOOYxyZ48lQLsGjW7uKr4fZbPF3ipiBdDkrfhL1Tfdak
+ rN194IXIGIw8i0iVJZShhXKpHLGHahR8huhQj4cMm6HBdRB0PMI7w0Q5asqd64Z+wIIKtVjuEGu
+ I6bPUMsoO66RB0C/bvrwyafBKdp2o7Gqgz0udzoLQ9p+K6rgKksD2uw==
+X-Google-Smtp-Source: AGHT+IGy9V6ffHxhI9z6uCAWaqgyQeQPqO3jb6dohRvd/1CX51ANG9MvGLoVlcJ2+Zu/bCBLd6yrimEhBMQFufo8HsY=
+X-Received: by 2002:a2e:a545:0:b0:2fa:fcf0:7c2a with SMTP id
+ 38308e7fff4ca-2fedb7ca5b3mr82737641fa.24.1730717215152; Mon, 04 Nov 2024
+ 02:46:55 -0800 (PST)
+MIME-Version: 1.0
+From: David Plassmann <david@...3024...>
+Date: Mon, 4 Nov 2024 10:46:44 +0000
+Message-ID: <CAFXi3h-pgDPU1j3A6SdcxAm42w5X=7heAqAAFMTpzqnSqwRu6Q@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/alternative; boundary="000000000000d0fd6006261400c2"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hi, please find the output of `LANG= LC_ALL= ddccontrol -p
+ -c -d` below. ddccontrol version 1.0.3 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...) Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistr [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.208.170 listed in list.dnswl.org]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.208.170 listed in wl.mailspike.net]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1t7uzH-0000oD-IU
+X-Mailman-Approved-At: Mon, 18 Nov 2024 11:43:43 +0000
+Subject: [ddccontrol-users] LG Electronics 38GN950
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 04 Nov 2024 11:11:14 -0000
+
+--000000000000d0fd6006261400c2
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+please find the output of `LANG= LC_ALL= ddccontrol -p -c -d` below.
+
+
+ ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-7
+   DDC/CI supported: Yes
+   Monitor Name: LG Standard LCD
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-7...
+
+EDID readings:
+Plug and Play ID: GSM7754 [LG Standard LCD]
+Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [New Control Value - Some values changed]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/35/100   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/35/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/11/65535 C [???]
+Control 0x15: +/15/255 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x4d: +/32770/65535 C [???]
+Control 0x4e: +/0/65535 C [???]
+Control 0x4f: +/7042/65535 C [???]
+Control 0x50: +/2/15   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x55: +/0/1   [???]
+Control 0x60: +/15/18 C [Input Source Select (Main)]
+Control 0x62: +/31/100 C [Audio Speaker Volume Adjust]
+Control 0x69: +/6500/65535   [???]
+Control 0x6a: +/271/65535   [???]
+Control 0x6c: +/128/100   [???]
+Control 0x6e: +/128/100   [???]
+Control 0x70: +/128/100   [???]
+Control 0x72: +/30720/65535   [???]
+Control 0x7a: +/240/65535   [???]
+Control 0x87: +/50/100   [???]
+Control 0x8d: +/2/100 C [???]
+Control 0xac: +/48292/3 C [???]
+Control 0xae: +/24490/0 C [???]
+Control 0xaf: +/0/255   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/12168/65535 C [???]
+Control 0xc1: +/35/300   [???]
+Control 0xc6: +/104/65535 C [???]
+Control 0xc8: +/6/255 C [???]
+Control 0xc9: +/772/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/0/16   [???]
+Control 0xcf: +/521/65535   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xd7: +/1/255   [???]
+Control 0xd8: +/1/255   [???]
+Control 0xdf: +/513/255 C [???]
+Control 0xe2: +/1/65535   [???]
+Control 0xe4: +/0/255   [???]
+Control 0xe5: +/0/179   [???]
+Control 0xe7: +/0/65535   [???]
+Control 0xe8: +/0/255   [???]
+Control 0xe9: +/2/255   [???]
+Control 0xea: +/0/255   [???]
+Control 0xeb: +/0/1   [???]
+Control 0xef: +/23648/65535 C [???]
+Control 0xf4: +/6/65535 C [???]
+Control 0xf5: +/1/255 C [???]
+Control 0xf6: +/1/255 C [???]
+Control 0xf7: +/2/255 C [???]
+Control 0xf8: +/1/255 C [???]
+Control 0xf9: +/50/255 C [???]
+Control 0xfa: +/255/255 C [???]
+Control 0xfb: +/2/15   [???]
+Control 0xfe: +/7/255 C [???]
+
+--000000000000d0fd6006261400c2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div dir=3D"ltr" class=3D"gmail_signature" data-smart=
+mail=3D"gmail_signature"><div dir=3D"ltr"><div>Hi,<br>please find the outpu=
+t of `LANG=3D LC_ALL=3D ddccontrol -p -c -d` below.<br><br><br>=C2=A0ddccon=
+trol version 1.0.3<br>Copyright 2004-2005 Oleg I. Vdovikin (<a href=3D"mail=
+to:oleg@...13...">oleg@...13...</a>)<br>Copyright 2004-2006 Nicolas Boichat=
+ (<a href=3D"mailto:nicolas@...3...">nicolas@...3...</a>)<br>This program c=
+omes with ABSOLUTELY NO WARRANTY.<br>You may redistribute copies of this pr=
+ogram under the terms of the GNU General Public License.<br><br>Detected mo=
+nitors :<br>=C2=A0- Device: dev:/dev/i2c-7<br>=C2=A0 =C2=A0DDC/CI supported=
+: Yes<br>=C2=A0 =C2=A0Monitor Name: LG Standard LCD<br>=C2=A0 =C2=A0Input t=
+ype: Digital<br>=C2=A0 (Automatically selected)<br>Reading EDID and initial=
+izing DDC/CI at bus dev:/dev/i2c-7...<br><br>EDID readings:<br>	Plug and Pl=
+ay ID: GSM7754 [LG Standard LCD]<br>	Input type: Analog<br>=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>There is no support for your monitor in t=
+he database, but ddccontrol is<br>using a generic profile for your monitor&=
+#39;s manufacturer. Some controls<br>may not be supported, or may not work =
+as expected.<br>Please update ddccontrol-db, or, if you are already using t=
+he latest<br>version, please send the output of the following command to<br=
+><a href=3D"mailto:ddccontrol-users@lists.sourceforge.net">ddccontrol-users=
+@lists.sourceforge.net</a>:<br><br>LANG=3D LC_ALL=3D ddccontrol -p -c -d<br=
+><br>Thank you.<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><br>C=
+apabilities:<br><br>Controls (valid/current/max) [Description - Value name]=
+:<br>Control 0x02: +/2/2 C [New Control Value - Some values changed]<br>Con=
+trol 0x04: +/0/255 C [Restore Factory Defaults]<br>Control 0x05: +/0/1 C [R=
+estore Brightness and Contrast]<br>Control 0x06: +/0/255 =C2=A0 [???]<br>Co=
+ntrol 0x08: +/0/255 C [Restore Factory Default Color]<br>Control 0x0b: +/0/=
+24028 =C2=A0 [???]<br>Control 0x0c: +/35/100 =C2=A0 [???]<br>Control 0x0e: =
++/50/100 =C2=A0 [???]<br>Control 0x10: +/35/100 C [Brightness]<br>Control 0=
+x12: +/70/100 C [Contrast]<br>Control 0x14: +/11/65535 C [???]<br>Control 0=
+x15: +/15/255 C [???]<br>Control 0x16: +/50/100 C [Red maximum level]<br>Co=
+ntrol 0x18: +/50/100 C [Green maximum level]<br>Control 0x1a: +/50/100 C [B=
+lue maximum level]<br>Control 0x1e: +/0/2 =C2=A0 [???]<br>Control 0x20: +/0=
+/100 =C2=A0 [???]<br>Control 0x30: +/0/100 =C2=A0 [???]<br>Control 0x3e: +/=
+50/100 =C2=A0 [???]<br>Control 0x4d: +/32770/65535 C [???]<br>Control 0x4e:=
+ +/0/65535 C [???]<br>Control 0x4f: +/7042/65535 C [???]<br>Control 0x50: +=
+/2/15 =C2=A0 [???]<br>Control 0x52: +/0/255 C [???]<br>Control 0x55: +/0/1 =
+=C2=A0 [???]<br>Control 0x60: +/15/18 C [Input Source Select (Main)]<br>Con=
+trol 0x62: +/31/100 C [Audio Speaker Volume Adjust]<br>Control 0x69: +/6500=
+/65535 =C2=A0 [???]<br>Control 0x6a: +/271/65535 =C2=A0 [???]<br>Control 0x=
+6c: +/128/100 =C2=A0 [???]<br>Control 0x6e: +/128/100 =C2=A0 [???]<br>Contr=
+ol 0x70: +/128/100 =C2=A0 [???]<br>Control 0x72: +/30720/65535 =C2=A0 [???]=
+<br>Control 0x7a: +/240/65535 =C2=A0 [???]<br>Control 0x87: +/50/100 =C2=A0=
+ [???]<br>Control 0x8d: +/2/100 C [???]<br>Control 0xac: +/48292/3 C [???]<=
+br>Control 0xae: +/24490/0 C [???]<br>Control 0xaf: +/0/255 =C2=A0 [???]<br=
+>Control 0xb6: +/3/5 C [???]<br>Control 0xc0: +/12168/65535 C [???]<br>Cont=
+rol 0xc1: +/35/300 =C2=A0 [???]<br>Control 0xc6: +/104/65535 C [???]<br>Con=
+trol 0xc8: +/6/255 C [???]<br>Control 0xc9: +/772/65535 C [???]<br>Control =
+0xca: +/2/2 =C2=A0 [???]<br>Control 0xcc: +/0/16 =C2=A0 [???]<br>Control 0x=
+cf: +/521/65535 =C2=A0 [???]<br>Control 0xd6: +/1/5 C [DPMS Control - On]<b=
+r>Control 0xd7: +/1/255 =C2=A0 [???]<br>Control 0xd8: +/1/255 =C2=A0 [???]<=
+br>Control 0xdf: +/513/255 C [???]<br>Control 0xe2: +/1/65535 =C2=A0 [???]<=
+br>Control 0xe4: +/0/255 =C2=A0 [???]<br>Control 0xe5: +/0/179 =C2=A0 [???]=
+<br>Control 0xe7: +/0/65535 =C2=A0 [???]<br>Control 0xe8: +/0/255 =C2=A0 [?=
+??]<br>Control 0xe9: +/2/255 =C2=A0 [???]<br>Control 0xea: +/0/255 =C2=A0 [=
+???]<br>Control 0xeb: +/0/1 =C2=A0 [???]<br>Control 0xef: +/23648/65535 C [=
+???]<br>Control 0xf4: +/6/65535 C [???]<br>Control 0xf5: +/1/255 C [???]<br=
+>Control 0xf6: +/1/255 C [???]<br>Control 0xf7: +/2/255 C [???]<br>Control =
+0xf8: +/1/255 C [???]<br>Control 0xf9: +/50/255 C [???]<br>Control 0xfa: +/=
+255/255 C [???]<br>Control 0xfb: +/2/15 =C2=A0 [???]<br>Control 0xfe: +/7/2=
+55 C [???]</div><div><br></div></div></div></div></div>
+
+--000000000000d0fd6006261400c2--
+
+
+From robinlanger1@...46... Mon Nov 04 16:43:33 2024
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20230601; t=1730738602; x=1731343402;
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+ :from:to:cc:subject:date:message-id:reply-to;
+ bh=GsEiJLmrw6+MRI+pJuJVC+up3oA8a0BFotquDjDqve4=;
+ b=ukhDlrGadCKywS6m/GAtxoeDJEEbfglcR2urWSxdXy7m099/a+wWpfZwlUjH00AWNn
+ UpA2JSBfF9S8p5/8Em1yQO8MYR98K/v0Pb+6XRJ1OrRCsaw78B3yZn935P0clAqI+vSQ
+ WUs9Fvhcc0ijppgU5bcktYrojtAemIXMgdMOV8sz4EZh4w0SV7zRa4wQt5Z/tfETqK7/
+ A82YnSQuyuH06mCFWWzxtSbWf/muhvupAOYJZnUMiYkPVYwncrxCeArqudNHAeYwlP5d
+ XIIknOrKq+mkX0fgVSLU1zrA+mR4mfMpzAoh5+YKFr1J08BpxTM5heTnyh8qW6vYiYhU
+ dh0g==
+X-Gm-Message-State: AOJu0Yz5lHHmDE+1nCAGaCiI+IhGlZ9bYBQx50kNH8Br+qZwr2edv86Z
+ bWpTjE0+n97XK3QeWcmgdtZFAcpUlzRyrLcb8tSwW5teL7uNrq6d/t3FdIfDlEkfDEFQ7r2lCRt
+ iyPybUVLEgUKHwoTAY8ttA84KSP1enPsQ
+X-Google-Smtp-Source: AGHT+IHdwq6a3a0Up0McDVrMin3G9xqVejlWkOGsJCC9VFKWTr0XfKhcpJUFzz1ZZigO/ld4Y1kDqRIVR9wr6uUvxuM=
+X-Received: by 2002:a05:6214:3290:b0:6cb:ee32:12ee with SMTP id
+ 6a1803df08f44-6d35c1aea63mr178625606d6.49.1730738601602; Mon, 04 Nov 2024
+ 08:43:21 -0800 (PST)
+MIME-Version: 1.0
+From: Robin Langer <robinlanger1@...46...>
+Date: Mon, 4 Nov 2024 17:43:10 +0100
+Message-ID: <CAJ0AgcFrE8Sf84ve7EFjO3SAX6eyL1gNtDxKc=yhehN83f2LTg@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/mixed; boundary="0000000000008c6acc062618fb58"
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hi, I'm using your DDC Control tool to adjust settings on
+ my monitors and I was informed they are not in the database yet. Attached
+ to this e-mail is the output of the command mentioned in your program.
+ Content analysis details:   (0.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [robinlanger1[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+ in digit [robinlanger1[at]gmail.com]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.219.49 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.219.49 listed in list.dnswl.org]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1t80Au-0006ai-LV
+X-Mailman-Approved-At: Mon, 18 Nov 2024 11:43:42 +0000
+Subject: [ddccontrol-users] New Monitors: AOC Q32G1WG4 & 32G1WG4
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 04 Nov 2024 16:43:33 -0000
+
+--0000000000008c6acc062618fb58
+Content-Type: multipart/alternative; boundary="0000000000008c6acb062618fb56"
+
+--0000000000008c6acb062618fb56
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+
+I'm using your DDC Control tool to adjust settings on my monitors and I was
+informed they are not in the database yet. Attached to this e-mail is the
+output of the command mentioned in your program.
+
+I have 2 monitors: AOC Q32G1WG4 (QHD) & 32G1WG4 (Full HD)
+
+Thanks for developing this tool and I hope the output is helpful.
+
+--0000000000008c6acb062618fb56
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I&#39;m using your DDC Control tool=
+ to adjust settings on my monitors and I was informed they are not in the d=
+atabase yet. Attached to this e-mail is the output of the command mentioned=
+ in your program.<br><br>I have 2 monitors:=C2=A0AOC Q32G1WG4 (QHD) &amp; 3=
+2G1WG4 (Full HD)<br><br>Thanks for developing this tool and I hope the outp=
+ut is helpful.</div></div>
+
+--0000000000008c6acb062618fb56--
+
+--0000000000008c6acc062618fb58
+Content-Type: text/plain; charset="US-ASCII"; name="ddccontrol_output.txt"
+Content-Disposition: attachment; filename="ddccontrol_output.txt"
+Content-Transfer-Encoding: base64
+Content-ID: <f_m33900qy0>
+X-Attachment-Id: f_m33900qy0
+
+RGV0ZWN0ZWQgbW9uaXRvcnMgOgogLSBEZXZpY2U6IGRldjovZGV2L2kyYy00CiAgIEREQy9DSSBz
+dXBwb3J0ZWQ6IFllcwogICBNb25pdG9yIE5hbWU6IFZFU0Egc3RhbmRhcmQgbW9uaXRvcgogICBJ
+bnB1dCB0eXBlOiBEaWdpdGFsCiAgKEF1dG9tYXRpY2FsbHkgc2VsZWN0ZWQpCiAtIERldmljZTog
+ZGV2Oi9kZXYvaTJjLTUKICAgRERDL0NJIHN1cHBvcnRlZDogWWVzCiAgIE1vbml0b3IgTmFtZTog
+VkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0IHR5cGU6IERpZ2l0YWwKUmVhZGluZyBFRElE
+IGFuZCBpbml0aWFsaXppbmcgRERDL0NJIGF0IGJ1cyBkZXY6L2Rldi9pMmMtNC4uLgpJL08gd2Fy
+bmluZyA6IGZhaWxlZCB0byBsb2FkIGV4dGVybmFsIGVudGl0eSAiL3Vzci9zaGFyZS9kZGNjb250
+cm9sLWRiL21vbml0b3IvQU9DMzIwMS54bWwiCkRvY3VtZW50IG5vdCBwYXJzZWQgc3VjY2Vzc2Z1
+bGx5LgoKRURJRCByZWFkaW5nczoKICAgICAgICBQbHVnIGFuZCBQbGF5IElEOiBBT0MzMjAxIFtW
+RVNBIHN0YW5kYXJkIG1vbml0b3JdCiAgICAgICAgSW5wdXQgdHlwZTogQW5hbG9nCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09ClRoZXJlIGlzIG5vIHN1cHBvcnQgZm9yIHlvdXIgbW9uaXRvciBpbiB0aGUgZGF0YWJh
+c2UsIGJ1dCBkZGNjb250cm9sIGlzCnVzaW5nIGEgYmFzaWMgZ2VuZXJpYyBwcm9maWxlLiBNYW55
+IGNvbnRyb2xzIHdpbGwgbm90IGJlIHN1cHBvcnRlZCwgYW5kCnNvbWUgY29udHJvbHMgbWF5IG5v
+dCB3b3JrIGFzIGV4cGVjdGVkLgpQbGVhc2UgdXBkYXRlIGRkY2NvbnRyb2wtZGIsIG9yLCBpZiB5
+b3UgYXJlIGFscmVhZHkgdXNpbmcgdGhlIGxhdGVzdAp2ZXJzaW9uLCBwbGVhc2Ugc2VuZCB0aGUg
+b3V0cHV0IG9mIHRoZSBmb2xsb3dpbmcgY29tbWFuZCB0bwpkZGNjb250cm9sLXVzZXJzQGxpc3Rz
+LnNvdXJjZWZvcmdlLm5ldDoKCkxBTkc9IExDX0FMTD0gZGRjY29udHJvbCAtcCAtYyAtZAoKVGhh
+bmsgeW91Lgo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdBUk5JTkcgPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PQoKQ2FwYWJpbGl0aWVzOgppb2N0bCgpOiBJbmFwcHJvcHJp
+YXRlIGlvY3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3By
+aWF0ZSBpb2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBwcm9w
+cmlhdGUgaW9jdGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJv
+cHJpYXRlIGlvY3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHBy
+b3ByaWF0ZSBpb2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBw
+cm9wcmlhdGUgaW9jdGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFw
+cHJvcHJpYXRlIGlvY3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5h
+cHByb3ByaWF0ZSBpb2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IElu
+YXBwcm9wcmlhdGUgaW9jdGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQpDYXBhYmlsaXRp
+ZXMgcmVhZCBmYWlsLgoKQ29udHJvbHMgKHZhbGlkL2N1cnJlbnQvbWF4KSBbRGVzY3JpcHRpb24g
+LSBWYWx1ZSBuYW1lXToKQ29udHJvbCAweDAyOiArLzIvMiBDIFtOZXcgQ29udHJvbCBWYWx1ZSAt
+IFNvbWUgdmFsdWVzIGNoYW5nZWRdCkNvbnRyb2wgMHgwNDogKy8wLzEgQyBbUmVzdG9yZSBGYWN0
+b3J5IERlZmF1bHRzXQpDb250cm9sIDB4MDU6ICsvMC8xIEMgW1Jlc3RvcmUgQnJpZ2h0bmVzcyBh
+bmQgQ29udHJhc3RdCkNvbnRyb2wgMHgwNjogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4MDg6ICsv
+MC8xIEMgW1Jlc3RvcmUgRmFjdG9yeSBEZWZhdWx0IENvbG9yXQpDb250cm9sIDB4MGI6ICsvMTAw
+LzAgICBbPz8/XQpDb250cm9sIDB4MGM6ICsvMzUvNjMgQyBbPz8/XQpDb250cm9sIDB4MGU6ICsv
+MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MTA6ICsvNS8xMDAgQyBbQnJpZ2h0bmVzc10KQ29udHJv
+bCAweDEyOiArLzI1LzEwMCBDIFtDb250cmFzdF0KQ29udHJvbCAweDE0OiArLzExLzExIEMgWz8/
+P10KQ29udHJvbCAweDE2OiArLzMzLzEwMCBDIFtSZWQgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAw
+eDE4OiArLzQwLzEwMCBDIFtHcmVlbiBtYXhpbXVtIGxldmVsXQpDb250cm9sIDB4MWE6ICsvNTAv
+MTAwIEMgW0JsdWUgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDFlOiArLzAvMSAgIFs/Pz9dCkNv
+bnRyb2wgMHgxZjogKy8xLzEgICBbPz8/XQpDb250cm9sIDB4MjA6ICsvMC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4MzA6ICsvMC8xMDAgICBbPz8/XQpDb250cm9sIDB4M2U6ICsvMC8xMDAgICBbPz8/
+XQpDb250cm9sIDB4NTI6ICsvMC8xMDAgQyBbPz8/XQpDb250cm9sIDB4NjA6ICsvMTUvMyBDIFtJ
+bnB1dCBTb3VyY2UgU2VsZWN0IChNYWluKV0KQ29udHJvbCAweDYyOiArLzEwMC8xMDAgICBbPz8/
+XQpDb250cm9sIDB4NmM6ICsvODAvMTAwICAgWz8/P10KQ29udHJvbCAweDZlOiArLzgwLzEwMCAg
+IFs/Pz9dCkNvbnRyb2wgMHg3MDogKy84MC8xMDAgICBbPz8/XQpDb250cm9sIDB4ODY6ICsvMi8y
+MCBDIFs/Pz9dCkNvbnRyb2wgMHg4NzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4YWM6ICsv
+MTQ3Ni8yIEMgWz8/P10KQ29udHJvbCAweGFlOiArLzE0NDIwLzY1NTM1IEMgWz8/P10KQ29udHJv
+bCAweGIyOiArLzEvMSBDIFs/Pz9dCkNvbnRyb2wgMHhiNjogKy8zLzUgQyBbPz8/XQpDb250cm9s
+IDB4YzY6ICsvNjQvMjU1IEMgWz8/P10KQ29udHJvbCAweGM4OiArLzkvMCBDIFs/Pz9dCkNvbnRy
+b2wgMHhjOTogKy8xLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGNhOiArLzEvMiBDIFs/Pz9dCkNv
+bnRyb2wgMHhjYzogKy80LzMwIEMgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENv
+bnRyb2wgLSBPbl0KQ29udHJvbCAweGRjOiArLzAvMTYgQyBbPz8/XQpDb250cm9sIDB4ZGY6ICsv
+NTE0LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGU2OiArLzAvMCAgIFs/Pz9dCkNvbnRyb2wgMHhl
+ZDogKy8wLzEgQyBbPz8/XQpDb250cm9sIDB4Zjg6ICsvMC8xICAgWz8/P10K
+--0000000000008c6acc062618fb58--
+
+
+From matthew@...3025... Thu Nov 07 01:03:03 2024
+Date: Thu, 07 Nov 2024 00:45:46 +0000
+To: "ddccontrol-users@lists.sourceforge.net"
+ <ddccontrol-users@lists.sourceforge.net>
+From: Matthew Dillon <matthew@...3025...>
+Message-ID: <OUZwAE-NUx0y4uuNtIsyfH38uG3dE8tjRbDAb0qOLgQvlRkkEVFw0wP_3czL-wSK0RauH5JECzDH3zjIcC1pKC0spOIxeke_rFAcMrs490w=@ruggybear.com>
+Feedback-ID: 84652858:user:proton
+X-Pm-Message-ID: 18a2144b0f12948f59c57783322733cb6dd3a11b
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1=_zGZ5blhXPutjKTuwcAiSdzmQF7XL52YVvmeLqEHaeM"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: ddccontrol version 1.0.0 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...) Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1t8qvL-0000Ne-ON
+X-Mailman-Approved-At: Mon, 18 Nov 2024 11:43:43 +0000
+Subject: [ddccontrol-users] GSM5AE2 LG Standard LCD (widescreen)
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 07 Nov 2024 01:03:03 -0000
+
+--b1=_zGZ5blhXPutjKTuwcAiSdzmQF7XL52YVvmeLqEHaeM
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDEuMC4wCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0AuLi4xMy4uLikKQ29weXJpZ2h0IDIwMDQtMjAwNiBOaWNvbGFzIEJvaWNoYXQg
+KG5pY29sYXNALi4uMy4uLikKVGhpcyBwcm9ncmFtIGNvbWVzIHdpdGggQUJTT0xVVEVMWSBOTyBX
+QVJSQU5UWS4KWW91IG1heSByZWRpc3RyaWJ1dGUgY29waWVzIG9mIHRoaXMgcHJvZ3JhbSB1bmRl
+ciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlLgoKRGV0ZWN0ZWQg
+bW9uaXRvcnMgOgotIERldmljZTogZGV2Oi9kZXYvaTJjLTUKRERDL0NJIHN1cHBvcnRlZDogWWVz
+Ck1vbml0b3IgTmFtZTogTEcgU3RhbmRhcmQgTENECklucHV0IHR5cGU6IERpZ2l0YWwKKEF1dG9t
+YXRpY2FsbHkgc2VsZWN0ZWQpClJlYWRpbmcgRURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBh
+dCBidXMgZGV2Oi9kZXYvaTJjLTUuLi4KCkVESUQgcmVhZGluZ3M6ClBsdWcgYW5kIFBsYXkgSUQ6
+IEdTTTVBRTIgW0xHIFN0YW5kYXJkIExDRF0KSW5wdXQgdHlwZTogQW5hbG9nCj09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09ClRoZXJlIGlzIG5vIHN1cHBvcnQgZm9yIHlvdXIgbW9uaXRvciBpbiB0aGUgZGF0YWJhc2Us
+IGJ1dCBkZGNjb250cm9sIGlzCnVzaW5nIGEgZ2VuZXJpYyBwcm9maWxlIGZvciB5b3VyIG1vbml0
+b3IncyBtYW51ZmFjdHVyZXIuIFNvbWUgY29udHJvbHMKbWF5IG5vdCBiZSBzdXBwb3J0ZWQsIG9y
+IG1heSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVwZGF0ZSBkZGNjb250cm9sLWRiLCBv
+ciwgaWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRlc3QKdmVyc2lvbiwgcGxlYXNlIHNl
+bmQgdGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1hbmQgdG8KZGRjY29udHJvbC11c2Vy
+c0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBMQ19BTEw9IGRkY2NvbnRyb2wgLXAgLWMg
+LWQKClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5HID09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkNhcGFiaWxpdGllczoKCkNvbnRyb2xzICh2
+YWxpZC9jdXJyZW50L21heCkgW0Rlc2NyaXB0aW9uIC0gVmFsdWUgbmFtZV06CkNvbnRyb2wgMHgw
+MDogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgwMTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wg
+MHgwMjogKy8xLzIgQyBbTmV3IENvbnRyb2wgVmFsdWUgLSBObyBjaGFuZ2VzXQpDb250cm9sIDB4
+MDM6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4MDQ6ICsvMC8yNTUgQyBbUmVzdG9yZSBGYWN0
+b3J5IERlZmF1bHRzXQpDb250cm9sIDB4MDU6ICsvMC8xIEMgW1Jlc3RvcmUgQnJpZ2h0bmVzcyBh
+bmQgQ29udHJhc3RdCkNvbnRyb2wgMHgwNjogKy8wLzI1NSBbPz8/XQpDb250cm9sIDB4MDc6ICsv
+MC82NTUzNSBbPz8/XQpDb250cm9sIDB4MDg6ICsvMC8yNTUgQyBbUmVzdG9yZSBGYWN0b3J5IERl
+ZmF1bHQgQ29sb3JdCkNvbnRyb2wgMHgwOTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgwYTog
+Ky8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgwYjogKy8wLzI0MDI4IFs/Pz9dCkNvbnRyb2wgMHgw
+YzogKy8zNS8xMDAgWz8/P10KQ29udHJvbCAweDBkOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eDBlOiArLzUwLzEwMCBbPz8/XQpDb250cm9sIDB4MGY6ICsvMC82NTUzNSBbPz8/XQpDb250cm9s
+IDB4MTA6ICsvMTAwLzEwMCBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTE6ICsvMC82NTUzNSBb
+Pz8/XQpDb250cm9sIDB4MTI6ICsvNzAvMTAwIEMgW0NvbnRyYXN0XQpDb250cm9sIDB4MTM6ICsv
+MC82NTUzNSBbPz8/XQpDb250cm9sIDB4MTQ6ICsvNS8xMSBDIFs/Pz9dCkNvbnRyb2wgMHgxNTog
+Ky8xMS8yNTUgWz8/P10KQ29udHJvbCAweDE2OiArLzUwLzEwMCBDIFtSZWQgbWF4aW11bSBsZXZl
+bF0KQ29udHJvbCAweDE3OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDE4OiArLzUwLzEwMCBD
+IFtHcmVlbiBtYXhpbXVtIGxldmVsXQpDb250cm9sIDB4MTk6ICsvMC82NTUzNSBbPz8/XQpDb250
+cm9sIDB4MWE6ICsvNTAvMTAwIEMgW0JsdWUgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDFiOiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDFjOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDFk
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDFlOiArLzAvMiBbPz8/XQpDb250cm9sIDB4MWY6
+ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4MjA6ICsvMC8xMDAgWz8/P10KQ29udHJvbCAweDIx
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDIyOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eDIzOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDI0OiArLzAvNjU1MzUgWz8/P10KQ29udHJv
+bCAweDI1OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDI2OiArLzAvNjU1MzUgWz8/P10KQ29u
+dHJvbCAweDI3OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDI4OiArLzAvNjU1MzUgWz8/P10K
+Q29udHJvbCAweDI5OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDJhOiArLzAvNjU1MzUgWz8/
+P10KQ29udHJvbCAweDJiOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDJjOiArLzAvNjU1MzUg
+Wz8/P10KQ29udHJvbCAweDJkOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDJlOiArLzAvNjU1
+MzUgWz8/P10KQ29udHJvbCAweDJmOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDMwOiArLzAv
+MTAwIFs/Pz9dCkNvbnRyb2wgMHgzMTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzMjogKy8w
+LzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzMzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzNDog
+Ky8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzNTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgz
+NjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzNzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wg
+MHgzODogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzOTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRy
+b2wgMHgzYTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzYjogKy8wLzY1NTM1IFs/Pz9dCkNv
+bnRyb2wgMHgzYzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHgzZDogKy8wLzY1NTM1IFs/Pz9d
+CkNvbnRyb2wgMHgzZTogKy81MC8xMDAgWz8/P10KQ29udHJvbCAweDNmOiArLzAvNjU1MzUgWz8/
+P10KQ29udHJvbCAweDQwOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQxOiArLzAvNjU1MzUg
+Wz8/P10KQ29udHJvbCAweDQyOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQzOiArLzAvNjU1
+MzUgWz8/P10KQ29udHJvbCAweDQ0OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQ1OiArLzAv
+NjU1MzUgWz8/P10KQ29udHJvbCAweDQ2OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQ3OiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQ4OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDQ5
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDRhOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eDRiOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDRjOiArLzAvNjU1MzUgWz8/P10KQ29udHJv
+bCAweDRkOiArLzMyMzA3LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweDRlOiArLzE2Mzg0LzY1NTM1
+IEMgWz8/P10KQ29udHJvbCAweDRmOiArLzAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4NTA6ICsv
+MC82NTUzNSBbPz8/XQpDb250cm9sIDB4NTE6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NTI6
+ICsvMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4NTM6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4
+NTQ6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NTU6ICsvMC82NTUzNSBbPz8/XQpDb250cm9s
+IDB4NTY6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NTc6ICsvMC82NTUzNSBbPz8/XQpDb250
+cm9sIDB4NTg6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NTk6ICsvMC82NTUzNSBbPz8/XQpD
+b250cm9sIDB4NWE6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NWI6ICsvMC82NTUzNSBbPz8/
+XQpDb250cm9sIDB4NWM6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NWQ6ICsvMC82NTUzNSBb
+Pz8/XQpDb250cm9sIDB4NWU6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NWY6ICsvMC82NTUz
+NSBbPz8/XQpDb250cm9sIDB4NjA6ICsvMC8xOCBDIFtJbnB1dCBTb3VyY2UgU2VsZWN0IChNYWlu
+KV0KQ29udHJvbCAweDYxOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDYyOiArLzMwLzEwMCBD
+IFtBdWRpbyBTcGVha2VyIFZvbHVtZSBBZGp1c3RdCkNvbnRyb2wgMHg2MzogKy8wLzY1NTM1IFs/
+Pz9dCkNvbnRyb2wgMHg2NDogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2NTogKy8wLzY1NTM1
+IFs/Pz9dCkNvbnRyb2wgMHg2NjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2NzogKy8wLzY1
+NTM1IFs/Pz9dCkNvbnRyb2wgMHg2ODogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2OTogKy8w
+LzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2YTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2Yjog
+Ky8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg2YzogKy81MC8xMDAgWz8/P10KQ29udHJvbCAweDZk
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDZlOiArLzUwLzEwMCBbPz8/XQpDb250cm9sIDB4
+NmY6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4NzA6ICsvNTAvMTAwIFs/Pz9dCkNvbnRyb2wg
+MHg3MTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3MjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRy
+b2wgMHg3MzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3NDogKy8wLzY1NTM1IFs/Pz9dCkNv
+bnRyb2wgMHg3NTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3NjogKy8wLzY1NTM1IFs/Pz9d
+CkNvbnRyb2wgMHg3NzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3ODogKy8wLzY1NTM1IFs/
+Pz9dCkNvbnRyb2wgMHg3OTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3YTogKy8wLzY1NTM1
+IFs/Pz9dCkNvbnRyb2wgMHg3YjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3YzogKy8wLzY1
+NTM1IFs/Pz9dCkNvbnRyb2wgMHg3ZDogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3ZTogKy8w
+LzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg3ZjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4MDog
+Ky8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4MTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4
+MjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4MzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wg
+MHg4NDogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4NTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRy
+b2wgMHg4NjogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHg4NzogKy81MC8xMDAgWz8/P10KQ29u
+dHJvbCAweDg4OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDg5OiArLzAvNjU1MzUgWz8/P10K
+Q29udHJvbCAweDhhOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDhiOiArLzAvNjU1MzUgWz8/
+P10KQ29udHJvbCAweDhjOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDhkOiArLzIvMTAwIEMg
+Wz8/P10KQ29udHJvbCAweDhlOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDhmOiArLzAvNjU1
+MzUgWz8/P10KQ29udHJvbCAweDkwOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDkxOiArLzAv
+NjU1MzUgWz8/P10KQ29udHJvbCAweDkyOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDkzOiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDk0OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDk1
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDk2OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eDk3OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDk4OiArLzAvNjU1MzUgWz8/P10KQ29udHJv
+bCAweDk5OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDlhOiArLzAvNjU1MzUgWz8/P10KQ29u
+dHJvbCAweDliOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDljOiArLzAvNjU1MzUgWz8/P10K
+Q29udHJvbCAweDlkOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweDllOiArLzAvNjU1MzUgWz8/
+P10KQ29udHJvbCAweDlmOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGEwOiArLzAvNjU1MzUg
+Wz8/P10KQ29udHJvbCAweGExOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGEyOiArLzAvNjU1
+MzUgWz8/P10KQ29udHJvbCAweGEzOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGE0OiArLzAv
+NjU1MzUgWz8/P10KQ29udHJvbCAweGE1OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGE2OiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGE3OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGE4
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGE5OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eGFhOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGFiOiArLzAvNjU1MzUgWz8/P10KQ29udHJv
+bCAweGFjOiArLzIzMzY0LzEgQyBbPz8/XQpDb250cm9sIDB4YWQ6ICsvMC82NTUzNSBbPz8/XQpD
+b250cm9sIDB4YWU6ICsvNjAwMy8wIEMgWz8/P10KQ29udHJvbCAweGFmOiArLzAvNjU1MzUgWz8/
+P10KQ29udHJvbCAweGIwOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGIxOiArLzAvNjU1MzUg
+Wz8/P10KQ29udHJvbCAweGIyOiArLzAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4YjM6ICsvMC82
+NTUzNSBbPz8/XQpDb250cm9sIDB4YjQ6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4YjU6ICsv
+MC82NTUzNSBbPz8/XQpDb250cm9sIDB4YjY6ICsvMy81IEMgWz8/P10KQ29udHJvbCAweGI3OiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGI4OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGI5
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGJhOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eGJiOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGJjOiArLzAvNjU1MzUgWz8/P10KQ29udHJv
+bCAweGJkOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGJlOiArLzAvNjU1MzUgWz8/P10KQ29u
+dHJvbCAweGJmOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGMwOiArLzI3OTkyLzY1NTM1IEMg
+Wz8/P10KQ29udHJvbCAweGMxOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGMyOiArLzAvNjU1
+MzUgWz8/P10KQ29udHJvbCAweGMzOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGM0OiArLzAv
+NjU1MzUgWz8/P10KQ29udHJvbCAweGM1OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGM2OiAr
+LzEwNC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhjNzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wg
+MHhjODogKy81LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy83NjgvNjU1MzUgQyBbPz8/XQpD
+b250cm9sIDB4Y2E6ICsvMi8yIFs/Pz9dCkNvbnRyb2wgMHhjYjogKy8wLzY1NTM1IFs/Pz9dCkNv
+bnRyb2wgMHhjYzogKy8wLzI1NSBbPz8/XQpDb250cm9sIDB4Y2Q6ICsvMC82NTUzNSBbPz8/XQpD
+b250cm9sIDB4Y2U6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4Y2Y6ICsvMC82NTUzNSBbPz8/
+XQpDb250cm9sIDB4ZDA6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZDE6ICsvMC82NTUzNSBb
+Pz8/XQpDb250cm9sIDB4ZDI6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZDM6ICsvMC82NTUz
+NSBbPz8/XQpDb250cm9sIDB4ZDQ6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZDU6ICsvMC82
+NTUzNSBbPz8/XQpDb250cm9sIDB4ZDY6ICsvMS81IEMgW0RQTVMgQ29udHJvbCAtIE9uXQpDb250
+cm9sIDB4ZDc6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZDg6ICsvMC82NTUzNSBbPz8/XQpD
+b250cm9sIDB4ZDk6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZGE6ICsvMC82NTUzNSBbPz8/
+XQpDb250cm9sIDB4ZGI6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZGM6ICsvMC82NTUzNSBb
+Pz8/XQpDb250cm9sIDB4ZGQ6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZGU6ICsvMC82NTUz
+NSBbPz8/XQpDb250cm9sIDB4ZGY6ICsvNTEzLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlMDogKy8w
+LzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHhlMTogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHhlMjog
+Ky8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHhlMzogKy8wLzY1NTM1IFs/Pz9dCkNvbnRyb2wgMHhl
+NDogKy8wLzI1NSBbPz8/XQpDb250cm9sIDB4ZTU6ICsvMC8xNzkgWz8/P10KQ29udHJvbCAweGU2
+OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGU3OiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAw
+eGU4OiArLzAvMjU1IFs/Pz9dCkNvbnRyb2wgMHhlOTogKy8yLzI1NSBbPz8/XQpDb250cm9sIDB4
+ZWE6ICsvMC8yNTUgWz8/P10KQ29udHJvbCAweGViOiArLzAvMSBbPz8/XQpDb250cm9sIDB4ZWM6
+ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZWQ6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4
+ZWU6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZWY6ICsvMy82NTUzNSBbPz8/XQpDb250cm9s
+IDB4ZjA6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZjE6ICsvMC82NTUzNSBbPz8/XQpDb250
+cm9sIDB4ZjI6ICsvMC82NTUzNSBbPz8/XQpDb250cm9sIDB4ZjM6ICsvMC82NTUzNSBbPz8/XQpD
+b250cm9sIDB4ZjQ6ICsvMzEvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4ZjU6ICsvMS8yNTUgQyBb
+Pz8/XQpDb250cm9sIDB4ZjY6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4Zjc6ICsvMi8yNTUg
+QyBbPz8/XQpDb250cm9sIDB4Zjg6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4Zjk6ICsvNTAv
+MjU1IEMgWz8/P10KQ29udHJvbCAweGZhOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGZiOiAr
+LzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGZjOiArLzAvNjU1MzUgWz8/P10KQ29udHJvbCAweGZk
+OiArLzAvNjU1MzUgQyBbUG93ZXIgTEVEIC0gT2ZmXQpDb250cm9sIDB4ZmU6ICsvMi8yNTUgQyBb
+Pz8/XQpDb250cm9sIDB4ZmY6ICsvMC82NTUzNSBDIFs/Pz9d
+
+--b1=_zGZ5blhXPutjKTuwcAiSdzmQF7XL52YVvmeLqEHaeM
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0
+cHg7Ij48L2Rpdj48c3Bhbj5kZGNjb250cm9sIHZlcnNpb24gMS4wLjA8L3NwYW4+PGRpdj48c3Bh
+bj5Db3B5cmlnaHQgMjAwNC0yMDA1IE9sZWcgSS4gVmRvdmlraW4gKDxhIHRhcmdldD0iX2JsYW5r
+IiByZWw9Im5vcmVmZXJyZXIgbm9mb2xsb3cgbm9vcGVuZXIiIGhyZWY9Im1haWx0bzpvbGVnQC4u
+LjEzLi4uIj5vbGVnQC4uLjEzLi4uPC9hPik8L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db3B5cmln
+aHQgMjAwNC0yMDA2IE5pY29sYXMgQm9pY2hhdCAoPGEgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9y
+ZWZlcnJlciBub2ZvbGxvdyBub29wZW5lciIgaHJlZj0ibWFpbHRvOm5pY29sYXNALi4uMy4uLiI+
+bmljb2xhc0AuLi4zLi4uPC9hPik8L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5UaGlzIHByb2dyYW0g
+Y29tZXMgd2l0aCBBQlNPTFVURUxZIE5PIFdBUlJBTlRZLjwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFu
+PllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0gdW5kZXIgdGhlIHRl
+cm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS48L3NwYW4+PC9kaXY+PGRpdj48
+YnI+PC9kaXY+PGRpdj48c3Bhbj5EZXRlY3RlZCBtb25pdG9ycyA6PC9zcGFuPjwvZGl2PjxkaXY+
+PHNwYW4+Jm5ic3A7LSBEZXZpY2U6IGRldjovZGV2L2kyYy01PC9zcGFuPjwvZGl2PjxkaXY+PHNw
+YW4+Jm5ic3A7ICZuYnNwO0REQy9DSSBzdXBwb3J0ZWQ6IFllczwvc3Bhbj48L2Rpdj48ZGl2Pjxz
+cGFuPiZuYnNwOyAmbmJzcDtNb25pdG9yIE5hbWU6IExHIFN0YW5kYXJkIExDRDwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPiZuYnNwOyAmbmJzcDtJbnB1dCB0eXBlOiBEaWdpdGFsPC9zcGFuPjwvZGl2
+PjxkaXY+PHNwYW4+Jm5ic3A7IChBdXRvbWF0aWNhbGx5IHNlbGVjdGVkKTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPlJlYWRpbmcgRURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBhdCBidXMgZGV2
+Oi9kZXYvaTJjLTUuLi48L3NwYW4+PC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj48c3Bhbj5FRElE
+IHJlYWRpbmdzOjwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPglQbHVnIGFuZCBQbGF5IElEOiBHU001
+QUUyIFtMRyBTdGFuZGFyZCBMQ0RdPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+CUlucHV0IHR5cGU6
+IEFuYWxvZzwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPj09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PC9zcGFuPjwvZGl2
+PjxkaXY+PHNwYW4+VGhlcmUgaXMgbm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGluIHRoZSBk
+YXRhYmFzZSwgYnV0IGRkY2NvbnRyb2wgaXM8L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj51c2luZyBh
+IGdlbmVyaWMgcHJvZmlsZSBmb3IgeW91ciBtb25pdG9yJ3MgbWFudWZhY3R1cmVyLiBTb21lIGNv
+bnRyb2xzPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+bWF5IG5vdCBiZSBzdXBwb3J0ZWQsIG9yIG1h
+eSBub3Qgd29yayBhcyBleHBlY3RlZC48L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5QbGVhc2UgdXBk
+YXRlIGRkY2NvbnRyb2wtZGIsIG9yLCBpZiB5b3UgYXJlIGFscmVhZHkgdXNpbmcgdGhlIGxhdGVz
+dDwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPnZlcnNpb24sIHBsZWFzZSBzZW5kIHRoZSBvdXRwdXQg
+b2YgdGhlIGZvbGxvd2luZyBjb21tYW5kIHRvPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+PGEgdGFy
+Z2V0PSJfYmxhbmsiIHJlbD0ibm9yZWZlcnJlciBub2ZvbGxvdyBub29wZW5lciIgaHJlZj0ibWFp
+bHRvOmRkY2NvbnRyb2wtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0Ij5kZGNjb250cm9sLXVz
+ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvYT46PC9zcGFuPjwvZGl2PjxkaXY+PGJyPjwvZGl2
+PjxkaXY+PHNwYW4+TEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1wIC1jIC1kPC9zcGFuPjwvZGl2
+PjxkaXY+PGJyPjwvZGl2PjxkaXY+PHNwYW4+VGhhbmsgeW91Ljwvc3Bhbj48L2Rpdj48ZGl2Pjxz
+cGFuPj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PC9zcGFuPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PHNwYW4+
+Q2FwYWJpbGl0aWVzOjwvc3Bhbj48L2Rpdj48ZGl2Pjxicj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRy
+b2xzICh2YWxpZC9jdXJyZW50L21heCkgW0Rlc2NyaXB0aW9uIC0gVmFsdWUgbmFtZV06PC9zcGFu
+PjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDAwOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9z
+cGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDAxOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9d
+PC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDAyOiArLzEvMiBDIFtOZXcgQ29udHJv
+bCBWYWx1ZSAtIE5vIGNoYW5nZXNdPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDAz
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eDA0OiArLzAvMjU1IEMgW1Jlc3RvcmUgRmFjdG9yeSBEZWZhdWx0c108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4MDU6ICsvMC8xIEMgW1Jlc3RvcmUgQnJpZ2h0bmVzcyBhbmQgQ29u
+dHJhc3RdPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDA2OiArLzAvMjU1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgwNzogKy8wLzY1NTM1ICZu
+YnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgwODogKy8wLzI1NSBD
+IFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl08L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4MDk6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4MGE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4MGI6ICsvMC8yNDAyOCAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4MGM6ICsvMzUvMTAwICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHgwZDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgwZTogKy81MC8xMDAgJm5ic3A7IFs/Pz9dPC9zcGFuPjwv
+ZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDBmOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFu
+PjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDEwOiArLzEwMC8xMDAgQyBbQnJpZ2h0bmVzc108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MTE6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MTI6ICsvNzAvMTAwIEMgW0NvbnRy
+YXN0XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxMzogKy8wLzY1NTM1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxNDogKy81LzExIEMgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MTU6ICsvMTEvMjU1ICZuYnNwOyBb
+Pz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxNjogKy81MC8xMDAgQyBbUmVk
+IG1heGltdW0gbGV2ZWxdPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDE3OiArLzAv
+NjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDE4OiAr
+LzUwLzEwMCBDIFtHcmVlbiBtYXhpbXVtIGxldmVsXTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNv
+bnRyb2wgMHgxOTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFu
+PkNvbnRyb2wgMHgxYTogKy81MC8xMDAgQyBbQmx1ZSBtYXhpbXVtIGxldmVsXTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxYjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48
+L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxYzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bh
+bj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxZDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwv
+c3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgxZTogKy8wLzIgJm5ic3A7IFs/Pz9dPC9z
+cGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDFmOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9d
+PC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDIwOiArLzAvMTAwICZuYnNwOyBbPz8/
+XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyMTogKy8wLzY1NTM1ICZuYnNwOyBb
+Pz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyMjogKy8wLzY1NTM1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyMzogKy8wLzY1NTM1ICZu
+YnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyNDogKy8wLzY1NTM1
+ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyNTogKy8wLzY1
+NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyNjogKy8w
+LzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgyNzog
+Ky8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgy
+ODogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wg
+MHgyOTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRy
+b2wgMHgyYTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNv
+bnRyb2wgMHgyYjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFu
+PkNvbnRyb2wgMHgyYzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2Pjxz
+cGFuPkNvbnRyb2wgMHgyZDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2
+PjxzcGFuPkNvbnRyb2wgMHgyZTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHgyZjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHgzMDogKy8wLzEwMCAmbmJzcDsgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzI6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzU6ICsvMC82NTUzNSAmbmJzcDsg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4MzY6ICsvMC82NTUzNSAmbmJz
+cDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Mzc6ICsvMC82NTUzNSAm
+bmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Mzg6ICsvMC82NTUz
+NSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Mzk6ICsvMC82
+NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4M2E6ICsv
+MC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4M2I6
+ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4
+M2M6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9s
+IDB4M2Q6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250
+cm9sIDB4M2U6ICsvNTAvMTAwICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNv
+bnRyb2wgMHgzZjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFu
+PkNvbnRyb2wgMHg0MDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2Pjxz
+cGFuPkNvbnRyb2wgMHg0MTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2
+PjxzcGFuPkNvbnRyb2wgMHg0MjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHg0MzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0NDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48
+L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0NTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bh
+bj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0NjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwv
+c3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0NzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/
+XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0ODogKy8wLzY1NTM1ICZuYnNwOyBb
+Pz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0OTogKy8wLzY1NTM1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0YTogKy8wLzY1NTM1ICZu
+YnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0YjogKy8wLzY1NTM1
+ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0YzogKy8wLzY1
+NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg0ZDogKy8z
+MjMwNy82NTUzNSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDRlOiAr
+LzE2Mzg0LzY1NTM1IEMgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NGY6
+ICsvMC82NTUzNSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDUwOiAr
+LzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDUx
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eDUyOiArLzAvMjU1IEMgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NTM6
+ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4
+NTQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9s
+IDB4NTU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250
+cm9sIDB4NTY6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4NTc6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4NTg6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4NTk6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4NWE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+
+PGRpdj48c3Bhbj5Db250cm9sIDB4NWI6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NWM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NWQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NWU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NWY6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NjA6ICsvMC8xOCBDIFtJbnB1dCBT
+b3VyY2UgU2VsZWN0IChNYWluKV08L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NjE6
+ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4
+NjI6ICsvMzAvMTAwIEMgW0F1ZGlvIFNwZWFrZXIgVm9sdW1lIEFkanVzdF08L3NwYW4+PC9kaXY+
+PGRpdj48c3Bhbj5Db250cm9sIDB4NjM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NjQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NjU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NjY6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Njc6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Njg6ICsvMC82NTUzNSAmbmJzcDsg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Njk6ICsvMC82NTUzNSAmbmJz
+cDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NmE6ICsvMC82NTUzNSAm
+bmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NmI6ICsvMC82NTUz
+NSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4NmM6ICsvNTAv
+MTAwICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg2ZDogKy8w
+LzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg2ZTog
+Ky81MC8xMDAgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDZm
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eDcwOiArLzUwLzEwMCAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9s
+IDB4NzE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250
+cm9sIDB4NzI6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4NzM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4NzQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4NzU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4NzY6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+
+PGRpdj48c3Bhbj5Db250cm9sIDB4Nzc6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Nzg6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Nzk6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2E6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2I6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2M6ICsvMC82NTUzNSAmbmJzcDsg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2Q6ICsvMC82NTUzNSAmbmJz
+cDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2U6ICsvMC82NTUzNSAm
+bmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4N2Y6ICsvMC82NTUz
+NSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ODA6ICsvMC82
+NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ODE6ICsv
+MC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ODI6
+ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4
+ODM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9s
+IDB4ODQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250
+cm9sIDB4ODU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4ODY6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4ODc6ICsvNTAvMTAwICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2Pjxz
+cGFuPkNvbnRyb2wgMHg4ODogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2
+PjxzcGFuPkNvbnRyb2wgMHg4OTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHg4YTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg4YjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48
+L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg4YzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bh
+bj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHg4ZDogKy8yLzEwMCBDIFs/Pz9dPC9zcGFuPjwv
+ZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDhlOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFu
+PjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDhmOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9z
+cGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDkwOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9d
+PC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDkxOiArLzAvNjU1MzUgJm5ic3A7IFs/
+Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDkyOiArLzAvNjU1MzUgJm5ic3A7
+IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDkzOiArLzAvNjU1MzUgJm5i
+c3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDk0OiArLzAvNjU1MzUg
+Jm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDk1OiArLzAvNjU1
+MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDk2OiArLzAv
+NjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDk3OiAr
+LzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweDk4
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eDk5OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJv
+bCAweDlhOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29u
+dHJvbCAweDliOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+
+Q29udHJvbCAweDljOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNw
+YW4+Q29udHJvbCAweDlkOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+
+PHNwYW4+Q29udHJvbCAweDllOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2Pjxk
+aXY+PHNwYW4+Q29udHJvbCAweDlmOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2
+PjxkaXY+PHNwYW4+Q29udHJvbCAweGEwOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwv
+ZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGExOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFu
+PjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGEyOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9z
+cGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGEzOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9d
+PC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE0OiArLzAvNjU1MzUgJm5ic3A7IFs/
+Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE1OiArLzAvNjU1MzUgJm5ic3A7
+IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE2OiArLzAvNjU1MzUgJm5i
+c3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE3OiArLzAvNjU1MzUg
+Jm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE4OiArLzAvNjU1
+MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGE5OiArLzAv
+NjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGFhOiAr
+LzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGFi
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eGFjOiArLzIzMzY0LzEgQyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhh
+ZDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wg
+MHhhZTogKy82MDAzLzAgQyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhh
+ZjogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wg
+MHhiMDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRy
+b2wgMHhiMTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNv
+bnRyb2wgMHhiMjogKy8wLzY1NTM1IEMgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250
+cm9sIDB4YjM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4YjQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4YjU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4YjY6ICsvMy81IEMgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5D
+b250cm9sIDB4Yjc6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4Yjg6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4Yjk6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4YmE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+
+PGRpdj48c3Bhbj5Db250cm9sIDB4YmI6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4YmM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4YmQ6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4YmU6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4YmY6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4YzA6ICsvMjc5OTIvNjU1MzUgQyBb
+Pz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjMTogKy8wLzY1NTM1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjMjogKy8wLzY1NTM1ICZu
+YnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjMzogKy8wLzY1NTM1
+ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjNDogKy8wLzY1
+NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjNTogKy8w
+LzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjNjog
+Ky8xMDQvNjU1MzUgQyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhjNzog
+Ky8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhj
+ODogKy81LzI1NSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGM5OiAr
+Lzc2OC82NTUzNSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGNhOiAr
+LzIvMiAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Y2I6ICsv
+MC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Y2M6
+ICsvMC8yNTUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGNk
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eGNlOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJv
+bCAweGNmOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29u
+dHJvbCAweGQwOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+
+Q29udHJvbCAweGQxOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNw
+YW4+Q29udHJvbCAweGQyOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+
+PHNwYW4+Q29udHJvbCAweGQzOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2Pjxk
+aXY+PHNwYW4+Q29udHJvbCAweGQ0OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2
+PjxkaXY+PHNwYW4+Q29udHJvbCAweGQ1OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwv
+ZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENvbnRyb2wgLSBPbl08
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZDc6ICsvMC82NTUzNSAmbmJzcDsgWz8/
+P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZDg6ICsvMC82NTUzNSAmbmJzcDsg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZDk6ICsvMC82NTUzNSAmbmJz
+cDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZGE6ICsvMC82NTUzNSAm
+bmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZGI6ICsvMC82NTUz
+NSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZGM6ICsvMC82
+NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZGQ6ICsv
+MC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZGU6
+ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4
+ZGY6ICsvNTEzLzI1NSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGUw
+OiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAw
+eGUxOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJv
+bCAweGUyOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29u
+dHJvbCAweGUzOiArLzAvNjU1MzUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+
+Q29udHJvbCAweGU0OiArLzAvMjU1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFu
+PkNvbnRyb2wgMHhlNTogKy8wLzE3OSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bh
+bj5Db250cm9sIDB4ZTY6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRpdj48
+c3Bhbj5Db250cm9sIDB4ZTc6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+PGRp
+dj48c3Bhbj5Db250cm9sIDB4ZTg6ICsvMC8yNTUgJm5ic3A7IFs/Pz9dPC9zcGFuPjwvZGl2Pjxk
+aXY+PHNwYW4+Q29udHJvbCAweGU5OiArLzIvMjU1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHhlYTogKy8wLzI1NSAmbmJzcDsgWz8/P108L3NwYW4+PC9kaXY+
+PGRpdj48c3Bhbj5Db250cm9sIDB4ZWI6ICsvMC8xICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuPkNvbnRyb2wgMHhlYzogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48L2Rp
+dj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhlZDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bhbj48
+L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhlZTogKy8wLzY1NTM1ICZuYnNwOyBbPz8/XTwvc3Bh
+bj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhlZjogKy8zLzY1NTM1ICZuYnNwOyBbPz8/XTwv
+c3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmMDogKy8wLzY1NTM1ICZuYnNwOyBbPz8/
+XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmMTogKy8wLzY1NTM1ICZuYnNwOyBb
+Pz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmMjogKy8wLzY1NTM1ICZuYnNw
+OyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmMzogKy8wLzY1NTM1ICZu
+YnNwOyBbPz8/XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmNDogKy8zMS82NTUz
+NSBDIFs/Pz9dPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGY1OiArLzEvMjU1IEMg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZjY6ICsvMC8yNTUgQyBbPz8/
+XTwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuPkNvbnRyb2wgMHhmNzogKy8yLzI1NSBDIFs/Pz9dPC9z
+cGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGY4OiArLzAvMjU1IEMgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4Zjk6ICsvNTAvMjU1IEMgWz8/P108L3NwYW4+PC9k
+aXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZmE6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3NwYW4+
+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZmI6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108L3Nw
+YW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZmM6ICsvMC82NTUzNSAmbmJzcDsgWz8/P108
+L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZmQ6ICsvMC82NTUzNSBDIFtQb3dlciBM
+RUQgLSBPZmZdPC9zcGFuPjwvZGl2PjxkaXY+PHNwYW4+Q29udHJvbCAweGZlOiArLzIvMjU1IEMg
+Wz8/P108L3NwYW4+PC9kaXY+PGRpdj48c3Bhbj5Db250cm9sIDB4ZmY6ICsvMC82NTUzNSBDIFs/
+Pz9dPC9zcGFuPjwvZGl2PjxzcGFuPjwvc3Bhbj48ZGl2IGNsYXNzPSJwcm90b25tYWlsX3NpZ25h
+dHVyZV9ibG9jayIgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgZm9udC1z
+aXplOiAxNHB4OyI+PGRpdiBjbGFzcz0icHJvdG9ubWFpbF9zaWduYXR1cmVfYmxvY2stdXNlciI+
+PGRpdiBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0
+cHg7Ij48L2Rpdj4NCiAgICA8L2Rpdj4NCiAgICANCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InBy
+b3Rvbm1haWxfc2lnbmF0dXJlX2Jsb2NrLXByb3RvbiBwcm90b25tYWlsX3NpZ25hdHVyZV9ibG9j
+ay1lbXB0eSI+DQogICAgICAgIA0KICAgICAgICAgICAgPC9kaXY+DQo8L2Rpdj4NCg==
+
+--b1=_zGZ5blhXPutjKTuwcAiSdzmQF7XL52YVvmeLqEHaeM--
+
+
+
+From frederico.sarmento@...2796... Sun Nov 17 18:14:36 2024
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=TEa7mZ19mI2zdtqCuLdbJSRp3hy0lzBlfvROgxo1AfF/0juPFc1HEmMzQdrHsqGikp4MacjBoKv/SAUJJk5c8kRXkpMAUJ91hCaj3WQIwhD94FRtj41Y8SIq0PUsa46IG5lYGi9GTdc2GAh6OcCcrjPJUrVvQUiaWXwiTNKOh5KFiqqxA+sco+GVGcD1FyYMIg5sYvVISI4lGPSN3PlW+E8cObPqhNCDtOc9Cf5rwMxcqoU9eTNj4fFLYSJw3BsyLuas6jtE9EwMMlTroKnMabnMK3ANR5I9WEcWVKK0V3QQifDDd0jnYoxoFVNH79B2GrDbJKzfmOEwB09UDejzsA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=RP/pusHMP2E/MCnUt5C+KxjIxUTjKE/HPlz68drsIHo=;
+ b=pwqotTbjI5C/K29gtTjngyiyCy//NbfEDsXMJ6Ixrkr6yMMaC/jJizJk3to/zspLAu2NM15xGULBoLia9lwpcptsqjt13G55MJCnoyy9WFu8GweXjMkbw9JooVqSIA0NVUkH+wdk6ZQUu0wAaoQQgwrxdethPvk7Xl/D3DGVmboiDfiWFchcbIAaYKdl4NCxN+UgTLtvdrXHo4U3vHYnamSh66IVpuGbuAcxvBI5B+0jsPlQwJRa61Vg3psJ9neL7enVB4GyaRVzFH5CkSBweJi2T0jFk1msqI2HSBs9aoYz7YVN8bfmKEo2DgunWqwkwE3b0vmq+9IvK7vq5y4ptw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+Message-ID: <SA1P221MB1448922620EAB06052DBF34A88262@...3027...>
+Date: Sun, 17 Nov 2024 15:14:25 -0300
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: ddccontrol-users@lists.sourceforge.net
+From: Frederico Sarmento <frederico.sarmento@...2796...>
+X-ClientProxiedBy: CP5P284CA0069.BRAP284.PROD.OUTLOOK.COM
+ (2603:10d6:103:97::20) To SA1P221MB1448.NAMP221.PROD.OUTLOOK.COM
+ (2603:10b6:806:3df::19)
+X-Microsoft-Original-Message-ID: <788ed8c0-febb-4346-8253-a4534851a013@...2796...>
+MIME-Version: 1.0
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SA1P221MB1448:EE_|SN7P221MB0989:EE_
+X-MS-Office365-Filtering-Correlation-Id: c36847a1-f92b-40c8-70ed-08dd0733acfc
+X-Microsoft-Antispam: BCL:0;
+ ARA:14566002|5072599009|6090799003|7092599003|15080799006|19110799003|8060799006|5062599005|461199028|3412199025|440099028;
+X-Microsoft-Antispam-Message-Info: =?utf-8?B?cEM4aEM3MHIxQWJhSTFIZzhJYk5MbisydWZqWi9Oa3BUUWxLczZZUkdCMUFr?=
+ =?utf-8?B?Q0g2cE1NQlBqRHNMVFJjVU9XVXJVZWFYVWNWZDlqeng1SlpkSlJZSXVxaitH?=
+ =?utf-8?B?eDVFUFRVWFlQSExXaWFoQkN6Y09sRksrWVYyR0tvTWxKSEpmWEgyRERoZzYv?=
+ =?utf-8?B?QnFIN0VGbnp2MWE5dUVISS9LQTRQSUVOelZqcExNWlBZSmcwcmluQlkzZlkz?=
+ =?utf-8?B?V3F5amdaL05pWmNEYVIxV3J6WHN1c1o4K3ltRUZDUjJpaWNDQ0oraDNkam1N?=
+ =?utf-8?B?TnJlVUFMWHlQamFSQ1VWTTJmVUpQYzlLREJVMnVnb3Y2a1dVaHJjMERZQXlm?=
+ =?utf-8?B?a3JFTFU4cXBPZ2d2ZHZLS2pTNVpxbE9ESndFVlRRWEpYem5VRjZoRENGelpv?=
+ =?utf-8?B?N2dRKzJsNTcva0VLOW1UN3lYZG5sdjJmbThaSGJqdGtNTjdYVXVONlduSGk5?=
+ =?utf-8?B?RlhPQ1F4NkUwaVFUK1VUb0NoYmwyWE44QmYwalQ2THRJRE05VEo0ZkNKVFM2?=
+ =?utf-8?B?SmVFMUJPWGxhV0dYMlh1TDBrTHFSNXBKNW9lRjlJNk1wYlY1MWNIb1EvODV2?=
+ =?utf-8?B?dWNaTFV5a1Ftd0Ztd0llNW4yU2dsbjJIS2JkY2g3aS9pOG16SkpwRlo4cFor?=
+ =?utf-8?B?V0FUMkRpSWFid2FHSnh6ZjV3YjZDL0ZNZDd6UTl3M1BHQWk4OC8rMVZIT1gv?=
+ =?utf-8?B?NjJTVGFzenU4OUF2RzY5a0J0MkxiRW9HK3RmR0FNaXp5Tlo0Q1dDS1VIcmdZ?=
+ =?utf-8?B?dDZaTHRESTZYZkZqSnpSTFJpWlZuVERqcDFlMmwzOHh5NlJCSFpaaHFIdVAx?=
+ =?utf-8?B?RnRreWpqelh6c1FrYXBTTVhIbDd5bEt6bEtDR2ZEaW5JdllKVmovcXdpRG9O?=
+ =?utf-8?B?YWg0QTJKZjdJbENRTGw0UEVCbG1VMk5raVVKZFdkRllST29acmpQQmdZcHl4?=
+ =?utf-8?B?VmVqMlJNTi9HajJ0QnJObjFEVjVELzVDUHptV2xGTGZMRWQ3K3NTc1RYM0JV?=
+ =?utf-8?B?TjJGQVVuWGd6N0xWNXRqeHNLbmdjSmU2Q2dqWVBURk1kVlRRRVJ6bDlxZm1o?=
+ =?utf-8?B?M2lWSzNBYzJOc3dXMlZwbzR6eXhNNVV3M2w4MXVJZmJRbXh6WC9WMVRINEUz?=
+ =?utf-8?B?TVdsWnVpckF5STd5eHE0d0RFUHJCdVgyaElyN0lTOTRVbzhDc3QvYU5kM001?=
+ =?utf-8?B?eHF4NUF1dzgzVnA3anZKdy9uTk9WQVhJYkE0OVhNSGNrZnZuT0R0eXFHeWJp?=
+ =?utf-8?B?YlNBVVp5eVF2dUI0cDRNelZJT2p5cVVYRGJmbWNsdWx2NkNWTmtsOWFDeGlH?=
+ =?utf-8?B?Z2NNbi9CNEluSExkQzA4UnkyMk1sTUlvRWh0ci83c0k4VHJDbzFPTjRZRDU3?=
+ =?utf-8?B?UWJtelhEOHVuMHZDK3BTVXVRRWVLQUl2UWdOOWJlZm5VTmNjMEp4UTNWK2ZD?=
+ =?utf-8?B?d2ZtbjV4YlhjU3NsTE93UFlBemtWakI0OEN6Q3NtMnN4VWdXTDJwY1dIRGMr?=
+ =?utf-8?Q?jVpvFM=3D?=
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: =?utf-8?B?M09RZ2tZcS8yM0ZqRFFSSFBSQUs0STVtTmxLTk50WTRQenN5Wm04dU45dkw3?=
+ =?utf-8?B?OFhMb3o0cERVeHl1SGxvR25RMXZYZ3Z1NlVkaktObmY4N0t6Y3R6dTJoY3lY?=
+ =?utf-8?B?U0FidzUwVEY1VUVVUis4bmpUbjhMay9tY2pqZmI4MnpPUmpxSXMraDNjOFAv?=
+ =?utf-8?B?dGtoTTNGYmFXZDZRQi9SUXZDZmdTOVNuRGE1S3RBakpFdVE4TzA0MTB4UEZM?=
+ =?utf-8?B?dmd0Q1RnMWl5dmN4cUdlSjFKRVU5NE9ROUlmMk5XSGhPMSt5TzdqSlZuTmN5?=
+ =?utf-8?B?Nlg0Mk5xQ3lscjJJR3F6czI5aFdvckxtRXNtR2QvQ2xOd2dqaThqSGhDdElW?=
+ =?utf-8?B?dHJyMjB6dzk1SCs0MGVVQ2ZmaFJ4WVJKQWxlQTM3Z00vYlB1a1hMVmhvcmJo?=
+ =?utf-8?B?OU5XNG1ZSkY3NlFUS05KRmZwL2ZJSHhtYjZLMWdVL2VEdTJuaTNKN1ZCZDJC?=
+ =?utf-8?B?Nzl0TkZIMVVZd0ZFWVVYUS9IT3IydExlRTBWL2lEbFpLekEzN0tGdGI2Tjky?=
+ =?utf-8?B?MVpFQWpEdER2NitrOWNxZjlOL3dzWmR1b1oxZ01Nb01BOVJGdlBqK1Z0RDJP?=
+ =?utf-8?B?cWQxU29IaWU5NVBlMFpNNEZKNjZsNEtWWGhuKy9HNDRHYUxNWEs1aGxMeGZ0?=
+ =?utf-8?B?RlFsT3BEV1VtRkJ0ZnZvN3pLNSt4Mk5ha0lYZzJBQ3hubHRCWmpGOCtlS0ZJ?=
+ =?utf-8?B?SEQrallRQ3luRkpaK3ZEdnlKcno5aDZuS0hGQWJidTdraVRPMjc1eUs3WlVW?=
+ =?utf-8?B?bWZkL0ZtU2o5SFVWbFRYOVZETWo1c0xSOEVPOVZML1ZnZno1MDNsbWZwNk56?=
+ =?utf-8?B?NGlZdWFCam9Yc01JNlFuNlRsUElGVzh3U2Rta0MvTEl5VzZOY0VhZzQ0VkxY?=
+ =?utf-8?B?NGthNnlXUWcrMjJoWEFUTTZ6eVo5ak8yemxNRngxNi9DT1d6SUxpc1FSc2xs?=
+ =?utf-8?B?aFJQWUl6RHpXZmVEUlR5MHU5MEYrc3d3SnRBODBlUXRjcnVnNllNR1hRTGdX?=
+ =?utf-8?B?dkI4bDRIUEZCUlRSckZVb2lRcUtRVFZ2YTJta0NleUhaNy9mTFF2MnhqZys5?=
+ =?utf-8?B?b0RBSXE1YVVXRFNZZnNkU1Y4RWZCVTlmUWpLMmlkQS9GK2NjUmZGMnUxWk1n?=
+ =?utf-8?B?a3IyRXlpYnhlRUV4Sm9PWTgrWWxtc3JBaDljeisvZlRPbUd3YkcwLzNnSFFP?=
+ =?utf-8?B?NEdsYUlySUVGSUsvNERTeGNmNktZc3BSczJCUjQrVExxQ2phdDM0T01iNDcr?=
+ =?utf-8?B?Tk04OVJWdGcyZ0JqaHlFYk94eHVYNDdtUnBvTU42SGRVSDJYbjlhelFiQXcy?=
+ =?utf-8?B?T011TW9nTVh5SDlkRFV4aVY4SUtUS2dmMmdnbXB2dm95Y2liSWhyWG5EZ2xV?=
+ =?utf-8?B?cU91ZTdrVGZOdldabnUzSjFIUG5HN1lSS0RkU3J5SVdnaUpTd3FiUEcwaWhL?=
+ =?utf-8?B?VmsyRHpTTnhUWWo5WmN2NEZrL2ZhNUdJVlhJa2RMMkV0N2lxRC92YlJMZE41?=
+ =?utf-8?B?d05KUm5XRWUrMDYrVk5tT3JVdGc3UFZoUUUrbHordzJINENETEJacGhqTkto?=
+ =?utf-8?B?SUJ0ZGQ2L3lDZi9yVmxSRnlQYllCd2tmemhHQlZIMzRNNUlLOXNBQmhQbXFD?=
+ =?utf-8?B?bkJaaXd6R3JXWFA3eVNVcks2RTRldzRzRlgrYkJRZHR4SXZvTWd1VUFqKzJp?=
+ =?utf-8?Q?sQUgHLvfTizllqhCLx47?=
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: c36847a1-f92b-40c8-70ed-08dd0733acfc
+X-MS-Exchange-CrossTenant-AuthSource: SA1P221MB1448.NAMP221.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Nov 2024 18:14:28.8716 (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7P221MB0989
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  frederico@...3026...:~$ LANG= LC_ALL= ddccontrol -p -c -d
+ ddccontrol version 1.0.3 Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+ Copyright 2004-2006 Nicolas Boichat (nicolas@...3...) This [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [frederico.sarmento[at]outlook.com]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [40.92.41.24 listed in bl.score.senderscore.com]
+ 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [40.92.41.24 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [40.92.41.24 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [40.92.41.24 listed in list.dnswl.org]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1tCjn9-0006BU-Kr
+X-Mailman-Approved-At: Mon, 18 Nov 2024 11:43:43 +0000
+Subject: [ddccontrol-users] Command's Output
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 17 Nov 2024 18:14:36 -0000
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+frederico@...3026...:~$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU 
+General Public License.
+
+Detected monitors :
+  - Device: dev:/dev/i2c-6
+    DDC/CI supported: Yes
+    Monitor Name: VESA standard monitor
+    Input type: Digital
+   (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+
+
+
+From pavol@...3028... Fri Nov 22 15:40:44 2024
+X-Authenticated-Sender: pavol@...3028...
+Message-ID: <c9a4d5d8-f692-4a65-b196-a1465628a6df@...3028...>
+Date: Fri, 22 Nov 2024 16:21:08 +0100
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: ddccontrol-users@lists.sourceforge.net
+From: Pavol Tuka <pavol@...3028...>
+X-Out-Spamd-Result: default: False [-0.09 / 1000.00];
+ MIME_GOOD(-0.10)[text/plain]; XM_UA_NO_VERSION(0.01)[];
+ MID_RHS_MATCH_FROM(0.00)[]; HAS_X_AS(0.00)[];
+ RCVD_COUNT_ZERO(0.00)[0];
+ ASN(0.00)[asn:35328, ipnet:80.87.208.0/21, country:SK];
+ ARC_NA(0.00)[]; MIME_TRACE(0.00)[0:+];
+ GENERIC_REPUTATION(0.00)[-0.49909759717587];
+ TO_MATCH_ENVRCPT_ALL(0.00)[]; FROM_HAS_DN(0.00)[];
+ FUZZY_BLOCKED(0.00)[rspamd.com]; FROM_EQ_ENVFROM(0.00)[];
+ TO_DN_NONE(0.00)[]; RCPT_COUNT_ONE(0.00)[1]
+X-Out-Rspamd-Server: m1-rspamd-out-6
+X-Rspamd-Action: no action
+X-Out-Rspamd-Queue-Id: 4XvzMT0VHBz1Qn3
+X-Spam-Score: 5.0 (+++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: $ LANG= LC_ALL= ddccontrol -p -c -d ddccontrol version 1.0.3
+ Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...) Copyright 2004-2006
+ Nicolas Boichat (nicolas@...3...) This program comes with ABSO [...]
+ Content analysis details:   (5.0 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+ The query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [45.13.137.16 listed in sa-accredit.habeas.com]
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [45.13.137.16 listed in dnsbl-1.uceprotect.net]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [45.13.137.16 listed in bl.score.senderscore.com]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+X-Headers-End: 1tEVlz-00065D-06
+X-Mailman-Approved-At: Thu, 05 Dec 2024 08:24:52 +0000
+Subject: [ddccontrol-users] Unsupported monitor, but generic works
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 22 Nov 2024 15:40:44 -0000
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU 
+General Public License.
+
+Detected monitors :
+  - Device: dev:/dev/i2c-0
+    DDC/CI supported: Yes
+    Monitor Name: VESA standard monitor
+    Input type: Digital
+   (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-0...
+I/O warning : failed to load external entity 
+"/usr/share/ddccontrol-db/monitor/IVM664E.xml"
+Document not parsed successfully.
+
+EDID readings:
+     Plug and Play ID: IVM664E [VESA standard monitor]
+     Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/2100/65535   [???]
+Control 0x0c: +/11/11   [???]
+Control 0x10: +/40/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/15/20 C [Input Source Select (Main)]
+Control 0x62: +/50/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/50/100   [???]
+Control 0x6e: +/50/100   [???]
+Control 0x70: +/50/100   [???]
+Control 0x87: +/2/5   [???]
+Control 0x8a: +/50/100   [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xa8: +/1/3   [???]
+Control 0xac: +/2228/2 C [???]
+Control 0xae: +/6000/65535 C [???]
+Control 0xb0: +/1/2   [???]
+Control 0xb2: +/1/8 C [???]
+Control 0xb5: +/0/1   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc6: +/131/255 C [???]
+Control 0xc8: +/5/65302 C [???]
+Control 0xc9: +/0/0   [???]
+Control 0xcc: +/2/49 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdf: +/514/65535 C [???]
+Control 0xe2: +/0/3   [???]
+Control 0xe4: +/0/1   [???]
+Control 0xe6: +/0/4   [???]
+
+
+From anfer@...2710... Sat Nov 23 11:40:05 2024
+Date: Sat, 23 Nov 2024 11:39:51 +0000
+To: "ddccontrol-users@lists.sourceforge.net"
+ <ddccontrol-users@lists.sourceforge.net>
+From: Angel <anfer@...2710...>
+Message-ID: <5A9-_4NnOwu_SR9HEXEXRcourLNLRd76zWNXAxS5Py-PrfajIdXYKmU6DvMojEn71AvZ63vqkLVrzAShue_kUVJWDbkgzPjhMl9oc10YdpU=@protonmail.com>
+Feedback-ID: 1368180:user:proton
+X-Pm-Message-ID: c60739d89a67c5bf259250e4e08a568bbfdabffc
+MIME-Version: 1.0
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: $ LANG= LC_ALL= ddccontrol -p -c -d ddccontrol version 1.0.3
+ Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...) Copyright 2004-2006
+ Nicolas Boichat (nicolas@...3...) This program comes with ABSO [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [185.70.43.19 listed in bl.score.senderscore.com]
+ 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [185.70.43.19 listed in sa-accredit.habeas.com]
+ 0.0 RCVD_IN_MSPIKE_H4      RBL: Very Good reputation (+4)
+ [185.70.43.19 listed in wl.mailspike.net]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [anfer[at]protonmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+X-Headers-End: 1tEoUd-0007zd-Pv
+X-Mailman-Approved-At: Thu, 05 Dec 2024 08:24:52 +0000
+Subject: [ddccontrol-users] Output of the "$ LANG= LC_ALL= ddccontrol -p -c
+ -d" command
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 23 Nov 2024 11:40:05 -0000
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+$ LANG=3D LC_ALL=3D ddccontrol -p -c -d
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU Gene=
+ral Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: AOC standard LCD
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/moni=
+tor/AOC2460.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: AOC2460 [AOC standard LCD]
+	Input type: Analog
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG=3D LC_ALL=3D ddccontrol -p -c -d
+
+Thank you.
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/255 C [New Control Value - Some values changed]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/50/65535 C [???]
+Control 0x0c: +/70/126 C [???]
+Control 0x10: +/40/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [Color Preset - Warm]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x52: +/0/255   [???]
+Control 0x60: +/4/3 C [Input Source Select (Main)]
+Control 0x62: +/100/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Control 0x8d: +/2/2 C [???]
+Control 0xac: +/27128/65282 C [???]
+Control 0xae: +/14390/65535 C [???]
+Control 0xb2: +/1/8   [???]
+Control 0xb6: +/3/4 C [???]
+Control 0xc0: +/29224/65535 C [???]
+Control 0xc6: +/111/65535 C [???]
+Control 0xc8: +/18/65535 C [???]
+Control 0xc9: +/21/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/10/255 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdc: +/4/8   [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xf8: +/0/255   [???]
+Control 0xfe: +/0/255   [???]
+Control 0xff: +/0/1 C [???]
+
+
+
+From krollpeter@...152... Sat Nov 30 13:55:44 2024
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;
+ t=1732974937; bh=MTWQTTsb23UvAQwDkxeyURPYl/XSEnm8JLefw7SHtsW=;
+ h=X-Sonic-MF:Date:To:From:Subject:From:Subject;
+ b=qUGqrr3SD7lZJwEN50bg9Ozx6i+X8dTfp98BYtPZu6DO8fnjBwOPPzXBDJRoLkoBNad11/OSLzA/QiV5DfHam1nXXpKsN8VxYr/Lai+uDasKXg2uTJoPdKsXe9lKZ1VW0LJgN9yY8Dvc4liVcUBJn/s4aHO3inhSSIr2llvBLGHchCHMCNzMNIXMWbCJAo9PhO+F/fD6vdIY0o62DKqOTd4nbLDGMjfalHVGyyiCkKYNMMMA5I9Sy7hE392xXN6f3s72lG0v7CKwziqJjNP93L1qeflPS70LWxnB4746tRDtaT55WOpGcZIVjdOt/lfv/7AXJcSOpBFb+mTipAMOOg==
+X-YMail-OSG: Pj6uKocVM1lT5sFxg.2R_YrJxoVRGkUH1KYc1rH51Ffu9EqAXNtLwLnh7Y3WF5S
+ hf1J1BkH_wZRUrpOIY66hkJS67vVaP3vD.cRUx_VDz9p9IKGrUwdZrhYlzCyvciQyB1g89LaXqOH
+ SRQod3Wyrnz_ZeBYRyCPKFBEwJcSasklty4F0cuJS4esL2L89QgJUdyFqnyelUSbbrphoWGNZfDO
+ Zh3h.ZYKEq0wfbRIhitCqRBXg8bjvHPF3.yAZsUsocWHcvfSpd_n6dpOAO4Wkv8jB9UXwr1m_Caq
+ TMLOEiRgD0b.7ywSZkfhx1GQ.0TifxIRv.c_eP8O_1yRvxBRHbmb67ax5IevJYnQ.oE8wG6l9DfO
+ t1.ARMR_nwTptwsTk1Zt1HwQD8lkRYE0FXDuyfZ_thkVwTMW_62wfDexq1cSFHXVYN7tzrunYcTq
+ wAww82f_xibLb4fjDyDxDls_fKzPt8xeHh6fdTFnuCXukxRKjTVG11wmLgePZxk4IJ75GWCfbJLV
+ puwmkdHpHFiqK9QPZx9Wgv0A7QYXscmHNrOGHV0ezxEjzrBKPNrQpB9w0J7MEfA_zNhJt8YVebuB
+ KpIrIlyqZwa_acIrLHWEoUVVcsOIkVE9oLUE4neE713t4xGwDwQCrBAVTxPucI7_FITcTr2a5miT
+ CEVxYRZkMUEhz98ZPcJEoXJvjc9NIM05xdLF3dJBdt6pi9EhlEaUaEcqwb805e26awMFcssqSPDo
+ bxKIuNRupUo_pSjR4VjGCqA47XHEtwqiOXKLzLFOy.rI5ZshqdaTP9DVocBgd3XXl3KGtXDww.RI
+ 8hdER8XzE7e9PSGZLKoySjcKRMDxpVhQQGALcgeIYSasJH7cUnN5NxtItYW6XjMs.GfZqUksNNlL
+ BJa0KBOB.z93gLVG9jyTUsa.Zle4XoOTDVNC61hV88YoNk._ogcYzP1Y_rQ.o04SJvaPCstELCdT
+ hT4h6pGXR9aMNo_NRwlExznQ5W_RyMTjYb_fEfht2eRWML8Cv8.Vm7RY2EVZgYqeFm2ZIMqvQVqv
+ luMUET2VdK7pg7Kzk1dIGMpfQqff0WlwcyVqtyEwdsGFg9VjcHruz3thzD7T9kiMQCGwdLmiWEHB
+ ag5cWSFc_H1htVF37tCG6D5iyYNzwM8L6ww2k7WYWiI55LqVjU6f2LTxb_xF6newLCYGsQroSxH8
+ .SuLUJhbAPsG2tAh5m9XuW.Ce94T0_D2BQXgAwZ3CA55kUODHH8wY7FKzNNsHz4GWWikVML1_ldw
+ eqrFM9m40abuyfG7uOW1uiiGBiKWqucBesWLKeAYfV_AF_vqQs45kCKwI6qtq30K67a5bwE9Zkut
+ 8g3RFC8gIVeUWAhmV83ywNxeFgpsgstDTH_z4ZXaoDJOTg93MVoodujBNkg73x3iFQJgGD6rWYex
+ aYIP.fE_0GAkVpXyf7cS3fFbpPz8.UkBvwT4_D0c9y_RkTMmTDkAz10PB700ehJD4wxgbuhjIEk6
+ iBolVmLX4ENT7LTDeK6n52YhOnf3o3IkSavdP8ryKNrdIIcY1riS44N2_KRiK5m4zP5k.geqs1tP
+ h7ewky_2TJNKVet53hu35RkTjAnPA4Iqtn0YZD5LNYJXWep7r1rT3ElkGAtvJzUUB2MIb8qXv72E
+ Hbjh.DhI.2_3x2qdYPXOOKELu5JMDK754DSbz3TbD5q_V8a2xPYS3eAcGZ5e9gCKoEhdlipaqKVN
+ V7xp70W6W2twWb0mCP_8zb.7yEuBvSJtLLtr61eLFTqSwzVKn6kNIzPXOgYpRdLUy3vKCGPYHnXP
+ z1eYudlle_7W4MDXOHZsquViKqmHkeiMwgAbVLR80xrOkUZYY4wdIMty1eB1aAgcSQTr3f.VerBH
+ sJuvpNy3LDbpl2xsa8DMAOuZYpRSSOXXkweX52sixUa6nEt8vbDCtuyLgVo7_zNgzrmEnCLQrsH.
+ d.1pzT4vyCaScmTn8PoSXL9WB2g7Bw1Ajeq61kiWlo0jj7iSJFFs4o2LxP1rDsxRWM1Ur9b.xiGk
+ uBLLr4ghefE0xDB7rYnUfVi7X1XDA5b0uXOtes4lMyncdP7hGCv2sPL8_4e37in.RjytnGECZ1o9
+ E8zN4wfIiK1e.lpjhzM3uH4d9_CaYGYU6OTWu7nkH49K6p_W0DeUpeNxZ8_649Jvd2ORdpW3rsnX
+ TYZ3vd2vUvu6hZgtIK9orivwc716fOMkU4Q7UXtH1HcuI_OcXsuHZwGoyJFl7kJRbJAcHIa47OdG
+ oyX8opsunO7q5ngIPtnEtMNarkg48NbITUJghyWGdfdIo1XJrXh83bjqaYwrVjT8-
+X-Sonic-MF: <krollpeter@...152...>
+X-Sonic-ID: 95fd4f99-bb02-4dbf-85d3-4256eed6130d
+Content-Type: multipart/alternative;
+ boundary="------------SVcxVDXBaEQkCuZ0sKQQQKri"
+Message-ID: <aba14e7f-1c63-46e0-9fe3-e41177510c05@...152...>
+Date: Sat, 30 Nov 2024 21:45:17 +0800
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-GB
+To: ddccontrol-users@lists.sourceforge.net
+From: Peter Kroll <krollpeter@...152...>
+References: <aba14e7f-1c63-46e0-9fe3-e41177510c05.ref@...152...>
+X-Mailer: WebService/1.1.22876
+ mail.backend.jedi.jws.acl:role.jedi.acl.token.atz.jws.hermes.yahoo
+X-Spam-Score: -1.1 (-)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  peter@...3029...:~$ LANG= LC_ALL= ddccontrol
+ -p -c -d ddccontrol version 1.0.3 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...)
+ Copyright 2004-2006 Nicolas Boichat (nicolas@...3030... [...]
+ Content analysis details:   (-1.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [66.163.184.43 listed in bl.score.senderscore.com]
+ 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+ The query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [66.163.184.43 listed in sa-accredit.habeas.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [66.163.184.43 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [krollpeter[at]yahoo.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.9 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [66.163.184.43 listed in wl.mailspike.net]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+X-Headers-End: 1tHNwk-0006P2-PS
+X-Mailman-Approved-At: Thu, 05 Dec 2024 08:24:52 +0000
+Subject: [ddccontrol-users] Unsupported Monitor
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 30 Nov 2024 13:55:44 -0000
+
+This is a multi-part message in MIME format.
+--------------SVcxVDXBaEQkCuZ0sKQQQKri
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+peter@...3029...:~$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU 
+General Public License.
+
+Detected monitors :
+  - Device: dev:/dev/i2c-5
+    DDC/CI supported: Yes
+    Monitor Name: VESA standard monitor
+    Input type: Digital
+   (Automatically selected)
+  - Device: dev:/dev/i2c-7
+    DDC/CI supported: No
+    Monitor Name: VESA standard monitor
+    Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-5...
+I/O warning : failed to load external entity 
+"/usr/share/ddccontrol-db/monitor/DELA0DC.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity 
+"/usr/share/ddccontrol-db/monitor/DELlcd.xml"
+Document not parsed successfully.
+
+EDID readings:
+     Plug and Play ID: DELA0DC [VESA standard monitor]
+     Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/2/255   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/50/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/12/12 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/98/100 C [Green maximum level]
+Control 0x1a: +/93/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/242/100   [???]
+Control 0x30: +/38/100   [???]
+Control 0x3e: +/0/100   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/4369/14 C [Input Source Select (Main)]
+Control 0x6c: +/128/255   [???]
+Control 0x6e: +/128/255   [???]
+Control 0x70: +/128/255   [???]
+Control 0xa8: +/0/3   [???]
+Control 0xaa: +/1/255 C [OSD Orientation - Landscape]
+Control 0xac: +/1664/1 C [???]
+Control 0xae: +/5970/0 C [???]
+Control 0xb2: +/1/8 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/13633/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc8: +/22021/0 C [???]
+Control 0xc9: +/258/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xd6: +/1/255 C [DPMS Control - On]
+Control 0xdc: +/0/255 C [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe2: +/20/255 C [???]
+Control 0xe3: +/0/1   [???]
+Control 0xf0: +/0/255 C [???]
+Control 0xf1: +/3/255 C [???]
+Control 0xf2: +/0/255 C [???]
+Control 0xfa: +/0/65535   [???]
+Control 0xfb: +/1/1   [???]
+Control 0xfc: +/158/255   [???]
+Control 0xfd: +/98/65535 C [???]
+Control 0xff: +/0/65535   [???]
+peter@...3029...:~$
+
+--------------SVcxVDXBaEQkCuZ0sKQQQKri
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html data-lt-installed="true">
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="padding-bottom: 1px;">
+    <p>peter@...3029...:~$ LANG= LC_ALL= ddccontrol -p -c
+      -d<br>
+      ddccontrol version 1.0.3<br>
+      Copyright 2004-2005 Oleg I. Vdovikin (<a class="moz-txt-link-abbreviated" href="mailto:oleg@...13...">oleg@...13...</a>)<br>
+      Copyright 2004-2006 Nicolas Boichat (<a class="moz-txt-link-abbreviated" href="mailto:nicolas@...3...">nicolas@...3...</a>)<br>
+      This program comes with ABSOLUTELY NO WARRANTY.<br>
+      You may redistribute copies of this program under the terms of the
+      GNU General Public License.<br>
+      <br>
+      Detected monitors :<br>
+       - Device: dev:/dev/i2c-5<br>
+         DDC/CI supported: Yes<br>
+         Monitor Name: VESA standard monitor<br>
+         Input type: Digital<br>
+        (Automatically selected)<br>
+       - Device: dev:/dev/i2c-7<br>
+         DDC/CI supported: No<br>
+         Monitor Name: VESA standard monitor<br>
+         Input type: Digital<br>
+      Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-5...<br>
+      I/O warning : failed to load external entity
+      "/usr/share/ddccontrol-db/monitor/DELA0DC.xml"<br>
+      Document not parsed successfully.<br>
+      I/O warning : failed to load external entity
+      "/usr/share/ddccontrol-db/monitor/DELlcd.xml"<br>
+      Document not parsed successfully.<br>
+      <br>
+      EDID readings:<br>
+          Plug and Play ID: DELA0DC [VESA standard monitor]<br>
+          Input type: Analog<br>
+      =============================== WARNING
+      ===============================<br>
+      There is no support for your monitor in the database, but
+      ddccontrol is<br>
+      using a basic generic profile. Many controls will not be
+      supported, and<br>
+      some controls may not work as expected.<br>
+      Please update ddccontrol-db, or, if you are already using the
+      latest<br>
+      version, please send the output of the following command to<br>
+      <a class="moz-txt-link-abbreviated" href="mailto:ddccontrol-users@lists.sourceforge.net">ddccontrol-users@lists.sourceforge.net</a>:<br>
+      <br>
+      LANG= LC_ALL= ddccontrol -p -c -d<br>
+      <br>
+      Thank you.<br>
+      =============================== WARNING
+      ===============================<br>
+      <br>
+      Capabilities:<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      ioctl(): Inappropriate ioctl for device<br>
+      ioctl returned -1<br>
+      Capabilities read fail.<br>
+      <br>
+      Controls (valid/current/max) [Description - Value name]:<br>
+      Control 0x02: +/1/2 C [New Control Value - No changes]<br>
+      Control 0x04: +/0/255 C [Restore Factory Defaults]<br>
+      Control 0x05: +/0/1 C [Restore Brightness and Contrast]<br>
+      Control 0x06: +/0/255   [???]<br>
+      Control 0x08: +/0/255 C [Restore Factory Default Color]<br>
+      Control 0x0b: +/0/24028   [???]<br>
+      Control 0x0c: +/2/255   [???]<br>
+      Control 0x0e: +/50/100   [???]<br>
+      Control 0x10: +/50/100 C [Brightness]<br>
+      Control 0x12: +/70/100 C [Contrast]<br>
+      Control 0x14: +/12/12 C [???]<br>
+      Control 0x16: +/100/100 C [Red maximum level]<br>
+      Control 0x18: +/98/100 C [Green maximum level]<br>
+      Control 0x1a: +/93/100 C [Blue maximum level]<br>
+      Control 0x1e: +/0/2   [???]<br>
+      Control 0x20: +/242/100   [???]<br>
+      Control 0x30: +/38/100   [???]<br>
+      Control 0x3e: +/0/100   [???]<br>
+      Control 0x52: +/0/255 C [???]<br>
+      Control 0x60: +/4369/14 C [Input Source Select (Main)]<br>
+      Control 0x6c: +/128/255   [???]<br>
+      Control 0x6e: +/128/255   [???]<br>
+      Control 0x70: +/128/255   [???]<br>
+      Control 0xa8: +/0/3   [???]<br>
+      Control 0xaa: +/1/255 C [OSD Orientation - Landscape]<br>
+      Control 0xac: +/1664/1 C [???]<br>
+      Control 0xae: +/5970/0 C [???]<br>
+      Control 0xb2: +/1/8 C [???]<br>
+      Control 0xb4: +/1/2   [???]<br>
+      Control 0xb6: +/3/5 C [???]<br>
+      Control 0xc0: +/13633/65535   [???]<br>
+      Control 0xc6: +/17868/65535 C [???]<br>
+      Control 0xc8: +/22021/0 C [???]<br>
+      Control 0xc9: +/258/65535 C [???]<br>
+      Control 0xca: +/2/2   [???]<br>
+      Control 0xd6: +/1/255 C [DPMS Control - On]<br>
+      Control 0xdc: +/0/255 C [???]<br>
+      Control 0xdf: +/513/65535 C [???]<br>
+      Control 0xe0: +/0/1 C [???]<br>
+      Control 0xe1: +/0/1 C [Power control - Off]<br>
+      Control 0xe2: +/20/255 C [???]<br>
+      Control 0xe3: +/0/1   [???]<br>
+      Control 0xf0: +/0/255 C [???]<br>
+      Control 0xf1: +/3/255 C [???]<br>
+      Control 0xf2: +/0/255 C [???]<br>
+      Control 0xfa: +/0/65535   [???]<br>
+      Control 0xfb: +/1/1   [???]<br>
+      Control 0xfc: +/158/255   [???]<br>
+      Control 0xfd: +/98/65535 C [???]<br>
+      Control 0xff: +/0/65535   [???]<br>
+      peter@...3029...:~$ <br>
+      <br>
+    </p>
+  </body>
+  <lt-container></lt-container>
+</html>
+
+--------------SVcxVDXBaEQkCuZ0sKQQQKri--
+
+

@@ -1,0 +1,3644 @@
+From sedrubal@...2806... Wed Oct 06 08:36:39 2021
+X-Virus-Scanned: amavisd-new at heinlein-support.de
+From: Sedrubal <sedrubal@...2806...>
+To: ddccontrol-users@lists.sourceforge.net
+Date: Wed, 06 Oct 2021 10:17:38 +0200
+Message-ID: <2451959.5YiUGNTS2t@...2807...>
+MIME-Version: 1.0
+X-Rspamd-Queue-Id: 20BE0271
+X-Spam-Score: -0.7 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hi, as ddccontrol directed me: Here is the output of LANG=
+ LC_ALL= ddccontrol -p -c -d for the monitor ACR0678 connected to a Thinkpad
+ P70 via Display Port. Changing brightness, contrast, minimum and maximum
+ color levels already works as expected.
+ Content analysis details:   (-0.7 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.7 RCVD_IN_DNSWL_LOW      RBL: Sender listed at https://www.dnswl.org/,
+ low trust [80.241.56.151 listed in list.dnswl.org]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [80.241.56.151 listed in wl.mailspike.net]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+X-Headers-End: 1mY2Pj-008I1o-EC
+X-Mailman-Approved-At: Wed, 06 Oct 2021 08:37:04 +0000
+Subject: [ddccontrol-users] Unknown Monitor ACR0678
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 06 Oct 2021 08:36:39 -0000
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+as ddccontrol directed me: Here is the output of LANG= LC_ALL= ddccontrol -p -c -d for the monitor ACR0678 connected to a Thinkpad P70 via Display Port.
+
+Changing brightness, contrast, minimum and maximum color levels already works as expected.
+
+Best regards,
+
+Sedrubal
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [New Control Value - Some values changed]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x08: +/1/1 C [Restore Factory Default Color - Restore Factory Default Color]
+Control 0x0b: +/100/0 C [???]
+Control 0x0c: +/65506/63 C [???]
+Control 0x10: +/10/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x52: +/2/255 C [???]
+Control 0x59: +/50/100 C [???]
+Control 0x5a: +/50/100 C [???]
+Control 0x5b: +/50/100 C [???]
+Control 0x5c: +/50/100 C [???]
+Control 0x5d: +/50/100 C [???]
+Control 0x5e: +/50/100 C [???]
+Control 0x60: +/16/18 C [Input Source Select (Main)]
+Control 0x62: +/70/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Control 0x72: +/120/160 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0x9b: +/50/100 C [???]
+Control 0x9c: +/50/100 C [???]
+Control 0x9d: +/50/100 C [???]
+Control 0x9e: +/50/100 C [???]
+Control 0x9f: +/50/100 C [???]
+Control 0xa0: +/50/100 C [???]
+Control 0xac: +/23364/1 C [???]
+Control 0xae: +/6000/65535 C [???]
+Control 0xb2: +/1/2 C [???]
+Control 0xb3: +/0/1   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc6: +/60/65535 C [???]
+Control 0xc8: +/34569/39 C [???]
+Control 0xc9: +/1/65535 C [???]
+Control 0xca: +/1/65535   [???]
+Control 0xcc: +/2/30 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/514/65535 C [???]
+Control 0xe0: +/255/7 C [???]
+Control 0xe1: +/255/7 C [Power control]
+Control 0xe2: +/0/27 C [???]
+Control 0xe3: +/19/65535 C [???]
+Control 0xe4: +/2/3 C [???]
+Control 0xe5: +/5/10 C [???]
+Control 0xe7: +/255/3 C [???]
+Control 0xe8: +/255/3 C [???]
+Control 0xe9: +/255/3   [???]
+Control 0xea: +/255/3   [???]
+
+
+
+
+From kristian@...2808... Wed Oct 06 20:51:48 2021
+User-agent: mu4e 1.6.6; emacs 27.1
+From: Kristian Larsson <kristian@...2808...>
+To: ddccontrol-users@lists.sourceforge.net
+Date: Wed, 06 Oct 2021 22:32:11 +0200
+Message-ID: <87mtnlevud.fsf@...2809...>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-=-="
+X-Spam-Status: No, score=-2.8 required=5.0 tests=ALL_TRUSTED,BAYES_00,
+ PLING_QUERY autolearn=no autolearn_force=no version=3.4.2
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on Mail1.SpriteLink.NET
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hello,
+ ddccontrol told me to mail this output to this address!
+ ddccontrol version 0.4.4 Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+ Copyright 2004-2006 Nicolas Boichat (nicolas@...3...) This program comes
+ with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (0.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.1 PLING_QUERY            Subject has exclamation mark and question mark
+X-Headers-End: 1mYDtD-009SzA-6D
+X-Mailman-Approved-At: Thu, 07 Oct 2021 13:35:37 +0000
+Subject: [ddccontrol-users] New monitor to DB!? DEL4206
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 06 Oct 2021 20:51:48 -0000
+
+--=-=-=
+Content-Type: text/plain; format=flowed
+
+
+Hello,
+
+ddccontrol told me to mail this output to this address!
+
+
+--=-=-=
+Content-Type: text/plain
+Content-Disposition: attachment; filename=ddcc
+Content-Description: ddccontrol dump output for DEL4206
+
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.........
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+
+EDID readings:
+	Plug and Play ID: DEL4206 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model(U4021QW)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 10 12 14(01 04 05 06 08 09 0B 0C) 16 18 1A 52 60( 19 0F 11 12) 62 AC AE B2 B6 C6 C8 C9 CC(02 03 04 06 09 0A 0D 0E) D6(01 04 05) DC(00 03 05) DF E0 E1 E2(00 02 04 0C 0D 0F 10 11 13 0B 1B 14) E4 E5 E7(00 02) E8 E9(00 01 02 21 22 24 27 28 29 2A) F0(00 05 06 0A) F1 F2 FD)mccs_ver(2.1)mswhql(1))
+Parsed output: 
+	VCP: 02 04 05 08 10 12 14 16 18 1a 52 60 62 ac ae b2 b6 c6 c8 c9 cc d6 dc df e0 e1 e2 e4 e5 e7 e8 e9 f0 f1 f2 fd 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [New Control Value - Some values changed]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/1/255   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/1/100 C [Brightness]
+Control 0x12: +/75/100 C [Contrast]
+Control 0x14: +/5/12 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x52: +/16/255 C [???]
+Control 0x60: +/3855/14 C [Input Source Select (Main)]
+Control 0x62: +/39/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/50/255   [???]
+Control 0x6e: +/50/255   [???]
+Control 0x70: +/50/255   [???]
+Control 0xa8: +/0/3   [???]
+Control 0xac: +/2228/2 C [???]
+Control 0xae: +/5999/0 C [???]
+Control 0xb2: +/1/8 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/1654/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc8: +/22021/0 C [???]
+Control 0xc9: +/10497/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/2/14 C [???]
+Control 0xd6: +/1/255 C [DPMS Control - On]
+Control 0xdc: +/0/255 C [???]
+Control 0xdf: +/513/255 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe2: +/0/255 C [???]
+Control 0xe3: +/0/1   [???]
+Control 0xe4: +/1/1 C [???]
+Control 0xe5: +/0/255 C [???]
+Control 0xe7: +/65282/65450 C [???]
+Control 0xe8: +/15/65535 C [???]
+Control 0xe9: +/0/255 C [???]
+Control 0xf0: +/0/255 C [???]
+Control 0xf1: +/267/267 C [???]
+Control 0xf2: +/0/65280 C [???]
+Control 0xfa: +/0/65535   [???]
+Control 0xfd: +/116/65535 C [???]
+
+--=-=-=
+Content-Type: text/plain; format=flowed
+
+
+  Kristian.
+
+BTW, Great program! :)
+
+---
+Kristian Larsson
+
+--=-=-=--
+
+
+From gbailey@...2810... Thu Oct 07 04:16:00 2021
+X-ME-Sender: <xms:TW5eYW44RNfgZC-Egzks--fzTCY3xKdEuicNRMfEbeBJ98nchiJ3OQ>
+ <xme:TW5eYf72HKR54oYCWjOKlcl0Q_0H99LfoV9WJt-vBYYCLmTjaOPHsFoeBb6V7yeMn
+ F-G6H6HnoTRh3Ej0Tw>
+X-ME-Proxy-Cause: gggruggvucftvghtrhhoucdtuddrgedvtddrudeljedgjedtucetufdoteggodetrfdotf
+ fvucfrrhhofhhilhgvmecuhfgrshhtofgrihhlpdfqfgfvpdfurfetoffkrfgpnffqhgen
+ uceurghilhhouhhtmecufedttdenucenucfjughrpefofgggkfffhffvufgtsehmtderre
+ erredtnecuhfhrohhmpedfifgrrhhrohhnuceurghilhgvhidfuceoghgsrghilhgvhies
+ fhgrshhtmhgrihhlrdgtohhmqeenucggtffrrghtthgvrhhnpeeiueetgedtgeevvdelud
+ evledvhfdvheelveefueduveffudekhfefueffteegfeenucevlhhushhtvghrufhiiigv
+ pedtnecurfgrrhgrmhepmhgrihhlfhhrohhmpehgsggrihhlvgihsehfrghsthhmrghilh
+ drtghomh
+X-ME-Proxy: <xmx:TW5eYVe2xdP-e7Njxdc2vWgZfAZlgDAxqm3GQ_6Va98V3AyUUktqSQ>
+ <xmx:TW5eYTI5GJzupmrPNCszkT5VtP6rjoIgXoSFn0wt2gE01HRuQVZ9Rw>
+ <xmx:TW5eYaIKD4yYZDpvYY7djJnhoPFwMY-YiMBX7F_V7QM1iEd2kQEuUg>
+ <xmx:TW5eYfUCDiWJC03gS1DOBuZLl3ivfBGwmjz73ayPJJ3GPoqcivAfSQ>
+X-Mailer: MessagingEngine.com Webmail Interface
+User-Agent: Cyrus-JMAP/3.5.0-alpha0-1331-g5ae342296a-fm-20211005.001-g5ae34229
+Mime-Version: 1.0
+Message-Id: <8c2dee5d-3e32-4656-aa78-f6eca9d2c794@...2719...>
+Date: Wed, 06 Oct 2021 23:49:08 -0400
+From: "Garron Bailey" <gbailey@...2810...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/mixed;
+ boundary=78984af58b1042b9a1671bd5d3286dba
+X-Spam-Score: -0.9 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hi,
+ I got the message that DDC Control does not have my monitor,
+ so here is the requested output. The monitor is an Acer R240HY. The generic
+ profile worked for changing the brightness/contrast, and colour maximum levels.
+ Content analysis details:   (-0.9 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.7 RCVD_IN_DNSWL_LOW      RBL: Sender listed at https://www.dnswl.org/,
+ low trust [64.147.123.20 listed in list.dnswl.org]
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: fastmail.com]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [64.147.123.20 listed in wl.mailspike.net]
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [gbailey[at]fastmail.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mYKp4-00A6NV-Ev
+X-Mailman-Approved-At: Thu, 07 Oct 2021 13:35:37 +0000
+Subject: [ddccontrol-users] ddc control monitor information
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 07 Oct 2021 04:16:01 -0000
+
+--78984af58b1042b9a1671bd5d3286dba
+Content-Type: multipart/alternative;
+ boundary=bea4284d22444cabab69349a35818811
+
+--bea4284d22444cabab69349a35818811
+Content-Type: text/plain
+
+Hi, I got the message that DDC Control does not have my monitor, so here is the requested output.
+
+The monitor is an Acer R240HY. The generic profile worked for changing the brightness/contrast, and colour maximum levels.
+
+Thanks,
+Garron
+--bea4284d22444cabab69349a35818811
+Content-Type: text/html
+
+<!DOCTYPE html><html><head><title></title><style type="text/css">p.MsoNormal,p.MsoNoSpacing{margin:0}</style></head><body><div>Hi, I got the message that DDC Control does not have my monitor, so here is the requested output.<br></div><div><br></div><div>The monitor is an Acer R240HY. The generic profile worked for changing the brightness/contrast, and colour maximum levels.<br></div><div><br></div><div>Thanks,<br></div><div>Garron<br></div></body></html>
+--bea4284d22444cabab69349a35818811--
+
+--78984af58b1042b9a1671bd5d3286dba
+Content-Disposition: attachment;filename="ddc_Acer-R240HY.txt"
+Content-Type: text/plain; name="ddc_Acer-R240HY.txt"
+Content-Transfer-Encoding: BASE64
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNS4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBW
+ZG92aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBC
+b2ljaGF0IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFC
+U09MVVRFTFkgTk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0
+aGlzIHByb2dyYW0gdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMg
+TGljZW5zZS4KCkRldGVjdGVkIG1vbml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMt
+NQogICBEREMvQ0kgc3VwcG9ydGVkOiBZZXMKICAgTW9uaXRvciBOYW1lOiBWRVNBIHN0YW5k
+YXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTogRGlnaXRhbAogIChBdXRvbWF0aWNhbGx5IHNl
+bGVjdGVkKQogLSBEZXZpY2U6IGRldjovZGV2L2kyYy0zCiAgIEREQy9DSSBzdXBwb3J0ZWQ6
+IE5vCiAgIE1vbml0b3IgTmFtZTogVkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0IHR5
+cGU6IERpZ2l0YWwKUmVhZGluZyBFRElEIGFuZCBpbml0aWFsaXppbmcgRERDL0NJIGF0IGJ1
+cyBkZXY6L2Rldi9pMmMtNS4uLgoKRURJRCByZWFkaW5nczoKCVBsdWcgYW5kIFBsYXkgSUQ6
+IEFDUjA0NkYgW1ZFU0Egc3RhbmRhcmQgbW9uaXRvcl0KCUlucHV0IHR5cGU6IEFuYWxvZwo9
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdBUk5JTkcgPT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PQpUaGVyZSBpcyBubyBzdXBwb3J0IGZvciB5b3VyIG1vbml0b3Ig
+aW4gdGhlIGRhdGFiYXNlLCBidXQgZGRjY29udHJvbCBpcwp1c2luZyBhIGJhc2ljIGdlbmVy
+aWMgcHJvZmlsZS4gTWFueSBjb250cm9scyB3aWxsIG5vdCBiZSBzdXBwb3J0ZWQsIGFuZApz
+b21lIGNvbnRyb2xzIG1heSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVwZGF0ZSBk
+ZGNjb250cm9sLWRiLCBvciwgaWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRlc3QK
+dmVyc2lvbiwgcGxlYXNlIHNlbmQgdGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1h
+bmQgdG8KZGRjY29udHJvbC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBM
+Q19BTEw9IGRkY2NvbnRyb2wgLXAgLWMgLWQKClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT0KCkNhcGFiaWxpdGllczoKCkNvbnRyb2xzICh2YWxpZC9jdXJyZW50L21heCkgW0Rlc2Ny
+aXB0aW9uIC0gVmFsdWUgbmFtZV06CkNvbnRyb2wgMHgwMjogKy8yLzIgQyBbTmV3IENvbnRy
+b2wgVmFsdWUgLSBTb21lIHZhbHVlcyBjaGFuZ2VkXQpDb250cm9sIDB4MDQ6ICsvMC8xIEMg
+W1Jlc3RvcmUgRmFjdG9yeSBEZWZhdWx0c10KQ29udHJvbCAweDA1OiArLzAvMSBDIFtSZXN0
+b3JlIEJyaWdodG5lc3MgYW5kIENvbnRyYXN0XQpDb250cm9sIDB4MDY6ICsvMC8xIEMgW1Jl
+c3RvcmUgRmFjdG9yeSBEZWZhdWx0IEdlb21ldHJ5XQpDb250cm9sIDB4MDg6ICsvMC8xIEMg
+W1Jlc3RvcmUgRmFjdG9yeSBEZWZhdWx0IENvbG9yXQpDb250cm9sIDB4MGI6ICsvMTAwLzAg
+QyBbPz8/XQpDb250cm9sIDB4MGM6ICsvNjU1MDYvNjMgQyBbPz8/XQpDb250cm9sIDB4MTA6
+ICsvMTAwLzEwMCBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTI6ICsvNTAvMTAwIEMgW0Nv
+bnRyYXN0XQpDb250cm9sIDB4MTQ6ICsvMTEvMTEgQyBbPz8/XQpDb250cm9sIDB4MTY6ICsv
+MTAwLzEwMCBDIFtSZWQgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDE4OiArLzEwMC8xMDAg
+QyBbR3JlZW4gbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDFhOiArLzEwMC8xMDAgQyBbQmx1
+ZSBtYXhpbXVtIGxldmVsXQpDb250cm9sIDB4MWU6ICsvMC8xICAgWz8/P10KQ29udHJvbCAw
+eDFmOiArLzEvMSAgIFs/Pz9dCkNvbnRyb2wgMHg1MjogKy8yMC82NTUzNSBDIFs/Pz9dCkNv
+bnRyb2wgMHg1OTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NWE6ICsvNTAvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDViOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg1YzogKy81
+MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NWQ6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAw
+eDVlOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2MDogKy8xNy8zIEMgW0lucHV0IFNv
+dXJjZSBTZWxlY3QgKE1haW4pXQpDb250cm9sIDB4NjI6ICsvNzAvMTAwIEMgW0F1ZGlvIFNw
+ZWFrZXIgVm9sdW1lIEFkanVzdF0KQ29udHJvbCAweDZjOiArLzgwLzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHg2ZTogKy84MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NzA6ICsvODAvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDg3OiArLzIvNCAgIFs/Pz9dCkNvbnRyb2wgMHg4ZDogKy8yLzIg
+QyBbPz8/XQpDb250cm9sIDB4OWI6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDljOiAr
+LzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5ZDogKy81MC8xMDAgICBbPz8/XQpDb250cm9s
+IDB4OWU6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDlmOiArLzUwLzEwMCAgIFs/Pz9d
+CkNvbnRyb2wgMHhhMDogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4YWM6ICsvMTk2NC8x
+IEMgWz8/P10KQ29udHJvbCAweGFlOiArLzYwMDAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4
+YjI6ICsvMS8xIEMgWz8/P10KQ29udHJvbCAweGI2OiArLzMvNSBDIFs/Pz9dCkNvbnRyb2wg
+MHhjMDogKy80Mi82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhjNjogKy8xMjAvMjU1IEMgWz8/
+P10KQ29udHJvbCAweGM4OiArLzkvMCBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy8xLzY1NTM1
+IEMgWz8/P10KQ29udHJvbCAweGNhOiArLzEvMiBDIFs/Pz9dCkNvbnRyb2wgMHhjYzogKy8y
+LzEzIEMgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENvbnRyb2wgLSBPbl0K
+Q29udHJvbCAweGRmOiArLzUxMy82NTUzNSBDIFs/Pz9dCg==
+
+--78984af58b1042b9a1671bd5d3286dba--
+
+
+From madhu1008@...46... Thu Oct 07 13:33:52 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:to:from:subject:message-id:date:user-agent
+ :mime-version:content-language;
+ bh=U3NDajNA4w7jhcUe+qa0c9yNgB/jxAboimmJpKtGT+w=;
+ b=Ey7U3X/vYXqKfxVQ6QYeIIODaVUAh8rzcjfDtJmSHu3JfJy+2c/EznoEm4FxRA+51g
+ ocBgP7wJq54E84BQb7hoofRrKaJJIW7zpNLhoBVFZdax2E3rCrlN9Q0G/ViZpLOORFfo
+ YUK9vAb/PsfJyxSNSgT7piON5vT0IuI51cDPPA1hXmx0Bd8hFdCGYRpzjNEL+Nn+6PCi
+ 1TBvC+ZwgqqfbWkkm1ySoqlgk4l+ESnyE6T854PZcesRUs/zYdZzgaDTS9yAnpwuUi0w
+ Hjpf3fp6D+dpp2eODgzRrMH+RQXrt2slKKGZx3r1krMEC/xQzfjRCMYZTSFOmO0J1VkV
+ cg1A==
+X-Gm-Message-State: AOAM533y62xVS9xXSmTHS1HAr5eMh0E6bMqTX7o7WO2By+CvlRjQr87d
+ XkEgwWBudnreiK5YC7GjJI5NDadgkts=
+X-Google-Smtp-Source: ABdhPJxTGkJcyjNMRfiGzdjAgaFm22zI5q9W0XSz5PgDv9yoa6dsa790uDlZQEJ/QjQcj7oT8tQy4w==
+X-Received: by 2002:adf:8b47:: with SMTP id v7mr5533485wra.321.1633613624711;
+ Thu, 07 Oct 2021 06:33:44 -0700 (PDT)
+To: ddccontrol-users@lists.sourceforge.net
+From: Maximilian Ronniger <madhu1008@...46...>
+Message-ID: <10a39f06-a621-1b06-9cff-ad36c2ebe768@...46...>
+Date: Thu, 7 Oct 2021 15:33:43 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101
+ Thunderbird/78.13.0
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="------------694CCDF9CCCAD8C488C07D7C"
+Content-Language: en-US
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: Find output attatched ddccontrol version 0.4.4 Copyright
+ 2004-2005
+ Oleg I. Vdovikin (oleg@...13...) Copyright 2004-2006 Nicolas Boichat
+ (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (0.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.221.41 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [madhu1008[at]gmail.com]
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+ in digit [madhu1008[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.221.41 listed in wl.mailspike.net]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mYTWx-0004dG-Ak
+X-Mailman-Approved-At: Thu, 07 Oct 2021 13:35:37 +0000
+Subject: [ddccontrol-users] LG Ergo 34 34WN750-B
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 07 Oct 2021 13:33:52 -0000
+
+This is a multi-part message in MIME format.
+--------------694CCDF9CCCAD8C488C07D7C
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Find output attatched
+
+--------------694CCDF9CCCAD8C488C07D7C
+Content-Type: text/plain; charset=UTF-8;
+ name="ddcontroul_out.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="ddcontroul_out.txt"
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC40CkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBW
+ZG92aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBC
+b2ljaGF0IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFC
+U09MVVRFTFkgTk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0
+aGlzIHByb2dyYW0gdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMg
+TGljZW5zZS4KClByb2JpbmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLi4uLi4KRGV0
+ZWN0ZWQgbW9uaXRvcnMgOgogLSBEZXZpY2U6IGRldjovZGV2L2kyYy04CiAgIEREQy9DSSBz
+dXBwb3J0ZWQ6IFllcwogICBNb25pdG9yIE5hbWU6IExHIFN0YW5kYXJkIExDRAogICBJbnB1
+dCB0eXBlOiBEaWdpdGFsCiAgKEF1dG9tYXRpY2FsbHkgc2VsZWN0ZWQpCiAtIERldmljZTog
+ZGV2Oi9kZXYvaTJjLTcKICAgRERDL0NJIHN1cHBvcnRlZDogWWVzCiAgIE1vbml0b3IgTmFt
+ZTogVkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0IHR5cGU6IERpZ2l0YWwKUmVhZGlu
+ZyBFRElEIGFuZCBpbml0aWFsaXppbmcgRERDL0NJIGF0IGJ1cyBkZXY6L2Rldi9pMmMtOC4u
+LgoKRURJRCByZWFkaW5nczoKCVBsdWcgYW5kIFBsYXkgSUQ6IEdTTTc3MkUgW0xHIFN0YW5k
+YXJkIExDRF0KCUlucHV0IHR5cGU6IERpZ2l0YWwKPT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KVGhlcmUg
+aXMgbm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGluIHRoZSBkYXRhYmFzZSwgYnV0IGRk
+Y2NvbnRyb2wgaXMKdXNpbmcgYSBnZW5lcmljIHByb2ZpbGUgZm9yIHlvdXIgbW9uaXRvcidz
+IG1hbnVmYWN0dXJlci4gU29tZSBjb250cm9scwptYXkgbm90IGJlIHN1cHBvcnRlZCwgb3Ig
+bWF5IG5vdCB3b3JrIGFzIGV4cGVjdGVkLgpQbGVhc2UgdXBkYXRlIGRkY2NvbnRyb2wtZGIs
+IG9yLCBpZiB5b3UgYXJlIGFscmVhZHkgdXNpbmcgdGhlIGxhdGVzdAp2ZXJzaW9uLCBwbGVh
+c2Ugc2VuZCB0aGUgb3V0cHV0IG9mIHRoZSBmb2xsb3dpbmcgY29tbWFuZCB0bwpkZGNjb250
+cm9sLXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDoKCkxBTkc9IExDX0FMTD0gZGRjY29u
+dHJvbCAtcCAtYyAtZAoKVGhhbmsgeW91Lgo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09IFdBUk5JTkcgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKQ2FwYWJpbGl0
+aWVzOgpSYXcgb3V0cHV0OiAocHJvdChtb25pdG9yKXR5cGUobGNkKVVMNTUwY21kcygwMSAw
+MiAwMyAwQyBFMyBGMyl2Y3AoMDIgMDQgMDUgMDggMTAgMTIgMTQoMDUgMDggMEIgKSAxNiAx
+OCAxQSA1MiA2MCggMTEgMTIgMEYgMDApIEFDIEFFIEIyIEI2IEMwIEM2IEM4IEM5IEQ2KDAx
+IDA0KSBERiA2MiA4RCBGNCBGNSgwMCAwMSAwMikgRjYoMDAgMDEgMDIpIDREIDRFIDRGIDE1
+KDAxIDA2IDExIDEzIDE0IDE4IDI4IDI5IDMyIDQ4KSBGNygwMCAwMSAwMiAwMykgRjgoMDAg
+MDEpIEY5IEU0IEU1IEU2IEU3IEU4IEU5IEVBIEVCIEVGIEZEKDAwIDAxKSBGRSgwMCAwMSAw
+MikgRkYpbWNjc192ZXIoMi4xKW1zd2hxbCgxKSkKUGFyc2VkIG91dHB1dDogCglWQ1A6IDAy
+IDA0IDA1IDA4IDEwIDEyIDE0IDE1IDE2IDE4IDFhIDRkIDRlIDRmIDUyIDYwIDYyIDhkIGFj
+IGFlIGIyIGI2IGMwIGM2IGM4IGM5IGQ2IGRmIGU0IGU1IGU2IGU3IGU4IGU5IGVhIGViIGVm
+IGY0IGY1IGY2IGY3IGY4IGY5IGZkIGZlIGZmIAoJVHlwZTogTENECgpDb250cm9scyAodmFs
+aWQvY3VycmVudC9tYXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpDb250cm9sIDB4
+MDI6ICsvMi8yIEMgW1NlY29uZGFyeSBEZWdhdXNzXQpDb250cm9sIDB4MDQ6ICsvMC8yNTUg
+QyBbUmVzdG9yZSBGYWN0b3J5IERlZmF1bHRzXQpDb250cm9sIDB4MDU6ICsvMC8xIEMgW1Jl
+c3RvcmUgQnJpZ2h0bmVzcyBhbmQgQ29udHJhc3RdCkNvbnRyb2wgMHgwNjogKy8wLzI1NSAg
+IFs/Pz9dCkNvbnRyb2wgMHgwODogKy8wLzI1NSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVs
+dCBDb2xvcl0KQ29udHJvbCAweDBiOiArLzAvMjQwMjggICBbPz8/XQpDb250cm9sIDB4MGM6
+ICsvMzUvMTAwICAgWz8/P10KQ29udHJvbCAweDBlOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRy
+b2wgMHgxMDogKy8yNy8xMDAgQyBbQnJpZ2h0bmVzc10KQ29udHJvbCAweDEyOiArLzcwLzEw
+MCBDIFtDb250cmFzdF0KQ29udHJvbCAweDE0OiArLzExLzExIEMgWz8/P10KQ29udHJvbCAw
+eDE1OiArLzExLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHgxNjogKy81MC8xMDAgQyBbUmVkIG1h
+eGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxODogKy81MC8xMDAgQyBbR3JlZW4gbWF4aW11bSBs
+ZXZlbF0KQ29udHJvbCAweDFhOiArLzUwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxdCkNv
+bnRyb2wgMHgxZTogKy8wLzIgICBbPz8/XQpDb250cm9sIDB4MjA6ICsvMC8xMDAgICBbPz8/
+XQpDb250cm9sIDB4MzA6ICsvMC8xMDAgICBbPz8/XQpDb250cm9sIDB4M2U6ICsvNTAvMTAw
+ICAgWz8/P10KQ29udHJvbCAweDQ1OiArLzAvMjU1ICAgWz8/P10KQ29udHJvbCAweDRkOiAr
+LzM1LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweDRlOiArLzE2Mzg0LzY1NTM1IEMgWz8/P10K
+Q29udHJvbCAweDRmOiArLzY2NTgvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4NTI6ICsvMC8y
+NTUgQyBbPz8/XQpDb250cm9sIDB4NjA6ICsvMC8xOCBDIFtJbnB1dCBTb3VyY2UgU2VsZWN0
+IChNYWluKV0KQ29udHJvbCAweDYyOiArLzMwLzEwMCBDIFtBdWRpbyBTcGVha2VyIFZvbHVt
+ZSBBZGp1c3RdCkNvbnRyb2wgMHg2YzogKy8xMjgvMTAwICAgWz8/P10KQ29udHJvbCAweDZl
+OiArLzEyOC8xMDAgICBbPz8/XQpDb250cm9sIDB4NzA6ICsvMTI4LzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHg4NzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4OGQ6ICsvMi8xMDAgQyBb
+Pz8/XQpDb250cm9sIDB4YWM6ICsvMjMzNjQvMSBDIFs/Pz9dCkNvbnRyb2wgMHhhZTogKy84
+ODkwLzAgQyBbPz8/XQpDb250cm9sIDB4YjY6ICsvMy81IEMgWz8/P10KQ29udHJvbCAweGMw
+OiArLzE5LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGM2OiArLzEwNC82NTUzNSBDIFs/Pz9d
+CkNvbnRyb2wgMHhjODogKy85LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy83NzMvNjU1
+MzUgQyBbPz8/XQpDb250cm9sIDB4Y2E6ICsvMi8yICAgWz8/P10KQ29udHJvbCAweGNjOiAr
+LzAvMTYgICBbPz8/XQpDb250cm9sIDB4ZDY6ICsvMS81IEMgW0RQTVMgQ29udHJvbCAtIE9u
+XQpDb250cm9sIDB4ZGY6ICsvNTEzLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlNDogKy8wLzI1
+NSBDIFs/Pz9dCkNvbnRyb2wgMHhlNTogKy8zNS8wIEMgWz8/P10KQ29udHJvbCAweGU3OiAr
+LzAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4ZTg6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9s
+IDB4ZTk6ICsvMTc4LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlYTogKy8wLzI1NSBDIFs/Pz9d
+CkNvbnRyb2wgMHhlYjogKy8wLzEgQyBbPz8/XQpDb250cm9sIDB4ZWY6ICsvMC82NTUzNSBD
+IFs/Pz9dCkNvbnRyb2wgMHhmNDogKy8zMS82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhmNTog
+Ky8xLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhmNjogKy8yLzI1NSBDIFs/Pz9dCkNvbnRyb2wg
+MHhmNzogKy8yLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhmODogKy8wLzI1NSBDIFs/Pz9dCkNv
+bnRyb2wgMHhmOTogKy81MC8yNTUgQyBbPz8/XQpDb250cm9sIDB4ZmE6ICsvMjU1LzI1NSAg
+IFs/Pz9dCkNvbnRyb2wgMHhmYjogKy8yLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGZlOiAr
+LzMvMjU1IEMgWz8/P10K
+--------------694CCDF9CCCAD8C488C07D7C--
+
+
+From iliev.ivailo@...46... Wed Oct 13 06:21:23 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:message-id:subject:from:to:date:user-agent
+ :mime-version;
+ bh=b72heZYNUdlLRF/YwpWJzAdhGHoJ9zyeXK1+3mpVXME=;
+ b=c9u2WBiuRHeF9YmjaewhLlFgcUy6SFIdwEHEKOiHecDqQlvtWulwcTGrJqG9xGEGGX
+ UzfT+FjTwNyjiCkNNcl/vfxctUMvCMBPgZNciv6wZBkM93bz92vUBD6CckiF0qGjhB4c
+ Q0dHFqm3YbDBHOB1h1YfUrOUV4Z7c7AtXOEeykvelZlaTBoD+6qHatUcXlT41+T4TAO0
+ hsVTDE1szTSps2HkWwIOYKvCBnvtxA5z9GRs/ALITZQE+EjgBB4hQ+kS+NWzwK7jH10e
+ CdnV03eom0E47B3V2dCC1OAJUZTuR50QhwxG9FXtsbGD/O2d4M56L8nCzs17PHIP8dUo
+ ulnQ==
+X-Gm-Message-State: AOAM533gIzSJRj6oLeDUzkMX6mUAVRcwbpmUmpkVEYyyngR+LuScrKt0
+ ZIYAzSVxf6Bz1qRu5Ikef6lYo/BIZY/OQQ==
+X-Google-Smtp-Source: ABdhPJyK25PQC+e+Sw8jxbm6wW+u7TquI1bgZglJa135Mxfp3btgNjxZTZPOyhzAT0y1LfYgMirGbw==
+X-Received: by 2002:a05:6000:1689:: with SMTP id
+ y9mr38115005wrd.52.1634106068228;
+ Tue, 12 Oct 2021 23:21:08 -0700 (PDT)
+Message-ID: <df32768b671a72ea10187fbbf4187f8a40e06774.camel@...46...>
+From: Ivaylo Iliev <iliev.ivailo@...46...>
+To: "ddccontrol-users@lists.sourceforge.net"
+ <ddccontrol-users@lists.sourceforge.net>
+Date: Wed, 13 Oct 2021 09:21:06 +0300
+Content-Type: multipart/alternative; boundary="=-fkaKyKsb1y4rOtQRN7rh"
+User-Agent: Evolution 3.40.4 
+MIME-Version: 1.0
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: ddccontrol version 0.5.2 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...) Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.221.52 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [iliev.ivailo[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.221.52 listed in wl.mailspike.net]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1maXdb-007KSB-1R
+Subject: [ddccontrol-users] LG Standard LCD (LG 27UL850 4K Display) data
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 13 Oct 2021 06:21:23 -0000
+
+--=-fkaKyKsb1y4rOtQRN7rh
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ddccontrol version 0.5.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Detected monitors :
+- Device: dev:/dev/i2c-5
+  DDC/CI supported: Yes
+  Monitor Name: LG Standard LCD
+  Input type: Digital
+ (Automatically selected)
+- Device: dev:/dev/i2c-4
+  DDC/CI supported: No
+  Monitor Name: VESA standard monitor
+  Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-5...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-
+db/monitor/GSM7707.xml"
+Document not parsed successfully.
+
+EDID readings:
+       Plug and Play ID: GSM7707 [LG Standard LCD]
+       Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+                                                                       
+  
+using a generic profile for your monitor's manufacturer. Some controls
+                                                                       
+   
+may not be supported, or may not work as expected.
+                                                                       
+                       
+Please update ddccontrol-db, or, if you are already using the latest
+                                                                       
+     
+version, please send the output of the following command to
+                                                                       
+              
+ddccontrol-users@lists.sourceforge.net:
+                                                                       
+                                  
+                                                                       
+                                                                       
+  
+LANG= LC_ALL= ddccontrol -p -c -d
+                                                                       
+                                        
+                                                                       
+                                                                       
+  
+Thank you.
+                                                                       
+                                                               
+=============================== WARNING ===============================
+                                                                       
+  
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/35/100   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/52/100 C [Brightness]
+Control 0x12: +/52/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x15: +/11/255 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/50/100   [???]
+Control 0x30: +/255/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x4d: +/35/65535 C [???]
+Control 0x4e: +/16844/65535 C [???]
+Control 0x4f: +/6658/65535 C [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/0/18 C [Input Source Select (Main)]
+Control 0x62: +/100/100 C [Audio Speaker Volume Adjust]
+Control 0x69: +/6500/10000   [???]
+Control 0x6a: +/15/255   [???]
+Control 0x6c: +/50/100   [???]
+Control 0x6e: +/50/100   [???]
+Control 0x70: +/50/100   [???]
+Control 0x72: +/25600/100   [???]
+Control 0x7a: +/240/100   [???]
+Control 0x87: +/50/100   [???]
+Control 0x8d: +/2/100 C [???]
+Control 0xa9: +/1/255   [???]
+Control 0xac: +/2228/2 C [???]
+Control 0xae: +/5999/0 C [???]
+Control 0xaf: +/568/255   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/2024/65535 C [???]
+Control 0xc6: +/104/65535 C [???]
+Control 0xc8: +/5/255 C [???]
+Control 0xc9: +/787/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/0/255   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xd7: +/1/65535   [???]
+Control 0xd8: +/1/65535   [???]
+Control 0xdf: +/513/255 C [???]
+Control 0xe4: +/0/255 C [???]
+Control 0xe5: +/0/179 C [???]
+Control 0xe6: +/0/65535 C [???]
+Control 0xe7: +/0/65535 C [???]
+Control 0xe8: +/0/255 C [???]
+Control 0xe9: +/178/255 C [???]
+Control 0xea: +/0/255 C [???]
+Control 0xeb: +/0/1 C [???]
+Control 0xef: +/20324/65535 C [???]
+Control 0xf4: +/7/65535 C [???]
+Control 0xf5: +/1/255 C [???]
+Control 0xf6: +/0/255 C [???]
+Control 0xf7: +/2/255 C [???]
+Control 0xf8: +/0/255 C [???]
+Control 0xf9: +/50/255 C [???]
+Control 0xfa: +/255/255   [???]
+Control 0xfb: +/1/65535   [???]
+Control 0xfe: +/2/255 C [???]
+
+--=-fkaKyKsb1y4rOtQRN7rh
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div><div><span style=3D"font-family:monospace"><s=
+pan style=3D"color: rgb(0, 0, 0);">ddccontrol version 0.5.2
+</span><br>Copyright 2004-2005 Oleg I. Vdovikin (<a href=3D"mailto:oleg@...85...=
+13...">oleg@...13...</a>)
+<br>Copyright 2004-2006 Nicolas Boichat (<a href=3D"mailto:nicolas@...3..."=
+>nicolas@...3...</a>)
+<br>This program comes with ABSOLUTELY NO WARRANTY.
+<br>You may redistribute copies of this program under the terms of the GNU =
+General Public License.
+<br>
+<br>Detected monitors :
+<br> - Device: dev:/dev/i2c-5
+<br> &nbsp;&nbsp;DDC/CI supported: Yes
+<br> &nbsp;&nbsp;Monitor Name: LG Standard LCD
+<br> &nbsp;&nbsp;Input type: Digital
+<br> &nbsp;(Automatically selected)
+<br> - Device: dev:/dev/i2c-4
+<br> &nbsp;&nbsp;DDC/CI supported: No
+<br> &nbsp;&nbsp;Monitor Name: VESA standard monitor
+<br> &nbsp;&nbsp;Input type: Digital
+<br>Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-5...
+<br>I/O warning : failed to load external entity "/usr/share/ddccontrol-db/=
+monitor/GSM7707.xml"
+<br>Document not parsed successfully.
+<br>
+<br>EDID readings:
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plug and Play ID: GSM7707 [L=
+G Standard LCD]
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input type: Analog
+<br><span style=3D"color: rgb(178, 24, 24);">=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D</span><span style=3D"color: rgb(0, 0, 0);">
+</span><br><span style=3D"color: rgb(178, 24, 24);">There is no support for=
+ your monitor in the database, but ddccontrol is &nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0, 0, 0);">=
+&nbsp;</span><br><span style=3D"color: rgb(178, 24, 24);">using a generic p=
+rofile for your monitor's manufacturer. Some controls &nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(=
+0, 0, 0);">&nbsp;</span><br><span style=3D"color: rgb(178, 24, 24);">may no=
+t be supported, or may not work as expected. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;</span><span style=3D"color: rgb(0, 0, 0);">&nbsp;</span><br><span style=
+=3D"color: rgb(178, 24, 24);">Please update ddccontrol-db, or, if you are a=
+lready using the latest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0, 0, 0);">&nbsp;<=
+/span><br><span style=3D"color: rgb(178, 24, 24);">version, please send the=
+ output of the following command to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0, 0, 0);">&nbsp;</span><br=
+><span style=3D"color: rgb(178, 24, 24);"><a href=3D"mailto:ddccontrol-user=
+s@lists.sourceforge.net">ddccontrol-users@lists.sourceforge.net</a>: &nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0, 0, 0);">&nbsp;</span>=
+<br><span style=3D"color: rgb(178, 24, 24);"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;</span><span style=3D"color: rgb(0, 0, 0);">&nbsp;</span><br><span styl=
+e=3D"color: rgb(178, 24, 24);">LANG=3D LC_ALL=3D ddccontrol -p -c -d &nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D=
+"color: rgb(0, 0, 0);">&nbsp;</span><br><span style=3D"color: rgb(178, 24, =
+24);"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0,=
+ 0, 0);">&nbsp;</span><br><span style=3D"color: rgb(178, 24, 24);">Thank yo=
+u. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"co=
+lor: rgb(0, 0, 0);">&nbsp;</span><br><span style=3D"color: rgb(178, 24, 24)=
+;">=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D &nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=3D"color: rgb(0, 0, 0);">=
+&nbsp;</span><br>
+<br>Capabilities:
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>ioctl(): Inappropriate ioctl for device
+<br>ioctl returned -1
+<br>Capabilities read fail.
+<br>
+<br>Controls (valid/current/max) [Description - Value name]:
+<br>Control 0x02: +/1/2 C [New Control Value - No changes]
+<br>Control 0x04: +/0/255 C [Restore Factory Defaults]
+<br>Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+<br>Control 0x06: +/0/255 &nbsp;&nbsp;[???]
+<br>Control 0x08: +/0/255 C [Restore Factory Default Color]
+<br>Control 0x0b: +/0/24028 &nbsp;&nbsp;[???]
+<br>Control 0x0c: +/35/100 &nbsp;&nbsp;[???]
+<br>Control 0x0e: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x10: +/52/100 C [Brightness]
+<br>Control 0x12: +/52/100 C [Contrast]
+<br>Control 0x14: +/11/11 C [???]
+<br>Control 0x15: +/11/255 C [???]
+<br>Control 0x16: +/50/100 C [Red maximum level]
+<br>Control 0x18: +/50/100 C [Green maximum level]
+<br>Control 0x1a: +/50/100 C [Blue maximum level]
+<br>Control 0x1e: +/0/2 &nbsp;&nbsp;[???]
+<br>Control 0x20: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x30: +/255/100 &nbsp;&nbsp;[???]
+<br>Control 0x3e: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x4d: +/35/65535 C [???]
+<br>Control 0x4e: +/16844/65535 C [???]
+<br>Control 0x4f: +/6658/65535 C [???]
+<br>Control 0x52: +/0/255 C [???]
+<br>Control 0x60: +/0/18 C [Input Source Select (Main)]
+<br>Control 0x62: +/100/100 C [Audio Speaker Volume Adjust]
+<br>Control 0x69: +/6500/10000 &nbsp;&nbsp;[???]
+<br>Control 0x6a: +/15/255 &nbsp;&nbsp;[???]
+<br>Control 0x6c: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x6e: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x70: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x72: +/25600/100 &nbsp;&nbsp;[???]
+<br>Control 0x7a: +/240/100 &nbsp;&nbsp;[???]
+<br>Control 0x87: +/50/100 &nbsp;&nbsp;[???]
+<br>Control 0x8d: +/2/100 C [???]
+<br>Control 0xa9: +/1/255 &nbsp;&nbsp;[???]
+<br>Control 0xac: +/2228/2 C [???]
+<br>Control 0xae: +/5999/0 C [???]
+<br>Control 0xaf: +/568/255 &nbsp;&nbsp;[???]
+<br>Control 0xb6: +/3/5 C [???]
+<br>Control 0xc0: +/2024/65535 C [???]
+<br>Control 0xc6: +/104/65535 C [???]
+<br>Control 0xc8: +/5/255 C [???]
+<br>Control 0xc9: +/787/65535 C [???]
+<br>Control 0xca: +/2/2 &nbsp;&nbsp;[???]
+<br>Control 0xcc: +/0/255 &nbsp;&nbsp;[???]
+<br>Control 0xd6: +/1/5 C [DPMS Control - On]
+<br>Control 0xd7: +/1/65535 &nbsp;&nbsp;[???]
+<br>Control 0xd8: +/1/65535 &nbsp;&nbsp;[???]
+<br>Control 0xdf: +/513/255 C [???]
+<br>Control 0xe4: +/0/255 C [???]
+<br>Control 0xe5: +/0/179 C [???]
+<br>Control 0xe6: +/0/65535 C [???]
+<br>Control 0xe7: +/0/65535 C [???]
+<br>Control 0xe8: +/0/255 C [???]
+<br>Control 0xe9: +/178/255 C [???]
+<br>Control 0xea: +/0/255 C [???]
+<br>Control 0xeb: +/0/1 C [???]
+<br>Control 0xef: +/20324/65535 C [???]
+<br>Control 0xf4: +/7/65535 C [???]
+<br>Control 0xf5: +/1/255 C [???]
+<br>Control 0xf6: +/0/255 C [???]
+<br>Control 0xf7: +/2/255 C [???]
+<br>Control 0xf8: +/0/255 C [???]
+<br>Control 0xf9: +/50/255 C [???]
+<br>Control 0xfa: +/255/255 &nbsp;&nbsp;[???]
+<br>Control 0xfb: +/1/65535 &nbsp;&nbsp;[???]
+<br>Control 0xfe: +/2/255 C [???]<br></span></div></div><div><span></span><=
+/div></body></html>
+
+--=-fkaKyKsb1y4rOtQRN7rh--
+
+
+
+From alexandre.nunes@...46... Thu Oct 07 16:11:47 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=5idPKjrq1zYBu4XugtqystbbVw2gjGYgf3mzesrYEPA=;
+ b=XINoSncd23HSALfJmjM4qiI3axeZf9fW/SSVWS5zJ2wzhtad6eSr6DUTNnlnsK6vVm
+ WgE7Qrn+scHUX3NIFGTfId/Ks91Zz89F7c4eO+mQ6QN9Wszmhw/uTfxqiEzA2iistomh
+ JtLjWE/r9IIhfFnWud+w6YWxeOrzKQTwjcCS4iV1M0pLuNUD/odbBtFkLUZEHgCOE1cz
+ 8G1BG3rQ0juTAoztJCEa941kb6K4JNgKJy4P+a1KhrgTI8U6lNlEmKZxntNUHWRRD5kv
+ Zxhd4wqhuFq9s1dtt+Aj+0nYk+g9vxnzzAQX1h6S9Db4ndTGXAcJcAk1UMvkZYC3slQI
+ RCQA==
+X-Gm-Message-State: AOAM530M1ax2LTfzxVsqGjIztgvU5ciOFMu98QkG1XjKL+jccXA4rAbv
+ 68UnZfraMaBq7k9YL7jXJeDF/QhqUKDWWHR2XLjUUAce2mM=
+X-Google-Smtp-Source: ABdhPJzPWe70Qb/nvB8uLtjEt6Uzb8F/Qat1PUnUZR9UfPlEfcqfQKDlchxLwVfyv3XRj1+NH1LRev47HXwX1CPcMys=
+X-Received: by 2002:ac8:4308:: with SMTP id z8mr5990791qtm.121.1633623101136;
+ Thu, 07 Oct 2021 09:11:41 -0700 (PDT)
+MIME-Version: 1.0
+From: Alexandre Pereira Nunes <alexandre.nunes@...46...>
+Date: Thu, 7 Oct 2021 13:11:15 -0300
+Message-ID: <CANxMttBNTQL8B1fmF56vZx-Bn6HtxzjTMGKdPPCTfr1bP42UqA@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/mixed; boundary="000000000000a414d405cdc584f8"
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  attached DDC output for LG UM58 attached DDC output for LG
+ UM58 ddccontrol version 0.4.4 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...)
+ Copyright 2004-2006 Nicolas Boichat (nicolas@...3...) This program comes
+ with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.160.169 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [alexandre.nunes[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: sidekickopen01.com]
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [209.85.160.169 listed in wl.mailspike.net]
+ 0.3 HTML_IMAGE_ONLY_04     BODY: HTML: images with 0-400 bytes of words
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1mYVzn-0004Jp-7o
+X-Mailman-Approved-At: Wed, 13 Oct 2021 11:57:28 +0000
+Subject: [ddccontrol-users] (no subject)
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 07 Oct 2021 16:11:47 -0000
+
+--000000000000a414d405cdc584f8
+Content-Type: multipart/alternative; boundary="000000000000a414d005cdc584f6"
+
+--000000000000a414d005cdc584f6
+Content-Type: text/plain; charset="UTF-8"
+
+attached DDC output for LG UM58
+
+--000000000000a414d005cdc584f6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">attached DDC output for LG UM58<img src=3D"https://t.sidek=
+ickopen01.com/s3t/o/5/f18dQhb0S7ks8fmKc0W2ZBg9j2B9gXrN7sKj6v5dpzgW6448dz4X9=
+HtMW2BWf1R2zlZNzW3ZcHKw1k1H6H0?si=3D5105235160727552&amp;pi=3D9fdb1e1f-fff5=
+-4feb-f1e9-2222e42d8980" alt=3D"" style=3D"display:none!important" height=
+=3D"1" width=3D"1"><div></div></div>
+
+--000000000000a414d005cdc584f6--
+
+--000000000000a414d405cdc584f8
+Content-Type: text/plain; charset="US-ASCII"; name="ddc.txt"
+Content-Disposition: attachment; filename="ddc.txt"
+Content-Transfer-Encoding: base64
+Content-ID: <f_kuh4yu660>
+X-Attachment-Id: f_kuh4yu660
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC40CkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
+IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
+Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
+dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KClByb2Jp
+bmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLgpEZXRlY3RlZCBtb25pdG9ycyA6CiAtIERl
+dmljZTogZGV2Oi9kZXYvaTJjLTUKICAgRERDL0NJIHN1cHBvcnRlZDogTm8KICAgTW9uaXRvciBO
+YW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTogRGlnaXRhbAogLSBEZXZp
+Y2U6IGRldjovZGV2L2kyYy0zCiAgIEREQy9DSSBzdXBwb3J0ZWQ6IFllcwogICBNb25pdG9yIE5h
+bWU6IExHIFN0YW5kYXJkIExDRAogICBJbnB1dCB0eXBlOiBEaWdpdGFsCiAgKEF1dG9tYXRpY2Fs
+bHkgc2VsZWN0ZWQpClJlYWRpbmcgRURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBhdCBidXMg
+ZGV2Oi9kZXYvaTJjLTMuLi4KCkVESUQgcmVhZGluZ3M6CglQbHVnIGFuZCBQbGF5IElEOiBHU001
+OUYxIFtMRyBTdGFuZGFyZCBMQ0RdCglJbnB1dCB0eXBlOiBEaWdpdGFsCj09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+ClRoZXJlIGlzIG5vIHN1cHBvcnQgZm9yIHlvdXIgbW9uaXRvciBpbiB0aGUgZGF0YWJhc2UsIGJ1
+dCBkZGNjb250cm9sIGlzCnVzaW5nIGEgZ2VuZXJpYyBwcm9maWxlIGZvciB5b3VyIG1vbml0b3In
+cyBtYW51ZmFjdHVyZXIuIFNvbWUgY29udHJvbHMKbWF5IG5vdCBiZSBzdXBwb3J0ZWQsIG9yIG1h
+eSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVwZGF0ZSBkZGNjb250cm9sLWRiLCBvciwg
+aWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRlc3QKdmVyc2lvbiwgcGxlYXNlIHNlbmQg
+dGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1hbmQgdG8KZGRjY29udHJvbC11c2Vyc0Bs
+aXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBMQ19BTEw9IGRkY2NvbnRyb2wgLXAgLWMgLWQK
+ClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5HID09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkNhcGFiaWxpdGllczoKUmF3IG91dHB1dDogKHBy
+b3QobW9uaXRvcil0eXBlKGxjZClVTTU4Y21kcygwMSAwMiAwMyAwQyBFMyBGMyl2Y3AoMDIgMDQg
+MDUgMDggMTAgMTIgMTQoMDUgMDggMEIgKSAxNiAxOCAxQSA1MiA2MCggMTEgMTIpIEFDIEFFIEIy
+IEI2IEMwIEM2IEM4IEM5IEQ2KDAxIDA0KSBERiA2MiA4RCBGNCBGNSgwMSAwMiAwMyAwNCkgRjYo
+MDAgMDEgMDIpIDREIDRFIDRGIDE1KDAxIDExIDEzIDE0IDI4IDI5IDMyIDQ4KSBGNygwMCAwMSAw
+MiAwMykgRjgoMDAgMDEpIEY5IEU0IEU1IEU2IEU3IEU4IEU5IEVBIEVCIEVGIEZEKDAwIDAxKSBG
+RSgwMCAwMSAwMikgRkYpbWNjc192ZXIoMi4xKW1zd2hxbCgxKSkKUGFyc2VkIG91dHB1dDogCglW
+Q1A6IDAyIDA0IDA1IDA4IDEwIDEyIDE0IDE1IDE2IDE4IDFhIDRkIDRlIDRmIDUyIDYwIDYyIDhk
+IGFjIGFlIGIyIGI2IGMwIGM2IGM4IGM5IGQ2IGRmIGU0IGU1IGU2IGU3IGU4IGU5IGVhIGViIGVm
+IGY0IGY1IGY2IGY3IGY4IGY5IGZkIGZlIGZmIAoJVHlwZTogTENECgpDb250cm9scyAodmFsaWQv
+Y3VycmVudC9tYXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpDb250cm9sIDB4MDI6ICsv
+Mi8yIEMgW1NlY29uZGFyeSBEZWdhdXNzXQpDb250cm9sIDB4MDQ6ICsvMC8yNTUgQyBbUmVzdG9y
+ZSBGYWN0b3J5IERlZmF1bHRzXQpDb250cm9sIDB4MDU6ICsvMC8xIEMgW1Jlc3RvcmUgQnJpZ2h0
+bmVzcyBhbmQgQ29udHJhc3RdCkNvbnRyb2wgMHgwNjogKy8wLzI1NSAgIFs/Pz9dCkNvbnRyb2wg
+MHgwODogKy8wLzI1NSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl0KQ29udHJvbCAw
+eDBiOiArLzAvMjQwMjggICBbPz8/XQpDb250cm9sIDB4MGM6ICsvMzUvMTAwICAgWz8/P10KQ29u
+dHJvbCAweDBlOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgxMDogKy8zMC8xMDAgQyBbQnJp
+Z2h0bmVzc10KQ29udHJvbCAweDEyOiArLzcwLzEwMCBDIFtDb250cmFzdF0KQ29udHJvbCAweDE0
+OiArLzExLzExIEMgWz8/P10KQ29udHJvbCAweDE1OiArLzEvMjU1IEMgWz8/P10KQ29udHJvbCAw
+eDE2OiArLzUwLzEwMCBDIFtSZWQgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDE4OiArLzUwLzEw
+MCBDIFtHcmVlbiBtYXhpbXVtIGxldmVsXQpDb250cm9sIDB4MWE6ICsvNTAvMTAwIEMgW0JsdWUg
+bWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDFlOiArLzAvMiAgIFs/Pz9dCkNvbnRyb2wgMHgyMDog
+Ky8wLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzMDogKy8wLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgz
+ZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NGQ6ICsvMzA3NzEvNjU1MzUgQyBbPz8/XQpD
+b250cm9sIDB4NGU6ICsvMC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHg0ZjogKy8wLzY1NTM1IEMg
+Wz8/P10KQ29udHJvbCAweDUyOiArLzAvMjU1IEMgWz8/P10KQ29udHJvbCAweDYwOiArLzAvMTgg
+QyBbSW5wdXQgU291cmNlIFNlbGVjdCAoTWFpbildCkNvbnRyb2wgMHg2MjogKy8zMC8xMDAgQyBb
+QXVkaW8gU3BlYWtlciBWb2x1bWUgQWRqdXN0XQpDb250cm9sIDB4NmM6ICsvMTI4LzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHg2ZTogKy8xMjgvMTAwICAgWz8/P10KQ29udHJvbCAweDcwOiArLzEyOC8x
+MDAgICBbPz8/XQpDb250cm9sIDB4ODc6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDhkOiAr
+LzIvMTAwIEMgWz8/P10KQ29udHJvbCAweGFjOiArLzExNjQvMSBDIFs/Pz9dCkNvbnRyb2wgMHhh
+ZTogKy82NjcwLzAgQyBbPz8/XQpDb250cm9sIDB4YjY6ICsvMy81IEMgWz8/P10KQ29udHJvbCAw
+eGMwOiArLzE1MTE2LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGM2OiArLzEwNC82NTUzNSBDIFs/
+Pz9dCkNvbnRyb2wgMHhjODogKy85LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy83NzMvNjU1
+MzUgQyBbPz8/XQpDb250cm9sIDB4Y2E6ICsvMi8yICAgWz8/P10KQ29udHJvbCAweGNjOiArLzgv
+MTYgICBbPz8/XQpDb250cm9sIDB4ZDY6ICsvMS81IEMgW0RQTVMgQ29udHJvbCAtIE9uXQpDb250
+cm9sIDB4ZGY6ICsvNTEzLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlNDogKy8wLzI1NSBDIFs/Pz9d
+CkNvbnRyb2wgMHhlNTogKy8zNS8wIEMgWz8/P10KQ29udHJvbCAweGU2OiArLzAvNjU1MzUgQyBb
+Pz8/XQpDb250cm9sIDB4ZTc6ICsvMC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhlODogKy8wLzI1
+NSBDIFs/Pz9dCkNvbnRyb2wgMHhlOTogKy8yLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlYTogKy8w
+LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlYjogKy8wLzEgQyBbPz8/XQpDb250cm9sIDB4ZWY6ICsv
+MC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhmNDogKy82LzY1NTM1IEMgWz8/P10KQ29udHJvbCAw
+eGY1OiArLzEvMjU1IEMgWz8/P10KQ29udHJvbCAweGY2OiArLzEvMjU1IEMgWz8/P10KQ29udHJv
+bCAweGY3OiArLzIvMjU1IEMgWz8/P10KQ29udHJvbCAweGY4OiArLzI1NS8yNTUgQyBbPz8/XQpD
+b250cm9sIDB4Zjk6ICsvNTAvMjU1IEMgWz8/P10KQ29udHJvbCAweGZhOiArLzI1NS8yNTUgICBb
+Pz8/XQpDb250cm9sIDB4ZmI6ICsvMi82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhmZTogKy8zLzI1
+NSBDIFs/Pz9dCg==
+--000000000000a414d405cdc584f8--
+
+
+From sergey.gnedoy@...46... Fri Oct 08 19:36:39 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=5CF220kyT8ScdsOQotrdaUa3wd+s9Cb+sUJJ5swgfUs=;
+ b=dWz6kVSRJCYhlUw/DvW0l8DJ2iVsY2h2dpj2/ryghBUQyCbOs4u5y2Q8kRUwAf7Wr2
+ bt8GgKZaLhgH4RBBficCyR1uw478d27StuqRjnEUExbQKHBnuH1HPeBxjDj2CBPmC6oa
+ n1soLCyBlZcx1UqzSyczohvTKCWgVf4DYDcWOVnmcLdqPh/KGbpPCoohs+3oMfDBzCTK
+ gD8B1aAsn8nDFmwr+aBmcYsoEYN677KnPTOnOTVV7KOaonHtEzr7ZigBEbI+YxAUtNn5
+ M2wh3uhNB5ha1Zse3W9BUc3v/rFcIEpKWa1o6rgpPf/9HeIoK2GZ7FzeunGy8RxiLZqX
+ ql1g==
+X-Gm-Message-State: AOAM531YaYDq+0lgBeSeaN6N1hxcDHhtpkbxlpbULoPIB01gIdl3noOY
+ Zv6rBoCh13j6RIDu3mORYYA2db/yZImNxofslEzDkSxhvqQ=
+X-Google-Smtp-Source: ABdhPJzLaVnP3UFOeYOebtED+9dqRkO4Z5WCI3JnaRe0yE0W7G4qAUN32G+wbqcqhbrKzNicXdmv1M8+uVxpVXVrxrw=
+X-Received: by 2002:a05:6830:232b:: with SMTP id
+ q11mr10763893otg.164.1633721793010;
+ Fri, 08 Oct 2021 12:36:33 -0700 (PDT)
+MIME-Version: 1.0
+From: Sergey Gnedoy <sergey.gnedoy@...46...>
+Date: Fri, 8 Oct 2021 21:36:21 +0200
+Message-ID: <CAOdptWkS7fZpxj46d0tWpSHm1HB8ZWDGtWAS+PpYqf=Z0D_cUg@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/alternative; boundary="000000000000225fe005cddc7fff"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: ddccontrol version 0.4.4 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...) Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.210.42 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [sergey.gnedoy[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [209.85.210.42 listed in wl.mailspike.net]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+X-Headers-End: 1mYvfa-0005V5-QL
+X-Mailman-Approved-At: Wed, 13 Oct 2021 11:57:28 +0000
+Subject: [ddccontrol-users] output for LG 27UP600W
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 08 Oct 2021 19:36:39 -0000
+
+--000000000000225fe005cddc7fff
+Content-Type: text/plain; charset="UTF-8"
+
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Probing for available monitors.I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/GSM5BC2.xml"
+Document not parsed successfully.
+.I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/LGD0418.xml"
+Document not parsed successfully.
+......
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: LG Standard LCD
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-5
+   DDC/CI supported: No
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/GSM5BC2.xml"
+Document not parsed successfully.
+
+EDID readings:
+Plug and Play ID: GSM5BC2 [LG Standard LCD]
+Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)UP600cmds(01 02 03 0C E3 F3)vcp(02 04 05
+08 10 12 14(05 08 0B ) 16 18 1A 52 60( 11 12 0F 00) AC AE B2 B6 C0 C6 C8 C9
+D6(01 04) DF 62 8D F4 F5(00 01 02) F6(00 01 02) 4D 4E 4F 15(01 06 11 13 14
+15 18 19 28 29 48) F7(00 01 02 03) F8(00 01) F9 E4 E5 E6 E7 E8 E9 EA EB EF
+FD(00 01) FE(00 01 02) FF)mccs_ver(2.1)mswhql(1))
+Parsed output:
+VCP: 02 04 05 08 10 12 14 15 16 18 1a 4d 4e 4f 52 60 62 8d ac ae b2 b6 c0
+c6 c8 c9 d6 df e4 e5 e6 e7 e8 e9 ea eb ef f4 f5 f6 f7 f8 f9 fd fe ff
+Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/35/100   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/47/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x15: +/11/255 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x45: +/0/255   [???]
+Control 0x4d: +/32803/65535 C [???]
+Control 0x4e: +/16896/65535 C [???]
+Control 0x4f: +/6658/65535 C [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/0/18 C [Input Source Select (Main)]
+Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/128/100   [???]
+Control 0x6e: +/128/100   [???]
+Control 0x70: +/128/100   [???]
+Control 0x87: +/50/100   [???]
+Control 0x8d: +/1/100 C [???]
+Control 0xac: +/2428/2 C [???]
+Control 0xae: +/13350/0 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/4/65535 C [???]
+Control 0xc6: +/104/65535 C [???]
+Control 0xc8: +/9/255 C [???]
+Control 0xc9: +/772/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/0/16   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/513/255 C [???]
+Control 0xe4: +/0/255 C [???]
+Control 0xe5: +/35/0 C [???]
+Control 0xe7: +/0/65535 C [???]
+Control 0xe8: +/0/255 C [???]
+Control 0xe9: +/178/255 C [???]
+Control 0xea: +/0/255 C [???]
+Control 0xeb: +/0/1 C [???]
+Control 0xef: +/4/65535 C [???]
+Control 0xf4: +/7/65535 C [???]
+Control 0xf5: +/1/255 C [???]
+Control 0xf6: +/0/255 C [???]
+Control 0xf7: +/2/255 C [???]
+Control 0xf8: +/0/255 C [???]
+Control 0xf9: +/50/255 C [???]
+Control 0xfa: +/255/255   [???]
+Control 0xfb: +/2/65535   [???]
+Control 0xfe: +/3/255 C [???]
+
+--000000000000225fe005cddc7fff
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><div>ddccontrol version 0.4.4</div><div>C=
+opyright 2004-2005 Oleg I. Vdovikin (<a href=3D"mailto:oleg@...13...">oleg@=
+...13...</a>)</div><div>Copyright 2004-2006 Nicolas Boichat (<a href=3D"mai=
+lto:nicolas@...3...">nicolas@...3...</a>)</div><div>This program comes with=
+ ABSOLUTELY NO WARRANTY.</div><div>You may redistribute copies of this prog=
+ram under the terms of the GNU General Public License.</div><div><br></div>=
+<div>Probing for available monitors.I/O warning : failed to load external e=
+ntity &quot;/usr/share/ddccontrol-db/monitor/GSM5BC2.xml&quot;</div><div>Do=
+cument not parsed successfully.</div><div>.I/O warning : failed to load ext=
+ernal entity &quot;/usr/share/ddccontrol-db/monitor/LGD0418.xml&quot;</div>=
+<div>Document not parsed successfully.</div><div>......</div><div>Detected =
+monitors :</div><div>=C2=A0- Device: dev:/dev/i2c-6</div><div>=C2=A0 =C2=A0=
+DDC/CI supported: Yes</div><div>=C2=A0 =C2=A0Monitor Name: LG Standard LCD<=
+/div><div>=C2=A0 =C2=A0Input type: Digital</div><div>=C2=A0 (Automatically =
+selected)</div><div>=C2=A0- Device: dev:/dev/i2c-5</div><div>=C2=A0 =C2=A0D=
+DC/CI supported: No</div><div>=C2=A0 =C2=A0Monitor Name: VESA standard moni=
+tor</div><div>=C2=A0 =C2=A0Input type: Digital</div><div>Reading EDID and i=
+nitializing DDC/CI at bus dev:/dev/i2c-6...</div><div>I/O warning : failed =
+to load external entity &quot;/usr/share/ddccontrol-db/monitor/GSM5BC2.xml&=
+quot;</div><div>Document not parsed successfully.</div><div><br></div><div>=
+EDID readings:</div><div><span style=3D"white-space:pre">	</span>Plug and P=
+lay ID: GSM5BC2 [LG Standard LCD]</div><div><span style=3D"white-space:pre"=
+>	</span>Input type: Digital</div><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D</div><div>There is no support for your monitor in the database, b=
+ut ddccontrol is</div><div>using a generic profile for your monitor&#39;s m=
+anufacturer. Some controls</div><div>may not be supported, or may not work =
+as expected.</div><div>Please update ddccontrol-db, or, if you are already =
+using the latest</div><div>version, please send the output of the following=
+ command to</div><div><a href=3D"mailto:ddccontrol-users@...2712...=
+net">ddccontrol-users@lists.sourceforge.net</a>:</div><div><br></div><div>L=
+ANG=3D LC_ALL=3D ddccontrol -p -c -d</div><div><br></div><div>Thank you.</d=
+iv><div>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</div><div><br></div>=
+<div>Capabilities:</div><div>Raw output: (prot(monitor)type(lcd)UP600cmds(0=
+1 02 03 0C E3 F3)vcp(02 04 05 08 10 12 14(05 08 0B ) 16 18 1A 52 60( 11 12 =
+0F 00) AC AE B2 B6 C0 C6 C8 C9 D6(01 04) DF 62 8D F4 F5(00 01 02) F6(00 01 =
+02) 4D 4E 4F 15(01 06 11 13 14 15 18 19 28 29 48) F7(00 01 02 03) F8(00 01)=
+ F9 E4 E5 E6 E7 E8 E9 EA EB EF FD(00 01) FE(00 01 02) FF)mccs_ver(2.1)mswhq=
+l(1))</div><div>Parsed output:=C2=A0</div><div><span style=3D"white-space:p=
+re">	</span>VCP: 02 04 05 08 10 12 14 15 16 18 1a 4d 4e 4f 52 60 62 8d ac a=
+e b2 b6 c0 c6 c8 c9 d6 df e4 e5 e6 e7 e8 e9 ea eb ef f4 f5 f6 f7 f8 f9 fd f=
+e ff=C2=A0</div><div><span style=3D"white-space:pre">	</span>Type: LCD</div=
+><div><br></div><div>Controls (valid/current/max) [Description - Value name=
+]:</div><div>Control 0x02: +/2/2 C [Secondary Degauss]</div><div>Control 0x=
+04: +/0/255 C [Restore Factory Defaults]</div><div>Control 0x05: +/0/1 C [R=
+estore Brightness and Contrast]</div><div>Control 0x06: +/0/255=C2=A0 =C2=
+=A0[???]</div><div>Control 0x08: +/0/255 C [Restore Factory Default Color]<=
+/div><div>Control 0x0b: +/0/24028=C2=A0 =C2=A0[???]</div><div>Control 0x0c:=
+ +/35/100=C2=A0 =C2=A0[???]</div><div>Control 0x0e: +/50/100=C2=A0 =C2=A0[?=
+??]</div><div>Control 0x10: +/47/100 C [Brightness]</div><div>Control 0x12:=
+ +/70/100 C [Contrast]</div><div>Control 0x14: +/5/11 C [???]</div><div>Con=
+trol 0x15: +/11/255 C [???]</div><div>Control 0x16: +/50/100 C [Red maximum=
+ level]</div><div>Control 0x18: +/50/100 C [Green maximum level]</div><div>=
+Control 0x1a: +/50/100 C [Blue maximum level]</div><div>Control 0x1e: +/0/2=
+=C2=A0 =C2=A0[???]</div><div>Control 0x20: +/0/100=C2=A0 =C2=A0[???]</div><=
+div>Control 0x30: +/0/100=C2=A0 =C2=A0[???]</div><div>Control 0x3e: +/50/10=
+0=C2=A0 =C2=A0[???]</div><div>Control 0x45: +/0/255=C2=A0 =C2=A0[???]</div>=
+<div>Control 0x4d: +/32803/65535 C [???]</div><div>Control 0x4e: +/16896/65=
+535 C [???]</div><div>Control 0x4f: +/6658/65535 C [???]</div><div>Control =
+0x52: +/0/255 C [???]</div><div>Control 0x60: +/0/18 C [Input Source Select=
+ (Main)]</div><div>Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]</d=
+iv><div>Control 0x6c: +/128/100=C2=A0 =C2=A0[???]</div><div>Control 0x6e: +=
+/128/100=C2=A0 =C2=A0[???]</div><div>Control 0x70: +/128/100=C2=A0 =C2=A0[?=
+??]</div><div>Control 0x87: +/50/100=C2=A0 =C2=A0[???]</div><div>Control 0x=
+8d: +/1/100 C [???]</div><div>Control 0xac: +/2428/2 C [???]</div><div>Cont=
+rol 0xae: +/13350/0 C [???]</div><div>Control 0xb6: +/3/5 C [???]</div><div=
+>Control 0xc0: +/4/65535 C [???]</div><div>Control 0xc6: +/104/65535 C [???=
+]</div><div>Control 0xc8: +/9/255 C [???]</div><div>Control 0xc9: +/772/655=
+35 C [???]</div><div>Control 0xca: +/2/2=C2=A0 =C2=A0[???]</div><div>Contro=
+l 0xcc: +/0/16=C2=A0 =C2=A0[???]</div><div>Control 0xd6: +/1/5 C [DPMS Cont=
+rol - On]</div><div>Control 0xdf: +/513/255 C [???]</div><div>Control 0xe4:=
+ +/0/255 C [???]</div><div>Control 0xe5: +/35/0 C [???]</div><div>Control 0=
+xe7: +/0/65535 C [???]</div><div>Control 0xe8: +/0/255 C [???]</div><div>Co=
+ntrol 0xe9: +/178/255 C [???]</div><div>Control 0xea: +/0/255 C [???]</div>=
+<div>Control 0xeb: +/0/1 C [???]</div><div>Control 0xef: +/4/65535 C [???]<=
+/div><div>Control 0xf4: +/7/65535 C [???]</div><div>Control 0xf5: +/1/255 C=
+ [???]</div><div>Control 0xf6: +/0/255 C [???]</div><div>Control 0xf7: +/2/=
+255 C [???]</div><div>Control 0xf8: +/0/255 C [???]</div><div>Control 0xf9:=
+ +/50/255 C [???]</div><div>Control 0xfa: +/255/255=C2=A0 =C2=A0[???]</div>=
+<div>Control 0xfb: +/2/65535=C2=A0 =C2=A0[???]</div><div>Control 0xfe: +/3/=
+255 C [???]</div><div><br></div></div></div>
+
+--000000000000225fe005cddc7fff--
+
+
+From twilight312@...46... Fri Oct 15 00:20:10 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=Yrt4BSPvsDBJ2uxZeeRWmS2VmDYLM+MPrt8J5ZPfjSU=;
+ b=QsGoJG2qN6Iiwm/Mj4PXRBdFXHK0Urj1h39UWLM6i8Ryb2LnL5Qglf0NN1z/+vLMT5
+ 8MAgoPXTErXBHjp2jBol7LqnCi62aJxLgBAwul92Ahx7h8RkhJ4A9XvMcu0bllD6jUin
+ 6wan/XrXebC2ZrSztyFjj+2VBJqmLk4CUTdeyCwddCRcH/M/7PMSm1z+nl1BN+7QbouE
+ WRD/oV8xf/darsNSnkNrw9A5sWYbaziPHlKdjwvyOsP1ol5/4zIVw5uM4darqquN7yXX
+ YrD8hj7DK646JjxFZNCbLd0fMsJUNZ5+QZyx4uydiVhtKfwTFTYLcbA/uh2aRUEErJce
+ C1DA==
+X-Gm-Message-State: AOAM532FPWTj6h3S5ZzvjiYxBu9vm7Jvuq+MseFv/A56/bUg1/JPHP0Z
+ A+KkdvXqtAwVMNfyF4wMluN3DG5dgdph/2TttOWEqims
+X-Google-Smtp-Source: ABdhPJwRyepgC6eNHUJEUtOcL9JJRK2q2nyJtQSxRoJIR5W3xLw3v67kmajRHgWb1CR5aGiJRprMEzV+eXDS1BHds0U=
+X-Received: by 2002:ac8:7458:: with SMTP id h24mr10332736qtr.355.1634257199436;
+ Thu, 14 Oct 2021 17:19:59 -0700 (PDT)
+MIME-Version: 1.0
+From: Piotr Jawidzyk <twilight312@...46...>
+Date: Fri, 15 Oct 2021 02:19:59 +0200
+Message-ID: <CAOkShLkv7r6_X8sfc9opUDeem5sq6kKzHLju-85J+NOFJ4Sp1w@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  LANG= LC_ALL= ddccontrol -p -c -d ddccontrol version 0.6.0
+ Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...) Copyright 2004-2006
+ Nicolas Boichat (nicolas@...3...) This program comes with ABSOLU [...]
+ Content analysis details:   (0.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.160.171 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [twilight312[at]gmail.com]
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+ in digit [twilight312[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.160.171 listed in wl.mailspike.net]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mbAxB-00CoAj-K7
+X-Mailman-Approved-At: Fri, 15 Oct 2021 11:03:20 +0000
+Subject: [ddccontrol-users] IVM6144 missing from ddccontrol-db
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 15 Oct 2021 00:20:10 -0000
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.6.0
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-3
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-3...
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/0 C [???]
+Control 0x0c: +/35/63 C [???]
+Control 0x0e: +/0/100   [???]
+Control 0x10: +/50/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/1/1   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/0/100   [???]
+Control 0x52: +/0/100 C [???]
+Control 0x60: +/2/3 C [Input Source Select (Main)]
+Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/80/100   [???]
+Control 0x6e: +/80/100   [???]
+Control 0x70: +/80/100   [???]
+Control 0x87: +/2/4 C [???]
+Control 0xac: +/260/1 C [???]
+Control 0xae: +/7490/65535 C [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc6: +/90/255 C [???]
+Control 0xc8: +/9/0 C [???]
+Control 0xc9: +/1/65535   [???]
+Control 0xca: +/1/2 C [???]
+Control 0xcc: +/2/13 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/514/65535 C [???]
+
+
+From nrichers@...46... Sat Oct 16 18:08:46 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=73Ds5kVm2ZqBRpXcnpcj7G0SH0s2XQy2uKivcS5jlMU=;
+ b=bfHBlkG8RLR/QAhNe8oUiKxIf8glsahKi0BmoOQ0Z/oJdXVgtYBiXf91+sIVGKnqbp
+ +oFahI74B+FkawSgAZ20xyLR2nB1KFq+le4hP47vLZmcTdSaOchiBIRoLDXlik0djdhA
+ 0jo5XtO6uBBdoUvgrgDzswPpIlhbI1eBJiFsUPKiYUuSkaaPyLA9XgO/ws6PhFRGPfn9
+ uThUxrw+6ju+D8CYJxR72nLJr/vxHqrSVvqs4adstvl/i64fFTK8ZTl2QewdNIWkKtGo
+ 4aOl/Q9vsxXvYiZpMyL7NuK5R3PEVgD2USW0aYZlUAyR0aXh+DtFMQOmU8v9/8RXLm/3
+ nlSQ==
+X-Gm-Message-State: AOAM533ZEbzfEY2wmmBnmIA2KAPzc7zFwGuYbzb9axaUtnnEGF5bBS9A
+ H1CtdCnEK9hBNAmG+RLMfe8LEE7TXPjCGw59M/Y6jw9uIME=
+X-Google-Smtp-Source: ABdhPJx2dwFfVQAXn2JcKkWXjmKPlrm8X9h2GNeW1wJQe/UinWUmrdznB1jy4focMKvJysULJM9hTiWAb2I0fZfY7gg=
+X-Received: by 2002:a05:6602:13c6:: with SMTP id
+ o6mr8576301iov.51.1634407718723;
+ Sat, 16 Oct 2021 11:08:38 -0700 (PDT)
+MIME-Version: 1.0
+From: Nik Richers <nrichers@...46...>
+Date: Sat, 16 Oct 2021 11:08:02 -0700
+Message-ID: <CADGTUAONZhcVMbiZMx3kiVdPFFVfjiL8CLNgeMADg5K70eOafg@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/alternative; boundary="0000000000007e21f905ce7c3315"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Tired out ddccontrol with these monitors and they seem to
+ work just fine. Couldn't find info on how to update the database easily so
+ sending you this email. --Nik *Viewsonic VX2703MH-LED* $ LANG= LC_ALL=
+ ddccontrol
+ -p -c -d ddccontrol version 0.4.4 Copyright 2004-2005 Oleg I. Vdovikin
+ (oleg@...13...)
+ Copyright 2004-2006 Nicolas Boichat (nicolas@...3...) Thi [...]
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.166.54 listed in list.dnswl.org]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.166.54 listed in wl.mailspike.net]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [nrichers[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mbo6u-000Meo-Oh
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:58 +0000
+Subject: [ddccontrol-users] Info for Viewsonic VX2703MH-LED & Philips
+ BDM4065UC
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 16 Oct 2021 18:08:46 -0000
+
+--0000000000007e21f905ce7c3315
+Content-Type: text/plain; charset="UTF-8"
+
+Tired out ddccontrol with these monitors and they seem to work just fine.
+Couldn't find info on how to update the database easily so sending you this
+email. --Nik
+
+*Viewsonic VX2703MH-LED*
+$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Probing for available monitorsradeon_open: mmap failed: Invalid argument
+....I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/VSCF62B.xml"
+Document not parsed successfully.
+.......
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/VSCF62B.xml"
+Document not parsed successfully.
+
+EDID readings:
+Plug and Play ID: VSCF62B [VESA standard monitor]
+Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(VX2703 series)cmds(01 02 03 07 0C
+E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(01 06 04 05 08 0B) 16 18 1A 52 60(01
+03 04) 62 8D(01 02) 87 AC AE B2 B6 C6 C8 CA CC(02 03 04 0a 05 16 09 06 07
+0d 01) D6(01 04 05) DF E1)mswhql(1)asset_eep(40)mccs_ver(2.1))
+Parsed output:
+VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 62 87 8d ac ae b2 b6 c6 c8
+ca cc d6 df e1
+Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/0 C [???]
+Control 0x0c: +/0/126 C [???]
+Control 0x10: +/22/100 C [Brightness]
+Control 0x12: +/40/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/99/100 C [Green maximum level]
+Control 0x1a: +/90/100 C [Blue maximum level]
+Control 0x1f: +/1/1   [???]
+Invalid response, first byte is 0xbe, should be 0x6e
+be 88 02 01 36 00 00 00 00 00 83                | ....6......
+Invalid response, first byte is 0xbe, should be 0x6e
+be 88 02 01 36 00 00 00 00 00 83                | ....6......
+Control 0x52: +/0/255 C [???]
+Control 0x5e: +/28/100   [???]
+Control 0x60: +/4/15 C [Input Source Select (Main)]
+Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/80/100   [???]
+Control 0x6e: +/80/100   [???]
+Control 0x70: +/80/100   [???]
+Control 0x87: +/2/4 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xac: +/6760/65535 C [???]
+Control 0xae: +/6010/65535 C [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc6: +/255/65535 C [???]
+Control 0xc8: +/33545/36 C [???]
+Control 0xc9: +/0/65535   [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/22 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe7: +/1/1   [???]
+Control 0xf3: +/9494/65535   [???]
+
+*Philips BDM4065UC*
+$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU
+General Public License.
+
+Probing for available monitorsradeon_open: mmap failed: Invalid argument
+...I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/PHL08E1.xml"
+Document not parsed successfully.
+..........
+Detected monitors :
+ - Device: dev:/dev/i2c-9
+   DDC/CI supported: Yes
+   Monitor Name: Philips standard LCD
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-9...
+I/O warning : failed to load external entity
+"/usr/share/ddccontrol-db/monitor/PHL08E1.xml"
+Document not parsed successfully.
+
+EDID readings:
+Plug and Play ID: PHL08E1 [Philips standard LCD]
+Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model(BDM4065)cmds(01 02 03 07 0C E3
+F3)vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 07 08 0A 0B) 16 18 1A 52
+54(00 01) 60(00 01 11 12 0F 10 21 22 2F 30 31) 62 6C 6E 70 72(05 78 FB 50
+64 78 8C A0) 86(01 02 08) 8D(01 02) A4 A5 AC AE B6 C0 C6 C8 C9 CA(01 02)
+CC(02 03 04 05 07 08 09 0A 0C 0D 01 06 0B 0E 12 14 16 17 1A 1E 24) D6(01 04
+05) DC(00 01 02 03 05 08 1F) DF E0(00 01 02 03 04) E9(00 02) EB(00 01 02
+03) EC(00 01 02 03) F0(00 01) F6(01 ) F7(44 ) FA(00 01 02) FB FC FD FE(00
+01 02 04) FF)mswhql(1)asset_eep(40)mccs_ver(2.2))
+Parsed output:
+VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 54 60 62 6c 6e 70 72 86 8d a4
+a5 ac ae b6 c0 c6 c8 c9 ca cc d6 dc df e0 e9 eb ec f0 f6 f7 fa fb fc fd fe
+ff
+Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x0b: +/100/100 C [???]
+Control 0x0c: +/35/85 C [???]
+Control 0x10: +/37/100 C [Brightness]
+Control 0x12: +/54/100 C [Contrast]
+Control 0x14: +/5/11 C [Color Preset - 6500K]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/95/100 C [Green maximum level]
+Control 0x1a: +/95/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x20: +/50/100   [???]
+Control 0x30: +/50/100   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x54: +/0/1 C [Color temperature]
+Control 0x60: +/12304/8206 C [Input Source Select (Main)]
+Control 0x62: +/5/100 C [Audio Speaker Volume Adjust]
+Control 0x68: +/0/5   [???]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Control 0x72: +/120/251 C [???]
+Control 0x86: +/8/8 C [???]
+Control 0x8d: +/2/2 C [???]
+Invalid response, first byte is 0x00, should be 0x6e
+00 01 ff ff 00 00 2a 00 73 28 31                | ......*.s(1
+Control 0xa4: +/0/65535 C [???]
+Control 0xa5: +/0/65535 C [???]
+Control 0xa8: +/0/3   [???]
+Control 0xaa: +/1/5   [???]
+Control 0xac: +/100/0 C [???]
+Control 0xae: +/1/0 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/8 C [???]
+Control 0xc0: +/10528/65535 C [???]
+Control 0xc6: +/111/65535 C [???]
+Control 0xc8: +/5/65302 C [???]
+Control 0xc9: +/256/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/36 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xda: +/0/2   [???]
+Control 0xdc: +/0/8 C [???]
+Control 0xdf: +/514/255 C [???]
+Control 0xe0: +/4/4 C [???]
+Control 0xe9: +/2/2 C [???]
+Control 0xeb: +/0/3 C [???]
+Control 0xec: +/0/1027 C [???]
+Control 0xf0: +/0/1 C [???]
+Control 0xf7: +/68/68 C [???]
+Control 0xfa: +/0/65535 C [???]
+Control 0xfb: +/5/255 C [???]
+Control 0xfc: +/5/255 C [???]
+Control 0xfd: +/5/255 C [???]
+Control 0xfe: +/0/65535 C [???]
+
+-- 
+Nik Richers | Vancouver Island, British Columbia, Canada
+
+--0000000000007e21f905ce7c3315
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Tired out ddccontrol with these monitors and they seem to =
+work just fine. Couldn&#39;t find info on how to update the database easily=
+ so sending you this email. --Nik=C2=A0<br clear=3D"all"><div><br></div><di=
+v><b>Viewsonic=C2=A0<span style=3D"color:rgb(0,0,0);font-family:verdana,ari=
+al,helvetica,sans-serif">VX2703MH-LED</span></b></div><div>$ LANG=3D LC_ALL=
+=3D ddccontrol -p -c -d<br>ddccontrol version 0.4.4<br>Copyright 2004-2005 =
+Oleg I. Vdovikin (<a href=3D"mailto:oleg@...13...">oleg@...13...</a>)<br>Co=
+pyright 2004-2006 Nicolas Boichat (<a href=3D"mailto:nicolas@...3...">nicol=
+as@...3...</a>)<br>This program comes with ABSOLUTELY NO WARRANTY.<br>You m=
+ay redistribute copies of this program under the terms of the GNU General P=
+ublic License.<br><br>Probing for available monitorsradeon_open: mmap faile=
+d: Invalid argument<br>....I/O warning : failed to load external entity &qu=
+ot;/usr/share/ddccontrol-db/monitor/VSCF62B.xml&quot;<br>Document not parse=
+d successfully.<br>.......<br>Detected monitors :<br>=C2=A0- Device: dev:/d=
+ev/i2c-6<br>=C2=A0 =C2=A0DDC/CI supported: Yes<br>=C2=A0 =C2=A0Monitor Name=
+: VESA standard monitor<br>=C2=A0 =C2=A0Input type: Digital<br>=C2=A0 (Auto=
+matically selected)<br>Reading EDID and initializing DDC/CI at bus dev:/dev=
+/i2c-6...<br>I/O warning : failed to load external entity &quot;/usr/share/=
+ddccontrol-db/monitor/VSCF62B.xml&quot;<br>Document not parsed successfully=
+.<br><br>EDID readings:<br>	Plug and Play ID: VSCF62B [VESA standard monito=
+r]<br>	Input type: Digital<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+<br>There is no support for your monitor in the database, but ddccontrol is=
+<br>using a basic generic profile. Many controls will not be supported, and=
+<br>some controls may not work as expected.<br>Please update ddccontrol-db,=
+ or, if you are already using the latest<br>version, please send the output=
+ of the following command to<br><a href=3D"mailto:ddccontrol-users@...2738...=
+urceforge.net">ddccontrol-users@lists.sourceforge.net</a>:<br><br>LANG=3D L=
+C_ALL=3D ddccontrol -p -c -d<br><br>Thank you.<br>=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNI=
+NG =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D<br><br>Capabilities:<br>Raw output: (prot(monitor)typ=
+e(LCD)model(VX2703 series)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 1=
+0 12 14(01 06 04 05 08 0B) 16 18 1A 52 60(01 03 04) 62 8D(01 02) 87 AC AE B=
+2 B6 C6 C8 CA CC(02 03 04 0a 05 16 09 06 07 0d 01) D6(01 04 05) DF E1)mswhq=
+l(1)asset_eep(40)mccs_ver(2.1))<br>Parsed output: <br>	VCP: 02 04 05 08 0b =
+0c 10 12 14 16 18 1a 52 60 62 87 8d ac ae b2 b6 c6 c8 ca cc d6 df e1 <br>	T=
+ype: Unknown<br><br>Controls (valid/current/max) [Description - Value name]=
+:<br>Control 0x02: +/2/2 C [Secondary Degauss]<br>Control 0x04: +/0/1 C [Re=
+store Factory Defaults]<br>Control 0x05: +/0/1 C [Restore Brightness and Co=
+ntrast]<br>Control 0x06: +/0/1 =C2=A0 [???]<br>Control 0x08: +/0/1 C [Resto=
+re Factory Default Color]<br>Control 0x0b: +/100/0 C [???]<br>Control 0x0c:=
+ +/0/126 C [???]<br>Control 0x10: +/22/100 C [Brightness]<br>Control 0x12: =
++/40/100 C [Contrast]<br>Control 0x14: +/11/11 C [???]<br>Control 0x16: +/1=
+00/100 C [Red maximum level]<br>Control 0x18: +/99/100 C [Green maximum lev=
+el]<br>Control 0x1a: +/90/100 C [Blue maximum level]<br>Control 0x1f: +/1/1=
+ =C2=A0 [???]<br>Invalid response, first byte is 0xbe, should be 0x6e<br>be=
+ 88 02 01 36 00 00 00 00 00 83 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0| ....6...... =C2=A0 =C2=A0 <br>Invalid response, first byte i=
+s 0xbe, should be 0x6e<br>be 88 02 01 36 00 00 00 00 00 83 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0| ....6...... =C2=A0 =C2=A0 <br>Co=
+ntrol 0x52: +/0/255 C [???]<br>Control 0x5e: +/28/100 =C2=A0 [???]<br>Contr=
+ol 0x60: +/4/15 C [Input Source Select (Main)]<br>Control 0x62: +/0/100 C [=
+Audio Speaker Volume Adjust]<br>Control 0x6c: +/80/100 =C2=A0 [???]<br>Cont=
+rol 0x6e: +/80/100 =C2=A0 [???]<br>Control 0x70: +/80/100 =C2=A0 [???]<br>C=
+ontrol 0x87: +/2/4 C [???]<br>Control 0x8d: +/2/2 C [???]<br>Control 0xac: =
++/6760/65535 C [???]<br>Control 0xae: +/6010/65535 C [???]<br>Control 0xb2:=
+ +/1/1 C [???]<br>Control 0xb6: +/3/5 C [???]<br>Control 0xc6: +/255/65535 =
+C [???]<br>Control 0xc8: +/33545/36 C [???]<br>Control 0xc9: +/0/65535 =C2=
+=A0 [???]<br>Control 0xca: +/2/2 C [???]<br>Control 0xcc: +/2/22 C [???]<br=
+>Control 0xd6: +/1/5 C [DPMS Control - On]<br>Control 0xdf: +/513/65535 C [=
+???]<br>Control 0xe1: +/0/1 C [Power control - Off]<br>Control 0xe7: +/1/1 =
+=C2=A0 [???]<br>Control 0xf3: +/9494/65535 =C2=A0 [???]<br></div><div><br><=
+/div><div><b>Philips BDM4065UC</b><br></div><div>$ LANG=3D LC_ALL=3D ddccon=
+trol -p -c -d<br>ddccontrol version 0.4.4<br>Copyright 2004-2005 Oleg I. Vd=
+ovikin (<a href=3D"mailto:oleg@...13...">oleg@...13...</a>)<br>Copyright 20=
+04-2006 Nicolas Boichat (<a href=3D"mailto:nicolas@...3...">nicolas@...3...=
+</a>)<br>This program comes with ABSOLUTELY NO WARRANTY.<br>You may redistr=
+ibute copies of this program under the terms of the GNU General Public Lice=
+nse.<br><br>Probing for available monitorsradeon_open: mmap failed: Invalid=
+ argument<br>...I/O warning : failed to load external entity &quot;/usr/sha=
+re/ddccontrol-db/monitor/PHL08E1.xml&quot;<br>Document not parsed successfu=
+lly.<br>..........<br>Detected monitors :<br>=C2=A0- Device: dev:/dev/i2c-9=
+<br>=C2=A0 =C2=A0DDC/CI supported: Yes<br>=C2=A0 =C2=A0Monitor Name: Philip=
+s standard LCD<br>=C2=A0 =C2=A0Input type: Digital<br>=C2=A0 (Automatically=
+ selected)<br>Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-9...=
+<br>I/O warning : failed to load external entity &quot;/usr/share/ddccontro=
+l-db/monitor/PHL08E1.xml&quot;<br>Document not parsed successfully.<br><br>=
+EDID readings:<br>	Plug and Play ID: PHL08E1 [Philips standard LCD]<br>	Inp=
+ut type: Digital<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>There=
+ is no support for your monitor in the database, but ddccontrol is<br>using=
+ a generic profile for your monitor&#39;s manufacturer. Some controls<br>ma=
+y not be supported, or may not work as expected.<br>Please update ddccontro=
+l-db, or, if you are already using the latest<br>version, please send the o=
+utput of the following command to<br><a href=3D"mailto:ddccontrol-users@...1809...=
+ts.sourceforge.net">ddccontrol-users@lists.sourceforge.net</a>:<br><br>LANG=
+=3D LC_ALL=3D ddccontrol -p -c -d<br><br>Thank you.<br>=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+ WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><br>Capabilities:<br>Raw output: (prot(monit=
+or)type(lcd)model(BDM4065)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 1=
+0 12 14(01 04 05 06 07 08 0A 0B) 16 18 1A 52 54(00 01) 60(00 01 11 12 0F 10=
+ 21 22 2F 30 31) 62 6C 6E 70 72(05 78 FB 50 64 78 8C A0) 86(01 02 08) 8D(01=
+ 02) A4 A5 AC AE B6 C0 C6 C8 C9 CA(01 02) CC(02 03 04 05 07 08 09 0A 0C 0D =
+01 06 0B 0E 12 14 16 17 1A 1E 24) D6(01 04 05) DC(00 01 02 03 05 08 1F) DF =
+E0(00 01 02 03 04) E9(00 02) EB(00 01 02 03) EC(00 01 02 03) F0(00 01) F6(0=
+1 ) F7(44 ) FA(00 01 02) FB FC FD FE(00 01 02 04) FF)mswhql(1)asset_eep(40)=
+mccs_ver(2.2))<br>Parsed output: <br>	VCP: 02 04 05 08 0b 0c 10 12 14 16 18=
+ 1a 52 54 60 62 6c 6e 70 72 86 8d a4 a5 ac ae b6 c0 c6 c8 c9 ca cc d6 dc df=
+ e0 e9 eb ec f0 f6 f7 fa fb fc fd fe ff <br>	Type: LCD<br><br>Controls (val=
+id/current/max) [Description - Value name]:<br>Control 0x02: +/2/2 C [Secon=
+dary Degauss]<br>Control 0x0b: +/100/100 C [???]<br>Control 0x0c: +/35/85 C=
+ [???]<br>Control 0x10: +/37/100 C [Brightness]<br>Control 0x12: +/54/100 C=
+ [Contrast]<br>Control 0x14: +/5/11 C [Color Preset - 6500K]<br>Control 0x1=
+6: +/100/100 C [Red maximum level]<br>Control 0x18: +/95/100 C [Green maxim=
+um level]<br>Control 0x1a: +/95/100 C [Blue maximum level]<br>Control 0x1e:=
+ +/0/1 =C2=A0 [???]<br>Control 0x20: +/50/100 =C2=A0 [???]<br>Control 0x30:=
+ +/50/100 =C2=A0 [???]<br>Control 0x52: +/0/255 C [???]<br>Control 0x54: +/=
+0/1 C [Color temperature]<br>Control 0x60: +/12304/8206 C [Input Source Sel=
+ect (Main)]<br>Control 0x62: +/5/100 C [Audio Speaker Volume Adjust]<br>Con=
+trol 0x68: +/0/5 =C2=A0 [???]<br>Control 0x6c: +/50/100 C [Red minimum leve=
+l]<br>Control 0x6e: +/50/100 C [Green minimum level]<br>Control 0x70: +/50/=
+100 C [Blue minimum level]<br>Control 0x72: +/120/251 C [???]<br>Control 0x=
+86: +/8/8 C [???]<br>Control 0x8d: +/2/2 C [???]<br>Invalid response, first=
+ byte is 0x00, should be 0x6e<br>00 01 ff ff 00 00 2a 00 73 28 31 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0| ......*.s(1 =C2=A0 =C2=A0=
+ <br>Control 0xa4: +/0/65535 C [???]<br>Control 0xa5: +/0/65535 C [???]<br>=
+Control 0xa8: +/0/3 =C2=A0 [???]<br>Control 0xaa: +/1/5 =C2=A0 [???]<br>Con=
+trol 0xac: +/100/0 C [???]<br>Control 0xae: +/1/0 C [???]<br>Control 0xb4: =
++/1/2 =C2=A0 [???]<br>Control 0xb6: +/3/8 C [???]<br>Control 0xc0: +/10528/=
+65535 C [???]<br>Control 0xc6: +/111/65535 C [???]<br>Control 0xc8: +/5/653=
+02 C [???]<br>Control 0xc9: +/256/65535 C [???]<br>Control 0xca: +/2/2 C [?=
+??]<br>Control 0xcc: +/2/36 C [???]<br>Control 0xd6: +/1/4 C [DPMS Control =
+- On]<br>Control 0xda: +/0/2 =C2=A0 [???]<br>Control 0xdc: +/0/8 C [???]<br=
+>Control 0xdf: +/514/255 C [???]<br>Control 0xe0: +/4/4 C [???]<br>Control =
+0xe9: +/2/2 C [???]<br>Control 0xeb: +/0/3 C [???]<br>Control 0xec: +/0/102=
+7 C [???]<br>Control 0xf0: +/0/1 C [???]<br>Control 0xf7: +/68/68 C [???]<b=
+r>Control 0xfa: +/0/65535 C [???]<br>Control 0xfb: +/5/255 C [???]<br>Contr=
+ol 0xfc: +/5/255 C [???]<br>Control 0xfd: +/5/255 C [???]<br>Control 0xfe: =
++/0/65535 C [???]<br></div><div><br></div>-- <br><div dir=3D"ltr" data-smar=
+tmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div>Nik R=
+ichers | Vancouver Island, British Columbia, Canada<br></div></div></div></=
+div></div></div>
+
+--0000000000007e21f905ce7c3315--
+
+
+From thepaulkaplan@...46... Sun Oct 17 19:05:10 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=9YJfmFOFEzT0fkhsGz9kHCCGyLM7VrNbnTSUwTI7G64=;
+ b=Mku7obDKaNnXriJTCvnVGLnCYtSGOVMaG6a0eiQ4eilzbNgEIp3BF5cPjqT4S2vlwO
+ kP35EUusK/cDJcXgKkkRbY3zhEshOwBCKs7r9ECwq3iFRW71BN+nxDXewP2YKa6HZnj1
+ +P18Ls3xsgTHYlpsawBYTAQwReNJHD23sVa3IN6YxgagGk1PJO7y4Zj9xwUVpEnCooFe
+ +QfM/9+/gLjjuPiDli+oOz0vhdi12NA7SWof28uau6JouGV1irjBadmv1AUdfbP0Pfr4
+ QUeyqQeqgZq4SihYYJsNmpicnsweyd9aTHG+Jn8RjO+CVSHi6Q6tt++RJ9g2iv210wO3
+ ll6Q==
+X-Gm-Message-State: AOAM532phXJOJifm4rmcuhBkB+VhR06xWGjcml6CO/EGZLJGlc3yNhjV
+ u9Al5BZ6RwL66GOtF51Tq3JTlw6q8C4Y3V5i1sT20hzAm5gVIQ==
+X-Google-Smtp-Source: ABdhPJwRRsKxfzGb92DBp86KVo/o0knJftcPYOcdJMskWzsFZjnK4K8N5jKMY4f/PEZPtDNJglHQWNO95VSkA220GnA=
+X-Received: by 2002:ab0:2bd2:: with SMTP id s18mr22707990uar.78.1634497500919;
+ Sun, 17 Oct 2021 12:05:00 -0700 (PDT)
+MIME-Version: 1.0
+From: Paul Kaplan <thepaulkaplan@...46...>
+Date: Sun, 17 Oct 2021 22:04:50 +0300
+Message-ID: <CANo-mA154_P8=0woVXip9o5X2urJK7H=JEx4YACc-KDjCxzeKQ@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/alternative; boundary="000000000000edb96f05ce911a41"
+X-Spam-Score: 0.3 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: Capabilities: Raw output: (prot(monitor)type(lcd)WK500cmds(01
+ 02 03 0C E3 F3)vcp(02 04 05 08 10 12 14(05 08 0B ) 16 18 1A 52 60( 11 12)
+ AC AE B2 B6 C0 C6 C8 C9 D6(01 04) DF 62 8D F4 F5(01 02 03 04) F6 [...]
+ Content analysis details:   (0.3 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [thepaulkaplan[at]gmail.com]
+ 0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [209.85.222.43 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.222.43 listed in list.dnswl.org]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mcBT0-003IKa-VP
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:58 +0000
+Subject: [ddccontrol-users] LG 29UM69G 29"
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 17 Oct 2021 19:05:10 -0000
+
+--000000000000edb96f05ce911a41
+Content-Type: text/plain; charset="UTF-8"
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)WK500cmds(01 02 03 0C E3 F3)vcp(02 04 05
+08 10 12 14(05 08 0B ) 16 18 1A 52 60( 11 12) AC AE B2 B6 C0 C6 C8 C9 D6(01
+04) DF 62 8D F4 F5(01 02 03 04) F6(00 01 02) 4D 4E 4F 15(01 06 11 13 14 28
+29 32 48) F7(00 01 02 03) F8(00 01) F9 E4 E5 E6 E7 E8 E9 EA EB EF FD(00 01)
+FE(00 01 02) FF)mccs_ver(2.1)mswhql(1))
+Parsed output:
+VCP: 02 04 05 08 10 12 14 15 16 18 1a 4d 4e 4f 52 60 62 8d ac ae b2 b6 c0
+c6 c8 c9 d6 df e4 e5 e6 e7 e8 e9 ea eb ef f4 f5 f6 f7 f8 f9 fd fe ff
+Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/35/100   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/53/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x15: +/14/255 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x4d: +/30771/65535 C [???]
+Control 0x4e: +/16384/65535 C [???]
+Control 0x4f: +/0/65535 C [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/0/18 C [Input Source Select (Main)]
+Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/128/100   [???]
+Control 0x6e: +/128/100   [???]
+Control 0x70: +/128/100   [???]
+Control 0x87: +/100/100   [???]
+Control 0x8d: +/1/100 C [???]
+Control 0xac: +/18364/1 C [???]
+Control 0xae: +/8390/0 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/6624/65535 C [???]
+Control 0xc6: +/104/65535 C [???]
+Control 0xc8: +/9/255 C [???]
+Control 0xc9: +/772/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/10/16   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/513/255 C [???]
+Control 0xe4: +/0/255 C [???]
+Control 0xe5: +/35/0 C [???]
+Control 0xe7: +/0/65535 C [???]
+Control 0xe8: +/0/255 C [???]
+Control 0xe9: +/178/255 C [???]
+Control 0xea: +/0/255 C [???]
+Control 0xeb: +/0/1 C [???]
+Control 0xef: +/0/65535 C [???]
+Control 0xf4: +/6/65535 C [???]
+Control 0xf5: +/1/255 C [???]
+Control 0xf6: +/0/255 C [???]
+Control 0xf7: +/1/255 C [???]
+Control 0xf8: +/1/255 C [???]
+Control 0xf9: +/60/255 C [???]
+Control 0xfa: +/2/255   [???]
+Control 0xfb: +/2/65535   [???]
+Control 0xfe: +/3/255 C [???]
+
+--000000000000edb96f05ce911a41
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Capabilities:<br>Raw output: (prot(monitor)type(lcd)WK500c=
+mds(01 02 03 0C E3 F3)vcp(02 04 05 08 10 12 14(05 08 0B ) 16 18 1A 52 60( 1=
+1 12) AC AE B2 B6 C0 C6 C8 C9 D6(01 04) DF 62 8D F4 F5(01 02 03 04) F6(00 0=
+1 02) 4D 4E 4F 15(01 06 11 13 14 28 29 32 48) F7(00 01 02 03) F8(00 01) F9 =
+E4 E5 E6 E7 E8 E9 EA EB EF FD(00 01) FE(00 01 02) FF)mccs_ver(2.1)mswhql(1)=
+)<br>Parsed output: <br>	VCP: 02 04 05 08 10 12 14 15 16 18 1a 4d 4e 4f 52 =
+60 62 8d ac ae b2 b6 c0 c6 c8 c9 d6 df e4 e5 e6 e7 e8 e9 ea eb ef f4 f5 f6 =
+f7 f8 f9 fd fe ff <br>	Type: LCD<br><br>Controls (valid/current/max) [Descr=
+iption - Value name]:<br>Control 0x02: +/2/2 C [Secondary Degauss]<br>Contr=
+ol 0x04: +/0/255 C [Restore Factory Defaults]<br>Control 0x05: +/0/1 C [Res=
+tore Brightness and Contrast]<br>Control 0x06: +/0/255 =C2=A0 [???]<br>Cont=
+rol 0x08: +/0/255 C [Restore Factory Default Color]<br>Control 0x0b: +/0/24=
+028 =C2=A0 [???]<br>Control 0x0c: +/35/100 =C2=A0 [???]<br>Control 0x0e: +/=
+50/100 =C2=A0 [???]<br>Control 0x10: +/53/100 C [Brightness]<br>Control 0x1=
+2: +/50/100 C [Contrast]<br>Control 0x14: +/5/11 C [???]<br>Control 0x15: +=
+/14/255 C [???]<br>Control 0x16: +/50/100 C [Red maximum level]<br>Control =
+0x18: +/50/100 C [Green maximum level]<br>Control 0x1a: +/50/100 C [Blue ma=
+ximum level]<br>Control 0x1e: +/0/2 =C2=A0 [???]<br>Control 0x20: +/0/100 =
+=C2=A0 [???]<br>Control 0x30: +/0/100 =C2=A0 [???]<br>Control 0x3e: +/50/10=
+0 =C2=A0 [???]<br>Control 0x4d: +/30771/65535 C [???]<br>Control 0x4e: +/16=
+384/65535 C [???]<br>Control 0x4f: +/0/65535 C [???]<br>Control 0x52: +/0/2=
+55 C [???]<br>Control 0x60: +/0/18 C [Input Source Select (Main)]<br>Contro=
+l 0x62: +/0/100 C [Audio Speaker Volume Adjust]<br>Control 0x6c: +/128/100 =
+=C2=A0 [???]<br>Control 0x6e: +/128/100 =C2=A0 [???]<br>Control 0x70: +/128=
+/100 =C2=A0 [???]<br>Control 0x87: +/100/100 =C2=A0 [???]<br>Control 0x8d: =
++/1/100 C [???]<br>Control 0xac: +/18364/1 C [???]<br>Control 0xae: +/8390/=
+0 C [???]<br>Control 0xb6: +/3/5 C [???]<br>Control 0xc0: +/6624/65535 C [?=
+??]<br>Control 0xc6: +/104/65535 C [???]<br>Control 0xc8: +/9/255 C [???]<b=
+r>Control 0xc9: +/772/65535 C [???]<br>Control 0xca: +/2/2 =C2=A0 [???]<br>=
+Control 0xcc: +/10/16 =C2=A0 [???]<br>Control 0xd6: +/1/5 C [DPMS Control -=
+ On]<br>Control 0xdf: +/513/255 C [???]<br>Control 0xe4: +/0/255 C [???]<br=
+>Control 0xe5: +/35/0 C [???]<br>Control 0xe7: +/0/65535 C [???]<br>Control=
+ 0xe8: +/0/255 C [???]<br>Control 0xe9: +/178/255 C [???]<br>Control 0xea: =
++/0/255 C [???]<br>Control 0xeb: +/0/1 C [???]<br>Control 0xef: +/0/65535 C=
+ [???]<br>Control 0xf4: +/6/65535 C [???]<br>Control 0xf5: +/1/255 C [???]<=
+br>Control 0xf6: +/0/255 C [???]<br>Control 0xf7: +/1/255 C [???]<br>Contro=
+l 0xf8: +/1/255 C [???]<br>Control 0xf9: +/60/255 C [???]<br>Control 0xfa: =
++/2/255 =C2=A0 [???]<br>Control 0xfb: +/2/65535 =C2=A0 [???]<br>Control 0xf=
+e: +/3/255 C [???]<br></div>
+
+--000000000000edb96f05ce911a41--
+
+
+From daniel.kendell@...46... Mon Oct 18 08:29:01 2021
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=bTm3ThFQxsv/5unsOM3UNID5nEvPKoQVYUsNC3qFIRc=;
+ b=na5ddbO0ukTyNkjEiVgP8x5YDWRi6RSf3mvBKrKLlqqJ6BhpyA6zuoFGlPMgBxILcb
+ jkkHMUS4mE+2/Veu4dYcRUClKbh7pBxgkOJz1CD3DSkGV+oI4miGX6PUIusze4xkrM65
+ cNM1cCVEuGeoTq8rlBCm6yX9Ss0INwjuDfcGF7PgHRXR8lJiysPKzMuKICBjGTxzRNfK
+ 4fsltWXXrthVQRzu2VKpqT0cn4dMdSvanvEYDItvy9xisZ02ySeolVROXutKRnmeqXEY
+ v/MgLA9pqNk5AKk5py33ksQHaeW8J01fuM54z50wj6GvSdk8p5QpN76fNefsozdu22Ww
+ sStA==
+X-Gm-Message-State: AOAM533P+R2BC9ZfKYu83ZPVlKOd44y5657WlGi8c434RkLtxLlx6kaM
+ l21X+XhFVMgkZMe/TlMUyHWHDvsAXfT/b7bmiTClcwhEsYO69A==
+X-Google-Smtp-Source: ABdhPJz1H0yzzw/KxiV2t1fc2wHhOKhPAzrG/bduciolmXnEVZt1X7Ec9v586kj4B6EN7v+honynMjw9DNsCYQxon2M=
+X-Received: by 2002:a05:6830:351:: with SMTP id
+ h17mr20258102ote.31.1634545733097;
+ Mon, 18 Oct 2021 01:28:53 -0700 (PDT)
+MIME-Version: 1.0
+From: Daniel Kendell <daniel.kendell@...46...>
+Date: Mon, 18 Oct 2021 09:28:42 +0100
+Message-ID: <CAPcyrtcCF2YYUyR4MiavstskOhN0rFgk42BMNAdhPJ=vMX0bAQ@...53...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/mixed; boundary="000000000000ca748c05ce9c55aa"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hi DDCControl team! Thanks for the utility, it works great.
+ So glad to be able to control my monitor brightness programmatically!
+ DDCControl
+ says that my monitor isn't in it's db, I *am* on an older ubuntu so maybe
+ I'm just out of date and if that's the case I'm sorry to have bothered you.
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [daniel.kendell[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [209.85.210.43 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.210.43 listed in list.dnswl.org]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+X-Headers-End: 1mcO0x-0044lu-K2
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:58 +0000
+Subject: [ddccontrol-users] Monitor db submission
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Oct 2021 08:29:01 -0000
+
+--000000000000ca748c05ce9c55aa
+Content-Type: multipart/alternative; boundary="000000000000ca748a05ce9c55a8"
+
+--000000000000ca748a05ce9c55a8
+Content-Type: text/plain; charset="UTF-8"
+
+Hi DDCControl team!
+
+Thanks for the utility, it works great. So glad to be able to control my
+monitor brightness programmatically!
+
+DDCControl says that my monitor isn't in it's db, I *am* on an older ubuntu
+so maybe I'm just out of date and if that's the case I'm sorry to have
+bothered you.
+
+My LANG= LC_ALL= ddccontrol -p -c -d output is attached.
+
+I hope it's useful.
+
+Again, many thanks.
+- Dan
+
+--000000000000ca748a05ce9c55a8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi DDCControl team!</div><div><br></div><div>Thanks f=
+or the utility, it works great. So glad to be able to control my monitor br=
+ightness programmatically!</div><div><br></div><div>DDCControl says that my=
+ monitor isn&#39;t in it&#39;s db, I <i>am</i> on an older ubuntu so maybe =
+I&#39;m just out of date and if that&#39;s the case I&#39;m sorry to have b=
+othered you.</div><div><br></div><div>My <span style=3D"font-family:monospa=
+ce"><span style=3D"color:rgb(0,0,0);background-color:rgb(255,255,255)">LANG=
+=3D LC_ALL=3D ddccontrol -p -c -d<span style=3D"font-family:arial,sans-seri=
+f"> output is attached.</span></span></span></div><div><span style=3D"font-=
+family:monospace"><span style=3D"color:rgb(0,0,0);background-color:rgb(255,=
+255,255)"><span style=3D"font-family:arial,sans-serif"><br></span></span></=
+span></div><div><span style=3D"font-family:monospace"><span style=3D"color:=
+rgb(0,0,0);background-color:rgb(255,255,255)"><span style=3D"font-family:ar=
+ial,sans-serif">I hope it&#39;s useful.</span></span></span></div><div><spa=
+n style=3D"font-family:monospace"><span style=3D"color:rgb(0,0,0);backgroun=
+d-color:rgb(255,255,255)"><span style=3D"font-family:arial,sans-serif"><br>=
+</span></span></span></div><div><span style=3D"font-family:monospace"><span=
+ style=3D"color:rgb(0,0,0);background-color:rgb(255,255,255)"><span style=
+=3D"font-family:arial,sans-serif">Again, many thanks.</span></span></span><=
+/div><div><span style=3D"font-family:monospace"><span style=3D"color:rgb(0,=
+0,0);background-color:rgb(255,255,255)"><span style=3D"font-family:arial,sa=
+ns-serif">- Dan<br></span></span></span></div></div>
+
+--000000000000ca748a05ce9c55a8--
+
+--000000000000ca748c05ce9c55aa
+Content-Type: text/x-log; charset="US-ASCII"; name="ddccontrol-pcd.log"
+Content-Disposition: attachment; filename="ddccontrol-pcd.log"
+Content-Transfer-Encoding: base64
+Content-ID: <f_kuwe5ehy0>
+X-Attachment-Id: f_kuwe5ehy0
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4zCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
+IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
+Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
+dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KClByb2Jp
+bmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLi4uLi4KRGV0ZWN0ZWQgbW9uaXRvcnMgOgog
+LSBEZXZpY2U6IGRldjovZGV2L2kyYy03CiAgIEREQy9DSSBzdXBwb3J0ZWQ6IFllcwogICBNb25p
+dG9yIE5hbWU6IFZFU0Egc3RhbmRhcmQgbW9uaXRvcgogICBJbnB1dCB0eXBlOiBEaWdpdGFsCiAg
+KEF1dG9tYXRpY2FsbHkgc2VsZWN0ZWQpCiAtIERldmljZTogZGV2Oi9kZXYvaTJjLTQKICAgRERD
+L0NJIHN1cHBvcnRlZDogTm8KICAgTW9uaXRvciBOYW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IK
+ICAgSW5wdXQgdHlwZTogRGlnaXRhbApSZWFkaW5nIEVESUQgYW5kIGluaXRpYWxpemluZyBEREMv
+Q0kgYXQgYnVzIGRldjovZGV2L2kyYy03Li4uCgpFRElEIHJlYWRpbmdzOgoJUGx1ZyBhbmQgUGxh
+eSBJRDogQk5RNzk0OSBbVkVTQSBzdGFuZGFyZCBtb25pdG9yXQoJSW5wdXQgdHlwZTogRGlnaXRh
+bAo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdBUk5JTkcgPT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PQpUaGVyZSBpcyBubyBzdXBwb3J0IGZvciB5b3VyIG1vbml0b3IgaW4g
+dGhlIGRhdGFiYXNlLCBidXQgZGRjY29udHJvbCBpcwp1c2luZyBhIGJhc2ljIGdlbmVyaWMgcHJv
+ZmlsZS4gTWFueSBjb250cm9scyB3aWxsIG5vdCBiZSBzdXBwb3J0ZWQsIGFuZApzb21lIGNvbnRy
+b2xzIG1heSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVwZGF0ZSBkZGNjb250cm9sLWRi
+LCBvciwgaWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRlc3QKdmVyc2lvbiwgcGxlYXNl
+IHNlbmQgdGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1hbmQgdG8KZGRjY29udHJvbC11
+c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBMQ19BTEw9IGRkY2NvbnRyb2wgLXAg
+LWMgLWQKClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5H
+ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkNhcGFiaWxpdGllczoKUmF3IG91dHB1
+dDogKHByb3QobW9uaXRvcil0eXBlKExDRCltb2RlbChFTDI4NzBVKWNtZHMoMDEgMDIgMDMgMDcg
+MEMgRTMgRjMpdmNwKDAyIDA0IDA1IDA4IDBCIDBDIDEwIDEyIDE0KDA0IDA1IDA4IDBCKSAxNiAx
+OCAxQSA1MiA2MCgwRiAxMSAxMikgNjIgNzIoNTAgNjQgNzggOEMgQTApIDdEKDAwIDAxIDAyKSA3
+RSgwMyAwRiAxMCAxMSAxMikgN0YgODAoMDEgMDIgMDMpIDg2KDAxIDAyIDA1IDBDIDEwIDExIDEz
+IDE0IDE1IDE2IDE3KSA4NyA4RCgwMSAwMikgIEFDIEFFIEIyIEI2IEMwIEM2IEM4IEM5IENBKDAx
+IDAyKSBDQygwMSAwMiAwMyAwNCAwNSAwNiAwNyAwOSAwQSAwQiAwRCAwRSAwRiAxMiAxNCAxQSAx
+RSAxRikgRDYoMDEgMDUpIERBKDAwIDAyKSBEQygwNCAwNSAwQiAwQyAwRSAwRiAxMiAxMyAyMSkg
+REYpbXN3aHFsKDEpYXNzZXRfZWVwKDQwKW1jY3NfdmVyKDIuMikpClBhcnNlZCBvdXRwdXQ6IAoJ
+VkNQOiAwMiAwNCAwNSAwOCAwYiAwYyAxMCAxMiAxNCAxNiAxOCAxYSA1MiA2MCA2MiA3MiA3ZCA3
+ZSA3ZiA4MCA4NiA4NyA4ZCBhYyBhZSBiMiBiNiBjMCBjNiBjOCBjOSBjYSBjYyBkNiBkYSBkYyBk
+ZiAKCVR5cGU6IFVua25vd24KCkNvbnRyb2xzICh2YWxpZC9jdXJyZW50L21heCkgW0Rlc2NyaXB0
+aW9uIC0gVmFsdWUgbmFtZV06CkNvbnRyb2wgMHgwMDogKy8xMjMyOS8xMDI5MiAgIFs/Pz9dCkNv
+bnRyb2wgMHgwMTogKy8xMjMyOS8xMDI5MiAgIFs/Pz9dCkNvbnRyb2wgMHgwMjogKy8xNi8yIEMg
+W1NlY29uZGFyeSBEZWdhdXNzXQpDb250cm9sIDB4MDM6ICsvMTYvMiAgIFs/Pz9dCkNvbnRyb2wg
+MHgwNDogKy8wLzEgQyBbUmVzdG9yZSBGYWN0b3J5IERlZmF1bHRzXQpDb250cm9sIDB4MDU6ICsv
+MC8xIEMgW1Jlc3RvcmUgQnJpZ2h0bmVzcyBhbmQgQ29udHJhc3RdCkNvbnRyb2wgMHgwNjogKy8w
+LzEgICBbPz8/XQpDb250cm9sIDB4MDc6ICsvMC8xICAgWz8/P10KQ29udHJvbCAweDA4OiArLzAv
+MSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl0KQ29udHJvbCAweDA5OiArLzAvMSAg
+IFs/Pz9dCkNvbnRyb2wgMHgwYTogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4MGI6ICsvMTAwLzAg
+QyBbPz8/XQpDb250cm9sIDB4MGM6ICsvMzUvNjMgQyBbPz8/XQpDb250cm9sIDB4MGQ6ICsvMzUv
+NjMgICBbPz8/XQpDb250cm9sIDB4MGU6ICsvMzUvNjMgICBbPz8/XQpDb250cm9sIDB4MGY6ICsv
+MzUvNjMgICBbPz8/XQpDb250cm9sIDB4MTA6ICsvNTMvMTAwIEMgW0JyaWdodG5lc3NdCkNvbnRy
+b2wgMHgxMTogKy81My8xMDAgICBbPz8/XQpDb250cm9sIDB4MTI6ICsvNzUvMTAwIEMgW0NvbnRy
+YXN0XQpDb250cm9sIDB4MTM6ICsvNzUvMTAwICAgWz8/P10KQ29udHJvbCAweDE0OiArLzUvMTEg
+QyBbPz8/XQpDb250cm9sIDB4MTU6ICsvNS8xMSAgIFs/Pz9dCkNvbnRyb2wgMHgxNjogKy85NC8x
+MDAgQyBbUmVkIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxNzogKy85NC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4MTg6ICsvOTEvMTAwIEMgW0dyZWVuIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgx
+OTogKy85MS8xMDAgICBbPz8/XQpDb250cm9sIDB4MWE6ICsvODkvMTAwIEMgW0JsdWUgbWF4aW11
+bSBsZXZlbF0KQ29udHJvbCAweDFiOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgxYzogKy84
+OS8xMDAgICBbPz8/XQpDb250cm9sIDB4MWQ6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDFl
+OiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgxZjogKy84OS8xMDAgICBbPz8/XQpDb250cm9s
+IDB4MjA6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDIxOiArLzg5LzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHgyMjogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4MjM6ICsvODkvMTAwICAgWz8/
+P10KQ29udHJvbCAweDI0OiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgyNTogKy84OS8xMDAg
+ICBbPz8/XQpDb250cm9sIDB4MjY6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDI3OiArLzg5
+LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgyODogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4Mjk6
+ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDJhOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wg
+MHgyYjogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4MmM6ICsvODkvMTAwICAgWz8/P10KQ29u
+dHJvbCAweDJkOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgyZTogKy84OS8xMDAgICBbPz8/
+XQpDb250cm9sIDB4MmY6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDMwOiArLzg5LzEwMCAg
+IFs/Pz9dCkNvbnRyb2wgMHgzMTogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4MzI6ICsvODkv
+MTAwICAgWz8/P10KQ29udHJvbCAweDMzOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzNDog
+Ky84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4MzU6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAw
+eDM2OiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzNzogKy84OS8xMDAgICBbPz8/XQpDb250
+cm9sIDB4Mzg6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDM5OiArLzg5LzEwMCAgIFs/Pz9d
+CkNvbnRyb2wgMHgzYTogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4M2I6ICsvODkvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDNjOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzZDogKy84OS8x
+MDAgICBbPz8/XQpDb250cm9sIDB4M2U6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDNmOiAr
+Lzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0MDogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4
+NDE6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDQyOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRy
+b2wgMHg0MzogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4NDQ6ICsvODkvMTAwICAgWz8/P10K
+Q29udHJvbCAweDQ1OiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0NjogKy84OS8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4NDc6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDQ4OiArLzg5LzEw
+MCAgIFs/Pz9dCkNvbnRyb2wgMHg0OTogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4NGE6ICsv
+ODkvMTAwICAgWz8/P10KQ29udHJvbCAweDRiOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0
+YzogKy84OS8xMDAgICBbPz8/XQpDb250cm9sIDB4NGQ6ICsvODkvMTAwICAgWz8/P10KQ29udHJv
+bCAweDRlOiArLzg5LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0ZjogKy84OS8xMDAgICBbPz8/XQpD
+b250cm9sIDB4NTA6ICsvODkvMTAwICAgWz8/P10KQ29udHJvbCAweDUxOiArLzg5LzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHg1MjogKy8xNi8yNTUgQyBbPz8/XQpDb250cm9sIDB4NTM6ICsvMTYvMjU1
+ICAgWz8/P10KQ29udHJvbCAweDU0OiArLzE2LzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg1NTogKy8x
+Ni8yNTUgICBbPz8/XQpDb250cm9sIDB4NTY6ICsvMTYvMjU1ICAgWz8/P10KQ29udHJvbCAweDU3
+OiArLzE2LzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg1ODogKy8xNi8yNTUgICBbPz8/XQpDb250cm9s
+IDB4NTk6ICsvMTYvMjU1ICAgWz8/P10KQ29udHJvbCAweDVhOiArLzE2LzI1NSAgIFs/Pz9dCkNv
+bnRyb2wgMHg1YjogKy8xNi8yNTUgICBbPz8/XQpDb250cm9sIDB4NWM6ICsvMTYvMjU1ICAgWz8/
+P10KQ29udHJvbCAweDVkOiArLzE2LzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg1ZTogKy8xNi8yNTUg
+ICBbPz8/XQpDb250cm9sIDB4NWY6ICsvMTYvMjU1ICAgWz8/P10KQ29udHJvbCAweDYwOiArLzE3
+LzE4IEMgW0lucHV0IFNvdXJjZSBTZWxlY3RdCkNvbnRyb2wgMHg2MTogKy8xNy8xOCAgIFs/Pz9d
+CkNvbnRyb2wgMHg2MjogKy8yNS8xMDAgQyBbQXVkaW8gU3BlYWtlciBWb2x1bWUgQWRqdXN0XQpD
+b250cm9sIDB4NjM6ICsvMjUvMTAwICAgWz8/P10KQ29udHJvbCAweDY0OiArLzI1LzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHg2NTogKy8yNS8xMDAgICBbPz8/XQpDb250cm9sIDB4NjY6ICsvMjUvMTAw
+ICAgWz8/P10KQ29udHJvbCAweDY3OiArLzI1LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2ODogKy8y
+NS8xMDAgICBbPz8/XQpDb250cm9sIDB4Njk6ICsvMjUvMTAwICAgWz8/P10KQ29udHJvbCAweDZh
+OiArLzI1LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2YjogKy8yNS8xMDAgICBbPz8/XQpDb250cm9s
+IDB4NmM6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDZkOiArLzUwLzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHg2ZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NmY6ICsvNTAvMTAwICAgWz8/
+P10KQ29udHJvbCAweDcwOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg3MTogKy81MC8xMDAg
+ICBbPz8/XQpDb250cm9sIDB4NzI6ICsvMTIwLzE2MCBDIFs/Pz9dCkNvbnRyb2wgMHg3MzogKy8x
+MjAvMTYwICAgWz8/P10KQ29udHJvbCAweDc0OiArLzEyMC8xNjAgICBbPz8/XQpDb250cm9sIDB4
+NzU6ICsvMTIwLzE2MCAgIFs/Pz9dCkNvbnRyb2wgMHg3NjogKy8xMjAvMTYwICAgWz8/P10KQ29u
+dHJvbCAweDc3OiArLzEyMC8xNjAgICBbPz8/XQpDb250cm9sIDB4Nzg6ICsvMTIwLzE2MCAgIFs/
+Pz9dCkNvbnRyb2wgMHg3OTogKy8xMjAvMTYwICAgWz8/P10KQ29udHJvbCAweDdhOiArLzEyMC8x
+NjAgICBbPz8/XQpDb250cm9sIDB4N2I6ICsvMTIwLzE2MCAgIFs/Pz9dCkNvbnRyb2wgMHg3Yzog
+Ky8xMjAvMTYwICAgWz8/P10KQ29udHJvbCAweDdkOiArLzEyMC8xNjAgQyBbPz8/XQpDb250cm9s
+IDB4N2U6ICsvMTIwLzE2MCBDIFs/Pz9dCkNvbnRyb2wgMHg3ZjogKy8xMjAvMTYwIEMgWz8/P10K
+Q29udHJvbCAweDgwOiArLzEyMC8xNjAgQyBbPz8/XQpDb250cm9sIDB4ODE6ICsvMTIwLzE2MCAg
+IFs/Pz9dCkNvbnRyb2wgMHg4MjogKy8xMjAvMTYwICAgWz8/P10KQ29udHJvbCAweDgzOiArLzEy
+MC8xNjAgICBbPz8/XQpDb250cm9sIDB4ODQ6ICsvMTIwLzE2MCAgIFs/Pz9dCkNvbnRyb2wgMHg4
+NTogKy8xMjAvMTYwICAgWz8/P10KQ29udHJvbCAweDg2OiArLzIvMjMgQyBbPz8/XQpDb250cm9s
+IDB4ODc6ICsvMTAvMTAgQyBbPz8/XQpDb250cm9sIDB4ODg6ICsvMTAvMTAgICBbPz8/XQpDb250
+cm9sIDB4ODk6ICsvMTAvMTAgICBbPz8/XQpDb250cm9sIDB4OGE6ICsvNTAvMTAwICAgWz8/P10K
+Q29udHJvbCAweDhiOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg4YzogKy81MC8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4OGQ6ICsvMi8yIEMgWz8/P10KQ29udHJvbCAweDhlOiArLzIvMiAgIFs/
+Pz9dCkNvbnRyb2wgMHg4ZjogKy8yLzIgICBbPz8/XQpDb250cm9sIDB4OTA6ICsvNTAvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDkxOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5MjogKy81MC8x
+MDAgICBbPz8/XQpDb250cm9sIDB4OTM6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDk0OiAr
+LzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5NTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4
+OTY6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDk3OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRy
+b2wgMHg5ODogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4OTk6ICsvNTAvMTAwICAgWz8/P10K
+Q29udHJvbCAweDlhOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5YjogKy81MC8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4OWM6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDlkOiArLzUwLzEw
+MCAgIFs/Pz9dCkNvbnRyb2wgMHg5ZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4OWY6ICsv
+NTAvMTAwICAgWz8/P10KQ29udHJvbCAweGEwOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHhh
+MTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4YTI6ICsvNTAvMTAwICAgWz8/P10KQ29udHJv
+bCAweGEzOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHhhNDogKy81MC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4YTU6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweGE2OiArLzUwLzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHhhNzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4YTg6ICsvNTAvMTAw
+ICAgWz8/P10KQ29udHJvbCAweGE5OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHhhYTogKy81
+MC8xMDAgICBbPz8/XQpDb250cm9sIDB4YWI6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweGFj
+OiArLzI0MjgvMiBDIFs/Pz9dCkNvbnRyb2wgMHhhZDogKy8yNDI4LzIgICBbPz8/XQpDb250cm9s
+IDB4YWU6ICsvNjAxMC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhhZjogKy82MDEwLzY1NTM1ICAg
+Wz8/P10KQ29udHJvbCAweGIwOiArLzYwMTAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YjE6ICsv
+NjAxMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhiMjogKy8xLzIgQyBbPz8/XQpDb250cm9sIDB4
+YjM6ICsvMS8yICAgWz8/P10KQ29udHJvbCAweGI0OiArLzEvMiAgIFs/Pz9dCkNvbnRyb2wgMHhi
+NTogKy8xLzEgICBbPz8/XQpDb250cm9sIDB4YjY6ICsvMy81IEMgWz8/P10KQ29udHJvbCAweGI3
+OiArLzMvNSAgIFs/Pz9dCkNvbnRyb2wgMHhiODogKy8zLzUgICBbPz8/XQpDb250cm9sIDB4Yjk6
+ICsvMy81ICAgWz8/P10KQ29udHJvbCAweGJhOiArLzMvNSAgIFs/Pz9dCkNvbnRyb2wgMHhiYjog
+Ky8zLzUgICBbPz8/XQpDb250cm9sIDB4YmM6ICsvMy81ICAgWz8/P10KQ29udHJvbCAweGJkOiAr
+LzMvNSAgIFs/Pz9dCkNvbnRyb2wgMHhiZTogKy8zLzUgICBbPz8/XQpDb250cm9sIDB4YmY6ICsv
+My81ICAgWz8/P10KQ29udHJvbCAweGMwOiArLzM2MjYvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4
+YzE6ICsvMzYyNi82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhjMjogKy8zNjI2LzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweGMzOiArLzM2MjYvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzQ6ICsvMzYy
+Ni82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhjNTogKy8zNjI2LzY1NTM1ICAgWz8/P10KQ29udHJv
+bCAweGM2OiArLzYwLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGM3OiArLzYwLzY1NTM1ICAgWz8/
+P10KQ29udHJvbCAweGM4OiArLzM4MTUzLzM5IEMgWz8/P10KQ29udHJvbCAweGM5OiArLzEvNjU1
+MzUgQyBbPz8/XQpDb250cm9sIDB4Y2E6ICsvMi8yIEMgWz8/P10KQ29udHJvbCAweGNiOiArLzIv
+MiAgIFs/Pz9dCkNvbnRyb2wgMHhjYzogKy8yLzE2IEMgWz8/P10KQ29udHJvbCAweGNkOiArLzIv
+MTYgICBbPz8/XQpDb250cm9sIDB4Y2U6ICsvMi8xNiAgIFs/Pz9dCkNvbnRyb2wgMHhjZjogKy8y
+LzE2ICAgWz8/P10KQ29udHJvbCAweGQwOiArLzIvMTYgICBbPz8/XQpDb250cm9sIDB4ZDE6ICsv
+Mi8xNiAgIFs/Pz9dCkNvbnRyb2wgMHhkMjogKy8yLzE2ICAgWz8/P10KQ29udHJvbCAweGQzOiAr
+LzIvMTYgICBbPz8/XQpDb250cm9sIDB4ZDQ6ICsvMi8xNiAgIFs/Pz9dCkNvbnRyb2wgMHhkNTog
+Ky8yLzE2ICAgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENvbnRyb2wgLSBPbl0K
+Q29udHJvbCAweGQ3OiArLzEvNSAgIFs/Pz9dCkNvbnRyb2wgMHhkODogKy8xLzUgICBbPz8/XQpD
+b250cm9sIDB4ZDk6ICsvMS81ICAgWz8/P10KQ29udHJvbCAweGRhOiArLzAvMiBDIFs/Pz9dCkNv
+bnRyb2wgMHhkYjogKy8wLzIgICBbPz8/XQpDb250cm9sIDB4ZGM6ICsvMTI5OS8xMDQzIEMgWz8/
+P10KQ29udHJvbCAweGRkOiArLzEyOTkvMTA0MyAgIFs/Pz9dCkNvbnRyb2wgMHhkZTogKy8xMjk5
+LzEwNDMgICBbPz8/XQpDb250cm9sIDB4ZGY6ICsvNTE0LzY1NTM1IEMgWz8/P10KQ29udHJvbCAw
+eGUwOiArLzUxNC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhlMTogKy81MTQvNjU1MzUgICBbPz8/
+XQpDb250cm9sIDB4ZTI6ICsvNTE0LzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGUzOiArLzUxNC82
+NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhlNDogKy81MTQvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4
+ZTU6ICsvNTE0LzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGU2OiArLzUxNC82NTUzNSAgIFs/Pz9d
+CkNvbnRyb2wgMHhlNzogKy81MTQvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZTg6ICsvNTE0LzY1
+NTM1ICAgWz8/P10KQ29udHJvbCAweGU5OiArLzUxNC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhl
+YTogKy8wLzUgICBbPz8/XQpDb250cm9sIDB4ZWI6ICsvMC81ICAgWz8/P10KQ29udHJvbCAweGVj
+OiArLzAvNSAgIFs/Pz9dCkNvbnRyb2wgMHhlZDogKy8xLzEgICBbPz8/XQpDb250cm9sIDB4ZWU6
+ICsvMC8yICAgWz8/P10KQ29udHJvbCAweGVmOiArLzEvMSAgIFs/Pz9dCkNvbnRyb2wgMHhmMDog
+Ky8wLzIgICBbPz8/XQpDb250cm9sIDB4ZjE6ICsvMC8yICAgWz8/P10KQ29udHJvbCAweGYyOiAr
+LzAvMiAgIFs/Pz9dCkNvbnRyb2wgMHhmMzogKy8wLzIgICBbPz8/XQpDb250cm9sIDB4ZjQ6ICsv
+MC8xICAgWz8/P10KQ29udHJvbCAweGY1OiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHhmNjogKy8w
+LzEgICBbPz8/XQpDb250cm9sIDB4Zjc6ICsvMS8xICAgWz8/P10KQ29udHJvbCAweGY4OiArLzAv
+MzAgICBbPz8/XQpDb250cm9sIDB4Zjk6ICsvMC8zMCAgIFs/Pz9dCkNvbnRyb2wgMHhmYTogKy8w
+LzMwICAgWz8/P10KQ29udHJvbCAweGZiOiArLzAvMzAgICBbPz8/XQpDb250cm9sIDB4ZmM6ICsv
+MC8zMCAgIFs/Pz9dCkNvbnRyb2wgMHhmZDogKy8zLzUgICBbPz8/XQpDb250cm9sIDB4ZmU6ICsv
+My81ICAgWz8/P10K
+--000000000000ca748c05ce9c55aa--
+
+
+From fox@...2811... Mon Oct 18 17:24:43 2021
+Date: Mon, 18 Oct 2021 20:08:10 +0300
+From: Andrew Dolgov <fox@...2811...>
+To: ddccontrol-users@lists.sourceforge.net
+Message-ID: <20211018170810.djh42kvyfmwzyecn@...496...>
+MIME-Version: 1.0
+X-Spam-Score: 1.1 (+)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Thanks! ddccontrol version 0.4.4 Copyright 2004-2005 Oleg
+ I. Vdovikin (oleg@...13...) Copyright 2004-2006 Nicolas Boichat
+ (nicolas@...3...)
+ This program comes with ABSOLUTELY NO WARRANTY. You may redistri [...]
+ Content analysis details:   (1.1 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1mcWNL-0005V4-I7
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:58 +0000
+Subject: [ddccontrol-users] Iiayma PL2792Q missing from the db
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Oct 2021 17:24:43 -0000
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+
+Thanks!
+
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitorsradeon_open: mmap failed: Invalid argument
+.........I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/IVM6630.xml"
+Document not parsed successfully.
+.....I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/IVM6630.xml"
+Document not parsed successfully.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-4
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-4...
+
+EDID readings:
+	Plug and Play ID: IVM6630 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(PL2792Q)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(05 06 08 0B) 16 18 1A 52 60(03 0F 11) AC AE B2 B6 C0 C6 C8 C9 CC(02 03 04 05 06 09 0A 0D 12 14 1E) D6(01 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.2))
+Parsed output: 
+	VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 ac ae b2 b6 c0 c6 c8 c9 cc d6 df 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/30309/10664   [???]
+Control 0x01: +/30309/10664   [???]
+Control 0x02: +/1/2 C [Secondary Degauss - Secondary Degauss]
+Control 0x03: +/1/2   [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x07: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x09: +/0/1   [???]
+Control 0x0a: +/0/1   [???]
+Control 0x0b: +/100/0 C [???]
+Control 0x0c: +/100/0 C [???]
+Control 0x0d: +/100/0   [???]
+Control 0x0e: +/100/0   [???]
+Control 0x0f: +/100/0   [???]
+Control 0x10: +/20/100 C [Brightness]
+Control 0x11: +/20/100   [???]
+Control 0x12: +/80/100 C [Contrast]
+Control 0x13: +/80/100   [???]
+Control 0x14: +/5/12 C [???]
+Control 0x15: +/5/12   [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x17: +/100/100   [???]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x19: +/100/100   [???]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1b: +/100/100   [???]
+Control 0x1c: +/100/100   [???]
+Control 0x1d: +/100/100   [???]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/0/1   [???]
+Control 0x20: +/0/1   [???]
+Control 0x21: +/0/1   [???]
+Control 0x22: +/0/1   [???]
+Control 0x23: +/0/1   [???]
+Control 0x24: +/0/1   [???]
+Control 0x25: +/0/1   [???]
+Control 0x26: +/0/1   [???]
+Control 0x27: +/0/1   [???]
+Control 0x28: +/0/1   [???]
+Control 0x29: +/0/1   [???]
+Control 0x2a: +/0/1   [???]
+Control 0x2b: +/0/1   [???]
+Control 0x2c: +/0/1   [???]
+Control 0x2d: +/0/1   [???]
+Control 0x2e: +/0/1   [???]
+Control 0x2f: +/0/1   [???]
+Control 0x30: +/0/1   [???]
+Control 0x31: +/0/1   [???]
+Control 0x32: +/0/1   [???]
+Control 0x33: +/0/1   [???]
+Control 0x34: +/0/1   [???]
+Control 0x35: +/0/1   [???]
+Control 0x36: +/0/1   [???]
+Control 0x37: +/0/1   [???]
+Control 0x38: +/0/1   [???]
+Control 0x39: +/0/1   [???]
+Control 0x3a: +/0/1   [???]
+Control 0x3b: +/0/1   [???]
+Control 0x3c: +/0/1   [???]
+Control 0x3d: +/0/1   [???]
+Control 0x3e: +/0/1   [???]
+Control 0x3f: +/0/1   [???]
+Control 0x40: +/0/1   [???]
+Control 0x41: +/0/1   [???]
+Control 0x42: +/0/1   [???]
+Control 0x43: +/0/1   [???]
+Control 0x44: +/0/1   [???]
+Control 0x45: +/0/1   [???]
+Control 0x46: +/0/1   [???]
+Control 0x47: +/0/1   [???]
+Control 0x48: +/0/1   [???]
+Control 0x49: +/0/1   [???]
+Control 0x4a: +/0/1   [???]
+Control 0x4b: +/0/1   [???]
+Control 0x4c: +/0/1   [???]
+Control 0x4d: +/0/1   [???]
+Control 0x4e: +/0/1   [???]
+Control 0x4f: +/0/1   [???]
+Control 0x50: +/0/1   [???]
+Control 0x51: +/0/1   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x53: +/0/255   [???]
+Control 0x54: +/0/255   [???]
+Control 0x55: +/0/255   [???]
+Control 0x56: +/0/255   [???]
+Control 0x57: +/0/255   [???]
+Control 0x58: +/0/255   [???]
+Control 0x59: +/0/255   [???]
+Control 0x5a: +/0/255   [???]
+Control 0x5b: +/0/255   [???]
+Control 0x5c: +/0/255   [???]
+Control 0x5d: +/0/255   [???]
+Control 0x5e: +/0/255   [???]
+Control 0x5f: +/0/255   [???]
+Control 0x60: +/17/15 C [Input Source Select (Main)]
+Control 0x61: +/17/15   [???]
+Control 0x62: +/46/100   [???]
+Control 0x63: +/46/100   [???]
+Control 0x64: +/46/100   [???]
+Control 0x65: +/46/100   [???]
+Control 0x66: +/46/100   [???]
+Control 0x67: +/46/100   [???]
+Control 0x68: +/46/100   [???]
+Control 0x69: +/46/100   [???]
+Control 0x6a: +/46/100   [???]
+Control 0x6b: +/46/100   [???]
+Control 0x6c: +/46/100   [???]
+Control 0x6d: +/46/100   [???]
+Control 0x6e: +/46/100   [???]
+Control 0x6f: +/46/100   [???]
+Control 0x70: +/46/100   [???]
+Control 0x71: +/46/100   [???]
+Control 0x72: +/46/100   [???]
+Control 0x73: +/46/100   [???]
+Control 0x74: +/46/100   [???]
+Control 0x75: +/46/100   [???]
+Control 0x76: +/46/100   [???]
+Control 0x77: +/46/100   [???]
+Control 0x78: +/46/100   [???]
+Control 0x79: +/46/100   [???]
+Control 0x7a: +/46/100   [???]
+Control 0x7b: +/46/100   [???]
+Control 0x7c: +/46/100   [???]
+Control 0x7d: +/46/100   [???]
+Control 0x7e: +/46/100   [???]
+Control 0x7f: +/46/100   [???]
+Control 0x80: +/46/100   [???]
+Control 0x81: +/46/100   [???]
+Control 0x82: +/46/100   [???]
+Control 0x83: +/46/100   [???]
+Control 0x84: +/46/100   [???]
+Control 0x85: +/46/100   [???]
+Control 0x86: +/46/100   [???]
+Control 0x87: +/60/100   [???]
+Control 0x88: +/60/100   [???]
+Control 0x89: +/60/100   [???]
+Control 0x8a: +/60/100   [???]
+Control 0x8b: +/60/100   [???]
+Control 0x8c: +/60/100   [???]
+Control 0x8d: +/2/2   [???]
+Control 0x8e: +/2/2   [???]
+Control 0x8f: +/2/2   [???]
+Control 0x90: +/2/2   [???]
+Control 0x91: +/2/2   [???]
+Control 0x92: +/2/2   [???]
+Control 0x93: +/2/2   [???]
+Control 0x94: +/2/2   [???]
+Control 0x95: +/2/2   [???]
+Control 0x96: +/2/2   [???]
+Control 0x97: +/2/2   [???]
+Control 0x98: +/2/2   [???]
+Control 0x99: +/2/2   [???]
+Control 0x9a: +/2/2   [???]
+Control 0x9b: +/2/2   [???]
+Control 0x9c: +/2/2   [???]
+Control 0x9d: +/2/2   [???]
+Control 0x9e: +/2/2   [???]
+Control 0x9f: +/2/2   [???]
+Control 0xa0: +/2/2   [???]
+Control 0xa1: +/2/2   [???]
+Control 0xa2: +/2/2   [???]
+Control 0xa3: +/2/2   [???]
+Control 0xa4: +/2/2   [???]
+Control 0xa5: +/2/2   [???]
+Control 0xa6: +/2/2   [???]
+Control 0xa7: +/2/2   [???]
+Control 0xa8: +/2/2   [???]
+Control 0xa9: +/2/2   [???]
+Control 0xaa: +/2/2   [???]
+Control 0xab: +/2/2   [???]
+Control 0xac: +/23364/1 C [???]
+Control 0xad: +/23364/1   [???]
+Control 0xae: +/6000/65535 C [???]
+Control 0xaf: +/6000/65535   [???]
+Control 0xb0: +/6000/65535   [???]
+Control 0xb1: +/6000/65535   [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb3: +/1/1   [???]
+Control 0xb4: +/1/1   [???]
+Control 0xb5: +/1/1   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xb7: +/3/5   [???]
+Control 0xb8: +/3/5   [???]
+Control 0xb9: +/3/5   [???]
+Control 0xba: +/3/5   [???]
+Control 0xbb: +/3/5   [???]
+Control 0xbc: +/3/5   [???]
+Control 0xbd: +/3/5   [???]
+Control 0xbe: +/3/5   [???]
+Control 0xbf: +/3/5   [???]
+Control 0xc0: +/3535/65535 C [???]
+Control 0xc1: +/3535/65535   [???]
+Control 0xc2: +/3535/65535   [???]
+Control 0xc3: +/3535/65535   [???]
+Control 0xc4: +/3535/65535   [???]
+Control 0xc5: +/3535/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc7: +/17868/65535   [???]
+Control 0xc8: +/34057/39 C [???]
+Control 0xc9: +/0/65535 C [???]
+Control 0xca: +/1/2   [???]
+Control 0xcb: +/1/2   [???]
+Control 0xcc: +/2/11 C [???]
+Control 0xcd: +/2/11   [???]
+Control 0xce: +/2/11   [???]
+Control 0xcf: +/2/11   [???]
+Control 0xd0: +/2/11   [???]
+Control 0xd1: +/2/11   [???]
+Control 0xd2: +/2/11   [???]
+Control 0xd3: +/2/11   [???]
+Control 0xd4: +/2/11   [???]
+Control 0xd5: +/2/11   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xd7: +/1/5   [???]
+Control 0xd8: +/1/5   [???]
+Control 0xd9: +/1/5   [???]
+Control 0xda: +/1/5   [???]
+Control 0xdb: +/1/5   [???]
+Control 0xdc: +/1/5   [???]
+Control 0xdd: +/1/5   [???]
+Control 0xde: +/1/5   [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe0: +/513/65535   [???]
+Control 0xe1: +/513/65535   [???]
+Control 0xe2: +/513/65535   [???]
+Control 0xe3: +/513/65535   [???]
+Control 0xe4: +/513/65535   [???]
+Control 0xe5: +/513/65535   [???]
+Control 0xe6: +/513/65535   [???]
+Control 0xe7: +/513/65535   [???]
+Control 0xe8: +/513/65535   [???]
+Control 0xe9: +/513/65535   [???]
+Control 0xea: +/513/65535   [???]
+Control 0xeb: +/513/65535   [???]
+Control 0xec: +/513/65535   [???]
+Control 0xed: +/513/65535   [???]
+Control 0xee: +/513/65535   [???]
+Control 0xef: +/513/65535   [???]
+Control 0xf0: +/513/65535   [???]
+Control 0xf1: +/513/65535   [???]
+Control 0xf2: +/513/65535   [???]
+Control 0xf3: +/513/65535   [???]
+Control 0xf4: +/513/65535   [???]
+Control 0xf5: +/513/65535   [???]
+Control 0xf6: +/513/65535   [???]
+Control 0xf7: +/513/65535   [???]
+Control 0xf8: +/513/65535   [???]
+Control 0xf9: +/513/65535   [???]
+Control 0xfa: +/513/65535   [???]
+Control 0xfb: +/0/1   [???]
+Control 0xfc: +/99/255   [???]
+Control 0xfd: +/98/255   [???]
+Control 0xfe: +/98/255   [???]
+Control 0xff: +/98/255   [???]
+
+
+From 705@...2729... Thu Oct 21 13:50:08 2021
+Date: Thu, 21 Oct 2021 15:49:49 +0200 (CEST)
+From: Sviteneg <705@...2729...>
+To: ddccontrol-users@lists.sourceforge.net
+Message-ID: <MmY6M2W--3-2@...2729...>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="----=_Part_124277_366732131.1634824189093"
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview: Good day. Thank you very much for your program! As requested
+ (in output),
+ sending you a report :). I'm using latest arch and ddccontrol/ddccontrol-db
+ installed from github today with compiling. Good day. Thank you very much
+ for your program! As requested (in output), sending you a report :).
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [81.3.6.165 listed in list.dnswl.org]
+ 0.0 RCVD_IN_MSPIKE_H4      RBL: Very Good reputation (+4)
+ [81.3.6.165 listed in wl.mailspike.net]
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: tuta.io]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+X-Headers-End: 1mdYSH-0001Kq-W5
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:59 +0000
+Subject: [ddccontrol-users] Monitor support (report)
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 21 Oct 2021 13:50:08 -0000
+
+------=_Part_124277_366732131.1634824189093
+Content-Type: multipart/alternative;
+	boundary="----=_Part_124278_2136172447.1634824189093"
+
+------=_Part_124278_2136172447.1634824189093
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Good day. Thank you very much for your program! As requested (in output), sending you a report :). 
+I'm using latest arch and ddccontrol/ddccontrol-db installed from github today with compiling.
+
+------=_Part_124278_2136172447.1634824189093
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+<div dir="auto">Good day. Thank you very much for your program! As requested (in output), sending you a report :). <br></div><div dir="auto">I'm using latest arch and ddccontrol/ddccontrol-db installed from github today with compiling.<br></div>  </body>
+</html>
+
+------=_Part_124278_2136172447.1634824189093--
+
+------=_Part_124277_366732131.1634824189093
+Content-Type: text/plain; charset=us-ascii; name=ddccontrol-output.txt
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=ddccontrol-output.txt
+
+[arch]$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.6.0
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELD0BC.xml"
+Document not parsed successfully.
+
+EDID readings:
+        Plug and Play ID: DELD0BC [VESA standard monitor]
+        Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/24438/25459   [???]
+Control 0x01: +/24438/25459   [???]
+Control 0x02: +/1/255 C [New Control Value - No changes]
+Control 0x03: +/1/255   [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x07: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x09: +/0/1   [???]
+Control 0x0a: +/0/1   [???]
+Control 0x0b: +/0/1   [???]
+Control 0x0c: +/0/1   [???]
+Control 0x0d: +/0/1   [???]
+Control 0x0e: +/0/100   [???]
+Control 0x0f: +/0/100   [???]
+Control 0x10: +/75/100 C [Brightness]
+Control 0x11: +/75/100   [???]
+Control 0x12: +/75/100 C [Contrast]
+Control 0x13: +/75/100   [???]
+Control 0x14: +/4/12 C [???]
+Control 0x15: +/4/12   [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x17: +/100/100   [???]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x19: +/100/100   [???]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1b: +/100/100   [???]
+Control 0x1c: +/100/100   [???]
+Control 0x1d: +/100/100   [???]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/1/1   [???]
+Control 0x20: +/0/100   [???]
+Control 0x21: +/0/100   [???]
+Control 0x22: +/0/100   [???]
+Control 0x23: +/0/100   [???]
+Control 0x24: +/0/100   [???]
+Control 0x25: +/0/100   [???]
+Control 0x26: +/0/100   [???]
+Control 0x27: +/0/100   [???]
+Control 0x28: +/0/100   [???]
+Control 0x29: +/0/100   [???]
+Control 0x2a: +/0/100   [???]
+Control 0x2b: +/0/100   [???]
+Control 0x2c: +/0/100   [???]
+Control 0x2d: +/0/100   [???]
+Control 0x2e: +/0/100   [???]
+Control 0x2f: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x31: +/0/100   [???]
+Control 0x32: +/0/100   [???]
+Control 0x33: +/0/100   [???]
+Control 0x34: +/0/100   [???]
+Control 0x35: +/0/100   [???]
+Control 0x36: +/0/100   [???]
+Control 0x37: +/0/100   [???]
+Control 0x38: +/0/100   [???]
+Control 0x39: +/0/100   [???]
+Control 0x3a: +/0/100   [???]
+Control 0x3b: +/0/100   [???]
+Control 0x3c: +/0/100   [???]
+Control 0x3d: +/0/100   [???]
+Control 0x3e: +/0/100   [???]
+Control 0x3f: +/0/100   [???]
+Control 0x40: +/0/100   [???]
+Control 0x41: +/0/100   [???]
+Control 0x42: +/0/100   [???]
+Control 0x43: +/0/100   [???]
+Control 0x44: +/0/100   [???]
+Control 0x45: +/0/100   [???]
+Control 0x46: +/0/100   [???]
+Control 0x47: +/0/100   [???]
+Control 0x48: +/0/100   [???]
+Control 0x49: +/0/100   [???]
+Control 0x4a: +/0/100   [???]
+Control 0x4b: +/0/100   [???]
+Control 0x4c: +/0/100   [???]
+Control 0x4d: +/0/100   [???]
+Control 0x4e: +/0/100   [???]
+Control 0x4f: +/0/100   [???]
+Control 0x50: +/0/100   [???]
+Control 0x51: +/0/100   [???]
+Control 0x52: +/226/255 C [???]
+Control 0x53: +/226/255   [???]
+Control 0x54: +/226/255   [???]
+Control 0x55: +/226/255   [???]
+Control 0x56: +/226/255   [???]
+Control 0x57: +/226/255   [???]
+Control 0x58: +/226/255   [???]
+Control 0x59: +/226/255   [???]
+Control 0x5a: +/226/255   [???]
+Control 0x5b: +/226/255   [???]
+Control 0x5c: +/226/255   [???]
+Control 0x5d: +/226/255   [???]
+Control 0x5e: +/226/255   [???]
+Control 0x5f: +/226/255   [???]
+Control 0x60: +/4369/4626 C [Input Source Select (Main)]
+Control 0x61: +/4369/4626   [???]
+Control 0x62: +/100/100 C [Audio Speaker Volume Adjust]
+Control 0x63: +/100/100   [???]
+Control 0x64: +/100/100   [???]
+Control 0x65: +/100/100   [???]
+Control 0x66: +/100/100   [???]
+Control 0x67: +/100/100   [???]
+Control 0x68: +/100/100   [???]
+Control 0x69: +/100/100   [???]
+Control 0x6a: +/100/100   [???]
+Control 0x6b: +/100/100   [???]
+Control 0x6c: +/100/100   [???]
+Control 0x6d: +/100/100   [???]
+Control 0x6e: +/100/100   [???]
+Control 0x6f: +/100/100   [???]
+Control 0x70: +/100/100   [???]
+Control 0x71: +/100/100   [???]
+Control 0x72: +/100/100   [???]
+Control 0x73: +/100/100   [???]
+Control 0x74: +/100/100   [???]
+Control 0x75: +/100/100   [???]
+Control 0x76: +/100/100   [???]
+Control 0x77: +/100/100   [???]
+Control 0x78: +/100/100   [???]
+Control 0x79: +/100/100   [???]
+Control 0x7a: +/100/100   [???]
+Control 0x7b: +/100/100   [???]
+Control 0x7c: +/100/100   [???]
+Control 0x7d: +/100/100   [???]
+Control 0x7e: +/100/100   [???]
+Control 0x7f: +/100/100   [???]
+Control 0x80: +/100/100   [???]
+Control 0x81: +/100/100   [???]
+Control 0x82: +/100/100   [???]
+Control 0x83: +/100/100   [???]
+Control 0x84: +/100/100   [???]
+Control 0x85: +/100/100   [???]
+Control 0x86: +/100/100   [???]
+Control 0x87: +/100/100   [???]
+Control 0x88: +/100/100   [???]
+Control 0x89: +/100/100   [???]
+Control 0x8a: +/100/100   [???]
+Control 0x8b: +/100/100   [???]
+Control 0x8c: +/100/100   [???]
+Control 0x8d: +/100/100   [???]
+Control 0x8e: +/100/100   [???]
+Control 0x8f: +/100/100   [???]
+Control 0x90: +/100/100   [???]
+Control 0x91: +/100/100   [???]
+Control 0x92: +/100/100   [???]
+Control 0x93: +/100/100   [???]
+Control 0x94: +/100/100   [???]
+Control 0x95: +/100/100   [???]
+Control 0x96: +/100/100   [???]
+Control 0x97: +/100/100   [???]
+Control 0x98: +/100/100   [???]
+Control 0x99: +/100/100   [???]
+Control 0x9a: +/100/100   [???]
+Control 0x9b: +/100/100   [???]
+Control 0x9c: +/100/100   [???]
+Control 0x9d: +/100/100   [???]
+Control 0x9e: +/100/100   [???]
+Control 0x9f: +/100/100   [???]
+Control 0xa0: +/100/100   [???]
+Control 0xa1: +/100/100   [???]
+Control 0xa2: +/100/100   [???]
+Control 0xa3: +/100/100   [???]
+Control 0xa4: +/100/100   [???]
+Control 0xa5: +/100/100   [???]
+Control 0xa6: +/100/100   [???]
+Control 0xa7: +/100/100   [???]
+Control 0xa8: +/100/100   [???]
+Control 0xa9: +/100/100   [???]
+Control 0xaa: +/100/100   [???]
+Control 0xab: +/100/100   [???]
+Control 0xac: +/2064/1 C [???]
+Control 0xad: +/2064/1   [???]
+Control 0xae: +/6010/65535 C [???]
+Control 0xaf: +/6010/65535   [???]
+Control 0xb0: +/6010/65535   [???]
+Control 0xb1: +/6010/65535   [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb3: +/1/1   [???]
+Control 0xb4: +/1/1   [???]
+Control 0xb5: +/1/1   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xb7: +/3/5   [???]
+Control 0xb8: +/3/5   [???]
+Control 0xb9: +/3/5   [???]
+Control 0xba: +/3/5   [???]
+Control 0xbb: +/3/5   [???]
+Control 0xbc: +/3/5   [???]
+Control 0xbd: +/3/5   [???]
+Control 0xbe: +/3/5   [???]
+Control 0xbf: +/3/5   [???]
+Control 0xc0: +/8535/65535   [???]
+Control 0xc1: +/8535/65535   [???]
+Control 0xc2: +/8535/65535   [???]
+Control 0xc3: +/8535/65535   [???]
+Control 0xc4: +/8535/65535   [???]
+Control 0xc5: +/8535/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc7: +/17868/65535   [???]
+Control 0xc8: +/4361/17 C [???]
+Control 0xc9: +/257/65535 C [???]
+Control 0xca: +/1/2   [???]
+Control 0xcb: +/1/2   [???]
+Control 0xcc: +/2/13 C [???]
+Control 0xcd: +/2/13   [???]
+Control 0xce: +/2/13   [???]
+Control 0xcf: +/2/13   [???]
+Control 0xd0: +/2/13   [???]
+Control 0xd1: +/2/13   [???]
+Control 0xd2: +/2/13   [???]
+Control 0xd3: +/2/13   [???]
+Control 0xd4: +/2/13   [???]
+Control 0xd5: +/2/13   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xd7: +/1/5   [???]
+Control 0xd8: +/1/5   [???]
+Control 0xd9: +/1/5   [???]
+Control 0xda: +/1/5   [???]
+Control 0xdb: +/1/5   [???]
+Control 0xdc: +/0/5 C [???]
+Control 0xdd: +/0/5   [???]
+Control 0xde: +/0/5   [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe2: +/29/255 C [???]
+Control 0xe3: +/29/255   [???]
+Control 0xe4: +/29/255   [???]
+Control 0xe5: +/29/255   [???]
+Control 0xe6: +/29/255   [???]
+Control 0xe7: +/29/255   [???]
+Control 0xe8: +/29/255   [???]
+Control 0xe9: +/29/255   [???]
+Control 0xea: +/29/255   [???]
+Control 0xeb: +/29/255   [???]
+Control 0xec: +/29/255   [???]
+Control 0xed: +/29/255   [???]
+Control 0xee: +/29/255   [???]
+Control 0xef: +/29/255   [???]
+Control 0xf0: +/12/255 C [???]
+Control 0xf1: +/1/255 C [???]
+Control 0xf2: +/0/255 C [???]
+Control 0xf3: +/0/255   [???]
+Control 0xf4: +/0/255   [???]
+Control 0xf5: +/0/255   [???]
+Control 0xf6: +/0/255   [???]
+Control 0xf7: +/0/255   [???]
+Control 0xf8: +/0/255   [???]
+Control 0xf9: +/0/255   [???]
+Control 0xfa: +/0/255   [???]
+Control 0xfb: +/0/255   [???]
+Control 0xfc: +/0/255   [???]
+Control 0xfd: +/99/255 C [???]
+Control 0xff: +/99/255   [???]
+[arch]$ 
+
+------=_Part_124277_366732131.1634824189093--
+
+
+From bcastles@...2812... Thu Oct 21 17:35:52 2021
+Date: Thu, 21 Oct 2021 13:20:09 -0400 (EDT)
+From: Brian Castles <bcastles@...2812...>
+To: ddccontrol-users@lists.sourceforge.net
+Cc: Eric McAlvin <ericj@...2812...>
+Message-ID: <1346918201.403639.1634836809153.JavaMail.zimbra@...2812...>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="----=_Part_403633_1722569213.1634836809149"
+Thread-Index: VkpuWDJQGaw2KqxWY+vLqm8szTeBSQ==
+Thread-Topic: Dell U3219Q
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Hello, Please see attached for including and adding support
+ for Dell U3219Q monitor in the database. Thank you, -Brian
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: rentec.com]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+X-Headers-End: 1mdbym-0004wZ-Ka
+X-Mailman-Approved-At: Wed, 27 Oct 2021 10:46:58 +0000
+Subject: [ddccontrol-users] Dell U3219Q
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.21
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/options/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+ <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 21 Oct 2021 17:35:52 -0000
+
+------=_Part_403633_1722569213.1634836809149
+Content-Type: multipart/alternative;
+	boundary="=_7a6f59d5-bf19-4a76-9faf-e808ea7f0685"
+
+--=_7a6f59d5-bf19-4a76-9faf-e808ea7f0685
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello, 
+
+Please see attached for including and adding support for Dell U3219Q monitor in the database. 
+
+Thank you, -Brian 
+
+
+--=_7a6f59d5-bf19-4a76-9faf-e808ea7f0685
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><div style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000"><div>Hello,<br data-mce-bogus="1"></div><div><br data-mce-bogus="1"></div><div>Please see attached for including and adding support for Dell U3219Q monitor in the database.<br></div><div><br data-mce-bogus="1"></div><div>Thank you, -Brian<br data-mce-bogus="1"></div><div><br></div><div data-marker="__SIG_PRE__"></div></div></body></html>
+--=_7a6f59d5-bf19-4a76-9faf-e808ea7f0685--
+
+------=_Part_403633_1722569213.1634836809149
+Content-Type: application/octet-stream; name=Dell_U3219Q.out
+Content-Disposition: attachment; filename=Dell_U3219Q.out
+Content-Transfer-Encoding: base64
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
+IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
+Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
+dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KClByb2Jp
+bmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLi4uLgpEZXRlY3RlZCBtb25pdG9ycyA6CiAt
+IERldmljZTogZGV2Oi9kZXYvaTJjLTUKICAgRERDL0NJIHN1cHBvcnRlZDogWWVzCiAgIE1vbml0
+b3IgTmFtZTogVkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0IHR5cGU6IERpZ2l0YWwKICAo
+QXV0b21hdGljYWxseSBzZWxlY3RlZCkKUmVhZGluZyBFRElEIGFuZCBpbml0aWFsaXppbmcgRERD
+L0NJIGF0IGJ1cyBkZXY6L2Rldi9pMmMtNS4uLgoKRURJRCByZWFkaW5nczoKCVBsdWcgYW5kIFBs
+YXkgSUQ6IERFTEExMjQgW1ZFU0Egc3RhbmRhcmQgbW9uaXRvcl0KCUlucHV0IHR5cGU6IERpZ2l0
+YWwKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT0KVGhlcmUgaXMgbm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGlu
+IHRoZSBkYXRhYmFzZSwgYnV0IGRkY2NvbnRyb2wgaXMKdXNpbmcgYSBiYXNpYyBnZW5lcmljIHBy
+b2ZpbGUuIE1hbnkgY29udHJvbHMgd2lsbCBub3QgYmUgc3VwcG9ydGVkLCBhbmQKc29tZSBjb250
+cm9scyBtYXkgbm90IHdvcmsgYXMgZXhwZWN0ZWQuClBsZWFzZSB1cGRhdGUgZGRjY29udHJvbC1k
+Yiwgb3IsIGlmIHlvdSBhcmUgYWxyZWFkeSB1c2luZyB0aGUgbGF0ZXN0CnZlcnNpb24sIHBsZWFz
+ZSBzZW5kIHRoZSBvdXRwdXQgb2YgdGhlIGZvbGxvd2luZyBjb21tYW5kIHRvCmRkY2NvbnRyb2wt
+dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0OgoKTEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1w
+IC1jIC1kCgpUaGFuayB5b3UuCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklO
+RyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpDYXBhYmlsaXRpZXM6ClJhdyBvdXRw
+dXQ6IChwcm90KG1vbml0b3IpdHlwZShMQ0QpbW9kZWwoVTMyMTlRKWNtZHMoMDEgMDIgMDMgMDcg
+MEMgRTMgRjMpdmNwKDAyIDA0IDA1IDA4IDEwIDEyIDE0KDA0IDA1IDA2IDA4IDA5IDBCIDBDKSAx
+NiAxOCAxQSA1MiA2MCgxQiAwRiAxMSApIEFBKDAxIDAyIDA0ICkgQUMgQUUgQjIgQjYgQzYgQzgg
+QzkgQ0MoMDIgMEEgMDMgMDQgMDggMDkgMEQgMDYgKSBENigwMSAwNCAwNSkgREMoMDAgMDMgMDUg
+KSBERiBFMCBFMSBFMigwMCAxRCAwMiAwNCAwQyAwRCAwRiAxMCAxMSAxMyAxNCAyNyAyMyAyNCAy
+OCApIEU0KDAwIDAxKSBFNSBFNygwMCAwMikgRTggRTkoMDAgMjEgMjIgMjQgKSBFQShGRTAwIEZF
+MDFGQzAxIEZDMDIpIEYwKDBDIDMxIDMyIDM0IDM1ICkgRjEgRjIgRkQpbXN3aHFsKDEpYXNzZXRf
+ZWVwKDQwKW1jY3NfdmVyKDIuMSkpClBhcnNlZCBvdXRwdXQ6IAoJVkNQOiAwMiAwNCAwNSAwOCAx
+MCAxMiAxNCAxNiAxOCAxYSA1MiA2MCBhYSBhYyBhZSBiMiBiNiBjNiBjOCBjOSBjYyBkNiBkYyBk
+ZiBlMCBlMSBlMiBlNCBlNSBlNyBlOCBlOSBlYSBmMCBmMSBmMiBmZCAKCVR5cGU6IFVua25vd24K
+CkNvbnRyb2xzICh2YWxpZC9jdXJyZW50L21heCkgW0Rlc2NyaXB0aW9uIC0gVmFsdWUgbmFtZV06
+CkNvbnRyb2wgMHgwMDogKy8yOTc5MS8yOTU0MSAgIFs/Pz9dCkNvbnRyb2wgMHgwMTogKy8yOTc5
+MS8yOTU0MSAgIFs/Pz9dCkNvbnRyb2wgMHgwMjogKy8yLzI1NSBDIFtTZWNvbmRhcnkgRGVnYXVz
+c10KQ29udHJvbCAweDAzOiArLzIvMjU1ICAgWz8/P10KQ29udHJvbCAweDA0OiArLzAvMSBDIFtS
+ZXN0b3JlIEZhY3RvcnkgRGVmYXVsdHNdCkNvbnRyb2wgMHgwNTogKy8wLzEgQyBbUmVzdG9yZSBC
+cmlnaHRuZXNzIGFuZCBDb250cmFzdF0KQ29udHJvbCAweDA2OiArLzAvMSAgIFs/Pz9dCkNvbnRy
+b2wgMHgwNzogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4MDg6ICsvMC8xIEMgW1Jlc3RvcmUgRmFj
+dG9yeSBEZWZhdWx0IENvbG9yXQpDb250cm9sIDB4MDk6ICsvMC8xICAgWz8/P10KQ29udHJvbCAw
+eDBhOiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHgwYjogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4
+MGM6ICsvMC8xICAgWz8/P10KQ29udHJvbCAweDBkOiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHgw
+ZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MGY6ICsvNTAvMTAwICAgWz8/P10KQ29udHJv
+bCAweDEwOiArLzc1LzEwMCBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTE6ICsvNzUvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDEyOiArLzc1LzEwMCBDIFtDb250cmFzdF0KQ29udHJvbCAweDEzOiAr
+Lzc1LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgxNDogKy83NS8xMDAgQyBbPz8/XQpDb250cm9sIDB4
+MTU6ICsvNzUvMTAwICAgWz8/P10KQ29udHJvbCAweDE2OiArLzEwMC8xMDAgQyBbUmVkIG1heGlt
+dW0gbGV2ZWxdCkNvbnRyb2wgMHgxNzogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDE4OiAr
+LzEwMC8xMDAgQyBbR3JlZW4gbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDE5OiArLzEwMC8xMDAg
+ICBbPz8/XQpDb250cm9sIDB4MWE6ICsvMTAwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxdCkNv
+bnRyb2wgMHgxYjogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDFjOiArLzEwMC8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4MWQ6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgxZTogKy8wLzEg
+ICBbPz8/XQpDb250cm9sIDB4MWY6ICsvMS8xICAgWz8/P10KQ29udHJvbCAweDIwOiArLzUwLzEw
+MCAgIFs/Pz9dCkNvbnRyb2wgMHgyMTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MjI6ICsv
+NTAvMTAwICAgWz8/P10KQ29udHJvbCAweDIzOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgy
+NDogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MjU6ICsvNTAvMTAwICAgWz8/P10KQ29udHJv
+bCAweDI2OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgyNzogKy81MC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4Mjg6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDI5OiArLzUwLzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHgyYTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MmI6ICsvNTAvMTAw
+ICAgWz8/P10KQ29udHJvbCAweDJjOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgyZDogKy81
+MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MmU6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDJm
+OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzMDogKy81MC8xMDAgICBbPz8/XQpDb250cm9s
+IDB4MzE6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDMyOiArLzUwLzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHgzMzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MzQ6ICsvNTAvMTAwICAgWz8/
+P10KQ29udHJvbCAweDM1OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzNjogKy81MC8xMDAg
+ICBbPz8/XQpDb250cm9sIDB4Mzc6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDM4OiArLzUw
+LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzOTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4M2E6
+ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDNiOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wg
+MHgzYzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4M2Q6ICsvNTAvMTAwICAgWz8/P10KQ29u
+dHJvbCAweDNlOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzZjogKy81MC8xMDAgICBbPz8/
+XQpDb250cm9sIDB4NDA6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDQxOiArLzUwLzEwMCAg
+IFs/Pz9dCkNvbnRyb2wgMHg0MjogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NDM6ICsvNTAv
+MTAwICAgWz8/P10KQ29udHJvbCAweDQ0OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0NTog
+Ky81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NDY6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAw
+eDQ3OiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0ODogKy81MC8xMDAgICBbPz8/XQpDb250
+cm9sIDB4NDk6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDRhOiArLzUwLzEwMCAgIFs/Pz9d
+CkNvbnRyb2wgMHg0YjogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NGM6ICsvNTAvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDRkOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg0ZTogKy81MC8x
+MDAgICBbPz8/XQpDb250cm9sIDB4NGY6ICsvNTAvMTAwICAgWz8/P10KQ29udHJvbCAweDUwOiAr
+LzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg1MTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4
+NTI6ICsvMjQyLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHg1MzogKy8yNDIvMjU1ICAgWz8/P10KQ29u
+dHJvbCAweDU0OiArLzI0Mi8yNTUgICBbPz8/XQpDb250cm9sIDB4NTU6ICsvMjQyLzI1NSAgIFs/
+Pz9dCkNvbnRyb2wgMHg1NjogKy8yNDIvMjU1ICAgWz8/P10KQ29udHJvbCAweDU3OiArLzI0Mi8y
+NTUgICBbPz8/XQpDb250cm9sIDB4NTg6ICsvMjQyLzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg1OTog
+Ky8yNDIvMjU1ICAgWz8/P10KQ29udHJvbCAweDVhOiArLzI0Mi8yNTUgICBbPz8/XQpDb250cm9s
+IDB4NWI6ICsvMjQyLzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg1YzogKy8yNDIvMjU1ICAgWz8/P10K
+Q29udHJvbCAweDVkOiArLzI0Mi8yNTUgICBbPz8/XQpDb250cm9sIDB4NWU6ICsvMjQyLzI1NSAg
+IFs/Pz9dCkNvbnRyb2wgMHg1ZjogKy8yNDIvMjU1ICAgWz8/P10KQ29udHJvbCAweDYwOiArLzM4
+NTUvNDYyNiBDIFtJbnB1dCBTb3VyY2UgU2VsZWN0XQpDb250cm9sIDB4NjE6ICsvMzg1NS80NjI2
+ICAgWz8/P10KQ29udHJvbCAweDYyOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4NjM6ICsv
+MTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2NDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAw
+eDY1OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4NjY6ICsvMTAwLzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHg2NzogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDY4OiArLzEwMC8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4Njk6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2YTogKy8xMDAv
+MTAwICAgWz8/P10KQ29udHJvbCAweDZiOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4NmM6
+ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg2ZDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJv
+bCAweDZlOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4NmY6ICsvMTAwLzEwMCAgIFs/Pz9d
+CkNvbnRyb2wgMHg3MDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDcxOiArLzEwMC8xMDAg
+ICBbPz8/XQpDb250cm9sIDB4NzI6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg3MzogKy8x
+MDAvMTAwICAgWz8/P10KQ29udHJvbCAweDc0OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4
+NzU6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg3NjogKy8xMDAvMTAwICAgWz8/P10KQ29u
+dHJvbCAweDc3OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4Nzg6ICsvMTAwLzEwMCAgIFs/
+Pz9dCkNvbnRyb2wgMHg3OTogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDdhOiArLzEwMC8x
+MDAgICBbPz8/XQpDb250cm9sIDB4N2I6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg3Yzog
+Ky8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDdkOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9s
+IDB4N2U6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg3ZjogKy8xMDAvMTAwICAgWz8/P10K
+Q29udHJvbCAweDgwOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4ODE6ICsvMTAwLzEwMCAg
+IFs/Pz9dCkNvbnRyb2wgMHg4MjogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDgzOiArLzEw
+MC8xMDAgICBbPz8/XQpDb250cm9sIDB4ODQ6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg4
+NTogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDg2OiArLzEwMC8xMDAgICBbPz8/XQpDb250
+cm9sIDB4ODc6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg4ODogKy8xMDAvMTAwICAgWz8/
+P10KQ29udHJvbCAweDg5OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OGE6ICsvMTAwLzEw
+MCAgIFs/Pz9dCkNvbnRyb2wgMHg4YjogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDhjOiAr
+LzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OGQ6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wg
+MHg4ZTogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDhmOiArLzEwMC8xMDAgICBbPz8/XQpD
+b250cm9sIDB4OTA6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5MTogKy8xMDAvMTAwICAg
+Wz8/P10KQ29udHJvbCAweDkyOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OTM6ICsvMTAw
+LzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5NDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDk1
+OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OTY6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRy
+b2wgMHg5NzogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweDk4OiArLzEwMC8xMDAgICBbPz8/
+XQpDb250cm9sIDB4OTk6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5YTogKy8xMDAvMTAw
+ICAgWz8/P10KQ29udHJvbCAweDliOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OWM6ICsv
+MTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg5ZDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAw
+eDllOiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4OWY6ICsvMTAwLzEwMCAgIFs/Pz9dCkNv
+bnRyb2wgMHhhMDogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweGExOiArLzEwMC8xMDAgICBb
+Pz8/XQpDb250cm9sIDB4YTI6ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHhhMzogKy8xMDAv
+MTAwICAgWz8/P10KQ29udHJvbCAweGE0OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4YTU6
+ICsvMTAwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHhhNjogKy8xMDAvMTAwICAgWz8/P10KQ29udHJv
+bCAweGE3OiArLzEwMC8xMDAgICBbPz8/XQpDb250cm9sIDB4YTg6ICsvMTAwLzEwMCAgIFs/Pz9d
+CkNvbnRyb2wgMHhhOTogKy8xMDAvMTAwICAgWz8/P10KQ29udHJvbCAweGFhOiArLzEvNCBDIFtP
+U0QgT3JpZW50YXRpb24gLSBMYW5kc2NhcGVdCkNvbnRyb2wgMHhhYjogKy8xLzQgICBbPz8/XQpD
+b250cm9sIDB4YWM6ICsvMjQyOC8yIEMgWz8/P10KQ29udHJvbCAweGFkOiArLzI0MjgvMiAgIFs/
+Pz9dCkNvbnRyb2wgMHhhZTogKy82MDEwLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGFmOiArLzYw
+MTAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YjA6ICsvNjAxMC82NTUzNSAgIFs/Pz9dCkNvbnRy
+b2wgMHhiMTogKy82MDEwLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGIyOiArLzEvMSBDIFs/Pz9d
+CkNvbnRyb2wgMHhiMzogKy8xLzEgICBbPz8/XQpDb250cm9sIDB4YjQ6ICsvMS8xICAgWz8/P10K
+Q29udHJvbCAweGI1OiArLzEvMSAgIFs/Pz9dCkNvbnRyb2wgMHhiNjogKy8zLzUgQyBbPz8/XQpD
+b250cm9sIDB4Yjc6ICsvMy81ICAgWz8/P10KQ29udHJvbCAweGI4OiArLzMvNSAgIFs/Pz9dCkNv
+bnRyb2wgMHhiOTogKy8zLzUgICBbPz8/XQpDb250cm9sIDB4YmE6ICsvMy81ICAgWz8/P10KQ29u
+dHJvbCAweGJiOiArLzMvNSAgIFs/Pz9dCkNvbnRyb2wgMHhiYzogKy8zLzUgICBbPz8/XQpDb250
+cm9sIDB4YmQ6ICsvMy81ICAgWz8/P10KQ29udHJvbCAweGJlOiArLzMvNSAgIFs/Pz9dCkNvbnRy
+b2wgMHhiZjogKy8zLzUgICBbPz8/XQpDb250cm9sIDB4YzA6ICsvOTIvNjU1MzUgICBbPz8/XQpD
+b250cm9sIDB4YzE6ICsvOTIvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzI6ICsvOTIvNjU1MzUg
+ICBbPz8/XQpDb250cm9sIDB4YzM6ICsvOTIvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzQ6ICsv
+OTIvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzU6ICsvOTIvNjU1MzUgICBbPz8/XQpDb250cm9s
+IDB4YzY6ICsvMTc4NjgvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4Yzc6ICsvMTc4NjgvNjU1MzUg
+ICBbPz8/XQpDb250cm9sIDB4Yzg6ICsvMzg2NjUvMzkgQyBbPz8/XQpDb250cm9sIDB4Yzk6ICsv
+MTY2NDkvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4Y2E6ICsvMS8yICAgWz8/P10KQ29udHJvbCAw
+eGNiOiArLzEvMiAgIFs/Pz9dCkNvbnRyb2wgMHhjYzogKy8yLzEzIEMgWz8/P10KQ29udHJvbCAw
+eGNkOiArLzIvMTMgICBbPz8/XQpDb250cm9sIDB4Y2U6ICsvMi8xMyAgIFs/Pz9dCkNvbnRyb2wg
+MHhjZjogKy8yLzEzICAgWz8/P10KQ29udHJvbCAweGQwOiArLzIvMTMgICBbPz8/XQpDb250cm9s
+IDB4ZDE6ICsvMi8xMyAgIFs/Pz9dCkNvbnRyb2wgMHhkMjogKy8yLzEzICAgWz8/P10KQ29udHJv
+bCAweGQzOiArLzIvMTMgICBbPz8/XQpDb250cm9sIDB4ZDQ6ICsvMi8xMyAgIFs/Pz9dCkNvbnRy
+b2wgMHhkNTogKy8yLzEzICAgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENvbnRy
+b2wgLSBPbl0KQ29udHJvbCAweGQ3OiArLzEvNSAgIFs/Pz9dCkNvbnRyb2wgMHhkODogKy8xLzUg
+ICBbPz8/XQpDb250cm9sIDB4ZDk6ICsvMS81ICAgWz8/P10KQ29udHJvbCAweGRhOiArLzEvNSAg
+IFs/Pz9dCkNvbnRyb2wgMHhkYjogKy8xLzUgICBbPz8/XQpDb250cm9sIDB4ZGM6ICsvMC81IEMg
+Wz8/P10KQ29udHJvbCAweGRkOiArLzAvNSAgIFs/Pz9dCkNvbnRyb2wgMHhkZTogKy8wLzUgICBb
+Pz8/XQpDb250cm9sIDB4ZGY6ICsvNTEzLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGUwOiArLzAv
+MSBDIFs/Pz9dCkNvbnRyb2wgMHhlMTogKy8wLzEgQyBbUG93ZXIgY29udHJvbCAtIE9mZl0KQ29u
+dHJvbCAweGUyOiArLzAvMjU1IEMgWz8/P10KQ29udHJvbCAweGUzOiArLzAvMjU1ICAgWz8/P10K
+Q29udHJvbCAweGU0OiArLzEvMiBDIFs/Pz9dCkNvbnRyb2wgMHhlNTogKy8wLzI1NSBDIFs/Pz9d
+CkNvbnRyb2wgMHhlNjogKy8wLzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHhlNzogKy8zNC82MyBDIFs/
+Pz9dCkNvbnRyb2wgMHhlODogKy8xNy82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhlOTogKy8wLzI1
+NSBDIFs/Pz9dCkNvbnRyb2wgMHhlYTogKy82NDUxMy82NDUxNCBDIFs/Pz9dCkNvbnRyb2wgMHhl
+YjogKy82NDUxMy82NDUxNCAgIFs/Pz9dCkNvbnRyb2wgMHhlYzogKy82NDUxMy82NDUxNCAgIFs/
+Pz9dCkNvbnRyb2wgMHhlZDogKy82NDUxMy82NDUxNCAgIFs/Pz9dCkNvbnRyb2wgMHhlZTogKy82
+NDUxMy82NDUxNCAgIFs/Pz9dCkNvbnRyb2wgMHhlZjogKy82NDUxMy82NDUxNCAgIFs/Pz9dCkNv
+bnRyb2wgMHhmMDogKy8wLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhmMTogKy8yNjcvNjU1MzUgQyBb
+Pz8/XQpDb250cm9sIDB4ZjI6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4ZjQ6ICsvMjE2MC81
+ODI1NyAgIFs/Pz9dCkNvbnRyb2wgMHhmNTogKy8yMTYwLzU4MjU3ICAgWz8/P10KQ29udHJvbCAw
+eGY2OiArLzIxNjAvNTgyNTcgICBbPz8/XQpDb250cm9sIDB4Zjc6ICsvMjE2MC81ODI1NyAgIFs/
+Pz9dCkNvbnRyb2wgMHhmODogKy8yMTYwLzU4MjU3ICAgWz8/P10KQ29udHJvbCAweGY5OiArLzIx
+NjAvNTgyNTcgICBbPz8/XQpDb250cm9sIDB4ZmE6ICsvMjE2MC81ODI1NyAgIFs/Pz9dCkNvbnRy
+b2wgMHhmYjogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4ZmM6ICsvMC8xICAgWz8/P10KQ29udHJv
+bCAweGZkOiArLzk4LzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhmZTogKy8xOC8yNTUgICBbPz8/XQpD
+b250cm9sIDB4ZmY6ICsvMTgvMjU1ICAgWz8/P10K
+------=_Part_403633_1722569213.1634836809149
+Content-Type: text/vcard; name="Brian Castles.vcf"
+Content-Disposition: attachment; filename="Brian Castles.vcf"
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpCcmlhbiBDYXN0bGVzDQpOOkNhc3RsZXM7QnJp
+YW47OzsNCkVNQUlMO1RZUEU9aW50ZXJuZXQ6YmNhc3RsZXNAcmVudGVjLmNvbQ0KUkVWOjIwMTAt
+MDctMjNUMTI6MjA6MjRaDQpVSUQ6OTU2NjI4ODEtYjM4ZC00NWE1LTg2ZGEtZmY0YjhkOWE0NTk2
+OjQ4MDIzNQ0KRU5EOlZDQVJEDQo=
+------=_Part_403633_1722569213.1634836809149--
+
+

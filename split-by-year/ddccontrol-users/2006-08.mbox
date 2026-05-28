@@ -1,0 +1,2976 @@
+From simang4@...46... Thu Aug 03 10:45:59 2006
+From: lardhan <simang4@...46...>
+Date: Thu, 3 Aug 2006 19:43:32 +0200
+User-Agent: KMail/1.9.3
+MIME-Version: 1.0
+Content-Disposition: inline
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: Multipart/Mixed;
+  boundary="Boundary-00=_EXj0E3zW63KD8Il"
+Message-Id: <200608031943.32169.simang4@...46...>
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name
+Subject: [ddccontrol-users] Script to investigate the controls
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 03 Aug 2006 17:45:59 -0000
+
+--Boundary-00=_EXj0E3zW63KD8Il
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello all.
+
+This script is a modification of the command that I run to find changes on the 
+DDC controls. I thought it could be useful to some user else. 
+
+Run "./ddcdiff -h" and if the device is correct, run "./ddcdiff". Manipulate 
+the monitor buttons, press Enter and see the changed controls in console and 
+in a log file.
+
+Regards
+lardhan
+
+
+
+--Boundary-00=_EXj0E3zW63KD8Il
+Content-Type: application/x-tgz;
+  name="ddcdiff-0.1.tar.gz"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="ddcdiff-0.1.tar.gz"
+
+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
+
+--Boundary-00=_EXj0E3zW63KD8Il--
+
+
+From nicolas@...3... Sat Aug 05 04:48:34 2006
+Message-ID: <44D4857B.9040408@...3...>
+Date: Sat, 05 Aug 2006 19:48:11 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060731)
+MIME-Version: 1.0
+To: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>,
+	ddccontrol-users@lists.sourceforge.net
+References: <44CD1109.2020900@...3...> <44CF3427.10904@...3...>
+In-Reply-To: <44CF3427.10904@...3...>
+X-Ovh-Remote: 137.132.232.9 (nusnet-232-9.dynip.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: Re: [ddccontrol-users] DDCcontrol version 0.4.2 released
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 05 Aug 2006 11:48:34 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+
+Third try to send this message... Maybe it got marked as spam by SF
+filters...
+
+Nicolas Boichat wrote:
+> Looks like this message has not been sent correctly... (Or SF lists have
+> serious problems...)
+>   
+>> Hi all,
+>>
+>> I just released DDCcontrol version 0.4.2, and ddccontrol-db version
+>> 20060730 (changes below). Thanks to all the people who helped (quite a
+>> lot!), particularly Roberto Sanchez: I hope a Debian package will give a
+>> new start to the projet, bringing more developers (I feel alone
+>> sometimes .-)), and translators (that's something we really need).
+>>
+>> This will probably be the last release of ddccontrol (the application
+>> package) until about 1 year, as I am now in university exchange
+>> in Singapore (NUS) until June 2007: I won't be able to develop new
+>> features, as I won't have a monitor to control (I recently bought a
+>> laptop, and didn't travel with my monitors .-)). However, I'll still
+>> create new monitor profiles, and do 2 or 3 database releases if there
+>> are enough new reports (and if I have enough time).
+>>
+>> Of course, if somebody implements interesting new features, I'll try to
+>> release a new version of ddccontrol, in this case I'll need the user
+>> base (i.e. you .-)) to test the new features, report and fix bugs, as I
+>> won't be able to do it myself.
+>>
+>> Thanks,
+>>
+>> Best regards,
+>>
+>> Nicolas
+>>
+>> Version 0.4.2 - 2006-07-30
+>>  - Allow binary data in CAPS.
+>>  - Add more I2C busses to Intel 810-like chips.
+>>  - Fix gcc 4.0 and 4.1 compilation warnings.
+>>  - Added manual pages.
+>>
+>> Version 20060730:
+>>  - Add support for new monitors:
+>>    + SGI GDM-5011P and GDM-5411 (Thanks to Florin Andrei)
+>>    + Samsung SyncMaster 173P+ (DVI) (Thanks to KRZYzaK)
+>>    + Samsung SyncMaster 797mb (Thanks to Evgeniy)
+>>    + Samsung SyncMaster 720T (Thanks to Piotr)
+>>    + Dell 2005FPW (Thanks to Christian Abegg)
+>>    + Philips 170C6 (Thanks to Dmitry Artamonow)
+>>    + Samsung SyncMaster 173s (Thanks to Artur Flinta)
+>>    + Samsung SyncMaster 940B (Thanks to Jörg Evers)
+>>    + Philips 200P6 (Thanks to podolany).
+>>    + Samsung SyncMaster 215TW (thanks to David R Mulligan).
+>>    + Sony SDM-S205K, and generic profile for Sony LCD monitors (thanks
+>> to lardhan)
+>>    + Samsung Syncmaster 760BF VGA (thanks to John Kent).
+>>
+>>
+>>   
+>>     
+
+
+From lwbin@...112... Fri Aug 11 01:44:29 2006
+From: "lan" <lwbin@...112...>
+To: ddccontrol-users@lists.sourceforge.net
+Date: Fri, 11 Aug 2006 16:44:26 +0800
+X-Priority: 3
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+Message-ID: <E1GBSd0-0002CS-Nd@...108...>
+X-Spam-Score: 3.0 (+++)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	3.0 FORGED_MUA_OUTLOOK Forged mail pretending to be from MS Outlook
+Subject: [ddccontrol-users]
+ =?GB2312?B?xfPT0TogyOfE+tDo0qq0+r+qt6LGsaOsIM7Su+G937PPzqrE+rf+zvGjoQ==?=
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: lwbin@...112...
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 11 Aug 2006 08:44:29 -0000
+Content-Type: text/plain;charset="GB2312"
+Content-Transfer-Encoding: 8bit
+
+   ÅóÓÑ: ÈçÄúÐèÒª´ú¿ª·¢Æ±£¬ ÎÒ»á½ß³ÏÎªÄú·þÎñ£¡
+±¾¹«Ë¾ÊÇ1998Äê5ÔÂ¾­¹ãÖÝÊÐ²ÆÕþ¾ÖÅú×¼£¨Ðí¿ÉÖ¤Îª¹ã²Æ×Ö1108ºÅ£©¡¢¹¤ÉÌ×¢²áµÇ¼Ç£¨¹ãË¾×ÖN00831£©
+³ÉÁ¢µÄË°Îñ´úÀí¹«Ë¾£¬ËùÓÐ×¨Òµ¼¼ÊõÈËÔ±¶¼¾ßÓÐ±¾¿ÆÒÔÉÏÎÄÆ¾¡£×¨ÃÅ´ÓÊÂ´úÀíÉÌ¼ì±¨¹Ø¡¢Ë°Îñ´úÀí¡¢
+²ÆË°×ÉÑ¯ºÍ¹¤ÉÌ´úÀíµÈÒµÎñµÄ×¨Òµ»ú¹¹¡£ 
+    £¨ÉÌÒµÏúÊÛ×¨ÓÃ·¢Æ±£¬ÉÌÆ·ÏúÊÛÍ³Ò»·¢Æ±£¬»õÎïÏúÊÛÍ³Ò»·¢Æ±£¬½¨Öþ°²×°Òµ·¢Æ±£¬¹ã¸æÒµ·¢Æ±£¬
+·þÎñÒµ·¢Æ±£¬¹«Â·ÄÚºÓÔËÊä·¢Æ±£¬¹ú¼Êº£ÔËÒµ·¢Æ±£¬²ÍÒû·¢Æ±£¬½¨Öþ²ÄÁÏ×¨ÓÃ·¢Æ±£¬»ú¶¯³µÏúÊÛÍ³Ò»
+·¢Æ±£¬¼Ó¹¤ÐÞÀíÐÞÅäÍ³Ò»·¢Æ±£¬·Ï¾ÉÎï×ÊÏúÊÛÍ³Ò»·¢Æ±£© ÎÒ¹«Ë¾³ÐÅµÏòÍâ´ú¿ªµÄ·¢Æ±È«¶¼ÊÇÍ¨¹ýÕý³£
+ÇþµÀ´ÓË°Îñ¾ÖÀïÁì³öÀ´µÄ£¬²¢ÇÒÎÒÃÇ¿ÉÒÔÏÈ°ÑÆ±¼Ä¸øÄú£¬ÔÚÄúÊÕµ½Æ±ºó²¢È·ÈÏÎÞÎóºóÔÙ¸¶¿î¡£
+¹«Ë¾±¾×Å»¥»Ý»¥ÀûµÄÔ­ÔòºÏÀí´ú¿ª·¢Æ±£¡
+¡¡¡¡Èç¹ûÄúÐèÒªÇëÁªÏµ£±£³£·£¸£¸£±£µ£¶£²£¸£±  020-35669709À¶±ò¡£ÎÒ»á½ß³ÏÎªÄú·þÎñ£¡
+
+
+From nicolas@...3... Mon Aug 14 18:54:47 2006
+Message-ID: <44E12954.1030403@...3...>
+Date: Tue, 15 Aug 2006 09:54:28 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: lardhan <simang4@...46...>
+References: <200607070147.03687.simang4@...46...>	<200607291242.50082.simang4@...46...>	<44CCE60D.2090808@...3...>
+	<200607311521.12594.simang4@...46...>
+In-Reply-To: <200607311521.12594.simang4@...46...>
+X-Ovh-Remote: 137.132.186.156 (ar10283.pc.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Sony SDM-S205K data
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 15 Aug 2006 01:54:47 -0000
+Content-Type: text/plain; charset=ISO-8859-13
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+lardhan wrote:
+> Hello.
+>
+>   
+>> You may try to add a line line this in SNYlcd.xml:
+>> <control id="defaults" address="0x04" delay="1000"/>
+>> And increase the delay (here 1000 ms) until it works. If you find a
+>> working value, please tell me and I'll update the database file
+>> accordingly.
+>>     
+>
+> Done, that solves it. My minimum working value is 1200 (step 100) and I set  
+> 1700.
+>   
+Ok. I increased the value to 2000.
+>> 10, 120, 250, 80, 100, 140, 160 . Could you check what 10 and 250 does?
+>>     
+>
+> Writing 0x72, 0x0a(10)...
+> Control 0x72: +/120/160 C [Gamma]
+>
+> Writing 0x72, 0xfa(250)...
+> Control 0x72: +/120/160 C [Gamma]
+>
+> Both of them default to 120. Moreover, I can't tell what's the visual 
+> difference between 100 and 120; the real number of different gamma modes 
+> seems to be 4 despite the five OSD positions. 
+>
+>   
+>> I did it with radios.
+>>     
+> Just tested them and everything is right; they work exactly like the OSD, 
+> thank you.
+>   
+Nice.
+
+Thanks.
+
+Best regards,
+
+Nicolas
+
+
+From nicolas@...3... Mon Aug 14 19:09:09 2006
+Message-ID: <44E12BA0.6090800@...3...>
+Date: Tue, 15 Aug 2006 10:04:16 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: lardhan <simang4@...46...>
+References: <200607070147.03687.simang4@...46...>	<44CC852A.1040006@...3...>
+	<200607311538.08598.simang4@...46...>
+In-Reply-To: <200607311538.08598.simang4@...46...>
+X-Ovh-Remote: 137.132.186.156 (ar10283.pc.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Sony SDM-S205K data
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 15 Aug 2006 02:09:09 -0000
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+lardhan wrote:
+> Hello.
+>
+>   
+>> First, thanks for your detailed documentation, it's absolutely great.
+>> May I add it to the CVS ?
+>>     
+>
+> Of course you may. I don't know what's its usefulness once the data went to 
+> the program, 
+I really think that information might be useful in the future... At
+least, it would give a good example of what a complete report is. These
+detailed reports are reall important, especially for brands that where
+not in the database before.
+> but I'm so glad with ddccontrol that you may add even my 
+> girlfriend when I'll have one. I'll report it here.
+Lol...
+>> Yes it's slow, I know about this... The slow part is, I think, ddcpci
+>> initialisation. You may try is to disable ddcpci at compilation time
+>> (./configure --disable-ddcpci), update to the latest nvidia drivers (I
+>> don't remember the exact version), which support /dev/i2c-* devices,
+>> load the i2c-dev kernel module. I think it should be faster.
+>>     
+>
+> Right, that is solved too. I had already the latest nVidia drivers (1.0-8762) 
+> with i2c support, and with a plain "./configure", dcccontrol detected both 
+> pci and i2c paths, but the latter didn't work because I had to set things 
+> right. In case any other user has the same problems, I think that mine ones 
+> came from:
+>
+>  a) Messing a lot with kernel modules and ddccontrol broke i2c sometimes.
+>   
+Yes surely.
+>  c) I wasn't aware that /dev/i2c-* files are r-w for root only.
+>   
+Hum... http://ddccontrol.sourceforge.net/doc/0.4.2/ch02s04.html . Maybe
+you should ask an udev rule for that, so the permissions are kept on reboot.
+>  b) I hadn't identified the right device (here it is dev:/dev/i2c-4)
+>
+> Now I have no problem with the normal install in a fresh X-session when 
+> running as root
+>  # ddccontrol -r 0x72 -w 80 dev:/dev/i2c-4
+> And after a quick
+>  # chmod +s /usr/bin/ddccontrol
+> a normal user can also run it [surely an entry in /etc/sudoers would be a 
+> better idea].
+>
+>
+> The i2c way is three times faster than pci, and ~0.60 sec/write is enough for 
+> my fun. Anyway, if it were easy to implement someday, I'd suggest a kind of 
+> "batch mode" that could scan-once write-many, like gddccontrol does: 
+>
+> $ ddccontrol -B dev:/dev/i2c-0
+> Reading EDID and initializing DDC/CI
+> Running in batch mode. Type "-r Control -w newvalue"  or path to file.
+>  > -r 0x72 -w 80
+>  > Writing 0x72, 0x50(80)...
+>  > Control 0x72: +/80/160 C [Gamma - 1.8] 
+>  > /home/common/resources/psychodelic_green2pink.ddcc
+>  > Writing (...)
+>  > _
+>
+> If this could be done, the election of pci or i2c wouldn't be important for 
+> responsiveness.
+>   
+Yes... That sort of thing would be absolutely great... And it shouldn't
+be really hard to do (if you look at ddccontrol main program, it is
+really small), so, if somebody has the time to do this...
+
+Best regards,
+
+Nicolas
+
+
+From nicolas@...3... Mon Aug 14 19:09:11 2006
+Message-ID: <44E12C75.3090908@...3...>
+Date: Tue, 15 Aug 2006 10:07:49 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: lardhan <simang4@...46...>
+References: <200608031943.32169.simang4@...46...>
+In-Reply-To: <200608031943.32169.simang4@...46...>
+X-Ovh-Remote: 137.132.186.156 (ar10283.pc.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Script to investigate the controls
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 15 Aug 2006 02:09:11 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+lardhan wrote:
+> Hello all.
+>
+> This script is a modification of the command that I run to find changes on the 
+> DDC controls. I thought it could be useful to some user else. 
+>
+> Run "./ddcdiff -h" and if the device is correct, run "./ddcdiff". Manipulate 
+> the monitor buttons, press Enter and see the changed controls in console and 
+> in a log file.
+>   
+Looks great! Unfortunately I can't test it, but I'll think about what to
+do with it, probably add a reference in the documentation...
+
+Best regards,
+
+Nicolas
+
+
+From nicolas@...3... Mon Aug 14 19:37:11 2006
+Message-ID: <44E13347.7050104@...3...>
+Date: Tue, 15 Aug 2006 10:36:55 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: John Kent <ioannissecundi@...46...>
+References: <9846ed1b0607150033g28075c91wf728dfaed51a608f@...53...>	
+	<44CCE6C8.7080009@...3...>
+	<9846ed1b0608061500x233db86n16e997a8268f634@...53...>
+In-Reply-To: <9846ed1b0608061500x233db86n16e997a8268f634@...53...>
+X-Ovh-Remote: 137.132.186.156 (ar10283.pc.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] LANG= LC_ALL= ddccontrol -p -c -d
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 15 Aug 2006 02:37:11 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+
+Hi,
+
+Thanks for your article, and your link. It is important for the project
+to be well-referenced.
+
+I did not get everything from your article (ok, I also used Google
+translate .-)), but for I can comment this sentence:
+>L'unica pecca forse è la disponibilità  dei soli sorgenti poco pratici
+per gli utenti meno esperti..
+
+Distribution packages are coming... Slowly but surely... We will have
+official Debian packages in a short time, we are in Gentoo portage, we
+have Mandriva RPMs...
+
+Best regards,
+
+Nicolas
+
+John Kent wrote:
+> I create deb packages for DDCcontrol database and application, so less
+> expert users can
+> use it and don't need to compile anything.
+> They are available at http://www.knowthematrix.altervista.org/
+> <http://www.knowthematrix.altervista.org/>
+>
+> 2006/7/30, Nicolas Boichat <nicolas@...3...
+> <mailto:nicolas@...3...>>:
+>
+>     John Kent wrote:
+>     > Hello, i bought yesterday a Samsung SyncMaster 760BF and today i
+>     have
+>     > tried to use ddccontrol..
+>     > This is the output of LANG= LC_ALL= ddccontrol -p -c -d:
+>     Added to the database. Thanks.
+>
+>     Best regards,
+>
+>     Nicolas
+>
+>
+
+
+
+From david.mulligan@...167... Tue Aug 15 09:37:12 2006
+Date: Tue, 15 Aug 2006 10:36:56 -0600
+From: David R Mulligan <david.mulligan@...167...>
+In-reply-to: <44C92BBB.7070105@...3...>
+To: Nicolas Boichat <nicolas@...3...>
+Message-id: <1155659817.27671.11.camel@...168...>
+MIME-version: 1.0
+X-Mailer: Evolution 2.6.1
+References: <1149885196.31836.9.camel@...168...> <4496EBFE.1020808@...3...>
+	<1150749368.5020.9.camel@...168...> <44C92BBB.7070105@...3...>
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] *** PROBABLY SPAM *** Re: Support
+ for	Samsung 215tw?
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 15 Aug 2006 16:37:12 -0000
+Content-type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Nicolas,
+
+No problem.. we are all busy.
+
+If its not DMI then what is the protocol for analogue vga for monitor
+control and discovery?  Anyhow I meant analogue if it has the control
+bus :)
+
+Thanks,
+David
+
+On Thu, 2006-27-07 at 23:10 +0200, Nicolas Boichat wrote:
+> Hi David,
+> 
+> Sorry for the delay (university exams...).
+> 
+> David R Mulligan wrote:
+> > Nicolas,
+> >
+> > Thanks for answering and I may have included an empty file *blush*.
+> > Here is the output from when I ran it last week.  BTW should I try this
+> > with DMI too?
+> >   
+> Erm... I don't see what DMI has to do with monitors, so, no, I had all
+> the information I needed, thanks, I just added the monitor to the CVS.
+> 
+> Best regards,
+> 
+> Nicolas
+
+
+
+From nicolas@...3... Wed Aug 16 08:17:11 2006
+Message-ID: <44E336DD.4060102@...3...>
+Date: Wed, 16 Aug 2006 23:16:45 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: David R Mulligan <david.mulligan@...167...>
+References: <1149885196.31836.9.camel@...168...>
+	<4496EBFE.1020808@...3...>	<1150749368.5020.9.camel@...168...>
+	<44C92BBB.7070105@...3...>
+	<1155659817.27671.11.camel@...168...>
+In-Reply-To: <1155659817.27671.11.camel@...168...>
+X-Ovh-Remote: 137.132.231.10 (nusnet-231-10.dynip.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Support for	Samsung 215tw?
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 16 Aug 2006 15:17:11 -0000
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+David R Mulligan wrote:
+> Nicolas,
+>
+> No problem.. we are all busy.
+>
+> If its not DMI then what is the protocol for analogue vga for monitor
+> control and discovery?  Anyhow I meant analogue if it has the control
+> bus :)
+>   
+I think that DMI gives informations on your hardware, like, on my
+laptop, serial number, RAM serial number, etc... But nothing on the
+monitors (at least not on my laptop).
+
+The protocol that discover monitors is DDC (supported resolutions,
+refresh rates, etc...), and the protocol that controls the monitor is
+DDC/CI.
+
+Best regards,
+
+Nicolas
+>
+> On Thu, 2006-27-07 at 23:10 +0200, Nicolas Boichat wrote:
+>   
+>> Hi David,
+>>
+>> Sorry for the delay (university exams...).
+>>
+>> David R Mulligan wrote:
+>>     
+>>> Nicolas,
+>>>
+>>> Thanks for answering and I may have included an empty file *blush*.
+>>> Here is the output from when I ran it last week.  BTW should I try this
+>>> with DMI too?
+>>>   
+>>>       
+>> Erm... I don't see what DMI has to do with monitors, so, no, I had all
+>> the information I needed, thanks, I just added the monitor to the CVS.
+>>
+>> Best regards,
+>>
+>> Nicolas
+>>     
+>
+>
+> -------------------------------------------------------------------------
+> Using Tomcat but need to do more? Need to support web services, security?
+> Get stuff done quickly with pre-integrated technology to make your job easier
+> Download IBM WebSphere Application Server v.1.0.1 based on Apache Geronimo
+> http://sel.as-us.falkag.net/sel?cmd=lnk&kid=120709&bid=263057&dat=121642
+> _______________________________________________
+> ddccontrol-users mailing list
+> ddccontrol-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+>   
+
+
+
+From evgeny@...177... Sun Aug 20 05:17:40 2006
+Message-ID: <44E852D1.3070300@...177...>
+Date: Sun, 20 Aug 2006 15:17:21 +0300
+From: Evgeny Stambulchik <evgeny@...177...>
+User-Agent: Thunderbird 1.5.0.4 (X11/20060625)
+MIME-Version: 1.0
+To: ddccontrol-users@lists.sourceforge.net
+X-Spam-Status: No, score=-2.8 required=5.0 tests=ALL_TRUSTED autolearn=failed
+	version=3.0.3
+X-Spam-Checker-Version: SpamAssassin 3.0.3 (2005-04-27) on
+	plasma-gate.weizmann.ac.il
+X-Virus-Scanned: ClamAV 0.88.4/1691/Sun Aug 20 01:52:30 2006 on
+	plasma-gate.weizmann.ac.il
+X-Virus-Status: Clean
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: [ddccontrol-users] Flatron L1952HM
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 20 Aug 2006 12:17:40 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+ddccontrol version 0.4.1
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU 
+General Public License.
+
+Probing for available monitors.I/O warning : failed to load external 
+entity "/usr/share/ddccontrol-db/monitor/GSM4AEF.xml"
+Document not parsed successfully.
+...
+Detected monitors :
+  - Device: pci:05:00.0-1
+    DDC/CI supported: Yes
+    Monitor Name: VESA standard monitor
+    Input type: Digital
+   (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:05:00.0-1...
+I/O warning : failed to load external entity 
+"/usr/share/ddccontrol-db/monitor/GSM4AEF.xml"
+Document not parsed successfully.
+
+EDID readings:
+         Plug and Play ID: GSM4AEF [VESA standard monitor]
+         Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: prot(monitor)type(lcd)model(L1X52TQ)cmds(0102030CE3F3)vcp(04 
+08 10 1
+2 14(01 05 06 07 08 0B) 16 18 1A 6C 6E 70 B6 DF FD(00 01) FE(00 01 02) 
+FF(00 01
+0203 04 0506 07 0809 0A) )mswhql(1)mccs_ver(2.0)
+Parsed output:
+         VCP:
+         Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/65535   [???]
+Control 0x03: +/0/65535   [???]
+Control 0x04: +/0/65535   [???]
+Control 0x08: +/0/65535   [???]
+Control 0x0b: +/100/5000   [???]
+Control 0x0c: +/35/65535   [???]
+Control 0x0e: +/163/326   [???]
+Control 0x10: +/40/100   [???]
+Control 0x12: +/60/100   [???]
+Control 0x14: +/5/11   [???]
+Control 0x16: +/50/100   [???]
+Control 0x18: +/50/100   [???]
+Control 0x1a: +/50/100   [???]
+Control 0x1e: +/0/1   [???]
+Control 0x20: +/193/386   [???]
+Control 0x30: +/24/48   [???]
+Control 0x3e: +/32/63   [???]
+Control 0x60: +/3/3   [???]
+Control 0x6c: +/50/100   [???]
+Control 0x6e: +/50/100   [???]
+Control 0x70: +/50/100   [???]
+Control 0xac: +/14364/1   [???]
+Control 0xae: +/7500/0   [???]
+Control 0xb6: +/3/8   [???]
+Control 0xc0: +/1/65535   [???]
+Control 0xc6: +/104/65535   [???]
+Control 0xc8: +/2/65535   [???]
+Control 0xc9: +/16/65535   [???]
+Control 0xcc: +/2/10   [???]
+Control 0xdf: +/512/65535   [???]
+Control 0xf1: +/100/100   [???]
+Control 0xf2: +/0/2   [???]
+Control 0xf3: +/0/3   [???]
+Control 0xfc: +/0/3   [???]
+Control 0xfd: +/1/1   [???]
+Control 0xfe: +/1/2   [???]
+Control 0xff: +/5/10   [???]
+
+
+From 82youyu@...129... Mon Aug 21 13:37:00 2006
+From: =?GB2312?B?wO698Mqi?= <82youyu@...129...>
+To: "ddccontrol-users" <ddccontrol-users@lists.sourceforge.net>
+Date: Tue, 22 Aug 2006 04:37:08 +0800
+X-Priority: 2
+X-Mailer: Foxmail 5.0 beta2
+Message-ID: <E1GFGW2-00017O-SO@...108...>
+X-Spam-Score: 1.9 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.1 RCVD_IN_SORBS_DUL RBL: SORBS: sent directly from dynamic IP address
+	[218.19.173.2 listed in dnsbl.sorbs.net]
+	0.1 DNS_FROM_AHBL_RHSBL    RBL: From: sender listed in dnsbl.ahbl.org
+	1.7 RCVD_IN_NJABL_DUL RBL: NJABL: dialup sender did non-local SMTP
+	[218.19.173.2 listed in combined.njabl.org]
+Subject: [ddccontrol-users] =?GB2312?B?uePW3crQya3pxcOz0tfT0M/euavLvg==?=
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: 82youyu@...129...
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 21 Aug 2006 20:37:01 -0000
+Content-Type: text/plain;
+	charset="gb2312"
+Content-Transfer-Encoding: 8bit
+
+ÄúºÃ!
+    ±¾¹«Ë¾¿ÉÒÔ¶ÔÍâ´ú¿ª¸÷µØ¸÷Àà   ·¢ Æ±  ¾ßÌåÓÐ£º
+ÆÕÍ¨ÉÌÆ·.¹«Â·.ÄÚºÓÔËÊä.½¨Öþ.×°ÊÎ²ÄÁÏ.¹ã¸æ.×âÁÞ.¾Æµê·þÎñ¡­¡­
+ÇÒËù¿ª·¢Æ±¾ùÕæÊµÓÐÐ§£¬¿É´ý¹óË¾²éÑéºóÔÙ¸¶Ë°¿î£¡ 
+´ËÏîÒµÎñ¿É°ïÖú¹óË¾ºÏÀí¡¢ÎÈÍ×ºÍÓÐÐ§µØ½ÚË°£¬ÒÔ½Ú¼õ¹«Ë¾µÄÔË×÷³É±¾¡£
+»¶Ó­À´µç×ÉÑ¯»òÇ¢Ì¸£¬ÎÒÃÇ½«½ß³ÏµØÎªÄú·þÎñ©u 
+¡°ÐÅÏ¢ÄË²Æ¸»¡± ¾´Çë±£Áô£¬ÒÔ±¸ÓÐÐè£¡
+
+ÓÐ Òâ Çë µç   ( 0 ) 1 3 5 4 4 4 7 5 5 7 7    
+Áª Ïµ ÈË: Àî ½ð Ê¢     QQ:527574399
+Email:senrong2000@...178...
+                     
+                                   ÈçÓÐ´òÈÅ£¬¾´ÇëÁÂ½â! 
+
+
+From don@...179... Sun Aug 27 02:46:34 2006
+Message-ID: <000001c6c9bd$a979ede0$7f7ba8c0@...180...>
+From: "Casimiro Villalva" <don@...179...>
+To: ddccontrol-users@lists.sourceforge.net
+Date: Sun, 27 Aug 2006 02:46:25 -0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0001_01C6C982.FD1B15E0"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1106
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106
+X-Spam-Score: 3.3 (+++)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 HTML_MESSAGE           BODY: HTML included in message
+	1.7 RCVD_IN_NJABL_DUL RBL: NJABL: dialup sender did non-local SMTP
+	[88.121.111.238 listed in combined.njabl.org]
+	0.6 URIBL_SBL Contains an URL listed in the SBL blocklist
+	[URIs: tunheteryunbedun.com]
+Subject: Re: [ddccontrol-users] RXjuoa
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: Casimiro Villalva <don@...179...>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 27 Aug 2006 09:46:34 -0000
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0001_01C6C982.FD1B15E0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+Go s od news for you.
+=20
+P p HARM c ACY d b ire r ctly from the m b anuf j acture j r,
+Ec z onom m ize up n to 6 z 0 % wi o th us http://tunheteryunbedun.com
+
+, i=20
+
+, h=20
+
+, l=20
+
+CHAPTER 19
+Let me have your spear. I called out to the soldier at the door. She
+shook her head in a silent no, then said, I have my orders. No help
+
+
+
+------=_NextPart_000_0001_01C6C982.FD1B15E0
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<META content=3D"MSHTML 6.00.2800.1106" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV>Hi,</DIV>
+<DIV>Go<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> s </FONT>od news for you.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>P<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> p </FONT>HARM<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> c </FONT>ACY d<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> b </FONT>ire<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> r </FONT>ctly from the m<FONT size=3D2 style=3D" float=
+ :
+
+right" face=3DArial> b </FONT>anuf<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> j </FONT>acture<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> j </FONT>r,</DIV>
+<DIV>Ec<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> z </FONT>onom<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> m </FONT>ize up <FONT size=3D2 style=3D" float :
+
+right" face=3DArial> n </FONT>to 6<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> z </FONT>0 % wi<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> o </FONT>th us <A href=3D"http://tunheteryunbedun.com"=
+>http://tunheteryunbedun.com</A></DIV><P>,<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> i </FONT></P><P>,<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> h </FONT></P><P>,<FONT size=3D2 style=3D" float :
+
+right" face=3DArial> l </FONT></P><P> CHAPTER 19<BR>
+ Let me have your spear. I called out to the soldier at the door. She<BR>
+shook her head in a silent no, then said, I have my orders. No  help<BR></P=
+></BODY></HTML>=
+
+------=_NextPart_000_0001_01C6C982.FD1B15E0--
+
+
+
+
+
+From perles@...46... Sun Aug 27 18:38:45 2006
+Message-ID: <fc75bd8e0608271838w7298cc2epc475798bba64c5fd@...53...>
+Date: Sun, 27 Aug 2006 22:38:41 -0300
+From: "Luis Augusto Perles" <perles@...46...>
+To: ddccontrol-users@lists.sourceforge.net
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_72533_6891149.1156729121532"
+X-Mailman-Approved-At: Sun, 27 Aug 2006 21:28:19 -0700
+Subject: [ddccontrol-users] please, add my monitor to your database
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 28 Aug 2006 01:38:45 -0000
+
+------=_Part_72533_6891149.1156729121532
+Content-Type: text/plain; charset="ISO-8859-1"; format=flowed
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Hello,
+
+Attached is the output of my monitor. If you need more information or
+a help for testing the update for my monitor, you can ask me.
+
+Cheers, Lu=EDs
+
+------=_Part_72533_6891149.1156729121532
+Content-Type: video/mpeg; name=Samsung-SyncMaster753v.dat
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_ere6jf0w
+Content-Disposition: attachment; filename="Samsung-SyncMaster753v.dat"
+
+ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
+aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
+IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
+Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
+dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KClByb2Jp
+bmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi5JL08gd2FybmluZyA6IGZhaWxlZCB0byBsb2Fk
+IGV4dGVybmFsIGVudGl0eSAiL3Vzci9sb2NhbC9zaGFyZS9kZGNjb250cm9sLWRiL21vbml0b3Iv
+U0FNMDAyNy54bWwiCkRvY3VtZW50IG5vdCBwYXJzZWQgc3VjY2Vzc2Z1bGx5LgpJL08gd2Fybmlu
+ZyA6IGZhaWxlZCB0byBsb2FkIGV4dGVybmFsIGVudGl0eSAiL3Vzci9sb2NhbC9zaGFyZS9kZGNj
+b250cm9sLWRiL21vbml0b3IvU0FNY3J0LnhtbCIKRG9jdW1lbnQgbm90IHBhcnNlZCBzdWNjZXNz
+ZnVsbHkuCkNhbid0IGNvbnZlcnQgdmFsdWUgdG8gaW50LCBpbnZhbGlkIENBUFMgKGJ1Zj02ICwg
+cG9zPTI3MikuCi4uSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweDAwLCBzaG91bGQg
+YmUgMHg2ZQowMDAwOiAwMCA2ZSA5MyBlMyAwMCAwMCAyOCA3MCA3MiA2ZiA3NCAyOCA2ZCA2ZiA2
+ZSA2OSB8IC5uLi4uLihwcm90KG1vbmkKMDAxMDogNzQgNmYgNzIgMjkgNzQgNzkgZmYgZmYgZmYg
+ZmYgZmYgZmYgZmYgZmYgZmYgZmYgfCB0b3IpdHkuLi4uLi4uLi4uCjAwMjA6IGZmIGZmIGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4uLi4uLgow
+MDMwOiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiB8IC4u
+Li4uLi4uLi4uLi4uLi4KMDA0MDogZmYgZmYgZmYgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgfCAuLi4gICAgICAgICAgICAgCkludmFsaWQgcmVzcG9uc2UsIGZpcnN0IGJ5
+dGUgaXMgMHhmZiwgc2hvdWxkIGJlIDB4NmUKMDAwMDogZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYg
+ZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgfCAuLi4uLi4uLi4uLi4uLi4uCjAwMTA6IGZmIGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4uLi4u
+LgowMDIwOiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiB8
+IC4uLi4uLi4uLi4uLi4uLi4KMDAzMDogZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYg
+ZmYgZmYgZmYgZmYgZmYgfCAuLi4uLi4uLi4uLi4uLi4uCjAwNDA6IGZmIGZmIGZmICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgLi4uICAgICAgICAgICAgIApJbnZhbGlk
+IHJlc3BvbnNlLCBmaXJzdCBieXRlIGlzIDB4ZmYsIHNob3VsZCBiZSAweDZlCjAwMDA6IGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4u
+Li4uLgowMDEwOiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiB8IC4uLi4uLi4uLi4uLi4uLi4KMDAyMDogZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYg
+ZmYgZmYgZmYgZmYgZmYgZmYgfCAuLi4uLi4uLi4uLi4uLi4uCjAwMzA6IGZmIGZmIGZmIGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4uLi4uLgowMDQw
+OiBmZiBmZiBmZiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IC4uLiAg
+ICAgICAgICAgICAKSS9PIHdhcm5pbmcgOiBmYWlsZWQgdG8gbG9hZCBleHRlcm5hbCBlbnRpdHkg
+Ii91c3IvbG9jYWwvc2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9yL1NBTTAwMjcueG1sIgpEb2N1
+bWVudCBub3QgcGFyc2VkIHN1Y2Nlc3NmdWxseS4KSS9PIHdhcm5pbmcgOiBmYWlsZWQgdG8gbG9h
+ZCBleHRlcm5hbCBlbnRpdHkgIi91c3IvbG9jYWwvc2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9y
+L1NBTWNydC54bWwiCkRvY3VtZW50IG5vdCBwYXJzZWQgc3VjY2Vzc2Z1bGx5LgpJbnZhbGlkIHJl
+c3BvbnNlLCBmaXJzdCBieXRlIGlzIDB4ZmYsIHNob3VsZCBiZSAweDZlCjAwMDA6IGZmIGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4uLi4u
+LgowMDEwOiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiB8
+IC4uLi4uLi4uLi4uLi4uLi4KMDAyMDogZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYgZmYg
+ZmYgZmYgZmYgZmYgZmYgfCAuLi4uLi4uLi4uLi4uLi4uCjAwMzA6IGZmIGZmIGZmIGZmIGZmIGZm
+IGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIGZmIHwgLi4uLi4uLi4uLi4uLi4uLgowMDQwOiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IC4uLiAgICAg
+ICAgICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNw
+b25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxp
+ZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAK
+SW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4u
+ICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2
+ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4u
+Li4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQg
+YmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8
+IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBz
+aG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAg
+ICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAw
+eGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAg
+ICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0
+ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmly
+c3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25z
+ZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCBy
+ZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52
+YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAg
+ICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpm
+ZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4u
+Li4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUg
+MHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4u
+Li4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91
+bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAgICAgICAg
+ICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBpcyAweGZm
+LCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAgICAgICAg
+ICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3QgYnl0ZSBp
+cyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiAg
+ICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwgZmlyc3Qg
+Ynl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKSW52YWxpZCByZXNwb25zZSwg
+Zmlyc3QgYnl0ZSBpcyAweGZmLCBzaG91bGQgYmUgMHg2ZQpmZiBmZiBmZiBmZiBmZiBmZiBmZiBm
+ZiBmZiBmZiBmZiAgICAgICAgICAgICAgICB8IC4uLi4uLi4uLi4uICAgICAKCkRldGVjdGVkIG1v
+bml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMtMQogICBEREMvQ0kgc3VwcG9ydGVkOiBZ
+ZXMKICAgTW9uaXRvciBOYW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTog
+QW5hbG9nCiAgKEF1dG9tYXRpY2FsbHkgc2VsZWN0ZWQpClJlYWRpbmcgRURJRCBhbmQgaW5pdGlh
+bGl6aW5nIEREQy9DSSBhdCBidXMgZGV2Oi9kZXYvaTJjLTEuLi4KQ2FuJ3QgY29udmVydCB2YWx1
+ZSB0byBpbnQsIGludmFsaWQgQ0FQUyAoYnVmPTYgLCBwb3M9MjcyKS4KCkVESUQgcmVhZGluZ3M6
+CglQbHVnIGFuZCBQbGF5IElEOiBTQU0wMDI3IFtWRVNBIHN0YW5kYXJkIG1vbml0b3JdCglJbnB1
+dCB0eXBlOiBBbmFsb2cKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5HID09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KVGhlcmUgaXMgbm8gc3VwcG9ydCBmb3IgeW91
+ciBtb25pdG9yIGluIHRoZSBkYXRhYmFzZSwgYnV0IGRkY2NvbnRyb2wgaXMKdXNpbmcgYSBiYXNp
+YyBnZW5lcmljIHByb2ZpbGUuIE1hbnkgY29udHJvbHMgd2lsbCBub3QgYmUgc3VwcG9ydGVkLCBh
+bmQKc29tZSBjb250cm9scyBtYXkgbm90IHdvcmsgYXMgZXhwZWN0ZWQuClBsZWFzZSB1cGRhdGUg
+ZGRjY29udHJvbC1kYiwgb3IsIGlmIHlvdSBhcmUgYWxyZWFkeSB1c2luZyB0aGUgbGF0ZXN0CnZl
+cnNpb24sIHBsZWFzZSBzZW5kIHRoZSBvdXRwdXQgb2YgdGhlIGZvbGxvd2luZyBjb21tYW5kIHRv
+CmRkY2NvbnRyb2wtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0OgoKTEFORz0gTENfQUxMPSBk
+ZGNjb250cm9sIC1wIC1jIC1kCgpUaGFuayB5b3UuCj09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpDYXBhYmlsaXRp
+ZXM6CkNhbid0IGNvbnZlcnQgdmFsdWUgdG8gaW50LCBpbnZhbGlkIENBUFMgKGJ1Zj02ICwgcG9z
+PTI3MikuClJhdyBvdXRwdXQ6IChwcm90KG1vbml0b3IpdHlwZShjcnQpbW9kZWwoQW5kcm9tZWRh
+KEFOIFNlcmllcykpZWRpZCBiaW4oMTI4KCMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjKSljbWRzKDAxIDAyIDAzIEUz
+IEYzKXZjcCgwMSAxMCAxMiAxNCAxNiAxOCAxQSAyMCAyMiAyNCAyNiAzMCAzMiAzQSA0MCA0MiA0
+NCA2QyA2IDE4IDFBIDIwIDIyIDI0Y3AoMDEgMTAgMTIgMTQgMTAxIDAyIDAzIEUzIEYzKXYKUGFy
+c2VkIG91dHB1dDogCglWQ1A6IDAxIDEwIDEyIDE0IDE2IDE4IDFhIDIwIDIyIDI0IDI2IDMwIDMy
+IDNhIDQwIDQyIDQ0IDZjIAoJVHlwZTogQ1JUCgpDb250cm9scyAodmFsaWQvY3VycmVudC9tYXgp
+IFtEZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpDb250cm9sIDB4MDE6ICsvMC8yNTUgQyBbPz8/
+XQpDb250cm9sIDB4MTA6ICsvMTAzLzE2MiBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTI6ICsv
+NjgvMTUwIEMgW0NvbnRyYXN0XQpDb250cm9sIDB4MTQ6ICsvMC8xIEMgWz8/P10KQ29udHJvbCAw
+eDE2OiArLzE1My8yNDkgQyBbUmVkIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxODogKy8xNDQv
+MjQ5IEMgW0dyZWVuIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxYTogKy8xNTEvMjQ5IEMgW0Js
+dWUgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDIwOiArLzU3LzEyNyBDIFtIb3Jpem9udGFsIFBv
+c2l0aW9uXQpDb250cm9sIDB4MjI6ICsvMjE1LzI1NSBDIFtIb3Jpem9udGFsIFNpemVdCkNvbnRy
+b2wgMHgyNDogKy84MS8xMjcgQyBbSG9yaXpvbnRhbCBQaW5jdXNoaW9uXQpDb250cm9sIDB4MjY6
+ICsvNjcvMTI3IEMgW0hvcml6b250YWwgUGluY3VzaGlvbiBCYWxhbmNlXQpDb250cm9sIDB4MmE6
+ICsvODQvMjU1ICAgWz8/P10KQ29udHJvbCAweDMwOiArLzc5LzEyNyBDIFtWZXJ0aWNhbCBQb3Np
+dGlvbl0KQ29udHJvbCAweDMyOiArLzM5LzEwMCBDIFtWZXJ0aWNhbCBTaXplXQpDb250cm9sIDB4
+M2E6ICsvMjUvMTI3IEMgW1ZlcnRpY2FsIExpbmVhcml0eV0KQ29udHJvbCAweDNjOiArLzUwLzEy
+NyAgIFs/Pz9dCkNvbnRyb2wgMHg0MDogKy84MC8xMjcgQyBbUGFyYWxsZWxvZ3JhbSBEaXN0b3J0
+aW9uIChLZXkgQmFsYW5jZSldCkNvbnRyb2wgMHg0MjogKy82My8xMjcgQyBbVHJhcGV6b2lkYWwg
+RGlzdG9ydGlvbiAoS2V5KV0KQ29udHJvbCAweDQ0OiArLzE0MS8yNTUgQyBbUm90YXRpb24gKFRp
+bHQpXQpDb250cm9sIDB4NTY6ICsvMC8zOCAgIFs/Pz9dCkNvbnRyb2wgMHg1ODogKy8zMi8xMjcg
+ICBbPz8/XQpDb250cm9sIDB4NmM6ICsvMTM3LzI0OCBDIFtSZWQgbWluaW11bSBsZXZlbF0KQ29u
+dHJvbCAweDZlOiArLzE1Mi8yNTUgICBbPz8/XQpDb250cm9sIDB4NzA6ICsvMTQ1LzI0NyAgIFs/
+Pz9dCkNvbnRyb2wgMHg4MDogKy8wLzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHg4MjogKy85Ny8xMjcg
+ICBbPz8/XQpDb250cm9sIDB4YTA6ICsvMjEvMzEgICBbPz8/XQpDb250cm9sIDB4YWM6ICsvMTg2
+NC8wICAgWz8/P10KQ29udHJvbCAweGFlOiArLzc0MDAvMCAgIFs/Pz9dCkNvbnRyb2wgMHhiMDog
+Ky8wLzMgICBbPz8/XQpDb250cm9sIDB4ZTY6ICsvNzEvMTEyICAgWz8/P10KQ29udHJvbCAweGY2
+OiArLzcyLzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHhmYzogKy8wLzggICBbPz8/XQo=
+------=_Part_72533_6891149.1156729121532--
+
+
+From nicolas@...3... Tue Aug 29 04:00:50 2006
+Message-ID: <44F41E47.8030300@...3...>
+Date: Tue, 29 Aug 2006 19:00:23 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: Evgeny Stambulchik <evgeny@...177...>
+References: <44E852D1.3070300@...177...>
+In-Reply-To: <44E852D1.3070300@...177...>
+X-Ovh-Remote: 137.132.206.163 (spnp206153.spnp.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 1.8 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.8 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see <http://www.spamcop.net/bl.shtml?213.186.33.57>]
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Flatron L1952HM
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 29 Aug 2006 11:00:50 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Thanks for the data, I added your monitor to the database, you can
+download the files (GSM*.xml) from the CVS:
+http://ddccontrol.cvs.sourceforge.net/ddccontrol/ddccontrol-db/
+
+It would be nice if you could play with 0xfd, 0xfe and 0xff controls, as
+I don't know what they do (these are LG proprietary controls).
+
+Thanks,
+
+Best regards,
+
+Nicolas
+
+Evgeny Stambulchik wrote:
+> ddccontrol version 0.4.1
+> Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+> Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+> This program comes with ABSOLUTELY NO WARRANTY.
+> You may redistribute copies of this program under the terms of the GNU 
+> General Public License.
+>
+> Probing for available monitors.I/O warning : failed to load external 
+> entity "/usr/share/ddccontrol-db/monitor/GSM4AEF.xml"
+> Document not parsed successfully.
+> ...
+> Detected monitors :
+>   - Device: pci:05:00.0-1
+>     DDC/CI supported: Yes
+>     Monitor Name: VESA standard monitor
+>     Input type: Digital
+>    (Automatically selected)
+> Reading EDID and initializing DDC/CI at bus pci:05:00.0-1...
+> I/O warning : failed to load external entity 
+> "/usr/share/ddccontrol-db/monitor/GSM4AEF.xml"
+> Document not parsed successfully.
+>
+> EDID readings:
+>          Plug and Play ID: GSM4AEF [VESA standard monitor]
+>          Input type: Digital
+> =============================== WARNING ===============================
+> There is no support for your monitor in the database, but ddccontrol is
+> using a basic generic profile. Many controls will not be supported, and
+> some controls may not work as expected.
+> Please update ddccontrol-db, or, if you are already using the latest
+> version, please send the output of the following command to
+> ddccontrol-users@lists.sourceforge.net:
+>
+> LANG= LC_ALL= ddccontrol -p -c -d
+>
+> Thank you.
+> =============================== WARNING ===============================
+>
+> Capabilities:
+> Raw output: prot(monitor)type(lcd)model(L1X52TQ)cmds(0102030CE3F3)vcp(04 
+> 08 10 1
+> 2 14(01 05 06 07 08 0B) 16 18 1A 6C 6E 70 B6 DF FD(00 01) FE(00 01 02) 
+> FF(00 01
+> 0203 04 0506 07 0809 0A) )mswhql(1)mccs_ver(2.0)
+> Parsed output:
+>          VCP:
+>          Type: Unknown
+>
+> Controls (valid/current/max) [Description - Value name]:
+> Control 0x02: +/1/65535   [???]
+> Control 0x03: +/0/65535   [???]
+> Control 0x04: +/0/65535   [???]
+> Control 0x08: +/0/65535   [???]
+> Control 0x0b: +/100/5000   [???]
+> Control 0x0c: +/35/65535   [???]
+> Control 0x0e: +/163/326   [???]
+> Control 0x10: +/40/100   [???]
+> Control 0x12: +/60/100   [???]
+> Control 0x14: +/5/11   [???]
+> Control 0x16: +/50/100   [???]
+> Control 0x18: +/50/100   [???]
+> Control 0x1a: +/50/100   [???]
+> Control 0x1e: +/0/1   [???]
+> Control 0x20: +/193/386   [???]
+> Control 0x30: +/24/48   [???]
+> Control 0x3e: +/32/63   [???]
+> Control 0x60: +/3/3   [???]
+> Control 0x6c: +/50/100   [???]
+> Control 0x6e: +/50/100   [???]
+> Control 0x70: +/50/100   [???]
+> Control 0xac: +/14364/1   [???]
+> Control 0xae: +/7500/0   [???]
+> Control 0xb6: +/3/8   [???]
+> Control 0xc0: +/1/65535   [???]
+> Control 0xc6: +/104/65535   [???]
+> Control 0xc8: +/2/65535   [???]
+> Control 0xc9: +/16/65535   [???]
+> Control 0xcc: +/2/10   [???]
+> Control 0xdf: +/512/65535   [???]
+> Control 0xf1: +/100/100   [???]
+> Control 0xf2: +/0/2   [???]
+> Control 0xf3: +/0/3   [???]
+> Control 0xfc: +/0/3   [???]
+> Control 0xfd: +/1/1   [???]
+> Control 0xfe: +/1/2   [???]
+> Control 0xff: +/5/10   [???]
+>
+> -------------------------------------------------------------------------
+> Using Tomcat but need to do more? Need to support web services, security?
+> Get stuff done quickly with pre-integrated technology to make your job easier
+> Download IBM WebSphere Application Server v.1.0.1 based on Apache Geronimo
+> http://sel.as-us.falkag.net/sel?cmd=lnk&kid=120709&bid=263057&dat=121642
+> _______________________________________________
+> ddccontrol-users mailing list
+> ddccontrol-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+>   
+
+
+
+From nicolas@...3... Tue Aug 29 04:20:54 2006
+Message-ID: <44F42300.7050202@...3...>
+Date: Tue, 29 Aug 2006 19:20:32 +0800
+From: Nicolas Boichat <nicolas@...3...>
+User-Agent: Thunderbird 1.5.0.5 (X11/20060806)
+MIME-Version: 1.0
+To: Luis Augusto Perles <perles@...46...>
+References: <fc75bd8e0608271838w7298cc2epc475798bba64c5fd@...53...>
+In-Reply-To: <fc75bd8e0608271838w7298cc2epc475798bba64c5fd@...53...>
+X-Ovh-Remote: 137.132.206.163 (spnp206153.spnp.nus.edu.sg)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: DONE|H 0.5/0.0/5.0/N
+X-Spam-Score: 1.8 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.8 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see <http://www.spamcop.net/bl.shtml?213.186.33.57>]
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] please, add my monitor to your database
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 29 Aug 2006 11:20:54 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hello,
+
+Thanks for the output, support added in CVS (
+http://ddccontrol.cvs.sourceforge.net/ddccontrol/ddccontrol-db/ , you
+need SAM0027.xml).
+
+Best regards,
+
+Nicolas
+
+Luis Augusto Perles wrote:
+> Hello,
+>
+> Attached is the output of my monitor. If you need more information or
+> a help for testing the update for my monitor, you can ask me.
+>
+> Cheers, LuÃ­s
+> ------------------------------------------------------------------------
+>
+> -------------------------------------------------------------------------
+> Using Tomcat but need to do more? Need to support web services, security?
+> Get stuff done quickly with pre-integrated technology to make your job easier
+> Download IBM WebSphere Application Server v.1.0.1 based on Apache Geronimo
+> http://sel.as-us.falkag.net/sel?cmd=lnk&kid=120709&bid=263057&dat=121642
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> ddccontrol-users mailing list
+> ddccontrol-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+>   
+
+
+
+From evgeny@...177... Tue Aug 29 08:51:14 2006
+Message-ID: <44F46258.2070506@...177...>
+Date: Tue, 29 Aug 2006 18:50:48 +0300
+From: Evgeny Stambulchik <evgeny@...177...>
+User-Agent: Thunderbird 1.5.0.4 (X11/20060625)
+MIME-Version: 1.0
+To: Nicolas Boichat <nicolas@...3...>
+References: <44E852D1.3070300@...177...> <44F41E47.8030300@...3...>
+In-Reply-To: <44F41E47.8030300@...3...>
+X-Spam-Status: No, score=-2.8 required=5.0 tests=ALL_TRUSTED autolearn=failed
+	version=3.0.3
+X-Spam-Checker-Version: SpamAssassin 3.0.3 (2005-04-27) on
+	plasma-gate.weizmann.ac.il
+X-Virus-Scanned: ClamAV 0.88.4/1756/Tue Aug 29 14:44:32 2006 on
+	plasma-gate.weizmann.ac.il
+X-Virus-Status: Clean
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Flatron L1952HM
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 29 Aug 2006 15:51:14 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Nicolas Boichat wrote:
+
+> It would be nice if you could play with 0xfd, 0xfe and 0xff controls, as
+> I don't know what they do (these are LG proprietary controls).
+
+Hi Nicolas,
+
+These are the missing controls:
+
+		<control id="power" address="0xfd">
+			<value id="off"   value="0x0"/>
+			<value id="on"    value="0x1"/>
+		</control>
+		
+		<control id="gamma" address="0xfe">
+			<value id="-0.5"   value="0x0"/>
+			<value id="0"      value="0x1"/>
+			<value id="+0.5"   value="0x2"/>
+		</control>
+		
+		<control id="sharpness" address="0xff">
+			<value id="0"   value="0x0"/>
+			<value id="1"   value="0x1"/>
+			<value id="2"   value="0x2"/>
+			<value id="3"   value="0x3"/>
+			<value id="4"   value="0x4"/>
+			<value id="5"   value="0x5"/>
+			<value id="6"   value="0x6"/>
+			<value id="7"   value="0x7"/>
+			<value id="8"   value="0x8"/>
+			<value id="9"   value="0x9"/>
+		</control>
+		
+Please notice that the "Power control" is actually a switch to 
+enable/disable the power led only (no other functionality, it seems), so 
+the name is somewhat misleading; but it's the closest match I found in 
+options.xml. Also, it would be nice to make the "sharpness" control a 
+list, but adding 'type="list"' attribute doesn't make a change.
+
+Thanks for your work,
+
+Evgeny
+
+
