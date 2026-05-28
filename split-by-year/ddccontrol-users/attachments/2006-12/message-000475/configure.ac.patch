@@ -1,0 +1,12 @@
+--- configure.ac.orig	2006-12-20 22:54:37.774300500 +0100
++++ configure.ac	2006-12-20 22:55:18.380838250 +0100
+@@ -101,7 +101,8 @@
+ DDCPCI=
+ if test x$support_ddcpci = xyes; then
+    AC_CHECK_HEADERS([pci/pci.h], [], [AC_MSG_ERROR([PCI utils headers not found, please install pci-utils.], [1])], [])
+-   AC_CHECK_LIB([pci], [pci_alloc], [], [AC_MSG_ERROR([PCI utils library not found, please install pci-utils.], [1])])
++   AC_CHECK_LIB([pci], [main], [], [AC_MSG_ERROR([PCI utils library not found, please install pci-utils.], [1])])
++   AC_CHECK_LIB([z], [main], [], [AC_MSG_ERROR([ZLIB library not found, please install zlib.], [1])])
+    DDCPCI=ddcpci
+    AC_DEFINE_UNQUOTED(HAVE_DDCPCI, 1, [Define if ddccontrol is built with ddcpci support.])
+ fi

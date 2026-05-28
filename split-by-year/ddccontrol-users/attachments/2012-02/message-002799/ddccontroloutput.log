@@ -1,0 +1,1601 @@
+
+Script started on Sun Feb  5 01:13:31 2012
+]0;root@sobriux: /tmproot@sobriux:/tmp# LANG= LC_ALL= ddccontrol -p -c -d 2  
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors..........I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM060C.xml"
+Document not parsed successfully.
+..
+Detected monitors :
+ - Device: dev:/dev/i2c-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-1...
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM060C.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: SAM060C [VESA standard monitor]
+	Input type: Digital
+[5;31m=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================[0m
+
+Capabilities:
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 64 at most
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 64 at most
+Invalid response, corrupted data - xor is 0xd3, length 0x23
+0000: 6e a3 a3 e3 00 00 00 28 70 70 72 6f 74 28 6d 6d | n......(pprot(mm
+0010: 6f 6e 69 74 6f 72 72 29 74 79 70 65 28 4c 43 44 | onitorr)type(LCD
+0020: 29 6d 6f 64 65 6c 28 28 45 43 4f 7e 00 00 00 00 | )model((ECO~....
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 64 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 64 at most
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x3d, length 0x08
+6e 88 88 02 00 01 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x3e, length 0x08
+6e 88 88 02 00 02 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x3e, length 0x08
+6e 88 88 02 00 02 01 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x3f, length 0x08
+6e 88 88 02 00 03 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x38, length 0x08
+6e 88 88 02 00 00 04 01 00 01 00                | n..........     
+Invalid response, corrupted data - xor is 0x38, length 0x08
+6e 88 88 02 00 04 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x39, length 0x08
+6e 88 88 02 00 05 01 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x39, length 0x08
+6e 88 88 02 00 05 01 00 01 00 00                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Control 0x06: +/0/1   [???]
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x3b, length 0x08
+6e 88 88 02 00 07 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x35, length 0x08
+6e 88 88 02 00 09 01 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x3c, length 0x08
+6e 88 88 02 00 09 09 01 00 01 00                | n..........     
+Invalid response, corrupted data - xor is 0x36, length 0x08
+6e 88 88 02 00 0a 01 00 01 00 00                | n..........     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x36, length 0x08
+6e 88 88 02 00 0a 01 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x37, length 0x08
+6e 88 88 02 00 0b 01 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x37, length 0x08
+6e 88 88 02 00 0b 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xbf, should be 0x6e
+bf bf 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 88 02 00 0d 01 00 01 00 00                | n..........     
+Invalid response, first byte is 0xb9, should be 0x6e
+b9 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xb9, should be 0x6e
+b9 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x33, length 0x08
+6e 88 88 02 00 0f 01 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x58, length 0x08
+6e 88 88 02 00 10 10 00 00 64 00                | n........d.     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xa4, should be 0x6e
+a4 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xa4, should be 0x6e
+a4 a4 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x15, length 0x08
+6e 88 88 02 00 12 00 00 64 00 5f                | n.......d._     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x5f, should be 0x6e
+5f 5f ff 00 00 00 00 00 00 00 00                | __.........     
+Invalid response, corrupted data - xor is 0x2e, length 0x08
+6e 88 88 02 00 13 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x23, length 0x08
+6e 88 88 02 00 14 00 00 00 0b 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x7c, length 0x08
+6e 88 88 02 00 16 00 00 64 00 32                | n.......d.2     
+Invalid response, first byte is 0xf4, should be 0x6e
+f4 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x2a, length 0x08
+6e 88 88 02 00 17 00 00 00 01 00                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x72, length 0x08
+6e 88 88 02 00 18 00 00 64 00 32                | n.......d.2     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x24, length 0x08
+6e 88 88 02 00 19 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0xac, should be 0x6e
+ac ac 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xf8, should be 0x6e
+f8 f8 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x26, length 0x08
+6e 88 88 02 00 1b 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0xae, should be 0x6e
+ae ae 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x26, length 0x08
+6e 88 88 02 00 1b 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x21, length 0x08
+6e 88 88 02 00 1c 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x20, length 0x08
+6e 88 88 02 00 1d 00 00 00 01 00                | n..........     
+Invalid response, corrupted data - xor is 0x20, length 0x08
+6e 88 88 02 00 1d 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x1c, length 0x08
+6e 88 88 02 00 21 00 00 01 00 00                | n....!.....     
+Invalid response, first byte is 0x94, should be 0x6e
+94 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x1f, length 0x08
+6e 88 88 02 00 22 00 00 01 00 00                | n....".....     
+Invalid response, corrupted data - xor is 0x95, length 0x08
+6e 88 02 02 00 22 00 00 01 00 00                | n....".....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x1e, length 0x08
+6e 88 88 02 00 23 00 00 01 00 00                | n....#.....     
+Invalid response, corrupted data - xor is 0x3d, length 0x08
+6e 88 88 02 00 23 23 00 00 01 00                | n....##....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x91, should be 0x6e
+91 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x1b, length 0x08
+6e 88 88 02 00 26 00 00 01 00 00                | n....&.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x17, length 0x08
+6e 88 88 02 00 2a 00 00 01 00 00                | n....*.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x11, length 0x08
+6e 88 88 02 00 2c 00 00 01 00 00                | n....,.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x10, length 0x08
+6e 88 88 02 00 2d 00 00 01 00 00                | n....-.....     
+Invalid response, corrupted data - xor is 0x10, length 0x08
+6e 88 88 02 00 2d 00 00 01 00 00                | n....-.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x12, length 0x08
+6e 88 88 02 00 2f 00 00 01 00 00                | n..../.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x86, should be 0x6e
+86 86 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x84, should be 0x6e
+84 84 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x0f, length 0x08
+6e 88 88 02 00 32 00 00 01 00 00                | n....2.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x87, should be 0x6e
+87 87 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x81, should be 0x6e
+81 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x09, length 0x08
+6e 88 88 02 00 34 00 00 01 00 00                | n....4.....     
+Invalid response, first byte is 0x81, should be 0x6e
+81 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x80, should be 0x6e
+80 80 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x0b, length 0x08
+6e 88 88 02 00 36 00 00 01 00 00                | n....6.....     
+Invalid response, corrupted data - xor is 0x0b, length 0x08
+6e 88 88 02 00 36 00 00 01 00 00                | n....6.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x0a, length 0x08
+6e 88 88 02 00 37 00 00 00 01 00                | n....7.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x8d, should be 0x6e
+8d 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x8f, should be 0x6e
+8f 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x8f, should be 0x6e
+8f 8f 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x06, length 0x08
+6e 88 88 02 00 3b 00 00 01 00 00                | n....;.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x01, length 0x08
+6e 88 88 02 00 3c 00 00 01 00 00                | n....<.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x89, should be 0x6e
+89 89 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xee, should be 0x6e
+ee ee 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x02, length 0x08
+6e 88 88 02 00 3f 00 00 01 00 00                | n....?.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xf5, should be 0x6e
+f5 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x7c, length 0x08
+6e 88 88 02 00 41 00 00 00 01 00                | n....A.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xf7, should be 0x6e
+f7 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x7e, length 0x08
+6e 88 88 02 00 43 00 00 01 00 00                | n....C.....     
+Invalid response, corrupted data - xor is 0x7e, length 0x08
+6e 88 88 02 00 43 00 00 00 01 00                | n....C.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xf1, should be 0x6e
+f1 f1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x78, length 0x08
+6e 88 88 02 00 45 00 00 01 00 00                | n....E.....     
+Invalid response, corrupted data - xor is 0x7b, length 0x08
+6e 88 88 02 00 46 00 00 01 00 00                | n....F.....     
+Invalid response, corrupted data - xor is 0x7b, length 0x08
+6e 88 88 02 00 46 00 00 01 00 00                | n....F.....     
+Invalid response, corrupted data - xor is 0x7b, length 0x08
+6e 88 88 02 00 46 00 00 01 00 00                | n....F.....     
+Invalid response, corrupted data - xor is 0x7a, length 0x08
+6e 88 88 02 00 47 00 00 01 00 00                | n....G.....     
+Control 0x47: +/0/1   [???]
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xff, should be 0x6e
+ff 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x71, length 0x08
+6e 88 88 02 00 4c 00 00 01 00 00                | n....L.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xf8, should be 0x6e
+f8 f8 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xfb, should be 0x6e
+fb fb 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x72, length 0x08
+6e 88 88 02 00 4f 00 00 01 00 00                | n....O.....     
+Invalid response, corrupted data - xor is 0x72, length 0x08
+6e 88 88 02 00 4f 00 00 01 00 00                | n....O.....     
+Invalid response, corrupted data - xor is 0x6d, length 0x08
+6e 88 88 02 00 50 00 00 01 00 00                | n....P.....     
+Invalid response, first byte is 0xe5, should be 0x6e
+e5 e5 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x6c, length 0x08
+6e 88 88 02 00 51 00 00 01 00 00                | n....Q.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x6f, length 0x08
+6e 88 88 02 00 52 00 00 01 00 00                | n....R.....     
+Invalid response, corrupted data - xor is 0x6f, length 0x08
+6e 88 88 02 00 00 52 00 00 01 00                | n.....R....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xe6, should be 0x6e
+e6 e6 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x68, length 0x08
+6e 88 88 02 00 55 00 00 01 00 00                | n....U.....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x68, length 0x08
+6e 88 88 02 00 55 00 00 01 00 00                | n....U.....     
+Invalid response, first byte is 0xe0, should be 0x6e
+e0 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x6b, length 0x08
+6e 88 88 02 00 56 00 00 01 00 00                | n....V.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xe3, should be 0x6e
+e3 e3 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x6a, length 0x08
+6e 88 88 02 00 57 00 00 01 00 00                | n....W.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xed, should be 0x6e
+ed ed 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Control 0x59: +/0/1   [???]
+Invalid response, corrupted data - xor is 0x67, length 0x08
+6e 88 88 02 00 5a 00 00 01 00 00                | n....Z.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xef, should be 0x6e
+ef ef 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x66, length 0x08
+6e 88 88 02 00 5b 00 00 01 00 00                | n....[.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x61, length 0x08
+6e 88 88 02 00 5c 00 00 01 00 00                | n....\.....     
+Invalid response, corrupted data - xor is 0x60, length 0x08
+6e 88 88 02 00 5d 00 00 01 00 00                | n....].....     
+Invalid response, first byte is 0xe8, should be 0x6e
+e8 e8 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x60, length 0x08
+6e 88 88 02 00 5d 00 00 01 00 00                | n....].....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xeb, should be 0x6e
+eb eb 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x62, length 0x08
+6e 88 88 02 00 5f 00 00 01 00 00                | n...._.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x5f, length 0x08
+6e 88 88 02 00 60 00 00 03 00 00                | n....`.....     
+Invalid response, corrupted data - xor is 0x5d, length 0x08
+6e 88 88 02 02 00 00 60 00 00 03                | n......`...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x5f, length 0x08
+6e 88 88 02 00 62 00 00 01 00 00                | n....b.....     
+Invalid response, corrupted data - xor is 0x5f, length 0x08
+6e 88 88 02 00 62 00 00 01 00 00                | n....b.....     
+Control 0x62: +/0/1   [???]
+Control 0x63: +/0/1   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xd1, should be 0x6e
+d1 d1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x55, length 0x08
+6e 88 88 02 00 68 00 00 01 00 00                | n....h.....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x54, length 0x08
+6e 88 88 02 00 69 00 00 01 00 00                | n....i.....     
+Invalid response, corrupted data - xor is 0x54, length 0x08
+6e 88 88 02 00 69 00 00 01 00 00                | n....i.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x55, length 0x08
+6e 88 88 02 02 00 6a 00 00 01 00                | n.....j....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xd8, should be 0x6e
+d8 d8 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xb5, length 0x08
+6e 88 02 00 6e 6e 00 00 00 01 00                | n...nn.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xda, should be 0x6e
+da da 00 00 00 00 00 00 00 00 00                | ...........     
+Control 0x70: +/0/1   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xc4, should be 0x6e
+c4 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x4f, length 0x08
+6e 88 88 02 00 72 00 00 01 00 00                | n....r.....     
+Invalid response, corrupted data - xor is 0x4f, length 0x08
+6e 88 88 02 00 72 00 00 01 00 00                | n....r.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x3d, length 0x08
+6e 88 88 02 00 00 74 74 00 00 01                | n.....tt...     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x4b, length 0x08
+6e 88 88 02 00 76 00 00 01 00 00                | n....v.....     
+Invalid response, corrupted data - xor is 0x4b, length 0x08
+6e 88 88 02 00 76 00 00 01 00 00                | n....v.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xcc, should be 0x6e
+cc 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0xcf, should be 0x6e
+cf cf 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x46, length 0x08
+6e 88 88 02 00 7b 00 00 01 00 00                | n....{.....     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x41, length 0x08
+6e 88 88 02 00 7c 00 00 01 00 00                | n....|.....     
+Invalid response, corrupted data - xor is 0x40, length 0x08
+6e 88 88 02 00 7d 00 00 01 00 00                | n....}.....     
+Invalid response, corrupted data - xor is 0x40, length 0x08
+6e 88 88 02 00 7d 00 00 01 00 00                | n....}.....     
+Invalid response, first byte is 0xc8, should be 0x6e
+c8 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x43, length 0x08
+6e 88 88 02 00 00 7e 00 00 01 00                | n.....~....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xbd, length 0x08
+6e 88 88 02 00 80 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xbf, length 0x08
+6e 88 88 02 00 82 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xbf, length 0x08
+6e 88 88 02 00 82 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x37, should be 0x6e
+37 37 00 00 00 00 00 00 00 00 00                | 77.........     
+Invalid response, corrupted data - xor is 0xbe, length 0x08
+6e 88 88 02 00 83 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xbc, length 0x08
+6e 88 88 02 02 00 83 00 00 01 00                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xb9, length 0x08
+6e 88 88 02 00 84 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xb9, length 0x08
+6e 88 88 02 00 84 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x31, should be 0x6e
+31 00 00 00 00 00 00 00 00 00 00                | 1..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xbb, length 0x08
+6e 88 88 02 00 86 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xbb, length 0x08
+6e 88 88 02 00 86 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x32, should be 0x6e
+32 32 ff 00 00 00 00 00 00 00 00                | 22.........     
+Invalid response, corrupted data - xor is 0x01, length 0x08
+6e 88 02 00 87 00 00 64 64 00 32                | n......dd.2     
+Invalid response, first byte is 0x65, should be 0x6e
+65 00 00 00 00 00 00 00 00 00 00                | e..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xb4, length 0x08
+6e 88 88 02 00 89 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xb6, length 0x08
+6e 88 88 02 00 8b 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xb1, length 0x08
+6e 88 88 02 00 8c 00 00 01 00 00                | n..........     
+Control 0x8c: +/0/1   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x38, should be 0x6e
+38 38 00 00 00 00 00 00 00 00 00                | 88.........     
+Invalid response, corrupted data - xor is 0xb0, length 0x08
+6e 88 88 02 00 8d 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x38, should be 0x6e
+38 00 00 00 00 00 00 00 00 00 00                | 8..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x3a, should be 0x6e
+3a 3a 00 00 00 00 00 00 00 00 00                | ::.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x24, should be 0x6e
+24 24 00 00 00 00 00 00 00 00 00                | $$.........     
+Invalid response, corrupted data - xor is 0xac, length 0x08
+6e 88 88 02 00 91 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xaf, length 0x08
+6e 88 88 02 00 92 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x26, should be 0x6e
+26 00 00 00 00 00 00 00 00 00 00                | &..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xa8, length 0x08
+6e 88 88 02 00 95 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xab, length 0x08
+6e 88 88 02 00 96 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x22, should be 0x6e
+22 22 00 00 00 00 00 00 00 00 00                | "".........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x2d, should be 0x6e
+2d 2d 00 00 00 00 00 00 00 00 00                | --.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xa4, length 0x08
+6e 88 88 02 00 99 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xa7, length 0x08
+6e 88 88 02 00 9a 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xa7, length 0x08
+6e 88 88 02 00 9a 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xa0, length 0x08
+6e 88 88 02 00 9d 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xa0, length 0x08
+6e 88 88 02 00 9d 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x2b, length 0x08
+6e 88 02 00 9e 00 00 01 00 00 00                | n..........     
+Invalid response, first byte is 0x2b, should be 0x6e
+2b 00 00 00 00 00 00 00 00 00 00                | +..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x15, should be 0x6e
+15 15 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x9c, length 0x08
+6e 88 88 02 00 a1 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x9f, length 0x08
+6e 88 88 02 00 a2 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x17, should be 0x6e
+17 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x9e, length 0x08
+6e 88 88 02 00 a3 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x9e, length 0x08
+6e 88 88 02 00 a3 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x99, length 0x08
+6e 88 88 02 00 a4 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x13, should be 0x6e
+13 13 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x9a, length 0x08
+6e 88 88 02 00 a7 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x9a, length 0x08
+6e 88 88 02 00 a7 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x95, length 0x08
+6e 88 88 02 00 a8 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x94, length 0x08
+6e 88 88 02 00 a9 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x97, length 0x08
+6e 88 88 02 00 aa 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x97, length 0x08
+6e 88 88 02 00 aa 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x97, length 0x08
+6e 88 88 02 00 aa 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x96, length 0x08
+6e 88 88 02 00 ab 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x90, length 0x08
+6e 88 88 02 00 ad 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x91, length 0x08
+6e 88 88 02 02 00 00 ae 00 00 01                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Control 0xb0: +/0/0   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x89, length 0x08
+6e 88 88 02 00 b4 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x89, length 0x08
+6e 88 88 02 00 b4 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x03, should be 0x6e
+03 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x8a, length 0x08
+6e 88 88 02 00 b7 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x8a, length 0x08
+6e 88 88 02 00 b7 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x85, length 0x08
+6e 88 88 02 00 b8 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x84, length 0x08
+6e 88 88 02 00 b9 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x87, length 0x08
+6e 88 88 02 00 ba 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x86, length 0x08
+6e 88 88 02 00 bb 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x0e, should be 0x6e
+0e 0e 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0x81, length 0x08
+6e 88 88 02 00 bc 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0x81, length 0x08
+6e 88 88 02 00 bc 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x09, should be 0x6e
+09 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x83, length 0x08
+6e 88 88 02 00 be 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x75, should be 0x6e
+75 75 00 00 00 00 00 00 00 00 00                | uu.........     
+Invalid response, corrupted data - xor is 0xfd, length 0x08
+6e 88 88 02 00 c0 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x75, should be 0x6e
+75 75 00 00 00 00 00 00 00 00 00                | uu.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xfc, length 0x08
+6e 88 88 02 00 c1 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xff, length 0x08
+6e 88 88 02 00 c2 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x71, should be 0x6e
+71 71 00 00 00 00 00 00 00 00 00                | qq.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xf8, length 0x08
+6e 88 88 02 00 c5 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xfa, length 0x08
+6e 88 88 02 00 c6 00 00 01 00 01                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Control 0xc6: +/1/1   [???]
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x72, should be 0x6e
+72 00 00 00 00 00 00 00 00 00 00                | r..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 00 00 00 00 00 00 00 00 00 00                | m..........     
+Invalid response, corrupted data - xor is 0xf4, length 0x08
+6e 88 88 02 00 c9 00 00 00 00 01                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xf6, length 0x08
+6e 88 88 02 00 cb 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x7e, should be 0x6e
+7e 00 00 00 00 00 00 00 00 00 00                | ~..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x78, should be 0x6e
+78 00 00 00 00 00 00 00 00 00 00                | x..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xf3, length 0x08
+6e 88 88 02 00 ce 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xf3, length 0x08
+6e 88 88 02 00 ce 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xf3, length 0x08
+6e 88 88 02 00 ce 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xf2, length 0x08
+6e 88 88 02 00 cf 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xf2, length 0x08
+6e 88 88 02 00 cf 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xed, length 0x08
+6e 88 88 02 00 d0 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x65, should be 0x6e
+65 00 00 00 00 00 00 00 00 00 00                | e..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xec, length 0x08
+6e 88 88 02 00 d1 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xec, length 0x08
+6e 88 88 02 00 d1 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x64, should be 0x6e
+64 64 00 00 00 00 00 00 00 00 00                | dd.........     
+Invalid response, corrupted data - xor is 0xef, length 0x08
+6e 88 88 02 00 d2 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xee, length 0x08
+6e 88 88 02 00 d3 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xe8, length 0x08
+6e 88 88 02 00 d5 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xea, length 0x08
+6e 88 88 02 00 d6 00 00 04 00 04                | n..........     
+Invalid response, first byte is 0x62, should be 0x6e
+62 62 00 00 00 00 00 00 00 00 00                | bb.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xe4, length 0x08
+6e 88 88 02 00 00 d9 00 00 01 00                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xe6, length 0x08
+6e 88 88 02 00 db 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x03, should be 0x6e
+03 03 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xe0, length 0x08
+6e 88 88 02 00 dd 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x68, should be 0x6e
+68 68 00 00 00 00 00 00 00 00 00                | hh.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xe3, length 0x08
+6e 88 88 02 00 de 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xe3, length 0x08
+6e 88 88 02 00 de 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 6b 00 00 00 00 00 00 00 00 00                | kk.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xdd, length 0x08
+6e 88 88 02 00 e0 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Control 0xe1: +/0/1   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xdf, length 0x08
+6e 88 88 02 00 e2 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xdf, length 0x08
+6e 88 88 02 00 e2 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xde, length 0x08
+6e 88 88 02 00 e3 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x56, should be 0x6e
+56 56 00 00 00 00 00 00 00 00 00                | VV.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xd9, length 0x08
+6e 88 88 02 00 e4 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xd8, length 0x08
+6e 88 88 02 00 e5 00 00 01 00 00                | n..........     
+Control 0xe5: +/0/1   [???]
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xda, length 0x08
+6e 88 88 02 00 e7 00 00 00 01 00                | n..........     
+Invalid response, corrupted data - xor is 0xda, length 0x08
+6e 88 88 02 00 e7 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xd6, length 0x08
+6e 88 88 02 00 ea 00 00 01 01 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xd1, length 0x08
+6e 88 88 02 00 ec 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x59, should be 0x6e
+59 00 00 00 00 00 00 00 00 00 00                | Y..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xd0, length 0x08
+6e 88 88 02 00 00 ed 00 00 01 00                | n..........     
+Control 0xee: +/0/1   [???]
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x5a, should be 0x6e
+5a 00 00 00 00 00 00 00 00 00 00                | Z..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xcd, length 0x08
+6e 88 88 02 00 f0 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xcf, length 0x08
+6e 88 88 02 00 f2 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xce, length 0x08
+6e 88 88 02 00 f3 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xce, length 0x08
+6e 88 88 02 00 f3 00 00 01 00 00                | n..........     
+Invalid response, first byte is 0x46, should be 0x6e
+46 00 00 00 00 00 00 00 00 00 00                | F..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x41, should be 0x6e
+41 00 00 00 00 00 00 00 00 00 00                | A..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xca, length 0x08
+6e 88 88 02 00 f5 00 00 02 00 01                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x42, should be 0x6e
+42 42 00 00 00 00 00 00 00 00 00                | BB.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x42, should be 0x6e
+42 00 00 00 00 00 00 00 00 00 00                | B..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0xc4, length 0x08
+6e 88 88 02 00 f9 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4c, should be 0x6e
+4c 4c 00 00 00 00 00 00 00 00 00                | LL.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4f, should be 0x6e
+4f 4f 00 00 00 00 00 00 00 00 00                | OO.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4e, should be 0x6e
+4e 00 00 00 00 00 00 00 00 00 00                | N..........     
+Invalid response, corrupted data - xor is 0xc1, length 0x08
+6e 88 88 02 00 00 00 fc 00 00 01                | n..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 ff ff 00 00 00 00 00 00 00                | ...........     
+Invalid response, corrupted data - xor is 0xc0, length 0x08
+6e 88 88 02 00 fd 00 00 01 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xc0, length 0x08
+6e 88 88 02 00 fd 00 00 01 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4b, should be 0x6e
+4b 00 00 00 00 00 00 00 00 00 00                | K..........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4b, should be 0x6e
+4b 4b 00 00 00 00 00 00 00 00 00                | KK.........     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 4a 00 00 00 00 00 00 00 00 00                | JJ.........     
+]0;root@sobriux: /tmproot@sobriux:/tmp# [Kexit
+
+Script done on Sun Feb  5 01:19:20 2012

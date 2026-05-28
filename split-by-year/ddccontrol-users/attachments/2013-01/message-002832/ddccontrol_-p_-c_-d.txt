@@ -1,0 +1,77 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.........I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM00E5.xml"
+Document not parsed successfully.
+.............I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM00E5.xml"
+Document not parsed successfully.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-12
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-12...
+
+EDID readings:
+	Plug and Play ID: SAM00E5 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (type(LCD)vcp(04 05 10 12 60(1 3) B0(1 2) B6 C6 C8 C9 D6(1 4) DC(1 2 3 4) DF))
+Parsed output: 
+	VCP: 04 05 10 12 60 b0 b6 c6 c8 c9 d6 dc df 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1   [???]
+Control 0x0e: +/60/120   [???]
+Control 0x10: +/0/100 C [Brightness]
+Control 0x12: +/45/100 C [Contrast]
+Control 0x16: +/32/64   [???]
+Control 0x18: +/32/64   [???]
+Control 0x1a: +/32/64   [???]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/55/100   [???]
+Control 0x30: +/35/70   [???]
+Control 0x3e: +/24/31   [???]
+Control 0x60: +/3/3 C [Input Source Select - Digital]
+Control 0x62: +/25/50   [???]
+Control 0x6c: +/144/255   [???]
+Control 0x6e: +/146/255   [???]
+Control 0x70: +/125/255   [???]
+Control 0xb0: +/0/2 C [Settings]
+Control 0xb6: +/3/8 C [???]
+Control 0xc6: +/1/1 C [???]
+Control 0xc8: +/5/16 C [???]
+Control 0xc9: +/1/0 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/2/11   [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdc: +/4/4 C [???]
+Control 0xdf: +/512/0 C [???]
+Control 0xe0: +/0/2   [???]
+Control 0xe1: +/1/1   [???]
+Control 0xe2: +/0/1   [???]
+Control 0xed: +/15/100   [???]
+Control 0xee: +/15/100   [???]
+Control 0xef: +/13/100   [???]

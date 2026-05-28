@@ -1,0 +1,161 @@
+Error opening /sys/bus/i2c/devices/i2c-4/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-5/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-6/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-7/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-8/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-9/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-10/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-11/device/device/device/class: No such file or directory
+The following tests probe the runtime environment using multiple overlapping methods.
+
+*** Basic System Information ***
+
+ddcutil version: 1.0.0
+
+/proc/version:
+   Linux version 5.7.19-1-ck-atom (linux-ck-atom@archlinux) (gcc version 10.2.0 (GCC), GNU ld (GNU Binutils) 2.35) #1 SMP PREEMPT Mon, 31 Aug 2020 21:08:27 +0000
+
+Architecture:     x86_64
+Distributor id:   Artix
+Release:          rolling
+Found a known architecture
+
+/proc/cmdline:
+   BOOT_IMAGE=/vmlinuz-linux-ck-atom root=/dev/mapper/btrfs_root rootflags=subvol=/subvolumes/root,compress=lzo,ssd,ssd_spread,noautodefrag,discard,relatime,commit=60 ro kdb=off loglevel=9 pcie_aspm=force slub_debug=- vt.default_utf8=1 fbcon=rotate:1 intel_iommu=on noautogroup init=/usr/bin/openrc-init resume=/dev/mapper/swsusp vga=6
+
+*** Primary Check 1: Identify video card and driver ***
+
+Obtaining card and driver information from /sys...
+Primary video controller at PCI address 0000:00:02.0 (boot_vga flag is set)
+   Device class:        x030000    VGA compatible controller
+   Vendor:              x8086      Intel Corporation
+   Device:              x3185      UHD Graphics 605
+   Driver name:         i915
+   Driver version:      Unable to determine
+   I2C device:          i2c-1      name: i915 gmbus dpc
+   I2C device:          i2c-2      name: i915 gmbus misc
+   I2C device:          i2c-0      name: i915 gmbus dpb
+
+*** Primary Check 2: Check that /dev/i2c-* exist and writable ***
+
+Current user: root (0)
+
+Checking /dev/i2c-* devices...
+
+Devices /dev/i2c-* must exist and the logged on user must have read/write permission for those devices (or at least those devices associated 
+with monitors).
+
+Typically, this access is enabled by:
+  - setting the group for /dev/i2c-* to i2c
+  - setting group RW permissions for /dev/i2c-*
+  - making the current user a member of group i2c
+
+Alternatively, this can be enabled by just giving everyone RW permission
+The following tests probe for these conditions.
+
+Checking for /dev/i2c-* devices...
+   crw------- 1 root root 89,  0 Jan 20 12:07 /dev/i2c-0
+   crw------- 1 root root 89,  1 Jan 20 12:07 /dev/i2c-1
+   crw------- 1 root root 89, 10 Jan 20 12:07 /dev/i2c-10
+   crw------- 1 root root 89, 11 Jan 20 12:07 /dev/i2c-11
+   crw------- 1 root root 89, 12 Jan 20 12:07 /dev/i2c-12
+   crw------- 1 root root 89,  2 Jan 20 12:07 /dev/i2c-2
+   crw------- 1 root root 89,  3 Jan 20 12:07 /dev/i2c-3
+   crw------- 1 root root 89,  4 Jan 20 12:07 /dev/i2c-4
+   crw------- 1 root root 89,  5 Jan 20 12:07 /dev/i2c-5
+   crw------- 1 root root 89,  6 Jan 20 12:07 /dev/i2c-6
+   crw------- 1 root root 89,  7 Jan 20 12:07 /dev/i2c-7
+   crw------- 1 root root 89,  8 Jan 20 12:07 /dev/i2c-8
+   crw------- 1 root root 89,  9 Jan 20 12:07 /dev/i2c-9
+
+Current user (root) has RW access to all /dev/i2c-* devices.
+
+*** Primary Check 3: Check that module i2c_dev is loaded ***
+
+Checking for module i2c_dev...
+   Module i2c-dev is NOT built into kernel
+   Loadable i2c-dev module found
+   Module i2c_dev is loaded
+
+*** Primary Check 4: Driver specific checks ***
+
+Performing driver specific checks...
+No driver specific checks apply.
+
+*** Additional probes ***
+
+Scanning /proc/modules for driver environment...
+   Found other loaded module:      i2c_dev
+   Found other loaded module:      videobuf2_dma_sg
+   Found other loaded module:      videobuf2_memops
+   Found other loaded module:      videobuf2_v4l2
+   Found other loaded module:      videobuf2_common
+   Found other loaded module:      videodev
+   Found other loaded module:      i2c_i801
+   Found video driver module:      i915
+   Found other loaded module:      i2c_algo_bit
+   Found other loaded module:      drm_kms_helper
+   Loaded drm module depends on:   i915,drm_kms_helper,
+
+Testing if modules are loaded using /sys...
+   Module amdgpu           is NOT loaded
+   Module fbdev            is NOT loaded
+   Module fglrx            is NOT loaded
+   Module fturbo           is NOT loaded
+   Module i915             is loaded
+   Module mgag200          is NOT loaded
+   Module nvidia           is NOT loaded
+   Module nouveau          is NOT loaded
+   Module radeon           is NOT loaded
+   Module vboxvideo        is NOT loaded
+   Module vc4              is NOT loaded
+   Module drm              is loaded
+   Module i2c_algo_bit     is loaded
+   Module i2c_dev          is loaded
+   Module i2c_piix4        is NOT loaded
+   Module ddcci            is NOT loaded
+
+Examining /sys/bus/i2c/devices...
+   /sys/bus/i2c/devices/i2c-0/name:   i915 gmbus dpb
+   /sys/bus/i2c/devices/i2c-1/name:   i915 gmbus dpc
+   /sys/bus/i2c/devices/i2c-2/name:   i915 gmbus misc
+   /sys/bus/i2c/devices/i2c-3/name:   AUX C/port C
+   /sys/bus/i2c/devices/i2c-4/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-5/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-6/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-7/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-8/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-9/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-10/name:  Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-11/name:  Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-12/name:  SMBus I801 adapter at f040
+
+Env_Accumulator:
+   architecture:                  x86_64
+   distributor_id                 Artix
+   Drivers detected:              i915
+   /dev/i2c device numbers:       0 1 2 3 4 5 6 7 8 9 10 11 12
+   sysfs_i2c_devices_exist:       true
+   /sys/bus/i2c device numbers:   0 1 2 3 4 5 6 7 8 9 10 11 12
+   dev_i2c_devices_required:      true
+   module_i2c_dev_needed:         true
+   module_i2c_dev_builtin:        false
+   loadable_i2c_dev_exists:       true
+   i2c_dev_loaded_or_builtin:     true
+   group_i2c_checked:             true
+   group_i2c_exists:              false
+   dev_i2c_common_group_name:     root
+   all_dev_i2c_has_group_i2c:     false
+   any_dev_i2c_has_group_i2c:     false
+   all_dev_i2c_is_group_rw:       true
+   any_dev_i2c_is_group_rw:       false
+   cur_uname:                     root
+   cur_uid:                       0
+   cur_user_in_group_i2c:         false
+   cur_user_any_devi2c_rw:        true
+   cur_user_all_devi2c_rw:        true
+
+Configuration suggestions:
+   Current user has RW access to all /dev/i2c-N devices.
+   Skipping further group and permission checks.
+

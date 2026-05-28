@@ -1,0 +1,27 @@
+Index: src/ddcpci/intel810.c
+===================================================================
+--- src/ddcpci/intel810.c	(revision 797)
++++ src/ddcpci/intel810.c	(working copy)
+@@ -144,6 +144,7 @@
+ 	case 0x2776: // 945G Integrated Graphics Controller
+ 	case 0x2782: // 82915G Express Chipset Family Graphics Controller
+ 	case 0x2792: // Mobile 915GM/GMS/910GML Express Graphics Controller
++	case 0x2A02: // Mobile GM965/GL960 Graphics Controller (X3100) 
+ 	case 0x3577: // 82830 CGC [Chipset Graphics Controller]
+ 	case 0x3582: // 82852/855GM Integrated Graphics Device
+ 	case 0x7121: // 82810 CGC [Chipset Graphics Controller]
+@@ -172,8 +173,12 @@
+ 		i810_close(i810_card);
+ 		return 0;
+ 	}
+-	
+-	data->length = 512*1024; //MMIO_SIZE
++
++	// MMIO_SIZE
++	if (dev->device_id == 0x2A02)
++		data->length = 1024*1024;
++	else
++		data->length = 512*1024;
+ 	data->memory = 0;
+ 	
+ 	int reg;

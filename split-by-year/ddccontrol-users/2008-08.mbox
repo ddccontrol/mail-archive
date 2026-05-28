@@ -327,17 +327,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --6TrnltStXW4iwmi0
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001305/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIlHGf5SXWIKfIlGQRAhbHAJ4k25VI0Q9l/kvrD255HZBQWPolEACeOFyf
-9SjWWP+bnJ9SaX7Hr12+t9Q=
-=UWUv
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001305/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --6TrnltStXW4iwmi0--
 
@@ -566,100 +569,19 @@ Content-Transfer-Encoding: 7bit
 
 
 --------------030006040805000709050802
-Content-Type: text/plain; name="ddccontrol"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: inline;
- filename="ddccontrol"
+Content-Disposition: attachment; filename="ddccontrol.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001308/ddccontrol
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3432
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors...I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM037C.xml"
-Document not parsed successfully.
-...I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM037C.xml"
-Document not parsed successfully.
-
-Detected monitors :
- - Device: dev:/dev/i2c-2
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-2...
-
-EDID readings:
-	Plug and Play ID: SAM037C [VESA standard monitor]
-	Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Raw output: (prot(monitor)type(LCD)model(McKinley)mccs_ver(2.0)vcp(04 05 08 10 12 14(02 03 0A 0B) 16 18 1A 60(01 03) 87 B0(01 02) B6 C6 C8 C9 D6(01 04) DC(01 02 03 04 05 06 F0) DB(00 04) DF E8(00 01 06 07 FE) EA(00 01 02 03 04) F0(00 01 02 03) F2 F3(00 01 02) F6 ))mswhql(1))
-Parsed output: 
-	VCP: 04 05 08 10 12 14 16 18 1a 60 87 b0 b6 c6 c8 c9 d6 db dc df e8 ea f0 f2 f3 f6 
-	Type: Unknown
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x02: +/1/255   [???]
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x06: +/0/1   [???]
-Control 0x08: +/0/1 C [Restore Factory Default Color]
-Control 0x0e: +/80/160   [???]
-Control 0x10: +/0/100 C [Brightness]
-Control 0x12: +/100/100 C [Contrast]
-Control 0x14: +/2/11 C [???]
-Control 0x16: +/32/64 C [Red maximum level]
-Control 0x18: +/32/64 C [Green maximum level]
-Control 0x1a: +/32/64 C [Blue maximum level]
-Control 0x1e: +/0/2   [???]
-Control 0x20: +/50/100   [???]
-Control 0x30: +/35/70   [???]
-Control 0x3e: +/0/31   [???]
-Control 0x54: +/0/2   [???]
-Control 0x60: +/3/3 C [Input Source Select - Digital]
-Control 0x62: +/50/100   [???]
-Control 0x6c: +/128/255   [???]
-Control 0x6e: +/128/255   [???]
-Control 0x70: +/128/255   [???]
-Control 0x87: +/15/25 C [???]
-Control 0xb6: +/3/9 C [???]
-Control 0xc6: +/1/1 C [???]
-Control 0xc8: +/5/16 C [???]
-Control 0xc9: +/1/0 C [???]
-Control 0xca: +/2/2   [???]
-Control 0xcc: +/2/11   [???]
-Control 0xd6: +/1/4 C [DPMS Control - On]
-Control 0xdb: +/255/2 C [???]
-Control 0xdc: +/6/7 C [???]
-Control 0xdf: +/512/514 C [???]
-Control 0xe0: +/3/515   [???]
-Control 0xe1: +/1/1   [???]
-Control 0xe2: +/0/1   [???]
-Control 0xe4: +/0/2   [???]
-Control 0xe8: +/0/7 C [???]
-Control 0xea: +/0/4 C [???]
-Control 0xed: +/96/255   [???]
-Control 0xee: +/96/255   [???]
-Control 0xef: +/96/255   [???]
-Control 0xf0: +/0/3 C [???]
-Control 0xf2: +/2/2 C [???]
-Control 0xf3: +/1/2 C [???]
-Control 0xf5: +/0/2   [???]
-Control 0xf6: +/1/2 C [???]
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001308/ddccontrol
+Original filename: ddccontrol
+Original content type: text/plain
+Original decoded size: 3432 bytes
 
 --------------030006040805000709050802--
 
@@ -1388,17 +1310,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --Dxnq1zWXvFF0Q93v
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001314/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIl38q5SXWIKfIlGQRAvxmAKDR55WMmCba2xvtpfX/9Dka6E24fQCgnHNt
-F7iazPd1PI6zI/gzXVoicH4=
-=ymbX
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001314/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --Dxnq1zWXvFF0Q93v--
 
@@ -1975,17 +1900,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --TB36FDmn/VVEgNH/
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001320/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFImkp75SXWIKfIlGQRAmQMAJ9NpMWS7ETZ5IGpR/8iI+WDRpYb+QCeMbUd
-1JZqgOqfuCxFu+GuqbsDh1A=
-=Vept
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001320/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --TB36FDmn/VVEgNH/--
 
@@ -2047,17 +1975,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --TB36FDmn/VVEgNH/
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001321/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFImkp75SXWIKfIlGQRAmQMAJ9NpMWS7ETZ5IGpR/8iI+WDRpYb+QCeMbUd
-1JZqgOqfuCxFu+GuqbsDh1A=
-=Vept
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001321/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --TB36FDmn/VVEgNH/--
 
@@ -2641,17 +2572,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --8NvZYKFJsRX2Djef
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001324/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIndYE5SXWIKfIlGQRAjWmAKCBXx23ffmAPULh9UVZNz/W4omlJgCeKNkF
-fgKeZACRJiTZU66AZj5pP7c=
-=c1kD
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001324/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --8NvZYKFJsRX2Djef--
 
@@ -3066,17 +3000,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --+QahgC5+KEYLbs62
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001327/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIn19Y5SXWIKfIlGQRAuVnAJ0UMEesYO+2hjbxWONN7vgJgmYCSwCgkUjR
-ffYDMX3lqkHEeYum7fFEgro=
-=1AgR
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001327/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --+QahgC5+KEYLbs62--
 
@@ -3386,17 +3323,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --Kj7319i9nmIyA2yE
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001331/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIp34Q5SXWIKfIlGQRAqlWAKC7959L3JZzW+0TfHTgG8BKjXPEMACfXtjd
-CNoqjWXj7GhE6IjHWjklu2o=
-=e6Zr
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001331/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --Kj7319i9nmIyA2yE--
 
@@ -5640,224 +5580,19 @@ p://clk.atdmt.com/UKM/go/107571437/direct/01/' target=3D'_new'>Try it Now!<=
 --_8a2e6909-a78a-45a8-b016-79eb5fc5852d_--
 
 --_7cf59f62-bf02-4357-a909-884e9f123f2d_
-Content-Type: application/rtf
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment;
-	filename="LANG= LC_ALL= ddccontrol -p -c -d.rtf"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="LANG_LC_ALL_ddccontrol_-p_-c_-d.rtf.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001347/LANG_LC_ALL_ddccontrol_-p_-c_-d.rtf
+X-External-Attachment-Content-Type: application/rtf
+X-External-Attachment-Size: 12096
 
-e1xydGYxXGFuc2lcZGVmZjBcYWRlZmxhbmcxMDI1CntcZm9udHRibHtcZjBcZnJvbWFuXGZwcnEy
-XGZjaGFyc2V0MCBUaW1lcyBOZXcgUm9tYW47fXtcZjFcZnJvbWFuXGZwcnEyXGZjaGFyc2V0MCBU
-aW1lcyBOZXcgUm9tYW47fXtcZjJcZm5pbFxmcHJxMlxmY2hhcnNldDAgRGVqYVZ1IFNhbnM7fXtc
-ZjNcZm5pbFxmcHJxMFxmY2hhcnNldDAgQWxiYW55e1wqXGZhbHQgQXJpYWx9O317XGY0XGZuaWxc
-ZnBycTJcZmNoYXJzZXQwIFRhaG9tYTt9e1xmNVxmbmlsXGZwcnEwXGZjaGFyc2V0MCBUYWhvbWE7
-fX0Ke1xjb2xvcnRibDtccmVkMFxncmVlbjBcYmx1ZTA7XHJlZDEyOFxncmVlbjEyOFxibHVlMTI4
-O30Ke1xzdHlsZXNoZWV0e1xzMVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxo
-eXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1
-XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTdcc25leHQxIE5vcm1h
-bDt9CntcczJcc2IyNDBcc2ExMjBca2VlcG5cY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0
-cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmczI4XGxhbmcyNTVcbHRyY2hcZGJjaFxsYW5nZmUyNTVc
-aGljaFxmM1xmczI4XGxhbmcyMDU3XGxvY2hcZjNcZnMyOFxsYW5nMjA1N1xzYmFzZWRvbjFcc25l
-eHQzIEhlYWRpbmc7fQp7XHMzXHNhMTIwXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJh
-aWwyXGh5cGhtYXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5n
-ZmUyNTVcaGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xzYmFzZWRv
-bjFcc25leHQzIEJvZHkgVGV4dDt9CntcczRcc2ExMjBcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQy
-XGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNVxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hc
-YWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3
-XHNiYXNlZG9uM1xzbmV4dDQgTGlzdDt9CntcczVcc2IxMjBcc2ExMjBcY2Ywe1wqXGh5cGhlbjJc
-aHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNVxhZnMyNFxsYW5nMjU1XGFp
-XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcaVxsb2NoXGYw
-XGZzMjRcbGFuZzIwNTdcaVxzYmFzZWRvbjFcc25leHQ1IGNhcHRpb247fQp7XHM2XGNmMHtcKlxo
-eXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgwfVxydGxjaFxhZjVcYWZzMjRcbGFu
-ZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hc
-ZjBcZnMyNFxsYW5nMjA1N1xzYmFzZWRvbjFcc25leHQ2IEluZGV4O30KfQp7XGluZm97XGF1dGhv
-ciB0b3Jydmlld317XGNyZWF0aW1ceXIyMDA4XG1vOFxkeTI5XGhyMTVcbWluMjh9e1xyZXZ0aW1c
-eXIwXG1vMFxkeTBcaHIwXG1pbjB9e1xwcmludGltXHlyMFxtbzBcZHkwXGhyMFxtaW4wfXtcY29t
-bWVudCBTdGFyV3JpdGVyfXtcdmVybjY4MDB9fVxkZWZ0YWI3MDkKe1wqXHBnZHNjdGJsCntccGdk
-c2MwXHBnZHNjdXNlMTk1XHBnd3N4bjExOTA1XHBnaHN4bjE2ODM3XG1hcmdsc3huMTEzNFxtYXJn
-cnN4bjExMzRcbWFyZ3RzeG4xMTM0XG1hcmdic3huMTEzNFxwZ2RzY254dDAgU3RhbmRhcmQ7fX0K
-XHBhcGVyaDE2ODM3XHBhcGVydzExOTA1XG1hcmdsMTEzNFxtYXJncjExMzRcbWFyZ3QxMTM0XG1h
-cmdiMTEzNFxzZWN0ZFxzYmtub25lXHBnd3N4bjExOTA1XHBnaHN4bjE2ODM3XG1hcmdsc3huMTEz
-NFxtYXJncnN4bjExMzRcbWFyZ3RzeG4xMTM0XG1hcmdic3huMTEzNFxmdG5ialxmdG5zdGFydDFc
-ZnRucnN0Y29udFxmdG5uYXJcYWVuZGRvY1xhZnRucnN0Y29udFxhZnRuc3RhcnQxXGFmdG5ucmxj
-ClxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFp
-bDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdm
-ZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IApccGFyIFxw
-YXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJc
-aHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1
-NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRsY2ggXGx0
-cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCB0b3Jydmlld0B0b3Jydmlldy1kZXNrdG9w
-On4kIHtcKlxia21rc3RhcnQgRERFX0xJTkt9TEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1wIC1j
-IC1kXCcwZHtcKlxia21rZW5kIERERV9MSU5LfX0KXHBhciBccGFyZFxwbGFpbiBcbHRycGFyXHMx
-XGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgwfVxydGxjaFxhZjRc
-YWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxmMFxmczI0XGxhbmcy
-MDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2NoXGYwXGZzMjRcbGFu
-ZzIwNTdcaTBcYjAgZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4yXCcwZH0KXHBhciBccGFyZFxwbGFp
-biBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgw
-fVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxm
-MFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2No
-XGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgQ29weXJpZ2h0IDIwMDQtMjAwNSBPbGVnIEkuIFZkb3Zp
-a2luIChvbGVnQGNzLm1zdS5zdSlcJzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Yw
-e1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMy
-NFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdc
-bG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1
-N1xpMFxiMCBDb3B5cmlnaHQgMjAwNC0yMDA2IE5pY29sYXMgQm9pY2hhdCAobmljb2xhc0Bib2lj
-aGF0LmNoKVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxo
-eXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRy
-Y2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRc
-bGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIFRoaXMg
-cHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkgTk8gV0FSUkFOVFkuXCcwZH0KXHBhciBccGFy
-ZFxwbGFpbiBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5
-cGhtYXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVc
-aGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJj
-aFxsb2NoXGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgWW91IG1heSByZWRpc3RyaWJ1dGUgY29waWVz
-IG9mIHRoaXMgcHJvZ3JhbSB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1Ymxp
-YyBMaWNlbnNlLlwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVu
-MlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVc
-bHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZz
-MjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIFwn
-MGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJc
-aHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxh
-ZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcg
-e1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIFByb2JpbmcgZm9yIGF2
-YWlsYWJsZSBtb25pdG9yc1JlcXVlc3QgSU8gUGVybTogT3BlcmF0aW9uIG5vdCBwZXJtaXR0ZWRc
-JzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQy
-XGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hc
-YWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3
-IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCAqKiogZ2xpYmMgZGV0
-ZWN0ZWQgKioqIC91c3IvYmluL2RkY3BjaTogZnJlZSgpOiBpbnZhbGlkIHBvaW50ZXI6IDB4Yjdm
-MGIxOTAgKioqXCcwZH0KXHBhciBccGFyZFxwbGFpbiBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4y
-XGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxs
-dHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMy
-NFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2NoXGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgPT09
-PT09PSBCYWNrdHJhY2U6ID09PT09PT09PVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxz
-MVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0
-XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5n
-MjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxh
-bmcyMDU3XGkwXGIwIC9saWIvdGxzL2k2ODYvY21vdi9saWJjLnNvLjZbMHhiN2UyYWE4NV1cJzBk
-fQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5
-cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYy
-XGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtc
-cnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCAvbGliL3Rscy9pNjg2L2Nt
-b3YvbGliYy5zby42KGNmcmVlKzB4OTApWzB4YjdlMmU0ZjBdXCcwZH0KXHBhciBccGFyZFxwbGFp
-biBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgw
-fVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxm
-MFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2No
-XGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgL3Vzci9iaW4vZGRjcGNpWzB4ODA0Y2Q2NF1cJzBkfQpc
-cGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0
-cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxh
-bmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRs
-Y2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCAvdXNyL2Jpbi9kZGNwY2lbMHg4
-MDQ5NjQ2XVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxo
-eXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRy
-Y2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRc
-bGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIC9saWIv
-dGxzL2k2ODYvY21vdi9saWJjLnNvLjYoX19saWJjX3N0YXJ0X21haW4rMHhlMClbMHhiN2RkNTQ1
-MF1cJzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxl
-YWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRi
-Y2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcy
-MDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCAvdXNyL2Jpbi9k
-ZGNwY2lbMHg4MDQ4ZjQxXVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpc
-aHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxh
-bmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2No
-XGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkw
-XGIwID09PT09PT0gTWVtb3J5IG1hcDogPT09PT09PT1cJzBkfQpccGFyIFxwYXJkXHBsYWluIFxs
-dHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0
-bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZz
-MjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBc
-ZnMyNFxsYW5nMjA1N1xpMFxiMCAwODA0ODAwMC0wODA1MzAwMCByLXhwIDAwMDAwMDAwIDA4OjA1
-IDk0NDExMyAgICAgL3Vzci9iaW4vZGRjcGNpXCcwZH0KXHBhciBccGFyZFxwbGFpbiBcbHRycGFy
-XHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgwfVxydGxjaFxh
-ZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxmMFxmczI0XGxh
-bmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2NoXGYwXGZzMjRc
-bGFuZzIwNTdcaTBcYjAgMDgwNTMwMDAtMDgwNTQwMDAgcnctcCAwMDAwYTAwMCAwODowNSA5NDQx
-MTMgICAgIC91c3IvYmluL2RkY3BjaVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxj
-ZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFm
-czI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1
-N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcy
-MDU3XGkwXGIwIDA4MDU0MDAwLTA4MDc1MDAwIHJ3LXAgMDgwNTQwMDAgMDA6MDAgMCAgICAgICAg
-ICBbaGVhcF1cJzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJc
-aHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0
-cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0
-XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCBiN2Mw
-MDAwMC1iN2MyMTAwMCBydy1wIGI3YzAwMDAwIDAwOjAwIDAgXCcwZH0KXHBhciBccGFyZFxwbGFp
-biBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgw
-fVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxm
-MFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2No
-XGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgYjdjMjEwMDAtYjdkMDAwMDAgLS0tcCBiN2MyMTAwMCAw
-MDowMCAwIFwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxo
-eXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRy
-Y2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRc
-bGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIGI3ZGIz
-MDAwLWI3ZGJkMDAwIHIteHAgMDAwMDAwMDAgMDg6MDUgMTg3NjAzMiAgICAvbGliL2xpYmdjY19z
-LnNvLjFcJzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlw
-aGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNo
-XGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxh
-bmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCBiN2RiZDAw
-MC1iN2RiZTAwMCBydy1wIDAwMDBhMDAwIDA4OjA1IDE4NzYwMzIgICAgL2xpYi9saWJnY2Nfcy5z
-by4xXCcwZH0KXHBhciBccGFyZFxwbGFpbiBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhs
-ZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxk
-YmNoXGFmMlxsYW5nZmUyNTVcaGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5n
-MjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2NoXGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgYjdkYmUwMDAt
-YjdkYmYwMDAgcnctcCBiN2RiZTAwMCAwMDowMCAwIFwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0
-cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRs
-Y2hcYWY0XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMy
-NFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxm
-czI0XGxhbmcyMDU3XGkwXGIwIGI3ZGJmMDAwLWI3ZjA4MDAwIHIteHAgMDAwMDAwMDAgMDg6MDUg
-MTg5MzcxNCAgICAvbGliL3Rscy9pNjg2L2Ntb3YvbGliYy0yLjcuc29cJzBkfQpccGFyIFxwYXJk
-XHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlw
-aG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxo
-aWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNo
-XGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCBiN2YwODAwMC1iN2YwOTAwMCByLS1wIDAwMTQ5
-MDAwIDA4OjA1IDE4OTM3MTQgICAgL2xpYi90bHMvaTY4Ni9jbW92L2xpYmMtMi43LnNvXCcwZH0K
-XHBhciBccGFyZFxwbGFpbiBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBo
-dHJhaWwyXGh5cGhtYXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxs
-YW5nZmUyNTVcaGljaFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0
-bGNoIFxsdHJjaFxsb2NoXGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgYjdmMDkwMDAtYjdmMGIwMDAg
-cnctcCAwMDE0YTAwMCAwODowNSAxODkzNzE0ICAgIC9saWIvdGxzL2k2ODYvY21vdi9saWJjLTIu
-Ny5zb1wnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxoeXBo
-bGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRyY2hc
-ZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRcbGFu
-ZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIGI3ZjBiMDAw
-LWI3ZjBlMDAwIHJ3LXAgYjdmMGIwMDAgMDA6MDAgMCBcJzBkfQpccGFyIFxwYXJkXHBsYWluIFxs
-dHJwYXJcczFcY2Ywe1wqXGh5cGhlbjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0
-bGNoXGFmNFxhZnMyNFxsYW5nMjU1XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZz
-MjRcbGFuZzIwNTdcbG9jaFxmMFxmczI0XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBc
-ZnMyNFxsYW5nMjA1N1xpMFxiMCBiN2YwZTAwMC1iN2YyMjAwMCByLXhwIDAwMDAwMDAwIDA4OjA1
-IDk0NDI2MiAgICAgL3Vzci9saWIvbGliei5zby4xLjIuMy4zXCcwZH0KXHBhciBccGFyZFxwbGFp
-biBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGhtYXgw
-fVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGljaFxm
-MFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxsb2No
-XGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgYjdmMjIwMDAtYjdmMjMwMDAgcnctcCAwMDAxMzAwMCAw
-ODowNSA5NDQyNjIgICAgIC91c3IvbGliL2xpYnouc28uMS4yLjMuM1wnMGR9ClxwYXIgXHBhcmRc
-cGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBo
-bWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhp
-Y2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hc
-bG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIwIGI3ZjIzMDAwLWI3ZjI0MDAwIHJ3LXAgYjdmMjMw
-MDAgMDA6MDAgMCBcJzBkfQpccGFyIFxwYXJkXHBsYWluIFxsdHJwYXJcczFcY2Ywe1wqXGh5cGhl
-bjJcaHlwaGxlYWQyXGh5cGh0cmFpbDJcaHlwaG1heDB9XHJ0bGNoXGFmNFxhZnMyNFxsYW5nMjU1
-XGx0cmNoXGRiY2hcYWYyXGxhbmdmZTI1NVxoaWNoXGYwXGZzMjRcbGFuZzIwNTdcbG9jaFxmMFxm
-czI0XGxhbmcyMDU3IHtccnRsY2ggXGx0cmNoXGxvY2hcZjBcZnMyNFxsYW5nMjA1N1xpMFxiMCBi
-N2YzNjAwMC1iN2YzNzAwMCBydy1wIGI3ZjM2MDAwIDAwOjAwIDAgXCcwZH0KXHBhciBccGFyZFxw
-bGFpbiBcbHRycGFyXHMxXGNmMHtcKlxoeXBoZW4yXGh5cGhsZWFkMlxoeXBodHJhaWwyXGh5cGht
-YXgwfVxydGxjaFxhZjRcYWZzMjRcbGFuZzI1NVxsdHJjaFxkYmNoXGFmMlxsYW5nZmUyNTVcaGlj
-aFxmMFxmczI0XGxhbmcyMDU3XGxvY2hcZjBcZnMyNFxsYW5nMjA1NyB7XHJ0bGNoIFxsdHJjaFxs
-b2NoXGYwXGZzMjRcbGFuZzIwNTdcaTBcYjAgYjdmMzcwMDAtYjdmMzgwMDAgci14cCBiN2YzNzAw
-MCAwMDowMCAwICAgICAgICAgIFt2ZHNvXVwnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxz
-MVxjZjB7XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0
-XGFmczI0XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5n
-MjA1N1xsb2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxh
-bmcyMDU3XGkwXGIwIGI3ZjM4MDAwLWI3ZjUyMDAwIHIteHAgMDAwMDAwMDAgMDg6MDUgMTg3NTk4
-NyAgICAvbGliL2xkLTIuNy5zb1wnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7
-XCpcaHlwaGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0
-XGxhbmcyNTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xs
-b2NoXGYwXGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3
-XGkwXGIwIGI3ZjUyMDAwLWI3ZjU0MDAwIHJ3LXAgMDAwMTkwMDAgMDg6MDUgMTg3NTk4NyAgICAv
-bGliL2xkLTIuNy5zb1wnMGR9ClxwYXIgXHBhcmRccGxhaW4gXGx0cnBhclxzMVxjZjB7XCpcaHlw
-aGVuMlxoeXBobGVhZDJcaHlwaHRyYWlsMlxoeXBobWF4MH1ccnRsY2hcYWY0XGFmczI0XGxhbmcy
-NTVcbHRyY2hcZGJjaFxhZjJcbGFuZ2ZlMjU1XGhpY2hcZjBcZnMyNFxsYW5nMjA1N1xsb2NoXGYw
-XGZzMjRcbGFuZzIwNTcge1xydGxjaCBcbHRyY2hcbG9jaFxmMFxmczI0XGxhbmcyMDU3XGkwXGIw
-IGJmZjBjMDAwLWJmZjIxMDAwIHJ3LXAgYmZmZWIwMDAgMDA6MDAgMCAgICAgICAgICBbc3RhY2td
-XCcwZH0KXHBhciB9
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001347/LANG_LC_ALL_ddccontrol_-p_-c_-d.rtf
+Original filename: LANG= LC_ALL= ddccontrol -p -c -d.rtf
+Original content type: application/rtf
+Original decoded size: 12096 bytes
 
 --_7cf59f62-bf02-4357-a909-884e9f123f2d_--
 
@@ -5921,17 +5656,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --M9NhX3UHpAaciwkO
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001348/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIuAyU5SXWIKfIlGQRAg6vAJ48Bhqlc+z4gUP8Oex1yFcB5MKtMQCeNjwY
-Pn3stnqiXE15se2AFCFbkDM=
-=Gu8p
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001348/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --M9NhX3UHpAaciwkO--
 
@@ -6358,17 +6096,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --jI8keyz6grp/JLjh
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-001350/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFIuB6x5SXWIKfIlGQRAqMqAKCxDQjXKmM8QIHyL+lJJu9yaEVcfACgzCs8
-GK67GbfvwoU6MYwWBNHiS2Q=
-=fWL3
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-001350/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --jI8keyz6grp/JLjh--
 

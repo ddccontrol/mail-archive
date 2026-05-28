@@ -1,0 +1,52 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...3...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...1...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: dev:/dev/i2c-1
+   DDC/CI supported: Yes
+   Monitor Name: LaCie 321
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-1...
+
+EDID readings:
+	Plug and Play ID: LCA21C0 [LaCie 321]
+	Input type: Digital
+
+Capabilities:
+Raw output: (mccs_ver(1.1) type(LCD) vcp(04 06 08 0B 0C 10 12 14(01 02 04 06 07 08 0B) 16 18 1A 20 30 54 68(01 02 03 04 05 06 07) 8A 8C 9B 9C 9D 9E 9F A0 A8 B0 B4 B6 E3 F6 FA FB FF) vcp_p02(36 38 39 40 41 50 51 52 53 56 5F 68(01 04 06 07 08 09)) asset_eep(40) mpu_ver(1.00.00) c_tmp_ofst(BB8) gamma_table(size(300)r_ofs(0)g_ofs(100)b_ofs(200))
+Parsed output: 
+	VCP: 04 06 08 0b 0c 10 12 14 16 18 1a 20 30 54 68 8a 8c 9b 9c 9d 9e 9f a0 a8 b0 b4 b6 e3 f6 fa fb ff 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/100 C [???]
+Control 0x0c: +/25/56 C [???]
+Control 0x0e: +/65454/494   [???]
+Control 0x10: +/72/72 C [Brightness]
+Control 0x12: +/64/128 C [Contrast]
+Control 0x14: +/1/8 C [Color Preset - 6500K]
+Control 0x1e: +/0/1   [???]
+Control 0x20: +/8/16 C [Horizontal Position]
+Control 0x30: +/4/8 C [Vertical Position]
+Control 0x3e: +/0/31   [???]
+Control 0x54: +/35/66 C [Color temperature]
+Control 0x68: +/1/7 C [Language select - English]
+Control 0x8c: +/8/46 C [Sharpness]
+Control 0xa8: +/4/4 C [???]
+Control 0xb0: +/1/255 C [Settings - Settings]
+Control 0xb1: +/0/1   [???]
+Control 0xb4: +/1/2 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xe3: +/0/1 C [On Screen Display - Enable]
+Control 0xf6: +/0/1 C [Display Resolution Notifier - Off]
+Control 0xfa: +/65535/65535 C [???]
+Control 0xfb: +/1/1 C [On Screen Display (Samsung) - Enable]
+Control 0xff: +/40475/65535 C [???]

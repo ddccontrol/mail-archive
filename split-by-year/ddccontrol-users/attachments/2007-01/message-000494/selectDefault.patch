@@ -1,0 +1,53 @@
+--- /media/l-large/distrib/ddccontrol-0.4.2/src/gddccontrol/notebook.c	2006-06-19 22:43:19.000000000 +0400
++++ notebook.c	2007-01-18 00:03:41.000000000 +0300
+@@ -527,6 +527,7 @@
+ 	
+ 	GtkTreeIter top_iter;
+ 	GtkTreeIter sub_iter;
++	GtkTreeIter saved_iter;
+ 	
+ 	struct group_db* group;
+ 	struct subgroup_db* subgroup;
+@@ -543,6 +544,9 @@
+ 				gtk_tree_store_append(store,&sub_iter,&top_iter);
+ 				gtk_tree_store_set(store,&sub_iter,TITLE_COL,subgroup->name,ID_COL,id,WIDGET_COL,notebook,-1);
+ 				id++;
++				if (id == 2) {
++					saved_iter = sub_iter;
++				}
+ 			}
+ 		}
+ 	}
+@@ -559,6 +563,14 @@
+ 			G_CALLBACK (tree_selection_changed_callback),
+ 			NULL);
+ 	
++	// select first available iter
++	GtkTreeModel *model;
++	gint  id;
++	
++	gtk_tree_selection_select_iter(select, &saved_iter);	
++	gtk_tree_model_get(model,&saved_iter,ID_COL,&id,-1);
++	gtk_notebook_set_current_page(GTK_NOTEBOOK(notebook),id);
++
+ 	return tree;
+ }
+ 
+@@ -612,8 +624,6 @@
+ 	struct group_db* group;
+ 	struct subgroup_db* subgroup;
+ 	
+-	GtkWidget *tree = createTree(notebook);
+-	
+ 	//////////////////////////////	
+ 	GtkWidget* none = gtk_table_new(1, 1, TRUE);
+ 	
+@@ -655,6 +665,8 @@
+ 	}
+ 	
+ 	GtkWidget* table = gtk_table_new(2, 1, FALSE);
++	GtkWidget *tree = createTree(notebook);
++	
+ 	gtk_widget_show (tree);
+ 	gtk_table_attach(GTK_TABLE(table), tree, 0, 1, 0, 1, 0, GTK_FILL_EXPAND, 3, 0);
+ 	gtk_widget_show (notebook);

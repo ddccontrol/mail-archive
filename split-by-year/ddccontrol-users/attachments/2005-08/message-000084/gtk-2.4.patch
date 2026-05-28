@@ -1,0 +1,46 @@
+Index: src/gddccontrol/notebook.c
+===================================================================
+RCS file: /cvsroot/ddccontrol/ddccontrol/src/gddccontrol/notebook.c,v
+retrieving revision 1.24
+diff -u -r1.24 notebook.c
+--- src/gddccontrol/notebook.c	11 Aug 2005 16:10:32 -0000	1.24
++++ src/gddccontrol/notebook.c	11 Aug 2005 18:37:17 -0000
+@@ -484,15 +484,9 @@
+ 	}
+ 	
+ 	if (subgroup->pattern) {
+-		
+-#if GTK_CHECK_VERSION(2,7,0)
+-		gchar* stockitem = GTK_STOCK_FULLSCREEN;
+-#else
+-		gchar* stockitem = GTK_STOCK_EXECUTE;
+-#endif
+ 		GtkWidget* align = gtk_alignment_new(0.5, 0, 0, 0);
+ 		
+-		GtkWidget* button = stock_label_button(stockitem, _("Show fullscreen patterns"), NULL);
++		GtkWidget* button = stock_label_button(GTK_STOCK_FULLSCREEN, _("Show fullscreen patterns"), NULL);
+ 		gtk_widget_show(button);
+ 		gtk_container_add(GTK_CONTAINER(align), button);
+ 		gtk_widget_show(align);
+Index: src/gddccontrol/notebook.h
+===================================================================
+RCS file: /cvsroot/ddccontrol/ddccontrol/src/gddccontrol/notebook.h,v
+retrieving revision 1.9
+diff -u -r1.9 notebook.h
+--- src/gddccontrol/notebook.h	11 Aug 2005 14:57:29 -0000	1.9
++++ src/gddccontrol/notebook.h	11 Aug 2005 18:37:17 -0000
+@@ -38,6 +38,14 @@
+ /* constants */
+ #define GTK_FILL_EXPAND (GtkAttachOptions)(GTK_FILL|GTK_EXPAND)
+ 
++#ifndef GTK_STOCK_EDIT /* GTK <2.6 */
++#define GTK_STOCK_EDIT GTK_STOCK_PREFERENCES
++#endif
++
++#ifndef GTK_STOCK_FULLSCREEN /* GTK <2.8 */
++#define GTK_STOCK_FULLSCREEN GTK_STOCK_EXECUTE
++#endif
++
+ /* globals */
+ struct monitor* mon;
+ 

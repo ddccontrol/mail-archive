@@ -1,0 +1,96 @@
+Output level:               Verbose
+Reporting DDC data errors:  false
+Trace groups active:        none
+Traced functions:           none
+Traced files:               none
+Force I2C slave address:    false
+User defined features:      disabled
+
+Performance and Retry Options:
+   Deferred sleep enabled:                      false
+   Sleep suppression (reduced sleeps) enabled:  false
+   Dynamic sleep adjustment enabled:            false
+
+Unparsed capabilities string: (prot(monitor)type(LCD)model(P2419H)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 10 12 14(05 08 0B 0C) 16 18 1A 52 60(01 0F 11 ) AA(01 02 04 ) AC AE B2 B6 C6 C8 C9 CC(02 0A 03 04 08 09 0D 06 ) D6(01 04 05) DC(00 03 05 ) DF E0 E1 E2(00 1D 02 04 0E 12 14 ) F0(0C ) F1 F2 FD)mswhql(1)asset_eep(40)mccs_ver(2.1))
+Model: P2419H
+MCCS version: 2.1
+Commands:
+   Command: 01 (VCP Request)
+   Command: 02 (VCP Response)
+   Command: 03 (VCP Set)
+   Command: 07 (Timing Request)
+   Command: 0c (Save Settings)
+   Command: e3 (Capabilities Reply)
+   Command: f3 (Capabilities Request)
+VCP Features:
+   Feature: 02 (New control value)
+   Feature: 04 (Restore factory defaults)
+   Feature: 05 (Restore factory brightness/contrast defaults)
+   Feature: 08 (Restore color defaults)
+   Feature: 10 (Brightness)
+   Feature: 12 (Contrast)
+   Feature: 14 (Select color preset)
+      Values (unparsed): 05 08 0B 0C
+      Values (  parsed):
+         05: 6500 K
+         08: 9300 K
+         0b: User 1
+         0c: User 2
+   Feature: 16 (Video gain: Red)
+   Feature: 18 (Video gain: Green)
+   Feature: 1A (Video gain: Blue)
+   Feature: 52 (Active control)
+   Feature: 60 (Input Source)
+      Values (unparsed): 01 0F 11 
+      Values (  parsed):
+         01: VGA-1
+         0f: DisplayPort-1
+         11: HDMI-1
+   Feature: AA (Screen Orientation)
+      Values (unparsed): 01 02 04 
+      Values (  parsed):
+         01: 0 degrees
+         02: 90 degrees
+         04: 270 degrees
+   Feature: AC (Horizontal frequency)
+   Feature: AE (Vertical frequency)
+   Feature: B2 (Flat panel sub-pixel layout)
+   Feature: B6 (Display technology type)
+   Feature: C6 (Application enable key)
+   Feature: C8 (Display controller type)
+   Feature: C9 (Display firmware level)
+   Feature: CC (OSD Language)
+      Values (unparsed): 02 0A 03 04 08 09 0D 06 
+      Values (  parsed):
+         02: English
+         0a: Spanish
+         03: French
+         04: German
+         08: Portuguese (Portugal)
+         09: Russian
+         0d: Chinese (simplified / Kantai)
+         06: Japanese
+   Feature: D6 (Power mode)
+      Values (unparsed): 01 04 05
+      Values (  parsed):
+         01: DPM: On,  DPMS: Off
+         04: DPM: Off, DPMS: Off
+         05: Write only value to turn off display
+   Feature: DC (Display Mode)
+      Values (unparsed): 00 03 05 
+      Values (  parsed):
+         00: Standard/Default mode
+         03: Movie
+         05: Games
+   Feature: DF (VCP Version)
+   Feature: E0 (manufacturer specific feature)
+   Feature: E1 (manufacturer specific feature)
+   Feature: E2 (manufacturer specific feature)
+      Values (unparsed): 00 1D 02 04 0E 12 14 
+      Values (  parsed): 00 1D 02 04 0E 12 14 (interpretation unavailable)
+   Feature: F0 (manufacturer specific feature)
+      Values (unparsed): 0C 
+      Values (  parsed): 0C (interpretation unavailable)
+   Feature: F1 (manufacturer specific feature)
+   Feature: F2 (manufacturer specific feature)
+   Feature: FD (manufacturer specific feature)

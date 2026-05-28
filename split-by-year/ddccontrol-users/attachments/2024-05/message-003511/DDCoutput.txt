@@ -1,0 +1,67 @@
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-9
+   DDC/CI supported: Yes
+   Monitor Name: Iiyama GB3461WQSU (DP)
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-10
+   DDC/CI supported: Yes
+   Monitor Name: LG Standard LCD
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-9...
+
+EDID readings:
+	Plug and Play ID: IVM7615 [Iiyama GB3461WQSU (DP)]
+	Input type: Analog
+
+Capabilities:
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x0b: +/100/100 C [???]
+Control 0x10: +/40/100 C [Brightness]
+Control 0x12: +/60/100 C [Contrast]
+Control 0x16: +/81/100 C [Red maximum level]
+Control 0x18: +/83/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/16/8206 C [Input Source Select (Main) - DP-2]
+Control 0x62: +/90/100 C [Audio Speaker Volume Adjust]
+Control 0x68: +/0/5   [???]
+Control 0x6c: +/50/100 C [???]
+Control 0x6e: +/50/100 C [???]
+Control 0x70: +/50/100 C [???]
+Control 0x72: +/120/251 C [???]
+Control 0x86: +/8/8 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xa8: +/0/3   [???]
+Control 0xac: +/21592/3 C [???]
+Control 0xae: +/14450/0 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/8 C [???]
+Control 0xc0: +/0/65535 C [???]
+Control 0xc6: +/111/65535 C [???]
+Control 0xc8: +/5/65302 C [???]
+Control 0xc9: +/0/65535 C [???]
+Control 0xca: +/2/2 C [On Screen Display - Enable]
+Control 0xcc: +/2/36 C [Language - English]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdc: +/0/8 C [???]
+Control 0xdf: +/768/255 C [???]
+Control 0xe0: +/0/4 C [???]
+Control 0xe9: +/0/2 C [???]
+Control 0xeb: +/0/3 C [???]
+Control 0xec: +/0/1027 C [???]
+Control 0xed: +/0/1   [???]
+Control 0xef: +/255/255 C [???]
+Control 0xf0: +/0/1 C [???]
+Control 0xf2: +/3/4   [???]
+Control 0xf7: +/66/66 C [???]
+Control 0xf9: +/0/4   [???]

@@ -1,0 +1,92 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.....I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM04EA.xml"
+Document not parsed successfully.
+.I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM04EA.xml"
+Document not parsed successfully.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-0
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-0...
+
+EDID readings:
+	Plug and Play ID: SAM04EA [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(McKinley)mccs_ver(2.0)vcp(04 05 08 10 12 14(02 03 0A 0B) 16 18 1A 87 B0(01 02) B6 C6 C8 C9 D6(01 04) DC(01 02 03 04 05 06 F0 F2) DB(00 04 FE) DF E8(00 01 05 06 07 FE) E9 EA(00 01 02 03 04) F0(00 01 02 03 09) F2 F3(00 01 09) F6 )mswhql(1))
+Parsed output: 
+	VCP: 04 05 08 10 12 14 16 18 1a 87 b0 b6 c6 c8 c9 d6 db dc df e8 e9 ea f0 f2 f3 f6 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/65535   [???]
+Control 0x04: +/0/65535 C [Restore Factory Defaults]
+Control 0x05: +/0/65535 C [Restore Brightness and Contrast]
+Control 0x06: +/0/65535   [???]
+Control 0x08: +/0/65535 C [Restore Factory Default Color]
+Control 0x0e: +/0/65535   [???]
+Control 0x10: +/50/100 C [Brightness]
+Control 0x12: +/75/100 C [Contrast]
+Control 0x14: +/2/4 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/65535   [???]
+Control 0x30: +/0/65535   [???]
+Control 0x3e: +/0/65535   [???]
+Control 0x54: +/0/2   [???]
+Control 0x62: +/0/65535   [???]
+Control 0x87: +/4/25 C [???]
+Control 0x8a: +/0/65535   [???]
+Control 0x8c: +/0/65535   [???]
+Control 0x9c: +/0/65535   [???]
+Control 0x9e: +/0/65535   [???]
+Control 0xa0: +/0/65535   [???]
+Control 0xaa: +/1/1   [???]
+Control 0xb0: +/0/65535 C [Settings]
+Control 0xb6: +/3/9 C [???]
+Control 0xc6: +/1/1 C [???]
+Control 0xc8: +/2/16 C [???]
+Control 0xc9: +/1/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/2/65535   [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdb: +/0/2 C [???]
+Control 0xdc: +/6/240 C [???]
+Control 0xdf: +/512/514 C [???]
+Control 0xe0: +/3/4   [???]
+Control 0xe1: +/1/1   [???]
+Control 0xe2: +/0/1   [???]
+Control 0xe4: +/0/65535   [???]
+Control 0xe5: +/0/65535   [???]
+Control 0xe6: +/0/65535   [???]
+Control 0xe7: +/0/65535   [???]
+Control 0xe8: +/0/3 C [???]
+Control 0xe9: +/0/1 C [???]
+Control 0xea: +/0/4 C [???]
+Control 0xf0: +/0/3 C [???]
+Control 0xf2: +/0/2 C [???]
+Control 0xf3: +/0/2 C [???]
+Control 0xf4: +/0/65535   [???]

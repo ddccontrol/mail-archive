@@ -1,0 +1,112 @@
+ddccontrol version 0.4.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors....I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/BNQ785E.xml"
+Document not parsed successfully.
+..Invalid response, corrupted data - xor is 0x8f, length 0x0d
+0000: 6e 8d 8d e3 00 1e 32 34 32 30 48 44 42 4c 29 63 | n.....2420HDBL)c
+0010: 02 6e 80 be 6e 80 be 6e 80 be 6e 80 be 6e 80 be | .n..n..n..n..n..
+0020: 6e 80 be 6e 80 be 6e 80 be 6e 80 be 6e 80 be 6e | n..n..n..n..n..n
+0030: 80 be 6e 80 be 6e 80 be 6e 80 be 6e 80 be 6e 80 | ..n..n..n..n..n.
+0040: be 6e 80                                        | .n.             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/BNQ785E.xml"
+Document not parsed successfully.
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 6e 80 be 6e 80 be 6e                | ...nn..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x6e
+Invalid response, length is 110, should be 8 at most
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 80 80 6e 80 be 6e 80 be 6e 80                | n..n..n..n.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.     
+
+Detected monitors :
+ - Device: dev:/dev/i2c-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-1...
+
+EDID readings:
+	Plug and Play ID: BNQ785E [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(G2420HDBL)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 06 08 0B 0C 0E 10 12 14(04 05 08 0B) 16 18 1A 1E 1F 20 30 3E 52 60(01 03) 6C 6E 70 AC AE B2 B6 C0 C6 C8 C9 CA CC(01 02 03 04 05 06 08 09 0A 0B 0D 12 14 1A 1E 1F 20) D6(01 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.0))
+Parsed output: 
+	VCP: 02 04 05 06 08 0b 0c 0e 10 12 14 16 18 1a 1e 1f 20 30 3e 52 60 6c 6e 70 ac ae b2 b6 c0 c6 c8 c9 ca cc d6 df 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/0/2 C [Secondary Degauss]
+Control 0x0b: +/2/2 C [???]
+Control 0x0c: +/2/2 C [???]
+Control 0x0e: +/50/100 C [Image Lock Coarse (Clock)]
+Control 0x10: +/42/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/255 C [Automatically adjust]
+Control 0x1f: +/0/255 C [???]
+Control 0x20: +/50/100 C [Horizontal Position]
+Control 0x30: +/50/100 C [Vertical Position]
+Control 0x3e: +/12/63 C [Image Lock Fine (Clock Phase)]
+Control 0x52: +/0/2 C [???]
+Control 0x60: +/1/3 C [Input Source Select - Analog]
+Control 0x6c: +/44/100 C [Red minimum level]
+Control 0x6e: +/44/100 C [Green minimum level]
+Control 0x70: +/44/100 C [Blue minimum level]
+Control 0xac: +/2264/1 C [???]
+Control 0xae: +/6010/65535 C [???]
+Control 0xb2: +/1/2 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/38040/65535 C [???]
+Control 0xc6: +/120/65535 C [???]
+Control 0xc8: +/17673/37 C [???]
+Control 0xc9: +/512/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/16 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdf: +/512/65535 C [???]

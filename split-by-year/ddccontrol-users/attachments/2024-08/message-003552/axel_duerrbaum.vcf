@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Dürrbaum;Axel;;;
+EMAIL;PREF=1;TYPE=work:axel.duerrbaum@mrt.uni-kassel.de
+TEL;TYPE=work;VALUE=TEXT:+49 561 804 3261
+TEL;TYPE=fax;VALUE=TEXT:+49 561 804 2847
+ROLE:Labor-Ingenieur
+ORG:Universität Kassel;FB 15 - Maschinenbau / ISAC / FG Mess- und Regelung
+ stechnik
+TZ:Europe/Berlin
+URL;TYPE=work:https://www.uni-kassel.de/fb15/mrt
+END:VCARD

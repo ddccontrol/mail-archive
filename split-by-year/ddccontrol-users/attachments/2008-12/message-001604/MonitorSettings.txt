@@ -1,0 +1,82 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors
+Detected monitors :
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors......
+Detected monitors :
+ - Device: pci:00:02.0-0
+   DDC/CI supported: Yes
+   Monitor Name: Sony standard CRT
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:00:02.0-0...
+
+EDID readings:
+	Plug and Play ID: SNY0390 [Sony standard CRT]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)  type(crt) model(SNY0390 )          edid bin(128(################################################################################################################################))cmds(01020304050608090A0B0C4F)vcp(000110121420222426283032384042445456E0E2)   vcpname(14(9300K 5000K USER)))                  
+Parsed output: 
+	VCP: 00 01 10 12 14 20 22 24 26 28 30 32 38 40 42 44 54 56 e0 e2 
+	Type: CRT
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/0/0 C [Degauss]
+Control 0x01: +/0/0 C [???]
+Control 0x10: +/80/255 C [Brightness]
+Control 0x11: +/80/255   [???]
+Control 0x12: +/217/255 C [Contrast]
+Control 0x13: +/217/255   [???]
+Control 0x14: +/0/3 C [Color Preset - 5000K]
+Control 0x15: +/0/3   [???]
+Control 0x20: +/104/255 C [Horizontal Position]
+Control 0x21: +/104/255   [???]
+Control 0x22: +/186/255 C [Horizontal Size]
+Control 0x23: +/186/255   [???]
+Control 0x24: +/99/255 C [Horizontal Pincushion]
+Control 0x25: +/99/255   [???]
+Control 0x26: +/181/255 C [Horizontal Pincushion Balance]
+Control 0x27: +/181/255   [???]
+Control 0x28: +/128/255 C [Horizontal Misconvergence]
+Control 0x29: +/128/255   [???]
+Control 0x30: +/148/255 C [Vertical Position]
+Control 0x31: +/148/255   [???]
+Control 0x32: +/112/255 C [Vertical Size]
+Control 0x33: +/112/255   [???]
+Control 0x38: +/128/255 C [Vertical Misconvergence]
+Control 0x39: +/128/255   [???]
+Control 0x40: +/128/255 C [Parallelogram Distortion (Key Balance)]
+Control 0x41: +/128/255   [???]
+Control 0x42: +/124/255 C [Trapezoidal Distortion (Key)]
+Control 0x43: +/124/255   [???]
+Control 0x44: +/102/255 C [Rotation (Tilt)]
+Control 0x45: +/102/255   [???]
+Control 0x54: +/128/255 C [Color temperature]
+Control 0x55: +/128/255   [???]
+Control 0x56: +/2/255 C [Horizontal Moire]
+Control 0x57: +/2/255   [???]
+Control 0xe0: +/0/0 C [???]
+Control 0xe2: +/0/0 C [???]

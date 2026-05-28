@@ -1,0 +1,104 @@
+sentinel ~ # ddccontrol -p -c -d -v
+ddccontrol version 0.3
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+ddcpci initing...
+Starting /usr/bin/ddcpci 1 -1610416930 &...
+Probing for available monitors...
+i810_open: Using region 0 (d0400000, 80000)
+Found PCI device (pci:00:02.0-0)
+Found PCI device (pci:00:02.0-1)
+Found PCI device (pci:00:02.0-2)
+Device: pci:00:02.0-0
+i810_open: Using region 0 (d0400000, 80000)
+0000: 00 ff ff ff ff ff ff 00 4e ae 77 05 4c 42 05 15 | ........N.w.LB..
+0010: 22 0a 01 02 0e 28 1e 96 e8 0c c9 a0 57 47 9b 27 | "....(......WG.'
+0020: 12 48 4c ff ff 80 81 90 71 90 81 8f 81 87 71 86 | .HL.....q.....q.
+0030: 61 4f a9 4f 81 b4 00 00 00 fd 00 30 a0 1e 79 15 | aO.O.......0..y.
+0040: 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 44 4d | ..      .....GDM
+0050: 2d 35 34 31 30 0a 20 20 20 20 00 00 00 ff 00 30 | -5410.    .....0
+0060: 30 33 34 4c 42 35 33 38 31 0a 20 20 bc 34 00 80 | 034LB5381.  .4..
+0070: 51 00 2a 40 20 40 28 00 6c 23 11 00 00 10 00 84 | Q.*@ @(.l#......
+ddcci_open returned 0
+Device: pci:00:02.0-1
+i810_open: Using region 0 (d0400000, 80000)
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+ddcci_open returned -2
+Device: pci:00:02.0-2
+i810_open: Using region 0 (d0400000, 80000)
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+ddcci_open returned -2
+Detected monitors :
+ - Device: pci:00:02.0-0
+    DDC/CI supported: Yes
+       Monitor Name: SUN GDM-5410
+          Input type: Analog
+	    (Automatically selected)
+	    Reading EDID and initializing DDC/CI at bus pci:00:02.0-0...
+	    Device: pci:00:02.0-0
+	    i810_open: Using region 0 (d0400000, 80000)
+	    0000: 00 ff ff ff ff ff ff 00 4e ae 77 05 4c 42 05 15 | ........N.w.LB..
+	    0010: 22 0a 01 02 0e 28 1e 96 e8 0c c9 a0 57 47 9b 27 | "....(......WG.'
+	    0020: 12 48 4c ff ff 80 81 90 71 90 81 8f 81 87 71 86 | .HL.....q.....q.
+	    0030: 61 4f a9 4f 81 b4 00 00 00 fd 00 30 a0 1e 79 15 | aO.O.......0..y.
+	    0040: 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 44 4d | ..      .....GDM
+	    0050: 2d 35 34 31 30 0a 20 20 20 20 00 00 00 ff 00 30 | -5410.    .....0
+	    0060: 30 33 34 4c 42 35 33 38 31 0a 20 20 bc 34 00 80 | 034LB5381.  .4..
+	    0070: 51 00 2a 40 20 40 28 00 6c 23 11 00 00 10 00 84 | Q.*@ @(.l#......
+	    Serial number: 352666188
+	    Manufactured: Week 34, 2000
+	    EDID version: 1.2
+	    Maximum size: 40 x 30 (cm)
+	    Invalid sequence in caps.
+
+	    EDID readings:
+	            Plug and Play ID: SUN0577 [SUN GDM-5410]
+		            Input type: Analog
+
+			    Capabilities:
+			    Invalid sequence in caps.
+			    (prot(monitor)  type(crt) model( SUN7705           edid bin(128(
+
+			    Controls (valid/current/max) [Description - Value name]:
+			    Control 0x00: +/0/0 [???]
+			    Control 0x01: +/0/0 [???]
+			    Control 0x08: +/0/0 [???]
+			    Control 0x10: +/53/255 [???]
+			    Control 0x12: +/184/255 [???]
+			    Control 0x14: +/2/2 [Color Preset - 9300K]
+			    Control 0x16: +/233/255 [???]
+			    Control 0x18: +/228/255 [???]
+			    Control 0x1a: +/243/255 [???]
+			    Control 0x20: +/129/255 [???]
+			    Control 0x22: +/103/255 [???]
+			    Control 0x24: +/122/255 [???]
+			    Control 0x26: +/129/255 [???]
+			    Control 0x28: +/112/255 [???]
+			    Control 0x30: +/157/255 [???]
+			    Control 0x32: +/155/255 [???]
+			    Control 0x38: +/139/255 [???]
+			    Control 0x40: +/135/255 [???]
+			    Control 0x42: +/152/255 [???]
+			    Control 0x44: +/90/255 [???]
+			    Control 0x54: +/172/240 [???]
+			    Control 0x56: +/0/255 [???]
+			    Control 0x68: +/1/8 [Language select - English]
+			    Control 0x6c: +/128/255 [???]
+			    Control 0x6e: +/128/255 [???]
+			    Control 0x70: +/128/255 [???]
+			    Control 0xe0: +/0/0 [???]
+			    Control 0xe2: +/0/0 [???]
+			    Control 0xf1: +/114/255 [Top left screen purity]
+			    Control 0xf2: +/125/255 [Top right screen purity]
+			    Control 0xf3: +/125/255 [Bottom right screen purity]
+			    Control 0xf4: +/108/255 [Bottom left screen purity]
+			    Control 0xf5: +/1/2 [???]
+			    Control 0xf6: +/126/255 [???]
+			    Control 0xf7: +/108/255 [???]
+			    ddcpci being released...
+			    ==>ddcpci is quitting.
+

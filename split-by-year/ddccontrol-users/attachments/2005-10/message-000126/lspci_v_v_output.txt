@@ -1,0 +1,118 @@
+00:00.0 Host bridge: VIA Technologies, Inc. VT82C693A/694x [Apollo PRO133x] 
+(rev 44)
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort+ >SERR- <PERR+
+	Latency: 0
+	Region 0: Memory at d0000000 (32-bit, prefetchable) [size=64M]
+	Capabilities: [a0] AGP version 1.0
+		Status: RQ=8 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW- 
+AGP3- Rate=x1,x2
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+
+00:01.0 PCI bridge: VIA Technologies, Inc. VT82C598/694x [Apollo 
+MVP3/Pro133x AGP] (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort+ >SERR- <PERR-
+	Latency: 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Memory behind bridge: d4000000-d5ffffff
+	Prefetchable memory behind bridge: d6000000-d7ffffff
+	Secondary status: 66Mhz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- 
+<MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA+ VGA+ MAbort- >Reset- FastB2B-
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:07.0 ISA bridge: VIA Technologies, Inc. VT82C596 ISA [Mobile South] (rev 
+23)
+	Subsystem: VIA Technologies, Inc. VT82C596/A/B PCI to ISA Bridge
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping+ SERR- FastB2B-
+	Status: Cap- 66Mhz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+	Latency: 0
+
+00:07.1 IDE interface: VIA Technologies, Inc. 
+VT82C586A/B/VT82C686/A/B/VT823x/A/C PIPC Bus Master IDE (rev 10) (prog-if 8a 
+[Master SecP PriP])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+	Latency: 32
+	Region 4: I/O ports at e000 [size=16]
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:07.2 USB Controller: VIA Technologies, Inc. VT82xxxxx UHCI USB 1.1 
+Controller (rev 11) (prog-if 00 [UHCI])
+	Subsystem: VIA Technologies, Inc. (Wrong ID) USB Controller
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+	Latency: 32, Cache Line Size 08
+	Interrupt: pin D routed to IRQ 10
+	Region 4: I/O ports at e400 [size=32]
+	Capabilities: [80] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:07.3 Host bridge: VIA Technologies, Inc. VT82C596 Power Management (rev 
+30)
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap- 66Mhz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+
+00:0b.0 Ethernet controller: Realtek Semiconductor Co., Ltd. 
+RTL-8139/8139C/8139C+ (rev 10)
+	Subsystem: Realtek Semiconductor Co., Ltd. RT8139
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap- 66Mhz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR+
+	Latency: 32 (8000ns min, 16000ns max)
+	Interrupt: pin A routed to IRQ 5
+	Region 0: I/O ports at e800 [size=256]
+	Region 1: Memory at d8000000 (32-bit, non-prefetchable) [size=256]
+
+00:0d.0 Multimedia audio controller: C-Media Electronics Inc CM8738 (rev 10)
+	Subsystem: C-Media Electronics Inc CMI8738/C3DX PCI Audio Device
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+	Latency: 32 (500ns min, 6000ns max)
+	Interrupt: pin A routed to IRQ 9
+	Region 0: I/O ports at ec00 [size=256]
+	Capabilities: [c0] Power Management version 2
+		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+01:00.0 VGA compatible controller: nVidia Corporation NV5 [RIVA TNT2/TNT2 
+Pro] (rev 15) (prog-if 00 [VGA])
+	Subsystem: nVidia Corporation RIVA TNT2 Pro
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- 
+Stepping- SERR- FastB2B-
+	Status: Cap+ 66Mhz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- 
+<MAbort- >SERR- <PERR-
+	Latency: 32 (1250ns min, 250ns max)
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at d4000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at d6000000 (32-bit, prefetchable) [size=32M]
+	Capabilities: [60] Power Management version 1
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [44] AGP version 2.0
+		Status: RQ=32 Iso- ArqSz=0 Cal=0 SBA+ ITACoh- GART64- HTrans- 64bit- FW- 
+AGP3- Rate=x1,x2,x4
+		Command: RQ=1 ArqSz=0 Cal=0 SBA- AGP- GART64- 64bit- FW- Rate=<none>
+
+

@@ -1,0 +1,99 @@
+ddccontrol version 0.4.1
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: pci:01:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+
+EDID readings:
+	Plug and Play ID: SAM002A [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(crt)model(Phoenix(CPG Series))edid bin(128(
+Parsed output: 
+	VCP: 
+	Type: CRT
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x01: +/0/255   [???]
+Control 0x10: +/49/100   [???]
+Control 0x12: +/255/255   [???]
+Control 0x14: +/0/3   [???]
+Control 0x16: +/77/255   [???]
+Control 0x18: +/70/255   [???]
+Control 0x1a: +/70/255   [???]
+Control 0x20: +/119/200   [???]
+Control 0x22: +/164/200   [???]
+Control 0x24: +/81/127   [???]
+Control 0x26: +/62/127   [???]
+Control 0x28: +/128/255   [???]
+Control 0x2a: +/84/255   [???]
+Control 0x30: +/62/100   [???]
+Control 0x32: +/62/127   [???]
+Control 0x38: +/128/255   [???]
+Control 0x3a: +/26/127   [???]
+Control 0x3c: +/68/127   [???]
+Control 0x40: +/64/127   [???]
+Control 0x42: +/48/100   [???]
+Control 0x44: +/85/255   [???]
+Control 0x46: +/62/127   [???]
+Control 0x48: +/64/127   [???]
+Control 0x4a: +/62/127   [???]
+Control 0x4c: +/64/127   [???]
+Control 0x56: +/0/127   [???]
+Control 0x58: +/39/127   [???]
+Control 0x6c: +/105/255   [???]
+Control 0x6e: +/103/255   [???]
+Control 0x70: +/96/255   [???]
+Control 0x88: +/135/255   [???]
+Control 0x92: +/255/60   [???]
+Control 0x94: +/255/60   [???]
+Control 0x96: +/255/60   [???]
+Control 0x98: +/255/60   [???]
+Control 0xa0: +/115/255   [???]
+Control 0xa1: +/101/119   [???]
+Control 0xa2: +/0/85   [???]
+Control 0xa3: +/18/119   [???]
+Control 0xa4: +/0/85   [???]
+Control 0xa5: +/36/47   [???]
+Control 0xa6: +/63/63   [???]
+Control 0xa7: +/63/63   [???]
+Control 0xa8: +/63/63   [???]
+Control 0xa9: +/0/63   [???]
+Control 0xaa: +/15/30   [???]
+Control 0xab: +/15/30   [???]
+Control 0xac: +/11296/0   [???]
+Control 0xae: +/28/0   [???]
+Control 0xaf: +/15/30   [???]
+Control 0xc5: +/153/255   [???]
+Control 0xc6: +/0/127   [???]
+Control 0xd8: +/187/255   [???]
+Control 0xd9: +/54/127   [???]
+Control 0xe6: +/70/255   [???]
+Control 0xe8: +/47/127   [???]
+Control 0xe9: +/0/255   [???]
+Control 0xee: +/87/127   [???]
+Control 0xf0: +/105/127   [???]
+Control 0xf6: +/160/255   [???]
+Control 0xff: +/0/255   [???]

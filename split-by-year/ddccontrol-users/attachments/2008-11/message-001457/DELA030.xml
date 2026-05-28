@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--- type(LCD)vcp(page0(02 04 05 06 08 10 12 14(01 05 08 0B 0C) 16 18 1A 52 60(01 03 04 05 0C) 6C 6E 70 AC AE B6 C6 C8 C9 D6(01 03 04 05) DC(00 01 02 03 04 05 06) DF)) -->
+<monitor name="Dell 2709W" init="standard">
+	<caps add="(vcp(02 04 05 06 08 10 12 14(01 05 08 0B 0C) 16 18 1A 52 60(01 03 04 05 0C) 68 6C 6E 70 AC AE B6 C6 C8 C9 D6(01 03 04 05) DC(00 01 02 03 04 05 06) DF))"/>
+        <controls>
+			<control id="language" type="list" name="Language select" address="0x68">
+				<value id="english" value="1"/>
+				<value id="spanish" value="2"/>
+				<value id="french"  value="3"/>
+				<value id="german"  value="4"/>
+				<value id="chinese" value="5"/>
+			</control>
+			<control id="inputsource" type="list" name="Input Source Select" address="0x60">
+				<value id="vga" value="1"/>
+				<value id="dvi1" value="3"/>
+				<value id="dvi2" value="4"/>
+				<value id="composite" value="5"/>
+				<value id="component" value="12"/>
+			</control>
+			<control id="sharpness" address="0x8c"/>
+			<control id="colorcurve" address="0x52"/>
+			<control id="magicbright" type="list" address="0xDC">
+				<value id="custom" value="0"/>
+				<value id="adobergb" value="1"/>
+				<value id="multimedia" value="2"/>
+				<value id="video" value="3"/>
+				<value id="nature" value="4"/>
+				<value id="game" value="5"/>
+				<value id="sport" value="6"/>
+			</control>
+			<control id="colorpreset" type="list" name="Color Preset" address="0x14">
+				<value id="graphics" value="0"/>
+				<value id="srgb" value="1"/>
+				<value id="normal" value="5"/>
+				<value id="cool" value="8"/>
+				<value id="warm" value="11"/>
+				<value id="video" value="12"/>
+			</control>
+			<!--
+			Controls (valid/current/max) [Description - Value name]:
+			Control 0x02: +/2/2 C [???]
+			Control 0x8a: +/256/65535   [???]
+			Control 0xac: +/8364/1 C [???]
+			Control 0xae: +/5980/65535 C [???]
+			Control 0xb6: +/3/65535 C [???]
+			Control 0xc6: +/17868/65535 C [???]
+			Control 0xc8: +/32770/118 C [???]
+			Control 0xc9: +/1/65535 C [???]
+			Control 0xdf: +/512/65535 C [???]
+			Control 0xfd: +/98/255   [???]
+			Control 0xff: +/0/65535   [???]
+			-->
+        </controls>
+        <include file="VESA"/>
+</monitor>

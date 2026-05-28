@@ -1,0 +1,365 @@
+➜  ~ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors..I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELA114.xml"
+Document not parsed successfully.
+.....
+Detected monitors :
+ - Device: dev:/dev/i2c-4
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-4...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELA114.xml"
+Document not parsed successfully.
+
+EDID readings:
+        Plug and Play ID: DELA114 [VESA standard monitor]
+        Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(P2219H)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 10 12 14(05 08 0B 0C) 16 18 1A 52 60(01 0F 11 ) AA(01 02 04 ) AC AE B2 B6 C6 C8 C9 CC(02 0A 03 04 08 09 0D 06 ) D6(01 04 05) DC(00 03 05 ) DF E0 E1 E2(00 1D 02 04 0E 12 14 ) F0(0C ) F1 F2 FD)mswhql(1)asset_eep(40)mccs_ver(2.1))
+Parsed output: 
+        VCP: 02 04 05 08 10 12 14 16 18 1a 52 60 aa ac ae b2 b6 c6 c8 c9 cc d6 dc df e0 e1 e2 f0 f1 f2 fd 
+        Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/10537/11825   [???]
+Control 0x01: +/10537/11825   [???]
+Control 0x02: +/2/255 C [Secondary Degauss]
+Control 0x03: +/2/255   [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x07: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x09: +/0/1   [???]
+Control 0x0a: +/0/1   [???]
+Control 0x0b: +/0/1   [???]
+Control 0x0c: +/0/1   [???]
+Control 0x0d: +/0/1   [???]
+Control 0x0e: +/0/100   [???]
+Control 0x0f: +/0/100   [???]
+Control 0x10: +/95/100 C [Brightness]
+Control 0x11: +/95/100   [???]
+Control 0x12: +/85/100 C [Contrast]
+Control 0x13: +/85/100   [???]
+Control 0x14: +/12/12 C [???]
+Control 0x15: +/12/12   [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x17: +/100/100   [???]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x19: +/100/100   [???]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1b: +/100/100   [???]
+Control 0x1c: +/100/100   [???]
+Control 0x1d: +/100/100   [???]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/1/1   [???]
+Control 0x20: +/0/100   [???]
+Control 0x21: +/0/100   [???]
+Control 0x22: +/0/100   [???]
+Control 0x23: +/0/100   [???]
+Control 0x24: +/0/100   [???]
+Control 0x25: +/0/100   [???]
+Control 0x26: +/0/100   [???]
+Control 0x27: +/0/100   [???]
+Control 0x28: +/0/100   [???]
+Control 0x29: +/0/100   [???]
+Control 0x2a: +/0/100   [???]
+Control 0x2b: +/0/100   [???]
+Control 0x2c: +/0/100   [???]
+Control 0x2d: +/0/100   [???]
+Control 0x2e: +/0/100   [???]
+Control 0x2f: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x31: +/0/100   [???]
+Control 0x32: +/0/100   [???]
+Control 0x33: +/0/100   [???]
+Control 0x34: +/0/100   [???]
+Control 0x35: +/0/100   [???]
+Control 0x36: +/0/100   [???]
+Control 0x37: +/0/100   [???]
+Control 0x38: +/0/100   [???]
+Control 0x39: +/0/100   [???]
+Control 0x3a: +/0/100   [???]
+Control 0x3b: +/0/100   [???]
+Control 0x3c: +/0/100   [???]
+Control 0x3d: +/0/100   [???]
+Control 0x3e: +/0/100   [???]
+Control 0x3f: +/0/100   [???]
+Control 0x40: +/0/100   [???]
+Control 0x41: +/0/100   [???]
+Control 0x42: +/0/100   [???]
+Control 0x43: +/0/100   [???]
+Control 0x44: +/0/100   [???]
+Control 0x45: +/0/100   [???]
+Control 0x46: +/0/100   [???]
+Control 0x47: +/0/100   [???]
+Control 0x48: +/0/100   [???]
+Control 0x49: +/0/100   [???]
+Control 0x4a: +/0/100   [???]
+Control 0x4b: +/0/100   [???]
+Control 0x4c: +/0/100   [???]
+Control 0x4d: +/0/100   [???]
+Control 0x4e: +/0/100   [???]
+Control 0x4f: +/0/100   [???]
+Control 0x50: +/0/100   [???]
+Control 0x51: +/0/100   [???]
+Control 0x52: +/96/255 C [???]
+Control 0x53: +/96/255   [???]
+Control 0x54: +/96/255   [???]
+Control 0x55: +/96/255   [???]
+Control 0x56: +/96/255   [???]
+Control 0x57: +/96/255   [???]
+Control 0x58: +/96/255   [???]
+Control 0x59: +/96/255   [???]
+Control 0x5a: +/96/255   [???]
+Control 0x5b: +/96/255   [???]
+Control 0x5c: +/96/255   [???]
+Control 0x5d: +/96/255   [???]
+Control 0x5e: +/96/255   [???]
+Control 0x5f: +/96/255   [???]
+Control 0x60: +/3855/4626 C [Input Source Select]
+Control 0x61: +/3855/4626   [???]
+Control 0x62: +/100/100   [???]
+Control 0x63: +/100/100   [???]
+Control 0x64: +/100/100   [???]
+Control 0x65: +/100/100   [???]
+Control 0x66: +/100/100   [???]
+Control 0x67: +/100/100   [???]
+Control 0x68: +/100/100   [???]
+Control 0x69: +/100/100   [???]
+Control 0x6a: +/100/100   [???]
+Control 0x6b: +/100/100   [???]
+Control 0x6c: +/100/100   [???]
+Control 0x6d: +/100/100   [???]
+Control 0x6e: +/100/100   [???]
+Control 0x6f: +/100/100   [???]
+Control 0x70: +/100/100   [???]
+Control 0x71: +/100/100   [???]
+Control 0x72: +/100/100   [???]
+Control 0x73: +/100/100   [???]
+Control 0x74: +/100/100   [???]
+Control 0x75: +/100/100   [???]
+Control 0x76: +/100/100   [???]
+Control 0x77: +/100/100   [???]
+Control 0x78: +/100/100   [???]
+Control 0x79: +/100/100   [???]
+Control 0x7a: +/100/100   [???]
+Control 0x7b: +/100/100   [???]
+Control 0x7c: +/100/100   [???]
+Control 0x7d: +/100/100   [???]
+Control 0x7e: +/100/100   [???]
+Control 0x7f: +/100/100   [???]
+Control 0x80: +/100/100   [???]
+Control 0x81: +/100/100   [???]
+Control 0x82: +/100/100   [???]
+Control 0x83: +/100/100   [???]
+Control 0x84: +/100/100   [???]
+Control 0x85: +/100/100   [???]
+Control 0x86: +/100/100   [???]
+Control 0x87: +/100/100   [???]
+Control 0x88: +/100/100   [???]
+Control 0x89: +/100/100   [???]
+Control 0x8a: +/100/100   [???]
+Control 0x8b: +/100/100   [???]
+Control 0x8c: +/100/100   [???]
+Control 0x8d: +/100/100   [???]
+Control 0x8e: +/100/100   [???]
+Control 0x8f: +/100/100   [???]
+Control 0x90: +/100/100   [???]
+Control 0x91: +/100/100   [???]
+Control 0x92: +/100/100   [???]
+Control 0x93: +/100/100   [???]
+Control 0x94: +/100/100   [???]
+Control 0x95: +/100/100   [???]
+Control 0x96: +/100/100   [???]
+Control 0x97: +/100/100   [???]
+Control 0x98: +/100/100   [???]
+Control 0x99: +/100/100   [???]
+Control 0x9a: +/100/100   [???]
+Control 0x9b: +/100/100   [???]
+Control 0x9c: +/100/100   [???]
+Control 0x9d: +/100/100   [???]
+Control 0x9e: +/100/100   [???]
+Control 0x9f: +/100/100   [???]
+Control 0xa0: +/100/100   [???]
+Control 0xa1: +/100/100   [???]
+Control 0xa2: +/100/100   [???]
+Control 0xa3: +/100/100   [???]
+Control 0xa4: +/100/100   [???]
+Control 0xa5: +/100/100   [???]
+Control 0xa6: +/100/100   [???]
+Control 0xa7: +/100/100   [???]
+Control 0xa8: +/100/100   [???]
+Control 0xa9: +/100/100   [???]
+Control 0xaa: +/1/4 C [OSD Orientation - Landscape]
+Control 0xab: +/1/4   [???]
+Control 0xac: +/1964/1 C [???]
+Control 0xad: +/1964/1   [???]
+Control 0xae: +/6000/65535 C [???]
+Control 0xaf: +/6000/65535   [???]
+Control 0xb0: +/6000/65535   [???]
+Control 0xb1: +/6000/65535   [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb3: +/1/1   [???]
+Control 0xb4: +/1/1   [???]
+Control 0xb5: +/1/1   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xb7: +/3/5   [???]
+Control 0xb8: +/3/5   [???]
+Control 0xb9: +/3/5   [???]
+Control 0xba: +/3/5   [???]
+Control 0xbb: +/3/5   [???]
+Control 0xbc: +/3/5   [???]
+Control 0xbd: +/3/5   [???]
+Control 0xbe: +/3/5   [???]
+Control 0xbf: +/3/5   [???]
+Control 0xc0: +/2411/65535   [???]
+Control 0xc1: +/2411/65535   [???]
+Control 0xc2: +/2411/65535   [???]
+Control 0xc3: +/2411/65535   [???]
+Control 0xc4: +/2411/65535   [???]
+Control 0xc5: +/2411/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc7: +/17868/65535   [???]
+Control 0xc8: +/9481/35 C [???]
+Control 0xc9: +/16642/65535 C [???]
+Control 0xca: +/1/2   [???]
+Control 0xcb: +/1/2   [???]
+Control 0xcc: +/2/13 C [???]
+Control 0xcd: +/2/13   [???]
+Control 0xce: +/2/13   [???]
+Control 0xcf: +/2/13   [???]
+Control 0xd0: +/2/13   [???]
+Control 0xd1: +/2/13   [???]
+Control 0xd2: +/2/13   [???]
+Control 0xd3: +/2/13   [???]
+Control 0xd4: +/2/13   [???]
+Control 0xd5: +/2/13   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xd7: +/1/5   [???]
+Control 0xd8: +/1/5   [???]
+Control 0xd9: +/1/5   [???]
+Control 0xda: +/1/5   [???]
+Control 0xdb: +/1/5   [???]
+Control 0xdc: +/0/5 C [???]
+Control 0xdd: +/0/5   [???]
+Control 0xde: +/0/5   [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe2: +/20/255 C [???]
+Control 0xe3: +/20/255   [???]
+Control 0xe4: +/0/2   [???]
+Control 0xe5: +/0/255   [???]
+Control 0xe6: +/0/255   [???]
+Control 0xe7: +/0/63   [???]
+Control 0xe8: +/15/65535   [???]
+Control 0xe9: +/0/255   [???]
+Control 0xea: +/65024/65025   [???]
+Control 0xee: +/65024/65025   [???]
+Control 0xef: +/65024/65025   [???]
+Control 0xf0: +/0/255 C [???]
+Control 0xf1: +/9/65535 C [???]
+Control 0xf2: +/0/255 C [???]
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Invalid response, corrupted data - xor is 0x31, length 0x08
+6e 88 02 00 07 80 07 80 04 38 b9                | n........8.     
+Control 0xf5: +/1080/1920   [???]
+Control 0xf6: +/1080/1920   [???]
+Control 0xf7: +/1080/1920   [???]
+Control 0xf8: +/1080/1920   [???]
+Control 0xf9: +/1080/1920   [???]
+Control 0xfa: +/1080/1920   [???]
+Invalid response, corrupted data - xor is 0xbb, length 0x08
+6e 88 02 00 fa 00 00 01 00 01 f5                | n..........     
+Invalid response, corrupted data - xor is 0xbb, length 0x08
+6e 88 02 00 fa 00 00 01 00 01 f5                | n..........     
+Invalid response, corrupted data - xor is 0xbb, length 0x08
+6e 88 02 00 fa 00 00 01 00 01 f5                | n..........     
+Control 0xfc: +/1/1   [???]
+Control 0xfd: +/98/255 C [???]
+Invalid response, corrupted data - xor is 0x73, length 0x08
+6e 88 02 00 fd 00 00 ff 00 11 d4                | n..........     
+Invalid response, corrupted data - xor is 0x73, length 0x08
+6e 88 02 00 fd 00 00 ff 00 11 d4                | n..........     
+Invalid response, corrupted data - xor is 0x73, length 0x08
+6e 88 02 00 fd 00 00 ff 00 11 d4                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3c, length 0x00
+6e 00 02 00 00 00 00 00 00 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3c, length 0x00
+6e 00 02 00 00 00 00 00 00 00 00                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3c, length 0x00
+6e 00 02 00 00 00 00 00 00 00 00                | n..........     
+➜  ~ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+ddccontrol version 0.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: pci:01:00.0-1
+   DDC/CI supported: Yes
+   Monitor Name: Mitsubishi Diamond Plus 92
+   Input type: Analog
+  (Automatically selected)
+ - Device: pci:01:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: Mitsubishi Diamond Pro 2070sb
+   Input type: Analog
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-1...
+
+EDID readings:
+	Plug and Play ID: MEL44B0 [Mitsubishi Diamond Plus 92]
+	Input type: Analog
+
+Capabilities:
+( prot(Monitor) type(CRT)       model(NFK99XX)                  pwr({run( ) stdby( ) susp( )    shut( )} )                      cmds( 01 02 03 )                vcp( 10 12 14 16 18 1A 20 22 24 26 28 30 32 38 40 42 44 46 4A 54 56 68 E1 E2 E3 E8 E9 EA EB EF))
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/0/1 [Degauss]
+Control 0x10: +/102/255 [Brightness]
+Control 0x12: +/128/255 [Contrast]
+Control 0x14: +/0/3 [???]
+Control 0x16: +/102/147 [Red maximum level]
+Control 0x18: +/102/122 [Green maximum level]
+Control 0x1a: +/85/101 [Blue maximum level]
+Control 0x20: +/108/176 [Horizontal Position]
+Control 0x22: +/32/79 [Horizontal Size]
+Control 0x24: +/34/59 [Horizontal Pincushion]
+Control 0x26: +/19/40 [Horizontal Pincushion Balance]
+Control 0x28: +/156/255 [Horizontal Misconvergence]
+Control 0x30: +/133/254 [Vertical Position]
+Control 0x32: +/105/255 [Vertical Size]
+Control 0x38: +/129/255 [Vertical Misconvergence]
+Control 0x40: +/23/40 [Parallelogram Distortion (Key Balance)]
+Control 0x42: +/20/42 [Trapezoidal Distortion (Key)]
+Control 0x44: +/121/255 [Rotation (Tilt)]
+Control 0x46: +/38/63 [Top Corner Distortion Control]
+Control 0x4a: +/43/63 [Bottom Corner Distortion Control]
+Control 0x54: +/215/215 [???]
+Control 0x56: +/0/127 [Vertical Moire]
+Control 0x68: +/0/4 [Language select - English]
+Control 0xd8: +/0/3 [???]
+Control 0xe1: +/1/2 [???]
+Control 0xe2: +/1/1 [???]
+Control 0xe3: +/0/1 [???]
+Control 0xe8: +/155/255 [Top left screen purity]
+Control 0xe9: +/114/255 [Top right screen purity]
+Control 0xea: +/161/255 [Bottom left screen purity]
+Control 0xeb: +/122/255 [Bottom right screen purity]
+Control 0xef: +/0/4 [???]

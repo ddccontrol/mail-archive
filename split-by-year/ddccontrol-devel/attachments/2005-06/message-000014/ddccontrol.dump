@@ -1,0 +1,87 @@
+ioctl(): Fonction non implantée
+ioctl a renvoyé -1
+Echec de lecture de l'EDID 0x50.
+ioctl(): Erreur d'entrée/sortie sur l'hôte cible
+ioctl a renvoyé -1
+Echec de lecture de l'EDID 0x50.
+EDID corrompu à 0x50.
+ioctl(): Erreur d'entrée/sortie sur l'hôte cible
+ioctl a renvoyé -1
+Echec de lecture de l'EDID 0x50.
+ioctl(): Erreur d'entrée/sortie sur l'hôte cible
+ioctl a renvoyé -1
+Echec de lecture de l'EDID 0x50.
+dev:/dev/i2c-6: Aucun périphérique de ce type
+dev:/dev/i2c-7: Aucun périphérique de ce type
+ddccontrol, version 0.1.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...3...) et Nicolas Boichat (nicolas@...1...)
+Ce programme est livré SANS AUCUNE GARANTIE.
+Vous pouvez redistribuer des copies de ce programme sous les termes de la licence générale publique de GNU (GNU General Public License).
+
+Moniteurs détectés :
+ - Périphérique : dev:/dev/i2c-4
+   DDC/CI supporté : Oui
+   Nom du moniteur : Mitsubishi Diamond Pro 2060u
+   Type d'entrée : analogique
+  (Choisi automatiquement)
+Lecture de l'EDID et initialisation du DDC/CI sur le bus dev:/dev/i2c-4...
+
+Lectures EDID :
+	ID Plug and Play: MEL4632 [Mitsubishi Diamond Pro 2060u]
+	Type d'entrée : analogique
+
+Capacités:
+ mccs_ver(1.1) type(CRT_AG) vcp(00 01 04 06 08 10 12 14(01 04 06 07 08) 16 18 1A 1E 20 22 24 26 28 30 32 38 3A 3C 40 42 44 46 47 48 4A 4C 54 56 68 6C 6E 70 D6 E1 E2 E3 E6 E8 E9 EA EB EF F6 F9 FA FC FF) vcp_p02(3B 3C 42 43 44 46 49 4A 4B 4C 4E 4F 54 56) asset_eep(40) mpu_ver(2.1.0)
+
+Contrôles (valide/actuel/maximum) [Description - Nom de la valeur]:
+Contrôle 0x00: +/0/1 [Démagnétiser]
+Contrôle 0x01: +/0/1 [???]
+Contrôle 0x04: +/0/1 [Restaurer les paramètres d'usine]
+Contrôle 0x06: +/0/1 [Restaurer les paramètres d'usine de géométrie]
+Contrôle 0x08: +/0/1 [Restaurer les paramètres d'usine de couleur]
+Contrôle 0x10: +/67/255 [Luminosité]
+Contrôle 0x12: +/255/255 [Contraste]
+Contrôle 0x14: +/8/8 [???]
+Contrôle 0x16: +/133/164 [Niveau maximum de rouge]
+Contrôle 0x18: +/124/164 [Niveau maximum de vert]
+Contrôle 0x1a: +/124/164 [Niveau maximum de bleu]
+Contrôle 0x1e: +/0/1 [???]
+Contrôle 0x20: +/107/255 [Position horizontale]
+Contrôle 0x22: +/190/222 [Taille horizontale]
+Contrôle 0x24: +/137/255 [Coussin horizontal]
+Contrôle 0x26: +/121/255 [Balance du coussin horizontal]
+Contrôle 0x28: +/151/255 [Déconvergence horizontale]
+Contrôle 0x30: +/133/254 [Position verticale]
+Contrôle 0x32: +/151/255 [Taille verticale]
+Contrôle 0x38: +/128/255 [Déconvergence verticale]
+Contrôle 0x3a: +/164/255 [Linéarité verticale]
+Contrôle 0x3c: +/149/255 [Balance de la linéarité horizontale]
+Contrôle 0x40: +/133/255 [Distorsion en parallélogramme]
+Contrôle 0x42: +/118/255 [Distorsion trapézoïdale]
+Contrôle 0x44: +/127/255 [Rotation]
+Contrôle 0x46: +/99/255 [Contrôle de la distorsion des coins supérieurs]
+Contrôle 0x48: +/127/255 [Balance de la distorsion des coins supérieurs]
+Contrôle 0x4a: +/85/255 [Contrôle de la distorsion des coins inférieurs]
+Contrôle 0x4c: +/86/255 [Balance de la distorsion des coins inférieurs]
+Contrôle 0x54: +/255/255 [???]
+Contrôle 0x56: +/0/127 [Moiré vertical]
+Contrôle 0x68: +/3/6 [Choix de langue - Espagnol]
+Contrôle 0x6c: +/120/255 [???]
+Contrôle 0x6e: +/117/255 [???]
+Contrôle 0x70: +/170/255 [???]
+Contrôle 0xa8: +/1/3 [???]
+Contrôle 0xd6: +/1/4 [???]
+Contrôle 0xe1: +/1/1 [???]
+Contrôle 0xe2: +/0/1 [???]
+Contrôle 0xe3: +/0/1 [???]
+Contrôle 0xe6: +/143/255 [???]
+Contrôle 0xe8: +/136/255 [Pureté du coin supérieur gauche]
+Contrôle 0xe9: +/115/255 [Pureté du coin supérieur droit]
+Contrôle 0xea: +/182/255 [Pureté du coin inférieur gauche]
+Contrôle 0xeb: +/98/255 [Pureté du coin inférieur droit]
+Contrôle 0xef: +/0/4 [???]
+Contrôle 0xf6: +/0/1 [???]
+Contrôle 0xf9: +/0/2 [???]
+Contrôle 0xfa: +/15404/65535 [???]
+Contrôle 0xfc: +/9/24 [???]
+Contrôle 0xff: +/13769/65535 [???]

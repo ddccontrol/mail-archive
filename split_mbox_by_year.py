@@ -2,7 +2,7 @@
 """Split mbox archives into per-year mbox files.
 
 Year files larger than the configured limit are split into per-month mbox files.
-Large attachments are extracted to separate files and replaced with pointers.
+Attachments are extracted to separate files and replaced with pointers.
 """
 
 from __future__ import annotations
@@ -19,7 +19,6 @@ from pathlib import Path
 
 
 DEFAULT_MAX_YEAR_SIZE = 2 * 1024 * 1024
-DEFAULT_EXTRACT_ATTACHMENT_SIZE = 300 * 1024
 SIZE_RE = re.compile(r"^(\d+)([KMGT]?)$", re.IGNORECASE)
 SAFE_FILENAME_RE = re.compile(r"[^A-Za-z0-9._-]+")
 
@@ -99,15 +98,35 @@ def unique_path(path: Path) -> Path:
     raise RuntimeError(f"could not find unique filename for {path}")
 
 
-def extract_large_attachments(
+def ascii_text(value: object) -> str:
+    return str(value).encode("ascii", "backslashreplace").decode("ascii")
+
+
+def is_attachment(part: mailbox.mboxMessage) -> bool:
+    return (
+        part.get_content_disposition() == "attachment"
+        or part.get_filename() is not None
+    )
+
+
+def decoded_payload(part: mailbox.mboxMessage) -> bytes | None:
+    payload = part.get_payload(decode=True)
+    if payload is not None:
+        return payload
+
+    raw_payload = part.get_payload()
+    if isinstance(raw_payload, str):
+        charset = part.get_content_charset() or "utf-8"
+        return raw_payload.encode(charset, "surrogateescape")
+
+    return None
+
+
+def extract_attachments(
     message: mailbox.mboxMessage,
     destination_dir: Path,
     message_index: int,
-    extract_over_size: int,
 ) -> tuple[int, int]:
-    if extract_over_size <= 0:
-        return 0, 0
-
     year, month = message_year_month(message)
     period = year or "unknown"
     if year is not None and month is not None:
@@ -122,8 +141,11 @@ def extract_large_attachments(
         if part.is_multipart():
             continue
 
-        payload = part.get_payload(decode=True)
-        if payload is None or len(payload) <= extract_over_size:
+        if not is_attachment(part):
+            continue
+
+        payload = decoded_payload(part)
+        if payload is None:
             continue
 
         content_type = part.get_content_type()
@@ -139,9 +161,9 @@ def extract_large_attachments(
         relative_path = attachment_path.relative_to(destination_dir)
         pointer = (
             "Attachment extracted from this mbox message.\n"
-            f"Path: {relative_path}\n"
-            f"Original filename: {original_filename or filename}\n"
-            f"Original content type: {content_type}\n"
+            f"Path: {ascii_text(relative_path)}\n"
+            f"Original filename: {ascii_text(original_filename or filename)}\n"
+            f"Original content type: {ascii_text(content_type)}\n"
             f"Original decoded size: {len(payload)} bytes\n"
         )
         pointer_filename = f"{filename}.external.txt"
@@ -211,7 +233,7 @@ def split_large_year_file(
 
 
 def split_mbox(
-    source: Path, output_dir: Path, max_year_size: int, extract_attachment_size: int
+    source: Path, output_dir: Path, max_year_size: int
 ) -> tuple[int, dict[str, int], dict[str, int], list[Path], int, int, int]:
     destination_dir = output_dir / source.stem
     destination_dir.mkdir(parents=True, exist_ok=True)
@@ -233,8 +255,8 @@ def split_mbox(
                 year = "unknown"
                 unknown_count += 1
 
-            new_count, new_bytes = extract_large_attachments(
-                message, destination_dir, total_count, extract_attachment_size
+            new_count, new_bytes = extract_attachments(
+                message, destination_dir, total_count
             )
             extracted_attachment_count += new_count
             extracted_attachment_bytes += new_bytes
@@ -292,15 +314,6 @@ def main() -> int:
         default=DEFAULT_MAX_YEAR_SIZE,
         help="split year files larger than this into month files (default: 2M)",
     )
-    parser.add_argument(
-        "--extract-attachments-over",
-        type=parse_size,
-        default=DEFAULT_EXTRACT_ATTACHMENT_SIZE,
-        help=(
-            "extract MIME parts larger than this to separate files; "
-            "use 0 to disable (default: 300K)"
-        ),
-    )
     args = parser.parse_args()
 
     failed = False
@@ -322,7 +335,6 @@ def main() -> int:
             source,
             args.output_dir,
             args.max_year_size,
-            args.extract_attachments_over,
         )
         years = ", ".join(f"{year}: {counts[year]}" for year in sorted(counts))
         print(f"{source}: {total_count} messages -> {args.output_dir / source.stem}")

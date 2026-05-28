@@ -1,0 +1,20 @@
+? fix-xinerama-0.2.patch
+Index: src/gddccontrol/main.c
+===================================================================
+RCS file: /cvsroot/ddccontrol/ddccontrol/src/gddccontrol/main.c,v
+retrieving revision 1.23
+diff -u -r1.23 main.c
+--- src/gddccontrol/main.c	11 Aug 2005 16:10:32 -0000	1.23
++++ src/gddccontrol/main.c	5 Sep 2005 14:14:16 -0000
+@@ -309,8 +309,10 @@
+ 	mon = NULL;
+ 	monitor_manager = NULL;
+ 	
++#ifdef HAVE_XINERAMA
+ 	xineramacurrent = 0; //Arbitrary, should be read from the user
+-	
++#endif
++
+ 	setlocale(LC_ALL, "");
+ 	bindtextdomain(PACKAGE, LOCALEDIR);
+ 	bindtextdomain("ddccontrol-db", LOCALEDIR);

@@ -1,0 +1,85 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.......
+Detected monitors :
+ - Device: pci:01:00.0-0
+   DDC/CI supported: Yes
+   Monitor Name: Hanns-G HG281D
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-0...
+
+EDID readings:
+	Plug and Play ID: HSD1CF3 [Hanns-G HG281D]
+	Input type: Digital
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(HG281)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(04 05 08 0B) 16 18 1A 52 60(01 04) 62 87 8D(01 02) AC AE B2 B6 C6 C8 C9 D6(01 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.0))
+Parsed output: 
+	VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 62 7e 87 8d ac ae b2 b6 c6 c8 c9 ca cc d6 df 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [???]
+Control 0x04: +/0/65535 C [Restore Factory Defaults]
+Control 0x05: +/0/65535 C [Restore Brightness and Contrast]
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Control 0x08: +/0/65535 C [Restore Factory Default Color]
+Control 0x0b: +/3000/12288 C [???]
+Control 0x0c: +/2/2 C [???]
+Control 0x0e: +/1/100   [???]
+Control 0x10: +/0/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [Color Preset - Native]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/97/100 C [Blue maximum level]
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 6e 80 be 6e 80 be 6e 80 be 6e                | .n..n..n..n     
+Invalid response, first byte is 0x80, should be 0x6e
+80 be 6e 80 be 6e 80 be 6e 80 be                | ..n..n..n..     
+Control 0x52: +/214/255 C [???]
+Control 0x60: +/4/4 C [Input Source Select]
+Control 0x62: +/28/50 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/10/100   [???]
+Control 0x6e: +/100/100   [???]
+Control 0x70: +/100/100   [???]
+Invalid response, length is 9, should be 8 at most
+Invalid response, length is 9, should be 8 at most
+Invalid response, length is 9, should be 8 at most
+Control 0x87: +/4/4 C [Sharpness]
+Control 0x8d: +/1/2 C [Mute - Mute]
+Control 0xac: +/60000/65535 C [???]
+Control 0xae: +/6040/65535 C [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc6: +/131/255 C [???]
+Control 0xc8: +/8969/65535 C [???]
+Control 0xc9: +/512/255 C [???]
+Control 0xca: +/1/2 C [On Screen Display - Disable]
+Control 0xcc: +/4/11 C [Language select - German]
+Control 0xd6: +/1/5 C [Power control - On]
+Control 0xdf: +/512/65535 C [???]

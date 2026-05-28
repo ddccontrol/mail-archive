@@ -1,0 +1,97 @@
+Model: Philips 220X1
+MCCS version: 2.1
+Commands:
+   Op Code: 01 (VCP Request)
+   Op Code: 02 (VCP Response)
+   Op Code: 03 (VCP Set)
+   Op Code: 07 (Timing Request)
+   Op Code: 0C (Save Settings)
+   Op Code: 4E (Unrecognized operation code)
+   Op Code: F3 (Capabilities Request)
+   Op Code: E3 (Capabilities Reply)
+VCP Features:
+   Feature: 02 (New control value)
+   Feature: 04 (Restore factory defaults)
+   Feature: 05 (Restore factory brightness/contrast defaults)
+   Feature: 08 (Restore color defaults)
+   Feature: 0B (Color temperature increment)
+   Feature: 0C (Color temperature request)
+   Feature: 10 (Brightness)
+   Feature: 12 (Contrast)
+   Feature: 14 (Select color preset)
+      Values:
+         01: sRGB
+         04: 5000 K
+         05: 6500 K
+         06: 7500 K
+         07: 8200 K
+         08: 9300 K
+         0a: 11500 K
+         0b: User 1
+   Feature: 16 (Video gain: Red)
+   Feature: 18 (Video gain: Green)
+   Feature: 1A (Video gain: Blue)
+   Feature: 6C (Video black level: Red)
+   Feature: 6E (Video black level: Green)
+   Feature: 70 (Video black level: Blue)
+   Feature: 72 (Gamma)
+      Specific presets of absolute adjustment supported (0xfb)
+      Absolute tolerance: +/- 5% (=0x05)
+      Native gamma: 2.20 (0x78)
+      Specific presets:  1.80 (0x50), 2.00 (0x64), 2.20 (0x78), 2.40 (0x8c), 2.60 (0xa0)
+   Feature: 86 (Display Scaling)
+      Values:
+         02: Max image, no aspect ration distortion
+         08: Linear expansion (compression) on h and v axes
+   Feature: AC (Horizontal frequency)
+   Feature: AE (Vertical frequency)
+   Feature: B6 (Display technology type)
+   Feature: C0 (Display usage time)
+   Feature: C6 (Application enable key)
+   Feature: C8 (Display controller type)
+   Feature: C9 (Display firmware level)
+   Feature: CA (OSD)
+   Feature: CC (OSD Language)
+      Values:
+         00: Reserved value, must be ignored
+         02: English
+         03: French
+         04: German
+         05: Italian
+         08: Portuguese (Portugal)
+         09: Russian
+         0a: Spanish
+         0d: Chinese (simplified / Kantai)
+   Feature: D6 (Power mode)
+      Values:
+         01: DPM: On,  DPMS: Off
+         04: DPM: Off, DPMS: Off
+   Feature: DC (Display Mode)
+      Values:
+         00: Standard/Default mode
+         01: Productivity
+         02: Mixed
+         03: Movie
+         08: Standard/Default mode with intermediate power consumption
+   Feature: DF (VCP Version)
+   Feature: E3 (Manufacturer specific feature)
+   Feature: E9 (Manufacturer specific feature)
+      Values: 00 02 (interpretation unavailable)
+   Feature: EB (Manufacturer specific feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: F0 (Manufacturer specific feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: F2 (Manufacturer specific feature)
+      Values: 00 01 02 03 04 (interpretation unavailable)
+   Feature: 60 (Input Source)
+      Values:
+         01: VGA-1
+         03: DVI-1
+   Feature: FA (Manufacturer specific feature)
+      Values: 00 01 02 (interpretation unavailable)
+   Feature: FB (Manufacturer specific feature)
+   Feature: FC (Manufacturer specific feature)
+   Feature: FD (Manufacturer specific feature)
+   Feature: FE (Manufacturer specific feature)
+      Values: 00 01 02 04 (interpretation unavailable)
+   Feature: FF (Manufacturer specific feature)

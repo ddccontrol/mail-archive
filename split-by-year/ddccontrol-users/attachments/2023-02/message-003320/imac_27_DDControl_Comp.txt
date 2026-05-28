@@ -1,0 +1,26 @@
+System:
+  Kernel: 6.1.8-200.fc37.x86_64 arch: x86_64 bits: 64 compiler: gcc v: 2.38-25.fc37
+    Desktop: Cinnamon v: 5.6.5 tk: GTK v: 3.24.36 wm: muffin dm: LightDM Distro: Fedora release 37
+    (Thirty Seven)
+Machine:
+  Type: Desktop System: Apple product: iMac14,2 v: 1.0 serial: <superuser required> Chassis:
+    type: 13 v: Mac-27ADBB7B4CEE8E61 serial: <superuser required>
+  Mobo: Apple model: Mac-27ADBB7B4CEE8E61 v: iMac14,2 serial: <superuser required> UEFI: Apple
+    v: 433.140.2.0.0 date: 04/18/2022
+CPU:
+  Info: quad core model: Intel Core i5-4570 bits: 64 type: MCP arch: Haswell rev: 3 cache:
+    L1: 256 KiB L2: 1024 KiB L3: 6 MiB
+  Speed (MHz): avg: 939 high: 984 min/max: 800/3600 cores: 1: 898 2: 984 3: 898 4: 976
+    bogomips: 25542
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: NVIDIA GK107M [GeForce GT 755M Mac Edition] vendor: Apple driver: nouveau v: kernel
+    arch: Kepler pcie: speed: 2.5 GT/s lanes: 16 ports: active: DP-1 empty: DP-2,DP-3 bus-ID: 01:00.0
+    chip-ID: 10de:0fea temp: 39.0 C
+  Device-2: Apple FaceTime HD Camera (Built-in) type: USB driver: uvcvideo bus-ID: 1-7:6
+    chip-ID: 05ac:8511
+  Display: x11 server: X.Org v: 1.20.14 driver: X: loaded: modesetting unloaded: fbdev,vesa
+    dri: nouveau gpu: nouveau display-ID: :0 screens: 1
+  Screen-1: 0 s-res: 4096x2304 s-dpi: 120
+  Monitor-1: DP-1 model: Apple iMac res: 4096x2304 dpi: 174 diag: 685mm (27")
+  API: OpenGL v: 4.3 Mesa 22.3.3 renderer: NVE7 direct render: Yes

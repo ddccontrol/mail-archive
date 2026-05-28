@@ -1,0 +1,132 @@
+LANG= LC_ALL= ddccontrol -v -v -r 0x16 -w 32 pci:01:00.0-1
+ddccontrol version 0.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+ddcpci initing...
+Starting /usr/bin/ddcpci 2 -586769918 &...
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-1...
+Device: pci:01:00.0-1
+==>Received!
+==>Opening...
+==>01:00.0-1
+==>01:00.0 vendor=10de device=0342 class=0300 irq=201 base0=fb000000 size0=1000000
+==>Opened (status=0)...
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+0000: 00 ff ff ff ff ff ff 00 4c 2d b6 01 39 31 44 56 | ........L-..91DV
+0010: 25 0f 01 03 80 26 1e 78 2a ee 95 a3 54 4c 99 26 | %....&.x*...TL.&
+0020: 0f 50 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01 | .PT......@...76...
+0030: 01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 | ......0*..Q.*@0p
+0040: 13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4c 1e | ..x-.........8L.
+0050: 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 | Q...      .....S
+0060: 79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff | yncMaster.  ....
+0070: 00 48 56 46 59 39 30 34 30 31 32 0a 20 20 00 41 | .HVFY904012.  .A
+Serial number: 1447309625
+Manufactured: Week 37, 2005
+EDID version: 1.3
+Maximum size: 38 x 30 (cm)
+Send: f3 00 00                                        | ...
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 00 28 74 79 70 65 28 4c 43 44 29 76 63 70 | ...(type(LCD)vcp
+0010: 28 30 34                                        | (04
+Send: f3 00 10                                        | ...
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 10 20 30 35 20 31 30 20 31 32 20 31 36 20 | ... 05 10 12 16
+0010: 31 38 20                                        | 18
+Send: f3 00 20                                        | ..
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 20 31 41 20 36 30 28 31 20 33 29 20 42 30 | .. 1A 60(1 3) B0
+0010: 28 31 20                                        | (1
+Send: f3 00 30                                        | ..0
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 30 32 29 20 42 36 20 43 36 20 43 38 20 43 | ..02) B6 C6 C8 C
+0010: 39 20 44                                        | 9 D
+Send: f3 00 40                                        | ..@
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 40 36 28 31 20 34 29 20 44 43 28 31 20 32 | ..@...94...(1 4) DC(1 2
+0010: 20 33 20                                        |  3
+Send: f3 00 50                                        | ..P
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 50 34 20 35 20 36 29 20 46 38 20 46 30 28 | ..P4 5 6) F8 F0(
+0010: 30 20 31                                        | 0 1
+Send: f3 00 60                                        | ..`
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 60 20 32 20 33 20 34 29 20 46 32 20 46 33 | ..` 2 3 4) F2 F3
+0010: 20 38 37                                        |  87
+Send: f3 00 70                                        | ..p
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 0000: e3 00 70 20 46 39 20 46 41 20 46 42 20 46 43 20 | ..p F9 FA FB FC
+0010: 46 44 20                                        | FD
+Send: f3 00 80                                        | ...
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: e3 00 80 46 45 20 45 30 20 29 29                | ...FE E0 ))
+Send: f3 00 88                                        | ...
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: e3 00 88                                        | ...
+Control hpos has been discarded by the caps string.
+Control vpos has been discarded by the caps string.
+Control auto has been discarded by the caps string.
+Control coarse has been discarded by the caps string.
+Control fine has been discarded by the caps string.
+Control defaultgeom has been discarded by the caps string.
+Control defaultcolor has been discarded by the caps string.
+Control osd has been discarded by the caps string.
+Control power has been discarded by the caps string.
+Send: f7                                              | .
+==>Received!
+==>Data, mquery->flags = 0
+
+EDID readings:
+        Plug and Play ID: SAM01B6 [Samsung SyncMaster 970P]
+        Input type: Digital
+
+Writing 0x16, 0x20(32)...
+Send: 03 16 00 20                                     | ...
+==>Received!
+==>Data, mquery->flags = 0
+Send: 01 16                                           | ..
+==>Received!
+==>Data, mquery->flags = 0
+==>Received!
+==>Data, mquery->flags = 1
+Recv: 02 00 16 00 00 40 00 20                         | .....@...86...
+Control 0x16: +/32/64 [Red maximum level]
+ddcpci being released...
+==>Received!
+==>Quitting...
+==>ddcpci is quitting.
+ 

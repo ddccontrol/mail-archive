@@ -1,0 +1,89 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...........
+Detected monitors :
+ - Device: dev:/dev/i2c-0
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-0...
+
+EDID readings:
+	Plug and Play ID: NEC667B [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)cmds(01 02 03 07 0C C4 C6 C8 F3)vcp(02 04 05 08 10 12 14(01 02 04 06 07 08) 16 18 1A 68(01 02 03 04 05 06 07 09) 87 8C B0 B6 D6 DF E3 F4 F5(01 02 03 04 05 06 07 09) F9(00 01 02 03) FA FC FF)vcp_p02(38 39 3B FF)mccs_ver(2.0)asset_eep(20)mpt(1.00)model(LCD2070NX)mswhql(1))
+Parsed output: 
+	VCP: 02 04 05 08 10 12 14 16 18 1a 68 87 8c b0 b6 d6 df e3 f4 f5 f9 fa fc ff 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x10: +/46/100 C [Brightness]
+Control 0x12: +/30/78 C [Contrast]
+Control 0x14: +/1/8 C [???]
+Control 0x16: +/235/255 C [Red maximum level]
+Control 0x18: +/255/255 C [Green maximum level]
+Control 0x1a: +/237/255 C [Blue maximum level]
+Control 0x68: +/9/9 C [???]
+Control 0x87: +/5/10 C [???]
+Control 0x8c: +/5/10 C [???]
+Control 0xb0: +/1/2 C [Settings - Settings]
+Control 0xb6: +/3/5 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdf: +/512/65535 C [???]
+Control 0xe3: +/0/1 C [???]
+Control 0xf4: +/0/65535 C [???]
+Control 0xf5: +/9/9 C [???]
+Control 0xf9: +/0/3 C [???]
+Control 0xfa: +/34432/65535 C [???]
+Control 0xfc: +/8/23 C [???]
+Control 0xff: +/9497/65535 C [???]
+
+
+
+Document not parsed successfully.
+Invalid response, corrupted data - xor is 0xdf, length 0x23
+0000: 6e a3 e3 00 80 20 30 37 20 30 39 29 20 38 37 20 | n.... 07 09) 87 
+0010: 38 43 20 42 30 20 42 36 20 20 44 36 20 44 46 20 | 8C B0 B6  D6 DF 
+0020: 45 33 20 46 34 20 ff 00 00 00 00 00 00 00 00 00 | E3 F4 ..........
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/NEC667B.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/NEC667B.xml"
+Document not parsed successfully.
+ioctl(): Input/output error
+ioctl returned -1
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+ioctl(): Input/output error
+ioctl returned -1
+Invalid response, corrupted data - xor is 0x7d, length 0x08
+6e 88 02 01 01 c8 01 ff ff 00 00                | n..........     
+Invalid response, corrupted data - xor is 0xb4, length 0x08
+6e 88 02 01 c8 c8 01 ff ff 00 00                | n..........
+

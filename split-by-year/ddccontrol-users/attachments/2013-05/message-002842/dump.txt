@@ -1,0 +1,11 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.......I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/FUS0051.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/GSM5816.xml"
+Document not parsed successfully.
+

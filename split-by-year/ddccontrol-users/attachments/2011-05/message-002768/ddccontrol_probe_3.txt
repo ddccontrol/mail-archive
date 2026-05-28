@@ -1,0 +1,193 @@
+Non-fatal error: Invalid response, magic is 0x03
+Invalid response, corrupted data - xor is 0x3d, length 0x03
+0000: 6e 03 ff ff ff ff ff ff ff ff ff ff ff ff ff ff | n...............
+0010: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0020: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0030: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0040: ff ff ff                                        | ...             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR06BB.xml"
+Document not parsed successfully.
+Non-fatal error: Invalid response, magic is 0x7f
+Invalid response, length is 127, should be 64 at most
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x01, length 0x00
+6e 00 3f ff ff ff ff ff ff ff ff                | n.?........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 00 3f ff ff ff ff ff ff                | n...?......     
+Non-fatal error: Invalid response, magic is 0x0f
+Invalid response, length is 15, should be 8 at most
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x21, length 0x00
+6e 00 1f ff ff ff ff ff ff ff ff                | n..........     
+ddccontrol version 0.4.2         --------------------HERE!!!!!!!!!!!!!!!
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+ddcpci initing...
+Starting /usr/bin/ddcpci 1 33766567 &...
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-3...
+Serial number: 1687164281
+Manufactured: Week 49, 2006
+EDID version: 1.3
+Maximum size: 34 x 27 (cm)
+Control brightness has been discarded by the caps string.
+Control contrast has been discarded by the caps string.
+Control red has been discarded by the caps string.
+Control green has been discarded by the caps string.
+Control blue has been discarded by the caps string.
+Control redblack has been discarded by the caps string.
+Control greenblack has been discarded by the caps string.
+Control blueblack has been discarded by the caps string.
+Control colortemp has been discarded by the caps string.
+Control hpos has been discarded by the caps string.
+Control vpos has been discarded by the caps string.
+Control hsize has been discarded by the caps string.
+Control vsize has been discarded by the caps string.
+Control auto has been discarded by the caps string.
+Control hpincushion has been discarded by the caps string.
+Control hpincushionbalance has been discarded by the caps string.
+Control vlinearity has been discarded by the caps string.
+Control vlinearitybalance has been discarded by the caps string.
+Control hmisconvergence has been discarded by the caps string.
+Control vmisconvergence has been discarded by the caps string.
+Control keybalance has been discarded by the caps string.
+Control key has been discarded by the caps string.
+Control tdistortionctrl has been discarded by the caps string.
+Control tdistortionbalance has been discarded by the caps string.
+Control bdistortionctrl has been discarded by the caps string.
+Control bdistortionbalance has been discarded by the caps string.
+Control tilt has been discarded by the caps string.
+Control hmoire has been discarded by the caps string.
+Control vmoire has been discarded by the caps string.
+Control focus has been discarded by the caps string.
+Control coarse has been discarded by the caps string.
+Control fine has been discarded by the caps string.
+Control defaults has been discarded by the caps string.
+Control defaultluma has been discarded by the caps string.
+Control defaultgeom has been discarded by the caps string.
+Control defaultcolor has been discarded by the caps string.
+Control settings has been discarded by the caps string.
+Control audiospeakervolume has been discarded by the caps string.
+Control degauss has been discarded by the caps string.
+Control osdorientation has been discarded by the caps string.
+Control inputsource has been discarded by the caps string.
+Control dpms has been discarded by the caps string.
+Control power has been discarded by the caps string.
+
+EDID readings:
+	Plug and Play ID: ACR06BB [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: type(LCD)vcp(page0(04 08 0E 10 12 14(05 08 0B) 16 18 1A 1E 20 30 3E 62)
+Parsed output: 
+	VCP: 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x04: +/0/1   [???]
+Control 0x05: +/0/65535   [???]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1   [???]
+Control 0x0e: +/50/110   [???]
+Control 0x10: +/100/100   [???]
+Control 0x12: +/100/100   [???]
+Control 0x14: +/8/12   [???]
+Control 0x16: +/100/100   [???]
+Control 0x18: +/100/100   [???]
+Control 0Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x21, length 0x00
+6e 00 1f ff ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0xe8, length 0x08
+6e 88 02 01 2a 01 ff ff 00 89 ff                | n...*......     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 00 ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0xf6, length 0x08
+6e 88 02 01 42 01 ff ff 00 88 88                | n...B......     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 00 3f ff ff ff ff ff ff                | n...?......     
+Invalid response, corrupted data - xor is 0x8f, length 0x08
+6e 88 02 01 4c 01 ff ff 00 88 ff                | n...L......     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x41, length 0x00
+6e 00 7f ff ff ff ff ff ff ff ff                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 ff ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0xc0, length 0x08
+6e 88 02 01 63 01 ff ff 00 88 9f                | n...c......     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 0f ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0xd9, length 0x08
+6e 88 02 01 6e 01 ff ff 00 88 8b                | n...n......     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 7f ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0xce, length 0x08
+6e 88 02 01 79 01 ff ff 00 88 8b                | n...y......     
+Invalid response, corrupted data - xor is 0x47, length 0x08
+6e 88 02 01 85 01 ff ff 00 89 ff                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3d, length 0x00
+6e 00 03 ff ff ff ff ff ff ff ff                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 0f ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0x5c, length 0x08
+6e 88 02 01 9c 01 ff ff 00 8b ff                | n..........     
+Invalid response, corrupted data - xor is 0x76, length 0x08
+6e 88 02 01 b5 01 ff ff 00 88 ff                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3f, length 0x00
+6e 00 01 ff ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0x39, length 0x08
+6e 88 02 01 cd 01 ff ff 00 bf ff                | n..........     
+Invalid response, corrupted data - xor is 0x0d, length 0x08
+6e 88 02 01 d9 01 ff ff 00 9f ff                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 07 ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0x5d, length 0x08
+6e 88 02 01 e9 01 ff ff 00 88 88                | n..........     
+Non-fatal error: Invalid response, magic is 0x00
+Invalid response, corrupted data - xor is 0x3e, length 0x00
+6e 00 00 00 ff ff ff ff ff ff ff                | n..........     
+Invalid response, corrupted data - xor is 0x3d, length 0x08
+6e 88 02 01 fe 01 ff ff 00 88 ff                | n..........     
+==>ddcpci is quitting.
+x1a: +/100/100   [???]
+Control 0x1e: +/0/65535   [???]
+Control 0x20: +/50/100   [???]
+Control 0x30: +/36/76   [???]
+Control 0x37: +/0/1   [???]
+Control 0x3e: +/63/63   [???]
+Control 0x60: +/256/65535   [???]
+Control 0x68: +/1536/65535   [???]
+Control 0xac: +/32514/65535   [???]
+Control 0xae: +/22274/65535   [???]
+Control 0xb6: +/768/65535   [???]
+Control 0xc0: +/27976/65535   [???]
+Control 0xc6: +/65535/65535   [???]
+Control 0xc8: +/8450/65535   [???]
+Control 0xc9: +/258/65535   [???]
+Control 0xca: +/256/65535   [???]
+Control 0xd6: +/256/65535   [???]
+ddcpci being released...

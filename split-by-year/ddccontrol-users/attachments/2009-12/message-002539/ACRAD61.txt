@@ -1,0 +1,72 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: pci:01:00.0-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-1...
+
+EDID readings:
+	Plug and Play ID: ACRAD61 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (type(lcd)mccs_ver(2.1)asset_eep(40)vcp(02 04 08 10 12 14(05 08 0B) 16 18 1A 6C 6E 70 B6 DF)mswhql(1))
+Parsed output: 
+	VCP: 02 04 08 10 12 14 16 18 1a 6c 6e 70 b6 df 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/65535 C [???]
+Control 0x04: +/0/65535 C [Restore Factory Defaults]
+Control 0x05: +/0/65535   [???]
+Control 0x06: +/0/65535   [???]
+Control 0x08: +/0/65535 C [Restore Factory Default Color]
+Control 0x0e: +/2180/200   [???]
+Control 0x10: +/69/230 C [Brightness]
+Control 0x12: +/69/136 C [Contrast]
+Control 0x14: +/5/65535 C [???]
+Control 0x16: +/255/255 C [Red maximum level]
+Control 0x18: +/255/255 C [Green maximum level]
+Control 0x1a: +/255/255 C [Blue maximum level]
+Control 0x1e: +/0/65535   [???]
+Control 0x20: +/519/594   [???]
+Control 0x30: +/28/31   [???]
+Control 0x3e: +/0/63   [???]
+Control 0x60: +/768/65535   [???]
+Control 0x68: +/256/65535   [???]
+Control 0x6c: +/255/255 C [Red minimum level]
+Control 0x6e: +/255/255 C [Green minimum level]
+Control 0x70: +/255/255 C [Blue minimum level]
+Control 0x9b: +/255/255   [???]
+Control 0x9d: +/255/255   [???]
+Control 0x9f: +/255/255   [???]
+Control 0xac: +/57858/65535   [???]
+Control 0xae: +/21762/65535   [???]
+Control 0xb6: +/3/65535 C [???]
+Control 0xc0: +/50972/65535   [???]
+Control 0xc6: +/65535/65535   [???]
+Control 0xc8: +/18946/65535   [???]
+Control 0xc9: +/256/65535   [???]
+Control 0xca: +/256/65535   [???]
+Control 0xd6: +/256/65535   [???]
+Control 0xdf: +/513/65535 C [???]

@@ -257,43 +257,21 @@ Content-Type: text/html; charset="UTF-8"
 --000000000000752e7805f5ee680f--
 
 --000000000000752e7b05f5ee6811
-Content-Type: text/plain; charset="US-ASCII"; name="file.txt"
-Content-Disposition: attachment; filename="file.txt"
-Content-Transfer-Encoding: base64
-Content-ID: <f_leree9500>
 X-Attachment-Id: f_leree9500
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="file.txt.external.txt"
+X-External-Attachment-Path: attachments/2023-03/message-003330/file.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 1746
 
-ZGRjY29udHJvbCB2ZXJzaW9uIDAuNS4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
-aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
-IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
-Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
-dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KCkRldGVj
-dGVkIG1vbml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMtMzIKICAgRERDL0NJIHN1cHBv
-cnRlZDogWWVzCiAgIE1vbml0b3IgTmFtZTogVkVTQSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0
-IHR5cGU6IERpZ2l0YWwKICAoQXV0b21hdGljYWxseSBzZWxlY3RlZCkKIC0gRGV2aWNlOiBkZXY6
-L2Rldi9pMmMtMzEKICAgRERDL0NJIHN1cHBvcnRlZDogWWVzCiAgIE1vbml0b3IgTmFtZTogVkVT
-QSBzdGFuZGFyZCBtb25pdG9yCiAgIElucHV0IHR5cGU6IERpZ2l0YWwKIC0gRGV2aWNlOiBkZXY6
-L2Rldi9pMmMtMjkKICAgRERDL0NJIHN1cHBvcnRlZDogTm8KICAgTW9uaXRvciBOYW1lOiBWRVNB
-IHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTogRGlnaXRhbApSZWFkaW5nIEVESUQgYW5k
-IGluaXRpYWxpemluZyBEREMvQ0kgYXQgYnVzIGRldjovZGV2L2kyYy0zMi4uLgoKRURJRCByZWFk
-aW5nczoKCVBsdWcgYW5kIFBsYXkgSUQ6IEdTTTVCNzQgW1ZFU0Egc3RhbmRhcmQgbW9uaXRvcl0K
-CUlucHV0IHR5cGU6IEFuYWxvZwo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdBUk5J
-TkcgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpUaGVyZSBpcyBubyBzdXBwb3J0IGZv
-ciB5b3VyIG1vbml0b3IgaW4gdGhlIGRhdGFiYXNlLCBidXQgZGRjY29udHJvbCBpcwp1c2luZyBh
-IGJhc2ljIGdlbmVyaWMgcHJvZmlsZS4gTWFueSBjb250cm9scyB3aWxsIG5vdCBiZSBzdXBwb3J0
-ZWQsIGFuZApzb21lIGNvbnRyb2xzIG1heSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVw
-ZGF0ZSBkZGNjb250cm9sLWRiLCBvciwgaWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRl
-c3QKdmVyc2lvbiwgcGxlYXNlIHNlbmQgdGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1h
-bmQgdG8KZGRjY29udHJvbC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBMQ19B
-TEw9IGRkY2NvbnRyb2wgLXAgLWMgLWQKClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkNhcGFi
-aWxpdGllczoKCkNvbnRyb2xzICh2YWxpZC9jdXJyZW50L21heCkgW0Rlc2NyaXB0aW9uIC0gVmFs
-dWUgbmFtZV06CkNvbnRyb2wgMHgwMjogKy8xLzIgQyBbTmV3IENvbnRyb2wgVmFsdWUgLSBObyBj
-aGFuZ2VzXQpDb250cm9sIDB4MTA6ICsvMzcvMTAwIEMgW0JyaWdodG5lc3NdCkNvbnRyb2wgMHhj
-OTogKy83NzIvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZDE6ICsvNC8yNTUgICBbPz8/XQpDb250
-cm9sIDB4ZDI6ICsvMC82NTUzNSAgIFs/Pz9dCkNvbnRyb2wgMHhkMzogKy8wLzY1NTM1ICAgWz8/
-P10KQ29udHJvbCAweGQ1OiArLzAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4ZGQ6ICsvMC8yNTUg
-ICBbPz8/XQpDb250cm9sIDB4ZmI6ICsvMi8yICAgWz8/P10K
+Attachment extracted from this mbox message.
+Path: attachments/2023-03/message-003330/file.txt
+Original filename: file.txt
+Original content type: text/plain
+Original decoded size: 1746 bytes
+
 --000000000000752e7b05f5ee6811--
 
 
@@ -386,82 +364,21 @@ Content-Type: text/html; charset="UTF-8"
 --000000000000af696205f618bfa4--
 
 --000000000000af696505f618bfa6
-Content-Type: text/plain; charset="US-ASCII"; name="output.txt"
-Content-Disposition: attachment; filename="output.txt"
-Content-Transfer-Encoding: base64
-Content-ID: <f_leudwc6a0>
 X-Attachment-Id: f_leudwc6a0
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="output.txt.external.txt"
+X-External-Attachment-Path: attachments/2023-03/message-003331/output.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3987
 
-ZGRjY29udHJvbCB2ZXJzaW9uIDAuNS4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
-aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
-IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
-Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
-dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KCkRldGVj
-dGVkIG1vbml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMtNAogICBEREMvQ0kgc3VwcG9y
-dGVkOiBZZXMKICAgTW9uaXRvciBOYW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQg
-dHlwZTogRGlnaXRhbAogIChBdXRvbWF0aWNhbGx5IHNlbGVjdGVkKQpSZWFkaW5nIEVESUQgYW5k
-IGluaXRpYWxpemluZyBEREMvQ0kgYXQgYnVzIGRldjovZGV2L2kyYy00Li4uCkkvTyB3YXJuaW5n
-IDogZmFpbGVkIHRvIGxvYWQgZXh0ZXJuYWwgZW50aXR5ICIvdXNyL3NoYXJlL2RkY2NvbnRyb2wt
-ZGIvbW9uaXRvci9BQ1IwNjY5LnhtbCIKRG9jdW1lbnQgbm90IHBhcnNlZCBzdWNjZXNzZnVsbHku
-CkkvTyB3YXJuaW5nIDogZmFpbGVkIHRvIGxvYWQgZXh0ZXJuYWwgZW50aXR5ICIvdXNyL3NoYXJl
-L2RkY2NvbnRyb2wtZGIvbW9uaXRvci9BQ1JsY2QueG1sIgpEb2N1bWVudCBub3QgcGFyc2VkIHN1
-Y2Nlc3NmdWxseS4KCkVESUQgcmVhZGluZ3M6CglQbHVnIGFuZCBQbGF5IElEOiBBQ1IwNjY5IFtW
-RVNBIHN0YW5kYXJkIG1vbml0b3JdCglJbnB1dCB0eXBlOiBBbmFsb2cKPT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0K
-VGhlcmUgaXMgbm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGluIHRoZSBkYXRhYmFzZSwgYnV0
-IGRkY2NvbnRyb2wgaXMKdXNpbmcgYSBiYXNpYyBnZW5lcmljIHByb2ZpbGUuIE1hbnkgY29udHJv
-bHMgd2lsbCBub3QgYmUgc3VwcG9ydGVkLCBhbmQKc29tZSBjb250cm9scyBtYXkgbm90IHdvcmsg
-YXMgZXhwZWN0ZWQuClBsZWFzZSB1cGRhdGUgZGRjY29udHJvbC1kYiwgb3IsIGlmIHlvdSBhcmUg
-YWxyZWFkeSB1c2luZyB0aGUgbGF0ZXN0CnZlcnNpb24sIHBsZWFzZSBzZW5kIHRoZSBvdXRwdXQg
-b2YgdGhlIGZvbGxvd2luZyBjb21tYW5kIHRvCmRkY2NvbnRyb2wtdXNlcnNAbGlzdHMuc291cmNl
-Zm9yZ2UubmV0OgoKTEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1wIC1jIC1kCgpUaGFuayB5b3Uu
-Cj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09CgpDYXBhYmlsaXRpZXM6CmlvY3RsKCk6IEluYXBwcm9wcmlhdGUgaW9j
-dGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJpYXRlIGlv
-Y3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3ByaWF0ZSBp
-b2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBwcm9wcmlhdGUg
-aW9jdGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJpYXRl
-IGlvY3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3ByaWF0
-ZSBpb2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCmlvY3RsKCk6IEluYXBwcm9wcmlh
-dGUgaW9jdGwgZm9yIGRldmljZQppb2N0bCByZXR1cm5lZCAtMQppb2N0bCgpOiBJbmFwcHJvcHJp
-YXRlIGlvY3RsIGZvciBkZXZpY2UKaW9jdGwgcmV0dXJuZWQgLTEKaW9jdGwoKTogSW5hcHByb3By
-aWF0ZSBpb2N0bCBmb3IgZGV2aWNlCmlvY3RsIHJldHVybmVkIC0xCkNhcGFiaWxpdGllcyByZWFk
-IGZhaWwuCgpDb250cm9scyAodmFsaWQvY3VycmVudC9tYXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVl
-IG5hbWVdOgpDb250cm9sIDB4MDI6ICsvMi8yIEMgW05ldyBDb250cm9sIFZhbHVlIC0gU29tZSB2
-YWx1ZXMgY2hhbmdlZF0KQ29udHJvbCAweDA0OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVm
-YXVsdHNdCkNvbnRyb2wgMHgwNTogKy8wLzEgQyBbUmVzdG9yZSBCcmlnaHRuZXNzIGFuZCBDb250
-cmFzdF0KQ29udHJvbCAweDA2OiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHgwODogKy8wLzEgQyBb
-UmVzdG9yZSBGYWN0b3J5IERlZmF1bHQgQ29sb3JdCkNvbnRyb2wgMHgwYjogKy8xMDAvMTAwIEMg
-Wz8/P10KQ29udHJvbCAweDBjOiArLzM1Lzg1IEMgWz8/P10KQ29udHJvbCAweDEwOiArLzAvMTAw
-IEMgW0JyaWdodG5lc3NdCkNvbnRyb2wgMHgxMjogKy81MC8xMDAgQyBbQ29udHJhc3RdCkNvbnRy
-b2wgMHgxNDogKy8xMS8xMSBDIFs/Pz9dCkNvbnRyb2wgMHgxNjogKy81MC8xMDAgQyBbUmVkIG1h
-eGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxODogKy81MC8xMDAgQyBbR3JlZW4gbWF4aW11bSBsZXZl
-bF0KQ29udHJvbCAweDFhOiArLzUwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wg
-MHgxZTogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4NTI6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9s
-IDB4NTk6ICsvNTAvMTAwIEMgWz8/P10KQ29udHJvbCAweDVhOiArLzUwLzEwMCBDIFs/Pz9dCkNv
-bnRyb2wgMHg1YjogKy81MC8xMDAgQyBbPz8/XQpDb250cm9sIDB4NWM6ICsvNTAvMTAwIEMgWz8/
-P10KQ29udHJvbCAweDVkOiArLzUwLzEwMCBDIFs/Pz9dCkNvbnRyb2wgMHg1ZTogKy81MC8xMDAg
-QyBbPz8/XQpDb250cm9sIDB4NjA6ICsvMTUvMSBDIFtJbnB1dCBTb3VyY2UgU2VsZWN0IChNYWlu
-KV0KQ29udHJvbCAweDYyOiArLzEwMC8xMDAgQyBbQXVkaW8gU3BlYWtlciBWb2x1bWUgQWRqdXN0
-XQpDb250cm9sIDB4Njg6ICsvMC81ICAgWz8/P10KQ29udHJvbCAweDZjOiArLzUwLzEwMCAgIFs/
-Pz9dCkNvbnRyb2wgMHg2ZTogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NzA6ICsvNTAvMTAw
-ICAgWz8/P10KQ29udHJvbCAweDg2OiArLzEvOCAgIFs/Pz9dCkNvbnRyb2wgMHg4ZDogKy8yLzIg
-ICBbPz8/XQpDb250cm9sIDB4OWI6ICsvNTAvMTAwIEMgWz8/P10KQ29udHJvbCAweDljOiArLzUw
-LzEwMCBDIFs/Pz9dCkNvbnRyb2wgMHg5ZDogKy81MC8xMDAgQyBbPz8/XQpDb250cm9sIDB4OWU6
-ICsvNTAvMTAwIEMgWz8/P10KQ29udHJvbCAweDlmOiArLzUwLzEwMCBDIFs/Pz9dCkNvbnRyb2wg
-MHhhMDogKy81MC8xMDAgQyBbPz8/XQpDb250cm9sIDB4YTg6ICsvMC8zICAgWz8/P10KQ29udHJv
-bCAweGFhOiArLzEvNSAgIFs/Pz9dCkNvbnRyb2wgMHhhYzogKy8xODY0LzEgQyBbPz8/XQpDb250
-cm9sIDB4YWU6ICsvNTk5MS8wIEMgWz8/P10KQ29udHJvbCAweGI0OiArLzEvMiAgIFs/Pz9dCkNv
-bnRyb2wgMHhiNjogKy8zLzggQyBbPz8/XQpDb250cm9sIDB4YzA6ICsvMjE0Ny82NTUzNSBDIFs/
-Pz9dCkNvbnRyb2wgMHhjNjogKy8xMjAvNjU1MzUgQyBbPz8/XQpDb250cm9sIDB4Yzg6ICsvNS82
-NTMwMiBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy8wLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGNh
-OiArLzIvMiAgIFs/Pz9dCkNvbnRyb2wgMHhjYzogKy8yLzM2IEMgWz8/P10KQ29udHJvbCAweGQ2
-OiArLzEvNCBDIFtEUE1TIENvbnRyb2wgLSBPbl0KQ29udHJvbCAweGRhOiArLzAvMiAgIFs/Pz9d
-CkNvbnRyb2wgMHhkZjogKy81MTMvMjU1IEMgWz8/P10KQ29udHJvbCAweGUxOiArLzAvMjU1IEMg
-W1Bvd2VyIGNvbnRyb2wgLSBPZmZdCkNvbnRyb2wgMHhlMjogKy8wLzI3IEMgWz8/P10KQ29udHJv
-bCAweGUzOiArLzE5LzI3IEMgWz8/P10KQ29udHJvbCAweGU0OiArLzIvMjcgQyBbPz8/XQpDb250
-cm9sIDB4ZTU6ICsvMC8xMCBDIFs/Pz9dCkNvbnRyb2wgMHhlODogKy8wLzI1NSBDIFs/Pz9dCkNv
-bnRyb2wgMHhlZDogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4ZjA6ICsvMC8xICAgWz8/P10K
+Attachment extracted from this mbox message.
+Path: attachments/2023-03/message-003331/output.txt
+Original filename: output.txt
+Original content type: text/plain
+Original decoded size: 3987 bytes
+
 --000000000000af696505f618bfa6--
 
 
@@ -754,330 +671,34 @@ output.txt = standard output
 
 err.txt = standard error
 --nextPart5652698.DvuYhMxLoT
-Content-Disposition: attachment; filename="err.txt"
-Content-Transfer-Encoding: 7Bit
-Content-Type: text/plain; charset="unicode-2-0-utf-8"; name="err.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="err.txt.external.txt"
+X-External-Attachment-Path: attachments/2023-03/message-003336/err.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 672
 
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DEL4231.xml"
-Document not parsed successfully.
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-ioctl(): Inappropriate ioctl for device
-ioctl returned -1
-Capabilities read fail.
+Attachment extracted from this mbox message.
+Path: attachments/2023-03/message-003336/err.txt
+Original filename: err.txt
+Original content type: text/plain
+Original decoded size: 672 bytes
 
 --nextPart5652698.DvuYhMxLoT
-Content-Disposition: attachment; filename="output.txt"
-Content-Transfer-Encoding: 7Bit
-Content-Type: text/plain; charset="unicode-2-0-utf-8"; name="output.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="output.txt.external.txt"
+X-External-Attachment-Path: attachments/2023-03/message-003336/output.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 9682
 
-ddccontrol version 0.5.1
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Detected monitors :
- - Device: dev:/dev/i2c-6
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
- - Device: dev:/dev/i2c-4
-   DDC/CI supported: No
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
-
-EDID readings:
-	Plug and Play ID: DEL4231 [VESA standard monitor]
-	Input type: Analog
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x00: +/0/65535   [???]
-Control 0x01: +/0/65535   [???]
-Control 0x02: +/2/255 C [New Control Value - Some values changed]
-Control 0x03: +/0/65535   [???]
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x06: +/0/1   [???]
-Control 0x07: +/0/65535   [???]
-Control 0x08: +/0/1 C [Restore Factory Default Color]
-Control 0x09: +/0/65535   [???]
-Control 0x0a: +/0/65535   [???]
-Control 0x0b: +/0/65535   [???]
-Control 0x0c: +/0/65535   [???]
-Control 0x0d: +/0/65535   [???]
-Control 0x0e: +/50/100   [???]
-Control 0x0f: +/0/65535   [???]
-Control 0x10: +/54/100 C [Brightness]
-Control 0x11: +/0/65535   [???]
-Control 0x12: +/75/100 C [Contrast]
-Control 0x13: +/0/65535   [???]
-Control 0x14: +/5/12 C [???]
-Control 0x15: +/0/65535   [???]
-Control 0x16: +/100/100 C [Red maximum level]
-Control 0x17: +/0/65535   [???]
-Control 0x18: +/100/100 C [Green maximum level]
-Control 0x19: +/0/65535   [???]
-Control 0x1a: +/100/100 C [Blue maximum level]
-Control 0x1b: +/0/65535   [???]
-Control 0x1c: +/0/65535   [???]
-Control 0x1d: +/0/65535   [???]
-Control 0x1e: +/0/1   [???]
-Control 0x1f: +/1/1   [???]
-Control 0x20: +/50/100   [???]
-Control 0x21: +/0/65535   [???]
-Control 0x22: +/0/65535   [???]
-Control 0x23: +/0/65535   [???]
-Control 0x24: +/0/65535   [???]
-Control 0x25: +/0/65535   [???]
-Control 0x26: +/0/65535   [???]
-Control 0x27: +/0/65535   [???]
-Control 0x28: +/0/65535   [???]
-Control 0x29: +/0/65535   [???]
-Control 0x2a: +/0/65535   [???]
-Control 0x2b: +/0/65535   [???]
-Control 0x2c: +/0/65535   [???]
-Control 0x2d: +/0/65535   [???]
-Control 0x2e: +/0/65535   [???]
-Control 0x2f: +/0/65535   [???]
-Control 0x30: +/50/100   [???]
-Control 0x31: +/0/65535   [???]
-Control 0x32: +/0/65535   [???]
-Control 0x33: +/0/65535   [???]
-Control 0x34: +/0/65535   [???]
-Control 0x35: +/0/65535   [???]
-Control 0x36: +/0/65535   [???]
-Control 0x37: +/0/65535   [???]
-Control 0x38: +/0/65535   [???]
-Control 0x39: +/0/65535   [???]
-Control 0x3a: +/0/65535   [???]
-Control 0x3b: +/0/65535   [???]
-Control 0x3c: +/0/65535   [???]
-Control 0x3d: +/0/65535   [???]
-Control 0x3e: +/50/100   [???]
-Control 0x3f: +/0/65535   [???]
-Control 0x40: +/0/65535   [???]
-Control 0x41: +/0/65535   [???]
-Control 0x42: +/0/65535   [???]
-Control 0x43: +/0/65535   [???]
-Control 0x44: +/0/65535   [???]
-Control 0x45: +/0/65535   [???]
-Control 0x46: +/0/65535   [???]
-Control 0x47: +/0/65535   [???]
-Control 0x48: +/0/65535   [???]
-Control 0x49: +/0/65535   [???]
-Control 0x4a: +/0/65535   [???]
-Control 0x4b: +/0/65535   [???]
-Control 0x4c: +/0/65535   [???]
-Control 0x4d: +/0/65535   [???]
-Control 0x4e: +/0/65535   [???]
-Control 0x4f: +/0/65535   [???]
-Control 0x50: +/0/65535   [???]
-Control 0x51: +/0/65535   [???]
-Control 0x52: +/226/255 C [???]
-Control 0x53: +/0/65535   [???]
-Control 0x54: +/0/65535   [???]
-Control 0x55: +/0/65535   [???]
-Control 0x56: +/0/65535   [???]
-Control 0x57: +/0/65535   [???]
-Control 0x58: +/0/65535   [???]
-Control 0x59: +/0/65535   [???]
-Control 0x5a: +/0/65535   [???]
-Control 0x5b: +/0/65535   [???]
-Control 0x5c: +/0/65535   [???]
-Control 0x5d: +/0/65535   [???]
-Control 0x5e: +/0/65535   [???]
-Control 0x5f: +/0/65535   [???]
-Control 0x60: +/6939/6939 C [Input Source Select (Main)]
-Control 0x61: +/0/65535   [???]
-Control 0x62: +/100/100   [???]
-Control 0x63: +/0/65535   [???]
-Control 0x64: +/0/65535   [???]
-Control 0x65: +/0/65535   [???]
-Control 0x66: +/0/65535   [???]
-Control 0x67: +/0/65535   [???]
-Control 0x68: +/0/65535   [???]
-Control 0x69: +/0/65535   [???]
-Control 0x6a: +/0/65535   [???]
-Control 0x6b: +/0/65535   [???]
-Control 0x6c: +/0/65535   [???]
-Control 0x6d: +/0/65535   [???]
-Control 0x6e: +/0/65535   [???]
-Control 0x6f: +/0/65535   [???]
-Control 0x70: +/0/65535   [???]
-Control 0x71: +/0/65535   [???]
-Control 0x72: +/0/65535   [???]
-Control 0x73: +/0/65535   [???]
-Control 0x74: +/0/65535   [???]
-Control 0x75: +/0/65535   [???]
-Control 0x76: +/0/65535   [???]
-Control 0x77: +/0/65535   [???]
-Control 0x78: +/0/65535   [???]
-Control 0x79: +/0/65535   [???]
-Control 0x7a: +/0/65535   [???]
-Control 0x7b: +/0/65535   [???]
-Control 0x7c: +/0/65535   [???]
-Control 0x7d: +/0/65535   [???]
-Control 0x7e: +/0/65535   [???]
-Control 0x7f: +/0/65535   [???]
-Control 0x80: +/0/65535   [???]
-Control 0x81: +/0/65535   [???]
-Control 0x82: +/0/65535   [???]
-Control 0x83: +/0/65535   [???]
-Control 0x84: +/0/65535   [???]
-Control 0x85: +/0/65535   [???]
-Control 0x86: +/0/65535   [???]
-Control 0x87: +/0/65535   [???]
-Control 0x88: +/0/65535   [???]
-Control 0x89: +/0/65535   [???]
-Control 0x8a: +/0/65535   [???]
-Control 0x8b: +/0/65535   [???]
-Control 0x8c: +/0/65535   [???]
-Control 0x8d: +/0/65535   [???]
-Control 0x8e: +/0/65535   [???]
-Control 0x8f: +/0/65535   [???]
-Control 0x90: +/0/65535   [???]
-Control 0x91: +/0/65535   [???]
-Control 0x92: +/0/65535   [???]
-Control 0x93: +/0/65535   [???]
-Control 0x94: +/0/65535   [???]
-Control 0x95: +/0/65535   [???]
-Control 0x96: +/0/65535   [???]
-Control 0x97: +/0/65535   [???]
-Control 0x98: +/0/65535   [???]
-Control 0x99: +/0/65535   [???]
-Control 0x9a: +/0/65535   [???]
-Control 0x9b: +/0/65535   [???]
-Control 0x9c: +/0/65535   [???]
-Control 0x9d: +/0/65535   [???]
-Control 0x9e: +/0/65535   [???]
-Control 0x9f: +/0/65535   [???]
-Control 0xa0: +/0/65535   [???]
-Control 0xa1: +/0/65535   [???]
-Control 0xa2: +/0/65535   [???]
-Control 0xa3: +/0/65535   [???]
-Control 0xa4: +/0/65535   [???]
-Control 0xa5: +/0/65535   [???]
-Control 0xa6: +/0/65535   [???]
-Control 0xa7: +/0/65535   [???]
-Control 0xa8: +/0/65535   [???]
-Control 0xa9: +/0/65535   [???]
-Control 0xaa: +/1/4 C [OSD Orientation - Landscape]
-Control 0xab: +/0/65535   [???]
-Control 0xac: +/23264/1 C [???]
-Control 0xad: +/0/65535   [???]
-Control 0xae: +/6000/65535 C [???]
-Control 0xaf: +/0/65535   [???]
-Control 0xb0: +/0/65535   [???]
-Control 0xb1: +/0/65535   [???]
-Control 0xb2: +/1/1 C [???]
-Control 0xb3: +/0/65535   [???]
-Control 0xb4: +/0/65535   [???]
-Control 0xb5: +/0/65535   [???]
-Control 0xb6: +/3/5 C [???]
-Control 0xb7: +/0/65535   [???]
-Control 0xb8: +/0/65535   [???]
-Control 0xb9: +/0/65535   [???]
-Control 0xba: +/0/65535   [???]
-Control 0xbb: +/0/65535   [???]
-Control 0xbc: +/0/65535   [???]
-Control 0xbd: +/0/65535   [???]
-Control 0xbe: +/0/65535   [???]
-Control 0xbf: +/0/65535   [???]
-Control 0xc0: +/158/65535   [???]
-Control 0xc1: +/0/65535   [???]
-Control 0xc2: +/0/65535   [???]
-Control 0xc3: +/0/65535   [???]
-Control 0xc4: +/0/65535   [???]
-Control 0xc5: +/0/65535   [???]
-Control 0xc6: +/17868/65535 C [???]
-Control 0xc7: +/0/65535   [???]
-Control 0xc8: +/34569/39 C [???]
-Control 0xc9: +/16646/65535 C [???]
-Control 0xca: +/2/2 C [???]
-Control 0xcb: +/0/65535   [???]
-Control 0xcc: +/2/13 C [???]
-Control 0xcd: +/0/65535   [???]
-Control 0xce: +/0/65535   [???]
-Control 0xcf: +/0/65535   [???]
-Control 0xd0: +/0/65535   [???]
-Control 0xd1: +/0/65535   [???]
-Control 0xd2: +/0/65535   [???]
-Control 0xd3: +/0/65535   [???]
-Control 0xd4: +/0/65535   [???]
-Control 0xd5: +/0/65535   [???]
-Control 0xd6: +/1/5 C [DPMS Control - On]
-Control 0xd7: +/0/65535   [???]
-Control 0xd8: +/0/65535   [???]
-Control 0xd9: +/0/65535   [???]
-Control 0xda: +/0/65535   [???]
-Control 0xdb: +/0/65535   [???]
-Control 0xdc: +/0/5 C [???]
-Control 0xdd: +/0/65535   [???]
-Control 0xde: +/0/0   [???]
-Control 0xdf: +/513/65535 C [???]
-Control 0xe0: +/0/1 C [???]
-Control 0xe1: +/0/1 C [Power control - Off]
-Control 0xe2: +/0/255 C [???]
-Control 0xe3: +/0/65535   [???]
-Control 0xe4: +/0/2   [???]
-Control 0xe5: +/0/255 C [???]
-Control 0xe6: +/0/65535   [???]
-Control 0xe7: +/46/63 C [???]
-Control 0xe8: +/15/65535 C [???]
-Control 0xe9: +/0/255 C [???]
-Control 0xea: +/64513/65535 C [???]
-Control 0xeb: +/1/1   [???]
-Control 0xec: +/0/65535   [???]
-Control 0xed: +/0/65535   [???]
-Control 0xee: +/0/65535   [???]
-Control 0xef: +/0/255 C [???]
-Control 0xf0: +/0/255 C [???]
-Control 0xf1: +/16651/65535 C [???]
-Control 0xf2: +/0/255 C [???]
-Control 0xf3: +/0/65535   [???]
-Control 0xf4: +/0/65535   [???]
-Control 0xf5: +/0/65535   [???]
-Control 0xf6: +/0/65535   [???]
-Control 0xf7: +/0/65535   [???]
-Control 0xf8: +/0/65535   [???]
-Control 0xf9: +/0/65535   [???]
-Control 0xfa: +/0/65535   [???]
-Control 0xfb: +/0/65535   [???]
-Control 0xfc: +/0/65535   [???]
-Control 0xfd: +/116/255 C [???]
-Control 0xfe: +/0/65535   [???]
-Control 0xff: +/0/65535   [???]
+Attachment extracted from this mbox message.
+Path: attachments/2023-03/message-003336/output.txt
+Original filename: output.txt
+Original content type: text/plain
+Original decoded size: 9682 bytes
 
 --nextPart5652698.DvuYhMxLoT--
 
@@ -1145,63 +766,19 @@ Content-Transfer-Encoding: quoted-printable
 Your program is very helpful. let me know if you need anything else.
 
 --b1_OdGpFJ3pnyUBqIwgmr6DykeVVS0qquFbq6kmkujUg
-Content-Type: text/plain; charset=UTF-8; name=ASUS_VP28U; name=ASUS_VP28U
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename=ASUS_VP28U
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="ASUS_VP28U.external.txt"
+X-External-Attachment-Path: attachments/2023-03/message-003337/ASUS_VP28U
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 2969
 
-ZGRjY29udHJvbCB2ZXJzaW9uIDAuNS4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
-aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
-IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
-Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
-dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KCkRldGVj
-dGVkIG1vbml0b3JzIDoKIC0gRGV2aWNlOiBkZXY6L2Rldi9pMmMtNgogICBEREMvQ0kgc3VwcG9y
-dGVkOiBZZXMKICAgTW9uaXRvciBOYW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQg
-dHlwZTogRGlnaXRhbAogIChBdXRvbWF0aWNhbGx5IHNlbGVjdGVkKQogLSBEZXZpY2U6IGRldjov
-ZGV2L2kyYy00CiAgIEREQy9DSSBzdXBwb3J0ZWQ6IFllcwogICBNb25pdG9yIE5hbWU6IFZFU0Eg
-c3RhbmRhcmQgbW9uaXRvcgogICBJbnB1dCB0eXBlOiBEaWdpdGFsClJlYWRpbmcgRURJRCBhbmQg
-aW5pdGlhbGl6aW5nIEREQy9DSSBhdCBidXMgZGV2Oi9kZXYvaTJjLTYuLi4KCkVESUQgcmVhZGlu
-Z3M6CglQbHVnIGFuZCBQbGF5IElEOiBBVVMyOEIxIFtWRVNBIHN0YW5kYXJkIG1vbml0b3JdCglJ
-bnB1dCB0eXBlOiBBbmFsb2cKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5H
-ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KVGhlcmUgaXMgbm8gc3VwcG9ydCBmb3Ig
-eW91ciBtb25pdG9yIGluIHRoZSBkYXRhYmFzZSwgYnV0IGRkY2NvbnRyb2wgaXMKdXNpbmcgYSBi
-YXNpYyBnZW5lcmljIHByb2ZpbGUuIE1hbnkgY29udHJvbHMgd2lsbCBub3QgYmUgc3VwcG9ydGVk
-LCBhbmQKc29tZSBjb250cm9scyBtYXkgbm90IHdvcmsgYXMgZXhwZWN0ZWQuClBsZWFzZSB1cGRh
-dGUgZGRjY29udHJvbC1kYiwgb3IsIGlmIHlvdSBhcmUgYWxyZWFkeSB1c2luZyB0aGUgbGF0ZXN0
-CnZlcnNpb24sIHBsZWFzZSBzZW5kIHRoZSBvdXRwdXQgb2YgdGhlIGZvbGxvd2luZyBjb21tYW5k
-IHRvCmRkY2NvbnRyb2wtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0OgoKTEFORz0gTENfQUxM
-PSBkZGNjb250cm9sIC1wIC1jIC1kCgpUaGFuayB5b3UuCj09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpDYXBhYmls
-aXRpZXM6CgpDb250cm9scyAodmFsaWQvY3VycmVudC9tYXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVl
-IG5hbWVdOgpDb250cm9sIDB4MDI6ICsvMS8yIEMgW05ldyBDb250cm9sIFZhbHVlIC0gTm8gY2hh
-bmdlc10KQ29udHJvbCAweDA0OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdHNdCkNv
-bnRyb2wgMHgwNTogKy8wLzEgQyBbUmVzdG9yZSBCcmlnaHRuZXNzIGFuZCBDb250cmFzdF0KQ29u
-dHJvbCAweDA4OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl0KQ29udHJv
-bCAweDBiOiArLzIxMDAvNjU1MzUgICBbPz8/XQpDb250cm9sIDB4MGM6ICsvMTEvMTEgICBbPz8/
-XQpDb250cm9sIDB4MTA6ICsvMTAwLzEwMCBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTI6ICsv
-MTAwLzEwMCBDIFtDb250cmFzdF0KQ29udHJvbCAweDE0OiArLzExLzExIEMgWz8/P10KQ29udHJv
-bCAweDE2OiArLzEwMC8xMDAgQyBbUmVkIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxODogKy8x
-MDAvMTAwIEMgW0dyZWVuIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxYTogKy8xMDAvMTAwIEMg
-W0JsdWUgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDUyOiArLzAvMjU1IEMgWz8/P10KQ29udHJv
-bCAweDYwOiArLzE1LzIwIEMgW0lucHV0IFNvdXJjZSBTZWxlY3QgKE1haW4pXQpDb250cm9sIDB4
-NjI6ICsvMTAwLzEwMCBDIFtBdWRpbyBTcGVha2VyIFZvbHVtZSBBZGp1c3RdCkNvbnRyb2wgMHg2
-YzogKy81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4NmU6ICsvNTAvMTAwICAgWz8/P10KQ29udHJv
-bCAweDcwOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHg4NjogKy8yLzEyIEMgWz8/P10KQ29u
-dHJvbCAweDg3OiArLzQwLzEwMCBDIFs/Pz9dCkNvbnRyb2wgMHg4YTogKy81MC8xMDAgQyBbPz8/
-XQpDb250cm9sIDB4OGQ6ICsvMi8yIEMgWz8/P10KQ29udHJvbCAweGE4OiArLzEvMyAgIFs/Pz9d
-CkNvbnRyb2wgMHhhYzogKy8yMjI4LzIgQyBbPz8/XQpDb250cm9sIDB4YWU6ICsvNjAwMC82NTUz
-NSBDIFs/Pz9dCkNvbnRyb2wgMHhiMDogKy8xLzIgICBbPz8/XQpDb250cm9sIDB4YjU6ICsvMC8x
-IEMgWz8/P10KQ29udHJvbCAweGI2OiArLzMvNSBDIFs/Pz9dCkNvbnRyb2wgMHhjNjogKy8xMzEv
-MjU1IEMgWz8/P10KQ29udHJvbCAweGM4OiArLzUvNjUzMDIgQyBbPz8/XQpDb250cm9sIDB4Yzk6
-ICsvMC8wICAgWz8/P10KQ29udHJvbCAweGNjOiArLzIvNDkgQyBbPz8/XQpDb250cm9sIDB4ZDY6
-ICsvMS80IEMgW0RQTVMgQ29udHJvbCAtIE9uXQpDb250cm9sIDB4ZGM6ICsvMTcvMzYgQyBbPz8/
-XQpDb250cm9sIDB4ZGY6ICsvNTE0LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGUwOiArLzIvMyBD
-IFs/Pz9dCkNvbnRyb2wgMHhlMTogKy8wLzIgQyBbUG93ZXIgY29udHJvbCAtIE9mZl0KQ29udHJv
-bCAweGUyOiArLzYwLzEwMCBDIFs/Pz9dCkNvbnRyb2wgMHhlMzogKy8yNS8xMDAgQyBbPz8/XQpD
-b250cm9sIDB4ZTQ6ICsvMC8xIEMgWz8/P10KQ29udHJvbCAweGU1OiArLzAvMSAgIFs/Pz9dCkNv
-bnRyb2wgMHhlNjogKy8wLzUgQyBbPz8/XQpDb250cm9sIDB4ZTc6ICsvMC8yNTUgQyBbPz8/XQpD
-b250cm9sIDB4ZTk6ICsvMC8xIEMgWz8/P10KQ29udHJvbCAweGVhOiArLzAvMSBDIFs/Pz9dCkNv
-bnRyb2wgMHhlYjogKy8wLzEgQyBbPz8/XQpDb250cm9sIDB4ZmU6ICsvNjU1MzUvMTY4OTcgICBb
-Pz8/XQo=
+Attachment extracted from this mbox message.
+Path: attachments/2023-03/message-003337/ASUS_VP28U
+Original filename: ASUS_VP28U
+Original content type: text/plain
+Original decoded size: 2969 bytes
 
 --b1_OdGpFJ3pnyUBqIwgmr6DykeVVS0qquFbq6kmkujUg--
 

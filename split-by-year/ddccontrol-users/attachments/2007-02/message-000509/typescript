@@ -1,0 +1,74 @@
+Script started on Út  6. únor 2007, 08:19:44 CET
+norraena:~# LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.Can't convert value to int, invalid CAPS (buf=pa, pos=51).
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/NEC6699.xml"
+Document not parsed successfully.
+....
+Detected monitors :
+ - Device: pci:01:00.0-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-1...
+Can't convert value to int, invalid CAPS (buf=pa, pos=51).
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/NEC6699.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: NEC6699 [VESA standard monitor]
+	Input type: Digital
+[5;31m=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================[0m
+
+Capabilities:
+Can't convert value to int, invalid CAPS (buf=pa, pos=51).
+Raw output: (port(monitor)type(LCD)cmds(01 02 03 07 0C F3)vcp(page0(02 04 05 08 10 12 14(01 02 04 06 07 08) 16 18 1A 68(01 02 03 04 05 06 07 09) 8C A8 B0 B6 D6 DF E3 F4 F9(01 02 03 04 05) FA FC FF) page2(38 39 3B 47 64 65))asset_eep(40)mccs_ver(2.0)mpu_ver(1.0.00))
+Parsed output: 
+	VCP: 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/255   [???]
+Control 0x04: +/0/65535   [???]
+Control 0x05: +/0/65535   [???]
+Control 0x08: +/0/65535   [???]
+Control 0x10: +/55/128   [???]
+Control 0x12: +/34/70   [???]
+Control 0x14: +/2/65535   [???]
+Control 0x16: +/203/255   [???]
+Control 0x18: +/235/255   [???]
+Control 0x1a: +/255/255   [???]
+Control 0x1e: +/0/65535   [???]
+Control 0x68: +/1/65535   [???]
+Control 0x8c: +/7/48   [???]
+Control 0xa8: +/1/65535   [???]
+Control 0xb0: +/0/65535   [???]
+Control 0xb6: +/3/65535   [???]
+Control 0xd6: +/1/4   [???]
+Control 0xdf: +/512/65535   [???]
+Control 0xe3: +/0/65535   [???]
+Control 0xf4: +/512/65535   [???]
+Control 0xf9: +/1/5   [???]
+Control 0xfa: +/4520/65535   [???]
+Control 0xfc: +/0/65535   [???]
+Control 0xff: +/2029/65535   [???]
+norraena:~# exit
+
+Script done on Út  6. únor 2007, 08:20:17 CET

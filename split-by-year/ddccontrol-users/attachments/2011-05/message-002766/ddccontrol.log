@@ -1,0 +1,79 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors....i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+i2c-algo-bit.o: readbytes: i2c_inb timed out.
+
+Detected monitors :
+ - Device: pci:01:00.0-0
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+ - Device: pci:01:00.0-1
+   DDC/CI supported: No
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-0...
+
+EDID readings:
+	Plug and Play ID: ACR0025 [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model(V193W)cmds(01 02 03 07 0C 4E F3 E3)vcp(04 05 06 08 0E 10 12 14(01 05 08 0B) 16 18 1A 1E 20 30 3E C6 B6 DF FA(00 01 02) FB FC FD FE(00 01 02 04) FF)mswhql(1)mccs_ver(2.0)asset_eep(32)mpu_ver(01))
+Parsed output: 
+	VCP: 04 05 06 08 0e 10 12 14 16 18 1a 1e 20 30 3e b6 c6 df fa fb fc fd fe ff 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0e: +/50/100 C [Image Lock Coarse (Clock)]
+Control 0x10: +/77/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x16: +/50/100 C [Red maximum level]
+Control 0x18: +/50/100 C [Green maximum level]
+Control 0x1a: +/50/100 C [Blue maximum level]
+Control 0x1e: +/0/1 C [Automatically adjust]
+Control 0x20: +/50/100 C [Horizontal Position]
+Control 0x30: +/51/100 C [Vertical Position]
+Control 0x3e: +/96/100 C [Image Lock Fine (Clock Phase)]
+Control 0x60: +/1/1   [???]
+Control 0xb6: +/3/4 C [???]
+Control 0xc6: +/120/65535 C [???]
+Control 0xdf: +/512/65535 C [???]
+Control 0xfa: +/0/65535 C [???]
+Control 0xfb: +/5/65535 C [???]
+Control 0xfc: +/12336/65535 C [???]
+Control 0xfd: +/12336/65535 C [???]
+Control 0xfe: +/0/65535 C [???]
+Control 0xff: +/0/1 C [???]

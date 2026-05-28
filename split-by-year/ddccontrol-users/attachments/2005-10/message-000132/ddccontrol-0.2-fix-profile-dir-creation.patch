@@ -1,0 +1,34 @@
+Index: src/lib/profile.c
+===================================================================
+RCS file: /cvsroot/ddccontrol/ddccontrol/src/lib/Attic/profile.c,v
+retrieving revision 1.5
+diff -u -r1.5 profile.c
+--- src/lib/profile.c	13 Aug 2005 12:20:30 -0000	1.5
++++ src/lib/profile.c	25 Oct 2005 18:48:00 -0000
+@@ -58,6 +58,8 @@
+ 
+ #define RETRYS 3 // number of read retrys
+ 
++static int ddcci_create_profiledir();
++
+ struct profile* ddcci_create_profile(struct monitor* mon, const char* address, int size)
+ {
+ 	int retry, i;
+@@ -138,6 +140,8 @@
+ 	struct profile** next = &mon->profiles;
+ 	struct profile* profile;
+ 	
++	ddcci_create_profiledir();
++
+ 	home     = getenv(N_("HOME"));
+ 	trailing = (home[strlen(home)-1] == '/');
+ 	
+@@ -194,6 +198,8 @@
+ 	xmlChar *tmp;
+ 	char *endptr;
+ 	int itmp;
++
++	ddcci_create_profiledir();
+ 	
+ 	struct profile* profile = malloc(sizeof(struct profile));
+ 	memset(profile, 0, sizeof(struct profile));

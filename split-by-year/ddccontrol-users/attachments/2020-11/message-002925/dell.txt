@@ -1,0 +1,92 @@
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.......
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-5
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+
+EDID readings:
+	Plug and Play ID: DEL41B3 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model(U2720Q)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 10 12 14(01 04 05 06 08 09 0B 0C) 16 18 1A 52 60( 11 1B 0F) AA(01 02 03 04) AC AE B2 B6 C6 C8 C9 CC(02 03 04 06 09 0A 0D 0E) D6(01 04 05) DC(00 03 05) DF E0 E1 E2(00 02 04 0B 0C 0D 0F 10 11 13 14 1B 1D 23 24 27 3A ) EA F0(00 05 06 0A 0C 31 32 34 36) F1 F2 FD)mccs_ver(2.1)mswhql(1))
+Parsed output: 
+	VCP: 02 04 05 08 10 12 14 16 18 1a 52 60 aa ac ae b2 b6 c6 c8 c9 cc d6 dc df e0 e1 e2 ea f0 f1 f2 fd 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [New Control Value - Some values changed]
+Control 0x04: +/0/255 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/255   [???]
+Control 0x08: +/0/255 C [Restore Factory Default Color]
+Control 0x0b: +/0/24028   [???]
+Control 0x0c: +/1/255   [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/75/100 C [Brightness]
+Control 0x12: +/75/100 C [Contrast]
+Control 0x14: +/5/12 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/2   [???]
+Control 0x20: +/0/100   [???]
+Control 0x30: +/0/100   [???]
+Control 0x3e: +/50/100   [???]
+Control 0x52: +/16/255 C [???]
+Control 0x60: +/3855/14 C [Input Source Select (Main)]
+Control 0x62: +/50/100   [???]
+Control 0x6c: +/50/255   [???]
+Control 0x6e: +/50/255   [???]
+Control 0x70: +/50/255   [???]
+Control 0xa8: +/0/3   [???]
+Control 0xaa: +/1/255 C [OSD Orientation - Landscape]
+Control 0xac: +/2228/2 C [???]
+Control 0xae: +/5999/0 C [???]
+Control 0xb2: +/1/8 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/5/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc8: +/22021/0 C [???]
+Control 0xc9: +/10499/65535 C [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/2/14 C [???]
+Control 0xd6: +/1/255 C [DPMS Control - On]
+Control 0xdc: +/0/255 C [???]
+Control 0xdf: +/513/255 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xe2: +/0/255 C [???]
+Control 0xe3: +/0/1   [???]
+Control 0xea: +/65024/65024 C [???]
+Control 0xf0: +/0/255 C [???]
+Control 0xf1: +/11/11 C [???]
+Control 0xf2: +/0/65280 C [???]
+Control 0xfa: +/0/65535   [???]
+Control 0xfd: +/116/65535 C [???]

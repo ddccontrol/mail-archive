@@ -76,39 +76,19 @@ Graphics Controller (rev 0c)
 Dmitry Guryanov
 
 --Boundary-00=_1nJ0H9vu46hRd04
-Content-Type: text/x-diff; charset="us-ascii";
-	name="ddcpci-intel810-965-support.patch"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: inline;
-	filename="ddcpci-intel810-965-support.patch"
+Content-Disposition: attachment; filename="ddcpci-intel810-965-support.patch.external.txt"
+X-External-Attachment-Path: attachments/2008-03/message-000115/ddcpci-intel810-965-support.patch
+X-External-Attachment-Content-Type: text/x-diff
+X-External-Attachment-Size: 883
 
-Index: src/ddcpci/intel810.c
-===================================================================
---- src/ddcpci/intel810.c	(revision 797)
-+++ src/ddcpci/intel810.c	(working copy)
-@@ -144,6 +144,7 @@
- 	case 0x2776: // 945G Integrated Graphics Controller
- 	case 0x2782: // 82915G Express Chipset Family Graphics Controller
- 	case 0x2792: // Mobile 915GM/GMS/910GML Express Graphics Controller
-+	case 0x2A02: // Mobile GM965/GL960 Graphics Controller (X3100) 
- 	case 0x3577: // 82830 CGC [Chipset Graphics Controller]
- 	case 0x3582: // 82852/855GM Integrated Graphics Device
- 	case 0x7121: // 82810 CGC [Chipset Graphics Controller]
-@@ -172,8 +173,12 @@
- 		i810_close(i810_card);
- 		return 0;
- 	}
--	
--	data->length = 512*1024; //MMIO_SIZE
-+
-+	// MMIO_SIZE
-+	if (dev->device_id == 0x2A02)
-+		data->length = 1024*1024;
-+	else
-+		data->length = 512*1024;
- 	data->memory = 0;
- 	
- 	int reg;
+Attachment extracted from this mbox message.
+Path: attachments/2008-03/message-000115/ddcpci-intel810-965-support.patch
+Original filename: ddcpci-intel810-965-support.patch
+Original content type: text/x-diff
+Original decoded size: 883 bytes
 
 --Boundary-00=_1nJ0H9vu46hRd04--
 
@@ -165,26 +145,20 @@ Regards,
 Till
 
 --nextPart1537215.pThYmlQf5G
-Content-Type: application/pgp-signature; name=signature.asc 
 Content-Description: This is a digitally signed message part.
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2008-08/message-000116/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 827
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.7 (GNU/Linux)
-
-iQIVAwUASJ2m8mo6ELMcEJUXAQqXTg/+KP27h165D2oJHdHudGH5ctqIVpS4DD0/
-7mAAKonJJA0wOqC3WZ7u26YsreS0z94Jps8KVZFwbNYusPjt9pltbIQrqk/x//Nr
-YaZzTwBBel4B9ElUb/bwXptcjFxKmo65JHnubNQP47CgCJWuIGHbwvE+UiAcjfZS
-gFu4ckuGe8fJNrl7WHDSLSPDQNTKGwgHvWayWyeTeeXk4vvKT/5kUfmRIsgIW0/q
-u6VtUomwrIY+vjV1zjn2QKshHZDxaVpLHor8rb55NKpGau+lmoqtaL4L4HYkhY1T
-BxMvKt2RtWRNauKGS2uXx8qWOLCStL/qaMvDmzi6eHnD3iCzRg3FcO2+1TH9NYMz
-nzjuSJvF0j+08OZxhT5At64HdJz7rFkAV0Wst7yYCahVAfKyMaqhCQKB1vK2zNXX
-HpQu+3Ix/7B9XqKFEQT+cekCA59RYm6A42Bm/GBRxvFOUlMyPRhpkrOCSFDqWcdb
-JQivWwR8vUPEThyaeGk9xYZ+E7MQy9f3Jfsv6mg2Ho/LavOLmIwP24VsYqwTcLBG
-oxr6hPx8SbCK+pA6t5tnToTLkuB2LRdvD+mcnkxDd9THntA0S6Dsz+G9zLzckg9G
-ks3KBmiLyYCUJNJkrQdRKGl5gtuolg3LUMRMbvq3r59qpGd5lnLOi878SyWBiojf
-K1N4+FiUWmc=
-=JoCd
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2008-08/message-000116/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 827 bytes
 
 --nextPart1537215.pThYmlQf5G--
 

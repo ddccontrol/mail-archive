@@ -1,0 +1,95 @@
+ddccontrol version 0.5.1
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELA07B.xml"
+Document not parsed successfully.
+
+EDID readings:
+        Plug and Play ID: DELA07B [VESA standard monitor]
+        Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [New Control Value - Some values changed]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/0   [???]
+Control 0x0e: +/213/100   [???]
+Control 0x10: +/85/100 C [Brightness]
+Control 0x12: +/75/100 C [Contrast]
+Control 0x14: +/12/12 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/1/1   [???]
+Control 0x20: +/122/100   [???]
+Control 0x30: +/165/100   [???]
+Control 0x3e: +/123/100   [???]
+Control 0x52: +/16/255 C [???]
+Control 0x60: +/15/15 C [Input Source Select (Main)]
+Control 0x6c: +/15/15   [???]
+Control 0x6e: +/15/15   [???]
+Control 0x70: +/15/15   [???]
+Control 0xaa: +/1/255 C [OSD Orientation - Landscape]
+Control 0xac: +/8664/1 C [???]
+Control 0xae: +/6000/65535 C [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/6639/65535   [???]
+Control 0xc6: +/17868/65535 C [???]
+Control 0xc8: +/34313/36 C [???]
+Control 0xc9: +/0/65535 C [???]
+Control 0xca: +/1/2   [???]
+Control 0xcc: +/2/11   [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdc: +/0/5 C [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe0: +/0/1 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]
+Control 0xf0: +/0/255 C [???]
+Control 0xfd: +/99/255 C [???]

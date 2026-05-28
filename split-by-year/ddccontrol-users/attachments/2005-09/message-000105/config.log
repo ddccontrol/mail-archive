@@ -1,0 +1,111 @@
+
+configure:8532: checking for XineramaQueryExtension in -lXinerama
+configure:8562: gcc -o conftest -g -O2 -Wall  -DDATADIR="\"${prefix}/share/ddccontrol-db\"" -DBINDIR="\"${exec_prefix}/bin\""   conftest.c -lXinerama  -L/usr/X11R6/lib -lpci  >&5
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `find_display':
+: undefined reference to `XextCreateExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `find_display':
+: undefined reference to `XextFindDisplay'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `find_display':
+: undefined reference to `XextAddDisplay'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `close_display':
+: undefined reference to `XextRemoveDisplay'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXQueryVersion':
+: undefined reference to `XMissingExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXQueryVersion':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXQueryVersion':
+: undefined reference to `_XFlush'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetState':
+: undefined reference to `XMissingExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetState':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetState':
+: undefined reference to `_XFlush'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenCount':
+: undefined reference to `XMissingExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenCount':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenCount':
+: undefined reference to `_XFlush'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenSize':
+: undefined reference to `XMissingExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenSize':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XPanoramiXGetScreenSize':
+: undefined reference to `_XFlush'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaIsActive':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaIsActive':
+: undefined reference to `_XFlush'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaQueryScreens':
+: undefined reference to `XMissingExtension'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaQueryScreens':
+: undefined reference to `_XReply'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaQueryScreens':
+: undefined reference to `_XRead'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaQueryScreens':
+: undefined reference to `_XEatData'
+/usr/X11R6/lib/libXinerama.a(Xinerama.o): In function `XineramaQueryScreens':
+: undefined reference to `_XFlush'
+collect2: ld returned 1 exit status
+configure:8568: $? = 1
+configure: failed program was:
+| /* confdefs.h.  */
+| 
+| #define PACKAGE_NAME "DDC/CI control tool"
+| #define PACKAGE_TARNAME "ddccontrol"
+| #define PACKAGE_VERSION "0.2"
+| #define PACKAGE_STRING "DDC/CI control tool 0.2"
+| #define PACKAGE_BUGREPORT "DDCControl users list <ddccontrol-users@lists.sourceforge.net>"
+| #define PACKAGE "ddccontrol"
+| #define VERSION "0.2"
+| #define ENABLE_NLS 1
+| #define HAVE_GETTEXT 1
+| #define HAVE_DCGETTEXT 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_ERRNO_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_FCNTL_H 1
+| #define HAVE_SYS_IOCTL_H 1
+| #define HAVE_DIRENT_H 1
+| #define HAVE_LINUX_TYPES_H 1
+| #define HAVE_BUGGY_I2C_DEV 1
+| #define _GNU_SOURCE 1
+| #define HAVE_PCI_PCI_H 1
+| #define HAVE_LIBPCI 1
+| #define HAVE_DDCPCI 1
+| /* end confdefs.h.  */
+| 
+| /* Override any gcc2 internal prototype to avoid an error.  */
+| #ifdef __cplusplus
+| extern "C"
+| #endif
+| /* We use char because int might match the return type of a gcc2
+|    builtin and then its argument prototype would still apply.  */
+| char XineramaQueryExtension ();
+| int
+| main ()
+| {
+| XineramaQueryExtension ();
+|   ;
+|   return 0;
+| }
+configure:8594: result: no
+configure:9069: creating ./config.status
+

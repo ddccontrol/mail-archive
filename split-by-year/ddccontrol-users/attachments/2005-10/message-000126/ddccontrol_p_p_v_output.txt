@@ -1,0 +1,146 @@
+ddccontrol version 0.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat 
+(nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU 
+General Public License.
+
+ddcpci initing...
+Starting /usr/local/bin/ddcpci 1 1124130029 &...
+Probing for available monitors...
+Found PCI device (pci:01:00.0-0)
+Found PCI device (pci:01:00.0-1)
+Found PCI device (pci:01:00.0-2)
+Device: pci:01:00.0-0
+ddcci_open returned -2
+Device: pci:01:00.0-1
+ddcci_open returned -2
+Device: pci:01:00.0-2
+0000: 00 ff ff ff ff ff ff 00 4c 2d 98 01 39 31 45 44 | ........L-..91ED
+0010: 1f 0f 01 03 0e 26 1e 78 2a ee 95 a3 54 4c 99 26 | .....&.x*...TL.&
+0020: 0f 50 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01 | .PT......@...76...
+0030: 01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 | ......0*..Q.*@0p
+0040: 13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4c 1e | ..x-.........8L.
+0050: 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 | Q...      .....S
+0060: 79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff | yncMaster.  ....
+0070: 00 48 31 49 59 38 30 30 32 34 34 0a 20 20 00 08 | .H1IY800244.  ..
+Control osd has been discarded by the caps string.
+Control power has been discarded by the caps string.
+ddcci_open returned 0
+Detected monitors :
+- Device: pci:01:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: Samsung SyncMaster 193P Plus (VGA)
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+Device: pci:01:00.0-2
+0000: 00 ff ff ff ff ff ff 00 4c 2d 98 01 39 31 45 44 | ........L-..91ED
+0010: 1f 0f 01 03 0e 26 1e 78 2a ee 95 a3 54 4c 99 26 | .....&.x*...TL.&
+0020: 0f 50 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01 | .PT......@...76...
+0030: 01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 | ......0*..Q.*@0p
+0040: 13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4c 1e | ..x-.........8L.
+0050: 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 | Q...      .....S
+0060: 79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff | yncMaster.  ....
+0070: 00 48 31 49 59 38 30 30 32 34 34 0a 20 20 00 08 | .H1IY800244.  ..
+Serial number: 1145385273
+Manufactured: Week 31, 2005
+EDID version: 1.3
+Maximum size: 38 x 30 (cm)
+Control osd has been discarded by the caps string.
+Control power has been discarded by the caps string.
+
+EDID readings:
+	Plug and Play ID: SAM0198 [Samsung SyncMaster 193P Plus (VGA)]
+	Input type: Analog
+
+= Samsung SyncMaster 193P Plus (VGA)
+>Color settings
+	> Brightness and Contrast
+		> id=brightness, name=Brightness, address=0x10, delay=-1ms, type=0
+		  supported, value=39, maximum=100
+		> id=contrast, name=Contrast, address=0x12, delay=-1ms, type=0
+		  supported, value=45, maximum=100
+		> id=magicbright, name=Magic Bright Mode, address=0xdc, delay=-1ms, type=2
+		  Possible values:
+			> id=text - name=Text, value=1
+			> id=internet - name=Internet, value=2
+			> id=entertain - name=Entertain, value=3
+			> id=custom - name=Custom, value=4
+		  supported, value=6, maximum=6
+	> Color maximum level
+		> id=red, name=Red maximum level, address=0x16, delay=-1ms, type=0
+		  supported, value=32, maximum=64
+		> id=green, name=Green maximum level, address=0x18, delay=-1ms, type=0
+		  supported, value=8, maximum=64
+		> id=blue, name=Blue maximum level, address=0x1a, delay=-1ms, type=0
+		  supported, value=32, maximum=64
+	> Various color settings
+		> id=colorpreset, name=Color Preset, address=0xe0, delay=-1ms, type=2
+		  Possible values:
+			> id=normal - name=Normal, value=0
+			> id=warm - name=Warm, value=1
+			> id=cool - name=Cool, value=2
+		  supported, value=0, maximum=9
+>Position and size
+	> Position
+		> id=hpos, name=Horizontal Position, address=0x20, delay=-1ms, type=0
+		  supported, value=28, maximum=100
+		> id=vpos, name=Vertical Position, address=0x30, delay=-1ms, type=0
+		  supported, value=49, maximum=70
+	> Automatic adjustments
+		> id=auto, name=Automatically adjust, address=0x1e, delay=-1ms, type=1
+		  Possible values:
+			> id=pos - name=H/V Position, value=1
+		  supported, value=0, maximum=2
+>Screen purity
+	> Various
+		> id=coarse, name=Image Lock Coarse (Clock), address=0xe, delay=-1ms, 
+type=0
+		  supported, value=80, maximum=160
+		> id=fine, name=Image Lock Fine (Clock Phase), address=0x3e, delay=-1ms, 
+type=0
+		  supported, value=7, maximum=31
+>Others
+	> Restore defaults
+		> id=defaults, name=Restore Factory Defaults, address=0x4, delay=-1ms, 
+type=1
+		  Possible values:
+			> id=default - nam==>ddcpci is quitting.
+e=Restore Factory Defaults, value=1
+		  supported, value=0, maximum=1
+		> id=defaultluma, name=Restore Brightness and Contrast, address=0x5, 
+delay=-1ms, type=1
+		  Possible values:
+			> id=default - name=Restore Brightness and Contrast, value=1
+		  supported, value=0, maximum=1
+		> id=defaultgeom, name=Restore Factory Default Geometry, address=0x6, 
+delay=-1ms, type=1
+		  Possible values:
+			> id=default - name=Restore Factory Default Geometry, value=1
+		  supported, value=0, maximum=1
+		> id=defaultcolor, name=Restore Factory Default Color, address=0x8, 
+delay=-1ms, type=1
+		  Possible values:
+			> id=default - name=Restore Factory Default Color, value=1
+		  supported, value=0, maximum=1
+		> id=settings, name=Settings, address=0xb0, delay=-1ms, type=1
+		  Possible values:
+			> id=store - name=Save Current Settings, value=1
+			> id=restorefactory - name=Restore Factory Settings, value=2
+		  supported, value=0, maximum=2
+	> Input settings
+		> id=inputsource, name=Input Source Select, address=0x60, delay=-1ms, 
+type=2
+		  Possible values:
+			> id=analog - name=Analog, value=1
+			> id=digital - name=Digital, value=3
+		  supported, value=1, maximum=3
+	> Power control
+		> id=dpms, name=DPMS Control, address=0xd6, delay=-1ms, type=2
+		  Possible values:
+			> id=on - name=On, value=1
+			> id=standby - name=Standby, value=4
+		  supported, value=1, maximum=4
+ddcpci being released...
+

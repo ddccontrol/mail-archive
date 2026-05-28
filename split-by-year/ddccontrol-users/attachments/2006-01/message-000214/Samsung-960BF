@@ -1,0 +1,67 @@
+ddccontrol version 0.3
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: pci:05:00.0-0
+   DDC/CI supported: Yes
+   Monitor Name: Unknown monitor (SAM01E5)
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:05:00.0-0...
+
+EDID readings:
+	Plug and Play ID: SAM01E5 [(null)]
+	Input type: Digital
+
+Capabilities:
+(type(LCD)vcp(04 05 10 12 16 18 1A 60(1 3) B0(1 2) B6 C6 C8 C9 D6(1 4) DC(1 2 3 4 5 6) F8 F0(0 1 2 3 4) F2 F3 87 F9 FA FB FC FD FE E0(0 1 2 3)))
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x01: +/128/255 [???]
+Control 0x04: +/0/1 [???]
+Control 0x05: +/0/1 [???]
+Control 0x06: +/0/1 [???]
+Control 0x07: +/3/3 [???]
+Control 0x08: +/0/1 [???]
+Control 0x0e: +/80/160 [???]
+Control 0x10: +/50/100 [???]
+Control 0x12: +/50/100 [???]
+Control 0x16: +/32/64 [???]
+Control 0x18: +/32/64 [???]
+Control 0x1a: +/32/64 [???]
+Control 0x1e: +/0/2 [???]
+Control 0x20: +/50/100 [???]
+Control 0x30: +/35/70 [???]
+Control 0x3e: +/0/31 [???]
+Control 0x60: +/3/3 [???]
+Control 0x62: +/25/50 [???]
+Control 0x6c: +/128/255 [???]
+Control 0x6e: +/128/255 [???]
+Control 0x70: +/128/255 [???]
+Control 0x87: +/15/25 [???]
+Control 0xb0: +/0/2 [???]
+Control 0xb6: +/3/8 [???]
+Control 0xc6: +/1/1 [???]
+Control 0xc8: +/5/16 [???]
+Control 0xc9: +/1/0 [???]
+Control 0xca: +/2/2 [???]
+Control 0xcc: +/2/11 [???]
+Control 0xd6: +/1/4 [???]
+Control 0xdc: +/6/6 [???]
+Control 0xdf: +/512/0 [???]
+Control 0xe0: +/3/3 [???]
+Control 0xe1: +/1/1 [???]
+Control 0xe2: +/0/1 [???]
+Control 0xed: +/100/100 [???]
+Control 0xee: +/100/100 [???]
+Control 0xef: +/100/100 [???]
+Control 0xf0: +/3/4 [???]
+Control 0xf2: +/0/2 [???]
+Control 0xf8: +/0/3 [???]
+Control 0xf9: +/50/100 [???]
+Control 0xfa: +/50/100 [???]
+Control 0xfb: +/128/255 [???]
+Control 0xfc: +/11/30 [???]

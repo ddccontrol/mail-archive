@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!--- "Standard" controls -->
+<monitor name="GIGABYTE M27Q" init="standard">
+	<controls>
+		<!-- Can write, no clue what it does -->
+		<control id="0x02" address="0x02">
+			<value value="1" id="1"/>
+			<value value="2" id="2"/>
+		</control>
+
+		<control id="defaults" address="0x04" delay="2000"/>
+
+		<!-- Reset both color and luma -->
+		<control id="defaultluma" address="0x05" delay="2000"/>
+		<control id="defaultcolor" address="0x08" delay="2000"/>
+
+		<!-- Control 0x0b: +/50/65535 C [???]
+			Not sure what this does, can't change it ?-->
+
+		<control id="colortemp" address="0x0c">
+			<value value="40"  id="warm"/>
+			<value value="70"  id="normal"/>
+			<value value="126" id="cool"/>
+		</control>
+
+		<control id="brightness" address="0x10"/>
+		<control id="contrast" address="0x12"/>
+
+		<!-- Best to use colortemp, this is sort of broken -->
+		<control id="colorpreset" address="0x14">
+			<!-- Some weird mappings going on
+				Internal values:
+					Cool   > 4
+					Normal > 5
+					Warm   > 6
+					User   > 7
+					sRGB   > 8
+					???    > 10
+				Write -> Result:
+					(After starting from 7)
+					 0 >  7 ;  1 >  8 ;  2 >  7
+					 3 >  7 ;  4 >  6 ;  5 >  5
+					 6 > 10 ;  7 > 10 ;  8 >  4
+					 9 >  7 ; 10 > 10 ; 11 >  7
+			-->
+			<value value="8"   id="(4) cool"/>
+			<value value="5"   id="(5) normal"/>
+			<value value="4"   id="(6) warm"/>
+			<value value="11"  id="(7) user1"/>
+			<value value="1"   id="(8) srgb"/>
+			<value value="10"  id="(10) Unsupported"/>
+		</control>
+
+		<control id="red" address="0x16"/>
+		<control id="green" address="0x18"/>
+		<control id="blue" address="0x1A"/>
+		
+		<!-- Control 0x52: +/0/255 C [???]
+			Not sure what this does, can't change it ?-->
+
+		<control id="inputsource" address="0x60">
+			<value value="17"   id="hdmi1"/>
+			<value value="18"   id="hdmi2"/>
+			<value value="15"   id="dp"/>
+			<value value="16"   id="usb-c"/>
+		</control>
+
+		<control id="audiospeakervolume" address="0x62"/>
+
+		<control id="redblack" address="0x6C"/>
+		<control id="greenblack" address="0x6E"/>
+		<control id="blueblack" address="0x70"/>
+
+		<!-- 1=soft ; 5=off ; 10=sharp -->
+		<control id="sharpness" address="0x87"/>
+
+		<control id="audiospeakermute"   address="0x8d">
+			<value value="1"   id="mute"/>
+			<value value="2"   id="unmute"/>
+		</control>
+
+		<!--
+			Control 0xac: +/25764/65281 C [???]
+			Control 0xae: +/5990/65535 C [???]
+			Control 0xb2: +/1/8 C [???]
+			Control 0xb6: +/3/4 C [???]
+		-->
+		<!--
+			<control id="lifetime???" address="0xc0"/>
+			Control 0xc0: +/18/65535 C [???]
+			Control 0xc0: +/24/65535 C [???]
+			Control 0xc0: +/25/65535 C [???]
+			Control 0xc0: +/29/65535 C [???]
+			Control 0xc0: +/45/65535 C [???]
+		-->
+		<!--
+			Control 0xc6: +/111/65535 C [???]
+			Control 0xc8: +/18/65535 C [???]
+			Control 0xc9: +/1/65535 C [???]
+		-->
+		<control id="osdlock" address="0xca">
+			<value value="1"   id="locked"/>
+			<value value="2"   id="unlocked"/>
+		</control>
+		<control id="language" address="0xcc">
+			<value value="1"   id="chinese_tw"/>
+			<value value="2"   id="english"/>
+			<value value="3"   id="french"/>
+			<value value="4"   id="german"/>
+			<value value="6"   id="japanese"/>
+			<value value="7"   id="korean"/>
+			<value value="8"   id="portuguese"/>
+			<value value="9"   id="russian"/>
+			<value value="10"  id="spanish"/>
+			<value value="13"  id="chinese"/>
+			<value value="15"  id="hindi"/>
+		</control>
+		<control id="dpms" address="0xd6">
+			<value id="on" value="1"/>
+			<value id="standby" value="4"/>
+		</control>
+		<!--
+			This control is kind of weird, but it works.
+			But some modes are weird, cutting out some chroma's to grey.
+			Vibrant 1 to 3 go increasingly weird in terms of vibrancy.
+		-->
+		<control id="icm_or_colorprofile" address="0xdc">
+			<value value="0"   id="vibrant3"/><!--color shift-->
+			<value value="1"   id="vibrant2"/><!--color shift-->
+			<value value="2"   id="normal"/>
+			<value value="3"   id="monochromes"/>
+			<value value="4"   id="vibrant1"/>
+		</control>
+		<!--
+			Control 0xdf: +/513/65535 C [???]
+			Control 0xe0: +/513/65535   [???]
+			Control 0xe0: +/0/1   [???]
+			Control 0xec: +/0/1   [???]
+			Control 0xfe: +/0/255   [???]
+			Control 0xff: +/0/1   [???]
+		-->
+	</controls>
+</monitor>

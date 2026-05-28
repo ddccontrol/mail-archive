@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<monitor name="Hanns-G HG281D">
+  <!-- (prot(monitor)type(LCD)model(HG281)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(04 05 08 0B) 16 18 1A 52 60(01 04) 62 87 8D(01 02) AC AE B2 B6 C6 C8 C9 D6(01 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.0))-->
+  <caps add="(vcp(cc ca 7e))"/>
+  <controls>
+    <control id="sharpness" address="0x87"/>
+    <control id="mute" type="list" address="0x8d">
+      <value id="mute" value="1"/>
+      <value id="normal" value="2"/>
+    </control>
+    <control id="language" type="list" address="0xcc">
+      <value id="english" value="2"/>
+      <value id="french"  value="3"/>
+      <value id="german"  value="4"/>
+      <value id="italian" value="5"/>
+      <value id="russian" value="9"/>
+      <value id="spanish" value="10"/>
+      <value id="swedish" value="11"/>
+    </control>
+    <control id="osd" type="list" address="0xca">
+      <value id="disable" value="1"/>
+      <value id="enable" value="2"/>
+    </control>
+    <control id="colorpreset" address="0x14">
+      <value id="user"  value="0x0b"/>
+      <value id="warm"   value="0x04"/>
+      <value id="native"  value="0x05"/>
+      <value id="cool"  value="0x08"/>
+    </control>
+    <!-- <control id="colorpreset" address="0x0c">
+       <value id="user"  value="0x0"/>
+      <value id="warm"   value="0x1"/>
+      <value id="native"  value="0x2"/>
+      <value id="cool"  value="0x3"/>
+    </control> -->
+    <control id="power" type="list" address="0xd6">
+      <value id="off" value="5"/>
+      <value id="on"  value="1"/>
+    </control>
+ <control id="gamma" type="list" address="0x7e">
+		<value id="-0.2" value="0" />
+		<value id="-0.1" value="1" />
+		<value id="0" value="2" />
+		<value id="+0.1" value="3" />
+		<value id="+0.2" value="4" />
+		<value id="+0.3" value="5" />
+		<value id="+0.4" value="6" />
+		<value id="+0.5" value="7" />
+		<value id="+0.6" value="8" />
+	    </control>
+
+    
+  </controls>
+
+	<include file="VESA"/>
+</monitor>

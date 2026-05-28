@@ -1,0 +1,34 @@
+human@machine:~$ sudo ddcutil detect
+Display 1
+   I2C bus:  /dev/i2c-6
+   EDID synopsis:
+      Mfg id:               DEL
+      Model:                DELL P2419H
+      Product code:         53465
+      Serial number:        27JVJ43
+      Binary serial number: 860964162 (0x33514542)
+      Manufacture year:     2020,  Week: 27
+   VCP version:         2.1
+
+Display 2
+   I2C bus:  /dev/i2c-7
+   EDID synopsis:
+      Mfg id:               DEL
+      Model:                DELL P2419H
+      Product code:         53465
+      Serial number:        HYHVJ43
+      Binary serial number: 860963906 (0x33514442)
+      Manufacture year:     2020,  Week: 27
+   VCP version:         2.1
+
+Display 3
+   I2C bus:  /dev/i2c-8
+   EDID synopsis:
+      Mfg id:               VSC
+      Model:                VX2252 Series
+      Product code:         56366
+      Serial number:        TVR151760558
+      Binary serial number: 16843009 (0x01010101)
+      Manufacture year:     2015,  Week: 17
+   VCP version:         2.1
+

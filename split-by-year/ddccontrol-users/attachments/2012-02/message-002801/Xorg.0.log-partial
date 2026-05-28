@@ -1,0 +1,52 @@
+[    68.947] 
+X.Org X Server 1.11.3.901 (1.11.4 RC 1)
+Release Date: 2012-01-06
+[    68.947] X Protocol Version 11, Revision 0
+[    68.947] Build Operating System: Linux 3.2.0-rc6+ x86_64 Debian
+[    68.947] Current Operating System: Linux pc12 3.2.0-1-amd64 #1 SMP Sun Feb 5 15:17:15 UTC 2012 x86_64
+[...]
+[    71.947] (II) NVIDIA dlloader X Driver  290.10  Wed Nov 16 17:41:10 PST 2011
+[    71.947] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    72.156] (**) NVIDIA(0): Depth 24, (--) framebuffer bpp 32
+[    72.156] (==) NVIDIA(0): RGB weight 888
+[    72.156] (==) NVIDIA(0): Default visual is TrueColor
+[    72.156] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    72.156] (**) NVIDIA(0): Option "NoLogo" "true"
+[    72.156] (**) NVIDIA(0): Option "TwinView" "0"
+[    72.156] (**) NVIDIA(0): Option "TwinViewOrientation" "Clone"
+[    72.156] (**) NVIDIA(0): Option "MetaModes" "1680x1050_120 +0+0; nvidia-auto-select +0+0; 1680x1050_110 +0+0; 1680x1050 +0+0"
+[    72.156] (**) NVIDIA(0): Option "Coolbits" "5"
+[    72.156] (**) NVIDIA(0): Option "FlatPanelProperties" "Scaling = Native"
+[    72.156] (**) NVIDIA(0): Enabling 2D acceleration
+[    73.570] (II) NVIDIA(GPU-0): Display (Samsung SyncMaster (DFP-0)) supports NVIDIA 3D Vision
+[    73.570] (II) NVIDIA(GPU-0):     stereo.
+[    73.589] (II) NVIDIA(0): NVIDIA GPU GeForce 9800 GT (G92) at PCI:1:0:0 (GPU-0)
+[    73.589] (--) NVIDIA(0): Memory: 1048576 kBytes
+[    73.589] (--) NVIDIA(0): VideoBIOS: 62.92.6d.00.07
+[    73.589] (II) NVIDIA(0): Detected PCI Express Link width: 8X
+[    73.589] (--) NVIDIA(0): Interlaced video modes are supported on this GPU
+[    73.589] (--) NVIDIA(0): Connected display device(s) on GeForce 9800 GT at PCI:1:0:0
+[    73.589] (--) NVIDIA(0):     Samsung SyncMaster (DFP-0)
+[    73.589] (--) NVIDIA(0): Samsung SyncMaster (DFP-0): 330.0 MHz maximum pixel clock
+[    73.589] (--) NVIDIA(0): Samsung SyncMaster (DFP-0): Internal Dual Link TMDS
+[    73.594] (II) NVIDIA(0): Display Device found referenced in MetaMode: DFP-0
+[    73.594] (**) NVIDIA(0): Using HorizSync/VertRefresh ranges from the EDID has been
+[    73.594] (**) NVIDIA(0):     enabled on all display devices.
+[    73.625] (II) NVIDIA(0): Assigned Display Device: DFP-0
+[    73.625] (II) NVIDIA(0): Validated modes:
+[    73.625] (II) NVIDIA(0):     "1680x1050_120+0+0"
+[    73.625] (II) NVIDIA(0):     "nvidia-auto-select+0+0"
+[    73.625] (II) NVIDIA(0):     "1680x1050_110+0+0"
+[    73.625] (II) NVIDIA(0):     "1680x1050+0+0"
+[    73.625] (II) NVIDIA(0): Virtual screen size determined to be 1680 x 1050
+[    73.662] (--) NVIDIA(0): DPI set to (88, 88); computed from "UseEdidDpi" X config
+[    73.662] (--) NVIDIA(0):     option
+[    73.662] (--) Depth 24 pixmap format is 32 bpp
+[    73.662] (II) NVIDIA: Using 768.00 MB of virtual memory for indirect memory access.
+[    73.671] (II) NVIDIA(0): Setting mode "1680x1050_120+0+0"
+[    73.827] (II) Loading extension NV-GLX
+[    74.441] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    74.441] (==) NVIDIA(0): Backing store disabled
+[    74.441] (==) NVIDIA(0): Silken mouse enabled
+[    74.441] (**) NVIDIA(0): DPMS enabled
+[...]

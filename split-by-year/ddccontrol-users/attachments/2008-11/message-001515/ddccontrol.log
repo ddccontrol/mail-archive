@@ -1,0 +1,1643 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors..I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/GSM4A66.xml"
+Document not parsed successfully.
+......
+Detected monitors :
+ - Device: pci:04:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:04:00.0-2...
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 ff ff ff ff ff ff 00 1e 6d 66 4a 0e be 00 00 | .........mfJ....
+0010: 09 0c 01 03 0c 24 1b bf e8 9a d9 a1 54 4b 99 24 | .....$......TK.$
+0020: 12 48 4c ff ff 80 31 59 45 59 61 59 81 99 a9 4f | .HL...1YEYaY...O
+0030: 01 01 01 01 01 01 86 3d 00 c0 51 00 30 40 40 a0 | .......=..Q.0@@.
+0040: 13 00 5e                                        | ..^             
+Invalid response, first byte is 0x06, should be 0x6e
+0000: 06 11 00 00 1e 00 00 00 fd 00 32 a0 1e 62 15 00 | ..........2..b..
+0010: 0a 20 20 20 20 20 20 00 00 00 fc 00 46 39 30 30 | .      .....F900
+0020: 42 0a 20 20 20 20 20 20 20 00 00 00 fc 00 0a 20 | B.       ...... 
+0030: 20 20 20 20 20 20 20 20 20 20 20 00 e1 00 00 00 |            .....
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0010: 00 d7 cc a8 f7 3f 40 68 c6 d9 12 80 7e 28 d1 db | .....?@h....~(..
+0020: f2 c5 a2 54 19 1b c8 11 f4 bd 1e 61 b4 87 0b 94 | ...T.......a....
+0030: 07 fb 74 62 22 a6 8d 0d 14 58 63 a9 6b 6f 89 11 | ..tb"....Xc.ko..
+0040: 27 dd 3a                                        | '.:             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/GSM4A66.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: GSM4A66 [VESA standard monitor]
+	Input type: Analog
+[5;31m=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================[0m
+
+Capabilities:
+Invalid response, first byte is 0x04, should be 0x6e
+0000: 04 c3 a8 b6 99 30 0f 89 09 11 6b 12 df f3 4a 51 | .....0....k...JQ
+0010: 1f 24 0f 4c 4e 81 10 e0 1a 27 c4 6d 71 2e 60 16 | .$.LN....'.mq.`.
+0020: ce 99 9f 36 b6 cf ba 53 2a cc 17 48 cc a3 c0 5c | ...6...S*..H...\
+0030: a2 05 8f f3 65 38 e6 00 ff ff ff ff ff ff 00 1e | ....e8..........
+0040: 6d 66 4a                                        | mfJ             
+Invalid response, first byte is 0x0e, should be 0x6e
+0000: 0e be 00 00 09 0c 01 03 0c 24 1b bf e8 9a d9 a1 | .........$......
+0010: 54 4b 99 24 12 48 4c ff ff 80 31 59 45 59 61 59 | TK.$.HL...1YEYaY
+0020: 81 99 a9 4f 01 01 01 01 01 01 86 3d 00 c0 51 00 | ...O.......=..Q.
+0030: 30 40 40 a0 13 00 5e 06 11 00 00 1e 00 00 00 fd | 0@@...^.........
+0040: 00 32 a0                                        | .2.             
+Invalid response, first byte is 0x1e, should be 0x6e
+0000: 1e 62 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 | .b...      .....
+0010: 46 39 30 30 42 0a 20 20 20 20 20 20 20 00 00 00 | F900B.       ...
+0020: fc 00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 | ...            .
+0030: e1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ................
+0040: 00 00 00                                        | ...             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 00 00 00 d7 cc a8 f7 3f 40 68 c6 d9 12 80 | .........?@h....
+0010: 7e 28 d1 db f2 c5 a2 54 19 1b c8 11 f4 bd 1e 61 | ~(.....T.......a
+0020: b4 87 0b 94 07 fb 74 62 22 a6 8d 0d 14 58 63 a9 | ......tb"....Xc.
+0030: 6b 6f 89 11 27 dd 3a 04 c3 a8 b6 99 30 0f 89 09 | ko..'.:.....0...
+0040: 11 6b 12                                        | .k.             
+Invalid response, first byte is 0xdf, should be 0x6e
+0000: df f3 4a 51 1f 24 0f 4c 4e 81 10 e0 1a 27 c4 6d | ..JQ.$.LN....'.m
+0010: 71 2e 60 16 ce 99 9f 36 b6 cf ba 53 2a cc 17 48 | q.`....6...S*..H
+0020: cc a3 c0 5c a2 05 8f f3 65 38 e6 00 ff ff ff ff | ...\....e8......
+0030: ff ff 00 1e 6d 66 4a 0e be 00 00 09 0c 01 03 0c | ....mfJ.........
+0040: 24 1b bf                                        | $..             
+Invalid response, first byte is 0xe8, should be 0x6e
+0000: e8 9a d9 a1 54 4b 99 24 12 48 4c ff ff 80 31 59 | ....TK.$.HL...1Y
+0010: 45 59 61 59 81 99 a9 4f 01 01 01 01 01 01 86 3d | EYaY...O.......=
+0020: 00 c0 51 00 30 40 40 a0 13 00 5e 06 11 00 00 1e | ..Q.0@@...^.....
+0030: 00 00 00 fd 00 32 a0 1e 62 15 00 0a 20 20 20 20 | .....2..b...    
+0040: 20 20 00                                        |   .             
+Invalid response, first byte is 0x00, should be 0x6e
+0000: 00 00 fc 00 46 39 30 30 42 0a 20 20 20 20 20 20 | ....F900B.      
+0010: 20 00 00 00 fc 00 0a 20 20 20 20 20 20 20 20 20 |  ......         
+0020: 20 20 20 00 e1 00 00 00 00 00 00 00 00 00 00 00 |    .............
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 d7 cc a8 f7 | ................
+0040: 3f 40 68                                        | ?@h             
+Invalid response, first byte is 0xc6, should be 0x6e
+0000: c6 d9 12 80 7e 28 d1 db f2 c5 a2 54 19 1b c8 11 | ....~(.....T....
+0010: f4 bd 1e 61 b4 87 0b 94 07 fb 74 62 22 a6 8d 0d | ...a......tb"...
+0020: 14 58 63 a9 6b 6f 89 11 27 dd 3a 04 c3 a8 b6 99 | .Xc.ko..'.:.....
+0030: 30 0f 89 09 11 6b 12 df f3 4a 51 1f 24 0f 4c 4e | 0....k...JQ.$.LN
+0040: 81 10 e0                                        | ...             
+Invalid response, first byte is 0x1a, should be 0x6e
+0000: 1a 27 c4 6d 71 2e 60 16 ce 99 9f 36 b6 cf ba 53 | .'.mq.`....6...S
+0010: 2a cc 17 48 cc a3 c0 5c a2 05 8f f3 65 38 e6 00 | *..H...\....e8..
+0020: ff ff ff ff ff ff 00 1e 6d 66 4a 0e be 00 00 09 | ........mfJ.....
+0030: 0c 01 03 0c 24 1b bf e8 9a d9 a1 54 4b 99 24 12 | ....$......TK.$.
+0040: 48 4c ff                                        | HL.             
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Invalid response, first byte is 0xff, should be 0x6e
+ff 80 31 59 45 59 61 59 81 99 a9                | ..1YEYaY...     
+Invalid response, first byte is 0x4f, should be 0x6e
+4f 01 01 01 01 01 01 86 3d 00 c0                | O.......=..     
+Invalid response, first byte is 0x51, should be 0x6e
+51 00 30 40 40 a0 13 00 5e 06 11                | Q.0@@...^..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 1e 00 00 00 fd 00 32 a0 1e                | ........2..     
+Invalid response, first byte is 0x62, should be 0x6e
+62 15 00 0a 20 20 20 20 20 20 00                | b...      .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 46 39 30 30 42 0a 20                | ....F900B.      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 20 20 20 20                | .               
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 e1 00 00 00 00 00 00 00                |   .........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 d7 cc a8 f7 3f 40                | .........?@     
+Invalid response, first byte is 0x68, should be 0x6e
+68 c6 d9 12 80 7e 28 d1 db f2 c5                | h....~(....     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 54 19 1b c8 11 f4 bd 1e 61 b4                | .T.......a.     
+Invalid response, first byte is 0x87, should be 0x6e
+87 0b 94 07 fb 74 62 22 a6 8d 0d                | .....tb"...     
+Invalid response, first byte is 0x14, should be 0x6e
+14 58 63 a9 6b 6f 89 11 27 dd 3a                | .Xc.ko..'.:     
+Invalid response, first byte is 0x04, should be 0x6e
+04 c3 a8 b6 99 30 0f 89 09 11 6b                | .....0....k     
+Invalid response, first byte is 0x12, should be 0x6e
+12 df f3 4a 51 1f 24 0f 4c 4e 81                | ...JQ.$.LN.     
+Invalid response, first byte is 0x10, should be 0x6e
+10 e0 1a 27 c4 6d 71 2e 60 16 ce                | ...'.mq.`..     
+Invalid response, first byte is 0x99, should be 0x6e
+99 9f 36 b6 cf ba 53 2a cc 17 48                | ..6...S*..H     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc a3 c0 5c a2 05 8f f3 65 38 e6                | ...\....e8.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff ff ff ff 00 1e 6d 66                | .........mf     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 0e be 00 00 09 0c 01 03 0c 24                | J.........$     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b bf e8 9a d9 a1 54 4b 99 24 12                | ......TK.$.     
+Invalid response, first byte is 0x48, should be 0x6e
+48 4c ff ff 80 31 59 45 59 61 59                | HL...1YEYaY     
+Invalid response, first byte is 0x81, should be 0x6e
+81 99 a9 4f 01 01 01 01 01 01 86                | ...O.......     
+Invalid response, first byte is 0x3d, should be 0x6e
+3d 00 c0 51 00 30 40 40 a0 13 00                | =..Q.0@@...     
+Invalid response, first byte is 0x5e, should be 0x6e
+5e 06 11 00 00 1e 00 00 00 fd 00                | ^..........     
+Invalid response, first byte is 0x32, should be 0x6e
+32 a0 1e 62 15 00 0a 20 20 20 20                | 2..b...         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 46 39 30 30                |   .....F900     
+Invalid response, first byte is 0x42, should be 0x6e
+42 0a 20 20 20 20 20 20 20 00 00                | B.       ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 0a 20 20 20 20 20 20 20                | ....            
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 e1 00 00 00 00                |      ......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 d7 cc a8                | ...........     
+Invalid response, first byte is 0xf7, should be 0x6e
+f7 3f 40 68 c6 d9 12 80 7e 28 d1                | .?@h....~(.     
+Invalid response, first byte is 0xdb, should be 0x6e
+db f2 c5 a2 54 19 1b c8 11 f4 bd                | ....T......     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 61 b4 87 0b 94 07 fb 74 62 22                | .a......tb"     
+Invalid response, first byte is 0xa6, should be 0x6e
+a6 8d 0d 14 58 63 a9 6b 6f 89 11                | ....Xc.ko..     
+Invalid response, first byte is 0x27, should be 0x6e
+27 dd 3a 04 c3 a8 b6 99 30 0f 89                | '.:.....0..     
+Invalid response, first byte is 0x09, should be 0x6e
+09 11 6b 12 df f3 4a 51 1f 24 0f                | ..k...JQ.$.     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c 4e 81 10 e0 1a 27 c4 6d 71 2e                | LN....'.mq.     
+Invalid response, first byte is 0x60, should be 0x6e
+60 16 ce 99 9f 36 b6 cf ba 53 2a                | `....6...S*     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc 17 48 cc a3 c0 5c a2 05 8f f3                | ..H...\....     
+Invalid response, first byte is 0x65, should be 0x6e
+65 38 e6 00 ff ff ff ff ff ff 00                | e8.........     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 6d 66 4a 0e be 00 00 09 0c 01                | .mfJ.......     
+Invalid response, first byte is 0x03, should be 0x6e
+03 0c 24 1b bf e8 9a d9 a1 54 4b                | ..$......TK     
+Invalid response, first byte is 0x99, should be 0x6e
+99 24 12 48 4c ff ff 80 31 59 45                | .$.HL...1YE     
+Invalid response, first byte is 0x59, should be 0x6e
+59 61 59 81 99 a9 4f 01 01 01 01                | YaY...O....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 86 3d 00 c0 51 00 30 40 40                | ...=..Q.0@@     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 13 00 5e 06 11 00 00 1e 00 00                | ...^.......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fd 00 32 a0 1e 62 15 00 0a 20                | ...2..b...      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 46                |      .....F     
+Invalid response, first byte is 0x39, should be 0x6e
+39 30 30 42 0a 20 20 20 20 20 20                | 900B.           
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 0a 20 20 20 20                |  ......         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 00 e1 00                |         ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0xd7, should be 0x6e
+d7 cc a8 f7 3f 40 68 c6 d9 12 80                | ....?@h....     
+Invalid response, first byte is 0x7e, should be 0x6e
+7e 28 d1 db f2 c5 a2 54 19 1b c8                | ~(.....T...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 f4 bd 1e 61 b4 87 0b 94 07 fb                | ....a......     
+Invalid response, first byte is 0x74, should be 0x6e
+74 62 22 a6 8d 0d 14 58 63 a9 6b                | tb"....Xc.k     
+Invalid response, first byte is 0x6f, should be 0x6e
+6f 89 11 27 dd 3a 04 c3 a8 b6 99                | o..'.:.....     
+Invalid response, first byte is 0x30, should be 0x6e
+30 0f 89 09 11 6b 12 df f3 4a 51                | 0....k...JQ     
+Invalid response, first byte is 0x1f, should be 0x6e
+1f 24 0f 4c 4e 81 10 e0 1a 27 c4                | .$.LN....'.     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 71 2e 60 16 ce 99 9f 36 b6 cf                | mq.`....6..     
+Invalid response, first byte is 0xba, should be 0x6e
+ba 53 2a cc 17 48 cc a3 c0 5c a2                | .S*..H...\.     
+Invalid response, first byte is 0x05, should be 0x6e
+05 8f f3 65 38 e6 00 ff ff ff ff                | ...e8......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 00 1e 6d 66 4a 0e be 00 00                | ....mfJ....     
+Invalid response, first byte is 0x09, should be 0x6e
+09 0c 01 03 0c 24 1b bf e8 9a d9                | .....$.....     
+Invalid response, first byte is 0xa1, should be 0x6e
+a1 54 4b 99 24 12 48 4c ff ff 80                | .TK.$.HL...     
+Invalid response, first byte is 0x31, should be 0x6e
+31 59 45 59 61 59 81 99 a9 4f 01                | 1YEYaY...O.     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 86 3d 00 c0 51 00                | ......=..Q.     
+Invalid response, first byte is 0x30, should be 0x6e
+30 40 40 a0 13 00 5e 06 11 00 00                | 0@@...^....     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 00 00 00 fd 00 32 a0 1e 62 15                | ......2..b.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 00 00 00                | ..      ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 46 39 30 30 42 0a 20 20 20                | ..F900B.        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 0a 20                |     ......      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x00, should be 0x6e
+00 e1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 d7 cc a8 f7 3f 40 68 c6                | .......?@h.     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 12 80 7e 28 d1 db f2 c5 a2 54                | ...~(.....T     
+Invalid response, first byte is 0x19, should be 0x6e
+19 1b c8 11 f4 bd 1e 61 b4 87 0b                | .......a...     
+Invalid response, first byte is 0x94, should be 0x6e
+94 07 fb 74 62 22 a6 8d 0d 14 58                | ...tb"....X     
+Invalid response, first byte is 0x63, should be 0x6e
+63 a9 6b 6f 89 11 27 dd 3a 04 c3                | c.ko..'.:..     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 b6 99 30 0f 89 09 11 6b 12 df                | ...0....k..     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 4a 51 1f 24 0f 4c 4e 81 10 e0                | .JQ.$.LN...     
+Invalid response, first byte is 0x1a, should be 0x6e
+1a 27 c4 6d 71 2e 60 16 ce 99 9f                | .'.mq.`....     
+Invalid response, first byte is 0x36, should be 0x6e
+36 b6 cf ba 53 2a cc 17 48 cc a3                | 6...S*..H..     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 5c a2 05 8f f3 65 38 e6 00 ff                | .\....e8...     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff ff 00 1e 6d 66 4a 0e                | .......mfJ.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 00 00 09 0c 01 03 0c 24 1b bf                | ........$..     
+Invalid response, first byte is 0xe8, should be 0x6e
+e8 9a d9 a1 54 4b 99 24 12 48 4c                | ....TK.$.HL     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 80 31 59 45 59 61 59 81 99                | ...1YEYaY..     
+Invalid response, first byte is 0xa9, should be 0x6e
+a9 4f 01 01 01 01 01 01 86 3d 00                | .O.......=.     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 51 00 30 40 40 a0 13 00 5e 06                | .Q.0@@...^.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 00 00 1e 00 00 00 fd 00 32 a0                | .........2.     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 62 15 00 0a 20 20 20 20 20 20                | .b...           
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fc 00 46 39 30 30 42 0a                | .....F900B.     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 00 00 00 fc                |        ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 20 20 20                | ..              
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 e1 00 00 00 00 00 00                |    ........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 d7 cc a8 f7 3f                | ..........?     
+Invalid response, first byte is 0x40, should be 0x6e
+40 68 c6 d9 12 80 7e 28 d1 db f2                | @h....~(...     
+Invalid response, first byte is 0xc5, should be 0x6e
+c5 a2 54 19 1b c8 11 f4 bd 1e 61                | ..T.......a     
+Invalid response, first byte is 0xb4, should be 0x6e
+b4 87 0b 94 07 fb 74 62 22 a6 8d                | ......tb"..     
+Invalid response, first byte is 0x0d, should be 0x6e
+0d 14 58 63 a9 6b 6f 89 11 27 dd                | ..Xc.ko..'.     
+Invalid response, first byte is 0x3a, should be 0x6e
+3a 04 c3 a8 b6 99 30 0f 89 09 11                | :.....0....     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 12 df f3 4a 51 1f 24 0f 4c 4e                | k...JQ.$.LN     
+Invalid response, first byte is 0x81, should be 0x6e
+81 10 e0 1a 27 c4 6d 71 2e 60 16                | ....'.mq.`.     
+Invalid response, first byte is 0xce, should be 0x6e
+ce 99 9f 36 b6 cf ba 53 2a cc 17                | ...6...S*..     
+Invalid response, first byte is 0x48, should be 0x6e
+48 cc a3 c0 5c a2 05 8f f3 65 38                | H...\....e8     
+Invalid response, first byte is 0xe6, should be 0x6e
+e6 00 ff ff ff ff ff ff 00 1e 6d                | ..........m     
+Invalid response, first byte is 0x66, should be 0x6e
+66 4a 0e be 00 00 09 0c 01 03 0c                | fJ.........     
+Invalid response, first byte is 0x24, should be 0x6e
+24 1b bf e8 9a d9 a1 54 4b 99 24                | $......TK.$     
+Invalid response, first byte is 0x12, should be 0x6e
+12 48 4c ff ff 80 31 59 45 59 61                | .HL...1YEYa     
+Invalid response, first byte is 0x59, should be 0x6e
+59 81 99 a9 4f 01 01 01 01 01 01                | Y...O......     
+Invalid response, first byte is 0x86, should be 0x6e
+86 3d 00 c0 51 00 30 40 40 a0 13                | .=..Q.0@@..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 5e 06 11 00 00 1e 00 00 00 fd                | .^.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 32 a0 1e 62 15 00 0a 20 20 20                | .2..b...        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 00 00 fc 00 46 39 30                |    .....F90     
+Invalid response, first byte is 0x30, should be 0x6e
+30 42 0a 20 20 20 20 20 20 20 00                | 0B.       .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 0a 20 20 20 20 20 20                | .....           
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 e1 00 00 00                |       .....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 d7 cc                | ...........     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 f7 3f 40 68 c6 d9 12 80 7e 28                | ..?@h....~(     
+Invalid response, first byte is 0xd1, should be 0x6e
+d1 db f2 c5 a2 54 19 1b c8 11 f4                | .....T.....     
+Invalid response, first byte is 0xbd, should be 0x6e
+bd 1e 61 b4 87 0b 94 07 fb 74 62                | ..a......tb     
+Invalid response, first byte is 0x22, should be 0x6e
+22 a6 8d 0d 14 58 63 a9 6b 6f 89                | "....Xc.ko.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 27 dd 3a 04 c3 a8 b6 99 30 0f                | .'.:.....0.     
+Invalid response, first byte is 0x89, should be 0x6e
+89 09 11 6b 12 df f3 4a 51 1f 24                | ...k...JQ.$     
+Invalid response, first byte is 0x0f, should be 0x6e
+0f 4c 4e 81 10 e0 1a 27 c4 6d 71                | .LN....'.mq     
+Invalid response, first byte is 0x2e, should be 0x6e
+2e 60 16 ce 99 9f 36 b6 cf ba 53                | .`....6...S     
+Invalid response, first byte is 0x2a, should be 0x6e
+2a cc 17 48 cc a3 c0 5c a2 05 8f                | *..H...\...     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 65 38 e6 00 ff ff ff ff ff ff                | .e8........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 6d 66 4a 0e be 00 00 09 0c                | ..mfJ......     
+Invalid response, first byte is 0x01, should be 0x6e
+01 03 0c 24 1b bf e8 9a d9 a1 54                | ...$......T     
+Invalid response, first byte is 0x4b, should be 0x6e
+4b 99 24 12 48 4c ff ff 80 31 59                | K.$.HL...1Y     
+Invalid response, first byte is 0x45, should be 0x6e
+45 59 61 59 81 99 a9 4f 01 01 01                | EYaY...O...     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 86 3d 00 c0 51 00 30 40                | ....=..Q.0@     
+Invalid response, first byte is 0x40, should be 0x6e
+40 a0 13 00 5e 06 11 00 00 1e 00                | @...^......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fd 00 32 a0 1e 62 15 00 0a                | ....2..b...     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x46, should be 0x6e
+46 39 30 30 42 0a 20 20 20 20 20                | F900B.          
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 0a 20 20 20                |   ......        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 00 e1                |          ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 d7 cc a8 f7 3f 40 68 c6 d9 12                | .....?@h...     
+Invalid response, first byte is 0x80, should be 0x6e
+80 7e 28 d1 db f2 c5 a2 54 19 1b                | .~(.....T..     
+Invalid response, first byte is 0xc8, should be 0x6e
+c8 11 f4 bd 1e 61 b4 87 0b 94 07                | .....a.....     
+Invalid response, first byte is 0xfb, should be 0x6e
+fb 74 62 22 a6 8d 0d 14 58 63 a9                | .tb"....Xc.     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 6f 89 11 27 dd 3a 04 c3 a8 b6                | ko..'.:....     
+Invalid response, first byte is 0x99, should be 0x6e
+99 30 0f 89 09 11 6b 12 df f3 4a                | .0....k...J     
+Invalid response, first byte is 0x51, should be 0x6e
+51 1f 24 0f 4c 4e 81 10 e0 1a 27                | Q.$.LN....'     
+Invalid response, first byte is 0xc4, should be 0x6e
+c4 6d 71 2e 60 16 ce 99 9f 36 b6                | .mq.`....6.     
+Invalid response, first byte is 0xcf, should be 0x6e
+cf ba 53 2a cc 17 48 cc a3 c0 5c                | ..S*..H...\     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 05 8f f3 65 38 e6 00 ff ff ff                | ....e8.....     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff 00 1e 6d 66 4a 0e be 00                | .....mfJ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 09 0c 01 03 0c 24 1b bf e8 9a                | ......$....     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 a1 54 4b 99 24 12 48 4c ff ff                | ..TK.$.HL..     
+Invalid response, first byte is 0x80, should be 0x6e
+80 31 59 45 59 61 59 81 99 a9 4f                | .1YEYaY...O     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 01 86 3d 00 c0 51                | .......=..Q     
+Invalid response, first byte is 0x00, should be 0x6e
+00 30 40 40 a0 13 00 5e 06 11 00                | .0@@...^...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 00 00 00 fd 00 32 a0 1e 62                | .......2..b     
+Invalid response, first byte is 0x15, should be 0x6e
+15 00 0a 20 20 20 20 20 20 00 00                | ...      ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 46 39 30 30 42 0a 20 20                | ...F900B.       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 0a                |      ......     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 e1 00 00 00 00 00 00 00 00                |  ..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 d7 cc a8 f7 3f 40 68                | ........?@h     
+Invalid response, first byte is 0xc6, should be 0x6e
+c6 d9 12 80 7e 28 d1 db f2 c5 a2                | ....~(.....     
+Invalid response, first byte is 0x54, should be 0x6e
+54 19 1b c8 11 f4 bd 1e 61 b4 87                | T.......a..     
+Invalid response, first byte is 0x0b, should be 0x6e
+0b 94 07 fb 74 62 22 a6 8d 0d 14                | ....tb"....     
+Invalid response, first byte is 0x58, should be 0x6e
+58 63 a9 6b 6f 89 11 27 dd 3a 04                | Xc.ko..'.:.     
+Invalid response, first byte is 0xc3, should be 0x6e
+c3 a8 b6 99 30 0f 89 09 11 6b 12                | ....0....k.     
+Invalid response, first byte is 0xdf, should be 0x6e
+df f3 4a 51 1f 24 0f 4c 4e 81 10                | ..JQ.$.LN..     
+Invalid response, first byte is 0xe0, should be 0x6e
+e0 1a 27 c4 6d 71 2e 60 16 ce 99                | ..'.mq.`...     
+Invalid response, first byte is 0x9f, should be 0x6e
+9f 36 b6 cf ba 53 2a cc 17 48 cc                | .6...S*..H.     
+Invalid response, first byte is 0xa3, should be 0x6e
+a3 c0 5c a2 05 8f f3 65 38 e6 00                | ..\....e8..     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff ff ff 00 1e 6d 66 4a                | ........mfJ     
+Invalid response, first byte is 0x0e, should be 0x6e
+0e be 00 00 09 0c 01 03 0c 24 1b                | .........$.     
+Invalid response, first byte is 0xbf, should be 0x6e
+bf e8 9a d9 a1 54 4b 99 24 12 48                | .....TK.$.H     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c ff ff 80 31 59 45 59 61 59 81                | L...1YEYaY.     
+Invalid response, first byte is 0x99, should be 0x6e
+99 a9 4f 01 01 01 01 01 01 86 3d                | ..O.......=     
+Invalid response, first byte is 0x00, should be 0x6e
+00 c0 51 00 30 40 40 a0 13 00 5e                | ..Q.0@@...^     
+Invalid response, first byte is 0x06, should be 0x6e
+06 11 00 00 1e 00 00 00 fd 00 32                | ..........2     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 1e 62 15 00 0a 20 20 20 20 20                | ..b...          
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 46 39 30 30 42                |  .....F900B     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 20 00 00 00                | .       ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 0a 20 20 20 20 20 20 20 20                | ...             
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 e1 00 00 00 00 00                |     .......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 d7 cc a8 f7                | ...........     
+Invalid response, first byte is 0x3f, should be 0x6e
+3f 40 68 c6 d9 12 80 7e 28 d1 db                | ?@h....~(..     
+Invalid response, first byte is 0xf2, should be 0x6e
+f2 c5 a2 54 19 1b c8 11 f4 bd 1e                | ...T.......     
+Invalid response, first byte is 0x61, should be 0x6e
+61 b4 87 0b 94 07 fb 74 62 22 a6                | a......tb".     
+Invalid response, first byte is 0x8d, should be 0x6e
+8d 0d 14 58 63 a9 6b 6f 89 11 27                | ...Xc.ko..'     
+Invalid response, first byte is 0xdd, should be 0x6e
+dd 3a 04 c3 a8 b6 99 30 0f 89 09                | .:.....0...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 6b 12 df f3 4a 51 1f 24 0f 4c                | .k...JQ.$.L     
+Invalid response, first byte is 0x4e, should be 0x6e
+4e 81 10 e0 1a 27 c4 6d 71 2e 60                | N....'.mq.`     
+Invalid response, first byte is 0x16, should be 0x6e
+16 ce 99 9f 36 b6 cf ba 53 2a cc                | ....6...S*.     
+Invalid response, first byte is 0x17, should be 0x6e
+17 48 cc a3 c0 5c a2 05 8f f3 65                | .H...\....e     
+Invalid response, first byte is 0x38, should be 0x6e
+38 e6 00 ff ff ff ff ff ff 00 1e                | 8..........     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 66 4a 0e be 00 00 09 0c 01 03                | mfJ........     
+Invalid response, first byte is 0x0c, should be 0x6e
+0c 24 1b bf e8 9a d9 a1 54 4b 99                | .$......TK.     
+Invalid response, first byte is 0x24, should be 0x6e
+24 12 48 4c ff ff 80 31 59 45 59                | $.HL...1YEY     
+Invalid response, first byte is 0x61, should be 0x6e
+61 59 81 99 a9 4f 01 01 01 01 01                | aY...O.....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 86 3d 00 c0 51 00 30 40 40 a0                | ..=..Q.0@@.     
+Invalid response, first byte is 0x13, should be 0x6e
+13 00 5e 06 11 00 00 1e 00 00 00                | ..^........     
+Invalid response, first byte is 0xfd, should be 0x6e
+fd 00 32 a0 1e 62 15 00 0a 20 20                | ..2..b...       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 46 39                |     .....F9     
+Invalid response, first byte is 0x30, should be 0x6e
+30 30 42 0a 20 20 20 20 20 20 20                | 00B.            
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fc 00 0a 20 20 20 20 20                | ......          
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 00 e1 00 00                |        ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 d7                | ...........     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc a8 f7 3f 40 68 c6 d9 12 80 7e                | ...?@h....~     
+Invalid response, first byte is 0x28, should be 0x6e
+28 d1 db f2 c5 a2 54 19 1b c8 11                | (.....T....     
+Invalid response, first byte is 0xf4, should be 0x6e
+f4 bd 1e 61 b4 87 0b 94 07 fb 74                | ...a......t     
+Invalid response, first byte is 0x62, should be 0x6e
+62 22 a6 8d 0d 14 58 63 a9 6b 6f                | b"....Xc.ko     
+Invalid response, first byte is 0x89, should be 0x6e
+89 11 27 dd 3a 04 c3 a8 b6 99 30                | ..'.:.....0     
+Invalid response, first byte is 0x0f, should be 0x6e
+0f 89 09 11 6b 12 df f3 4a 51 1f                | ....k...JQ.     
+Invalid response, first byte is 0x24, should be 0x6e
+24 0f 4c 4e 81 10 e0 1a 27 c4 6d                | $.LN....'.m     
+Invalid response, first byte is 0x71, should be 0x6e
+71 2e 60 16 ce 99 9f 36 b6 cf ba                | q.`....6...     
+Invalid response, first byte is 0x53, should be 0x6e
+53 2a cc 17 48 cc a3 c0 5c a2 05                | S*..H...\..     
+Invalid response, first byte is 0x8f, should be 0x6e
+8f f3 65 38 e6 00 ff ff ff ff ff                | ..e8.......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff 00 1e 6d 66 4a 0e be 00 00 09                | ...mfJ.....     
+Invalid response, first byte is 0x0c, should be 0x6e
+0c 01 03 0c 24 1b bf e8 9a d9 a1                | ....$......     
+Invalid response, first byte is 0x54, should be 0x6e
+54 4b 99 24 12 48 4c ff ff 80 31                | TK.$.HL...1     
+Invalid response, first byte is 0x59, should be 0x6e
+59 45 59 61 59 81 99 a9 4f 01 01                | YEYaY...O..     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 86 3d 00 c0 51 00 30                | .....=..Q.0     
+Invalid response, first byte is 0x40, should be 0x6e
+40 40 a0 13 00 5e 06 11 00 00 1e                | @@...^.....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fd 00 32 a0 1e 62 15 00                | .....2..b..     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 00 00 00 fc                | .      ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 46 39 30 30 42 0a 20 20 20 20                | .F900B.         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 00 00 fc 00 0a 20 20                |    ......       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 00                |           .     
+Invalid response, first byte is 0xe1, should be 0x6e
+e1 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 d7 cc a8 f7 3f 40 68 c6 d9                | ......?@h..     
+Invalid response, first byte is 0x12, should be 0x6e
+12 80 7e 28 d1 db f2 c5 a2 54 19                | ..~(.....T.     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b c8 11 f4 bd 1e 61 b4 87 0b 94                | ......a....     
+Invalid response, first byte is 0x07, should be 0x6e
+07 fb 74 62 22 a6 8d 0d 14 58 63                | ..tb"....Xc     
+Invalid response, first byte is 0xa9, should be 0x6e
+a9 6b 6f 89 11 27 dd 3a 04 c3 a8                | .ko..'.:...     
+Invalid response, first byte is 0xb6, should be 0x6e
+b6 99 30 0f 89 09 11 6b 12 df f3                | ..0....k...     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 51 1f 24 0f 4c 4e 81 10 e0 1a                | JQ.$.LN....     
+Invalid response, first byte is 0x27, should be 0x6e
+27 c4 6d 71 2e 60 16 ce 99 9f 36                | '.mq.`....6     
+Invalid response, first byte is 0xb6, should be 0x6e
+b6 cf ba 53 2a cc 17 48 cc a3 c0                | ...S*..H...     
+Invalid response, first byte is 0x5c, should be 0x6e
+5c a2 05 8f f3 65 38 e6 00 ff ff                | \....e8....     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff 00 1e 6d 66 4a 0e be                | ......mfJ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 09 0c 01 03 0c 24 1b bf e8                | .......$...     
+Invalid response, first byte is 0x9a, should be 0x6e
+9a d9 a1 54 4b 99 24 12 48 4c ff                | ...TK.$.HL.     
+Invalid response, first byte is 0xff, should be 0x6e
+ff 80 31 59 45 59 61 59 81 99 a9                | ..1YEYaY...     
+Invalid response, first byte is 0x4f, should be 0x6e
+4f 01 01 01 01 01 01 86 3d 00 c0                | O.......=..     
+Invalid response, first byte is 0x51, should be 0x6e
+51 00 30 40 40 a0 13 00 5e 06 11                | Q.0@@...^..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 1e 00 00 00 fd 00 32 a0 1e                | ........2..     
+Invalid response, first byte is 0x62, should be 0x6e
+62 15 00 0a 20 20 20 20 20 20 00                | b...      .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 46 39 30 30 42 0a 20                | ....F900B.      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 20 20 20 20                | .               
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 e1 00 00 00 00 00 00 00                |   .........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 d7 cc a8 f7 3f 40                | .........?@     
+Invalid response, first byte is 0x68, should be 0x6e
+68 c6 d9 12 80 7e 28 d1 db f2 c5                | h....~(....     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 54 19 1b c8 11 f4 bd 1e 61 b4                | .T.......a.     
+Invalid response, first byte is 0x87, should be 0x6e
+87 0b 94 07 fb 74 62 22 a6 8d 0d                | .....tb"...     
+Invalid response, first byte is 0x14, should be 0x6e
+14 58 63 a9 6b 6f 89 11 27 dd 3a                | .Xc.ko..'.:     
+Invalid response, first byte is 0x04, should be 0x6e
+04 c3 a8 b6 99 30 0f 89 09 11 6b                | .....0....k     
+Invalid response, first byte is 0x12, should be 0x6e
+12 df f3 4a 51 1f 24 0f 4c 4e 81                | ...JQ.$.LN.     
+Invalid response, first byte is 0x10, should be 0x6e
+10 e0 1a 27 c4 6d 71 2e 60 16 ce                | ...'.mq.`..     
+Invalid response, first byte is 0x99, should be 0x6e
+99 9f 36 b6 cf ba 53 2a cc 17 48                | ..6...S*..H     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc a3 c0 5c a2 05 8f f3 65 38 e6                | ...\....e8.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff ff ff ff 00 1e 6d 66                | .........mf     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 0e be 00 00 09 0c 01 03 0c 24                | J.........$     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b bf e8 9a d9 a1 54 4b 99 24 12                | ......TK.$.     
+Invalid response, first byte is 0x48, should be 0x6e
+48 4c ff ff 80 31 59 45 59 61 59                | HL...1YEYaY     
+Invalid response, first byte is 0x81, should be 0x6e
+81 99 a9 4f 01 01 01 01 01 01 86                | ...O.......     
+Invalid response, first byte is 0x3d, should be 0x6e
+3d 00 c0 51 00 30 40 40 a0 13 00                | =..Q.0@@...     
+Invalid response, first byte is 0x5e, should be 0x6e
+5e 06 11 00 00 1e 00 00 00 fd 00                | ^..........     
+Invalid response, first byte is 0x32, should be 0x6e
+32 a0 1e 62 15 00 0a 20 20 20 20                | 2..b...         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 46 39 30 30                |   .....F900     
+Invalid response, first byte is 0x42, should be 0x6e
+42 0a 20 20 20 20 20 20 20 00 00                | B.       ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 0a 20 20 20 20 20 20 20                | ....            
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 e1 00 00 00 00                |      ......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 d7 cc a8                | ...........     
+Invalid response, first byte is 0xf7, should be 0x6e
+f7 3f 40 68 c6 d9 12 80 7e 28 d1                | .?@h....~(.     
+Invalid response, first byte is 0xdb, should be 0x6e
+db f2 c5 a2 54 19 1b c8 11 f4 bd                | ....T......     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 61 b4 87 0b 94 07 fb 74 62 22                | .a......tb"     
+Invalid response, first byte is 0xa6, should be 0x6e
+a6 8d 0d 14 58 63 a9 6b 6f 89 11                | ....Xc.ko..     
+Invalid response, first byte is 0x27, should be 0x6e
+27 dd 3a 04 c3 a8 b6 99 30 0f 89                | '.:.....0..     
+Invalid response, first byte is 0x09, should be 0x6e
+09 11 6b 12 df f3 4a 51 1f 24 0f                | ..k...JQ.$.     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c 4e 81 10 e0 1a 27 c4 6d 71 2e                | LN....'.mq.     
+Invalid response, first byte is 0x60, should be 0x6e
+60 16 ce 99 9f 36 b6 cf ba 53 2a                | `....6...S*     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc 17 48 cc a3 c0 5c a2 05 8f f3                | ..H...\....     
+Invalid response, first byte is 0x65, should be 0x6e
+65 38 e6 00 ff ff ff ff ff ff 00                | e8.........     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 6d 66 4a 0e be 00 00 09 0c 01                | .mfJ.......     
+Invalid response, first byte is 0x03, should be 0x6e
+03 0c 24 1b bf e8 9a d9 a1 54 4b                | ..$......TK     
+Invalid response, first byte is 0x99, should be 0x6e
+99 24 12 48 4c ff ff 80 31 59 45                | .$.HL...1YE     
+Invalid response, first byte is 0x59, should be 0x6e
+59 61 59 81 99 a9 4f 01 01 01 01                | YaY...O....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 86 3d 00 c0 51 00 30 40 40                | ...=..Q.0@@     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 13 00 5e 06 11 00 00 1e 00 00                | ...^.......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fd 00 32 a0 1e 62 15 00 0a 20                | ...2..b...      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 46                |      .....F     
+Invalid response, first byte is 0x39, should be 0x6e
+39 30 30 42 0a 20 20 20 20 20 20                | 900B.           
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 0a 20 20 20 20                |  ......         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 00 e1 00                |         ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0xd7, should be 0x6e
+d7 cc a8 f7 3f 40 68 c6 d9 12 80                | ....?@h....     
+Invalid response, first byte is 0x7e, should be 0x6e
+7e 28 d1 db f2 c5 a2 54 19 1b c8                | ~(.....T...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 f4 bd 1e 61 b4 87 0b 94 07 fb                | ....a......     
+Invalid response, first byte is 0x74, should be 0x6e
+74 62 22 a6 8d 0d 14 58 63 a9 6b                | tb"....Xc.k     
+Invalid response, first byte is 0x6f, should be 0x6e
+6f 89 11 27 dd 3a 04 c3 a8 b6 99                | o..'.:.....     
+Invalid response, first byte is 0x30, should be 0x6e
+30 0f 89 09 11 6b 12 df f3 4a 51                | 0....k...JQ     
+Invalid response, first byte is 0x1f, should be 0x6e
+1f 24 0f 4c 4e 81 10 e0 1a 27 c4                | .$.LN....'.     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 71 2e 60 16 ce 99 9f 36 b6 cf                | mq.`....6..     
+Invalid response, first byte is 0xba, should be 0x6e
+ba 53 2a cc 17 48 cc a3 c0 5c a2                | .S*..H...\.     
+Invalid response, first byte is 0x05, should be 0x6e
+05 8f f3 65 38 e6 00 ff ff ff ff                | ...e8......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 00 1e 6d 66 4a 0e be 00 00                | ....mfJ....     
+Invalid response, first byte is 0x09, should be 0x6e
+09 0c 01 03 0c 24 1b bf e8 9a d9                | .....$.....     
+Invalid response, first byte is 0xa1, should be 0x6e
+a1 54 4b 99 24 12 48 4c ff ff 80                | .TK.$.HL...     
+Invalid response, first byte is 0x31, should be 0x6e
+31 59 45 59 61 59 81 99 a9 4f 01                | 1YEYaY...O.     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 86 3d 00 c0 51 00                | ......=..Q.     
+Invalid response, first byte is 0x30, should be 0x6e
+30 40 40 a0 13 00 5e 06 11 00 00                | 0@@...^....     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 00 00 00 fd 00 32 a0 1e 62 15                | ......2..b.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 00 00 00                | ..      ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 46 39 30 30 42 0a 20 20 20                | ..F900B.        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 0a 20                |     ......      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x00, should be 0x6e
+00 e1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 d7 cc a8 f7 3f 40 68 c6                | .......?@h.     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 12 80 7e 28 d1 db f2 c5 a2 54                | ...~(.....T     
+Invalid response, first byte is 0x19, should be 0x6e
+19 1b c8 11 f4 bd 1e 61 b4 87 0b                | .......a...     
+Invalid response, first byte is 0x94, should be 0x6e
+94 07 fb 74 62 22 a6 8d 0d 14 58                | ...tb"....X     
+Invalid response, first byte is 0x63, should be 0x6e
+63 a9 6b 6f 89 11 27 dd 3a 04 c3                | c.ko..'.:..     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 b6 99 30 0f 89 09 11 6b 12 df                | ...0....k..     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 4a 51 1f 24 0f 4c 4e 81 10 e0                | .JQ.$.LN...     
+Invalid response, first byte is 0x1a, should be 0x6e
+1a 27 c4 6d 71 2e 60 16 ce 99 9f                | .'.mq.`....     
+Invalid response, first byte is 0x36, should be 0x6e
+36 b6 cf ba 53 2a cc 17 48 cc a3                | 6...S*..H..     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 5c a2 05 8f f3 65 38 e6 00 ff                | .\....e8...     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff ff 00 1e 6d 66 4a 0e                | .......mfJ.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 00 00 09 0c 01 03 0c 24 1b bf                | ........$..     
+Invalid response, first byte is 0xe8, should be 0x6e
+e8 9a d9 a1 54 4b 99 24 12 48 4c                | ....TK.$.HL     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 80 31 59 45 59 61 59 81 99                | ...1YEYaY..     
+Invalid response, first byte is 0xa9, should be 0x6e
+a9 4f 01 01 01 01 01 01 86 3d 00                | .O.......=.     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 51 00 30 40 40 a0 13 00 5e 06                | .Q.0@@...^.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 00 00 1e 00 00 00 fd 00 32 a0                | .........2.     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 62 15 00 0a 20 20 20 20 20 20                | .b...           
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fc 00 46 39 30 30 42 0a                | .....F900B.     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 00 00 00 fc                |        ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 20 20 20                | ..              
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 e1 00 00 00 00 00 00                |    ........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 d7 cc a8 f7 3f                | ..........?     
+Invalid response, first byte is 0x40, should be 0x6e
+40 68 c6 d9 12 80 7e 28 d1 db f2                | @h....~(...     
+Invalid response, first byte is 0xc5, should be 0x6e
+c5 a2 54 19 1b c8 11 f4 bd 1e 61                | ..T.......a     
+Invalid response, first byte is 0xb4, should be 0x6e
+b4 87 0b 94 07 fb 74 62 22 a6 8d                | ......tb"..     
+Invalid response, first byte is 0x0d, should be 0x6e
+0d 14 58 63 a9 6b 6f 89 11 27 dd                | ..Xc.ko..'.     
+Invalid response, first byte is 0x3a, should be 0x6e
+3a 04 c3 a8 b6 99 30 0f 89 09 11                | :.....0....     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 12 df f3 4a 51 1f 24 0f 4c 4e                | k...JQ.$.LN     
+Invalid response, first byte is 0x81, should be 0x6e
+81 10 e0 1a 27 c4 6d 71 2e 60 16                | ....'.mq.`.     
+Invalid response, first byte is 0xce, should be 0x6e
+ce 99 9f 36 b6 cf ba 53 2a cc 17                | ...6...S*..     
+Invalid response, first byte is 0x48, should be 0x6e
+48 cc a3 c0 5c a2 05 8f f3 65 38                | H...\....e8     
+Invalid response, first byte is 0xe6, should be 0x6e
+e6 00 ff ff ff ff ff ff 00 1e 6d                | ..........m     
+Invalid response, first byte is 0x66, should be 0x6e
+66 4a 0e be 00 00 09 0c 01 03 0c                | fJ.........     
+Invalid response, first byte is 0x24, should be 0x6e
+24 1b bf e8 9a d9 a1 54 4b 99 24                | $......TK.$     
+Invalid response, first byte is 0x12, should be 0x6e
+12 48 4c ff ff 80 31 59 45 59 61                | .HL...1YEYa     
+Invalid response, first byte is 0x59, should be 0x6e
+59 81 99 a9 4f 01 01 01 01 01 01                | Y...O......     
+Invalid response, first byte is 0x86, should be 0x6e
+86 3d 00 c0 51 00 30 40 40 a0 13                | .=..Q.0@@..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 5e 06 11 00 00 1e 00 00 00 fd                | .^.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 32 a0 1e 62 15 00 0a 20 20 20                | .2..b...        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 00 00 fc 00 46 39 30                |    .....F90     
+Invalid response, first byte is 0x30, should be 0x6e
+30 42 0a 20 20 20 20 20 20 20 00                | 0B.       .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 0a 20 20 20 20 20 20                | .....           
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 e1 00 00 00                |       .....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 d7 cc                | ...........     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 f7 3f 40 68 c6 d9 12 80 7e 28                | ..?@h....~(     
+Invalid response, first byte is 0xd1, should be 0x6e
+d1 db f2 c5 a2 54 19 1b c8 11 f4                | .....T.....     
+Invalid response, first byte is 0xbd, should be 0x6e
+bd 1e 61 b4 87 0b 94 07 fb 74 62                | ..a......tb     
+Invalid response, first byte is 0x22, should be 0x6e
+22 a6 8d 0d 14 58 63 a9 6b 6f 89                | "....Xc.ko.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 27 dd 3a 04 c3 a8 b6 99 30 0f                | .'.:.....0.     
+Invalid response, first byte is 0x89, should be 0x6e
+89 09 11 6b 12 df f3 4a 51 1f 24                | ...k...JQ.$     
+Invalid response, first byte is 0x0f, should be 0x6e
+0f 4c 4e 81 10 e0 1a 27 c4 6d 71                | .LN....'.mq     
+Invalid response, first byte is 0x2e, should be 0x6e
+2e 60 16 ce 99 9f 36 b6 cf ba 53                | .`....6...S     
+Invalid response, first byte is 0x2a, should be 0x6e
+2a cc 17 48 cc a3 c0 5c a2 05 8f                | *..H...\...     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 65 38 e6 00 ff ff ff ff ff ff                | .e8........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 6d 66 4a 0e be 00 00 09 0c                | ..mfJ......     
+Invalid response, first byte is 0x01, should be 0x6e
+01 03 0c 24 1b bf e8 9a d9 a1 54                | ...$......T     
+Invalid response, first byte is 0x4b, should be 0x6e
+4b 99 24 12 48 4c ff ff 80 31 59                | K.$.HL...1Y     
+Invalid response, first byte is 0x45, should be 0x6e
+45 59 61 59 81 99 a9 4f 01 01 01                | EYaY...O...     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 86 3d 00 c0 51 00 30 40                | ....=..Q.0@     
+Invalid response, first byte is 0x40, should be 0x6e
+40 a0 13 00 5e 06 11 00 00 1e 00                | @...^......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fd 00 32 a0 1e 62 15 00 0a                | ....2..b...     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x46, should be 0x6e
+46 39 30 30 42 0a 20 20 20 20 20                | F900B.          
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 0a 20 20 20                |   ......        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 00 e1                |          ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 d7 cc a8 f7 3f 40 68 c6 d9 12                | .....?@h...     
+Invalid response, first byte is 0x80, should be 0x6e
+80 7e 28 d1 db f2 c5 a2 54 19 1b                | .~(.....T..     
+Invalid response, first byte is 0xc8, should be 0x6e
+c8 11 f4 bd 1e 61 b4 87 0b 94 07                | .....a.....     
+Invalid response, first byte is 0xfb, should be 0x6e
+fb 74 62 22 a6 8d 0d 14 58 63 a9                | .tb"....Xc.     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 6f 89 11 27 dd 3a 04 c3 a8 b6                | ko..'.:....     
+Invalid response, first byte is 0x99, should be 0x6e
+99 30 0f 89 09 11 6b 12 df f3 4a                | .0....k...J     
+Invalid response, first byte is 0x51, should be 0x6e
+51 1f 24 0f 4c 4e 81 10 e0 1a 27                | Q.$.LN....'     
+Invalid response, first byte is 0xc4, should be 0x6e
+c4 6d 71 2e 60 16 ce 99 9f 36 b6                | .mq.`....6.     
+Invalid response, first byte is 0xcf, should be 0x6e
+cf ba 53 2a cc 17 48 cc a3 c0 5c                | ..S*..H...\     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 05 8f f3 65 38 e6 00 ff ff ff                | ....e8.....     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff 00 1e 6d 66 4a 0e be 00                | .....mfJ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 09 0c 01 03 0c 24 1b bf e8 9a                | ......$....     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 a1 54 4b 99 24 12 48 4c ff ff                | ..TK.$.HL..     
+Invalid response, first byte is 0x80, should be 0x6e
+80 31 59 45 59 61 59 81 99 a9 4f                | .1YEYaY...O     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 01 86 3d 00 c0 51                | .......=..Q     
+Invalid response, first byte is 0x00, should be 0x6e
+00 30 40 40 a0 13 00 5e 06 11 00                | .0@@...^...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 00 00 00 fd 00 32 a0 1e 62                | .......2..b     
+Invalid response, first byte is 0x15, should be 0x6e
+15 00 0a 20 20 20 20 20 20 00 00                | ...      ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 46 39 30 30 42 0a 20 20                | ...F900B.       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 0a                |      ......     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 e1 00 00 00 00 00 00 00 00                |  ..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 d7 cc a8 f7 3f 40 68                | ........?@h     
+Invalid response, first byte is 0xc6, should be 0x6e
+c6 d9 12 80 7e 28 d1 db f2 c5 a2                | ....~(.....     
+Invalid response, first byte is 0x54, should be 0x6e
+54 19 1b c8 11 f4 bd 1e 61 b4 87                | T.......a..     
+Invalid response, first byte is 0x0b, should be 0x6e
+0b 94 07 fb 74 62 22 a6 8d 0d 14                | ....tb"....     
+Invalid response, first byte is 0x58, should be 0x6e
+58 63 a9 6b 6f 89 11 27 dd 3a 04                | Xc.ko..'.:.     
+Invalid response, first byte is 0xc3, should be 0x6e
+c3 a8 b6 99 30 0f 89 09 11 6b 12                | ....0....k.     
+Invalid response, first byte is 0xdf, should be 0x6e
+df f3 4a 51 1f 24 0f 4c 4e 81 10                | ..JQ.$.LN..     
+Invalid response, first byte is 0xe0, should be 0x6e
+e0 1a 27 c4 6d 71 2e 60 16 ce 99                | ..'.mq.`...     
+Invalid response, first byte is 0x9f, should be 0x6e
+9f 36 b6 cf ba 53 2a cc 17 48 cc                | .6...S*..H.     
+Invalid response, first byte is 0xa3, should be 0x6e
+a3 c0 5c a2 05 8f f3 65 38 e6 00                | ..\....e8..     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff ff ff 00 1e 6d 66 4a                | ........mfJ     
+Invalid response, first byte is 0x0e, should be 0x6e
+0e be 00 00 09 0c 01 03 0c 24 1b                | .........$.     
+Invalid response, first byte is 0xbf, should be 0x6e
+bf e8 9a d9 a1 54 4b 99 24 12 48                | .....TK.$.H     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c ff ff 80 31 59 45 59 61 59 81                | L...1YEYaY.     
+Invalid response, first byte is 0x99, should be 0x6e
+99 a9 4f 01 01 01 01 01 01 86 3d                | ..O.......=     
+Invalid response, first byte is 0x00, should be 0x6e
+00 c0 51 00 30 40 40 a0 13 00 5e                | ..Q.0@@...^     
+Invalid response, first byte is 0x06, should be 0x6e
+06 11 00 00 1e 00 00 00 fd 00 32                | ..........2     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 1e 62 15 00 0a 20 20 20 20 20                | ..b...          
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 46 39 30 30 42                |  .....F900B     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 20 00 00 00                | .       ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 0a 20 20 20 20 20 20 20 20                | ...             
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 e1 00 00 00 00 00                |     .......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 d7 cc a8 f7                | ...........     
+Invalid response, first byte is 0x3f, should be 0x6e
+3f 40 68 c6 d9 12 80 7e 28 d1 db                | ?@h....~(..     
+Invalid response, first byte is 0xf2, should be 0x6e
+f2 c5 a2 54 19 1b c8 11 f4 bd 1e                | ...T.......     
+Invalid response, first byte is 0x61, should be 0x6e
+61 b4 87 0b 94 07 fb 74 62 22 a6                | a......tb".     
+Invalid response, first byte is 0x8d, should be 0x6e
+8d 0d 14 58 63 a9 6b 6f 89 11 27                | ...Xc.ko..'     
+Invalid response, first byte is 0xdd, should be 0x6e
+dd 3a 04 c3 a8 b6 99 30 0f 89 09                | .:.....0...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 6b 12 df f3 4a 51 1f 24 0f 4c                | .k...JQ.$.L     
+Invalid response, first byte is 0x4e, should be 0x6e
+4e 81 10 e0 1a 27 c4 6d 71 2e 60                | N....'.mq.`     
+Invalid response, first byte is 0x16, should be 0x6e
+16 ce 99 9f 36 b6 cf ba 53 2a cc                | ....6...S*.     
+Invalid response, first byte is 0x17, should be 0x6e
+17 48 cc a3 c0 5c a2 05 8f f3 65                | .H...\....e     
+Invalid response, first byte is 0x38, should be 0x6e
+38 e6 00 ff ff ff ff ff ff 00 1e                | 8..........     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 66 4a 0e be 00 00 09 0c 01 03                | mfJ........     
+Invalid response, first byte is 0x0c, should be 0x6e
+0c 24 1b bf e8 9a d9 a1 54 4b 99                | .$......TK.     
+Invalid response, first byte is 0x24, should be 0x6e
+24 12 48 4c ff ff 80 31 59 45 59                | $.HL...1YEY     
+Invalid response, first byte is 0x61, should be 0x6e
+61 59 81 99 a9 4f 01 01 01 01 01                | aY...O.....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 86 3d 00 c0 51 00 30 40 40 a0                | ..=..Q.0@@.     
+Invalid response, first byte is 0x13, should be 0x6e
+13 00 5e 06 11 00 00 1e 00 00 00                | ..^........     
+Invalid response, first byte is 0xfd, should be 0x6e
+fd 00 32 a0 1e 62 15 00 0a 20 20                | ..2..b...       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 46 39                |     .....F9     
+Invalid response, first byte is 0x30, should be 0x6e
+30 30 42 0a 20 20 20 20 20 20 20                | 00B.            
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fc 00 0a 20 20 20 20 20                | ......          
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 00 e1 00 00                |        ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 d7                | ...........     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc a8 f7 3f 40 68 c6 d9 12 80 7e                | ...?@h....~     
+Invalid response, first byte is 0x28, should be 0x6e
+28 d1 db f2 c5 a2 54 19 1b c8 11                | (.....T....     
+Invalid response, first byte is 0xf4, should be 0x6e
+f4 bd 1e 61 b4 87 0b 94 07 fb 74                | ...a......t     
+Invalid response, first byte is 0x62, should be 0x6e
+62 22 a6 8d 0d 14 58 63 a9 6b 6f                | b"....Xc.ko     
+Invalid response, first byte is 0x89, should be 0x6e
+89 11 27 dd 3a 04 c3 a8 b6 99 30                | ..'.:.....0     
+Invalid response, first byte is 0x0f, should be 0x6e
+0f 89 09 11 6b 12 df f3 4a 51 1f                | ....k...JQ.     
+Invalid response, first byte is 0x24, should be 0x6e
+24 0f 4c 4e 81 10 e0 1a 27 c4 6d                | $.LN....'.m     
+Invalid response, first byte is 0x71, should be 0x6e
+71 2e 60 16 ce 99 9f 36 b6 cf ba                | q.`....6...     
+Invalid response, first byte is 0x53, should be 0x6e
+53 2a cc 17 48 cc a3 c0 5c a2 05                | S*..H...\..     
+Invalid response, first byte is 0x8f, should be 0x6e
+8f f3 65 38 e6 00 ff ff ff ff ff                | ..e8.......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff 00 1e 6d 66 4a 0e be 00 00 09                | ...mfJ.....     
+Invalid response, first byte is 0x0c, should be 0x6e
+0c 01 03 0c 24 1b bf e8 9a d9 a1                | ....$......     
+Invalid response, first byte is 0x54, should be 0x6e
+54 4b 99 24 12 48 4c ff ff 80 31                | TK.$.HL...1     
+Invalid response, first byte is 0x59, should be 0x6e
+59 45 59 61 59 81 99 a9 4f 01 01                | YEYaY...O..     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 86 3d 00 c0 51 00 30                | .....=..Q.0     
+Invalid response, first byte is 0x40, should be 0x6e
+40 40 a0 13 00 5e 06 11 00 00 1e                | @@...^.....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fd 00 32 a0 1e 62 15 00                | .....2..b..     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 00 00 00 fc                | .      ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 46 39 30 30 42 0a 20 20 20 20                | .F900B.         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 00 00 fc 00 0a 20 20                |    ......       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 00                |           .     
+Invalid response, first byte is 0xe1, should be 0x6e
+e1 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 d7 cc a8 f7 3f 40 68 c6 d9                | ......?@h..     
+Invalid response, first byte is 0x12, should be 0x6e
+12 80 7e 28 d1 db f2 c5 a2 54 19                | ..~(.....T.     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b c8 11 f4 bd 1e 61 b4 87 0b 94                | ......a....     
+Invalid response, first byte is 0x07, should be 0x6e
+07 fb 74 62 22 a6 8d 0d 14 58 63                | ..tb"....Xc     
+Invalid response, first byte is 0xa9, should be 0x6e
+a9 6b 6f 89 11 27 dd 3a 04 c3 a8                | .ko..'.:...     
+Invalid response, first byte is 0xb6, should be 0x6e
+b6 99 30 0f 89 09 11 6b 12 df f3                | ..0....k...     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 51 1f 24 0f 4c 4e 81 10 e0 1a                | JQ.$.LN....     
+Invalid response, first byte is 0x27, should be 0x6e
+27 c4 6d 71 2e 60 16 ce 99 9f 36                | '.mq.`....6     
+Invalid response, first byte is 0xb6, should be 0x6e
+b6 cf ba 53 2a cc 17 48 cc a3 c0                | ...S*..H...     
+Invalid response, first byte is 0x5c, should be 0x6e
+5c a2 05 8f f3 65 38 e6 00 ff ff                | \....e8....     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff 00 1e 6d 66 4a 0e be                | ......mfJ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 09 0c 01 03 0c 24 1b bf e8                | .......$...     
+Invalid response, first byte is 0x9a, should be 0x6e
+9a d9 a1 54 4b 99 24 12 48 4c ff                | ...TK.$.HL.     
+Invalid response, first byte is 0xff, should be 0x6e
+ff 80 31 59 45 59 61 59 81 99 a9                | ..1YEYaY...     
+Invalid response, first byte is 0x4f, should be 0x6e
+4f 01 01 01 01 01 01 86 3d 00 c0                | O.......=..     
+Invalid response, first byte is 0x51, should be 0x6e
+51 00 30 40 40 a0 13 00 5e 06 11                | Q.0@@...^..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 1e 00 00 00 fd 00 32 a0 1e                | ........2..     
+Invalid response, first byte is 0x62, should be 0x6e
+62 15 00 0a 20 20 20 20 20 20 00                | b...      .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 46 39 30 30 42 0a 20                | ....F900B.      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x0a, should be 0x6e
+0a 20 20 20 20 20 20 20 20 20 20                | .               
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 e1 00 00 00 00 00 00 00                |   .........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 d7 cc a8 f7 3f 40                | .........?@     
+Invalid response, first byte is 0x68, should be 0x6e
+68 c6 d9 12 80 7e 28 d1 db f2 c5                | h....~(....     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 54 19 1b c8 11 f4 bd 1e 61 b4                | .T.......a.     
+Invalid response, first byte is 0x87, should be 0x6e
+87 0b 94 07 fb 74 62 22 a6 8d 0d                | .....tb"...     
+Invalid response, first byte is 0x14, should be 0x6e
+14 58 63 a9 6b 6f 89 11 27 dd 3a                | .Xc.ko..'.:     
+Invalid response, first byte is 0x04, should be 0x6e
+04 c3 a8 b6 99 30 0f 89 09 11 6b                | .....0....k     
+Invalid response, first byte is 0x12, should be 0x6e
+12 df f3 4a 51 1f 24 0f 4c 4e 81                | ...JQ.$.LN.     
+Invalid response, first byte is 0x10, should be 0x6e
+10 e0 1a 27 c4 6d 71 2e 60 16 ce                | ...'.mq.`..     
+Invalid response, first byte is 0x99, should be 0x6e
+99 9f 36 b6 cf ba 53 2a cc 17 48                | ..6...S*..H     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc a3 c0 5c a2 05 8f f3 65 38 e6                | ...\....e8.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff ff ff ff 00 1e 6d 66                | .........mf     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 0e be 00 00 09 0c 01 03 0c 24                | J.........$     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b bf e8 9a d9 a1 54 4b 99 24 12                | ......TK.$.     
+Invalid response, first byte is 0x48, should be 0x6e
+48 4c ff ff 80 31 59 45 59 61 59                | HL...1YEYaY     
+Invalid response, first byte is 0x81, should be 0x6e
+81 99 a9 4f 01 01 01 01 01 01 86                | ...O.......     
+Invalid response, first byte is 0x3d, should be 0x6e
+3d 00 c0 51 00 30 40 40 a0 13 00                | =..Q.0@@...     
+Invalid response, first byte is 0x5e, should be 0x6e
+5e 06 11 00 00 1e 00 00 00 fd 00                | ^..........     
+Invalid response, first byte is 0x32, should be 0x6e
+32 a0 1e 62 15 00 0a 20 20 20 20                | 2..b...         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 46 39 30 30                |   .....F900     
+Invalid response, first byte is 0x42, should be 0x6e
+42 0a 20 20 20 20 20 20 20 00 00                | B.       ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 0a 20 20 20 20 20 20 20                | ....            
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 e1 00 00 00 00                |      ......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 d7 cc a8                | ...........     
+Invalid response, first byte is 0xf7, should be 0x6e
+f7 3f 40 68 c6 d9 12 80 7e 28 d1                | .?@h....~(.     
+Invalid response, first byte is 0xdb, should be 0x6e
+db f2 c5 a2 54 19 1b c8 11 f4 bd                | ....T......     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 61 b4 87 0b 94 07 fb 74 62 22                | .a......tb"     
+Invalid response, first byte is 0xa6, should be 0x6e
+a6 8d 0d 14 58 63 a9 6b 6f 89 11                | ....Xc.ko..     
+Invalid response, first byte is 0x27, should be 0x6e
+27 dd 3a 04 c3 a8 b6 99 30 0f 89                | '.:.....0..     
+Invalid response, first byte is 0x09, should be 0x6e
+09 11 6b 12 df f3 4a 51 1f 24 0f                | ..k...JQ.$.     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c 4e 81 10 e0 1a 27 c4 6d 71 2e                | LN....'.mq.     
+Invalid response, first byte is 0x60, should be 0x6e
+60 16 ce 99 9f 36 b6 cf ba 53 2a                | `....6...S*     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc 17 48 cc a3 c0 5c a2 05 8f f3                | ..H...\....     
+Invalid response, first byte is 0x65, should be 0x6e
+65 38 e6 00 ff ff ff ff ff ff 00                | e8.........     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 6d 66 4a 0e be 00 00 09 0c 01                | .mfJ.......     
+Invalid response, first byte is 0x03, should be 0x6e
+03 0c 24 1b bf e8 9a d9 a1 54 4b                | ..$......TK     
+Invalid response, first byte is 0x99, should be 0x6e
+99 24 12 48 4c ff ff 80 31 59 45                | .$.HL...1YE     
+Invalid response, first byte is 0x59, should be 0x6e
+59 61 59 81 99 a9 4f 01 01 01 01                | YaY...O....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 86 3d 00 c0 51 00 30 40 40                | ...=..Q.0@@     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 13 00 5e 06 11 00 00 1e 00 00                | ...^.......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fd 00 32 a0 1e 62 15 00 0a 20                | ...2..b...      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 46                |      .....F     
+Invalid response, first byte is 0x39, should be 0x6e
+39 30 30 42 0a 20 20 20 20 20 20                | 900B.           
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 0a 20 20 20 20                |  ......         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 00 e1 00                |         ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0xd7, should be 0x6e
+d7 cc a8 f7 3f 40 68 c6 d9 12 80                | ....?@h....     
+Invalid response, first byte is 0x7e, should be 0x6e
+7e 28 d1 db f2 c5 a2 54 19 1b c8                | ~(.....T...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 f4 bd 1e 61 b4 87 0b 94 07 fb                | ....a......     
+Invalid response, first byte is 0x74, should be 0x6e
+74 62 22 a6 8d 0d 14 58 63 a9 6b                | tb"....Xc.k     
+Invalid response, first byte is 0x6f, should be 0x6e
+6f 89 11 27 dd 3a 04 c3 a8 b6 99                | o..'.:.....     
+Invalid response, first byte is 0x30, should be 0x6e
+30 0f 89 09 11 6b 12 df f3 4a 51                | 0....k...JQ     
+Invalid response, first byte is 0x1f, should be 0x6e
+1f 24 0f 4c 4e 81 10 e0 1a 27 c4                | .$.LN....'.     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 71 2e 60 16 ce 99 9f 36 b6 cf                | mq.`....6..     
+Invalid response, first byte is 0xba, should be 0x6e
+ba 53 2a cc 17 48 cc a3 c0 5c a2                | .S*..H...\.     
+Invalid response, first byte is 0x05, should be 0x6e
+05 8f f3 65 38 e6 00 ff ff ff ff                | ...e8......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 00 1e 6d 66 4a 0e be 00 00                | ....mfJ....     
+Invalid response, first byte is 0x09, should be 0x6e
+09 0c 01 03 0c 24 1b bf e8 9a d9                | .....$.....     
+Invalid response, first byte is 0xa1, should be 0x6e
+a1 54 4b 99 24 12 48 4c ff ff 80                | .TK.$.HL...     
+Invalid response, first byte is 0x31, should be 0x6e
+31 59 45 59 61 59 81 99 a9 4f 01                | 1YEYaY...O.     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 86 3d 00 c0 51 00                | ......=..Q.     
+Invalid response, first byte is 0x30, should be 0x6e
+30 40 40 a0 13 00 5e 06 11 00 00                | 0@@...^....     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 00 00 00 fd 00 32 a0 1e 62 15                | ......2..b.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 00 00 00                | ..      ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 46 39 30 30 42 0a 20 20 20                | ..F900B.        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 0a 20                |     ......      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x00, should be 0x6e
+00 e1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 d7 cc a8 f7 3f 40 68 c6                | .......?@h.     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 12 80 7e 28 d1 db f2 c5 a2 54                | ...~(.....T     
+Invalid response, first byte is 0x19, should be 0x6e
+19 1b c8 11 f4 bd 1e 61 b4 87 0b                | .......a...     
+Invalid response, first byte is 0x94, should be 0x6e
+94 07 fb 74 62 22 a6 8d 0d 14 58                | ...tb"....X     
+Invalid response, first byte is 0x63, should be 0x6e
+63 a9 6b 6f 89 11 27 dd 3a 04 c3                | c.ko..'.:..     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 b6 99 30 0f 89 09 11 6b 12 df                | ...0....k..     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 4a 51 1f 24 0f 4c 4e 81 10 e0                | .JQ.$.LN...     
+Invalid response, first byte is 0x1a, should be 0x6e
+1a 27 c4 6d 71 2e 60 16 ce 99 9f                | .'.mq.`....     
+Invalid response, first byte is 0x36, should be 0x6e
+36 b6 cf ba 53 2a cc 17 48 cc a3                | 6...S*..H..     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 5c a2 05 8f f3 65 38 e6 00 ff                | .\....e8...     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff ff ff 00 1e 6d 66 4a 0e                | .......mfJ.     
+Invalid response, first byte is 0xbe, should be 0x6e
+be 00 00 09 0c 01 03 0c 24 1b bf                | ........$..     
+Invalid response, first byte is 0xe8, should be 0x6e
+e8 9a d9 a1 54 4b 99 24 12 48 4c                | ....TK.$.HL     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 80 31 59 45 59 61 59 81 99                | ...1YEYaY..     
+Invalid response, first byte is 0xa9, should be 0x6e
+a9 4f 01 01 01 01 01 01 86 3d 00                | .O.......=.     
+Invalid response, first byte is 0xc0, should be 0x6e
+c0 51 00 30 40 40 a0 13 00 5e 06                | .Q.0@@...^.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 00 00 1e 00 00 00 fd 00 32 a0                | .........2.     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 62 15 00 0a 20 20 20 20 20 20                | .b...           
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 fc 00 46 39 30 30 42 0a                | .....F900B.     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 00 00 00 fc                |        ....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 20 20 20                | ..              
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 e1 00 00 00 00 00 00                |    ........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 d7 cc a8 f7 3f                | ..........?     
+Invalid response, first byte is 0x40, should be 0x6e
+40 68 c6 d9 12 80 7e 28 d1 db f2                | @h....~(...     
+Invalid response, first byte is 0xc5, should be 0x6e
+c5 a2 54 19 1b c8 11 f4 bd 1e 61                | ..T.......a     
+Invalid response, first byte is 0xb4, should be 0x6e
+b4 87 0b 94 07 fb 74 62 22 a6 8d                | ......tb"..     
+Invalid response, first byte is 0x0d, should be 0x6e
+0d 14 58 63 a9 6b 6f 89 11 27 dd                | ..Xc.ko..'.     
+Invalid response, first byte is 0x3a, should be 0x6e
+3a 04 c3 a8 b6 99 30 0f 89 09 11                | :.....0....     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 12 df f3 4a 51 1f 24 0f 4c 4e                | k...JQ.$.LN     
+Invalid response, first byte is 0x81, should be 0x6e
+81 10 e0 1a 27 c4 6d 71 2e 60 16                | ....'.mq.`.     
+Invalid response, first byte is 0xce, should be 0x6e
+ce 99 9f 36 b6 cf ba 53 2a cc 17                | ...6...S*..     
+Invalid response, first byte is 0x48, should be 0x6e
+48 cc a3 c0 5c a2 05 8f f3 65 38                | H...\....e8     
+Invalid response, first byte is 0xe6, should be 0x6e
+e6 00 ff ff ff ff ff ff 00 1e 6d                | ..........m     
+Invalid response, first byte is 0x66, should be 0x6e
+66 4a 0e be 00 00 09 0c 01 03 0c                | fJ.........     
+Invalid response, first byte is 0x24, should be 0x6e
+24 1b bf e8 9a d9 a1 54 4b 99 24                | $......TK.$     
+Invalid response, first byte is 0x12, should be 0x6e
+12 48 4c ff ff 80 31 59 45 59 61                | .HL...1YEYa     
+Invalid response, first byte is 0x59, should be 0x6e
+59 81 99 a9 4f 01 01 01 01 01 01                | Y...O......     
+Invalid response, first byte is 0x86, should be 0x6e
+86 3d 00 c0 51 00 30 40 40 a0 13                | .=..Q.0@@..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 5e 06 11 00 00 1e 00 00 00 fd                | .^.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 32 a0 1e 62 15 00 0a 20 20 20                | .2..b...        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 00 00 00 fc 00 46 39 30                |    .....F90     
+Invalid response, first byte is 0x30, should be 0x6e
+30 42 0a 20 20 20 20 20 20 20 00                | 0B.       .     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fc 00 0a 20 20 20 20 20 20                | .....           
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 e1 00 00 00                |       .....     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 d7 cc                | ...........     
+Invalid response, first byte is 0xa8, should be 0x6e
+a8 f7 3f 40 68 c6 d9 12 80 7e 28                | ..?@h....~(     
+Invalid response, first byte is 0xd1, should be 0x6e
+d1 db f2 c5 a2 54 19 1b c8 11 f4                | .....T.....     
+Invalid response, first byte is 0xbd, should be 0x6e
+bd 1e 61 b4 87 0b 94 07 fb 74 62                | ..a......tb     
+Invalid response, first byte is 0x22, should be 0x6e
+22 a6 8d 0d 14 58 63 a9 6b 6f 89                | "....Xc.ko.     
+Invalid response, first byte is 0x11, should be 0x6e
+11 27 dd 3a 04 c3 a8 b6 99 30 0f                | .'.:.....0.     
+Invalid response, first byte is 0x89, should be 0x6e
+89 09 11 6b 12 df f3 4a 51 1f 24                | ...k...JQ.$     
+Invalid response, first byte is 0x0f, should be 0x6e
+0f 4c 4e 81 10 e0 1a 27 c4 6d 71                | .LN....'.mq     
+Invalid response, first byte is 0x2e, should be 0x6e
+2e 60 16 ce 99 9f 36 b6 cf ba 53                | .`....6...S     
+Invalid response, first byte is 0x2a, should be 0x6e
+2a cc 17 48 cc a3 c0 5c a2 05 8f                | *..H...\...     
+Invalid response, first byte is 0xf3, should be 0x6e
+f3 65 38 e6 00 ff ff ff ff ff ff                | .e8........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 6d 66 4a 0e be 00 00 09 0c                | ..mfJ......     
+Invalid response, first byte is 0x01, should be 0x6e
+01 03 0c 24 1b bf e8 9a d9 a1 54                | ...$......T     
+Invalid response, first byte is 0x4b, should be 0x6e
+4b 99 24 12 48 4c ff ff 80 31 59                | K.$.HL...1Y     
+Invalid response, first byte is 0x45, should be 0x6e
+45 59 61 59 81 99 a9 4f 01 01 01                | EYaY...O...     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 86 3d 00 c0 51 00 30 40                | ....=..Q.0@     
+Invalid response, first byte is 0x40, should be 0x6e
+40 a0 13 00 5e 06 11 00 00 1e 00                | @...^......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 fd 00 32 a0 1e 62 15 00 0a                | ....2..b...     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 00 00 00 fc 00                |       .....     
+Invalid response, first byte is 0x46, should be 0x6e
+46 39 30 30 42 0a 20 20 20 20 20                | F900B.          
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 0a 20 20 20                |   ......        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 00 e1                |          ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 d7 cc a8 f7 3f 40 68 c6 d9 12                | .....?@h...     
+Invalid response, first byte is 0x80, should be 0x6e
+80 7e 28 d1 db f2 c5 a2 54 19 1b                | .~(.....T..     
+Invalid response, first byte is 0xc8, should be 0x6e
+c8 11 f4 bd 1e 61 b4 87 0b 94 07                | .....a.....     
+Invalid response, first byte is 0xfb, should be 0x6e
+fb 74 62 22 a6 8d 0d 14 58 63 a9                | .tb"....Xc.     
+Invalid response, first byte is 0x6b, should be 0x6e
+6b 6f 89 11 27 dd 3a 04 c3 a8 b6                | ko..'.:....     
+Invalid response, first byte is 0x99, should be 0x6e
+99 30 0f 89 09 11 6b 12 df f3 4a                | .0....k...J     
+Invalid response, first byte is 0x51, should be 0x6e
+51 1f 24 0f 4c 4e 81 10 e0 1a 27                | Q.$.LN....'     
+Invalid response, first byte is 0xc4, should be 0x6e
+c4 6d 71 2e 60 16 ce 99 9f 36 b6                | .mq.`....6.     
+Invalid response, first byte is 0xcf, should be 0x6e
+cf ba 53 2a cc 17 48 cc a3 c0 5c                | ..S*..H...\     
+Invalid response, first byte is 0xa2, should be 0x6e
+a2 05 8f f3 65 38 e6 00 ff ff ff                | ....e8.....     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff ff 00 1e 6d 66 4a 0e be 00                | .....mfJ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 09 0c 01 03 0c 24 1b bf e8 9a                | ......$....     
+Invalid response, first byte is 0xd9, should be 0x6e
+d9 a1 54 4b 99 24 12 48 4c ff ff                | ..TK.$.HL..     
+Invalid response, first byte is 0x80, should be 0x6e
+80 31 59 45 59 61 59 81 99 a9 4f                | .1YEYaY...O     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 01 86 3d 00 c0 51                | .......=..Q     
+Invalid response, first byte is 0x00, should be 0x6e
+00 30 40 40 a0 13 00 5e 06 11 00                | .0@@...^...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 1e 00 00 00 fd 00 32 a0 1e 62                | .......2..b     
+Invalid response, first byte is 0x15, should be 0x6e
+15 00 0a 20 20 20 20 20 20 00 00                | ...      ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 46 39 30 30 42 0a 20 20                | ...F900B.       
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 0a                |      ......     
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 e1 00 00 00 00 00 00 00 00                |  ..........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Error while reading read message answer: Messaggio non valido
+Error while reading write message answer: Messaggio non valido
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff ff ff ff 00 1e 6d 66                | .........mf     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 0e be 00 00 09 0c 01 03 0c 24                | J.........$     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b bf e8 9a d9 a1 54 4b 99 24 12                | ......TK.$.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 bd 0f 00 00 00 17 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 bd 0f 00 00 00 15 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 bd 0f 00 00 00 14 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 02 00 01 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 0b 00 00 00 01 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 5b 00 00 00 6e 51 82 01 e6 5a                | .[...nQ...Z     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 06                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 01 00 bd 0f 00 00 00 14 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 02 00                | ...........     
+Invalid response, first byte is 0x01, should be 0x6e
+01 00 00 00 00 00 0b 00 00 00 01                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 5b 00 00 00 6e 51 82 01                | ...[...nQ..     
+Invalid response, first byte is 0xe6, should be 0x6e
+e6 5a 00 00 00 00 00 00 00 00 00                | .Z.........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Error while reading read message answer: Messaggio non valido
+Error while reading write message answer: Messaggio non valido
+Invalid response, first byte is 0x00, should be 0x6e
+00 ff ff ff ff ff ff 00 1e 6d 66                | .........mf     
+Invalid response, first byte is 0x4a, should be 0x6e
+4a 0e be 00 00 09 0c 01 03 0c 24                | J.........$     
+Invalid response, first byte is 0x1b, should be 0x6e
+1b bf e8 9a d9 a1 54 4b 99 24 12                | ......TK.$.     
+Invalid response, first byte is 0x48, should be 0x6e
+48 4c ff ff 80 31 59 45 59 61 59                | HL...1YEYaY     
+Invalid response, first byte is 0x81, should be 0x6e
+81 99 a9 4f 01 01 01 01 01 01 86                | ...O.......     
+Invalid response, first byte is 0x3d, should be 0x6e
+3d 00 c0 51 00 30 40 40 a0 13 00                | =..Q.0@@...     
+Invalid response, first byte is 0x5e, should be 0x6e
+5e 06 11 00 00 1e 00 00 00 fd 00                | ^..........     
+Invalid response, first byte is 0x32, should be 0x6e
+32 a0 1e 62 15 00 0a 20 20 20 20                | 2..b...         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 00 00 00 fc 00 46 39 30 30                |   .....F900     
+Invalid response, first byte is 0x42, should be 0x6e
+42 0a 20 20 20 20 20 20 20 00 00                | B.       ..     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fc 00 0a 20 20 20 20 20 20 20                | ....            
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 e1 00 00 00 00                |      ......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 d7 cc a8                | ...........     
+Invalid response, first byte is 0xf7, should be 0x6e
+f7 3f 40 68 c6 d9 12 80 7e 28 d1                | .?@h....~(.     
+Invalid response, first byte is 0xdb, should be 0x6e
+db f2 c5 a2 54 19 1b c8 11 f4 bd                | ....T......     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 61 b4 87 0b 94 07 fb 74 62 22                | .a......tb"     
+Invalid response, first byte is 0xa6, should be 0x6e
+a6 8d 0d 14 58 63 a9 6b 6f 89 11                | ....Xc.ko..     
+Invalid response, first byte is 0x27, should be 0x6e
+27 dd 3a 04 c3 a8 b6 99 30 0f 89                | '.:.....0..     
+Invalid response, first byte is 0x09, should be 0x6e
+09 11 6b 12 df f3 4a 51 1f 24 0f                | ..k...JQ.$.     
+Invalid response, first byte is 0x4c, should be 0x6e
+4c 4e 81 10 e0 1a 27 c4 6d 71 2e                | LN....'.mq.     
+Invalid response, first byte is 0x60, should be 0x6e
+60 16 ce 99 9f 36 b6 cf ba 53 2a                | `....6...S*     
+Invalid response, first byte is 0xcc, should be 0x6e
+cc 17 48 cc a3 c0 5c a2 05 8f f3                | ..H...\....     
+Invalid response, first byte is 0x65, should be 0x6e
+65 38 e6 00 ff ff ff ff ff ff 00                | e8.........     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 6d 66 4a 0e be 00 00 09 0c 01                | .mfJ.......     
+Invalid response, first byte is 0x03, should be 0x6e
+03 0c 24 1b bf e8 9a d9 a1 54 4b                | ..$......TK     
+Invalid response, first byte is 0x99, should be 0x6e
+99 24 12 48 4c ff ff 80 31 59 45                | .$.HL...1YE     
+Invalid response, first byte is 0x59, should be 0x6e
+59 61 59 81 99 a9 4f 01 01 01 01                | YaY...O....     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 86 3d 00 c0 51 00 30 40 40                | ...=..Q.0@@     
+Invalid response, first byte is 0xa0, should be 0x6e
+a0 13 00 5e 06 11 00 00 1e 00 00                | ...^.......     
+Invalid response, first byte is 0x00, should be 0x6e
+00 fd 00 32 a0 1e 62 15 00 0a 20                | ...2..b...      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 00 00 00 fc 00 46                |      .....F     
+Invalid response, first byte is 0x39, should be 0x6e
+39 30 30 42 0a 20 20 20 20 20 20                | 900B.           
+Invalid response, first byte is 0x20, should be 0x6e
+20 00 00 00 fc 00 0a 20 20 20 20                |  ......         
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 00 e1 00                |         ...     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0xd7, should be 0x6e
+d7 cc a8 f7 3f 40 68 c6 d9 12 80                | ....?@h....     
+Invalid response, first byte is 0x7e, should be 0x6e
+7e 28 d1 db f2 c5 a2 54 19 1b c8                | ~(.....T...     
+Invalid response, first byte is 0x11, should be 0x6e
+11 f4 bd 1e 61 b4 87 0b 94 07 fb                | ....a......     
+Invalid response, first byte is 0x74, should be 0x6e
+74 62 22 a6 8d 0d 14 58 63 a9 6b                | tb"....Xc.k     
+Invalid response, first byte is 0x6f, should be 0x6e
+6f 89 11 27 dd 3a 04 c3 a8 b6 99                | o..'.:.....     
+Invalid response, first byte is 0x30, should be 0x6e
+30 0f 89 09 11 6b 12 df f3 4a 51                | 0....k...JQ     
+Invalid response, first byte is 0x1f, should be 0x6e
+1f 24 0f 4c 4e 81 10 e0 1a 27 c4                | .$.LN....'.     
+Invalid response, first byte is 0x6d, should be 0x6e
+6d 71 2e 60 16 ce 99 9f 36 b6 cf                | mq.`....6..     
+Invalid response, first byte is 0xba, should be 0x6e
+ba 53 2a cc 17 48 cc a3 c0 5c a2                | .S*..H...\.     
+Invalid response, first byte is 0x05, should be 0x6e
+05 8f f3 65 38 e6 00 ff ff ff ff                | ...e8......     
+Invalid response, first byte is 0xff, should be 0x6e
+ff ff 00 1e 6d 66 4a 0e be 00 00                | ....mfJ....     
+Invalid response, first byte is 0x09, should be 0x6e
+09 0c 01 03 0c 24 1b bf e8 9a d9                | .....$.....     
+Invalid response, first byte is 0xa1, should be 0x6e
+a1 54 4b 99 24 12 48 4c ff ff 80                | .TK.$.HL...     
+Invalid response, first byte is 0x31, should be 0x6e
+31 59 45 59 61 59 81 99 a9 4f 01                | 1YEYaY...O.     
+Invalid response, first byte is 0x01, should be 0x6e
+01 01 01 01 01 86 3d 00 c0 51 00                | ......=..Q.     
+Invalid response, first byte is 0x30, should be 0x6e
+30 40 40 a0 13 00 5e 06 11 00 00                | 0@@...^....     
+Invalid response, first byte is 0x1e, should be 0x6e
+1e 00 00 00 fd 00 32 a0 1e 62 15                | ......2..b.     
+Invalid response, first byte is 0x00, should be 0x6e
+00 0a 20 20 20 20 20 20 00 00 00                | ..      ...     
+Invalid response, first byte is 0xfc, should be 0x6e
+fc 00 46 39 30 30 42 0a 20 20 20                | ..F900B.        
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 00 00 00 fc 00 0a 20                |     ......      
+Invalid response, first byte is 0x20, should be 0x6e
+20 20 20 20 20 20 20 20 20 20 20                |                 
+Invalid response, first byte is 0x00, should be 0x6e
+00 e1 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 00 00 00 00 00 00 00 00                | ...........     
+Invalid response, first byte is 0x00, should be 0x6e
+00 00 00 d7 cc a8 f7 3f 40 68 c6                | .......?@h.      

@@ -1,0 +1,38 @@
+==>ddcpci is quitting.
+ddccontrol version 0.1.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...13...) and Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+ddcpci initing...
+Starting /usr/local/bin/ddcpci 1 -1862112930 &...
+Found I2C device (dev:/dev/i2c-0)
+ddcci_open returned -2
+Found I2C device (dev:/dev/i2c-1)
+ddcci_open returned -2
+Found I2C device (dev:/dev/i2c-2)
+ddcci_open returned -2
+Found I2C device (dev:/dev/i2c-3)
+0000: 00 ff ff ff ff ff ff 00 34 ac f3 43 aa 11 00 00 | ........4..C....
+0010: 33 0a 01 01 0e 28 1e 78 e9 04 88 a0 57 4a 9b 26 | 3....(.x....WJ.&
+0020: 12 48 4c ff ff 80 d1 4f c2 59 a9 59 a9 4f 81 99 | .HL....O.Y.Y.O..
+0030: e1 4f 61 59 45 59 0f 75 08 b0 72 46 43 50 90 c8 | .OaYEY.u..rFCP..
+0040: 13 00 89 27 11 00 00 18 00 00 00 fd 00 32 a0 1e | ...'.........2..
+0050: 79 24 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e | y$..      .....N
+0060: 53 48 31 31 35 37 55 0a 20 20 20 20 00 00 00 ff | SH1157U.    ....
+0070: 00 30 31 32 32 30 34 35 32 32 0a 20 20 20 00 dc | .012204522.   ..
+ddcci_open returned -1
+Found I2C device (dev:/dev/i2c-4)
+ddcci_open returned -2
+Found I2C device (dev:/dev/i2c-5)
+ddcci_open returned -2
+Found I2C device (dev:/dev/i2c-6)
+ddcci_open returned -3
+Found I2C device (dev:/dev/i2c-7)
+ddcci_open returned -3
+Detected monitors :
+ - Device: dev:/dev/i2c-3
+   DDC/CI supported: No
+   Monitor Name: Unknown monitor (MEL43F3)
+   Input type: Analog
+ddcpci being released...

@@ -1,0 +1,51 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors....
+Detected monitors :
+ - Device: pci:01:00.0-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-1...
+
+EDID readings:
+	Plug and Play ID: NEC665C [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (type(LCD) mccs_ver(1.1) asset_eep(20) mpu_ver(0.1) vcp(04 08 10 12 14(01 02 04 06 07 08) 16 18 1A 68(01 02 03 04 05 06 07 09) B0 B4 B6 D6 E3 FA FF) vcp_p02(38 39 3B 47 64 65))
+Parsed output: 
+	VCP: 04 08 10 12 14 16 18 1a 68 b0 b4 b6 d6 e3 fa ff 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x10: +/255/255 C [Brightness]
+Control 0x12: +/34/68 C [Contrast]
+Control 0x14: +/2/7 C [???]
+Control 0x68: +/0/8 C [???]
+Control 0xb0: +/0/65535 C [Settings]
+Control 0xb4: +/1/2 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xe3: +/0/1 C [???]
+Control 0xfa: +/17340/65535 C [???]
+Control 0xff: +/12158/65535 C [???]

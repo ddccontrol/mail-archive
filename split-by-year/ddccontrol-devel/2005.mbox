@@ -884,106 +884,19 @@ Beauvallon 15 - 213, ch de Morgiou - 13009 Marseille - France
 tel: +33 (0)4 91 40 46 50           mob: +33 (0)6 68 81 54 56
 
 --=-hW4MiWA8+qdahp0wk6YY
-Content-Disposition: attachment; filename=ddccontrol.dump
-Content-Type: text/plain; name=ddccontrol.dump; charset=ISO-8859-1
-Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="ddccontrol.dump.external.txt"
+X-External-Attachment-Path: attachments/2005-06/message-000014/ddccontrol.dump
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3783
 
-ioctl(): Fonction non implant=E9e
-ioctl a renvoy=E9 -1
-Echec de lecture de l'EDID 0x50.
-ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
-ioctl a renvoy=E9 -1
-Echec de lecture de l'EDID 0x50.
-EDID corrompu =E0 0x50.
-ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
-ioctl a renvoy=E9 -1
-Echec de lecture de l'EDID 0x50.
-ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
-ioctl a renvoy=E9 -1
-Echec de lecture de l'EDID 0x50.
-dev:/dev/i2c-6: Aucun p=E9riph=E9rique de ce type
-dev:/dev/i2c-7: Aucun p=E9riph=E9rique de ce type
-ddccontrol, version 0.1.2
-Copyright 2005 Oleg I. Vdovikin (oleg@...3...) et Nicolas Boichat (nicola=
-s@...1...)
-Ce programme est livr=E9 SANS AUCUNE GARANTIE.
-Vous pouvez redistribuer des copies de ce programme sous les termes de la l=
-icence g=E9n=E9rale publique de GNU (GNU General Public License).
-
-Moniteurs d=E9tect=E9s :
- - P=E9riph=E9rique : dev:/dev/i2c-4
-   DDC/CI support=E9 : Oui
-   Nom du moniteur : Mitsubishi Diamond Pro 2060u
-   Type d'entr=E9e : analogique
-  (Choisi automatiquement)
-Lecture de l'EDID et initialisation du DDC/CI sur le bus dev:/dev/i2c-4...
-
-Lectures EDID :
-	ID Plug and Play: MEL4632 [Mitsubishi Diamond Pro 2060u]
-	Type d'entr=E9e : analogique
-
-Capacit=E9s:
- mccs_ver(1.1) type(CRT_AG) vcp(00 01 04 06 08 10 12 14(01 04 06 07 08) 16 =
-18 1A 1E 20 22 24 26 28 30 32 38 3A 3C 40 42 44 46 47 48 4A 4C 54 56 68 6C =
-6E 70 D6 E1 E2 E3 E6 E8 E9 EA EB EF F6 F9 FA FC FF) vcp_p02(3B 3C 42 43 44 =
-46 49 4A 4B 4C 4E 4F 54 56) asset_eep(40) mpu_ver(2.1.0)
-
-Contr=F4les (valide/actuel/maximum) [Description - Nom de la valeur]:
-Contr=F4le 0x00: +/0/1 [D=E9magn=E9tiser]
-Contr=F4le 0x01: +/0/1 [???]
-Contr=F4le 0x04: +/0/1 [Restaurer les param=E8tres d'usine]
-Contr=F4le 0x06: +/0/1 [Restaurer les param=E8tres d'usine de g=E9om=E9trie=
-]
-Contr=F4le 0x08: +/0/1 [Restaurer les param=E8tres d'usine de couleur]
-Contr=F4le 0x10: +/67/255 [Luminosit=E9]
-Contr=F4le 0x12: +/255/255 [Contraste]
-Contr=F4le 0x14: +/8/8 [???]
-Contr=F4le 0x16: +/133/164 [Niveau maximum de rouge]
-Contr=F4le 0x18: +/124/164 [Niveau maximum de vert]
-Contr=F4le 0x1a: +/124/164 [Niveau maximum de bleu]
-Contr=F4le 0x1e: +/0/1 [???]
-Contr=F4le 0x20: +/107/255 [Position horizontale]
-Contr=F4le 0x22: +/190/222 [Taille horizontale]
-Contr=F4le 0x24: +/137/255 [Coussin horizontal]
-Contr=F4le 0x26: +/121/255 [Balance du coussin horizontal]
-Contr=F4le 0x28: +/151/255 [D=E9convergence horizontale]
-Contr=F4le 0x30: +/133/254 [Position verticale]
-Contr=F4le 0x32: +/151/255 [Taille verticale]
-Contr=F4le 0x38: +/128/255 [D=E9convergence verticale]
-Contr=F4le 0x3a: +/164/255 [Lin=E9arit=E9 verticale]
-Contr=F4le 0x3c: +/149/255 [Balance de la lin=E9arit=E9 horizontale]
-Contr=F4le 0x40: +/133/255 [Distorsion en parall=E9logramme]
-Contr=F4le 0x42: +/118/255 [Distorsion trap=E9zo=EFdale]
-Contr=F4le 0x44: +/127/255 [Rotation]
-Contr=F4le 0x46: +/99/255 [Contr=F4le de la distorsion des coins sup=E9rieu=
-rs]
-Contr=F4le 0x48: +/127/255 [Balance de la distorsion des coins sup=E9rieurs=
-]
-Contr=F4le 0x4a: +/85/255 [Contr=F4le de la distorsion des coins inf=E9rieu=
-rs]
-Contr=F4le 0x4c: +/86/255 [Balance de la distorsion des coins inf=E9rieurs]
-Contr=F4le 0x54: +/255/255 [???]
-Contr=F4le 0x56: +/0/127 [Moir=E9 vertical]
-Contr=F4le 0x68: +/3/6 [Choix de langue - Espagnol]
-Contr=F4le 0x6c: +/120/255 [???]
-Contr=F4le 0x6e: +/117/255 [???]
-Contr=F4le 0x70: +/170/255 [???]
-Contr=F4le 0xa8: +/1/3 [???]
-Contr=F4le 0xd6: +/1/4 [???]
-Contr=F4le 0xe1: +/1/1 [???]
-Contr=F4le 0xe2: +/0/1 [???]
-Contr=F4le 0xe3: +/0/1 [???]
-Contr=F4le 0xe6: +/143/255 [???]
-Contr=F4le 0xe8: +/136/255 [Puret=E9 du coin sup=E9rieur gauche]
-Contr=F4le 0xe9: +/115/255 [Puret=E9 du coin sup=E9rieur droit]
-Contr=F4le 0xea: +/182/255 [Puret=E9 du coin inf=E9rieur gauche]
-Contr=F4le 0xeb: +/98/255 [Puret=E9 du coin inf=E9rieur droit]
-Contr=F4le 0xef: +/0/4 [???]
-Contr=F4le 0xf6: +/0/1 [???]
-Contr=F4le 0xf9: +/0/2 [???]
-Contr=F4le 0xfa: +/15404/65535 [???]
-Contr=F4le 0xfc: +/9/24 [???]
-Contr=F4le 0xff: +/13769/65535 [???]
+Attachment extracted from this mbox message.
+Path: attachments/2005-06/message-000014/ddccontrol.dump
+Original filename: ddccontrol.dump
+Original content type: text/plain
+Original decoded size: 3783 bytes
 
 --=-hW4MiWA8+qdahp0wk6YY--
 
@@ -2813,13 +2726,20 @@ P.S. Please CC on answers, I'm not on the list.
 Linux is not The Answer. Yes is the answer. Linux is The Question. - Neo
 
 --YToU2i3Vx8H2dn7O
-Content-Type: application/xml
-Content-Disposition: attachment; filename="SAM0194.xml"
-Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="SAM0194.xml.external.txt"
+X-External-Attachment-Path: attachments/2005-09/message-000034/SAM0194.xml
+X-External-Attachment-Content-Type: application/xml
+X-External-Attachment-Size: 160
 
-<?xml version=3D"1.0"?>=0A<!---The Samsung 930BF seems to work with the set=
-tings of the 173P -->=0A<monitor include=3D"SAM00D3" name=3D"Samsung SyncMa=
-ster 930BF (VGA)"/>=0A
+Attachment extracted from this mbox message.
+Path: attachments/2005-09/message-000034/SAM0194.xml
+Original filename: SAM0194.xml
+Original content type: application/xml
+Original decoded size: 160 bytes
+
 --YToU2i3Vx8H2dn7O--
 
 
@@ -2950,61 +2870,19 @@ On Sat, 2005-09-10 at 13:04 +0200, Christian Schilling wrote:
 Nicolas Boichat <nicolas@...1...>
 
 --=-gdzrXInzmSqmEwrK53/d
-Content-Disposition: attachment; filename=display-capplet.png
-Content-Type: image/png; name=display-capplet.png
-Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="display-capplet.png.external.txt"
+X-External-Attachment-Path: attachments/2005-09/message-000036/display-capplet.png
+X-External-Attachment-Content-Type: image/png
+X-External-Attachment-Size: 2824
 
-iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAKvUlE
-QVR42s2aa4wV5RnHf+/M7Fn2IhcX1gJFFmyEteWybSxuTKQIpP2AHxBSbUltNfGSdjHERtOiaW3a
-GNGmVqO1WtJsKlh1G0FbjdGkTRWyQeoCW9EtFxHYGy57jmd3z9lzZuZ9336Yy5k5F3bRiL7JZC5n
-zpnn8n+e5/88cwSFJfwtev5FWLrMcXjNighrFO2/SEv7mypWwooIvcQwjCu01mit+YKuHqAbkFEP
-BNC5YnBwcKy2trbeMAzPLcJzhNY6PD7XUkoVTOYbIbgWPXddF6UUWmuklGitw/Po9ejx9u3b8488
-8shi4F3fEwA6gJABUF9fXz8yMhIKH2xRZSb0tS9o4MlyWyUhlVLhueu64b1KKSzLqi6KVV0cA4Xo
-rSB8JSWiQkevlTuPKhFcjx5X8oqUIWpiMWqVEx5gfHycXC5HAKeJrF7O8gFkio8Dq1baAmGnTp0a
-KhMxhihWoGQJIcjlcixatOhzjdju7m4ymUzMCEVpXlvlrB9d37zl8c9F+Lf/3IZlWSUeLUaMda4A
-DFbr1y5l1oy6c5YYHTVL0e+FiVxr7yByky66bzidZf/7vSHkivBfsqxzYTlYs6bXgY6XxHKKE81v
-uvQLKoyFuOYaTfATU+umxH43GtATKlAuf5fU8iIs6jLCBtd0mQyldeQZWqOUbzQhPMfoeF2JptZJ
-KVBceCgjTExY/zNKBCZ2Pfq50oSCS6VDzwToihbQ81Ig+IIQIg4L/2FaCIwIHLTSofsLMNAxK8fj
-CpT/ufIFV0qj+noaD/7r+TvymKnmld/dAfUphAjxfy56YxVbP1AgCiGpNUpJBAZaFIRHUHavQyjE
-lVK+F7zvg6sUYiw95b97Xt6wbuXMBU4mvWjnrseuumTxNQ+gORy1/qRjQEqJaZrhFwxDoKVEKoUQ
-IITGSwoFqJSDUgEyEa9ErK+1xkx9VP+/zo5b2n6yoWXD2ubE2N4tJEZhx/5/b72scfrjSqnOiTwQ
-K7OO44SRH6QuyzSQSuI4nhKuq5FK4krlbxJXShy3sHcciS0ltiOxXTe2z9suecdBDZxo6Hrp0V9u
-uX3diutbGxNy3/3U5LPcuhLuvEZAdU3bn3730NoojM4rBgIPmIaB7Ti4LmAI/56o9QtWBZCBy7UH
-J1cptAKpVai0meqbfmrPM3fdfvOaOaua0oy/1Y7OngWgCti4FNIjgmcPHvzOstar3557aVN60gpI
-KWMKGIZAugqJwFBeX+G6CmGAlDoW0AqNlH5gaoVS+N7yDOMqDflMYvjQy9f94octTVfOT5J69cWy
-BebGxVCnx7/0l+1P3vP9H932kFIqfV5BHEDIEMIztRBorcjlJAqN48ow20hVYJheilReelQaqTVS
-KqRS1OWS007+56UN0xlavf8w1B8doNEqXxxPj0LPMDjZTNMfn35qy1cXL/4DMDQpCEXTn2kY2K4i
-lcljmkYIG9cXSipPAdAEicKDkB+4SnvVWQv2djx8X2psZI4Qgq4PzlKzvJbVs8sr8NoJ2NmTJZvN
-Alx++tSp3wObJg2hwANCwJG+FMIwqa6ysCyBIYQHC6lwlfJuCiiOny69LOT3Ff6Hy36w7e7o8/r2
-P7jz42QWAFtpLOF5XAHd2Vp27dq5aXBwEKUUr7/+Ou3t7ZODUJBOAYQhMIWFEAJXKVy7Eh+KEDov
-32JM0MQdTdqM+Mcd5nQaBvq5trGOtIThMTvGhc4riKOUwjKN86LB+jxmMtbCJtK9xxhJJHint587
-G2pIj8GHDoiqREkLOqECUkpc1y0N4s9oNTbPZ49l4Bz7kBk5yfGMgV1tMQTI2roYlZhUJbZtu0wd
-+OwUGDLWbKIZaIZLgONAosrEdiRd226akMhNKgaMT6mAkq5Q0jXy42NVWroT/phMWORtF4De3l4G
-BwcBSKfDMlDnz4U0oEogFAheUMD4VApoiSA/ctE3ZiSfqNS6lhsKLLvnHt57773QAwsXLmTz5s0o
-pdi9e/fSvr6+Y4CsGANRCBWeV96AUzJD015r//V917Y9dncxFR8bG000T/v455s3b8YwjNi4plwN
-inKxQB7XdXEcJzzu6up6rq+v7xogXwKh4jowEYRMJ5t4f88LG4ZH03N0mY5NKSlM1JeFELzxxhvs
-27dvUiOZ4vGLlJIVK1bQ0tKC1vqKYCQ0oQLP/up7FYWfO23q9Isb6q5rnFG/WghR8d6l994LQGdn
-Jz1iObMb6ktSb3wYEO+XAc4kx6h79wBLly6NwaFsDAghmDt3LocOHaoYA2d6ehq2bfvNXT+9cUnT
-/sMf0PXBWTo7O2MWlFJy+vRpDhw4EF6bPbOeyy+dFQqGLhRBrVXIrwIqopRCA65U6KTGcZxYSq1I
-JZLJJMPDwyFmo67ODZ2tf/LR3/7s5pvWzLlyfpL6owPULK/lmbYbdh5N2lgLm2hsns/Kr39708DA
-AEA469Tao9zEBC3stcJjsppCz6EUtiNjM9OyCgTanWsqbafTU57rePaWu7feNmdVU5rUqy/SaMHq
-2fBxMssIkO49xh7LQC2PD2s9tqqwHbcwXtGewLpIIak8wpjJOYxm84xm8zQqFTZdlSqxllKKINUF
-CgRfGD5+tHH3y3/fcPOt17esbWlg/K32slx+JJHAOfZhLKsECqA1+bwDQhSsrzxi6FFv7VvcZTzv
-MpLJM24X6E05BYK3H7F+oNwc6LkXnr9j7dUzF6xf05yQ++4Pu6jQO0rTYU7nnd5+ZuQk34pkFtd1
-Q1rgKIV0FU5AyaXC9c9t12tLbdeDj1IFPqYcFY2B2HhdAwwNDY2/+eabtZUCdzRnp+xMetHY3i3U
-5LOlZV1Aw4BHyo5nDDo7O0mlUsybNy98cDbn0HtmBMsycFzlN0bxWVFgMtMwiHLJ4OVIJQ/s3bhx
-49XBBx0dHe7w8LBlmiZCCKqqqpjXOHPH0089dVViFG5d6fWvsQmBEB4dHgO72mLVqlX09fXR29uL
-4zhIKXEUOEqCI+ODZgGmWbnmGH4/XimIFdAP7PL76nXt7e3Mnz9fCyGEYRiYpolhGKkrW5Y9sGP/
-wa0X1wg2Li3iPUBaenR4CDhw4ADJZJKampqQKCYs8xNRkjIK6KgHgue7/nnnK6+80lrhtw5f1jjj
-8Yf/WdOWHhHcuNjrX1874XVRw2M2oiqBrK3jrw8+CEBbWxu2bSOlxLI+GbdKWGZFCFH0ClNHvGGW
-eX/M8Y9S/1h+6ZQT29/hx3VaXNYz7PWvqVTftDLPvkhKGXqgyjIQxZxKFCpxsI/2Id5sSqG0Pmca
-jXpC+0MvWYnFHTw18MRX5jR0PHmo+qWEIVr85jtfRoFqpRS2bdPa2sqRI3sqvjcr7sB0pMihNUuW
-LCnhWlaFjlAXTdXLRtex/uH+y+c2rksp8Teg1Ydg8XIDDzQ1NbFgwYKY8AH/CvbRt5XRtF5dXU0m
-kylRwJjgrbgqOi7ZjvR9NDBrirHJh3a5e6SUUgd02HGcki24XqxAoKRpmvT39wcjFoQQgUwX5C8F
-NcuWLdtbXV3dsn79eqmUMk3TxLKsGFGMeiEI1miDBXDmzBnd1dUluru7B6SUi4DMhVDAAuqBG5Ys
-WfJETU2NGaTloMZUioNoi+sXWn3y5MmtwNPAKOBcqD91WEC1388mKkB3wvYasIEskAvi7UL+KyX4
-U8mnabJV0T9W+D/PWroH9xSJaAAAAABJRU5ErkJggg==
-
+Attachment extracted from this mbox message.
+Path: attachments/2005-09/message-000036/display-capplet.png
+Original filename: display-capplet.png
+Original content type: image/png
+Original decoded size: 2824 bytes
 
 --=-gdzrXInzmSqmEwrK53/d--
 

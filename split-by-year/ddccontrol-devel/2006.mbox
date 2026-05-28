@@ -562,250 +562,19 @@ Supported hardware:
 Jo
 
 --------------030309020609010700090702
-Content-Type: text/plain; charset="utf-8"; name=patch
-Content-Transfer-Encoding: base64
-Content-Disposition: inline;
- filename="patch"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="patch.external.txt"
+X-External-Attachment-Path: attachments/2006-03/message-000056/patch
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 13599
 
-ZGlmZiAtTiAtdSAtciAuLi8uLi9kZGNjb250cm9sLTAuMy9zcmMvZGRjcGNpL2RkY3BjaS5oIGRk
-Y3BjaS9kZGNwY2kuaAotLS0gLi4vLi4vZGRjY29udHJvbC0wLjMvc3JjL2RkY3BjaS9kZGNwY2ku
-aAkyMDA1LTEwLTI1IDIwOjIyOjQ0LjAwMDAwMDAwMCArMDIwMAorKysgZGRjcGNpL2RkY3BjaS5o
-CTIwMDYtMDItMTcgMjA6NTc6MjUuMDAwMDAwMDAwICswMTAwCkBAIC01Myw0ICs1MywxMyBAQAog
-c3RydWN0IGNhcmQqIGk4MTBfb3BlbiAoc3RydWN0IHBjaV9kZXYgKmRldik7CiB2b2lkICAgICAg
-ICAgaTgxMF9jbG9zZShzdHJ1Y3QgY2FyZCogaW50ZWw4MTBfY2FyZCk7CiAKKy8qIFZpYSBVbmlj
-aHJvbWUgZnVuY3Rpb25zICovCisKK3N0cnVjdCBjYXJkKiB2aWFfb3BlbihzdHJ1Y3QgcGNpX2Rl
-dipkZXYpOwordm9pZAkgICAgIHZpYV9jbG9zZShzdHJ1Y3QgY2FyZCogdmlhX2NhcmQpOworCisv
-KiBTSVMgZnVuY3Rpb25zICovCitzdHJ1Y3QgY2FyZCogc2lzX29wZW4oc3RydWN0IHBjaV9kZXYq
-ZGV2KTsKK3ZvaWQJICAgICBzaXNfY2xvc2Uoc3RydWN0IGNhcmQqIHNpc19jYXJkKTsKKwogI2Vu
-ZGlmIC8vRERDUENJX0gKZGlmZiAtTiAtdSAtciAuLi8uLi9kZGNjb250cm9sLTAuMy9zcmMvZGRj
-cGNpL21haW4uYyBkZGNwY2kvbWFpbi5jCi0tLSAuLi8uLi9kZGNjb250cm9sLTAuMy9zcmMvZGRj
-cGNpL21haW4uYwkyMDA1LTEwLTI1IDIwOjIyOjQ0LjAwMDAwMDAwMCArMDIwMAorKysgZGRjcGNp
-L21haW4uYwkyMDA2LTAyLTI4IDA0OjI3OjM0LjAwMDAwMDAwMCArMDEwMApAQCAtNDAsNiArNDAs
-OCBAQAogCSZudmlkaWFfb3BlbiwKIAkmcmFkZW9uX29wZW4sCiAJJmk4MTBfb3BlbiwKKwkmdmlh
-X29wZW4sCisJJnNpc19vcGVuLAogCU5VTEwKIH07CiAKQEAgLTQ3LDYgKzQ5LDggQEAKIAkmbnZp
-ZGlhX2Nsb3NlLAogCSZyYWRlb25fY2xvc2UsCiAJJmk4MTBfY2xvc2UsCisJJnZpYV9jbG9zZSwK
-Kwkmc2lzX2Nsb3NlLAogCU5VTEwKIH07CiAvKiBlbmQgb2YgY2FyZCBsaXN0ICovCmRpZmYgLU4g
-LXUgLXIgLi4vLi4vZGRjY29udHJvbC0wLjMvc3JjL2RkY3BjaS9NYWtlZmlsZS5hbSBkZGNwY2kv
-TWFrZWZpbGUuYW0KLS0tIC4uLy4uL2RkY2NvbnRyb2wtMC4zL3NyYy9kZGNwY2kvTWFrZWZpbGUu
-YW0JMjAwNS0xMC0yNSAyMDoyMjo0NC4wMDAwMDAwMDAgKzAyMDAKKysrIGRkY3BjaS9NYWtlZmls
-ZS5hbQkyMDA2LTAyLTI2IDAzOjMwOjIzLjAwMDAwMDAwMCArMDEwMApAQCAtMiw3ICsyLDcgQEAK
-IAogYmluX1BST0dSQU1TID0gZGRjcGNpCiBkZGNwY2lfTERGTEFHUyA9IC1XbCwteixub3cKLWRk
-Y3BjaV9TT1VSQ0VTID0gbWFpbi5jIG52aWRpYS5jIHJhZGVvbi5jIGkyYy1hbGdvLWJpdC5jIGlu
-dGVsODEwLmMgZGRjcGNpLmggaTJjLWFsZ28tYml0LmgKK2RkY3BjaV9TT1VSQ0VTID0gbWFpbi5j
-IG52aWRpYS5jIHJhZGVvbi5jIGkyYy1hbGdvLWJpdC5jIGludGVsODEwLmMgZGRjcGNpLmggaTJj
-LWFsZ28tYml0LmggdmlhLmMgc2lzLmMKIAogaW5zdGFsbC1leGVjLWhvb2s6CiAJY2htb2QgNDcx
-MSAke0RFU1RESVJ9LyR7YmluZGlyfS9kZGNwY2kKZGlmZiAtTiAtdSAtciAuLi8uLi9kZGNjb250
-cm9sLTAuMy9zcmMvZGRjcGNpL01ha2VmaWxlLmluIGRkY3BjaS9NYWtlZmlsZS5pbgotLS0gLi4v
-Li4vZGRjY29udHJvbC0wLjMvc3JjL2RkY3BjaS9NYWtlZmlsZS5pbgkyMDA1LTExLTE0IDE5OjI1
-OjAxLjAwMDAwMDAwMCArMDEwMAorKysgZGRjcGNpL01ha2VmaWxlLmluCTIwMDYtMDItMjYgMDM6
-MzA6MzguMDAwMDAwMDAwICswMTAwCkBAIC01Myw3ICs1Myw3IEBACiBhbV9faW5zdGFsbGRpcnMg
-PSAiJChERVNURElSKSQoYmluZGlyKSIKIGJpblBST0dSQU1TX0lOU1RBTEwgPSAkKElOU1RBTExf
-UFJPR1JBTSkKIFBST0dSQU1TID0gJChiaW5fUFJPR1JBTVMpCi1hbV9kZGNwY2lfT0JKRUNUUyA9
-IG1haW4uJChPQkpFWFQpIG52aWRpYS4kKE9CSkVYVCkgcmFkZW9uLiQoT0JKRVhUKSBcCithbV9k
-ZGNwY2lfT0JKRUNUUyA9IG1haW4uJChPQkpFWFQpIG52aWRpYS4kKE9CSkVYVCkgcmFkZW9uLiQo
-T0JKRVhUKSB2aWEuJChPQkpFWFQpIHNpcy4kKE9CSkVYVCkgXAogCWkyYy1hbGdvLWJpdC4kKE9C
-SkVYVCkgaW50ZWw4MTAuJChPQkpFWFQpCiBkZGNwY2lfT0JKRUNUUyA9ICQoYW1fZGRjcGNpX09C
-SkVDVFMpCiBkZGNwY2lfTERBREQgPSAkKExEQUREKQpkaWZmIC1OIC11IC1yIC4uLy4uL2RkY2Nv
-bnRyb2wtMC4zL3NyYy9kZGNwY2kvc2lzLmMgZGRjcGNpL3Npcy5jCi0tLSAuLi8uLi9kZGNjb250
-cm9sLTAuMy9zcmMvZGRjcGNpL3Npcy5jCTE5NzAtMDEtMDEgMDE6MDA6MDAuMDAwMDAwMDAwICsw
-MTAwCisrKyBkZGNwY2kvc2lzLmMJMjAwNi0wMy0wMyAxNzowODo1Ni4wMDAwMDAwMDAgKzAxMDAK
-QEAgLTAsMCArMSwyMDYgQEAKKy8qCisgICAgZGRjL2NpIGRpcmVjdCBQQ0kgbWVtb3J5IGludGVy
-ZmFjZSBmb3Igc29tZSBTSVMgdmlkZW8gY2FyZHMKKworICAgIENvcHlyaWdodCAyMDA2IEpvaGFu
-bmVzIERlaXNlbmhvZmVyIGouZGVpc2VuaG9mZXJALi4uMjguLi4KKyAgICBCYXNlZCBvbiBudmlk
-aWEuYyBhbmQgdGhlIHNpcyBmcmFtZWJ1ZmZlciBkcml2ZXIgZnJvbSB0aGUgS2VybmVsIHNvdXJj
-ZXMKKyAgICBDb3B5cmlnaHQoYykgMjAwNCBOaWNvbGFzIEJvaWNoYXQgKG5pY29sYXNALi4uMS4u
-LikKKyAgICBCYXNlZCBvbiByaXZhZmItaTJjLmMgZnJvbSB0aGUga2VybmVsIHNvdXJjZS4KKyAg
-ICBDb3B5cmlnaHQgMjAwNCBBbnRvbmlubyBBLiBEYXBsYXMgPGFkYXBsYXMgQHBvbC5uZXQ+Cisg
-ICAgCisgICAgVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU7IHlvdSBjYW4gcmVkaXN0cmli
-dXRlIGl0IGFuZC9vciBtb2RpZnkKKyAgICBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBH
-ZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieQorICAgIHRoZSBGcmVlIFNvZnR3
-YXJlIEZvdW5kYXRpb247IGVpdGhlciB2ZXJzaW9uIDIgb2YgdGhlIExpY2Vuc2UsIG9yCisgICAg
-KGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi4KKworICAgIFRoaXMgcHJvZ3JhbSBp
-cyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLAorICAgIGJ1
-dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5
-IG9mCisgICAgTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQ
-T1NFLiAgU2VlIHRoZQorICAgIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRl
-dGFpbHMuCisKKyAgICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUg
-R2VuZXJhbCBQdWJsaWMgTGljZW5zZQorICAgIGFsb25nIHdpdGggdGhpcyBwcm9ncmFtOyBpZiBu
-b3QsIHdyaXRlIHRvIHRoZSBGcmVlIFNvZnR3YXJlCisgICAgRm91bmRhdGlvbiwgSW5jLiwgNTkg
-VGVtcGxlIFBsYWNlLCBTdWl0ZSAzMzAsIEJvc3RvbiwgTUEgIDAyMTExLTEzMDcgIFVTQQorKi8K
-KworI2luY2x1ZGUgPHN0ZGlvLmg+CisjaW5jbHVkZSA8c3RkbGliLmg+CisjaW5jbHVkZSA8c3Ry
-aW5nLmg+CisjaW5jbHVkZSA8c3lzL3R5cGVzLmg+CisjaW5jbHVkZSA8c3lzL3N0YXQuaD4KKyNp
-bmNsdWRlIDxzeXMvaW8uaD4KKyNpbmNsdWRlIDxmY250bC5oPgorI2luY2x1ZGUgPHN5cy9tbWFu
-Lmg+CisjaW5jbHVkZSA8dW5pc3RkLmg+CisKKyNpbmNsdWRlICJkZGNwY2kuaCIKKyAKK3N0cnVj
-dCBtZW1fZGF0YSB7CisJY2hhciogbWVtb3J5OyAvLyBtbWFwZWQgbWVtb3J5CisJc2l6ZV90IGxl
-bmd0aDsgLy8gbW1hcGVkIG1lbW9yeSBsZW5ndGgKK307CisKK3N0cnVjdCBpMmNfZGF0YSB7CisJ
-dW5zaWduZWQgc2hvcnQgaW50IGRkY19iYXNlOworCXUzMgkJICAgY3N0YXRlOyAvLyBSZWdpc3Rl
-cl9zdGF0ZQorfTsKKworI2RlZmluZSBWR0FfV1IwOChwLGksZCkgIChvdXRiKGksZCkpCisjZGVm
-aW5lIFZHQV9SRDA4KHAsaSkgICAgKGluYihpKSkKKworI2RlZmluZSBWR0FfU1JfSVggICAgICAg
-MHgzYzQKKyNkZWZpbmUgVkdBX1NSX0RBVEEgICAgIDB4M2M1CisKKy8vIFRoZXJlIGlzIG9ubHkg
-b25lIGJ1cyBwcm9iZWQuIE1vcmUgYnVzc2VzIGFyZSBwcm9iYWJseSBhY2Nlc3NpYmxlIGluIHRo
-ZSBzYW1lIHJlZ2lzdGVyLAorLy8gcHJvYmFibHkgaW4gcGFpcnMgYXQgYml0IHBvc2l0aW9ucyAy
-LzMsIDQvNSAKKworI2RlZmluZSBTSVNfSTJDX1NDTCAgICAgMHgwMQorI2RlZmluZSBTSVNfSTJD
-X1NEQSAgICAgMHgwMgorCisKK3N0YXRpYyB2b2lkIHNpc19ncGlvX3NldHNjbCh2b2lkKiBkYXRh
-LCBpbnQgc3RhdGUpCit7CisJdTMyCQkJdmFsOworCXN0cnVjdCBpMmNfZGF0YSoJbGRhdGEgPSAo
-c3RydWN0IGkyY19kYXRhKilkYXRhOworCisJb3V0YihsZGF0YS0+ZGRjX2Jhc2UsVkdBX1NSX0lY
-ICk7CisJdmFsID0gaW5iKFZHQV9TUl9EQVRBKSAmIDB4ZmM7CisKKwlpZiAoc3RhdGUpCisJCWxk
-YXRhLT5jc3RhdGUgfD0gU0lTX0kyQ19TQ0w7CisJZWxzZQorCQlsZGF0YS0+Y3N0YXRlICY9IH5T
-SVNfSTJDX1NDTDsKKworCXZhbCB8PSBsZGF0YS0+Y3N0YXRlOworCisJb3V0Yih2YWwgLFZHQV9T
-Ul9EQVRBKTsKK30KKworc3RhdGljIHZvaWQgc2lzX2dwaW9fc2V0c2RhKHZvaWQqIGRhdGEsIGlu
-dCBzdGF0ZSkKK3sKKwl1MzIJdmFsOworCXN0cnVjdCBpMmNfZGF0YSoJbGRhdGEgPSAoc3RydWN0
-IGkyY19kYXRhKilkYXRhOworCisJb3V0YihsZGF0YS0+ZGRjX2Jhc2UsIFZHQV9TUl9JWCApOwor
-CXZhbCA9IGluYihWR0FfU1JfREFUQSkgJiAweGZjOworCisJaWYgKHN0YXRlKQorCQlsZGF0YS0+
-Y3N0YXRlIHw9IFNJU19JMkNfU0RBOworCWVsc2UKKwkJbGRhdGEtPmNzdGF0ZSAmPSB+U0lTX0ky
-Q19TREE7CisKKwl2YWwgfD0gbGRhdGEtPmNzdGF0ZTsKKworCW91dGIodmFsLCBWR0FfU1JfREFU
-QSk7Cit9CisKK3N0YXRpYyBpbnQgc2lzX2dwaW9fZ2V0c2NsKHZvaWQqIGRhdGEpCit7CisJdTMy
-CQkJdmFsID0gMDsKKwlzdHJ1Y3QgaTJjX2RhdGEqCWxkYXRhID0gKHN0cnVjdCBpMmNfZGF0YSop
-ZGF0YTsKKworCW91dGIobGRhdGEtPmRkY19iYXNlLCBWR0FfU1JfSVgpOworCWlmIChpbmIoVkdB
-X1NSX0RBVEEpICYgU0lTX0kyQ19TQ0wpCisJCXZhbCA9IDE7CisKKwlyZXR1cm4gdmFsOworfQor
-CitzdGF0aWMgaW50IHNpc19ncGlvX2dldHNkYSh2b2lkKiBkYXRhKQoreworCXUzMgkJCXZhbCA9
-IDA7CisJc3RydWN0IAlpMmNfZGF0YSoJbGRhdGEgPSAoc3RydWN0IGkyY19kYXRhKilkYXRhOwor
-CisJb3V0YiggbGRhdGEtPmRkY19iYXNlLCBWR0FfU1JfSVgpOworCWlmIChpbmIoVkdBX1NSX0RB
-VEEpICYgU0lTX0kyQ19TREEpCisJCXZhbCA9IDE7CisKKwlyZXR1cm4gdmFsOworfQorCitzdGF0
-aWMgaW50IGluaXRfaTJjX2J1cyhzdHJ1Y3QgaTJjX2FsZ29fYml0X2RhdGEqIGFsZ28sIGNoYXIq
-IFBDSU8sIGludCBkZGNfYmFzZSkKK3sKKwkvL2ZwcmludGYoc3RkZXJyLCAiaW5pdF9pMmNfYnVz
-OiAoZGRjX2Jhc2U6ICUjeClcbiIsIGRkY19iYXNlKTsKKwkvLyBSZXF1ZXN0IGlvIFBlcm1pc3Np
-b24KKwlpZihpb3Blcm0oVkdBX1NSX0lYLDIsMSk8MCkKKwl7CisJCXBlcnJvcigiUmVxdWVzdCBJ
-TyBQZXJtIik7CisJCXJldHVybiAwOworCX0KKwlzdHJ1Y3QgaTJjX2RhdGEqIGRhdGEgPSBtYWxs
-b2Moc2l6ZW9mKHN0cnVjdCBpMmNfZGF0YSkpOworCWlmICghZGF0YSkgeworCQlmcHJpbnRmKHN0
-ZGVyciwgXygic2lzLmM6aW5pdF9pMmNfYnVzOiBNYWxsb2MgZXJyb3IuIikpOworCQlleGl0KC0x
-KTsKKwl9CisJZGF0YS0+ZGRjX2Jhc2UgPSBkZGNfYmFzZTsKKwlkYXRhLT5jc3RhdGUgICA9IDA7
-CQorCQorCWFsZ28tPnNldHNkYQkJPSBzaXNfZ3Bpb19zZXRzZGE7CisJYWxnby0+c2V0c2NsCQk9
-IHNpc19ncGlvX3NldHNjbDsKKwlhbGdvLT5nZXRzZGEJCT0gc2lzX2dwaW9fZ2V0c2RhOworCWFs
-Z28tPmdldHNjbAkJPSBzaXNfZ3Bpb19nZXRzY2w7CisJYWxnby0+dWRlbGF5CQk9IDQwOworCWFs
-Z28tPnRpbWVvdXQJCT0gMTAwOworCWFsZ28tPmRhdGEgCQk9IGRhdGE7CisJCisJLyogUmFpc2Ug
-U0NMIGFuZCBTREEgKi8KKwlzaXNfZ3Bpb19zZXRzZGEoYWxnby0+ZGF0YSwgMSk7CisJc2lzX2dw
-aW9fc2V0c2NsKGFsZ28tPmRhdGEsIDEpOworCXVzbGVlcCgyMDAwMDApOworCQorCS8vdGVzdF9i
-dXMoYWxnbywgIkJvdWJvdSIpOworCQorCXJldHVybiAxOworfQorCisKK3N0cnVjdCBjYXJkKiBz
-aXNfb3BlbihzdHJ1Y3QgcGNpX2RldiAqZGV2KQoreworCS8vIFNJUworCWlmIChkZXYtPnZlbmRv
-cl9pZCAhPSAweDEwMzkpIHsKKwkJcmV0dXJuIDA7CisJfQorICAgICAgIHN3aXRjaCAoZGV2LT5k
-ZXZpY2VfaWQpIHsKKyAgICAgICAgY2FzZSAweDYzMzA6IC8vIFBDSV9ERVZJQ0VfSURfU0lTX1ZH
-QV9NSVJBR0UKKyAgICAgICAgICAgICAgICBicmVhazsKKyAgICAgICAgZGVmYXVsdDoKKyAgICAg
-ICAgICAgICAgICByZXR1cm4gMDsKKyAgICAgICAgfQorCisJCisJc3RydWN0IGNhcmQqIHNpc19j
-YXJkID0gbWFsbG9jKHNpemVvZihzdHJ1Y3QgY2FyZCkpOworCWlmICghc2lzX2NhcmQpIHsKKwkJ
-ZnByaW50ZihzdGRlcnIsIF8oIiVzOiBNYWxsb2MgZXJyb3IuXG4iKSwgInNpc19vcGVuIik7CisJ
-CWV4aXQoLTEpOworCX0KKwltZW1zZXQoc2lzX2NhcmQsIDAsIHNpemVvZihzdHJ1Y3QgY2FyZCkp
-OworCQorCXNpc19jYXJkLT5uYnVzc2VzID0gMTsKKwlzaXNfY2FyZC0+aTJjX2J1c3NlcyA9IG1h
-bGxvYygyKnNpemVvZihzdHJ1Y3QgaTJjX2FsZ29fYml0X2RhdGEpKTsKKworCS8vIE5vdGU6IE9u
-bHkgZmlyc3QgQnVzIGlzIGFjY2Vzc2libGUKKwlpbml0X2kyY19idXMoJnNpc19jYXJkLT5pMmNf
-YnVzc2VzWzBdLCAwLCAweDExKTsKKwkKKwlyZXR1cm4gc2lzX2NhcmQ7Cit9CisKK3ZvaWQgc2lz
-X2Nsb3NlKHN0cnVjdCBjYXJkKiBzaXNfY2FyZCkKK3sKKwlpbnQgaTsKKwkKKwlpZiAoc2lzX2Nh
-cmQtPmRhdGEpIHsKKwkJc3RydWN0IG1lbV9kYXRhKiBkYXRhID0gc2lzX2NhcmQtPmRhdGE7CisJ
-CWlmICgoZGF0YS0+bWVtb3J5KSAmJiAoZGF0YS0+bWVtb3J5ID09IE1BUF9GQUlMRUQpICYmIChk
-YXRhLT5sZW5ndGgpKSB7CisJCQltdW5tYXAoZGF0YS0+bWVtb3J5LCBkYXRhLT5sZW5ndGgpOwor
-CQl9CisJCWZyZWUoc2lzX2NhcmQtPmRhdGEpOworCX0KKwkKKwlmb3IgKGkgPSAwOyBpIDwgc2lz
-X2NhcmQtPm5idXNzZXM7IGkrKykgeworCQlmcmVlKCgmc2lzX2NhcmQtPmkyY19idXNzZXNbaV0p
-LT5kYXRhKTsKKwl9CisJCisJZnJlZShzaXNfY2FyZC0+aTJjX2J1c3Nlcyk7CisJCisJZnJlZShz
-aXNfY2FyZCk7Cit9CisKZGlmZiAtTiAtdSAtciAuLi8uLi9kZGNjb250cm9sLTAuMy9zcmMvZGRj
-cGNpL3ZpYS5jIGRkY3BjaS92aWEuYwotLS0gLi4vLi4vZGRjY29udHJvbC0wLjMvc3JjL2RkY3Bj
-aS92aWEuYwkxOTcwLTAxLTAxIDAxOjAwOjAwLjAwMDAwMDAwMCArMDEwMAorKysgZGRjcGNpL3Zp
-YS5jCTIwMDYtMDMtMDMgMTU6MDU6MzUuMDAwMDAwMDAwICswMTAwCkBAIC0wLDAgKzEsMjIzIEBA
-CisvKgorICAgIGRkYy9jaSBkaXJlY3QgUENJIG1lbW9yeSBpbnRlcmZhY2UgZm9yIFZJQSBVbmlj
-aHJvbWUgY2FyZHMKKworICAgIEJhc2VkIG9uIG52aWRpYS5jIGFuZCB2aWFfaTJjICBmcm9tIHRo
-ZSBvcGVuY2hyb21lIFByb2plY3Qgb3BlbmNocm9tZUAuLi4yOS4uLgorICAgIGFuZCB0aGUgc2F2
-YWdlZmItaTJjLmMgZnJvbSB0aGUgS2VybmVsIHNvdXJjZXMKKworICAgIENvcHlyaWdodCAyMDA2
-IEpvaGFubmVzIERlaXNlbmhvZmVyIGouZGVpc2VuaG9mZXJALi4uMjguLi4KKyAgICBDb3B5cmln
-aHQgMjAwNCBUaGUgVW5pY2hyb21lIFByb2plY3QgIFt1bmljaHJvbWUuc2YubmV0XQorICAgIENv
-cHlyaWdodCAxOTk4LTIwMDMgVklBIFRlY2hub2xvZ2llcywgSW5jLiBBbGwgUmlnaHRzIFJlc2Vy
-dmVkLgorICAgIENvcHlyaWdodCAyMDAxLTIwMDMgUzMgR3JhcGhpY3MsIEluYy4gQWxsIFJpZ2h0
-cyBSZXNlcnZlZC4KKyAgICBDb3B5cmlnaHQoYykgMjAwNCBOaWNvbGFzIEJvaWNoYXQgKG5pY29s
-YXNALi4uMS4uLikKKyAgICBDb3B5cmlnaHQgMjAwNCBBbnRvbmlubyBBLiBEYXBsYXMgPGFkYXBs
-YXMgQHBvbC5uZXQ+CisgICAgCisgICAgVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU7IHlv
-dSBjYW4gcmVkaXN0cmlidXRlIGl0IGFuZC9vciBtb2RpZnkKKyAgICBpdCB1bmRlciB0aGUgdGVy
-bXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieQorICAg
-IHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb247IGVpdGhlciB2ZXJzaW9uIDIgb2YgdGhlIExp
-Y2Vuc2UsIG9yCisgICAgKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi4KKworICAg
-IFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUg
-dXNlZnVsLAorICAgIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBp
-bXBsaWVkIHdhcnJhbnR5IG9mCisgICAgTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEg
-UEFSVElDVUxBUiBQVVJQT1NFLiAgU2VlIHRoZQorICAgIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNl
-bnNlIGZvciBtb3JlIGRldGFpbHMuCisKKyAgICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBj
-b3B5IG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZQorICAgIGFsb25nIHdpdGggdGhp
-cyBwcm9ncmFtOyBpZiBub3QsIHdyaXRlIHRvIHRoZSBGcmVlIFNvZnR3YXJlCisgICAgRm91bmRh
-dGlvbiwgSW5jLiwgNTkgVGVtcGxlIFBsYWNlLCBTdWl0ZSAzMzAsIEJvc3RvbiwgTUEgIDAyMTEx
-LTEzMDcgIFVTQQorKi8KKworI2luY2x1ZGUgPHN0ZGlvLmg+CisjaW5jbHVkZSA8c3RkbGliLmg+
-CisjaW5jbHVkZSA8c3RyaW5nLmg+CisjaW5jbHVkZSA8c3lzL3R5cGVzLmg+CisjaW5jbHVkZSA8
-c3lzL3N0YXQuaD4KKyNpbmNsdWRlIDxmY250bC5oPgorI2luY2x1ZGUgPHN5cy9tbWFuLmg+Cisj
-aW5jbHVkZSA8dW5pc3RkLmg+CisKKyNpbmNsdWRlICJkZGNwY2kuaCIKKyAKK3N0cnVjdCBtZW1f
-ZGF0YSB7CisJaW50IGZkOyAvLyAvZGV2L21lbSBmZAorCWNoYXIqIG1lbW9yeTsgLy8gbW1hcGVk
-IG1lbW9yeQorCXNpemVfdCBsZW5ndGg7IC8vIG1tYXBlZCBtZW1vcnkgbGVuZ3RoCit9OworCitz
-dHJ1Y3QgaTJjX2RhdGEgeworCWNoYXIqIFBDSU87CisJaW50IGRkY19iYXNlOworfTsKKwordHlw
-ZWRlZiB1bnNpZ25lZCBjaGFyICBVMDA4OworCisjZGVmaW5lIFZHQV9XUjA4KHAsaSxkKSAgKCgo
-VTAwOCAqKShwKSlbaV09KGQpKQorI2RlZmluZSBWR0FfUkQwOChwLGkpICAgICgoKFUwMDggKiko
-cCkpW2ldKQorCisjZGVmaW5lIFZHQV9TUl9JWCAgICAgICAweDNjNAorI2RlZmluZSBWR0FfU1Jf
-REFUQSAgICAgMHgzYzUKKworI2RlZmluZSBVTklDSFJPTUVfSTJDX0VOQUIgICAgICAweDAxCisj
-ZGVmaW5lIFVOSUNIUk9NRV9JMkNfU0NMX09VVCAgIDB4MjAKKyNkZWZpbmUgVU5JQ0hST01FX0ky
-Q19TREFfT1VUICAgMHgxMAorI2RlZmluZSBVTklDSFJPTUVfSTJDX1NDTF9JTiAgICAweDA4Cisj
-ZGVmaW5lIFVOSUNIUk9NRV9JMkNfU0RBX0lOICAgIDB4MDQKKworCitzdGF0aWMgdm9pZCB2aWFf
-Z3Bpb19zZXRzY2wodm9pZCogZGF0YSwgaW50IHN0YXRlKQoreworCXUzMgkJCXZhbDsKKworCVZH
-QV9XUjA4KCgoc3RydWN0IGkyY19kYXRhKilkYXRhKS0+UENJTywgVkdBX1NSX0lYLCAoKHN0cnVj
-dCBpMmNfZGF0YSopZGF0YSktPmRkY19iYXNlICk7CisJdmFsID0gVkdBX1JEMDgoKChzdHJ1Y3Qg
-aTJjX2RhdGEqKWRhdGEpLT5QQ0lPLCBWR0FfU1JfREFUQSk7CisJdmFsIHw9IFVOSUNIUk9NRV9J
-MkNfRU5BQjsKKworCWlmIChzdGF0ZSkKKwkJdmFsIHw9IFVOSUNIUk9NRV9JMkNfU0NMX09VVDsK
-KwllbHNlCisJCXZhbCAmPSB+VU5JQ0hST01FX0kyQ19TQ0xfT1VUOworCisJVkdBX1dSMDgoKChz
-dHJ1Y3QgaTJjX2RhdGEqKWRhdGEpLT5QQ0lPLCBWR0FfU1JfREFUQSwgdmFsKTsKK30KKworc3Rh
-dGljIHZvaWQgdmlhX2dwaW9fc2V0c2RhKHZvaWQqIGRhdGEsIGludCBzdGF0ZSkKK3sKKwl1MzIJ
-CQl2YWw7CisKKwlWR0FfV1IwOCgoKHN0cnVjdCBpMmNfZGF0YSopZGF0YSktPlBDSU8sIFZHQV9T
-Ul9JWCwgKChzdHJ1Y3QgaTJjX2RhdGEqKWRhdGEpLT5kZGNfYmFzZSApOworCXZhbCA9IFZHQV9S
-RDA4KCgoc3RydWN0IGkyY19kYXRhKilkYXRhKS0+UENJTywgVkdBX1NSX0RBVEEpOworCXZhbCB8
-PSBVTklDSFJPTUVfSTJDX0VOQUI7CisKKwlpZiAoc3RhdGUpCisJCXZhbCB8PSBVTklDSFJPTUVf
-STJDX1NEQV9PVVQ7CisJZWxzZQorCQl2YWwgJj0gflVOSUNIUk9NRV9JMkNfU0RBX09VVDsKKwor
-CVZHQV9XUjA4KCgoc3RydWN0IGkyY19kYXRhKilkYXRhKS0+UENJTywgVkdBX1NSX0RBVEEsIHZh
-bCk7Cit9CisKK3N0YXRpYyBpbnQgdmlhX2dwaW9fZ2V0c2NsKHZvaWQqIGRhdGEpCit7CisJdTMy
-CQkJdmFsID0gMDsKKworCVZHQV9XUjA4KCgoc3RydWN0IGkyY19kYXRhKilkYXRhKS0+UENJTywg
-VkdBX1NSX0lYLCAoKHN0cnVjdCBpMmNfZGF0YSopZGF0YSktPmRkY19iYXNlKTsKKwlpZiAoVkdB
-X1JEMDgoKChzdHJ1Y3QgaTJjX2RhdGEqKWRhdGEpLT5QQ0lPLCBWR0FfU1JfREFUQSkgJiBVTklD
-SFJPTUVfSTJDX1NDTF9JTikKKwkJdmFsID0gMTsKKworCXJldHVybiB2YWw7Cit9CisKK3N0YXRp
-YyBpbnQgdmlhX2dwaW9fZ2V0c2RhKHZvaWQqIGRhdGEpCit7CisJdTMyCQkJdmFsID0gMDsKKwor
-CVZHQV9XUjA4KCgoc3RydWN0IGkyY19kYXRhKilkYXRhKS0+UENJTywgVkdBX1NSX0lYLCAoKHN0
-cnVjdCBpMmNfZGF0YSopZGF0YSktPmRkY19iYXNlKTsKKwlpZiAoVkdBX1JEMDgoKChzdHJ1Y3Qg
-aTJjX2RhdGEqKWRhdGEpLT5QQ0lPLCBWR0FfU1JfREFUQSkgJiBVTklDSFJPTUVfSTJDX1NEQV9J
-TikKKwkJdmFsID0gMTsKKworCXJldHVybiB2YWw7Cit9CisKK3N0YXRpYyBpbnQgaW5pdF9pMmNf
-YnVzKHN0cnVjdCBpMmNfYWxnb19iaXRfZGF0YSogYWxnbywgY2hhciogUENJTywgaW50IGRkY19i
-YXNlKQoreworCS8vZnByaW50ZihzdGRlcnIsICJpbml0X2kyY19idXM6IChkZGNfYmFzZTogJSN4
-KVxuIiwgZGRjX2Jhc2UpOworCXN0cnVjdCBpMmNfZGF0YSogZGF0YSA9IG1hbGxvYyhzaXplb2Yo
-c3RydWN0IGkyY19kYXRhKSk7CisJaWYgKCFkYXRhKSB7CisJCWZwcmludGYoc3RkZXJyLCBfKCJ2
-aWEuYzppbml0X2kyY19idXM6IE1hbGxvYyBlcnJvci4iKSk7CisJCWV4aXQoLTEpOworCX0KKwlk
-YXRhLT5QQ0lPID0gUENJTzsKKwlkYXRhLT5kZGNfYmFzZSA9IGRkY19iYXNlOworCQorCWFsZ28t
-PnNldHNkYQkJPSB2aWFfZ3Bpb19zZXRzZGE7CisJYWxnby0+c2V0c2NsCQk9IHZpYV9ncGlvX3Nl
-dHNjbDsKKwlhbGdvLT5nZXRzZGEJCT0gdmlhX2dwaW9fZ2V0c2RhOworCWFsZ28tPmdldHNjbAkJ
-PSB2aWFfZ3Bpb19nZXRzY2w7CisJYWxnby0+dWRlbGF5CQk9IDQwOworCWFsZ28tPnRpbWVvdXQJ
-CT0gMTAwOworCWFsZ28tPmRhdGEgCQk9IGRhdGE7CisJCisJLyogUmFpc2UgU0NMIGFuZCBTREEg
-Ki8KKwl2aWFfZ3Bpb19zZXRzZGEoYWxnby0+ZGF0YSwgMSk7CisJdmlhX2dwaW9fc2V0c2NsKGFs
-Z28tPmRhdGEsIDEpOworCXVzbGVlcCgyMDAwMDApOworCQorCS8vdGVzdF9idXMoYWxnbywgIkJv
-dWJvdSIpOworCQorCXJldHVybiAxOworfQorCisKK3N0cnVjdCBjYXJkKiB2aWFfb3BlbihzdHJ1
-Y3QgcGNpX2RldiAqZGV2KQoreworCWlmIChkZXYtPnZlbmRvcl9pZCAhPSAweDExMDYpIHsKKwkJ
-cmV0dXJuIDA7CisJfQorICAgICAgIHN3aXRjaCAoZGV2LT5kZXZpY2VfaWQpIHsKKyAgICAgICAg
-Y2FzZSAweDMxMjI6IC8vIFBDSV9ERVZJQ0VfSURfVklBX1VOSUNIUk9NRQorICAgICAgICBjYXNl
-IDB4MzExODogLy8gUENJX0RFVklDRV9JRF9WSUFfVU5JQ0hST01FX1BSTworICAgICAgICAgICAg
-ICAgIGJyZWFrOworICAgICAgICBkZWZhdWx0OgorICAgICAgICAgICAgICAgIHJldHVybiAwOwor
-ICAgICAgICB9CisKKwkKKwlzdHJ1Y3QgY2FyZCogdmlhX2NhcmQgPSBtYWxsb2Moc2l6ZW9mKHN0
-cnVjdCBjYXJkKSk7CisJc3RydWN0IG1lbV9kYXRhKiBkYXRhID0gbWFsbG9jKHNpemVvZihzdHJ1
-Y3QgbWVtX2RhdGEpKTsKKwlpZiAoKCF2aWFfY2FyZCkgfHwgKCFkYXRhKSkgeworCQlmcHJpbnRm
-KHN0ZGVyciwgXygiJXM6IE1hbGxvYyBlcnJvci5cbiIpLCAidmlhX29wZW4iKTsKKwkJZXhpdCgt
-MSk7CisJfQorCW1lbXNldCh2aWFfY2FyZCwgMCwgc2l6ZW9mKHN0cnVjdCBjYXJkKSk7CisJCisJ
-dmlhX2NhcmQtPmRhdGEgPSBkYXRhOworCQorCWRhdGEtPmZkID0gb3BlbigiL2Rldi9tZW0iLCBP
-X1JEV1IpOworCQorCWlmIChkYXRhLT5mZCA8IDApIHsKKwkJcGVycm9yKF8oInZpYV9vcGVuOiBj
-YW5ub3Qgb3BlbiAvZGV2L21lbSIpKTsKKwkJdmlhX2Nsb3NlKHZpYV9jYXJkKTsKKwkJcmV0dXJu
-IDA7CisJfQorCQorCWRhdGEtPmxlbmd0aCA9IDB4MDAwMDEwMDA7CisJZGF0YS0+bWVtb3J5ID0g
-bW1hcChkYXRhLT5tZW1vcnksIGRhdGEtPmxlbmd0aCwgUFJPVF9SRUFEfFBST1RfV1JJVEUsIE1B
-UF9TSEFSRUQsIGRhdGEtPmZkLCBkZXYtPmJhc2VfYWRkclsxXSsweDgwMDAgKTsKKworCWlmIChk
-YXRhLT5tZW1vcnkgPT0gTUFQX0ZBSUxFRCkgeworCQlwZXJyb3IoXygidmlhX29wZW46IG1tYXAg
-ZmFpbGVkIikpOworCQl2aWFfY2xvc2UodmlhX2NhcmQpOworCQlyZXR1cm4gMDsKKwl9CisJCisJ
-Y2hhciogUENJTyA9IGRhdGEtPm1lbW9yeTsKKworCS8vIE5vdGU6IFRoZXJlIGlzIGEgdGhpcmQg
-YnVzLCB3aGljaCB1c2VzIHRoZSBHUElPIGJpdHMuIFRoaXMgb25lIGlzIG5vdCBzdXBwb3J0ZWQg
-aGVyZSEKKworCXZpYV9jYXJkLT5uYnVzc2VzID0gMjsKKwl2aWFfY2FyZC0+aTJjX2J1c3NlcyA9
-IG1hbGxvYygyKnNpemVvZihzdHJ1Y3QgaTJjX2FsZ29fYml0X2RhdGEpKTsKKwlpbml0X2kyY19i
-dXMoJnZpYV9jYXJkLT5pMmNfYnVzc2VzWzBdLCBQQ0lPLCAweDI2KTsKKwlpbml0X2kyY19idXMo
-JnZpYV9jYXJkLT5pMmNfYnVzc2VzWzFdLCBQQ0lPLCAweDMxKTsKKwkKKwlyZXR1cm4gdmlhX2Nh
-cmQ7Cit9CisKK3ZvaWQgdmlhX2Nsb3NlKHN0cnVjdCBjYXJkKiB2aWFfY2FyZCkKK3sKKwlpbnQg
-aTsKKwkKKwlpZiAodmlhX2NhcmQtPmRhdGEpIHsKKwkJc3RydWN0IG1lbV9kYXRhKiBkYXRhID0g
-dmlhX2NhcmQtPmRhdGE7CisJCWlmICgoZGF0YS0+bWVtb3J5KSAmJiAoZGF0YS0+bWVtb3J5ID09
-IE1BUF9GQUlMRUQpICYmIChkYXRhLT5sZW5ndGgpKSB7CisJCQltdW5tYXAoZGF0YS0+bWVtb3J5
-LCBkYXRhLT5sZW5ndGgpOworCQl9CisJCWZyZWUodmlhX2NhcmQtPmRhdGEpOworCX0KKwkKKwlm
-b3IgKGkgPSAwOyBpIDwgdmlhX2NhcmQtPm5idXNzZXM7IGkrKykgeworCQlmcmVlKCgmdmlhX2Nh
-cmQtPmkyY19idXNzZXNbaV0pLT5kYXRhKTsKKwl9CisJCisJZnJlZSh2aWFfY2FyZC0+aTJjX2J1
-c3Nlcyk7CisJCisJZnJlZSh2aWFfY2FyZCk7Cit9CisK
+Attachment extracted from this mbox message.
+Path: attachments/2006-03/message-000056/patch
+Original filename: patch
+Original content type: text/plain
+Original decoded size: 13599 bytes
 
 --------------030309020609010700090702--
 
@@ -2049,239 +1818,19 @@ Have fun!
 
 
 --=-itLKU+//+8189MzZdKLc
-Content-Disposition: attachment; filename=autorotate.c
-Content-Type: text/x-csrc; name=autorotate.c; charset=UTF-8
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="autorotate.c.external.txt"
+X-External-Attachment-Path: attachments/2006-04/message-000067/autorotate.c
+X-External-Attachment-Content-Type: text/x-csrc
+X-External-Attachment-Size: 5791
 
-/*
- * Copyright (c) 2006  Daniel Elstner <daniel.kitta@...32...>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Build command:
- *
- * gcc -g -O2 `pkg-config --cflags --libs libxml-2.0 gdk-2.0`
- *     -I/usr/local/include/ddccontrol -Wl,--rpath,/usr/local/lib
- *     -lddccontrol -o autorotate autorotate.c
- *
- * You may have to change the libddccontrol installation prefix
- * to suit your system.
- *
- * Usage:
- *
- * autorotate [device]
- *
- * The [device] parameter takes the same arguments as ddccontrol.
- * If omitted, automatic detection of DDC/CI devices is attempted.
- *
- * If everything goes right, the screen rotation will follow the physical
- * rotation of your flat panel until you interrupt the program (CTRL-C).
- */
-
-#include <signal.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <ddcci.h>
-#include <glib.h>
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
-#include <X11/extensions/Xrandr.h>
-
-#define ROTATION_CONTROL 0xF8  /* DDC/CI control index */
-#define POLL_INTERVAL    1     /* seconds */
-
-static volatile sig_atomic_t termination_requested = FALSE;
-
-static void catch_terminate(G_GNUC_UNUSED int sig)
-{
-  termination_requested = TRUE;
-}
-
-static void setup_signal_handler(int sig, void (* handler) (int))
-{
-  struct sigaction action;
-
-  sigaction(sig, NULL, &action);
-
-  if (action.sa_handler != SIG_IGN)
-  {
-    action.sa_handler = handler;
-    sigemptyset(&action.sa_mask);
-    action.sa_flags = 0;
-
-    sigaction(sig, &action, NULL);
-  }
-}
-
-static int probe_device(struct monitor* panel, char* device)
-{
-  int status = FALSE;
-  struct monitorlist* list = NULL;
-
-  if (!device)
-  {
-    struct monitorlist* node;
-
-    list = ddcci_probe();
-    node = list;
-
-    while (node && !node->supported)
-      node = node->next;
-
-    if (node)
-      device = node->filename;
-  }
-
-  if (device && ddcci_open(panel, device, FALSE) >= 0)
-  {
-    unsigned char* name;
-
-    name = (panel->db && panel->db->name) ? panel->db->name : panel->pnpid;
-
-    g_debug("Using device %s: %s", device, (char *) name);
-
-    status = TRUE;
-  }
-
-  if (list)
-    ddcci_free_list(list);
-
-  return status;
-}
-
-static int read_rotation(struct monitor* panel)
-{
-  unsigned short value   = 0;
-  unsigned short maximum = 0;
-  int status;
-
-  status = ddcci_readctrl(panel, ROTATION_CONTROL, &value, &maximum);
-
-  if (status <= 0)
-  {
-    g_debug("ddcci_readctrl() failed with status code %d", status);
-    return -1;
-  }
-
-  return value;
-}
-
-static int update_rotation(GdkScreen* screen, int rotation_index)
-{
-  GdkWindow* window;
-  XRRScreenConfiguration* config;
-  Rotation rotations_mask;
-  Rotation panel_rotation;
-  Rotation screen_rotation = 0;
-  int rotation_changed = FALSE;
-
-  window = gdk_screen_get_root_window(screen);
-
-  g_return_val_if_fail(window != NULL, FALSE);
-
-  config = XRRGetScreenInfo(GDK_SCREEN_XDISPLAY(screen), GDK_DRAWABLE_XID(window));
-
-  g_return_val_if_fail(config != NULL, FALSE);
-
-  rotations_mask = XRRConfigRotations(config, &screen_rotation);
-  panel_rotation = 1U << rotation_index;
-
-  if ((rotations_mask & panel_rotation) != 0 && (screen_rotation & 0x0F) != panel_rotation)
-  {
-    Time config_timestamp = 0;
-    Time server_time;
-    int  screen_size;
-
-    /* Preserve the reflection bits */
-    panel_rotation |= screen_rotation & ~0x0FU;
-
-    g_debug("Changing screen rotation from 0x%X to 0x%X",
-            (unsigned) screen_rotation, (unsigned) panel_rotation);
-
-    server_time = XRRConfigTimes(config, &config_timestamp);
-    screen_size = XRRConfigCurrentConfiguration(config, &screen_rotation);
-
-    if (XRRSetScreenConfig(GDK_SCREEN_XDISPLAY(screen), config, GDK_DRAWABLE_XID(window),
-                           screen_size, panel_rotation, server_time) == Success)
-    {
-      rotation_changed = TRUE;
-    }
-  }
-
-  XRRFreeScreenConfigInfo(config);
-
-  return rotation_changed;
-}
-
-int main(int argc, char** argv)
-{
-  struct monitor panel;
-  GdkScreen* screen;
-  int event_basep;
-  int error_basep;
-
-  gdk_init(&argc, &argv);
-
-  screen = gdk_screen_get_default();
-
-  g_return_val_if_fail(screen != NULL, 1);
-
-  if (!XRRQueryExtension(GDK_SCREEN_XDISPLAY(screen), &event_basep, &error_basep))
-    g_error("XRandR extension not supported on this screen");
-
-  if (!ddcci_init(NULL))
-    g_error("Initialization of the DDC/CI library failed");
-
-  if (!probe_device(&panel, (argc >= 2) ? argv[1] : NULL))
-  {
-    ddcci_release();
-    g_error("No DDC/CI capable monitor detected");
-  }
-
-  setup_signal_handler(SIGINT,  &catch_terminate);
-  setup_signal_handler(SIGHUP,  &catch_terminate);
-  setup_signal_handler(SIGTERM, &catch_terminate);
-
-  while (!termination_requested)
-  {
-    int rotation;
-
-    rotation = read_rotation(&panel);
-
-    if (rotation >= 0 && rotation <= 3)
-    {
-      /*
-       * Accessing the DDC/CI too early after changing the screen
-       * rotation triggers "Invalid response" errors on my system.
-       */
-      if (update_rotation(screen, rotation) && !termination_requested)
-        sleep(1);
-    }
-
-    if (!termination_requested)
-      sleep(POLL_INTERVAL);
-  }
-
-  g_debug("Terminated");
-
-  ddcci_close(&panel);
-  ddcci_release();
-
-  return 0;
-}
+Attachment extracted from this mbox message.
+Path: attachments/2006-04/message-000067/autorotate.c
+Original filename: autorotate.c
+Original content type: text/x-csrc
+Original decoded size: 5791 bytes
 
 --=-itLKU+//+8189MzZdKLc--
 
@@ -2520,18 +2069,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enig729E0D3E5EC0F4EAD1A5702D
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-05/message-000069/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEaCWBjqO5DLK5e7ERAi2HAKDJklrnJL4uyKasE3G4s68hVCjDyACbBteY
-N2ke5DK4A4oMsw3JNWCHpt0=
-=PExv
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-05/message-000069/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enig729E0D3E5EC0F4EAD1A5702D--
 
@@ -2689,18 +2240,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enig09BF0F8F75DC1AC05C8D70C6
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-05/message-000071/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEaNrGjqO5DLK5e7ERAnEGAKCjbkuKMVGKkUXICFSy1OW2UvfbDQCcDPmk
-61twu0CNRWPXDl2+irC42Zo=
-=jgjG
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-05/message-000071/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enig09BF0F8F75DC1AC05C8D70C6--
 
@@ -2765,18 +2318,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enigE95A00607E326A3E41F9B31E
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-05/message-000072/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEaN3/jqO5DLK5e7ERAv1YAKCY5OcHwiHe95/Zj+wm1KmACXe/QACgqvdB
-jJJzzDUWhhUxxnh3SDQ9My4=
-=MyCb
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-05/message-000072/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enigE95A00607E326A3E41F9B31E--
 
@@ -2836,18 +2391,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enigA15FD15E5008502B8799ADAA
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-06/message-000073/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEhigSjqO5DLK5e7ERAjoPAJ9MYEds/mMcPB8DmPH+SjjAaWnmZwCgkc6Z
-SZl0MmCEQxVgCAnuTltVlEg=
-=avwx
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-06/message-000073/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enigA15FD15E5008502B8799ADAA--
 
@@ -4021,18 +3578,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enigAA394E53E781D7F237806D78
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-07/message-000088/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEx+hG5SXWIKfIlGQRAslxAKCifzu0IhIkwomzh4FdhFSGXPHopQCgsozc
-KhXFUC2tYSMXCV/wxf3MLYI=
-=9uqK
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-07/message-000088/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enigAA394E53E781D7F237806D78--
 
@@ -4091,18 +3650,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --------------enigE9F58D0A98A7647536BB9543
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: OpenPGP digital signature
-Content-Disposition: attachment; filename="signature.asc"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-07/message-000089/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 256
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
-
-iD8DBQFEx0u55SXWIKfIlGQRAsacAKCBplJW33TS0VhnUpjqdTdvjsIiDgCeL8tR
-SUExONY6k4LoLBN7QShFV3I=
-=5wmu
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-07/message-000089/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 256 bytes
 
 --------------enigE9F58D0A98A7647536BB9543--
 
@@ -4370,17 +3931,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --envbJBWh7q8WU6mo
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-08/message-000093/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFE3Q7c1snWssAFC08RAoTuAJ9/+OLXM9bphXxTIkKsa8Pnwy7jmACghV7b
-7vlxXLWAmdZXQpK4Z1WlMGc=
-=GwHC
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-08/message-000093/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --envbJBWh7q8WU6mo--
 
@@ -4704,17 +4268,20 @@ Roberto C. Sanchez
 http://familiasanchez.net/~roberto
 
 --B4IIlcmfBL/1gGOG
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-09/message-000098/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFChDr5SXWIKfIlGQRAhMFAKCrIVqTfYNVyC1wgCA5Si6lDmCQSgCfbN/F
-myQKYsW/98PVSwyMVRUSqPg=
-=aeL8
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-09/message-000098/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --B4IIlcmfBL/1gGOG--
 
@@ -4864,17 +4431,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --EVF5PPMfhYS0aIcm
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-09/message-000100/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFF9uJ5SXWIKfIlGQRAhMIAJoCg9cJ69faXptYM46+j83YpaHvuACfbQNl
-u5B0RpwoRIsxDwVUo1mPGBI=
-=1ego
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-09/message-000100/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --EVF5PPMfhYS0aIcm--
 
@@ -4992,17 +4562,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --BXVAT5kNtrzKuDFl
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-09/message-000102/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFHSeE5SXWIKfIlGQRAitwAKDFRc4/4v6p3fkb+HDf2L9DCkSOuQCghLE/
-Aoi54+40L2KuEK5OUJMOL9A=
-=+3Eb
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-09/message-000102/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --BXVAT5kNtrzKuDFl--
 
@@ -5061,17 +4634,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --2WS97oupGEGbYNpW
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-10/message-000103/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFLtLb5SXWIKfIlGQRAs5qAJwIYvCJCASA2tAGHm5Nd3m9qiOtPACeOiMQ
-iPldeORfvB4ymi7peBlcKoo=
-=p8tV
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-10/message-000103/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --2WS97oupGEGbYNpW--
 
@@ -5212,17 +4788,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --BRE3mIcgqKzpedwo
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-10/message-000105/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFMNhP1snWssAFC08RApacAKCUREJ57xFC0J/w00zOR5WD4OMUXwCcCf5L
-mqacvovE4n49qjJ8uuY24Uc=
-=Jra5
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-10/message-000105/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --BRE3mIcgqKzpedwo--
 
@@ -5354,17 +4933,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --HcAYCG3uE/tztfnV
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2006-10/message-000107/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (GNU/Linux)
-
-iD8DBQFFMSIV1snWssAFC08RAhHEAJ4tN7/szONE3cmp6Jx9S6F+m2a6uACdF5Iz
-VeCaS1g7qTg1426yaf+x5Qw=
-=lpoZ
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2006-10/message-000107/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --HcAYCG3uE/tztfnV--
 
@@ -5425,58 +5007,20 @@ Do You Yahoo!?
 Sie sind Spam leid? Yahoo! Mail verfügt über einen herausragenden Schutz gegen Massenmails. 
 http://mail.yahoo.com 
 --0-1762171896-1167502947=:13115
-Content-Type: text/xml; name="NEC6605.xml"
-Content-Disposition: inline; filename="NEC6605.xml"
 Content-Description: 1359918727-NEC6605.xml
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="NEC6605.xml.external.txt"
+X-External-Attachment-Path: attachments/2006-12/message-000108/NEC6605.xml
+X-External-Attachment-Content-Type: text/xml
+X-External-Attachment-Size: 1883
 
-<?xml version="1.0"?>
-<monitor name="NEC Multisync 2080UX" init="standard">
-	<controls>
-		<control id="colorpreset" address="0x14">
-			<value id="5000k"  value="4"/>
-			<value id="6500k"  value="1"/>
-			<value id="7500k"  value="6"/>
-			<value id="8200k"  value="7"/>
-			<value id="9300k"  value="8"/>
-			<value id="native" value="2"/>
-		</control>
-		
-		<control id="language" type="list" address="0x68">
-			<value id="english" value="1"/>
-			<value id="german"  value="2"/>
-			<value id="french"  value="3"/>
-			<value id="spanish" value="4"/>
-			<value id="chinese" value="5"/>
-			<value id="italian" value="6"/>
-			<value id="swedish" value="7"/>
-		</control>
-		
-		<control id="saturation" address="0x8a"/> <!-- Control 0x8a: +/5/10 [Color Temperature], working only in user color presets-->
-		
-		<control id="sharpness" address="0x8c"/>
-		
-		<!-- Control 0x9b: +/128/256 [Six Axis Color Control - Red], not working -->
-		<!-- Control 0x9c: +/128/256 [Six Axis Color Control - Yellow] -->
-		<!-- Control 0x9d: +/128/256 [Six Axis Color Control - Green] -->
-		<!-- Control 0x9e: +/128/256 [Six Axis Color Control - Cyan] -->
-		<!-- Control 0x9f: +/128/256 [Six Axis Color Control - Blue] -->
-		<!-- Control 0xa0: +/128/256 [Six Axis Color Control - Magenta] -->
-		
-		<!-- Control 0xa8: +/1/3 [Sync type, RO] -->
-		<!-- Control 0xb1: +/0/1 [???] Not in CAPS -->
-		
-		<!-- Control 0xb4: +/1/2 [RGB Ordering, RO] -->
-		<!-- Control 0xb6: +/3/5 [Monitor Type, RO] -->
-		<!-- Control 0xf6: +/0/1 [Refresh Notifier] Not in CAPS -->
-		<!-- Control 0xfa: +/766/65535 [Total Power Time in 30 min, RO] -->
-		<control id="osd" type="list" address="0xfb"> <!--- USB specifies address 0xCA -->
-			<value id="enable" value="0"/>
-			<value id="partenable" value="1"/>
-		</control>
-		<!-- Control 0xff: +/587/65535 [Power On Time in 30 min, RO] -->
-	</controls>
-	<include file="VESA"/>
-</monitor>
+Attachment extracted from this mbox message.
+Path: attachments/2006-12/message-000108/NEC6605.xml
+Original filename: NEC6605.xml
+Original content type: text/xml
+Original decoded size: 1883 bytes
 
 --0-1762171896-1167502947=:13115--
 

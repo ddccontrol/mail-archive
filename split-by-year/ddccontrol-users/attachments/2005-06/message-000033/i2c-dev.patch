@@ -1,0 +1,24 @@
+Index: src/lib/i2c-dev.h
+===================================================================
+RCS file: /cvsroot/ddccontrol/ddccontrol/src/lib/i2c-dev.h,v
+retrieving revision 1.2
+diff -u -r1.2 i2c-dev.h
+--- src/lib/i2c-dev.h	6 Jun 2005 23:38:25 -0000	1.2
++++ src/lib/i2c-dev.h	8 Jun 2005 15:41:34 -0000
+@@ -18,8 +18,8 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
+-#ifndef I2C_DEV_H
+-#define I2C_DEV_H
++#ifndef DDCCONTROL_I2C_DEV_H
++#define DDCCONTROL_I2C_DEV_H
+ 
+ /* If linux/i2c-dev.h is usable, use it, otherwise, define
+  * the required constants and structures. */
+@@ -57,4 +57,4 @@
+ 
+ #endif
+ 
+-#endif //I2C_DEV_H
++#endif //DDCCONTROL_I2C_DEV_H

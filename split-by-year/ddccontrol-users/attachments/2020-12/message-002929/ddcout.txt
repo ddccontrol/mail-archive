@@ -1,0 +1,69 @@
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors..........
+Detected monitors :
+ - Device: dev:/dev/i2c-6
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-6...
+
+EDID readings:
+	Plug and Play ID: VSC1935 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model()cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 08 0B) 16 18 1A 60(01 0F 11) 62 87 8D(01 02)AC AEB6 C6 C8 C9 CA(01 02) CC(01 02 03 04 05 06 07 09 0A 0C 0D 16) D6(01 05) DF E1)mswhql(1)mccs_ver(2.1))
+Parsed output: 
+	VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 60 62 87 8d ac ae b6 c6 c8 c9 ca cc d6 df e1 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [Secondary Degauss - Secondary Degauss]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/100 C [???]
+Control 0x0c: +/35/65535 C [???]
+Control 0x10: +/0/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/11/13 C [???]
+Control 0x16: +/74/100 C [Red maximum level]
+Control 0x18: +/74/100 C [Green maximum level]
+Control 0x1a: +/74/100 C [Blue maximum level]
+Control 0x60: +/15/17 C [Input Source Select (Main)]
+Control 0x62: +/0/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/128/100   [???]
+Control 0x6e: +/128/100   [???]
+Control 0x70: +/128/100   [???]
+Control 0x87: +/6/100 C [???]
+Control 0x8d: +/1/2 C [???]
+Control 0xac: +/23364/65281 C [???]
+Control 0xae: +/6003/65535 C [???]
+Control 0xb2: +/1/8   [???]
+Control 0xb6: +/3/8 C [???]
+Control 0xc6: +/111/0 C [???]
+Control 0xc8: +/5/65302 C [???]
+Control 0xc9: +/0/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/22 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe1: +/0/1 C [Power control - Off]

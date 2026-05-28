@@ -1,0 +1,95 @@
+I/O warning : failed to load "/nix/store/y5dddm3x3nzr6wn7hj02xyibyg0vhwsg-ddccontrol-db-20251102/share/ddccontrol-db/monitor/CTX0000.xml": No such file or directory
+Document not parsed successfully.
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+ddccontrol version 1.0.3
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-15
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-13
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-15...
+
+EDID readings:
+	Plug and Play ID: CTX0000 [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2   [???]
+Control 0x04: +/0/1   [???]
+Control 0x05: +/0/1   [???]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1   [???]
+Control 0x0b: +/100/0   [???]
+Control 0x0c: +/35/63   [???]
+Control 0x10: +/35/100   [???]
+Control 0x12: +/70/100   [???]
+Control 0x14: +/5/11   [???]
+Control 0x16: +/100/100   [???]
+Control 0x18: +/100/100   [???]
+Control 0x1a: +/100/100   [???]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/1/1   [???]
+Control 0x52: +/0/255   [???]
+Control 0x60: +/18/255   [???]
+Control 0x62: +/50/100   [???]
+Control 0x6c: +/512/100   [???]
+Control 0x6e: +/512/100   [???]
+Control 0x70: +/512/100   [???]
+Control 0x72: +/120/160   [???]
+Control 0x86: +/8/8   [???]
+Control 0x87: +/50/100   [???]
+Control 0x8d: +/2/2   [???]
+Control 0xac: +/1/23364   [???]
+Control 0xae: +/6000/65535   [???]
+Control 0xb2: +/1/1   [???]
+Control 0xb6: +/3/5   [???]
+Control 0xc0: +/10756/65535   [???]
+Control 0xc6: +/255/65535   [???]
+Control 0xc8: +/9/0   [???]
+Control 0xc9: +/514/65535   [???]
+Control 0xca: +/2/2   [???]
+Control 0xcc: +/3/22   [???]
+Control 0xd6: +/1/5   [???]
+Control 0xdf: +/514/65535   [???]

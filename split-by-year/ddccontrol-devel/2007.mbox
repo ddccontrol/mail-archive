@@ -301,17 +301,20 @@ http://people.connexer.com/~roberto
 http://www.connexer.com
 
 --Qxx1br4bt0+wmkIi
-Content-Type: application/pgp-signature; name="signature.asc"
 Content-Description: Digital signature
-Content-Disposition: inline
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="signature.asc.external.txt"
+X-External-Attachment-Path: attachments/2007-10/message-000113/signature.asc
+X-External-Attachment-Content-Type: application/pgp-signature
+X-External-Attachment-Size: 189
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
-
-iD8DBQFHCPIy5SXWIKfIlGQRAqWlAKCnR/ycxw/IGsPaReewll5Qj6BOxwCeJDWb
-hlvgjCvRqHwZDsf1a1SNfyQ=
-=1WJX
------END PGP SIGNATURE-----
+Attachment extracted from this mbox message.
+Path: attachments/2007-10/message-000113/signature.asc
+Original filename: signature.asc
+Original content type: application/pgp-signature
+Original decoded size: 189 bytes
 
 --Qxx1br4bt0+wmkIi--
 

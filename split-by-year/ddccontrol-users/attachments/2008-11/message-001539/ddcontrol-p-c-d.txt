@@ -1,0 +1,89 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.........
+Detected monitors :
+ - Device: pci:03:00.0-0
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-5
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus pci:03:00.0-0...
+
+EDID readings:
+	Plug and Play ID: HWP26F7 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(lcd)model(LP2475W)cmds(01 02 03 07 0C 4E F3 E3)vcp(02 04 05 08 0B 0C 10 12 14(01 05 08 0B) 16 18 1A 52 60(01 02 03 04 05 07 0C 13 14 15 17 1C) 6C 6E 70 9B 9C 9D 9E 9F A0 AC AE B2 B6 C0 C6 C8 C9 CA CC(02 03 04 05 06 08 0A 0D 14) D6(01 04 05) DF FA(00 01 02) FB FC FD FE(00 01 02 04))mswhql(1)mccs_ver(2.1)asset_eep(32)mpu_ver(01))
+Parsed output: 
+	VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 6c 6e 70 9b 9c 9d 9e 9f a0 ac ae b2 b6 c0 c6 c8 c9 ca cc d6 df fa fb fc fd fe 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/3000/65535 C [???]
+Control 0x0c: +/1/2 C [???]
+Control 0x0e: +/50/100   [???]
+Control 0x10: +/17/100 C [Brightness]
+Control 0x12: +/65/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x16: +/251/255 C [Red maximum level]
+Control 0x18: +/235/255 C [Green maximum level]
+Control 0x1a: +/242/255 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x1f: +/0/65535   [???]
+Control 0x20: +/50/100   [???]
+Control 0x30: +/50/100   [???]
+Control 0x3e: +/0/63   [???]
+Control 0x52: +/20/255 C [???]
+Control 0x60: +/3/28 C [Input Source Select - Digital]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Control 0x9b: +/127/254 C [???]
+Control 0x9c: +/127/254 C [???]
+Control 0x9d: +/127/254 C [???]
+Control 0x9e: +/127/254 C [???]
+Control 0x9f: +/127/254 C [???]
+Control 0xa0: +/127/254 C [???]
+Control 0xac: +/8064/1 C [???]
+Control 0xae: +/6030/65535 C [???]
+Control 0xb2: +/1/65535 C [???]
+Control 0xb6: +/3/65535 C [???]
+Control 0xc0: +/18/65535 C [???]
+Control 0xc6: +/90/65535 C [???]
+Control 0xc8: +/32770/65535 C [???]
+Control 0xc9: +/34/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/20 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/513/65535 C [???]
+Control 0xfa: +/0/2 C [???]
+Control 0xfb: +/0/65535 C [???]
+Control 0xfc: +/0/65535 C [???]
+Control 0xfd: +/0/65535 C [???]
+Control 0xfe: +/0/4 C [???]

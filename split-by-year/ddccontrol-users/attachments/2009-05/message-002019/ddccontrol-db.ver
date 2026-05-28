@@ -1,0 +1,21 @@
+Package: ddccontrol-db
+Priority: optional
+Section: universe/utils
+Installed-Size: 512
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+Original-Maintainer: Roberto C. Sanchez <roberto@connexer.com>
+Architecture: all
+Version: 20061014-2
+Recommends: ddccontrol
+Filename: pool/universe/d/ddccontrol-db/ddccontrol-db_20061014-2_all.deb
+Size: 39380
+MD5sum: 5601d0896ff0bb3d6dc696fa30714916
+SHA1: 3ea32e54bed39c620045d650b860a506eb71ee54
+SHA256: 8d6f3eddb1531d33e1ce5b5b001d1f90511084cec0cac52e7c88f2ff5c82ae2d
+Description: monitor database for ddccontrol
+ Database of monitors used by ddccontrol.  This is mostly useless without
+ ddccontrol.
+Homepage: http://ddccontrol.sourceforge.net/
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

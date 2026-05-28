@@ -1,0 +1,69 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors..........
+Detected monitors :
+ - Device: dev:/dev/i2c-1
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-1...
+
+EDID readings:
+	Plug and Play ID: IVM5609 [VESA standard monitor]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)cmds(01 03 07 0C F3)vcp(04 05 08 10 12 14(01 04 05 08 0B) 16 18 1A 1E 20 22 30 3E 60(01 03) 62 87 8D B6 DF)mccs_ver(2.1)asset_eep(32)mpu(1.02))
+Parsed output: 
+	VCP: 04 05 08 10 12 14 16 18 1a 1e 20 22 30 3e 60 62 87 8d b6 df 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2   [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/100   [???]
+Control 0x0c: +/35/63   [???]
+Control 0x10: +/80/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/1 C [Automatically adjust]
+Control 0x20: +/0/100 C [Horizontal Position]
+Control 0x22: +/50/100 C [Horizontal Size]
+Control 0x30: +/46/100 C [Vertical Position]
+Control 0x3e: +/89/100 C [Image Lock Fine (Clock Phase)]
+Control 0x60: +/3/3 C [Input Source Select - Digital]
+Control 0x62: +/50/100 C [Audio Speaker Volume Adjust]
+Control 0x87: +/2/3 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xa8: +/0/3   [???]
+Control 0xac: +/0/255   [???]
+Control 0xae: +/5990/65535   [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc8: +/5/65535   [???]
+Control 0xc9: +/256/65535   [???]
+Control 0xdf: +/513/65535 C [???]
+Control 0xe4: +/0/1   [???]

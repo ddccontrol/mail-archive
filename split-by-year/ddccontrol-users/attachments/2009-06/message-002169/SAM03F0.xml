@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--- File provided by Sean Burford -->
+<!-- (type(LCD)model(T)mccs_ver(2.0)vcp(04 08 10 12 14(02 03 0A 0B) B0(01 02) B6 DF )) -->
+<monitor name="Samsung SyncMaster T220HD">
+	<caps add="(vcp(16 18 1A 1E 60 87))"/>
+	<include file="VESA"/>
+	<controls>
+		<control id="auto" address="0x1e" delay="1000">
+			<value id="pos" value="1"/>
+			<value id="posfast" value="2"/>
+		</control>
+		
+		<control id="sharpness" address="0x87"/>
+		
+		<control id="colorpreset" type="list" address="0x14">
+			<value id="custom" value="11"/>
+			<value id="warm" value="3"/>
+			<value id="cool" value="10"/>
+			<value id="normal" value="2"/>
+		</control>
+
+		<!-- <control id="vcpversion" address="0xdf"/> -->
+
+                <control id="inputsource" type="list" address="0x60">
+                        <value id="PC"  value="1"/>
+                        <value id="DVI" value="3"/>
+                </control>
+	</controls>
+</monitor>

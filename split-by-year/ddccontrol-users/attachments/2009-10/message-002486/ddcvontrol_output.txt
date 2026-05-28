@@ -1,0 +1,148 @@
+[root@arkumar-d2 ddccontrol-0.4.2]# LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version MS1 0.4.2
+Probing for available monitorsI/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/MVM0155.xml"
+Document not parsed successfully.
+......
+Detected monitors :
+ - Device: pci:00:02.0-0
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:00:02.0-0...
+I/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/MVM0155.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: MVM0155 [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Invalid response, corrupted data - xor is 0x5c, length 0x03
+0000: 6e 83 f3 00 50 42 36 43 30 43 36 43 38 43 39 44 | n...PB6C0C6C8C9D
+0010: 36 28 31 34 29 0b 45 29 37 cf e6 52 36 1f 4b 34 | 6(14).E)7..R6.K4
+0020: aa c8 ff c1 54 c4 fd da 8c 0c ad c1 e4 6f 41 dd | ....T........oA.
+0030: dd 06 92 2b d5 e5 f0 fa 4a 4c 8d 00 4c ad 0e d6 | ...+....JL..L...
+0040: 43 32 bf                                        | C2.             
+Raw output: (type(LCD)vcp(02DF101216181A20300E3E1E0405060860(1 3)14(58B)ACAEB6C0C6C8C9D6(14)DC(1234)FAFBFCFDFE)
+Parsed output: 
+	VCP: 02 04 05 06 08 0e 10 12 14 16 18 1a 1e 20 30 3e 60 ac ae b6 c0 c6 c8 c9 d6 dc df fa fb fc fd fe 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/255/255 C [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Invalid response, corrupted data - xor is 0xbc, length 0x02
+6e 82 01 05 04 01 00 01 00 00 b0                | n..........     
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0e: +/49/100 C [Image Lock Coarse (Clock)]
+Control 0x10: +/159/170 C [Brightness]
+Control 0x12: +/120/150 C [Contrast]
+Control 0x14: +/11/13 C [???]
+Control 0x16: +/78/180 C [Red maximum level]
+Control 0x18: +/76/180 C [Green maximum level]
+Control 0x1a: +/90/180 C [Blue maximum level]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 1d 1d 00 00 b4 00 5a ff                | n........Z.     
+Control 0x1e: +/0/2 C [Automatically adjust]
+Control 0x20: +/100/255 C [Horizontal Position]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 24 24 00 00 ff 00 64 ff                | n..$$....d.     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 25 25 00 00 ff 00 64 ff                | n..%%....d.     
+Invalid response, corrupted data - xor is 0xbe, length 0x02
+6e 82 01 2e 2d 00 00 ff 00 64 ff                | n...-....d.     
+Control 0x30: +/28/38 C [Vertical Position]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 34 34 00 00 26 00 1c ff                | n..44..&...     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 35 35 00 00 26 00 1c ff                | n..55..&...     
+Invalid response, first byte is 0x29, should be 0x6e
+29 82 01 35 35 00 00 26 00 1c ff                | )..55..&...     
+Control 0x3e: +/26/63 C [Image Lock Fine (Clock Phase)]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 42 42 00 00 3f 00 1a ff                | n..BB..?...     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 4e 4e 00 00 3f 00 1a ff                | n..NN..?...     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 54 54 00 00 3f 00 1a ff                | n..TT..?...     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 5b 5b 00 00 3f 00 1a ff                | n..[[..?...     
+Control 0x60: +/1/3 C [Input Source Select - Analog]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 61 61 00 00 03 00 01 ff                | n..aa......     
+Control 0x68: +/0/11   [???]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 6f 6f 00 00 0b 00 00 ff                | n..oo......     
+Invalid response, corrupted data - xor is 0xbc, length 0x02
+6e 82 01 75 74 00 00 0b 00 00 ff                | n..ut......     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 7b 7b 00 00 0b 00 00 ff                | n..{{......     
+Invalid response, first byte is 0x29, should be 0x6e
+29 82 01 7c 7b 00 00 0b 00 00 ff                | )..|{......     
+Invalid response, corrupted data - xor is 0xbe, length 0x02
+6e 82 01 82 81 00 00 0b 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xb2, length 0x02
+6e 82 01 88 87 00 00 0b 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 94 94 00 00 0b 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 9b 9b 00 00 0b 00 00 ff                | n..........     
+Invalid response, first byte is 0x29, should be 0x6e
+29 82 01 9b 9b 00 00 0b 00 00 ff                | )..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 a1 a1 00 00 0b 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xbc, length 0x02
+6e 82 01 a7 a6 00 00 0b 00 00 ff                | n..........     
+Control 0xac: +/48280/65280 C [???]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 ad ad 00 00 00 00 98 ff                | n..........     
+Control 0xae: +/5980/65535 C [???]
+Control 0xb6: +/3/8 C [???]
+Control 0xc0: +/11256/65535 C [???]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 c1 c1 00 00 ff 00 f8 ff                | n..........     
+Control 0xc6: +/49/49 C [???]
+Invalid response, corrupted data - xor is 0xb2, length 0x02
+6e 82 01 c8 c7 00 00 31 00 31 ff                | n......1.1.     
+Control 0xc8: +/5/16 C [???]
+Control 0xc9: +/256/272 C [???]
+Invalid response, corrupted data - xor is 0xbc, length 0x02
+6e 82 01 cb ca 00 00 10 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 d3 d3 00 00 10 00 00 ff                | n..........     
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdc: +/4/4 C [???]
+Control 0xdf: +/512/512 C [???]
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 e2 e2 00 00 00 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xb2, length 0x02
+6e 82 01 e8 e7 00 00 00 00 00 ff                | n..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 f3 f3 00 00 00 00 00 ff                | n..........     
+Invalid response, first byte is 0x29, should be 0x6e
+29 82 01 f3 f3 00 00 00 00 00 ff                | )..........     
+Invalid response, corrupted data - xor is 0xbd, length 0x02
+6e 82 01 f9 f9 00 00 00 00 00 ff                | n..........     
+Control 0xfa: +/0/2 C [???]
+Control 0xfb: +/60/255 C [???]
+Control 0xfc: +/51879/65535 C [???]
+Control 0xfd: +/55048/65535 C [???]
+Control 0xfe: +/0/4 C [???]
+[root@arkumar-d2 ddccontrol-0.4.2]# 
+
+

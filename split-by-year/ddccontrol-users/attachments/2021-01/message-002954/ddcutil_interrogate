@@ -1,0 +1,2623 @@
+Error opening /sys/bus/i2c/devices/i2c-4/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-5/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-6/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-7/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-8/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-9/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-10/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-11/device/device/device/class: No such file or directory
+Setting output level verbose...
+Setting maximum retries...
+Forcing --stats...
+Forcing --force-slave-address..
+This command will take a while to run...
+
+The following tests probe the runtime environment using multiple overlapping methods.
+   Current time (local): 2021-01-20 12:35:49 CET
+   Current time (UTC):   2021-01-20 11:35:49
+   Seconds since boot:   744333
+
+
+*** Basic System Information ***
+
+ddcutil version: 1.0.0
+
+/proc/version:
+   Linux version 5.7.19-1-ck-atom (linux-ck-atom@archlinux) (gcc version 10.2.0 (GCC), GNU ld (GNU Binutils) 2.35) #1 SMP PREEMPT Mon, 31 Aug 2020 21:08:27 +0000
+
+Architecture:     x86_64
+Distributor id:   Artix
+Release:          rolling
+Found a known architecture
+
+/proc/cmdline:
+   BOOT_IMAGE=/vmlinuz-linux-ck-atom root=/dev/mapper/btrfs_root rootflags=subvol=/subvolumes/root,compress=lzo,ssd,ssd_spread,noautodefrag,discard,relatime,commit=60 ro kdb=off loglevel=9 pcie_aspm=force slub_debug=- vt.default_utf8=1 fbcon=rotate:1 intel_iommu=on noautogroup init=/usr/bin/openrc-init resume=/dev/mapper/swsusp vga=6
+
+Compiler information:
+   C standard: 201710
+   gcc compatible compiler:
+      Compiler version: 10.2.0
+
+Processor information as reported by lscpu:
+   Architecture:                    x86_64
+   CPU op-mode(s):                  32-bit, 64-bit
+   Byte Order:                      Little Endian
+   Address sizes:                   39 bits physical, 48 bits virtual
+   CPU(s):                          4
+   On-line CPU(s) list:             0-3
+   Thread(s) per core:              1
+   Core(s) per socket:              4
+   Socket(s):                       1
+   NUMA node(s):                    1
+   Vendor ID:                       GenuineIntel
+   CPU family:                      6
+   Model:                           122
+   Model name:                      Intel(R) Celeron(R) N4100 CPU @ 1.10GHz
+   Stepping:                        1
+   CPU MHz:                         1271.573
+   CPU max MHz:                     2400.0000
+   CPU min MHz:                     800.0000
+   BogoMIPS:                        2188.80
+   Virtualization:                  VT-x
+   L1d cache:                       96 KiB
+   L1i cache:                       128 KiB
+   L2 cache:                        4 MiB
+   NUMA node0 CPU(s):               0-3
+   Vulnerability Itlb multihit:     Not affected
+   Vulnerability L1tf:              Not affected
+   Vulnerability Mds:               Not affected
+   Vulnerability Meltdown:          Mitigation; PTI
+   Vulnerability Spec store bypass: Vulnerable
+   Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+   Vulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling
+   Vulnerability Srbds:             Not affected
+   Vulnerability Tsx async abort:   Not affected
+   Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm 3dnowprefetch cpuid_fault cat_l2 pti cdp_l2 ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust smep erms mpx rdt_a rdseed smap clflushopt intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts umip rdpid arch_capabilities
+
+DMI Information from /sys/class/dmi/id:
+   Motherboard vendor:       GPD
+   Motherboard product name: MicroPC
+   System vendor:            GPD
+   System product name:      MicroPC
+   Chassis vendor:           Default string
+   Chassis type:             10 - Notebook
+
+Byte order checks:
+   Is big endian (local test):       false
+   WORDS_BIGENDIAN macro (autoconf): not defined
+   __BYTE_ORDER__ macro (gcc):       __ORDER_LITTLE_ENDIAN__
+
+*** Primary Check 1: Identify video card and driver ***
+
+Obtaining card and driver information from /sys...
+Primary video controller at PCI address 0000:00:02.0 (boot_vga flag is set)
+   Device class:        x030000    VGA compatible controller
+   Vendor:              x8086      Intel Corporation
+   Device:              x3185      UHD Graphics 605
+   Driver name:         i915
+   Driver version:      Unable to determine
+   I2C device:          i2c-1      name: i915 gmbus dpc
+   I2C device:          i2c-2      name: i915 gmbus misc
+   I2C device:          i2c-0      name: i915 gmbus dpb
+
+*** Primary Check 2: Check that /dev/i2c-* exist and writable ***
+
+Current user: root (0)
+
+Checking /dev/i2c-* devices...
+
+Devices /dev/i2c-* must exist and the logged on user must have read/write permission for those devices (or at least those devices associated 
+with monitors).
+
+Typically, this access is enabled by:
+  - setting the group for /dev/i2c-* to i2c
+  - setting group RW permissions for /dev/i2c-*
+  - making the current user a member of group i2c
+
+Alternatively, this can be enabled by just giving everyone RW permission
+The following tests probe for these conditions.
+
+Checking for /dev/i2c-* devices...
+   crw------- 1 root root 89,  0 Jan 20 12:07 /dev/i2c-0
+   crw------- 1 root root 89,  1 Jan 20 12:07 /dev/i2c-1
+   crw------- 1 root root 89, 10 Jan 20 12:07 /dev/i2c-10
+   crw------- 1 root root 89, 11 Jan 20 12:07 /dev/i2c-11
+   crw------- 1 root root 89, 12 Jan 20 12:07 /dev/i2c-12
+   crw------- 1 root root 89,  2 Jan 20 12:07 /dev/i2c-2
+   crw------- 1 root root 89,  3 Jan 20 12:07 /dev/i2c-3
+   crw------- 1 root root 89,  4 Jan 20 12:07 /dev/i2c-4
+   crw------- 1 root root 89,  5 Jan 20 12:07 /dev/i2c-5
+   crw------- 1 root root 89,  6 Jan 20 12:07 /dev/i2c-6
+   crw------- 1 root root 89,  7 Jan 20 12:07 /dev/i2c-7
+   crw------- 1 root root 89,  8 Jan 20 12:07 /dev/i2c-8
+   crw------- 1 root root 89,  9 Jan 20 12:07 /dev/i2c-9
+
+Current user (root) has RW access to all /dev/i2c-* devices.
+
+Checking for group i2c...
+   Group i2c does not exist
+
+Looking for udev rules files that reference i2c:
+   Checking rules directory /lib/udev/rules.d:
+      /lib/udev/rules.d/60-sensor.rules:SUBSYSTEM=="iio", KERNEL=="iio*", SUBSYSTEMS=="usb|i2c", \
+   Checking rules directory /run/udev/rules.d:
+      grep: /run/udev/rules.d/*rules: No such file or directory
+   Checking rules directory /etc/udev/rules.d:
+
+*** Primary Check 3: Check that module i2c_dev is loaded ***
+
+Checking for module i2c_dev...
+   Module i2c-dev is NOT built into kernel
+   Loadable i2c-dev module found
+   Module i2c_dev is loaded
+
+Check that kernel module i2c_dev is being loaded by examining files where this would be specified...
+   grep: /etc/modules: No such file or directory
+   grep: /run/modules-load.d/*conf: No such file or directory
+
+Check for any references to i2c_dev in /etc/modprobe.d ...
+   grep: /etc/modprobe.d/sony-laptop.conf: No such file or directory
+   grep: /run/modprobe.d/*conf: No such file or directory
+
+*** Primary Check 4: Driver specific checks ***
+
+Performing driver specific checks...
+No driver specific checks apply.
+
+*** Additional probes ***
+
+Scanning /proc/modules for driver environment...
+   Found other loaded module:      i2c_dev
+   Found other loaded module:      videobuf2_dma_sg
+   Found other loaded module:      videobuf2_memops
+   Found other loaded module:      videobuf2_v4l2
+   Found other loaded module:      videobuf2_common
+   Found other loaded module:      videodev
+   Found other loaded module:      i2c_i801
+   Found video driver module:      i915
+   Found other loaded module:      i2c_algo_bit
+   Found other loaded module:      drm_kms_helper
+   Loaded drm module depends on:   i915,drm_kms_helper,
+
+Testing if modules are loaded using /sys...
+   Module amdgpu           is NOT loaded
+   Module fbdev            is NOT loaded
+   Module fglrx            is NOT loaded
+   Module fturbo           is NOT loaded
+   Module i915             is loaded
+   Module mgag200          is NOT loaded
+   Module nvidia           is NOT loaded
+   Module nouveau          is NOT loaded
+   Module radeon           is NOT loaded
+   Module vboxvideo        is NOT loaded
+   Module vc4              is NOT loaded
+   Module drm              is loaded
+   Module i2c_algo_bit     is loaded
+   Module i2c_dev          is loaded
+   Module i2c_piix4        is NOT loaded
+   Module ddcci            is NOT loaded
+
+Examining /sys/bus/i2c/devices...
+   /sys/bus/i2c/devices/i2c-0/name:   i915 gmbus dpb
+   /sys/bus/i2c/devices/i2c-1/name:   i915 gmbus dpc
+   /sys/bus/i2c/devices/i2c-2/name:   i915 gmbus misc
+   /sys/bus/i2c/devices/i2c-3/name:   AUX C/port C
+   /sys/bus/i2c/devices/i2c-4/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-5/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-6/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-7/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-8/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-9/name:   Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-10/name:  Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-11/name:  Synopsys DesignWare I2C adapter
+   /sys/bus/i2c/devices/i2c-12/name:  SMBus I801 adapter at f040
+
+
+Examining I2C buses, as detected by I2C layer...
+   Current time (local): 2021-01-20 12:35:49 CET
+   Current time (UTC):   2021-01-20 11:35:49
+   Seconds since boot:   744333
+
+   Detected 4 non-ignorable I2C buses:
+
+   Bus /dev/i2c-0 found:   true
+   Bus /dev/i2c-0 probed:  true
+   Bus accessible:          true
+   Bus is eDP:              false
+   Valid bus name checked:  true
+   I2C bus has valid name:  true
+   Address 0x37 present:    true
+   Address 0x50 present:    true
+   EDID synopsis:
+      Mfg id:               PHL
+      Model:                Philips 220X
+      Product code:         49200
+      Serial number:        DL30925595330
+      Binary serial number: 595330 (0x00091582)
+      Manufacture year:     2009
+      EDID version:         1.3
+      Extra descriptor:        
+      Video input definition:    0x80 - Digital Input
+      Supported features:
+         DPMS standby
+         DPMS suspend
+         DPMS active-off
+         Digital display type: RGB 4:4:4
+         Standard sRGB color space: False
+      White x,y:        0.313, 0.329
+      Red   x,y:        0.646, 0.339
+      Green x,y:        0.290, 0.603
+      Blue  x,y:        0.145, 0.070
+      Extension blocks: 0
+   EDID source: 
+   EDID hex dump:
+              +0          +4          +8          +c            0   4   8   c   
+      +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+      +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+      +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+      +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+      +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+      +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+      +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+      +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+
+   Bus /dev/i2c-1 found:   true
+   Bus /dev/i2c-1 probed:  true
+   Bus accessible:          true
+   Bus is eDP:              false
+   Valid bus name checked:  true
+   I2C bus has valid name:  true
+   Address 0x37 present:    false
+   Address 0x50 present:    false
+
+   Bus /dev/i2c-2 found:   true
+   Bus /dev/i2c-2 probed:  true
+   Bus accessible:          true
+   Bus is eDP:              false
+   Valid bus name checked:  true
+   I2C bus has valid name:  true
+   Address 0x37 present:    false
+   Address 0x50 present:    false
+
+   Bus /dev/i2c-3 found:   true
+   Bus /dev/i2c-3 probed:  true
+   Bus accessible:          true
+   Bus is eDP:              false
+   Valid bus name checked:  true
+   I2C bus has valid name:  true
+   Address 0x37 present:    false
+   Address 0x50 present:    false
+
+xrandr connection report:
+   DSI1 connected 1280x720+400+330 right (normal left inverted right x axis y axis) 0mm x 0mm
+   DP1 disconnected (normal left inverted right x axis y axis)
+   HDMI1 connected primary 1680x1050+0+0 (nError opening /sys/bus/i2c/devices/i2c-4/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-5/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-6/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-7/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-8/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-9/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-10/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-11/device/device/device/class: No such file or directory
+ormal left inverted right x axis y axis) 470mm x 290mm
+
+Checking for possibly conflicting programs...
+   root      1539  0.2  0.4 230996 37932 pts/17   Sl   12:26   0:01 gddccontrol
+   root      1543  0.3  0.0   2660  1004 pts/17   S    12:26   0:02 /usr/libexec/ddccontrol/ddcpci 0 52348478
+   root     29650  0.1  0.1 267532 10080 ?        Sl   12:21   0:01 /usr/libexec/ddccontrol/ddccontrol_service
+
+Examining I2C buses using i2cdetect... 
+   Current time (local): 2021-01-20 12:35:49 CET
+   Current time (UTC):   2021-01-20 11:35:49
+   Seconds since boot:   744333
+
+   Probing bus /dev/i2c-0 using command "i2cdetect -y 0"
+           0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+      00:                         -- -- -- -- -- -- -- -- 
+      10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      30: -- -- -- -- -- -- -- 37 -- -- 3a -- -- -- -- -- 
+      40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      50: 50 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      70: -- -- -- -- -- -- -- --                         
+
+   Probing bus /dev/i2c-1 using command "i2cdetect -y 1"
+           0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+      00:                         -- -- -- -- -- -- -- -- 
+      10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      70: -- -- -- -- -- -- -- --                         
+
+   Probing bus /dev/i2c-2 using command "i2cdetect -y 2"
+           0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+      00:                         -- -- -- -- -- -- -- -- 
+      10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      70: -- -- -- -- -- -- -- --                         
+
+   Probing bus /dev/i2c-3 using command "i2cdetect -y 3"
+           0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+      00:                         -- -- -- -- -- -- -- -- 
+      10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+      70: -- -- -- -- -- -- -- --                         
+
+   Device /dev/i2c-4 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-5 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-6 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-7 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-8 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-9 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-10 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-11 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+   Device /dev/i2c-12 is a SMBus or other ignorable device.  Skipping i2cdetect.
+
+Performing basic scan of I2C devices using local sysenv functions...
+   Current time (local): 2021-01-20 12:36:12 CET
+   Current time (UTC):   2021-01-20 11:36:12
+   Seconds since boot:   744356
+
+   Examining device /dev/i2c-0...
+      Functionality: I2C_FUNC_I2C, I2C_FUNC_SMBUS_PEC, I2C_FUNC_SMBUS_BLOCK_PROC_CALL, 
+                     I2C_FUNC_SMBUS_QUICK, I2C_FUNC_SMBUS_READ_BYTE, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE, I2C_FUNC_SMBUS_READ_BYTE_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE_DATA, I2C_FUNC_SMBUS_READ_WORD_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_WORD_DATA, I2C_FUNC_SMBUS_PROC_CALL, 
+                     I2C_FUNC_SMBUS_READ_BLOCK_DATA, I2C_FUNC_SMBUS_WRITE_BLOCK_DATA, 
+                     I2C_FUNC_SMBUS_READ_I2C_BLOCK, I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+      Raw EDID:
+              +0          +4          +8          +c            0   4   8   c   
+      +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+      +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+      +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+      +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+      +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+      +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+      +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+      +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+      +0080   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +0090   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00a0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00b0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00c0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00d0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00e0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      +00f0   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff   ................
+      EDID synopsis:
+         Mfg id:               PHL
+         Model:                Philips 220X
+         Product code:         49200
+         Serial number:        DL30925595330
+         Binary serial number: 595330 (0x00091582)
+         Manufacture year:     2009
+         EDID version:         1.3
+         Extra descriptor:        
+         Video input definition:    0x80 - Digital Input
+         Supported features:
+            DPMS standby
+            DPMS suspend
+            DPMS active-off
+            Digital display type: RGB 4:4:4
+            Standard sRGB color space: False
+         White x,y:        0.313, 0.329
+         Red   x,y:        0.646, 0.339
+         Green x,y:        0.290, 0.603
+         Blue  x,y:        0.145, 0.070
+         Extension blocks: 0
+      EDID source: 
+      Attempt 1 to read and parse EDID succeeded
+
+      Trying simple VCP read of feature 0x10...
+      read() returned 6e 88 02 00 10 00 00 64 00 59 99
+      Attempt 1 to read feature succeeded.
+      DDC communication succeeded
+
+   Examining device /dev/i2c-1...
+      Functionality: I2C_FUNC_I2C, I2C_FUNC_SMBUS_PEC, I2C_FUNC_SMBUS_BLOCK_PROC_CALL, 
+                     I2C_FUNC_SMBUS_QUICK, I2C_FUNC_SMBUS_READ_BYTE, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE, I2C_FUNC_SMBUS_READ_BYTE_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE_DATA, I2C_FUNC_SMBUS_READ_WORD_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_WORD_DATA, I2C_FUNC_SMBUS_PROC_CALL, 
+                     I2C_FUNC_SMBUS_READ_BLOCK_DATA, I2C_FUNC_SMBUS_WRITE_BLOCK_DATA, 
+                     I2C_FUNC_SMBUS_READ_I2C_BLOCK, I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+      Unable to read EDID, psc=ENXIO(-6): No such device or address
+
+      Trying simple VCP read of feature 0x10...
+      Attempt 1 to read feature returned hard error: ENXIO(-6): No such device or address
+      DDC communication failed.
+
+   Examining device /dev/i2c-2...
+      Functionality: I2C_FUNC_I2C, I2C_FUNC_SMBUS_PEC, I2C_FUNC_SMBUS_BLOCK_PROC_CALL, 
+                     I2C_FUNC_SMBUS_QUICK, I2C_FUNC_SMBUS_READ_BYTE, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE, I2C_FUNC_SMBUS_READ_BYTE_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_BYTE_DATA, I2C_FUNC_SMBUS_READ_WORD_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_WORD_DATA, I2C_FUNC_SMBUS_PROC_CALL, 
+                     I2C_Error opening /sys/bus/i2c/devices/i2c-4/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-5/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-6/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-7/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-8/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-9/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-10/device/device/device/class: No such file or directory
+Error opening /sys/bus/i2c/devices/i2c-11/device/device/device/class: No such file or directory
+FUNC_SMBUS_READ_BLOCK_DATA, I2C_FUNC_SMBUS_WRITE_BLOCK_DATA, 
+                     I2C_FUNC_SMBUS_READ_I2C_BLOCK, I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+      Unable to read EDID, psc=ENXIO(-6): No such device or address
+
+      Trying simple VCP read of feature 0x10...
+      Attempt 1 to read feature returned hard error: ENXIO(-6): No such device or address
+      DDC communication failed.
+
+   Examining device /dev/i2c-3...
+      Functionality: I2C_FUNC_I2C, I2C_FUNC_10BIT_ADDR, I2C_FUNC_SMBUS_PEC, 
+                     I2C_FUNC_SMBUS_BLOCK_PROC_CALL, I2C_FUNC_SMBUS_QUICK, 
+                     I2C_FUNC_SMBUS_READ_BYTE, I2C_FUNC_SMBUS_WRITE_BYTE, 
+                     I2C_FUNC_SMBUS_READ_BYTE_DATA, I2C_FUNC_SMBUS_WRITE_BYTE_DATA, 
+                     I2C_FUNC_SMBUS_READ_WORD_DATA, I2C_FUNC_SMBUS_WRITE_WORD_DATA, 
+                     I2C_FUNC_SMBUS_PROC_CALL, I2C_FUNC_SMBUS_READ_BLOCK_DATA, 
+                     I2C_FUNC_SMBUS_WRITE_BLOCK_DATA, I2C_FUNC_SMBUS_READ_I2C_BLOCK, 
+                     I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+      Unable to read EDID, psc=ETIMEDOUT(-110): Connection timed out
+
+      Trying simple VCP read of feature 0x10...
+      Attempt 1 to read feature returned hard error: ETIMEDOUT(-110): Connection timed out
+      DDC communication failed.
+
+   Examining device /dev/i2c-4...
+                           Device /dev/i2c-4 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-5...
+                           Device /dev/i2c-5 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-6...
+                           Device /dev/i2c-6 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-7...
+                           Device /dev/i2c-7 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-8...
+                           Device /dev/i2c-8 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-9...
+                           Device /dev/i2c-9 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-10...
+                           Device /dev/i2c-10 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-11...
+                           Device /dev/i2c-11 is a SMBus or other ignorable device.  Skipping.
+
+   Examining device /dev/i2c-12...
+                           Device /dev/i2c-12 is a SMBus or other ignorable device.  Skipping.
+
+EDIDs reported by X11 for connected xrandr outputs:
+   xrandr output: HDMI1
+      Raw EDID:
+              +0          +4          +8          +c            0   4   8   c   
+      +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+      +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+      +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+      +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+      +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+      +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+      +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+      +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+      EDID synopsis:
+         Mfg id:               PHL
+         Model:                Philips 220X
+         Product code:         49200
+         Serial number:        DL30925595330
+         Binary serial number: 595330 (0x00091582)
+         Manufacture year:     2009
+         EDID version:         1.3
+         Extra descriptor:        
+         Video input definition:    0x80 - Digital Input
+         Supported features:
+            DPMS standby
+            DPMS suspend
+            DPMS active-off
+            Digital display type: RGB 4:4:4
+            Standard sRGB color space: False
+         White x,y:        0.313, 0.329
+         Red   x,y:        0.646, 0.339
+         Green x,y:        0.290, 0.603
+         Blue  x,y:        0.145, 0.070
+         Extension blocks: 0
+      EDID source: 
+
+Probing I2C devices using udev, susbsystem i2c-dev...
+   Current time (local): 2021-01-20 12:36:12 CET
+   Current time (UTC):   2021-01-20 11:36:12
+   Seconds since boot:   744356
+Summary of udev I2C devices
+   Subsystem   Sysname    Sysattr Name                        Devpath
+   i2c-dev     i2c-0      i915 gmbus dpb                      /devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0
+   i2c-dev     i2c-1      i915 gmbus dpc                      /devices/pci0000:00/0000:00:02.0/i2c-1/i2c-dev/i2c-1
+   i2c-dev     i2c-2      i915 gmbus misc                     /devices/pci0000:00/0000:00:02.0/i2c-2/i2c-dev/i2c-2
+   i2c-dev     i2c-3      AUX C/port C                        /devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3
+   i2c-dev     i2c-4      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/i2c-dev/i2c-4
+   i2c-dev     i2c-5      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/i2c-dev/i2c-5
+   i2c-dev     i2c-6      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/i2c-dev/i2c-6
+   i2c-dev     i2c-7      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/i2c-dev/i2c-7
+   i2c-dev     i2c-8      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/i2c-dev/i2c-8
+   i2c-dev     i2c-9      Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/i2c-dev/i2c-9
+   i2c-dev     i2c-10     Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/i2c-dev/i2c-10
+   i2c-dev     i2c-11     Synopsys DesignWare I2C adapter     /devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/i2c-dev/i2c-11
+   i2c-dev     i2c-12     SMBus I801 adapter at f040          /devices/pci0000:00/0000:00:1f.1/i2c-12/i2c-dev/i2c-12
+
+Looking for udev devices with name attribute DPMST...
+Summary of udev DPMST devices...
+   No devices detected
+
+amdgpu configuration parameters:
+
+
+Examining configuration files...
+
+DKMS modules:
+   anbox-modules-binder, r1098.cd829e9: added
+   bcwc-pcie, r245.82626d4, 5.10.5-pf6-1, x86_64: installed
+   bcwc-pcie, r245.82626d4, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   bcwc-pcie, r245.82626d4, 5.10.7-111-tkg-pds, x86_64: installed
+   bcwc-pcie, r245.82626d4, 5.10.8-artix1-1, x86_64: installed
+   bcwc-pcie, r245.82626d4, 5.10.8-xanmod1-1, x86_64: installed
+   bcwc-pcie, r245.82626d4, 5.7.19-1-ck-atom, x86_64: installed
+   ddcci, 0.3.3, 5.10.5-pf6-1, x86_64: installed
+   ddcci, 0.3.3, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   ddcci, 0.3.3, 5.10.7-111-tkg-pds, x86_64: installed
+   ddcci, 0.3.3, 5.10.8-artix1-1, x86_64: installed
+   ddcci, 0.3.3, 5.10.8-xanmod1-1, x86_64: installed
+   ddcci, 0.3.3, 5.7.19-1-ck-atom, x86_64: installed
+   frandom, 1.2, 5.10.5-pf6-1, x86_64: installed
+   frandom, 1.2, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   frandom, 1.2, 5.10.7-111-tkg-pds, x86_64: installed
+   frandom, 1.2, 5.10.8-artix1-1, x86_64: installed
+   frandom, 1.2, 5.10.8-xanmod1-1, x86_64: installed
+   frandom, 1.2, 5.7.19-1-ck-atom, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.10.5-pf6-1, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.10.7-111-tkg-pds, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.10.8-artix1-1, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.10.8-xanmod1-1, x86_64: installed
+   gslx680-acpi, r149.667efce, 5.7.19-1-ck-atom, x86_64: installed
+   phc-intel, 0.3.2, 5.10.5-pf6-1, x86_64: installed
+   phc-intel, 0.3.2, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   phc-intel, 0.3.2, 5.10.7-111-tkg-pds, x86_64: installed
+   phc-intel, 0.3.2, 5.10.8-artix1-1, x86_64: installed
+   phc-intel, 0.3.2, 5.10.8-xanmod1-1, x86_64: installed
+   phc-intel, 0.3.2, 5.7.19-1-ck-atom, x86_64: installed
+   rtl88xxau, r1143.059e06a, 5.10.5-pf6-1, x86_64: installed
+   rtl88xxau, r1143.059e06a, 5.10.6-110-tkg-MuQSS, x86_64: installed
+   rtl88xxau, r1143.059e06a, 5.10.7-111-tkg-pds, x86_64: installed
+   rtl88xxau, r1143.059e06a, 5.10.8-artix1-1, x86_64: installed
+   rtl88xxau, r1143.059e06a, 5.10.8-xanmod1-1, x86_64: installedError! Could not locate dkms.conf file.
+   File: /var/lib/dkms/uvesafb/1.0.1/source/dkms.conf does not exist.
+   
+   rtl88xxau, r1143.059e06a, 5.7.19-1-ck-atom, x86_64: installed
+
+Kernel I2C configuration settings:
+   grep: /boot/config-5.7.19-1-ck-atom: No such file or directory
+
+Kernel AMDGPU configuration settings:
+   grep: /boot/config-5.7.19-1-ck-atom: No such file or directory
+
+
+Examining system logs...
+Current timestamps:
+   Current time (local): 2021-01-20 12:36:17 CET
+   Current time (UTC):   2021-01-20 11:36:17
+   Seconds since boot:   744361
+
+   Scanning dmesg output for I2C related entries...
+   Executing command: dmesg
+      [202342.640079] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202342.645137] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202342.665285] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202342.695777] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202342.849108] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202343.039015] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [202362.670517] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202362.963825] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202363.084121] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202363.102783] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202363.107866] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202363.128109] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202363.158330] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202363.320983] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202660.598805] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202660.893404] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202661.013935] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202661.352590] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202661.357839] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202661.377997] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202661.408480] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202661.562050] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202661.752748] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [202662.753542] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [202663.054042] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202663.174611] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202663.177133] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [202663.182484] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202663.203000] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202663.233520] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [202663.398417] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203184.121771] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203184.415985] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203184.536499] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203184.876511] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203184.881568] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203184.901741] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203184.932163] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203185.086054] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203185.285885] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [203185.698327] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203185.999050] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203186.119586] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203186.122436] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203186.127971] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203186.148500] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203186.179034] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203186.339692] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203827.025753] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203827.321697] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203827.442228] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203827.781080] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203827.786162] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203827.806337] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203827.836822] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203827.989297] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203828.182811] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [203828.270579] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203828.570508] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203828.691022] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203828.693740] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203828.699140] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203828.719657] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203828.750169] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203828.913503] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203953.489131] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203953.779074] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203953.899634] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203954.243277] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203954.248334] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203954.268493] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203954.298985] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203954.453041] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203954.644261] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [203954.750869] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [203955.067532] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203955.188052] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203955.190852] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [203955.196367] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203955.216882] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203955.247397] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [203955.410748] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [204020.232942] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [204020.535333] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204020.655854] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [204020.998204] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [204021.003657] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204021.023808] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204021.054254] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204021.206446] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [204021.466575] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [204021.669773] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [204021.972070] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204022.092323] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [204022.094434] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [204022.099916] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204022.120384] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204022.150888] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [204022.318145] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [216193.727875] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [216194.027839] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [216194.148079] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [216194.264445] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [216194.270197] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [216194.291708] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [216194.321965] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [216194.494542] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [217252.360982] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [217252.663427] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [217252.783830] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [217252.790623] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [217252.795908] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [217252.816316] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [217252.846741] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [217253.008564] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [221443.296759] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [221443.588470] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221443.708995] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [221445.267722] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [221445.272785] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221445.293269] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221445.323724] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221445.480024] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [221447.736688] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [221450.560592] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [221450.862075] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221450.982602] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [221450.990048] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [221450.995516] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221451.016020] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221451.046493] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [221451.220202] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226370.269706] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226370.556213] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226370.676734] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226371.036670] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226371.042130] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.062288] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.092711] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.253914] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226371.303874] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226371.606195] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.726640] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226371.738410] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226371.743637] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.764095] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.794603] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226371.953873] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226371.985975] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226372.288700] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226372.409231] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226372.410698] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226372.416187] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226372.436736] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226372.467260] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226372.663620] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226372.723868] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [226375.652456] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [226375.972539] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226376.122723] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226376.172564] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [226376.222701] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226376.262477] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226376.303475] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [226376.483654] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231625.433705] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231625.723553] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231625.844009] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231627.452550] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231627.457631] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231627.477883] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231627.508327] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231627.660253] i915 0000:00:02.0: [drm] *ERROR* GPIO inError executing command: EPERM(-1): Operation not permitted
+dex 1 request failed (-2)
+      [231627.708954] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231628.012302] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.132806] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231628.144680] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231628.150162] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.170667] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.201190] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.360587] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231628.392602] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231628.695306] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.815836] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231628.817985] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231628.823475] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.844033] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231628.874518] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231629.030448] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231629.952730] mei_hdcp 0000:00:0f.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+      [231633.283540] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+      [231633.584983] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231633.705348] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231633.727120] i915 0000:00:02.0: [drm] *ERROR* GPIO index 0 request failed (-2)
+      [231633.732469] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231633.752629] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231633.783013] i915 0000:00:02.0: [drm] *ERROR* GPIO index 5 request failed (-2)
+      [231633.970438] i915 0000:00:02.0: [drm] *ERROR* GPIO index 1 request failed (-2)
+
+   Scanning journalctl output for I2C related entries...
+   Executing command: journalctl --no-pager --boot
+
+
+   Scanning file: /var/log/Xorg.0.log
+   Limiting output to first 200 relevant lines...
+      [    46.159] 	X.Org Video Driver: 24.1
+      [    46.161] (II) xfree86: Adding drm device (/dev/dri/card0)
+      [    46.209] 	Module class: X.Org Video Driver
+      [    46.209] 	ABI class: X.Org Video Driver, version 24.1
+      	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+      [    46.237] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20200313
+      [    46.274] (II) Initializing extension XVideo
+      [    46.274] (II) Initializing extension XVideo-MotionCompensation
+      [    46.571] (II) config/udev: Adding input device Video Bus (/dev/input/event2)
+      [    46.571] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+      [    46.571] (**) Video Bus: Applying InputClass "system-keyboard"
+      [    46.571] (**) Video Bus: Applying InputClass "Generic keyboard"
+      [    46.578] (II) Using input driver 'libinput' for 'Video Bus'
+      [    46.578] (**) Video Bus: always reports core events
+      [    46.583] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [    46.583] (II) event2  - Video Bus: device is a keyboard
+      [    46.584] (II) event2  - Video Bus: device removed
+      [    46.604] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input2/event2"
+      [    46.604] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+      [    46.653] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [    46.654] (II) event2  - Video Bus: device is a keyboard
+      [  5431.128] (II) event2  - Video Bus: device removed
+      [  5449.187] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [  5449.187] (II) event2  - Video Bus: device is a keyboard
+      [  6004.323] (II) event2  - Video Bus: device removed
+      [  6025.736] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [  6025.736] (II) event2  - Video Bus: device is a keyboard
+      [ 24555.157] (II) event2  - Video Bus: device removed
+      [ 24564.676] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 24564.676] (II) event2  - Video Bus: device is a keyboard
+      [ 39005.318] (II) event2  - Video Bus: device removed
+      [ 39016.304] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 39016.304] (II) event2  - Video Bus: device is a keyboard
+      [ 60302.627] (II) event2  - Video Bus: device removed
+      [ 60329.809] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 60329.809] (II) event2  - Video Bus: device is a keyboard
+      [ 61603.318] (II) event2  - Video Bus: device removed
+      [ 61618.172] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 61618.172] (II) event2  - Video Bus: device is a keyboard
+      [ 63911.236] (II) event2  - Video Bus: device removed
+      [ 63922.959] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 63922.959] (II) event2  - Video Bus: device is a keyboard
+      [ 90259.419] (II) event2  - Video Bus: device removed
+      [ 90273.231] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [ 90273.231] (II) event2  - Video Bus: device is a keyboard
+      [118050.160] (II) event2  - Video Bus: device removed
+      [118141.937] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [118141.937] (II) event2  - Video Bus: device is a keyboard
+      [118148.921] (II) event2  - Video Bus: device removed
+      [118153.942] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [118153.942] (II) event2  - Video Bus: device is a keyboard
+      [118186.995] (II) event2  - Video Bus: device removed
+      [118192.812] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [118192.812] (II) event2  - Video Bus: device is a keyboard
+      [145390.305] (II) event2  - Video Bus: device removed
+      [145399.347] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [145399.347] (II) event2  - Video Bus: device is a keyboard
+      [145458.539] (II) event2  - Video Bus: device removed
+      [145463.328] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [145463.329] (II) event2  - Video Bus: device is a keyboard
+      [185941.543] (II) event2  - Video Bus: device removed
+      [185945.812] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [185945.812] (II) event2  - Video Bus: device is a keyboard
+      [189656.708] (II) event2  - Video Bus: device removed
+      [189660.755] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [189660.755] (II) event2  - Video Bus: device is a keyboard
+      [201712.593] (II) event2  - Video Bus: device removed
+      [201720.525] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [201720.525] (II) event2  - Video Bus: device is a keyboard
+      [201791.751] (II) event2  - Video Bus: device removed
+      [201795.105] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [201795.106] (II) event2  - Video Bus: device is a keyboard
+      [202334.961] (II) event2  - Video Bus: device removed
+      [202338.337] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [202338.338] (II) event2  - Video Bus: device is a keyboard
+      [202653.666] (II) event2  - Video Bus: device removed
+      [202657.442] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [202657.443] (II) event2  - Video Bus: device is a keyboard
+      [203177.259] (II) event2  - Video Bus: device removed
+      [203180.377] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [203180.377] (II) event2  - Video Bus: device is a keyboard
+      [203819.969] (II) event2  - Video Bus: device removed
+      [203822.947] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [203822.947] (II) event2  - Video Bus: device is a keyboard
+      [203946.580] (II) event2  - Video Bus: device removed
+      [203949.444] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [203949.444] (II) event2  - Video Bus: device is a keyboard
+      [204013.054] (II) event2  - Video Bus: device removed
+      [204016.346] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [204016.347] (II) event2  - Video Bus: device is a keyboard
+      [216162.851] (II) event2  - Video Bus: device removed
+      [216188.688] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [216188.688] (II) event2  - Video Bus: device is a keyboard
+      [216323.381] (II) event2  - Video Bus: device removed
+      [217247.047] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [217247.047] (II) event2  - Video Bus: device is a keyboard
+      [221425.495] (II) event2  - Video Bus: device removed
+      [221444.176] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [221444.177] (II) event2  - Video Bus: device is a keyboard
+      [226361.613] (II) event2  - Video Bus: device removed
+      [226369.487] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [226369.487] (II) event2  - Video Bus: device is a keyboard
+      [231613.955] (II) event2  - Video Bus: device removed
+      [231625.831] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+      [231625.831] (II) event2  - Video Bus: device is a keyboard
+
+   File not found: /var/log/messages
+
+   File not found: /var/log/kern.log
+
+   File not found: /var/log/daemon.log
+
+   File not found: /var/log/syslog
+
+
+   Log Summary
+      Log                             Checked   Found 
+      ===                             =======   ===== 
+      dmesg                           true      true  
+      journalctl                      true      false 
+      /var/log/daemon.log             true      false 
+      /var/log/kern.log               true      false 
+      /var/log/messages               true      false 
+      /var/log/syslog                 true      false 
+      /var/log/Xorg.0.log             true      true  
+
+Probing connected monitors using libdrm...
+
+   Checking libdrm version using pkg-config...
+      2.4.104
+
+   Has a DRM kernel driver been loaded? (drmAvailable()): true
+
+   Probing device /dev/dri/card0...
+      Open succeeded for device: /dev/dri/card0
+
+      DRM driver version information:
+         Version:     1.6.0
+         Driver:      i915
+         Date:        20200313
+         Description: Intel Graphics
+
+      DRM library version: 1.3.0.
+
+      DRM Busid:  pci:0000:00:02.0
+
+      Device information:
+         bustype:                0 - pci
+         domain:bus:device.func: 0000:00:02.0
+         vendor    vid:pid:      0x8086:0x3185
+         subvendor vid:pid:      0x0000:0x0000
+         revision id:            0x0003
+
+      Is a modesetting capable driver attached to bus id: pci:0000:00:02.0?
+      (calling drmCheckModesettingAvailable())
+         Yes
+
+      Retrieving DRM resources...
+
+      Scanning defined properties...
+
+      Scanning connectors...
+      connector_id:        160
+         connector name       DSI-1
+         connector_type:      16 - DSI
+         connector_type_id:   1
+         connection:          1 - connected
+         encoder:             159
+            encoder type (signal format): 6 - DSI
+         EDID property
+            Blob not found
+
+      connector_id:        143
+         connector name       HDMI-1
+         connector_type:      11 - HDMI
+         connector_type_id:   1
+         connection:          1 - connected
+         encoder:             142
+            encoder type (signal format): 2 - TDMS
+         EDID property
+            Raw property blob:
+            blob id: 173
+                    +0          +4          +8          +c            0   4   8   c   
+            +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+            +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+            +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+            +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+            +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+            +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+            +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+            +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+            EDID synopsis:
+               Mfg id:               PHL
+               Model:                Philips 220X
+               Product code:         49200
+               Serial number:        DL30925595330
+               Binary serial number: 595330 (0x00091582)
+               Manufacture year:     2009
+               EDID version:         1.3
+               Extra descriptor:        
+               Video input definition:    0x80 - Digital Input
+               Supported features:
+                  DPMS standby
+                  DPMS suspend
+                  DPMS active-off
+                  Digital display type: RGB 4:4:4
+                  Standard sRGB color space: False
+               White x,y:        0.313, 0.329
+               Red   x,y:        0.646, 0.339
+               Green x,y:        0.290, 0.603
+               Blue  x,y:        0.145, 0.070
+               Extension blocks: 0
+            EDID source: 
+
+      connector_id:        153
+         connector name       DP-1
+         connector_type:      10 - DP
+         connector_type_id:   1
+         connection:          2 - disconnected
+         encoder:             0
+         Encoder with id 0 not found
+         EDID property
+            Blob not found
+
+
+Examining /sys/class/drm...
+   Found connector: card0-HDMI-A-1
+      /sys/class/drm/card0/card0-HDMI-A-1/status: connected
+      I2C device: i2c-0
+
+   Found connector: card0-DSI-1
+      /sys/class/drm/card0/card0-DSI-1/status: connected
+(query_drm_using_sysfs         ) Unexpected. EDID ...20200053 not in xref table
+
+   Found connector: card0-DP-1
+      /sys/class/drm/card0/card0-DP-1/status: disconnected
+
+   Query file system for i2c nodes under /sys/class/drm/card*...
+   drwxr-xr-x 4 root root 0 Jan 20 12:36 /sys/class/drm/card0/card0-DP-1/i2c-3
+   lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/class/drm/card0/card0-HDMI-A-1/i2c-0 -> ../../../i2c-0
+
+Device Identifier Cross Reference Report
+
+   /dev/i2c busno:     0
+      EDID: ...20200053  Mfg: PHL  Model: Philips 220X   SN: DL30925595330
+                         Product number: 49200, binary SN: 595330
+      XrandR output:      HDMI1
+      DRM connector:      HDMI-1
+      UDEV name:          i915 gmbus dpb
+      UDEV syspath:       /devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0
+      UDEV busno:         0
+      sysfs drm path:     /sys/class/drm/card0/card0-HDMI-A-1
+      sysfs drm I2C:      i2c-0
+      sysfs drm busno:    0
+      ambiguous EDID:     false
+
+Video related contents of /etc/modprobe.d
+   /etc/modprobe.d/i915.conf:options i915 lvds_downclock=1 enable_fbc=1 enable_dc=6 disable_power_well=1 enable_psr=1
+   grep: /etc/modprobe.d/sony-laptop.conf: No such file or directory
+   /etc/modprobe.d/v4l2loopback.conf:options v4l2loopback video_nr=0,1,2 card-label=loopback_camera_0,loopback_camera_1,loopback_camera_2 max_buffers=3 max_openers=16 exclusive_caps=1,1,0
+
+Dumping sysfs i2c entries
+Top level i2c related nodes...
+
+   ls -l /sys/dev/char/89:* ...
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:0 -> ../../devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:1 -> ../../devices/pci0000:00/0000:00:02.0/i2c-1/i2c-dev/i2c-1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:10 -> ../../devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/i2c-dev/i2c-10
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:11 -> ../../devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/i2c-dev/i2c-11
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:12 -> ../../devices/pci0000:00/0000:00:1f.1/i2c-12/i2c-dev/i2c-12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:2 -> ../../devices/pci0000:00/0000:00:02.0/i2c-2/i2c-dev/i2c-2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:3 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:4 -> ../../devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/i2c-dev/i2c-4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:5 -> ../../devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/i2c-dev/i2c-5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:6 -> ../../devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/i2c-dev/i2c-6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:7 -> ../../devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/i2c-dev/i2c-7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:8 -> ../../devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/i2c-dev/i2c-8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/89:9 -> ../../devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/i2c-dev/i2c-9
+
+   ls -l /sys/dev/char/239:* ...
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 /sys/dev/char/239:0 -> ../../devices/pci0000:00/0000:00:0f.0/mei/mei0
+
+   ls -l /sys/bus/i2c/devices ...
+      total 0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-0 -> ../../../devices/pci0000:00/0000:00:02.0/i2c-0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-1 -> ../../../devices/pci0000:00/0000:00:02.0/i2c-1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-10 -> ../../../devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-11 -> ../../../devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-12 -> ../../../devices/pci0000:00/0000:00:1f.1/i2c-12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-2 -> ../../../devices/pci0000:00/0000:00:02.0/i2c-2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-3 -> ../../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-4 -> ../../../devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-5 -> ../../../devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-6 -> ../../../devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-7 -> ../../../devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-8 -> ../../../devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-9 -> ../../../devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9
+
+   ls -l /sys/bus/platform/devices ...
+      total 0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 ACPI0003:00 -> ../../../devices/pci0000:00/0000:00:1f.0/PNP0C09:00/ACPI0003:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 ID9001:00 -> ../../../devices/pci0000:00/ID9001:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT33A1:00 -> ../../../devices/platform/INT33A1:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT33D5:00 -> ../../../devices/platform/INT33D5:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3400:00 -> ../../../devices/platform/INT3400:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3403:04 -> ../../../devices/platform/INT3403:04
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3453:00 -> ../../../devices/platform/INT3453:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3453:01 -> ../../../devices/platform/INT3453:01
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3453:02 -> ../../../devices/platform/INT3453:02
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 INT3453:03 -> ../../../devices/platform/INT3453:03
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0103:00 -> ../../../devices/platform/PNP0103:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0C09:00 -> ../../../devices/pci0000:00/0000:00:1f.0/PNP0C09:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0C0A:00 -> ../../../devices/pci0000:00/0000:00:1f.0/PNP0C09:00/PNP0C0A:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0C0B:00 -> ../../../devices/platform/PNP0C0B:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0C0C:00 -> ../../../devices/platform/PNP0C0C:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 PNP0C0D:00 -> ../../../devices/pci0000:00/0000:00:1f.0/PNP0C09:00/PNP0C0D:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 USBC000:00 -> ../../../devices/platform/USBC000:00
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 alarmtimer.0.auto -> ../../../devices/pnp0/00:05/rtc/rtc0/alarmtimer.0.auto
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 coretemp.0 -> ../../../devices/platform/coretemp.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 dw-apb-uart.10 -> ../../../devices/pci0000:00/0000:00:18.2/dw-apb-uart.10
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 dw-apb-uart.11 -> ../../../devices/pci0000:00/0000:00:18.3/dw-apb-uart.11
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 dw-apb-uart.8 -> ../../../devices/pci0000:00/0000:00:18.0/dw-apb-uart.8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 dw-apb-uart.9 -> ../../../devices/pci0000:00/0000:00:18.1/dw-apb-uart.9
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 efi-framebuffer.0 -> ../../../devices/platform/efi-framebuffer.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 efivars.0 -> ../../../devices/platform/efivars.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.0 -> ../../../devices/pci0000:00/0000:00:16.0/i2c_designware.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.1 -> ../../../devices/pci0000:00/0000:00:16.1/i2c_designware.1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.2 -> ../../../devices/pci0000:00/0000:00:16.2/i2c_designware.2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.3 -> ../../../devices/pci0000:00/0000:00:16.3/i2c_designware.3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.4 -> ../../../devices/pci0000:00/0000:00:17.0/i2c_designware.4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.5 -> ../../../devices/pci0000:00/0000:00:17.1/i2c_designware.5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.6 -> ../../../devices/pci0000:00/0000:00:17.2/i2c_designware.6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c_designware.7 -> ../../../devices/pci0000:00/0000:00:17.3/i2c_designware.7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i8042 -> ../../../devices/platform/i8042
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.0 -> ../../../devices/pci0000:00/0000:00:16.0/idma64.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.1 -> ../../../devices/pci0000:00/0000:00:16.1/idma64.1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.12 -> ../../../devices/pci0000:00/0000:00:19.0/idma64.12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.13 -> ../../../devices/pci0000:00/0000:00:19.1/idma64.13
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.14 -> ../../../devices/pci0000:00/0000:00:19.2/idma64.14
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.2 -> ../../../devices/pci0000:00/0000:00:16.2/idma64.2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.3 -> ../../../devices/pci0000:00/0000:00:16.3/idma64.3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.4 -> ../../../devices/pci0000:00/0000:00:17.0/idma64.4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.5 -> ../../../devices/pci0000:00/0000:00:17.1/idma64.5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.6 -> ../../../devices/pci0000:00/0000:00:17.2/idma64.6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.7 -> ../../../devices/pci0000:00/0000:00:17.3/idma64.7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.8 -> ../../../devices/pci0000:00/0000:00:18.0/idma64.8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 idma64.9 -> ../../../devices/pci0000:00/0000:00:18.1/idma64.9
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 intel_rapl_msr.0 -> ../../../devices/platform/intel_rapl_msr.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 microcode -> ../../../devices/platform/microcode
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 pcspkr -> ../../../devices/platform/pcspkr
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 pxa2xx-spi.12 -> ../../../devices/pci0000:00/0000:00:19.0/pxa2xx-spi.12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 pxa2xx-spi.13 -> ../../../devices/pci0000:00/0000:00:19.1/pxa2xx-spi.13
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 pxa2xx-spi.14 -> ../../../devices/pci0000:00/0000:00:19.2/pxa2xx-spi.14
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 reg-dummy -> ../../../devices/platform/reg-dummy
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 regulatory.0 -> ../../../devices/platform/regulatory.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 rtc-efi.0 -> ../../../devices/platform/rtc-efi.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 serial8250 -> ../../../devices/platform/serial8250
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 snd-soc-dummy -> ../../../devices/platform/snd-soc-dummy
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 vboxdrv.0 -> ../../../devices/platform/vboxdrv.0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 wdat_wdt -> ../../../devices/platform/wdat_wdt
+
+   ls -l /sys/class/drm* ...
+      /sys/class/drm:
+      total 0
+      lrwxrwxrwx 1 root root    0 Jan 20 12:36 card0 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0
+      lrwxrwxrwx 1 root root    0 Jan 20 12:36 card0-DP-1 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+      lrwxrwxrwx 1 root root    0 Jan 20 12:36 card0-DSI-1 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1
+      lrwxrwxrwx 1 root root    0 Jan 20 12:36 card0-HDMI-A-1 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1
+      lrwxrwxrwx 1 root root    0 Jan 20 12:36 renderD128 -> ../../devices/pci0000:00/0000:00:02.0/drm/renderD128
+      -r--r--r-- 1 root root 4096 Jan 20 12:36 version
+      
+      /sys/class/drm_dp_aux_dev:
+      total 0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 drm_dp_aux0 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0
+
+   ls -l /sys/class/i2c* ...
+      /sys/class/i2c-adapter:
+      total 0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-0 -> ../../devices/pci0000:00/0000:00:02.0/i2c-0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-1 -> ../../devices/pci0000:00/0000:00:02.0/i2c-1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-10 -> ../../devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-11 -> ../../devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-12 -> ../../devices/pci0000:00/0000:00:1f.1/i2c-12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-2 -> ../../devices/pci0000:00/0000:00:02.0/i2c-2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-3 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-4 -> ../../devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-5 -> ../../devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-6 -> ../../devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-7 -> ../../devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-8 -> ../../devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-9 -> ../../devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9
+      
+      /sys/class/i2c-dev:
+      total 0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-0 -> ../../devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-1 -> ../../devices/pci0000:00/0000:00:02.0/i2c-1/i2c-dev/i2c-1
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-10 -> ../../devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/i2c-dev/i2c-10
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-11 -> ../../devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/i2c-dev/i2c-11
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-12 -> ../../devices/pci0000:00/0000:00:1f.1/i2c-12/i2c-dev/i2c-12
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-2 -> ../../devices/pci0000:00/0000:00:02.0/i2c-2/i2c-dev/i2c-2
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-3 -> ../../devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-4 -> ../../devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/i2c-dev/i2c-4
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-5 -> ../../devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/i2c-dev/i2c-5
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-6 -> ../../devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/i2c-dev/i2c-6
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-7 -> ../../devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/i2c-dev/i2c-7
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-8 -> ../../devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/i2c-dev/i2c-8
+      lrwxrwxrwx 1 root root 0 Jan 20 12:36 i2c-9 -> ../../devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/i2c-dev/i2c-9
+
+
+*** Detail for /sys/bus/i2c/devices (Initial Version) ***
+
+   Examining /sys/bus/i2c/devices/i2c-0 -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+      /sys/bus/i2c/devices/i2c-0/device                                     -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/bus/i2c/devices/i2c-0/name                                       =  i915 gmbus dpb
+      /sys/bus/i2c/devices/i2c-0/device/class                               =  0x030000
+      /sys/bus/i2c/devices/i2c-0/device/boot_vga                            =  1
+      /sys/bus/i2c/devices/i2c-0/device/driver                              -> i915
+      /sys/bus/i2c/devices/i2c-0/device/driver/module                       -> i915
+      /sys/bus/i2c/devices/i2c-0/device/enable                              =  1
+      /sys/bus/i2c/devices/i2c-0/device/modalias                            =  pci:v00008086d00003185sv00000000sd00000000bc03sc00i00
+      /sys/bus/i2c/devices/i2c-0/device/vendor                              =  0x8086
+      /sys/bus/i2c/devices/i2c-0/device/device                              =  0x3185
+      /sys/bus/i2c/devices/i2c-0/device/subsystem_vendor                    =  0x0000
+      /sys/bus/i2c/devices/i2c-0/device/subsystem_device                    =  0x0000
+      /sys/bus/i2c/devices/i2c-0/i2c-dev                                    :  Found subdirectory = i2c-0
+      /sys/bus/i2c/devices/i2c-0/i2c-dev/i2c-0/dev                          =  89:0
+      /sys/bus/i2c/devices/i2c-0/i2c-dev/i2c-0/name                         =  i915 gmbus dpb
+      /sys/bus/i2c/devices/i2c-0/i2c-dev/i2c-0/device                       -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+      /sys/bus/i2c/devices/i2c-0/i2c-dev/i2c-0/subsystem                    -> /sys/class/i2c-dev
+
+   Examining /sys/bus/i2c/devices/i2c-1 -> /sys/devices/pci0000:00/0000:00:02.0/i2c-1
+      /sys/bus/i2c/devices/i2c-1/device                                     -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/bus/i2c/devices/i2c-1/name                                       =  i915 gmbus dpc
+      /sys/bus/i2c/devices/i2c-1/device/class                               =  0x030000
+      /sys/bus/i2c/devices/i2c-1/device/boot_vga                            =  1
+      /sys/bus/i2c/devices/i2c-1/device/driver                              -> i915
+      /sys/bus/i2c/devices/i2c-1/device/driver/module                       -> i915
+      /sys/bus/i2c/devices/i2c-1/device/enable                              =  1
+      /sys/bus/i2c/devices/i2c-1/device/modalias                            =  pci:v00008086d00003185sv00000000sd00000000bc03sc00i00
+      /sys/bus/i2c/devices/i2c-1/device/vendor                              =  0x8086
+      /sys/bus/i2c/devices/i2c-1/device/device                              =  0x3185
+      /sys/bus/i2c/devices/i2c-1/device/subsystem_vendor                    =  0x0000
+      /sys/bus/i2c/devices/i2c-1/device/subsystem_device                    =  0x0000
+      /sys/bus/i2c/devices/i2c-1/i2c-dev                                    :  Found subdirectory = i2c-1
+      /sys/bus/i2c/devices/i2c-1/i2c-dev/i2c-1/dev                          =  89:1
+      /sys/bus/i2c/devices/i2c-1/i2c-dev/i2c-1/name                         =  i915 gmbus dpc
+      /sys/bus/i2c/devices/i2c-1/i2c-dev/i2c-1/device                       -> /sys/devices/pci0000:00/0000:00:02.0/i2c-1
+      /sys/bus/i2c/devices/i2c-1/i2c-dev/i2c-1/subsystem                    -> /sys/class/i2c-dev
+
+   Examining /sys/bus/i2c/devices/i2c-2 -> /sys/devices/pci0000:00/0000:00:02.0/i2c-2
+      /sys/bus/i2c/devices/i2c-2/device                                     -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/bus/i2c/devices/i2c-2/name                                       =  i915 gmbus misc
+      /sys/bus/i2c/devices/i2c-2/device/class                               =  0x030000
+      /sys/bus/i2c/devices/i2c-2/device/boot_vga                            =  1
+      /sys/bus/i2c/devices/i2c-2/device/driver                              -> i915
+      /sys/bus/i2c/devices/i2c-2/device/driver/module                       -> i915
+      /sys/bus/i2c/devices/i2c-2/device/enable                              =  1
+      /sys/bus/i2c/devices/i2c-2/device/modalias                            =  pci:v00008086d00003185sv00000000sd00000000bc03sc00i00
+      /sys/bus/i2c/devices/i2c-2/device/vendor                              =  0x8086
+      /sys/bus/i2c/devices/i2c-2/device/device                              =  0x3185
+      /sys/bus/i2c/devices/i2c-2/device/subsystem_vendor                    =  0x0000
+      /sys/bus/i2c/devices/i2c-2/device/subsystem_device                    =  0x0000
+      /sys/bus/i2c/devices/i2c-2/i2c-dev                                    :  Found subdirectory = i2c-2
+      /sys/bus/i2c/devices/i2c-2/i2c-dev/i2c-2/dev                          =  89:2
+      /sys/bus/i2c/devices/i2c-2/i2c-dev/i2c-2/name                         =  i915 gmbus misc
+      /sys/bus/i2c/devices/i2c-2/i2c-dev/i2c-2/device                       -> /sys/devices/pci0000:00/0000:00:02.0/i2c-2
+      /sys/bus/i2c/devices/i2c-2/i2c-dev/i2c-2/subsystem                    -> /sys/class/i2c-dev
+
+   Examining /sys/bus/i2c/deError opening "/sys/bus/i2c/devices/i2c-4/device/edid", No such file or directory
+vices/i2c-3 -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+      /sys/bus/i2c/devices/i2c-3/device                                     -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+      /sys/bus/i2c/devices/i2c-3/name                                       =  AUX C/port C
+      /sys/bus/i2c/devices/i2c-3/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-3/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-3/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-3/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-3/device/device                              -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+      /sys/bus/i2c/devices/i2c-3/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-3/device/status                              =  disconnected
+      /sys/bus/i2c/devices/i2c-3/device/subsystem                           -> /sys/class/drm
+      /sys/bus/i2c/devices/i2c-3/device/device                              -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+                                                                               Skipping linked directory
+      /sys/bus/i2c/devices/i2c-3/device                                     :  Found subdirectory = drm_dp_aux0
+      /sys/bus/i2c/devices/i2c-3/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-3/device/enabled                             =  disabled
+      /sys/bus/i2c/devices/i2c-3/device/drm_dp_aux0/dev                     =  241:0
+      /sys/bus/i2c/devices/i2c-3/device/drm_dp_aux0/device                  -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+      /sys/bus/i2c/devices/i2c-3/device/drm_dp_aux0/name                    =  AUX C/port C
+      /sys/bus/i2c/devices/i2c-3/device/drm_dp_aux0/device/subsystem        -> /sys/class/drm
+
+   Examining /sys/bus/i2c/devices/i2c-4 -> /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4
+      /sys/bus/i2c/devices/i2c-4/device                                     -> /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0
+      /sys/bus/i2c/devices/i2c-4/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-4/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-4/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-4/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-4/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-4/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-4/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-4/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-4/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-4/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-4/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-4/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-4/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-5 -> /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5
+      /sys/bus/i2c/devices/i2c-5/device                                     -> /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1
+      /sys/bus/i2c/devices/i2c-5/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-5/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-5/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-5/subsError opening "/sys/bus/i2c/devices/i2c-5/device/edid", No such file or directory
+Error opening "/sys/bus/i2c/devices/i2c-6/device/edid", No such file or directory
+Error opening "/sys/bus/i2c/devices/i2c-7/device/edid", No such file or directory
+ystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-5/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-5/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-5/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-5/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-5/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-5/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-5/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-5/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-5/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-6 -> /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6
+      /sys/bus/i2c/devices/i2c-6/device                                     -> /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2
+      /sys/bus/i2c/devices/i2c-6/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-6/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-6/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-6/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-6/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-6/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-6/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-6/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-6/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-6/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-6/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-6/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-6/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-7 -> /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7
+      /sys/bus/i2c/devices/i2c-7/device                                     -> /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3
+      /sys/bus/i2c/devices/i2c-7/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-7/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-7/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-7/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-7/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-7/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-7/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-7/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-7/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-7/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-7/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-7/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-7/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-8 -> /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8
+      /sys/bus/i2c/devices/i2c-8/device                                     -> /sys/devices/pci0000:00/0000:00:17.0/i2c_desError opening "/sys/bus/i2c/devices/i2c-8/device/edid", No such file or directory
+Error opening "/sys/bus/i2c/devices/i2c-9/device/edid", No such file or directory
+Error opening "/sys/bus/i2c/devices/i2c-10/device/edid", No such file or directory
+ignware.4
+      /sys/bus/i2c/devices/i2c-8/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-8/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-8/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-8/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-8/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-8/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-8/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-8/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-8/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-8/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-8/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-8/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-8/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-9 -> /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9
+      /sys/bus/i2c/devices/i2c-9/device                                     -> /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5
+      /sys/bus/i2c/devices/i2c-9/name                                       =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-9/device/class                               :  Not Found
+      /sys/bus/i2c/devices/i2c-9/device/class                               :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-9/subsystem                                  -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-9/device/ddc                                 -> Invalid path
+      /sys/bus/i2c/devices/i2c-9/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-9/device/edid                                :  Not Found
+      /sys/bus/i2c/devices/i2c-9/device/status                              :  Not Found
+      /sys/bus/i2c/devices/i2c-9/device/subsystem                           -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-9/device/device                              -> Invalid path
+      /sys/bus/i2c/devices/i2c-9/device                                     :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-9/device/ddc/device/driver                   -> Invalid path
+      /sys/bus/i2c/devices/i2c-9/device/enabled                             :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-10 -> /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10
+      /sys/bus/i2c/devices/i2c-10/device                                    -> /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6
+      /sys/bus/i2c/devices/i2c-10/name                                      =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-10/device/class                              :  Not Found
+      /sys/bus/i2c/devices/i2c-10/device/class                              :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-10/subsystem                                 -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-10/device/ddc                                -> Invalid path
+      /sys/bus/i2c/devices/i2c-10/device/device                             -> Invalid path
+      /sys/bus/i2c/devices/i2c-10/device/edid                               :  Not Found
+      /sys/bus/i2c/devices/i2c-10/device/status                             :  Not Found
+      /sys/bus/i2c/devices/i2c-10/device/subsystem                          -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-10/device/device                             -> Invalid path
+      /sys/bus/i2c/devices/i2c-10/device                                    :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-10/device/ddc/deError opening "/sys/bus/i2c/devices/i2c-11/device/edid", No such file or directory
+vice/driver                  -> Invalid path
+      /sys/bus/i2c/devices/i2c-10/device/enabled                            :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-11 -> /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11
+      /sys/bus/i2c/devices/i2c-11/device                                    -> /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7
+      /sys/bus/i2c/devices/i2c-11/name                                      =  Synopsys DesignWare I2C adapter
+      /sys/bus/i2c/devices/i2c-11/device/class                              :  Not Found
+      /sys/bus/i2c/devices/i2c-11/device/class                              :  Not found. (May be display port)
+      /sys/bus/i2c/devices/i2c-11/subsystem                                 -> /sys/bus/i2c
+      /sys/bus/i2c/devices/i2c-11/device/ddc                                -> Invalid path
+      /sys/bus/i2c/devices/i2c-11/device/device                             -> Invalid path
+      /sys/bus/i2c/devices/i2c-11/device/edid                               :  Not Found
+      /sys/bus/i2c/devices/i2c-11/device/status                             :  Not Found
+      /sys/bus/i2c/devices/i2c-11/device/subsystem                          -> /sys/bus/platform
+      /sys/bus/i2c/devices/i2c-11/device/device                             -> Invalid path
+      /sys/bus/i2c/devices/i2c-11/device                                    :  No drm_dp_aux subdirectory found
+      /sys/bus/i2c/devices/i2c-11/device/ddc/device/driver                  -> Invalid path
+      /sys/bus/i2c/devices/i2c-11/device/enabled                            :  Not Found
+
+   Examining /sys/bus/i2c/devices/i2c-12 -> /sys/devices/pci0000:00/0000:00:1f.1/i2c-12
+      /sys/bus/i2c/devices/i2c-12/device                                    -> /sys/devices/pci0000:00/0000:00:1f.1
+      /sys/bus/i2c/devices/i2c-12/name                                      =  SMBus I801 adapter at f040
+      /sys/bus/i2c/devices/i2c-12/device/class                              =  0x0c0500
+
+*** Detail for /sys/class/drm  (Initial Version) ***
+
+Examining /sys/class/drm/card0-DP-1 -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+   /sys/class/drm/card0-DP-1/ddc                                         -> Invalid path
+   /sys/class/drm/card0-DP-1/device                                      -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/class/drm/card0-DP-1                                             :  Found subdirectory = drm_dp_aux0
+   /sys/class/drm/card0-DP-1/edid                                        :  Not Found
+   /sys/class/drm/card0-DP-1/enabled                                     =  disabled
+   /sys/class/drm/card0-DP-1                                             :  Found subdirectory = i2c-3
+   /sys/class/drm/card0-DP-1/status                                      =  disconnected
+   /sys/class/drm/card0-DP-1/subsystem                                   -> /sys/class/drm
+
+   /sys/class/drm/card0-DP-1/drm_dp_aux0/dev                             =  241:0
+   /sys/class/drm/card0-DP-1/drm_dp_aux0/device                          -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+   /sys/class/drm/card0-DP-1/drm_dp_aux0/name                            =  AUX C/port C
+
+   /sys/class/drm/card0-DP-1/i2c-3/device                                -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev                               :  Subdirectory
+   /sys/class/drm/card0-DP-1/i2c-3/name                                  =  AUX C/port C
+   /sys/class/drm/card0-DP-1/i2c-3/subsystem                             -> /sys/bus/i2c
+
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev/i2c-3                         :  Subdirectory
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev/i2c-3/dev                     =  89:3
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev/i2c-3/device                  -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev/i2c-3/name                    =  AUX C/port C
+   /sys/class/drm/card0-DP-1/i2c-3/i2c-dev/i2c-3/subsystem               -> /sys/class/i2c-dev
+
+Examining /sys/class/drm/card0-DSI-1 -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1
+   /sys/class/drm/card0-DSI-1/ddc                                        -> Invalid path
+   /sys/class/drm/card0-DSI-1/device                                     -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/class/drm/card0-DSI-1                                            :  No drm_dp_aux subdirectory found
+   /sys/class/drm/card0-DSI-1/edid                                       :  Not Found
+   /sys/class/drm/card0-DSI-1/enabled                                    =  enabled
+   /sys/class/drm/card0-DSI-1                                            :  No i2c- subdirectory found
+   /sys/class/drm/card0-DSI-1/status                                     =  connected
+   /sys/class/drm/card0-DSI-1/subsystem                                  -> /sys/class/drm
+
+Examining /sys/class/drm/card0-HDMI-A-1 -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1
+   /sys/class/drm/card0-HDMI-A-1/ddc                                     -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+   /sys/class/drm/card0-HDMI-A-1/device                                  -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/class/drm/card0-HDMI-A-1                                         :  No drm_dp_aux subdirectory found
+   /sys/class/drm/card0-HDMI-A-1/edid                                    :  Found
+                       +0          +4          +8          +c            0   4   8   c   
+               +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+               +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+               +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+               +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+               +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+               +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+               +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+               +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+   /sys/class/drm/card0-HDMI-A-1/enabled                                 =  enabled
+   /sys/class/drm/card0-HDMI-A-1                                         :  Found subdirectory = i2c-0
+   /sys/class/drm/card0-HDMI-A-1/status                                  =  connected
+   /sys/class/drm/card0-HDMI-A-1/subsystem                               -> /sys/class/drm
+
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/device                            -> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev                           :  Subdirectory
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/name                              =  i915 gmbus dpb
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/subsystem                         -> /sys/bus/i2c
+
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0                     :  Subdirectory
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/dev                 =  89:0
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/device              -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/name                =  i915 gmbus dpb
+   /sys/class/drm/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/subsystem           -> /sys/class/i2c-dev
+
+*** Reporting video devices ***
+
+Examining /sys/bus/pci/devices/0000:00:02.0 -> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/bus/pci/devices/0000:00:02.0/device                              -> /sys/devices/pci0000:00/0000:00:02.0/device
+   /sys/bus/pci/devices/0000:00:02.0/class                               =  0x030000
+   /sys/bus/pci/devices/0000:00:02.0/boot_vga                            =  1
+   /sys/bus/pci/devices/0000:00:02.0/driver                              -> i915
+   /sys/bus/pci/devices/0000:00:02.0/enable                              =  1
+   /sys/bus/pci/devices/0000:00:02.0/modalias                            =  pci:v00008086d00003185sv00000000sd00000000bc03sc00i00
+   /sys/bus/pci/devices/0000:00:02.0/vendor                              =  0x8086
+   /sys/bus/pci/devices/0000:00:02.0/device                              =  0x3185
+   /sys/bus/pci/devices/0000:00:02.0/subsystem_vendor                    =  0x0000
+   /sys/bus/pci/devices/0000:00:02.0/subsystem_device                    =  0x0000
+   /sys/bus/pci/devices/0000:00:02.0/subsystem                           -> /sys/bus/pci
+   /sys/bus/pci/devices/0000:00:02.0                                     :  Found subdirectory = drm
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/device         -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/ddc            -> Invalid path
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/edid           :  Not Found
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/enabled        =  disabled
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/status         =  disconnected
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/subsystem      -> /sys/class/drm
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1                :  Found subdirectory = drm_dp_aux0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/device-> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/dev=  241:0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/name=  AUX C/port C
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/subsystem-> /sys/class/drm_dp_aux_dev
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1                :  Found subdirectory = i2c-3
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev  :  Found subdirectory = i2c-3
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/device-> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/dev=  89:3
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/name=  AUX C/port C
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/subsystem-> /sys/class/i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/device   -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/name     =  AUX C/port C
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/subsystem-> /sys/bus/i2c
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/device        -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/ddc           -> Invalid path
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/edid          :  Not Found
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/enabled       =  enabled
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/status        =  connected
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1/subsystem     -> /sys/class/drm
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1               :  No drm_dp_aux subdirectory found
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-DSI-1               :  No i2c- subdirectory found
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/device     -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc        -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/edid       :  Found
+                       +0          +4          +8          +c            0   4   8   c   
+               +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+               +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+               +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+               +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+               +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+               +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+               +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+               +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/enabled    =  enabled
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/status     =  connected
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/subsystem  -> /sys/class/drm
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1            :  No drm_dp_aux subdirectory found
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1            :  Found subdirectory = i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/i2c-dev:  Found subdirectory = i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/device-> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/dev=  89:0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/name=  i915 gmbus dpb
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/i2c-dev/i2c-0/subsystem-> /sys/class/i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/device-> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/name =  i915 gmbus dpb
+   /sys/bus/pci/devices/0000:00:02.0/drm/card0/card0-HDMI-A-1/i2c-0/subsystem-> /sys/bus/i2c
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/device                        -> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/name                          =  i915 gmbus dpb
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/subsystem                     -> /sys/bus/i2c
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0                               :  Found subdirectory = i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/i2c-dev                       :  Found subdirectory = i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/i2c-dev/i2c-0/device          -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/i2c-dev/i2c-0/dev             =  89:0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/i2c-dev/i2c-0/name            =  i915 gmbus dpb
+   /sys/bus/pci/devices/0000:00:02.0/i2c-0/i2c-dev/i2c-0/subsystem       -> /sys/class/i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/device                        -> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/name                          =  i915 gmbus dpc
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/subsystem                     -> /sys/bus/i2c
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1                               :  Found subdirectory = i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/i2c-dev                       :  Found subdirectory = i2c-1
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/i2c-dev/i2c-1/device          -> /sys/devices/pci0000:00/0000:00:02.0/i2c-1
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/i2c-dev/i2c-1/dev             =  89:1
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/i2c-dev/i2c-1/name            =  i915 gmbus dpc
+   /sys/bus/pci/devices/0000:00:02.0/i2c-1/i2c-dev/i2c-1/subsystem       -> /sys/class/i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/device                        -> /sys/devices/pci0000:00/0000:00:02.0
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/name                          =  i915 gmbus misc
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/subsystem                     -> /sys/bus/i2c
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2                               :  Found subdirectory = i2c-dev
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/i2c-dev                       :  Found subdirectory = i2c-2
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/i2c-dev/i2c-2/device          -> /sys/devices/pci0000:00/0000:00:02.0/i2c-2
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/i2c-dev/i2c-2/dev             =  89:2
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/i2c-dev/i2c-2/name            =  i915 gmbus misc
+   /sys/bus/pci/devices/0000:00:02.0/i2c-2/i2c-dev/i2c-2/subsystem       -> /sys/class/i2c-dev
+
+Examining /sys/bus/i2c/devices for MST, duplicate EDIDs:
+
+
+Examining device /sys/bus/i2c/devices/i2c-0...
+      /sys/bus/i2c/devices/i2c-0                                            -> /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-0/name                       =  i915 gmbus dpb
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0/dev          =  89:0
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-0/i2c-dev/i2c-0/name         =  i915 gmbus dpb
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-0/..                         -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/devices/pci0000:00/0000:00:02.0                                  :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:02.0/class                            =  0x030000
+      /sys/devices/pci0000:00/0000:00:02.0/boot_vga                         =  1
+      /sys/devices/pci0000:00/0000:00:02.0/vendor                           =  0x8086
+      /sys/devices/pci0000:00/0000:00:02.0/device                           =  0x3185
+      /sys/devices/pci0000:00/0000:00:02.0/driver                           -> /sys/bus/pci/drivers/i915
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1             :  Found subdirectory = drm_dp_aux0
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1            :  No drm_dp_aux subdirectory found
+   Unexpected error. Unable to open sysfs directory /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev: No such file or directory
+
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev:  No i2c-0 subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1         :  No drm_dp_aux subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/i2c-dev:  Found subdirectory = i2c-0
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/name=  i915 gmbus dpb
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/i2c-dev/i2c-0/dev=  89:0
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/i2c-dev/i2c-0/name=  i915 gmbus dpb
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/edid    :  Found
+                                +0          +4          +8          +c            0   4   8   c   
+                        +0000   00 ff ff ff ff ff ff 00 41 0c 30 c0 82 15 09 00   ........A.0.....
+                        +0010   19 13 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25   ...../.x....VJ.%
+                        +0020   12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f   .PT.............
+                        +0030   a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20   .@....|...`..@0 
+                        +0040   36 00 da 28 11 00 00 1a 00 00 00 ff 00 44 4c 33   6..(.........DL3
+                        +0050   30 39 32 35 35 39 35 33 33 30 00 00 00 fc 00 50   0925595330.....P
+                        +0060   68 69 6c 69 70 73 20 32 32 30 58 0a 00 00 00 fd   hilips 220X.....
+                        +0070   00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 53   .8L.S...      .S
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/enabled =  enabled
+            /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/status  =  connected
+   Extended information for /sys/bus/i2c/devices/i2c-0...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:02.0/i2c-0
+      name:                i915 gmbus dpb
+      i2c-dev/i2c-0/dev:   89:0
+      i2c-dev/i2c-0/name:  i915 gmbus dpb
+      Connector:           card0-HDMI-A-1
+      Driver:              i915
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-1...
+      /sys/bus/i2c/devices/i2c-1                                            -> /sys/devices/pci0000:00/0000:00:02.0/i2c-1
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-1/name                       =  i915 gmbus dpc
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-1/i2c-dev/i2c-1/dev          =  89:1
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-1/i2c-dev/i2c-1/name         =  i915 gmbus dpc
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-1/..                         -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/devices/pci0000:00/0000:00:02.0                                  :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:02.0/class                            =  0x030000
+      /sys/devices/pci0000:00/0000:00:02.0/boot_vga                         =  1
+      /sys/devices/pci0000:00/0000:00:02.0/vendor                           =  0x8086
+      /sys/devices/pci0000:00/0000:00:02.0/device                           =  0x3185
+      /sys/devices/pci0000:00/0000:00:02.0/driver                           -> /sys/bus/pci/drivers/i915
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1             :  Found subdirectory = drm_dp_aux0
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1            :  No drm_dp_aux subdirectory found
+   Unexpected error. Unable to open sysfs directory /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev: No such file or directory
+
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev:  No i2c-1 subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1         :  No drm_dp_aux subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/i2c-dev:  No i2c-1 subdirectory found
+   Extended information for /sys/bus/i2c/devices/i2c-1...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:02.0/i2c-1
+      name:                i915 gmbus dpc
+      i2c-dev/i2c-1/dev:   89:1
+      i2c-dev/i2c-1/name:  i915 gmbus dpc
+      Connector:           (null)
+      Driver:              i915
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-2...
+      /sys/bus/i2c/devices/i2c-2                                            -> /sys/devices/pci0000:00/0000:00:02.0/i2c-2
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-2/name                       =  i915 gmbus misc
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-2/i2c-dev/i2c-2/dev          =  89:2
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-2/i2c-dev/i2c-2/name         =  i915 gmbus misc
+      /sys/devices/pci0000:00/0000:00:02.0/i2c-2/..                         -> /sys/devices/pci0000:00/0000:00:02.0
+      /sys/devices/pci0000:00/0000:00:02.0                                  :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:02.0/class                            =  0x030000
+      /sys/devices/pci0000:00/0000:00:02.0/boot_vga                         =  1
+      /sys/devices/pci0000:00/0000:00:02.0/vendor                           =  0x8086
+      /sys/devices/pci0000:00/0000:00:02.0/device                           =  0x3185
+      /sys/devices/pci0000:00/0000:00:02.0/driver                           -> /sys/bus/pci/drivers/i915
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1             :  Found subdirectory = drm_dp_aux0
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1            :  No drm_dp_aux subdirectory found
+   Unexpected error. Unable to open sysfs directory /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev: No such file or directory
+
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DSI-1/ddc/i2c-dev:  No i2c-2 subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1         :  No drm_dp_aux subdirectory found
+         /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/ddc/i2c-dev:  No i2c-2 subdirectory found
+   Extended information for /sys/bus/i2c/devices/i2c-2...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:02.0/i2c-2
+      name:                i915 gmbus misc
+      i2c-dev/i2c-2/dev:   89:2
+      i2c-dev/i2c-2/name:  i915 gmbus misc
+      Connector:           (null)
+      Driver:              i915
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-3...
+      /sys/bus/i2c/devices/i2c-3                                            -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/name  =  AUX C/port C
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/dev=  89:3
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/i2c-dev/i2c-3/name=  AUX C/port C
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3/..    -> /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1             :  Found subdirectory = drm_dp_aux0
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/ddc         -> Invalid path
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1             :  Found subdirectory = drm_dp_aux0
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/name=  AUX C/port C
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/drm_dp_aux0/dev=  241:0
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/edid        :  Not Found
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/enabled     =  disabled
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/status      =  disconnected
+      /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/../../../driver-> /sys/bus/pci/drivers/i915
+   Extended information for /sys/bus/i2c/devices/i2c-3...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/i2c-3
+      name:                AUX C/port C
+      i2c-dev/i2c-3/dev:   89:3
+      i2c-dev/i2c-3/name:  AUX C/port C
+      Connector:           (null)
+      Driver:              i915
+      DisplayPort only attributes:
+         ddc path:                (null)
+         ddc name:                (null)
+         ddc i2c-dev/(null)/dev:    (null)
+         ddc i2c-dev/(null)/name:   (null)
+         DP Aux channel dev:      241:0
+         DP Aux channel name:     AUX C/port C
+
+Examining device /sys/bus/i2c/devices/i2c-4...
+      /sys/bus/i2c/devices/i2c-4                                            -> /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/i2c-dev/i2c-4/dev=  89:4
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/i2c-dev/i2c-4/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4/..        -> /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-4...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:16.0/i2c_designware.0/i2c-4
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-4/dev:   89:4
+      i2c-dev/i2c-4/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-5...
+      /sys/bus/i2c/devices/i2c-5                                            -> /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/i2c-dev/i2c-5/dev=  89:5
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/i2c-dev/i2c-5/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5/..        -> /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-5...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:16.1/i2c_designware.1/i2c-5
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-5/dev:   89:5
+      i2c-dev/i2c-5/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-6...
+      /sys/bus/i2c/devices/i2c-6                                            -> /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/i2c-dev/i2c-6/dev=  89:6
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/i2c-dev/i2c-6/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6/..        -> /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-6...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:16.2/i2c_designware.2/i2c-6
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-6/dev:   89:6
+      i2c-dev/i2c-6/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-7...
+      /sys/bus/i2c/devices/i2c-7                                            -> /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/i2c-dev/i2c-7/dev=  89:7
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/i2c-dev/i2c-7/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7/..        -> /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-7...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-7
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-7/dev:   89:7
+      i2c-dev/i2c-7/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-8...
+      /sys/bus/i2c/devices/i2c-8                                            -> /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/i2c-dev/i2c-8/dev=  89:8
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/i2c-dev/i2c-8/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8/..        -> /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-8...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-8
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-8/dev:   89:8
+      i2c-dev/i2c-8/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-9...
+      /sys/bus/i2c/devices/i2c-9                                            -> /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/name      =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/i2c-dev/i2c-9/dev=  89:9
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/i2c-dev/i2c-9/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9/..        -> /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-9...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-9
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-9/dev:   89:9
+      i2c-dev/i2c-9/name:  Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-10...
+      /sys/bus/i2c/devices/i2c-10                                           -> /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/name     =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/i2c-dev/i2c-10/dev=  89:10
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/i2c-dev/i2c-10/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10/..       -> /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-10...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:17.2/i2c_designware.6/i2c-10
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-10/dev:  89:10
+      i2c-dev/i2c-10/name: Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-11...
+      /sys/bus/i2c/devices/i2c-11                                           -> /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/name     =  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/i2c-dev/i2c-11/dev=  89:11
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/i2c-dev/i2c-11/name=  Synopsys DesignWare I2C adapter
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11/..       -> /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7                 :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/class           :  Not Found
+   Extended information for /sys/bus/i2c/devices/i2c-11...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:17.3/i2c_designware.7/i2c-11
+      name:                Synopsys DesignWare I2C adapter
+      i2c-dev/i2c-11/dev:  89:11
+      i2c-dev/i2c-11/name: Synopsys DesignWare I2C adapter
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Examining device /sys/bus/i2c/devices/i2c-12...
+      /sys/bus/i2c/devices/i2c-12                                           -> /sys/devices/pci0000:00/0000:00:1f.1/i2c-12
+      /sys/devices/pci0000:00/0000:00:1f.1/i2c-12/name                      =  SMBus I801 adapter at f040
+      /sys/devices/pci0000:00/0000:00:1f.1/i2c-12/i2c-dev/i2c-12/dev        =  89:12
+      /sys/devices/pci0000:00/0000:00:1f.1/i2c-12/i2c-dev/i2c-12/name       =  SMBus I801 adapter at f040
+      /sys/devices/pci0000:00/0000:00:1f.1/i2c-12/..                        -> /sys/devices/pci0000:00/0000:00:1f.1
+      /sys/devices/pci0000:00/0000:00:1f.1                                  :  No drm_dp_aux subdirectory found
+      /sys/devices/pci0000:00/0000:00:1f.1/class                            =  0x0c0500
+   Extended information for /sys/bus/i2c/devices/i2c-12...
+      PCI device path:     /sys/devices/pci0000:00/0000:00:1f.1/i2c-12
+      name:                SMBus I801 adapter at f040
+      i2c-dev/i2c-12/dev:  89:12
+      i2c-dev/i2c-12/name: SMBus I801 adapter at f040
+      Connector:           (null)
+      Driver:              (null)
+      Not a DisplayPort connection
+
+Env_Accumulator:
+   architecture:                  x86_64
+   distributor_id                 Artix
+   Drivers detected:              i915
+   /dev/i2c device numbers:       0 1 2 3 4 5 6 7 8 9 10 11 12
+   sysfs_i2c_devices_exist:       true
+   /sys/bus/i2c device numbers:   0 1 2 3 4 5 6 7 8 9 10 11 12
+   dev_i2c_devices_required:      true
+   module_i2c_dev_needed:         true
+   module_i2c_dev_builtin:        false
+   loadable_i2c_dev_exists:       true
+   i2c_dev_loaded_or_builtin:     true
+   group_i2c_checked:             true
+   group_i2c_exists:              false
+   dev_i2c_common_group_name:     root
+   all_dev_i2c_has_group_i2c:     false
+   any_dev_i2c_has_group_i2c:     false
+   all_dev_i2c_is_group_rw:       true
+   any_dev_i2c_is_group_rw:       false
+   cur_uname:                     root
+   cur_uid:                       0
+   cur_user_in_group_i2c:         false
+   cur_user_any_devi2c_rw:        true
+   cur_user_all_devi2c_rw:        true
+
+Configuration suggestions:
+   Current user has RW access to all /dev/i2c-N devices.
+   Skipping further group and permission checks.
+
+
+Skipping USB environment exploration.
+Issue command "ddcutil usbenvironment --verbose" if there are any USB attached monitors.
+
+Statistics for environment exploration:
+
+EXECUTION STATISTICS
+
+Maximum Try Settings:
+Operation Type                    Current  Default
+Write only exchange tries:              4        4
+Write read exchange tries:             10       10
+Multi-part read exchange tries:        15        8
+Multi-part write exchange tries:       15        8
+
+
+Retry statistics for write only
+   No tries attempted
+
+Retry statistics for write-read
+   Max tries allowed: 10
+   Max tries allowed: 10
+   Max tries allowed range: 10..10
+   Successful attempts by number of tries required:
+       1:    2
+   Total successful attempts:          2
+   Failed due to max tries exceeded:   0
+   Failed due to fatal error:          0
+   Total attempts:                     2
+
+Retry statistics for multi-part read
+   No tries attempted
+
+Retry statistics for multi-part write
+   No tries attempted
+
+DDC Related Errors:  None
+
+Total errors: 0
+
+Errors Wrapped in Retry:  None
+
+Total errors: 0
+
+
+IO and Sleep Events:
+   Total IO events:         48
+   IO error count:           0
+   Total sleep events:       3
+
+   Sleep Event type      Count
+   SE_WRITE_TO_READ                  2
+   SE_POST_OPEN                      1
+   SE_POST_WRITE                     0
+   SE_POST_READ                      0
+   SE_DDC_NULL                       0
+   SE_POST_SAVE_SETTINGS             0
+   SE_PRE_EDID                       0
+   SE_PRE_MULTI_PART_READ            0
+   SE_MULTI_PART_READ_TO_WRITE       0
+   SE_BETWEEN_CAP_TABLE_SEGMENTS     0
+   SE_POST_CAP_TABLE_COMMAND         0
+   SE_OTHER                          0
+   SE_SPECIAL                        0
+
+Call Stats:
+   Type                                     Count    Millisec  (      Nanosec)
+   write calls       (IE_WRITE)                12         420  (    420320459)
+   read calls        (IE_READ)                  4          52  (     52414691)
+   open file calls   (IE_OPEN)                  9           0  (       138681)
+   close file calls  (IE_CLOSE)                 9           0  (       115864)
+   other I/O calls   (IE_OTHER)                14           0  (        74039)
+   Totals:                                     48         473  (    473063734)
+
+Sleep Call Stats:
+   Total sleep calls:                                       6
+   Requested sleep time milliseconds :                    179
+   Actual sleep milliseconds (nanosec):                   179  (    179977579)
+
+Total elapsed milliseconds (nanoseconds):               28705  (  28705792273)
+
+Total non sleep system call time:        473 milliseconds
+Total sleep call time:                   179 milliseconds
+Elapsed time:                          28705 milliseconds
+
+
+
+*** Detected Displays ***
+Display 1
+   I2C bus:  /dev/i2c-0
+      I2C address 0x50 (EDID) responsive: true 
+      Is eDP device:                      false
+      I2C address 0x37 (DDC) responsive:  true 
+      /sys/bus/i2c/devices/i2c-0/name:   i915 gmbus dpb
+   EDID synopsis:
+      Mfg id:               PHL
+      Model:                Philips 220X
+      Product code:         49200
+      Serial number:        DL30925595330
+      Binary serial number: 595330 (0x00091582)
+      Manufacture year:     2009
+      EDID version:         1.3
+   VCP version:         2.1
+   Controller mfg:      Novatek
+   Firmware version:    0.3
+   Monitor returns DDC Null Response for unsupported features: false
+
+
+Statistics for display detection:
+
+EXECUTION STATISTICS
+
+Maximum Try Settings:
+Operation Type                    Current  Default
+Write only exchange tries:              4        4
+Write read exchange tries:             10       10
+Multi-part read exchange tries:        15        8
+Multi-part write exchange tries:       15        8
+
+
+Retry statistics for write only
+   No tries attempted
+
+Retry statistics for write-read
+   Max tries allowed: 10
+   Max tries allowed: 10
+   Max tries allowed range: 10..10
+   Successful attempts by number of tries required:
+       1:    2
+   Total successful attempts:          2
+   Failed due to max tries exceeded:   0
+   Failed due to fatal error:          0
+   Total attempts:                     2
+
+Retry statistics for multi-part read
+   No tries attempted
+
+Retry statistics for multi-part write
+   No tries attempted
+
+DDC Related Errors:  None
+
+Total errors: 0
+
+Errors Wrapped in Retry:  None
+
+Total errors: 0
+
+
+IO and Sleep Events:
+   Total IO events:          7
+   IO error count:           0
+   Total sleep events:       6
+
+   Sleep Event type      Count
+   SE_WRITE_TO_READ                  2
+   SE_POST_OPEN                      1
+   SE_POST_WRITE                     0
+   SE_POST_READ                      0
+   SE_DDC_NULL                       0
+   SE_POST_SAVE_SETTINGS             0
+   SE_PRE_EDID                       0
+   SE_PRE_MULTI_PART_READ            0
+   SE_MULTI_PART_READ_TO_WRITE       0
+   SE_BETWEEN_CAP_TABLE_SEGMENTS     0
+   SE_POST_CAP_TABLE_COMMAND         0
+   SE_OTHER                          0
+   SE_SPECIAL                        0
+
+Call Stats:
+   Type                                     Count    Millisec  (      Nanosec)
+   write calls       (IE_WRITE)                 2           1  (      1696574)
+   read calls        (IE_READ)                  2           4  (      4428335)
+   open file calls   (IE_OPEN)                  1           0  (        20111)
+   close file calls  (IE_CLOSE)                 1           0  (        18427)
+   other I/O calls   (IE_OTHER)                 1           0  (         5841)
+   Totals:                                      7           6  (      6169288)
+
+Sleep Call Stats:
+   Total sleep calls:                                      10
+   Requested sleep time milliseconds :                    338
+   Actual sleep milliseconds (nanosec):                   340  (    340167744)
+
+Elapsed milliseconds since last reset (nanosec):       167  (    167892074)
+Total elapsed milliseconds (nanoseconds):               28873  (  28873692826)
+
+Total non sleep system call time:          6 milliseconds
+Total sleep call time:                   340 milliseconds
+Elapsed time:                          28873 milliseconds
+
+
+Setting output level normal  Table features will be skipped...
+
+Probing display 1
+
+EDID version: 1.3
+Mfg id: PHL, model: Philips 220X, sn: DL30925595330
+Product code: 49200, binary serial number 595330 (0x00091582)
+
+How display reports unsupported feature: DREF_DDC_USES_DDC_FLAG_FOR_UNSUPPORTED
+
+Capabilities for display on bus /dev/i2c-0
+Unparsed capabilities string: (prot(monitor)type(lcd)model(Philips 220X1)cmds(01 02 03 07 0C 4E F3 E3)vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 07 08 0A 0B) 16 18 1A 6C 6E 70 72(05 78 FB 50 64 78 8C A0) 86(02 08)AC AE B6 C0 C6 C8 C9 CA CC( 00 02 03 04 05 08 09 0A 0D) D6(01 04) DC(00 01 02 03 08) DF E3 E9(00 02)EB(00 01)F0(00 01) F2(00 01 02 03 04)60(01 03) FA(00 01 02) FB FC FD FE(00 01 02 04) FF)mswhql(1)mccs_ver(2.1)asset_eep(32)mpu_ver(01)SmartManage(1.0))
+Model: Philips 220X1
+MCCS version: 2.1
+Commands:
+   Op Code: 01 (VCP Request)
+   Op Code: 02 (VCP Response)
+   Op Code: 03 (VCP Set)
+   Op Code: 07 (Timing Request)
+   Op Code: 0C (Save Settings)
+   Op Code: 4E (Unrecognized operation code)
+   Op Code: F3 (Capabilities Request)
+   Op Code: E3 (Capabilities Reply)
+VCP Features:
+   Feature: 02 (New control value)
+   Feature: 04 (Restore factory defaults)
+   Feature: 05 (Restore factory brightness/contrast defaults)
+   Feature: 08 (Restore color defaults)
+   Feature: 0B (Color temperature increment)
+   Feature: 0C (Color temperature request)
+   Feature: 10 (Brightness)
+   Feature: 12 (Contrast)
+   Feature: 14 (Select color preset)
+      Values (unparsed): 01 04 05 06 07 08 0A 0B
+      Values (  parsed):
+         01: sRGB
+         04: 5000 K
+         05: 6500 K
+         06: 7500 K
+         07: 8200 K
+         08: 9300 K
+         0a: 11500 K
+         0b: User 1
+   Feature: 16 (Video gain: Red)
+   Feature: 18 (Video gain: Green)
+   Feature: 1A (Video gain: Blue)
+   Feature: 6C (Video black level: Red)
+   Feature: 6E (Video black level: Green)
+   Feature: 70 (Video black level: Blue)
+   Feature: 72 (Gamma)
+      Values (unparsed): 05 78 FB 50 64 78 8C A0
+      Specific presets of absolute adjustment supported (0xfb)
+      Absolute tolerance: +/- 5% (=0x05)
+      Native gamma: 2.20 (0x78)
+      Specific presets:  1.80 (0x50), 2.00 (0x64), 2.20 (0x78), 2.40 (0x8c), 2.60 (0xa0)
+   Feature: 86 (Display Scaling)
+      Values (unparsed): 02 08
+      Values (  parsed):
+         02: Max image, no aspect ration distortion
+         08: Linear expansion (compression) on h and v axes
+   Feature: AC (Horizontal frequency)
+   Feature: AE (Vertical frequency)
+   Feature: B6 (Display technology type)
+   Feature: C0 (Display usage time)
+   Feature: C6 (Application enable key)
+   Feature: C8 (Display controller type)
+   Feature: C9 (Display firmware level)
+   Feature: CA (OSD)
+   Feature: CC (OSD Language)
+      Values (unparsed):  00 02 03 04 05 08 09 0A 0D
+      Values (  parsed):
+         00: Reserved value, must be ignored
+         02: English
+         03: French
+         04: German
+         05: Italian
+         08: Portuguese (Portugal)
+         09: Russian
+         0a: Spanish
+         0d: Chinese (simplified / Kantai)
+   Feature: D6 (Power mode)
+      Values (unparsed): 01 04
+      Values (  parsed):
+         01: DPM: On,  DPMS: Off
+         04: DPM: Off, DPMS: Off
+   Feature: DC (Display Mode)
+      Values (unparsed): 00 01 02 03 08
+      Values (  parsed):
+         00: Standard/Default mode
+         01: Productivity
+         02: Mixed
+         03: Movie
+         08: Standard/Default mode with intermediate power consumption
+   Feature: DF (VCP Version)
+   Feature: E3 (Manufacturer specific feature)
+   Feature: E9 (Manufacturer specific feature)
+      Values (unparsed): 00 02
+      Values (  parsed): 00 02 (interpretation unavailable)
+   Feature: EB (Manufacturer specific feature)
+      Values (unparsed): 00 01
+      Values (  parsed): 00 01 (interpretation unavailable)
+   Feature: F0 (Manufacturer specific feature)
+      Values (unparsed): 00 01
+      Values (  parsed): 00 01 (interpretation unavailable)
+   Feature: F2 (Manufacturer specific feature)
+      Values (unparsed): 00 01 02 03 04
+      Values (  parsed): 00 01 02 03 04 (interpretation unavailable)
+   Feature: 60 (Input Source)
+      Values (unparsed): 01 03
+      Values (  parsed):
+         01: VGA-1
+         03: DVI-1
+   Feature: FA (Manufacturer specific feature)
+      Values (unparsed): 00 01 02
+      Values (  parsed): 00 01 02 (interpretation unavailable)
+   Feature: FB (Manufacturer specific feature)
+   Feature: FC (Manufacturer specific feature)
+   Feature: FD (Manufacturer specific feature)
+   Feature: FE (Manufacturer specific feature)
+      Values (unparsed): 00 01 02 04
+      Values (  parsed): 00 01 02 04 (interpretation unavailable)
+   Feature: FF (Manufacturer specific feature)
+
+May support table reads:   false
+
+Scanning all VCP feature codes for display [i2c: fd=3, busno=0]
+VCP code 0x02 (New control value             ): One or more new control values have been saved (0x02)
+VCP code 0x03 (Soft controls                 ): Unsupported feature code
+VCP code 0x07 (Unknown feature               ): Unsupported feature code
+VCP code 0x09 (Unknown feature               ): Unsupported feature code
+VCP code 0x0b (Color temperature increment   ): 50 degree(s) Kelvin
+VCP code 0x0c (Color temperature request     ): 3000 + 70 * (feature 0B color temp increment) degree(s) Kelvin
+VCP code 0x0d (Unknown feature               ): Unsupported feature code
+VCP code 0x0e (Clock                         ): Unsupported feature code
+VCP code 0x0f (Unknown feature               ): Unsupported feature code
+VCP code 0x10 (Brightness                    ): current value =    89, max value =   100
+VCP code 0x11 (Flesh tone enhancement        ): Unsupported feature code
+VCP code 0x12 (Contrast                      ): current value =    50, max value =   100
+VCP code 0x13 (Backlight control             ): Unsupported feature code
+VCP code 0x14 (Select color preset           ): 6500 K (sl=0x05)
+VCP code 0x15 (Unknown feature               ): Unsupported feature code
+VCP code 0x16 (Video gain: Red               ): current value =   100, max value =   100
+VCP code 0x17 (User color vision compensation): Unsupported feature code
+VCP code 0x18 (Video gain: Green             ): current value =   100, max value =   100
+VCP code 0x19 (Unknown feature               ): Unsupported feature code
+VCP code 0x1a (Video gain: Blue              ): current value =   100, max value =   100
+VCP code 0x1b (Unknown feature               ): Unsupported feature code
+VCP code 0x1c (Focus                         ): Unsupported feature code
+VCP code 0x1d (Unknown feature               ): Unsupported feature code
+VCP code 0x1e (Auto setup                    ): Unsupported feature code
+VCP code 0x1f (Auto color setup              ): Unsupported feature code
+VCP code 0x20 (Horizontal Position (Phase)   ): Unsupported feature code
+VCP code 0x21 (Unknown feature               ): Unsupported feature code
+VCP code 0x22 (Horizontal Size               ): Unsupported feature code
+VCP code 0x23 (Unknown feature               ): Unsupported feature code
+VCP code 0x24 (Horizontal Pincushion         ): Unsupported feature code
+VCP code 0x25 (Unknown feature               ): Unsupported feature code
+VCP code 0x26 (Horizontal Pincushion Balance ): Unsupported feature code
+VCP code 0x27 (Unknown feature               ): Unsupported feature code
+VCP code 0x28 (Horizontal Convergence R/B    ): Unsupported feature code
+VCP code 0x29 (Horizontal Convergence M/G    ): Unsupported feature code
+VCP code 0x2a (Horizontal Linearity          ): Unsupported feature code
+VCP code 0x2b (Unknown feature               ): Unsupported feature code
+VCP code 0x2c (Horizontal Linearity Balance  ): Unsupported feature code
+VCP code 0x2d (Unknown feature               ): Unsupported feature code
+VCP code 0x2e (Gray scale expansion          ): Unsupported feature code
+VCP code 0x2f (Unknown feature               ): Unsupported feature code
+VCP code 0x30 (Vertical Position (Phase)     ): Unsupported feature code
+VCP code 0x31 (Unknown feature               ): Unsupported feature code
+VCP code 0x32 (Vertical Size                 ): Unsupported feature code
+VCP code 0x33 (Unknown feature               ): Unsupported feature code
+VCP code 0x34 (Vertical Pincushion           ): Unsupported feature code
+VCP code 0x35 (Unknown feature               ): Unsupported feature code
+VCP code 0x36 (Vertical Pincushion Balance   ): Unsupported feature code
+VCP code 0x37 (Unknown feature               ): Unsupported feature code
+VCP code 0x38 (Vertical Convergence R/B      ): Unsupported feature code
+VCP code 0x39 (Vertical Convergence M/G      ): Unsupported feature code
+VCP code 0x3a (Vertical Linearity            ): Unsupported feature code
+VCP code 0x3b (Unknown feature               ): Unsupported feature code
+VCP code 0x3c (Vertical Linearity Balance    ): Unsupported feature code
+VCP code 0x3d (Unknown feature               ): Unsupported feature code
+VCP code 0x3e (Clock phase                   ): Unsupported feature code
+VCP code 0x3f (Unknown feature               ): Unsupported feature code
+VCP code 0x40 (Horizontal Parallelogram      ): Unsupported feature code
+VCP code 0x41 (Vertical Parallelogram        ): Unsupported feature code
+VCP code 0x42 (Horizontal Keystone           ): Unsupported feature code
+VCP code 0x43 (Vertical Keystone             ): Unsupported feature code
+VCP code 0x44 (Rotation                      ): Unsupported feature code
+VCP code 0x45 (Unknown feature               ): Unsupported feature code
+VCP code 0x46 (Top Corner Flare              ): Unsupported feature code
+VCP code 0x47 (Unknown feature               ): Unsupported feature code
+VCP code 0x48 (Top Corner Hook               ): Unsupported feature code
+VCP code 0x49 (Unknown feature               ): Unsupported feature code
+VCP code 0x4a (Bottom Corner Flare           ): Unsupported feature code
+VCP code 0x4b (Unknown feature               ): Unsupported feature code
+VCP code 0x4c (Bottom Corner Hook            ): Unsupported feature code
+VCP code 0x4d (Unknown feature               ): Unsupported feature code
+VCP code 0x4e (Unknown feature               ): Unsupported feature code
+VCP code 0x4f (Unknown feature               ): Unsupported feature code
+VCP code 0x50 (Unknown feature               ): Unsupported feature code
+VCP code 0x51 (Unknown feature               ): Unsupported feature code
+VCP code 0x52 (Active control                ): Unsupported feature code
+VCP code 0x53 (Unknown feature               ): Unsupported feature code
+VCP code 0x54 (Performance Preservation      ): Unsupported feature code
+VCP code 0x55 (Unknown feature               ): Unsupported feature code
+VCP code 0x56 (Horizontal Moire              ): Unsupported feature code
+VCP code 0x57 (Unknown feature               ): Unsupported feature code
+VCP code 0x58 (Vertical Moire                ): Unsupported feature code
+VCP code 0x59 (6 axis saturation: Red        ): Unsupported feature code
+VCP code 0x5a (6 axis saturation: Yellow     ): Unsupported feature code
+VCP code 0x5b (6 axis saturation: Green      ): Unsupported feature code
+VCP code 0x5c (6 axis saturation: Cyan       ): Unsupported feature code
+VCP code 0x5d (6 axis saturation: Blue       ): Unsupported feature code
+VCP code 0x5e (6 axis saturation: Magenta    ): Unsupported feature code
+VCP code 0x5f (Unknown feature               ): Unsupported feature code
+VCP code 0x60 (Input Source                  ): DVI-1 (sl=0x03)
+VCP code 0x61 (Unknown feature               ): Unsupported feature code
+VCP code 0x62 (Audio speaker volume          ): Unsupported feature code
+VCP code 0x63 (Speaker Select                ): Unsupported feature code
+VCP code 0x64 (Audio: Microphone Volume      ): Unsupported feature code
+VCP code 0x65 (Unknown feature               ): Unsupported feature code
+VCP code 0x66 (Ambient light sensor          ): Unsupported feature code
+VCP code 0x67 (Unknown feature               ): Unsupported feature code
+VCP code 0x68 (Unknown feature               ): Unsupported feature code
+VCP code 0x69 (Unknown feature               ): Unsupported feature code
+VCP code 0x6a (Unknown feature               ): Unsupported feature code
+VCP code 0x6b (Backlight Level: White        ): Unsupported feature code
+VCP code 0x6c (Video black level: Red        ): current value =   128, max value =   255
+VCP code 0x6d (Backlight Level: Red          ): Unsupported feature code
+VCP code 0x6e (Video black level: Green      ): current value =   128, max value =   255
+VCP code 0x6f (Backlight Level: Green        ): Unsupported feature code
+VCP code 0x70 (Video black level: Blue       ): current value =   128, max value =   255
+VCP code 0x71 (Backlight Level: Blue         ): Unsupported feature code
+VCP code 0x72 (Gamma                         ): 0x0078 - Invalid sl value. sl=0x78, sh=0x00
+VCP code 0x73 (LUT Size                      ): Unsupported feature code (DDC NULL Message)
+VCP code 0x74 (Single point LUT operation    ): Unsupported feature code (DDC NULL Message)
+VCP code 0x75 (Block LUT operation           ): Unsupported feature code (DDC NULL Message)
+VCP code 0x77 (Unknown feature               ): Unsupported feature code
+VCP code 0x78 (EDID operation                ): Unsupported feature code (DDC NULL Message)
+VCP code 0x79 (Unknown feature               ): Unsupported feature code
+VCP code 0x7a (Adjust Focal Plane            ): Unsupported feature code
+VCP code 0x7b (Unknown feature               ): Unsupported feature code
+VCP code 0x7c (Adjust Zoom                   ): Unsupported feature code
+VCP code 0x7d (Unknown feature               ): Unsupported feature code
+VCP code 0x7e (Trapezoid                     ): Unsupported feature code
+VCP code 0x7f (Unknown feature               ): Unsupported feature code
+VCP code 0x80 (Keystone                      ): Unsupported feature code
+VCP code 0x81 (Unknown feature               ): Unsupported feature code
+VCP code 0x82 (Horizontal Mirror (Flip)      ): Unsupported feature code
+VCP code 0x83 (Unknown feature               ): Unsupported feature code
+VCP code 0x84 (Vertical Mirror (Flip)        ): Unsupported feature code
+VCP code 0x85 (Unknown feature               ): Unsupported feature code
+VCP code 0x86 (Display Scaling               ): Linear expansion (compression) on h and v axes (sl=0x08)
+VCP code 0x87 (Sharpness                     ): Unsupported feature code
+VCP code 0x88 (Velocity Scan Modulation      ): Unsupported feature code
+VCP code 0x89 (Unknown feature               ): Unsupported feature code
+VCP code 0x8a (Color Saturation              ): Unsupported feature code
+VCP code 0x8c (TV Sharpness                  ): Unsupported feature code
+VCP code 0x8d (Audio Mute                    ): Unsupported feature code
+VCP code 0x8e (TV Contrast                   ): Unsupported feature code
+VCP code 0x8f (Audio Treble                  ): Unsupported feature code
+VCP code 0x90 (Hue                           ): Unsupported feature code
+VCP code 0x91 (Audio Bass                    ): Unsupported feature code
+VCP code 0x92 (TV Black level/Luminesence    ): Unsupported feature code
+VCP code 0x93 (Audio Balance L/R             ): Unsupported feature code
+VCP code 0x94 (Audio Processor Mode          ): Unsupported feature code
+VCP code 0x95 (Window Position(TL_X)         ): Unsupported feature code
+VCP code 0x96 (Window Position(TL_Y)         ): Unsupported feature code
+VCP code 0x97 (Window Position(BR_X)         ): Unsupported feature code
+VCP code 0x98 (Window Position(BR_Y)         ): Unsupported feature code
+VCP code 0x99 (Window control on/off         ): Unsupported feature code
+VCP code 0x9a (Window background             ): Unsupported feature code
+VCP code 0x9b (6 axis hue control: Red       ): Unsupported feature code
+VCP code 0x9c (6 axis hue control: Yellow    ): Unsupported feature code
+VCP code 0x9d (6 axis hue control: Green     ): Unsupported feature code
+VCP code 0x9e (6 axis hue control: Cyan      ): Unsupported feature code
+VCP code 0x9f (6 axis hue control: Blue      ): Unsupported feature code
+VCP code 0xa0 (6 axis hue control: Magenta   ): Unsupported feature code
+VCP code 0xa1 (Unknown feature               ): Unsupported feature code
+VCP code 0xa3 (Unknown feature               ): Unsupported feature code
+VCP code 0xa4 (Turn the selected window operation on/off): Unsupported feature code
+VCP code 0xa5 (Change the selected window    ): Unsupported feature code
+VCP code 0xa6 (Unknown feature               ): Unsupported feature code
+VCP code 0xa7 (Unknown feature               ): Unsupported feature code
+VCP code 0xa8 (Unknown feature               ): Unsupported feature code
+VCP code 0xa9 (Unknown feature               ): Unsupported feature code
+VCP code 0xaa (Screen Orientation            ): Unsupported feature code
+VCP code 0xab (Unknown feature               ): Unsupported feature code
+VCP code 0xac (Horizontal frequency          ): 64660 hz
+VCP code 0xad (Unknown feature               ): Unsupported feature code
+VCP code 0xae (Vertical frequency            ): 59.90 hz
+VCP code 0xaf (Unknown feature               ): Unsupported feature code
+VCP code 0xb1 (Unknown feature               ): Unsupported feature code
+VCP code 0xb2 (Flat panel sub-pixel layout   ): Unsupported feature code
+VCP code 0xb3 (Unknown feature               ): Unsupported feature code
+VCP code 0xb4 (Source Timing Mode            ): Unsupported feature code
+VCP code 0xb5 (Unknown feature               ): Unsupported feature code
+VCP code 0xb6 (Display technology type       ): LCD (active matrix) (sl=0x03)
+VCP code 0xb7 (Monitor status                ): Unsupported feature code
+VCP code 0xb8 (Packet count                  ): Unsupported feature code
+VCP code 0xb9 (Monitor X origin              ): Unsupported feature code
+VCP code 0xba (Monitor Y origin              ): Unsupported feature code
+VCP code 0xbb (Header error count            ): Unsupported feature code
+VCP code 0xbc (Body CRC error count          ): Unsupported feature code
+VCP code 0xbd (Client ID                     ): Unsupported feature code
+VCP code 0xbe (Link control                  ): Unsupported feature code
+VCP code 0xbf (Unknown feature               ): Unsupported feature code
+VCP code 0xc0 (Display usage time            ): Usage time (hours) = 7115 (0x001bcb) mh=0xff, ml=0xff, sh=0x1b, sl=0xcb
+VCP code 0xc1 (Unknown feature               ): Unsupported feature code
+VCP code 0xc2 (Display descriptor length     ): Unsupported feature code
+VCP code 0xc3 (Transmit display descriptor   ): Unsupported feature code (DDC NULL Message)
+VCP code 0xc4 (Enable display of 'display descriptor'): Unsupported feature code
+VCP code 0xc5 (Unknown feature               ): Unsupported feature code
+VCP code 0xc6 (Application enable key        ): 0x006f
+VCP code 0xc7 (Unknown feature               ): Unsupported feature code
+VCP code 0xc8 (Display controller type       ): Mfg: Novatek (sl=0x12), controller number: mh=0xff, ml=0xff, sh=0x00
+VCP code 0xc9 (Display firmware level        ): 0.3
+VCP code 0xca (OSD                           ): OSD Enabled (sl=0x02)
+VCP code 0xcb (Unknown feature               ): Unsupported feature code
+VCP code 0xcc (OSD Language                  ): German (sl=0x04)
+VCP code 0xcd (Status Indicators             ): Unsupported feature code
+VCP code 0xce (Auxiliary display size        ): Unsupported feature code
+VCP code 0xd0 (Output select                 ): Unsupported feature code
+VCP code 0xd1 (Unknown feature               ): Unsupported feature code
+VCP code 0xd2 (Asset Tag                     ): Unsupported feature code (DDC NULL Message)
+VCP code 0xd3 (Unknown feature               ): Unsupported feature code
+VCP code 0xd4 (Stereo video mode             ): Unsupported feature code
+VCP code 0xd5 (Unknown feature               ): Unsupported feature code
+VCP code 0xd6 (Power mode                    ): DPM: On,  DPMS: Off (sl=0x01)
+VCP code 0xd7 (Auxiliary power output        ): Unsupported feature code
+VCP code 0xd8 (Unknown feature               ): Unsupported feature code
+VCP code 0xd9 (Unknown feature               ): Unsupported feature code
+VCP code 0xda (Scan mode                     ): Unsupported feature code
+VCP code 0xdb (Image Mode                    ): Unsupported feature code
+VCP code 0xdc (Display Mode                  ): Standard/Default mode (sl=0x00)
+VCP code 0xdd (Unknown feature               ): Unsupported feature code
+VCP code 0xde (Scratch Pad                   ): Unsupported feature code
+VCP code 0xdf (VCP Version                   ): 2.1
+VCP code 0xe0 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe1 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe2 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe3 (Manufacturer Specific         ): mh=0x00, ml=0x03, sh=0x00, sl=0x00
+VCP code 0xe4 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe5 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe6 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe7 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe8 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe9 (Manufacturer Specific         ): mh=0x00, ml=0x02, sh=0x00, sl=0x02
+VCP code 0xea (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xeb (Manufacturer Specific         ): mh=0x00, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xec (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xed (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xee (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xef (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf0 (Manufacturer Specific         ): mh=0x00, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xf1 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf2 (Manufacturer Specific         ): mh=0x00, ml=0x04, sh=0x00, sl=0x01
+VCP code 0xf3 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf4 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf5 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf6 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf7 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf8 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf9 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfa (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xfb (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xfc (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfd (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfe (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xff (Manufacturer Specific         ): mh=0x00, ml=0x01, sh=0x00, sl=0x00
+
+
+Comparing declared capabilities to observed features...
+
+Readable features declared in capabilities string: 02 0b 0c 10 12 14 16 18 1a 60 6c 6e 70 72 86 ac ae b6 c0 c6 c8 c9 ca cc d6 dc df e3 e9 eb f0 f2 fa fb fc fd fe ff
+
+MCCS (VCP) version reported by capabilities: 2.1
+MCCS (VCP) version reported by feature 0xDf: 2.1
+
+Features declared as readable capabilities but not found by scanning:
+   Feature xfc - Manufacturer Specific
+   Feature xfd - Manufacturer Specific
+
+All features found by scanning were declared in capabilities.
+
+Color temperature increment (x0b) = 50 degrees Kelvin
+Color temperature request   (x0c) = 70
+Requested color temperature = (3000 deg Kelvin) + 70 * (50 degrees Kelvin) = 6500 degrees Kelvin
+
+Statistics for probe of display 1:
+
+EXECUTION STATISTICS
+
+Maximum Try Settings:
+Operation Type                    Current  Default
+Write only exchange tries:              4        4
+Write read exchange tries:             10       10
+Multi-part read exchange tries:        15        8
+Multi-part write exchange tries:       15        8
+
+
+Retry statistics for write only
+   No tries attempted
+
+Retry statistics for write-read
+   Max tries allowed: 10
+   Max tries allowed: 10
+   Max tries allowed range: 10..10
+   Successful attempts by number of tries required:
+       1:  255
+   Total successful attempts:        255
+   Failed due to max tries exceeded:   0
+   Failed due to fatal error:          6
+   Total attempts:                   261
+
+Retry statistics for multi-part read
+   Max tries allowed: 15
+   Max tries allowed: 15
+   Max tries allowed range: 15..15
+   Successful attempts by number of tries required:
+       1:    1
+   Total successful attempts:          1
+   Failed due to max tries exceeded:   0
+   Failed due to fatal error:          6
+   Total attempts:                     7
+
+Retry statistics for multi-part write
+   No tries attempted
+
+DDC Related Errors:  
+
+Count   Status Code                          Description
+   18   DDCRC_NULL_RESPONSE          (-3002) received DDC null response 
+Total errors: 18
+
+Errors Wrapped in Retry:  
+
+Count   Status Code                          Description
+   18   DDCRC_NULL_RESPONSE          (-3002) received DDC null response 
+Total errors: 18
+
+
+IO and Sleep Events:
+   Total IO events:        549
+   IO error count:          18
+   Total sleep events:     302
+
+   Sleep Event type      Count
+   SE_WRITE_TO_READ                273
+   SE_POST_OPEN                      1
+   SE_POST_WRITE                     0
+   SE_POST_READ                      0
+   SE_DDC_NULL                       0
+   SE_POST_SAVE_SETTINGS             0
+   SE_PRE_EDID                       0
+   SE_PRE_MULTI_PART_READ            1
+   SE_MULTI_PART_READ_TO_WRITE       0
+   SE_BETWEEN_CAP_TABLE_SEGMENTS    21
+   SE_POST_CAP_TABLE_COMMAND         0
+   SE_OTHER                          0
+   SE_SPECIAL                        0
+
+Call Stats:
+   Type                                     Count    Millisec  (      Nanosec)
+   write calls       (IE_WRITE)               273         218  (    218944933)
+   read calls        (IE_READ)                273         706  (    706333197)
+   open file calls   (IE_OPEN)                  1           0  (        56939)
+   close file calls  (IE_CLOSE)                 1           0  (        14773)
+   other I/O calls   (IE_OTHER)                 1           0  (         9627)
+   Totals:                                    549         925  (    925359469)
+
+Sleep Call Stats:
+   Total sleep calls:                                     326
+   Requested sleep time milliseconds :                  16348
+   Actual sleep milliseconds (nanosec):                 16429  (  16429699503)
+
+Elapsed milliseconds since last reset (nanosec):     17126  (  17126523680)
+Total elapsed milliseconds (nanoseconds):               46000  (  46000267902)
+
+Total non sleep system call time:        925 milliseconds
+Total sleep call time:                 16429 milliseconds
+Elapsed time:                          46000 milliseconds
+
+
+
+Display scanning complete.

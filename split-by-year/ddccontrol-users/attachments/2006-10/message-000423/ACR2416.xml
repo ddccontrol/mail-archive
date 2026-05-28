@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<monitor name="Acer AL2416Ws" init="standard">
+	<caps add="(vcp(05 08 0E 10 12 20 23 30 3E 16 18 1A 1D 8C 8A 14 1E CC 68 E0 E4 B0 D6 E1))" />
+	<controls>	
+		<control id="colorpreset" address="0x14">
+			<value id="custom" value="0"/>
+			<value id="warm" value="1"/>
+			<value id="cool"  value="3"/>
+		</control>
+	</controls>
+	<include file="VESA"/>
+</monitor>

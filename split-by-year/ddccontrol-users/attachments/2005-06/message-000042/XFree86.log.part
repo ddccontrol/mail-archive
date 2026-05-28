@@ -1,0 +1,95 @@
+
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) Loading sub module "i2c"
+(II) LoadModule: "i2c"
+(II) Loading /usr/X11R6/lib/modules/libi2c.a
+(II) Module i2c: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.2.0
+	ABI class: XFree86 Video Driver, version 0.6
+(==) MGA(0): Write-combining range (0xda000000,0x2000000)
+(II) MGA(0): vgaHWGetIOBase: hwp->IOBase is 0x03d0, hwp->PIOOffset is 0x0000
+(II) MGA(0): I2C bus "DDC" initialized.
+(II) MGA(0): I2C device "DDC:ddc2" registered at address 0xA0.
+(II) MGA(0): I2C device "DDC:ddc2" removed.
+(II) MGA(0): I2C Monitor info: (nil)
+(II) MGA(0): end of I2C Monitor info
+(--) MGA(0): No DDC signal
+(II) MGA(0): DDC Monitor info: (nil)
+(II) MGA(0): end of DDC Monitor info
+(II) Loading sub module "vbe"
+(II) LoadModule: "vbe"
+(II) Loading /usr/X11R6/lib/modules/libvbe.a
+(II) Module vbe: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.1.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Reloading /usr/X11R6/lib/modules/linux/libint10.a
+(II) MGA(0): initializing int10
+(II) MGA(0): Primary V_BIOS segment is: 0xc000
+(II) MGA(0): VESA BIOS detected
+(II) MGA(0): VESA VBE Version 3.0
+(II) MGA(0): VESA VBE Total Mem: 32768 kB
+(II) MGA(0): VESA VBE OEM: Matrox Graphics Inc.
+(II) MGA(0): VESA VBE OEM Software Rev: 1.4
+(II) MGA(0): VESA VBE OEM Vendor: Matrox
+(II) MGA(0): VESA VBE OEM Product: Matrox G550
+(II) MGA(0): VESA VBE OEM Product Rev: 00
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) MGA(0): VESA VBE DDC supported
+(II) MGA(0): VESA VBE DDC Level 2
+(II) MGA(0): VESA VBE DDC transfer in appr. 1 sec.
+(II) MGA(0): VESA VBE DDC read successfully
+(II) MGA(0): VBE DDC Monitor info: 0x8660650
+(II) MGA(0): Manufacturer: MEL  Model: 43f3  Serial#: 4522
+(II) MGA(0): Year: 2000  Week: 51
+(II) MGA(0): EDID Version: 1.1
+(II) MGA(0): Analog Display Input,  Input Voltage Level: 0.700/0.300 V
+(II) MGA(0): Sync:  Separate  Composite  SyncOnGreen
+(II) MGA(0): Max H-Image Size [cm]: horiz.: 40  vert.: 30
+(II) MGA(0): Gamma: 2.20
+(II) MGA(0): DPMS capabilities: StandBy Suspend Off; RGB/Color Display
+(II) MGA(0): GTF timings supported
+(II) MGA(0): redX: 0.625 redY: 0.340   greenX: 0.290 greenY: 0.605
+(II) MGA(0): blueX: 0.150 blueY: 0.070   whiteX: 0.283 whiteY: 0.297
+(II) MGA(0): Supported VESA Video Modes:
+(II) MGA(0): 720x400@...30...
+(II) MGA(0): 720x400@...31...
+(II) MGA(0): 640x480@...32...
+(II) MGA(0): 640x480@...33...
+(II) MGA(0): 640x480@...34...
+(II) MGA(0): 640x480@...35...
+(II) MGA(0): 800x600@...36...
+(II) MGA(0): 800x600@...32...
+(II) MGA(0): 800x600@...34...
+(II) MGA(0): 800x600@...35...
+(II) MGA(0): 832x624@...35...
+(II) MGA(0): 1024x768@...37... (interlaced)
+(II) MGA(0): 1024x768@...32...
+(II) MGA(0): 1024x768@...30...
+(II) MGA(0): 1024x768@...35...
+(II) MGA(0): 1280x1024@...35...
+(II) MGA(0): 1152x870@...35...
+(II) MGA(0): Manufacturer's mask: 0
+(II) MGA(0): Supported Future Video Modes:
+(II) MGA(0): #0: hsize: 1920  vsize 1440  refresh: 75  vid: 20433
+(II) MGA(0): #1: hsize: 1800  vsize 1350  refresh: 85  vid: 22978
+(II) MGA(0): #2: hsize: 1600  vsize 1200  refresh: 85  vid: 22953
+(II) MGA(0): #3: hsize: 1600  vsize 1200  refresh: 75  vid: 20393
+(II) MGA(0): #4: hsize: 1280  vsize 1024  refresh: 85  vid: 39297
+(II) MGA(0): #5: hsize: 2048  vsize 1536  refresh: 75  vid: 20449
+(II) MGA(0): #6: hsize: 1024  vsize 768  refresh: 85  vid: 22881
+(II) MGA(0): #7: hsize: 800  vsize 600  refresh: 85  vid: 22853
+(II) MGA(0): Supported additional Video Mode:
+(II) MGA(0): clock: 299.7 MHz   Image Size:  393 x 295 mm
+(II) MGA(0): h_active: 1800  h_sync: 1944  h_sync_end 2144 h_blank_end 2488 h_border: 0
+(II) MGA(0): v_active: 1350  v_sync: 1351  v_sync_end 1354 v_blanking: 1417 v_border: 0
+(II) MGA(0): Ranges: V min: 50  V max: 160 Hz, H min: 30  H max: 121 kHz, PixClock max 360 MHz
+(II) MGA(0): Monitor name: NSH1157U
+(II) MGA(0): Serial No: 012204522
+(II) MGA(0): end of VBE DDC Monitor info
+

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<monitor name="Dell U2410f" init="standard">
+  <caps add="(vcp(02 04 05 06 08 10 12 14(01 05 08 0B 0C) 16 18 1A 52 60(01 03 04 05 0C 0F 11) 6C 6E 70 AC AE B6 C6 C8 C9 D6(01 04 05) DC(00 02 03 04 05) DF FD)type(LCD)mccs_ver(2.0)asset_eep(32)mswhql(1)"/>
+  <controls>
+
+    <control id="language" type="list" address="0x68">
+      <value id="english"  value="1"/>
+      <value id="spanish"  value="2"/>
+      <value id="french"   value="3"/>
+      <value id="german"   value="4"/>
+      <value id="japanese" value="5"/>
+      <value id="russian"  value="6"/>
+      <value id="chinese"  value="8"/>
+    </control>
+
+    <control id="inputsource" type="list" address="0x60">
+      <value name="VGA"         value="1"/>
+      <value name="DVI-D 1"     value="3"/>
+      <value name="DVI-D 2"     value="4"/>
+      <value name="Composite"   value="5"/>
+      <value name="Component"   value="12"/>
+      <value name="DisplayPort" value="15"/>
+      <value name="HDMI"        value="17"/>
+    </control>
+
+    <control id="colorpreset" address="0x14">
+      <value id="srgb"     value="1"/>
+      <value id="standard" value="5"/>
+      <value id="cool"     value="8"/>
+      <value id="warm"     value="11"/>
+      <value id="user1"    value="12"/>
+    </control>
+
+  </controls>
+  <include file="VESA"/>
+</monitor>
+

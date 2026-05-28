@@ -1,0 +1,132 @@
+$ sudo make install
+Making install in src
+make[1]: Entering directory `/home/florin/ddccontrol-0.4/src'
+Making install in lib
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src/lib'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src/lib'
+test -z "/opt/ddccontrol/lib" || mkdir -p -- "/opt/ddccontrol/lib"
+ /bin/sh ../../libtool --mode=install /usr/bin/install -c  'libddccontrol.la' '/opt/ddccontrol/lib/libddccontrol.la'
+/usr/bin/install -c .libs/libddccontrol.so.0.0.0 /opt/ddccontrol/lib/libddccontrol.so.0.0.0
+(cd /opt/ddccontrol/lib && { ln -s -f libddccontrol.so.0.0.0 libddccontrol.so.0 || { rm -f libddccontrol.so.0 && ln -s libddccontrol.so.0.0.0 libddccontrol.so.0; }; })
+(cd /opt/ddccontrol/lib && { ln -s -f libddccontrol.so.0.0.0 libddccontrol.so || { rm -f libddccontrol.so && ln -s libddccontrol.so.0.0.0 libddccontrol.so; }; })
+/usr/bin/install -c .libs/libddccontrol.lai /opt/ddccontrol/lib/libddccontrol.la
+/usr/bin/install -c .libs/libddccontrol.a /opt/ddccontrol/lib/libddccontrol.a
+chmod 644 /opt/ddccontrol/lib/libddccontrol.a
+ranlib /opt/ddccontrol/lib/libddccontrol.a
+PATH="$PATH:/sbin" ldconfig -n /opt/ddccontrol/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/ddccontrol/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/opt/ddccontrol/include/ddccontrol" || mkdir -p -- "/opt/ddccontrol/include/ddccontrol"
+ /usr/bin/install -c -m 644 'conf.h' '/opt/ddccontrol/include/ddccontrol/conf.h'
+ /usr/bin/install -c -m 644 'monitor_db.h' '/opt/ddccontrol/include/ddccontrol/monitor_db.h'
+ /usr/bin/install -c -m 644 'ddcci.h' '/opt/ddccontrol/include/ddccontrol/ddcci.h'
+ /usr/bin/install -c -m 644 'ddcpci-ipc.h' '/opt/ddccontrol/include/ddccontrol/ddcpci-ipc.h'
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src/lib'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src/lib'
+Making install in ddccontrol
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src/ddccontrol'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src/ddccontrol'
+test -z "/opt/ddccontrol/bin" || mkdir -p -- "/opt/ddccontrol/bin"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'ddccontrol' '/opt/ddccontrol/bin/ddccontrol'
+/usr/bin/install -c .libs/ddccontrol /opt/ddccontrol/bin/ddccontrol
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src/ddccontrol'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src/ddccontrol'
+Making install in gnome-ddcc-applet
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src/gnome-ddcc-applet'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src/gnome-ddcc-applet'
+test -z "/opt/ddccontrol/lib/ddccontrol" || mkdir -p -- "/opt/ddccontrol/lib/ddccontrol"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'ddcc-applet' '/opt/ddccontrol/lib/ddccontrol/ddcc-applet'
+/usr/bin/install -c .libs/ddcc-applet /opt/ddccontrol/lib/ddccontrol/ddcc-applet
+test -z "/opt/ddccontrol/share/ddccontrol" || mkdir -p -- "/opt/ddccontrol/share/ddccontrol"
+ /usr/bin/install -c -m 644 'GNOME_ddcc-applet.xml' '/opt/ddccontrol/share/ddccontrol/GNOME_ddcc-applet.xml'
+test -z "/opt/ddccontrol/lib/bonobo/servers" || mkdir -p -- "/opt/ddccontrol/lib/bonobo/servers"
+ /usr/bin/install -c -m 644 'GNOME_ddcc-applet.server' '/opt/ddccontrol/lib/bonobo/servers/GNOME_ddcc-applet.server'
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src/gnome-ddcc-applet'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src/gnome-ddcc-applet'
+Making install in gddccontrol
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src/gddccontrol'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src/gddccontrol'
+test -z "/opt/ddccontrol/bin" || mkdir -p -- "/opt/ddccontrol/bin"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'gddccontrol' '/opt/ddccontrol/bin/gddccontrol'
+/usr/bin/install -c .libs/gddccontrol /opt/ddccontrol/bin/gddccontrol
+/usr/bin/install -c -m 644 gddccontrol-bluecurve.png //opt/ddccontrol/share/icons/Bluecurve/48x48/apps/gddccontrol.png
+/usr/bin/install: cannot create regular file `//opt/ddccontrol/share/icons/Bluecurve/48x48/apps/gddccontrol.png': No such file or directory
+make[3]: [install-data-local] Error 1 (ignored)
+test -z "/opt/ddccontrol/share/applications" || mkdir -p -- "/opt/ddccontrol/share/applications"
+ /usr/bin/install -c -m 644 'gddccontrol.desktop' '/opt/ddccontrol/share/applications/gddccontrol.desktop'
+test -z "/opt/ddccontrol/share/pixmaps" || mkdir -p -- "/opt/ddccontrol/share/pixmaps"
+ /usr/bin/install -c -m 644 'gddccontrol.png' '/opt/ddccontrol/share/pixmaps/gddccontrol.png'
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src/gddccontrol'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src/gddccontrol'
+Making install in ddcpci
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+test -z "/opt/ddccontrol/bin" || mkdir -p -- "/opt/ddccontrol/bin"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'ddcpci' '/opt/ddccontrol/bin/ddcpci'
+/usr/bin/install -c ddcpci /opt/ddccontrol/bin/ddcpci
+/usr/bin/make  install-exec-hook
+make[4]: Entering directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+chmod 4711 //opt/ddccontrol/bin/ddcpci
+make[4]: Leaving directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src/ddcpci'
+make[2]: Entering directory `/home/florin/ddccontrol-0.4/src'
+make[3]: Entering directory `/home/florin/ddccontrol-0.4/src'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/florin/ddccontrol-0.4/src'
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4/src'
+make[1]: Leaving directory `/home/florin/ddccontrol-0.4/src'
+Making install in po
+make[1]: Entering directory `/home/florin/ddccontrol-0.4/po'
+if test -n ""; then \
+   /opt/ddccontrol/share; \
+else \
+  /bin/sh ../mkinstalldirs /opt/ddccontrol/share; \
+fi
+mkdir -p -- /opt/ddccontrol/share/locale/fr/LC_MESSAGES
+installing fr.gmo as /opt/ddccontrol/share/locale/fr/LC_MESSAGES/ddccontrol.mo
+mkdir -p -- /opt/ddccontrol/share/locale/ru/LC_MESSAGES
+installing ru.gmo as /opt/ddccontrol/share/locale/ru/LC_MESSAGES/ddccontrol.mo
+mkdir -p -- /opt/ddccontrol/share/locale/de/LC_MESSAGES
+installing de.gmo as /opt/ddccontrol/share/locale/de/LC_MESSAGES/ddccontrol.mo
+mkdir -p -- /opt/ddccontrol/share/locale/zh_CN/LC_MESSAGES
+installing zh_CN.gmo as /opt/ddccontrol/share/locale/zh_CN/LC_MESSAGES/ddccontrol.mo
+mkdir -p -- /opt/ddccontrol/share/locale/pl/LC_MESSAGES
+installing pl.gmo as /opt/ddccontrol/share/locale/pl/LC_MESSAGES/ddccontrol.mo
+if test "ddccontrol" = "glib"; then \
+  if test -n ""; then \
+     /opt/ddccontrol/share/glib-2.0/gettext/po; \
+  else \
+    /bin/sh ../mkinstalldirs /opt/ddccontrol/share/glib-2.0/gettext/po; \
+  fi; \
+  /usr/bin/install -c -m 644 ./Makefile.in.in \
+                  /opt/ddccontrol/share/glib-2.0/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory `/home/florin/ddccontrol-0.4/po'
+make[1]: Entering directory `/home/florin/ddccontrol-0.4'
+make[2]: Entering directory `/home/florin/ddccontrol-0.4'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/florin/ddccontrol-0.4'
+make[1]: Leaving directory `/home/florin/ddccontrol-0.4'

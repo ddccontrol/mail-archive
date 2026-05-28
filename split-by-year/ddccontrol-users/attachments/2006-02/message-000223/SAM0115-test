@@ -1,0 +1,541 @@
+SyncMaster 913V 'SAM0115' ddccontrol test report
+by htamas, 5-6 February 2006
+
+legal stuff
+--------
+This test report was created using a ddccontrol version having
+experimental support for my monitor and was probably subject to
+mistakes in my interception of the results. I hereby disclaim all
+liabilities arising from my disclosure of this information.
+This report can be freely copied, of course. I expressedly
+permit the authors of ddccontrol to use this information to
+further improve their software.
+Product names mentioned are trademarks of their respective owners.
+
+test environment
+--------
+this report applies to:
+* Samsung SyncMaster 913V 19" LCD monitor (vga input only)
+  (model 913V N, model code GS19ESSS/EDC, type no GH19LS)
+  available via pci:01:00.0-2
+* MSI FX5600XT-TD128 nVidia GeForce FX 5600 video card
+* SuSE Linux 10.0 OSS using kernel 2.6.13-15.7-smp (i686)
+* ddccontrol CVS version '3.1', as of 2006-02-05
+* ddccontrol-db CVS version, as of 2006-02-05
+  (particularly SAM0115.xml and SAM01B4.xml)
+
+methodology
+--------
+the following types of tests have been carried out:
+* forward test
+    changed a control using ddccontrol and checked
+    for changed osd settings and other visible effects
+* reverse test
+    changed individual osd settings and ran a diff on the
+    ddccontrol -d output before and after
+* combined test
+    changed a control using ddccontrol and checked which
+    other controls did it affect
+I ran a forward test on each control returned by 'ddccontrol -p -c -d',
+a reverse test on each setting visible in the osd menu and a combined
+test on all non-obvious controls. The tests have been carried out by
+passing -r and -w arguments to ddccontrol, using dedicated
+shell scripts as well as manually invoking ddccontrol.
+Note that I don't know anything special about the monitor's internals
+so I'm considering it as a black box during this test.
+
+results
+--------
+I got lots of "Invalid response, first byte is 0x51, should be 0x6e"
+error messages, which makes me think that responses beginning with
+0x51 should be accepted as well. However, I don't know what is the
+difference between the two response types. Such error messages seem
+not to occur when using the quite primitive controls (such as
+brighness, contrast, hpos, vpos, coarse and fine) and are specific
+to the control written. For some controls, I get only one of this,
+for others, I get 2 or 3 (i.e. there are controls which give me
+sometimes 2 and sometimes 3, but none that gives e.g. sometimes 1
+and sometimes 2). Rarely, it also occurs when
+"Reading EDID and initializing DDC/CI at bus pci:01:00.0-2..."
+but mainly on writing controls. One of my guesses is that a response
+starting with 0x51 has something to do with persistence (keeping
+settings when monitor is turned off).
+
+Some examples:
+(the numbers vary but the sequence always starts with 51)
+--- example 1
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 f2 4e 01 4b ff ff ff ff                | Q...N.K....
+--- example 2
+Writing 0x04, 0x01(1)...
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 04 b8 01 bd ff ff ff ff                | Q..........
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 04 b8 01 bd ff ff ff ff                | Q..........
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 04 b8 01 bd ff ff ff ff                | Q..........
+--- example 3
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 7e c2 00 00 00 00 00 c8                | Q..~.......
+--- example 4
+Invalid response, first byte is 0x51, should be 0x6e
+51 82 01 e9 55 00 00 00 00 00 5d                | Q...U.....]
+--- example 5
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+Invalid response, first byte is 0x51, should be 0x6e
+0000: 51 83 f3 00 40 0f 20 33 30 20 33 45 20 42 30 28 | Q...@...86... 30 3E B0(
+0010: 31 20 32 29 20 6b ff 00 00 00 00 00 91 04 2e 00 | 1 2) k..........
+0020: 17 00 56 07 00 00 e9 00 d2 00 76 00 00 00 00 00 | ..V.......v.....
+0030: 13 00 13 32 00 ff 73 04 00 00 00 00 02 01 00 3c | ...2..s........<
+0040: 00 56 11                                        | .V.
+--- example 6
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+Invalid response, first byte is 0x51, should be 0x6e
+0000: 51 83 f3 00 30 7f 32 20 31 36 20 31 38 20 31 41 | Q...0.2 16 18 1A
+0010: 20 31 45 20 32 75 ff 00 00 00 00 00 91 04 2e 00 |  1E 2u..........
+0020: 17 00 56 07 00 00 e9 00 d2 00 76 00 00 00 00 00 | ..V.......v.....
+0030: 13 00 13 00 00 ff 73 04 00 00 00 00 00 01 00 3c | ......s........<
+0040: 00 56 11
+--- end of examples
+
+Some other errors have occured randomly, but they only occured once
+or twice during at least 1000 executions of ddccontrol.
+These may be the result of my modifying the osd at the same time
+as using ddccontrol. All of these tests have been retried and the
+error did not recur.
+
+--- example 1
+==>Error while receiving query
+: Invalid argument
+--- example 2
+==>No command received for 67 seconds, aborting.
+--- example 3
+Corrupted EDID at 0x50.
+
+DDC/CI at pci:01:00.0-2 is unusable (-2).
+If your graphics card need it, please check all the required kernel
+modules are loaded (i2c-dev, and your framebuffer driver).
+--- example 4
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+Invalid response, corrupted data - xor is 0xcf, length 0x13
+0000: 6e 93 e3 00 20 31 32 20 31 33 7f ff ff ff ff ff | n... 12 13......
+0010: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0020: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0030: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff | ................
+0040: ff ff ff                                        | ...
+--- end of examples
+
+Also, I have identified some of the controls. No ground-breaking
+innovations here, as most of them were already handled correctly
+by ddccontrol using the supplied xml file and some of them are still
+unknown. There are even ones for which the xml comments tell
+something but I was unable to find their effects.
+The following part of this report will go through the individual
+controls returned by 'ddccontrol -p' along with their effects,
+equivalent osd settings, fix recommendations and some other notes.
+
+terminology
+--------
+concepts I'm going to use in this report:
+  trigger: write-only controls which stick to a base value and writing
+    a different value carries out some action (such as reset to defaults)
+  setting: read-write controls which generally return the last value
+    written when read (except for margins/redirecting invalid input)
+    these generally map to a monitor parameter such as brightness
+  osd control: an option available through the osd menu or otherwise
+    using the buttons on the monitor
+  osd path: names of submenus and options in the osd menu that should
+    be chosen to access an osd control, separated by slashes
+    (such as: color/color tone/warm)
+  persistent: a setting which keeps its value when the monitor is turned
+    successively off and on (using the soft-off button on the front
+    panel of the monitor)
+  transient: in contrast to persistent, a setting which resets to a
+    default value after an off+on combination (i.e. is volatile)
+    interestingly, this usually occurs when switching on, not off
+    (the monitor can also be queried when in soft-off)
+  regular: if used alone, acts as transient (i.e. effects are restored
+    during off+on), but if 0xb0/1 (store settings) is called after it,
+    but before turning off (or on, I don't know), the new value is saved
+    and is restored after an off+on combination
+  IR: "Invalid response, first byte is 0x51, should be 0x6e"
+    error message, which occurs quite often (so seems valid)
+    (mentioned in results above)
+  OK: the specified control needs no change
+  FIX: needs a minor change in the xml file
+  TODO: something more needs to be done
+
+summary of controls
+--------
+
+osd controls without corresponding ddc/ci controls:
+(or at least, setting them does not modify any ddc/ci controls)
+
+  osd/h-position   (horizontal position of osd, 0-100)
+  osd/v-position   (vertical position of osd, 0-100)
+  osd/transparency (boolean specifying whether osd is translucent)
+  osd/display time (idle time before osd closes, chosen from
+                    5 sec, 10 sec, 20 sec and 200 sec)
+  information      (tells the horizontal and vertical frequency,
+                    screen resolution and 'PP' (which I don't know))
+
+list of ddc/ci controls:
+(controls are identified by their hex id and xml name if present)
+
+0x04 defaults
+  trigger, base:0, persistent
+  1 -> reset default settings
+    resets the following settings to these values
+    * 0x0e coarse      90/180
+    * 0x10 brightness  80/100
+    * 0x12 contrast    80/100
+    * 0x16 red         32/64
+    * 0x18 green       32/64
+    * 0x1a blue        32/64
+    * 0x20 hpos        50/100
+    * 0x30 vpos        35/70
+    * 0x3e fine        0/31
+    * 0x87 sharpness   15/25
+    * 0xe0 colorpreset 0/3
+    * 0xf2 gamma       0/2
+    (actually it resets all settings, but these were
+    the ones I reset before each test)
+    it also resets some of the osd settings which do not
+    have ddc/ci control equivalents
+    * osd/h-position   50 
+    * osd/v-position   50
+    * osd/transparency Off
+    * osd/display time 20 sec
+    also sets a 'dirty' flag, so an auto adjustment will be
+    performed when changing to a new resolution or turning off+on
+    saves settings (as 0xb0/1)
+    monitor led turns off for 0.5 seconds
+    throws IR
+  TODO: IR
+
+0x05 defaultluma
+  trigger, base: 0, regular
+  1 -> reset brightness and contrast
+    resets the following settings to these values
+    * 0x10 brightness  80/100
+    * 0x12 contrast    80/100
+  OK
+
+0x06 defaultgeom
+  trigger, base: 0, partially persistent
+  1 -> reset geometry settings
+    osd path: setup/image reset/yes
+    resets the following settings to these values
+    * 0x0e coarse      90/180
+    * 0x20 horizontal  50/100
+    * 0x30 vertical    35/70
+    * 0x3e fine        0/31
+    * 0x87 sharpness   15/25
+    sets the dirty flag (this is a persistent effect)
+    (all other effects are regular)
+    throws IR
+  TODO: IR
+
+0x08 defaultcolor
+  trigger, base: 0, regular
+  1 -> reset colour settings
+    osd path: setup/color reset/yes
+    resets the following settings to these values
+    * 0x10 brightness  80/100
+    * 0x12 contrast    80/100
+    * 0x16 red max     32/64
+    * 0x18 green max   32/64
+    * 0x1a blue max    32/64
+    * 0x0e colorpreset 0/3
+    * 0xf2 gamma       0/2
+  OK
+
+0x0e coarse
+  setting, 0-180, regular
+  osd path: image/coarse
+  sets the clock
+  osd value is 1638 + control value (thus, real range is 1638-1818)
+  OK
+
+0x10 brightness
+  setting, 0-100, regular
+  osd path: picture/brightness
+  OK
+
+0x12 contrast
+  setting, 0-100, regular
+  osd path: picture/contrast
+  OK
+
+0x16 red
+  setting, 0-64, regular
+  osd path: color/color control/red
+  (changes colorpreset to custom)
+  OK
+
+0x18 green
+  setting, 0-64, regular
+  osd path: color/color control/green
+  (changes colorpreset to custom)
+  OK
+
+0x1a blue
+  setting, 0-64, regular
+  osd path: color/color control/blue
+  (changes colorpreset to custom)
+  OK
+
+0x1e auto
+  trigger, base: 0, persistent (only if finished)
+  1 -> auto adjustment, slow
+    equivalent to the auto button on the monitor face
+    takes approximately 4.5 or 2 seconds
+    (see notes at 0xe2)
+    displays a progress bar
+  2 -> auto adjustment, fast
+    takes approximately 0.5 seconds
+    displays a progress bar, but jumps from 0% to 100%
+  I couldn't find any difference between the accuracy of the methods
+  when the dirty flag is set, a third auto adjustment mode is invoked
+  (whose speed is between these two and which has a regularly moving
+  progress bar like in mode 1)
+  returns 1 while adjustment is in progress
+  throws IR
+  FIX: add the fast mode
+  TODO: IR
+
+0x20 hpos
+  setting, 0-100, regular
+  osd path: image/h-position
+  OK
+
+0x30 vpos
+  setting, 0-100, regular
+  osd path: image/v-position
+  OK
+
+0x3e fine
+  setting, 0-31, regular
+  osd path: image/fine
+  OK
+
+0x60 inputsource (?)
+  reported range 0-3, but sticked to 1, readonly
+  based on the xml files for other models, this should
+  select input source (1 for analog, 3 for digital)
+  but for this model, only analog input (1) is available
+  TODO: check
+
+0x62 UNKNOWN
+  setting, 0-50, regular
+  factory default for this setting is 25
+  after tweaking some other settings, it changed to 30
+  (I don't know the exact setting that changed it)
+  so it must be of some use, but I'm unable to find out
+  TODO: find out
+
+0x6c UNKNOWN
+  setting, 0-255, transient -> 255
+  TODO: find out
+
+0x6e UNKNOWN
+  setting, 0-255, transient -> 255
+  TODO: find out
+
+0x70 UNKNOWN
+  setting, 0-255, transient -> 255
+  TODO: find out
+
+# values 0x6c, 0x6e, 0x70 make me feel that they are an RGB triplet
+# xml comments state service RGB black levels
+# however, I haven't noticed any effects
+
+0x87 NEW sharpness
+  setting, 0-25, regular
+  osd path: image/sharpness
+  this option isn't present in any of the SAM####.xml's
+  specifies the sharpness of the monitor, higher means sharper
+  when set below 10, screen is blurred
+  when set near 25, light objects get dark contours and vice versa
+  FIX: add this setting
+
+0xb0 settings
+  trigger, base: 0
+  1 -> store settings
+    this saves the values of regular settings to be restored after
+    the monitor is turned off or changed to a different resolution
+    a regular setting which is not stored resembles a transient one,
+    while storing after each setting makes it like a persistent one
+    I was unable to check whether it is enough to call it after
+    switching off but before switching on because control 0xdc
+    (magicbright) which I used for testing seemed readonly while
+    the monitor was turned off
+    this trigger turns the dirty flag off (disables auto adjustment
+    on resolution change or power off+on)
+  2 -> resets position to defaults
+    resets the following settings to these values
+    * 0x0e coarse      90/180
+    * 0x20 horizontal  50/100
+    * 0x30 vertical    35/70
+    * 0x3e fine        0/31
+    this is almost equivalent to control 0x06/1,
+    but the sharpness is not reset
+  monitor led turns off for .5 seconds (for both options)
+  throws IR
+  TODO: IR
+
+0xca osd
+  setting, 1-2, transient -> 2
+  this setting disables the display of the osd panel
+  however, the buttons work the same way
+  (i.e. the menu can be still controlled if you remember the positions)
+  if the menu is already displayed, it isn't removed but does
+  not reappear after hiding
+  also, if the menu is active but not shown, it does not show up
+  when turned on, only after closing and reopening it
+  though this option is present in the xml file,
+  ddccontrol seems not to recognise it
+  FIX: make this available
+
+0xcc language
+  setting, 1-11, persistent
+  osd path: osd/language
+  changing this setting switches back to first page of osd
+  2 -> english (English)
+  3 -> french (Français)
+  4 -> german (Deutsch)
+  5 -> italian (Italiano)
+  9 -> russian (Русский)
+  10 -> spanish (Español)
+  11 -> swedish (Svenska)
+  8 does nothing (keeps the old value), similarly to out-of-range values
+  1, 6 and 7 map to 2 (english)
+  changing this setting (even identically) saves all
+  settings using 0xb0/1 (but monitor led does not blink)
+  besides making this setting persistent, this also means that
+  other changes meant to be transient are also saved
+  this is a perhaps unwanted side-effect
+  throws IR (except for 0 and 8 which do nothing)
+  TODO: IR
+
+0xd6 dpms
+  setting, 1-4, transient
+  enables or disables dpms standby
+  1 -> on
+  4 -> standby
+  2 and 3 map to 4 (standby)
+  throws IR
+  TODO: IR
+
+0xdc magicbright
+  setting, 1-4, regular
+  1 -> text
+  2 -> internet
+  3 -> entertain
+  4 -> custom
+  it is strange that values higher than 4 are permitted and kept,
+  despite the reported maximum of 4
+  in these modes, none of the options has a tick next to it
+  on the osd magicbright box
+  FIX: correct the list of options
+
+0xe0 colorpreset
+  setting, 0-3, regular
+  0 -> normal or custom
+  1 -> warm
+  2 -> cool
+  3 maps to 0
+  osd values 'normal' and 'custom' seem to be impossible to
+  distinguish using this control
+  when writing a value of 0 (or 3), it sets mode to custom (on osd)
+  and recalls the last custom mode superceded by normal/warm/cool
+  (if the control was not already set to 0)
+  I found no way to reset to normal using this control
+  (setting r/g/b to 32/32/32 has the same effect but the osd
+  still says 'custom')
+  setting this also modifies values @ 0x16, 0x18, 0x1a
+  also, setting those values sets this preset to 0 (custom)
+  FIX: correct the list of options
+
+0xe1 power
+  setting, 0-1, difficult to tell whether it is persistent :D
+  monitor power (on/off)
+  has the same effect as the soft-off button on the monitor face
+  0 -> off
+  1 -> on
+  while listed in the xml, ddccontrol still does not recognize it
+  throws IR
+  FIX: make it recognized
+  TODO: IR
+
+0xe2 UNKNOWN
+  setting, 0-1, persistent
+  this setting is persistent, but doesn't affect others
+  it has to do something with the dirty flag
+  when in state 0, slow auto adjust (0x1e/1) takes approx. 4.5 seconds
+  when in state 1, slow auto adjust (0x1e/1) takes approx. 2 seconds
+  timing of fast auto adjust (0x1e/2) seems unaffected
+  if the dirty flag is turned on (using 0x04 or 0x06), an auto
+  adjustment takes place on the next off+on or resolution change
+  which turns the dirty flag back off
+  if, however, this setting is set to 1 before the off+on or
+  resolution change, the dirty flag is not processed
+  that is, the auto adjustment does not occur and the status of
+  the dirty flag is kept
+  when it is reset to 0, if the dirty flag is on, the auto adjustment
+  takes place on the next off+on or resolution change
+  (it this setting is not reset to 1 meanwhile)
+  TODO: check if it's the real and only effect
+
+0xed UNKNOWN
+  setting, 0-255, transient -> 99
+  TODO: find out
+
+0xee UNKNOWN
+  setting, 0-255, transient -> 101
+  TODO: find out
+
+0xef UNKNOWN
+  setting, 0-255, transient -> 101
+
+# similarly to values 0x6c, 0x6e, 0x70, these values
+# (0xed, 0xee, 0xef) make me feel that they are an RGB triplet
+# xml comments state SAM RGB black levels
+# however, I haven't noticed any effects
+
+0xf0 UNKNOWN
+  readonly (set to 3, reported max is 0)
+  according to the xml, this is supposed to be the magiccolor
+  setting for models that support it
+  actually, this model does not
+  the reported max is still quite strange
+  TODO: check whether it's really magiccolor & why is max < value
+
+0xf2 gamma
+  setting, 0-2, regular
+  osd path: color/gamma
+  0 -> mode1
+  1 -> mode2
+  2 -> mode3
+  FIX: correct the list of options
+
+0xf5 NEW buttons
+  setting, 0-2, transient
+  0 monitor face buttons are fully functional
+  1 osd can't be opened, pressing any button on the monitor face
+    (except for soft-off) displays a 'MagicTune' popup instead
+    of its regular function
+    used by official utility to avoid changing the settings on the
+    osd while it is running
+    it control 0xca is used to disable the osd, this function
+    will disable the buttons with no popup when they are pressed
+  2 maps to 0
+  FIX: add this setting
+
+thanks
+--------
+Finally, let me thank the authors of ddccontrol for creating this
+great software for the linux community, filling the gap for a
+MagicTune port. I really like the command-line support which is
+even missing from the proprietary, Windows-only version.
+

@@ -1,0 +1,119 @@
+ddccontrol version 0.4.4
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/PHL090B.xml"
+Document not parsed successfully.
+.I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/PHL090B.xml"
+Document not parsed successfully.
+.........Invalid response, corrupted data - xor is 0x15, length 0x23
+0000: 6e a3 e3 01 a0 30 30 20 30 31 20 30 32 20 30 33 | n....00 01 02 03
+0010: 29 20 46 30 28 af 30 20 30 31 20 30 32 20 30 33 | ) F0(.0 01 02 03
+0020: 00 03 00 00 00 01 00 00 05 00 0f 00 00 02 00 00 | ................
+0030: 20 00 30 00 00 02 00 00 00 00 0f 00 00 35 00 00 |  .0..........5..
+0040: 40 00 70                                        | @.p             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/PHL090B.xml"
+Document not parsed successfully.
+Invalid response, corrupted data - xor is 0x51, length 0x23
+0000: 6e a3 e3 00 00 28 70 72 6f 74 28 6d 6f 6e 69 74 | n....(prot(monit
+0010: 6f 72 29 74 79 70 65 28 6c 63 64 29 6d 6f 64 65 | or)type(lcd)mode
+0020: 00 03 00 00 00 01 00 00 05 00 0f 00 00 02 00 00 | ................
+0030: 20 00 30 00 00 02 00 00 00 00 0f 00 00 35 00 00 |  .0..........5..
+0040: 40 00 70                                        | @.p             
+Invalid response, first byte is 0x03, should be 0x6e
+03 00 00 00 20 00 00 00 03 00 03                | .... ......     
+Invalid response, corrupted data - xor is 0x03, length 0x08
+6e 88 02 01 ce 01 ff ff 00 00 79                | n.........y     
+Invalid response, first byte is 0x03, should be 0x6e
+03 00 00 00 20 00 00 00 03 00 03                | .... ......     
+
+Detected monitors :
+ - Device: dev:/dev/i2c-9
+   DDC/CI supported: Yes
+   Monitor Name: Philips standard LCD
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-8
+   DDC/CI supported: Yes
+   Monitor Name: Philips standard LCD
+   Input type: Digital
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-9...
+
+EDID readings:
+	Plug and Play ID: PHL090B [Philips standard LCD]
+	Input type: Digital
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a generic profile for your monitor's manufacturer. Some controls
+may not be supported, or may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Can't convert value to int, invalid CAPS (buf=ò, pos=400).
+Raw output: (prot(monitor)type(lcd)model(328P6V)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 07 08 0A 0B) 16 18 1A 52 54(00 01) 60(00 01 03 11 0F 21 23 2F 31) 62 6C 6E 70 72(05 78 FB 50 64 78 8C A0) 86(01 02 08) 8D(01 02) A4 A5 AA(01 02) AC AE B6 C0 C6 C8 C9 CA(01 02) CC(02 03 04 05 07 08 09 0A 0C 0D 01 06 0B 0E 12 14 16 17 1A 1E 24) D6(01 04 05) DC(00 01 02 03 05 08 1F) DF E0(00 ) EB(ò DF E0(00 
+Parsed output: 
+	VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 54 60 62 6c 6e 70 72 86 8d a4 a5 aa ac ae b6 c0 c6 c8 c9 ca cc d6 dc df e0 e9 eb ec f0 f6 f7 fa fb fc fd fe ff 
+	Type: LCD
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/2/2 C [Secondary Degauss]
+Control 0x0b: +/100/100 C [???]
+Control 0x0c: +/35/85 C [???]
+Control 0x10: +/100/100 C [Brightness]
+Control 0x12: +/50/100 C [Contrast]
+Control 0x14: +/11/11 C [Color Preset - User 1]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x20: +/50/100   [???]
+Control 0x30: +/50/100   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x54: +/1/1 C [Color temperature]
+Control 0x60: +/12047/8206 C [Input Source Select (Main)]
+Control 0x62: +/80/100 C [Audio Speaker Volume Adjust]
+Control 0x68: +/0/5   [???]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Control 0x72: +/120/251 C [???]
+Control 0x86: +/8/8 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xa4: +/0/65535 C [???]
+Control 0xa5: +/0/65535 C [???]
+Control 0xa8: +/0/3   [???]
+Control 0xaa: +/1/5 C [OSD Orientation - Landscape]
+Control 0xac: +/2228/2 C [???]
+Control 0xae: +/5999/0 C [???]
+Control 0xb4: +/1/2   [???]
+Control 0xb6: +/3/8 C [???]
+Control 0xc0: +/5951/65535 C [???]
+Control 0xc6: +/111/65535 C [???]
+Control 0xc8: +/5/65302 C [???]
+Control 0xc9: +/256/65535 C [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/36 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xda: +/0/2   [???]
+Control 0xdc: +/5/8 C [???]
+Control 0xdf: +/514/255 C [???]
+Control 0xe0: +/0/4 C [???]
+Control 0xe9: +/0/2 C [???]
+Control 0xeb: +/1/3 C [???]
+Control 0xec: +/0/1027 C [???]
+Control 0xf0: +/1/1 C [???]
+Control 0xf7: +/66/66 C [???]
+Control 0xfa: +/0/65535 C [???]
+Control 0xfb: +/5/255 C [???]
+Control 0xfc: +/5/255 C [???]
+Control 0xfd: +/5/255 C [???]
+Control 0xfe: +/0/65535 C [???]

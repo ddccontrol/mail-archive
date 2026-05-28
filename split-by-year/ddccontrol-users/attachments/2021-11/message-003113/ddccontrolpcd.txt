@@ -1,0 +1,103 @@
+$ LANG= LC_ALL= ddccontrol -p -c -d
+ddccontrol version 0.6.0
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Detected monitors :
+ - Device: dev:/dev/i2c-18
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Digital
+  (Automatically selected)
+ - Device: dev:/dev/i2c-7
+   DDC/CI supported: Yes
+   Monitor Name: LG 25UM58
+   Input type: Digital
+ - Device: dev:/dev/i2c-4
+   DDC/CI supported: Yes
+   Monitor Name: Philips standard LCD
+   Input type: Analog
+Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-18...
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/VSCBB31.xml"
+Document not parsed successfully.
+
+EDID readings:
+	Plug and Play ID: VSCBB31 [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+ioctl(): Inappropriate ioctl for device
+ioctl returned -1
+Capabilities read fail.
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/1/2 C [New Control Value - No changes]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x05: +/0/1 C [Restore Brightness and Contrast]
+Control 0x06: +/0/1   [???]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x0b: +/100/0 C [???]
+Control 0x0c: +/35/63 C [???]
+Control 0x10: +/45/100 C [Brightness]
+Control 0x12: +/70/100 C [Contrast]
+Control 0x14: +/5/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/100/100 C [Green maximum level]
+Control 0x1a: +/100/100 C [Blue maximum level]
+Control 0x1e: +/0/1   [???]
+Control 0x52: +/0/255 C [???]
+Control 0x60: +/17/255 C [Input Source Select (Main)]
+Control 0x62: +/91/100 C [Audio Speaker Volume Adjust]
+Control 0x6c: +/512/100   [???]
+Control 0x6e: +/512/100   [???]
+Control 0x70: +/512/100   [???]
+Control 0x72: +/120/160   [???]
+Control 0x86: +/8/8   [???]
+Control 0x87: +/50/100 C [???]
+Control 0x8d: +/2/2 C [???]
+Control 0xaa: +/2/4   [???]
+Control 0xac: +/3711/1 C [???]
+Control 0xae: +/10010/65535 C [???]
+Control 0xb2: +/1/1 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/10463/65535   [???]
+Control 0xc6: +/255/65535 C [???]
+Control 0xc8: +/9/0 C [???]
+Control 0xc9: +/514/65535   [???]
+Control 0xca: +/2/2 C [???]
+Control 0xcc: +/2/22 C [???]
+Control 0xd6: +/1/5 C [DPMS Control - On]
+Control 0xdf: +/514/65535 C [???]
+Control 0xe1: +/0/1   [???]
+Control 0xe9: +/0/2   [???]
+Control 0xeb: +/1/1   [???]

@@ -1,0 +1,84 @@
+ddccontrol version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors...
+Detected monitors :
+ - Device: pci:03:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: VESA standard monitor
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:03:00.0-2...
+
+EDID readings:
+	Plug and Play ID: MEL463D [VESA standard monitor]
+	Input type: Analog
+=============================== WARNING ===============================
+There is no support for your monitor in the database, but ddccontrol is
+using a basic generic profile. Many controls will not be supported, and
+some controls may not work as expected.
+Please update ddccontrol-db, or, if you are already using the latest
+version, please send the output of the following command to
+ddccontrol-users@lists.sourceforge.net:
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Thank you.
+=============================== WARNING ===============================
+
+Capabilities:
+Raw output: ( type(CRT_AG)  vcp(00 01 04 06 08 10 12 14(01 04 06 07 08) 16  18 1A 1E 20 22 24 26 28 30 32 38 3A 3C 40 42 44 46 4A 54 56     68 A8 B6 E1 E2 E3 E8 E9 EA EB EF F6 F9 FA FC FF) vcp_p02(3B 3C  42 43 46)       mccs_ver(1.1)    asset_eep(20)  mpu_ver(3.2))   
+Parsed output: 
+	VCP: 00 01 04 06 08 10 12 14 16 18 1a 1e 20 22 24 26 28 30 32 38 3a 3c 40 42 44 46 4a 54 56 68 a8 b6 e1 e2 e3 e8 e9 ea eb ef f6 f9 fa fc ff 
+	Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x00: +/0/1 C [Degauss]
+Control 0x01: +/0/1 C [???]
+Control 0x04: +/0/1 C [Restore Factory Defaults]
+Control 0x06: +/0/1 C [Restore Factory Default Geometry]
+Control 0x08: +/0/1 C [Restore Factory Default Color]
+Control 0x10: +/84/102 C [Brightness]
+Control 0x12: +/84/84 C [Contrast]
+Control 0x14: +/6/8 C [???]
+Control 0x16: +/127/127 C [Red maximum level]
+Control 0x18: +/111/127 C [Green maximum level]
+Control 0x1a: +/87/127 C [Blue maximum level]
+Control 0x1e: +/0/255 C [Automatically adjust]
+Control 0x20: +/78/212 C [Horizontal Position]
+Control 0x22: +/65/85 C [Horizontal Size]
+Control 0x24: +/25/63 C [Horizontal Pincushion]
+Control 0x26: +/30/63 C [Horizontal Pincushion Balance]
+Control 0x28: +/125/255 C [Horizontal Misconvergence]
+Control 0x30: +/34/75 C [Vertical Position]
+Control 0x32: +/96/127 C [Vertical Size]
+Control 0x38: +/128/255 C [Vertical Misconvergence]
+Control 0x3a: +/5/15 C [Vertical Linearity]
+Control 0x3c: +/7/15 C [Vertical Linearity Balance]
+Control 0x40: +/30/63 C [Parallelogram Distortion (Key Balance)]
+Control 0x42: +/21/38 C [Trapezoidal Distortion (Key)]
+Control 0x44: +/141/255 C [Rotation (Tilt)]
+Control 0x46: +/20/44 C [Top Corner Distortion Control]
+Control 0x4a: +/20/44 C [Bottom Corner Distortion Control]
+Control 0x54: +/30/86 C [Color temperature]
+Control 0x56: +/0/63 C [Horizontal Moire]
+Control 0x68: +/3/6 C [???]
+Control 0xa8: +/1/3 C [???]
+Control 0xb6: +/2/5 C [???]
+Control 0xd6: +/1/4   [???]
+Control 0xe1: +/1/1 C [Power control - On]
+Control 0xe2: +/0/1 C [???]
+Control 0xe3: +/0/1 C [???]
+Control 0xe8: +/98/193 C [???]
+Control 0xe9: +/94/197 C [???]
+Control 0xea: +/122/193 C [???]
+Control 0xeb: +/77/197 C [???]
+Control 0xef: +/2/4 C [???]
+Control 0xf6: +/0/1 C [???]
+Control 0xf9: +/0/2 C [???]
+Control 0xfa: +/46303/65535 C [???]
+Control 0xfc: +/8/23 C [???]
+Control 0xff: +/12274/65535 C [???]

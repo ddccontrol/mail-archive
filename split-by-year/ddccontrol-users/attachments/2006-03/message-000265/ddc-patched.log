@@ -1,0 +1,68 @@
+sentinel ddccontrol-0.4.1 # ddccontrol -p -c -d
+ddccontrol version 0.4.1
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitorslast_substr=60
+...
+Detected monitors :
+ - Device: pci:00:02.0-0
+    DDC/CI supported: Yes
+       Monitor Name: SUN GDM-5410
+          Input type: Analog
+	    (Automatically selected)
+	    Reading EDID and initializing DDC/CI at bus pci:00:02.0-0...
+	    Invalid sequence in caps.
+	    last_substr=60
+
+	    EDID readings:
+	            Plug and Play ID: SUN0577 [SUN GDM-5410]
+		            Input type: Analog
+
+			    Capabilities:
+			    Invalid sequence in caps.
+			    last_substr=60
+			    Raw output: (prot(monitor)  type(crt) model( SUN7705           edid bin(128(################################################################################################################################))cmds(01020304050608090A0B0C4F)vcp(00010810121416181A20222426283032384042445456686C6E70E0E2F1F2F3F4F5F6F7)
+			    Parsed output:
+			            VCP:
+				            Type: CRT
+
+					    Controls (valid/current/max) [Description - Value name]:
+					    Control 0x00: +/0/0   [???]
+					    Control 0x01: +/0/0   [???]
+					    Control 0x08: +/0/0   [???]
+					    Control 0x10: +/0/255   [???]
+					    Control 0x12: +/148/255   [???]
+					    Control 0x14: +/2/2   [???]
+					    Control 0x16: +/233/255   [???]
+					    Control 0x18: +/228/255   [???]
+					    Control 0x1a: +/243/255   [???]
+					    Control 0x20: +/127/255   [???]
+					    Control 0x22: +/104/255   [???]
+					    Control 0x24: +/122/255   [???]
+					    Control 0x26: +/113/255   [???]
+					    Control 0x28: +/126/255   [???]
+					    Control 0x30: +/158/255   [???]
+					    Control 0x32: +/148/255   [???]
+					    Control 0x38: +/128/255   [???]
+					    Control 0x40: +/135/255   [???]
+					    Control 0x42: +/190/255   [???]
+					    Control 0x44: +/89/255   [???]
+					    Control 0x54: +/172/240   [???]
+					    Control 0x56: +/0/255   [???]
+					    Control 0x68: +/1/8   [???]
+					    Control 0x6c: +/128/255   [???]
+					    Control 0x6e: +/128/255   [???]
+					    Control 0x70: +/128/255   [???]
+					    Control 0xe0: +/0/0   [???]
+					    Control 0xe2: +/0/0   [???]
+					    Control 0xf1: +/114/255   [???]
+					    Control 0xf2: +/125/255   [???]
+					    Control 0xf3: +/125/255   [???]
+					    Control 0xf4: +/108/255   [???]
+					    Control 0xf5: +/1/2   [???]
+					    Control 0xf6: +/135/255   [???]
+					    Control 0xf7: +/108/255   [???]
+

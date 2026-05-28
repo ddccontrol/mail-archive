@@ -1,0 +1,68 @@
+ddccontrol, version 0.4.2
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@cs.msu.su)
+Copyright 2004-2006 Nicolas Boichat (nicolas@boichat.ch)
+Ce programme est livré SANS AUCUNE GARANTIE.
+Vous pouvez redistribuer des copies de ce programme sous les termes de la licence générale publique de GNU (GNU General Public License).
+
+Recherche des moniteurs disponibles...
+Moniteurs détectés :
+ - Périphérique : pci:01:00.0-2
+   DDC/CI supporté : Oui
+   Nom du moniteur : VESA standard monitor
+   Type d'entrée : digitale
+  (Choisi automatiquement)
+Lecture de l'EDID et initialisation du DDC/CI sur le bus pci:01:00.0-2...
+
+Lectures EDID :
+	ID Plug and Play: DEL4020 [VESA standard monitor]
+	Type d'entrée : digitale
+=============================== ATTENTION ===============================
+Votre moniteur n'est pas supporté dans la base de données.
+Toutefois, ddccontrol utilise un profil générique de base.
+Quelques contrôles peuvent éventuellement ne pas être
+supportés, ou ne pas fonctionner correctement.
+Veuillez mettre à jour ddccontrol-db, ou, si vous utilisez déjà la
+dernière version, veuillez envoyez la sortie de la commande suivanteà ddccontrol-users@lists.sourceforge.net :
+
+LANG= LC_ALL= ddccontrol -p -c -d
+
+Merci.
+=============================== ATTENTION ===============================
+
+Capacités:
+Sortie brute : (vcp(02 04 05 08 10 12 14(05 06 08 0B) 16 18 1A 52 6C 6E 70 AC AE B2 B6 C0 C6 C8 C9 CA D6 DF)type(LCD)mccs_ver(2.1)asset_eep(32)mpu(1.02))
+Sortie analysée : 
+	VCP: 02 04 05 08 10 12 14 16 18 1a 52 6c 6e 70 ac ae b2 b6 c0 c6 c8 c9 ca d6 df 
+	Type :Inconnu
+
+Contrôles (valide/actuel/maximum) [Description - Nom de la valeur]:
+Contrôle 0x02: +/1/65535 C [???]
+Contrôle 0x04: +/0/1 C [Restaurer les paramètres d'usine]
+Contrôle 0x05: +/0/1 C [Restaurer les paramètres de luminosité et de contraste par défaut]
+Contrôle 0x08: +/0/1 C [Restaurer les paramètres d'usine de couleur]
+Contrôle 0x10: +/100/100 C [Luminosité]
+Contrôle 0x12: +/50/100 C [Contraste]
+Contrôle 0x14: +/5/11 C [???]
+Contrôle 0x16: +/97/100 C [Niveau maximum de rouge]
+Contrôle 0x18: +/100/100 C [Niveau maximum de vert]
+Contrôle 0x1a: +/98/100 C [Niveau maximum de bleu]
+Contrôle 0x52: +/0/65535 C [???]
+Contrôle 0x68: +/1/5   [???]
+Contrôle 0x6c: +/128/255 C [Niveau minimum de rouge]
+Contrôle 0x6e: +/128/255 C [Niveau minimum de vert]
+Contrôle 0x70: +/128/255 C [Niveau minimum de bleu]
+Contrôle 0xa8: +/1/1   [???]
+Contrôle 0xac: +/63/65535 C [???]
+Contrôle 0xae: +/59/65535 C [???]
+Contrôle 0xb2: +/0/8 C [???]
+Contrôle 0xb4: +/1/1   [???]
+Contrôle 0xb6: +/3/3 C [???]
+Contrôle 0xc0: +/1/65535 C [???]
+Contrôle 0xc6: +/0/65535 C [???]
+Contrôle 0xc8: +/2/65535 C [???]
+Contrôle 0xc9: +/0/65535 C [???]
+Contrôle 0xca: +/2/65535 C [???]
+Contrôle 0xd6: +/1/4 C [Contrôle DPMS - Allumé]
+Contrôle 0xd7: +/0/1   [???]
+Contrôle 0xd8: +/0/1   [???]
+Contrôle 0xdf: +/513/65535 C [???]

@@ -1,0 +1,42 @@
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR0507.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACRlcd.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELD0DA.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELD0DA.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/AUO103D.xml"
+Document not parsed successfully.
+Invalid response, corrupted data - xor is 0xdc, length 0x23
+0000: 6e a3 e3 00 e0 31 20 30 36 20 30 45 20 31 34 20 | n....1 06 0E 14 
+0010: 31 36 20 31 45 29 20 44 36 28 30 31 20 30 34 20 | 16 1E) D6(01 04 
+0020: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 |                 
+0030: 01 00 03 00 03 00 00 00 01 00 00 02 00 0f 00 00 | ................
+0040: 02 00 00                                        | ...             
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR0507.xml"
+Document not parsed successfully.
+I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACRlcd.xml"
+Document not parsed successfully.
+Invalid response, corrupted data - xor is 0x09, length 0x23
+0000: 6e a3 e3 00 20 32 31 48 51 55 29 63 6d 64 73 28 | n... 21HQU)cmds(
+0010: 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 | ((((((((((((((((
+0020: 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 | ((((((((((((((((
+0030: 01 00 03 00 03 00 00 00 01 00 00 02 00 0f 00 00 | ................
+0040: 02 00 00                                        | ...             
+Invalid response, corrupted data - xor is 0x46, length 0x23
+0000: 6e a3 e3 01 00 46 20 46 46 29 6d 73 77 68 71 6c | n....F FF)mswhql
+0010: 28 31 29 61 73 73 65 74 5f 65 65 70 28 34 30 29 | (1)asset_eep(40)
+0020: 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 | ))))))))))))))))
+0030: 01 00 03 00 03 00 00 00 01 00 00 02 00 0f 00 00 | ................
+0040: 02 00 00                                        | ...             
+Invalid response, first byte is 0xb9, should be 0x6e
+b9 b9 b9 b9 b9 b9 b9 b9 b9 b9 b9                | ...........     
+Invalid response, first byte is 0x85, should be 0x6e
+85 85 85 85 85 85 85 85 85 85 85                | ...........     
+Invalid response, first byte is 0xee, should be 0x6e
+ee ee ee ee ee ee ee ee ee ee ee                | ...........     
+Invalid response, first byte is 0x1d, should be 0x6e
+1d 1d 1d 1d 1d 1d 1d 1d 1d 1d 1d                | ...........     
+Invalid response, first byte is 0x5e, should be 0x6e
+5e 5e 5e 5e 5e 5e 5e 5e 5e 5e 5e                | ^^^^^^^^^^^     

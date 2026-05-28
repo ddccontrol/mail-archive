@@ -165,76 +165,20 @@ On 1/7/13 6:07 PM, Sch=C3=B6neicher wrote:
 >=20
 
 --------------080200090108000803020101
-Content-Type: text/plain; charset=UTF-8; x-mac-type="0"; x-mac-creator="0";
-	name="ddccontrol.HWP26F7"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment;
- filename="ddccontrol.HWP26F7"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="ddccontrol.HWP26F7.external.txt"
+X-External-Attachment-Path: attachments/2013-01/message-002829/ddccontrol.HWP26F7
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3432
 
-ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBW
-ZG92aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBC
-b2ljaGF0IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFC
-U09MVVRFTFkgTk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0
-aGlzIHByb2dyYW0gdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMg
-TGljZW5zZS4KClByb2JpbmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLi4KRGV0ZWN0
-ZWQgbW9uaXRvcnMgOgogLSBEZXZpY2U6IGRldjovZGV2L2kyYy0xCiAgIEREQy9DSSBzdXBw
-b3J0ZWQ6IFllcwogICBNb25pdG9yIE5hbWU6IFZFU0Egc3RhbmRhcmQgbW9uaXRvcgogICBJ
-bnB1dCB0eXBlOiBEaWdpdGFsCiAgKEF1dG9tYXRpY2FsbHkgc2VsZWN0ZWQpClJlYWRpbmcg
-RURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBhdCBidXMgZGV2Oi9kZXYvaTJjLTEuLi4K
-CkVESUQgcmVhZGluZ3M6CglQbHVnIGFuZCBQbGF5IElEOiBIV1AyNkY3IFtWRVNBIHN0YW5k
-YXJkIG1vbml0b3JdCglJbnB1dCB0eXBlOiBEaWdpdGFsCj09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT0gV0FSTklORyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ClRo
-ZXJlIGlzIG5vIHN1cHBvcnQgZm9yIHlvdXIgbW9uaXRvciBpbiB0aGUgZGF0YWJhc2UsIGJ1
-dCBkZGNjb250cm9sIGlzCnVzaW5nIGEgYmFzaWMgZ2VuZXJpYyBwcm9maWxlLiBNYW55IGNv
-bnRyb2xzIHdpbGwgbm90IGJlIHN1cHBvcnRlZCwgYW5kCnNvbWUgY29udHJvbHMgbWF5IG5v
-dCB3b3JrIGFzIGV4cGVjdGVkLgpQbGVhc2UgdXBkYXRlIGRkY2NvbnRyb2wtZGIsIG9yLCBp
-ZiB5b3UgYXJlIGFscmVhZHkgdXNpbmcgdGhlIGxhdGVzdAp2ZXJzaW9uLCBwbGVhc2Ugc2Vu
-ZCB0aGUgb3V0cHV0IG9mIHRoZSBmb2xsb3dpbmcgY29tbWFuZCB0bwpkZGNjb250cm9sLXVz
-ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDoKCkxBTkc9IExDX0FMTD0gZGRjY29udHJvbCAt
-cCAtYyAtZAoKVGhhbmsgeW91Lgo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdB
-Uk5JTkcgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKQ2FwYWJpbGl0aWVzOgpS
-YXcgb3V0cHV0OiAocHJvdChtb25pdG9yKXR5cGUobGNkKW1vZGVsKExQMjQ3NVcpY21kcygw
-MSAwMiAwMyAwNyAwQyA0RSBGMyBFMyl2Y3AoMDIgMDQgMDUgMDggMEIgMEMgMTAgMTIgMTQo
-MDEgMDUgMDggMEIpIDE2IDE4IDFBIDUyIDYwKDAxIDAyIDAzIDA0IDA1IDA3IDBDIDEzIDE0
-IDE1IDE3IDFDKSA2QyA2RSA3MCA5QiA5QyA5RCA5RSA5RiBBMCBBQyBBRSBCMiBCNiBDMCBD
-NiBDOCBDOSBDQSBDQygwMiAwMyAwNCAwNSAwNiAwOCAwQSAwRCAxNCkgRDYoMDEgMDQgMDUp
-IERGIEZBKDAwIDAxIDAyKSBGQiBGQyBGRCBGRSgwMCAwMSAwMiAwNCkpbXN3aHFsKDEpbWNj
-c192ZXIoMi4xKWFzc2V0X2VlcCgzMiltcHVfdmVyKDAxKSkKUGFyc2VkIG91dHB1dDogCglW
-Q1A6IDAyIDA0IDA1IDA4IDBiIDBjIDEwIDEyIDE0IDE2IDE4IDFhIDUyIDYwIDZjIDZlIDcw
-IDliIDljIDlkIDllIDlmIGEwIGFjIGFlIGIyIGI2IGMwIGM2IGM4IGM5IGNhIGNjIGQ2IGRm
-IGZhIGZiIGZjIGZkIGZlIAoJVHlwZTogTENECgpDb250cm9scyAodmFsaWQvY3VycmVudC9t
-YXgpIFtEZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpDb250cm9sIDB4MDI6ICsvMi8yIEMg
-Wz8/P10KQ29udHJvbCAweDA0OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdHNd
-CkNvbnRyb2wgMHgwNTogKy8wLzEgQyBbUmVzdG9yZSBCcmlnaHRuZXNzIGFuZCBDb250cmFz
-dF0KQ29udHJvbCAweDA2OiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHgwODogKy8wLzEgQyBb
-UmVzdG9yZSBGYWN0b3J5IERlZmF1bHQgQ29sb3JdCkNvbnRyb2wgMHgwYjogKy8zMDAwLzY1
-NTM1IEMgWz8/P10KQ29udHJvbCAweDBjOiArLzEvMiBDIFs/Pz9dCkNvbnRyb2wgMHgwZTog
-Ky81MC8xMDAgICBbPz8/XQpDb250cm9sIDB4MTA6ICsvNDQvMTAwIEMgW0JyaWdodG5lc3Nd
-CkNvbnRyb2wgMHgxMjogKy84MC8xMDAgQyBbQ29udHJhc3RdCkNvbnRyb2wgMHgxNDogKy81
-LzExIEMgWz8/P10KQ29udHJvbCAweDE2OiArLzI1NS8yNTUgQyBbUmVkIG1heGltdW0gbGV2
-ZWxdCkNvbnRyb2wgMHgxODogKy8yNTUvMjU1IEMgW0dyZWVuIG1heGltdW0gbGV2ZWxdCkNv
-bnRyb2wgMHgxYTogKy8yNTUvMjU1IEMgW0JsdWUgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAw
-eDFlOiArLzAvMSAgIFs/Pz9dCkNvbnRyb2wgMHgxZjogKy8wLzY1NTM1ICAgWz8/P10KQ29u
-dHJvbCAweDIwOiArLzUwLzEwMCAgIFs/Pz9dCkNvbnRyb2wgMHgzMDogKy81MC8xMDAgICBb
-Pz8/XQpDb250cm9sIDB4M2U6ICsvMC82MyAgIFs/Pz9dCkNvbnRyb2wgMHg1MjogKy8xNi8y
-NTUgQyBbPz8/XQpDb250cm9sIDB4NjA6ICsvMy8yOCBDIFtJbnB1dCBTb3VyY2UgU2VsZWN0
-IC0gRGlnaXRhbF0KQ29udHJvbCAweDZjOiArLzUwLzEwMCBDIFtSZWQgbWluaW11bSBsZXZl
-bF0KQ29udHJvbCAweDZlOiArLzUwLzEwMCBDIFtHcmVlbiBtaW5pbXVtIGxldmVsXQpDb250
-cm9sIDB4NzA6ICsvNTAvMTAwIEMgW0JsdWUgbWluaW11bSBsZXZlbF0KQ29udHJvbCAweDli
-OiArLzEyNy8yNTQgQyBbPz8/XQpDb250cm9sIDB4OWM6ICsvMTI3LzI1NCBDIFs/Pz9dCkNv
-bnRyb2wgMHg5ZDogKy8xMjcvMjU0IEMgWz8/P10KQ29udHJvbCAweDllOiArLzEyNy8yNTQg
-QyBbPz8/XQpDb250cm9sIDB4OWY6ICsvMTI3LzI1NCBDIFs/Pz9dCkNvbnRyb2wgMHhhMDog
-Ky8xMjcvMjU0IEMgWz8/P10KQ29udHJvbCAweGFjOiArLzgzNjQvMSBDIFs/Pz9dCkNvbnRy
-b2wgMHhhZTogKy81OTgwLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGIyOiArLzEvNjU1MzUg
-QyBbPz8/XQpDb250cm9sIDB4YjY6ICsvMy82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhjMDog
-Ky84ODQwLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGM2OiArLzkwLzY1NTM1IEMgWz8/P10K
-Q29udHJvbCAweGM4OiArLzMyNzcwLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGM5OiArLzM0
-LzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGNhOiArLzIvMiBDIFs/Pz9dCkNvbnRyb2wgMHhj
-YzogKy8yLzIwIEMgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvNSBDIFtEUE1TIENvbnRyb2wg
-LSBPbl0KQ29udHJvbCAweGRmOiArLzUxMy82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhmYTog
-Ky8wLzIgQyBbPz8/XQpDb250cm9sIDB4ZmI6ICsvMC82NTUzNSBDIFs/Pz9dCkNvbnRyb2wg
-MHhmYzogKy8wLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGZkOiArLzAvNjU1MzUgQyBbPz8/
-XQpDb250cm9sIDB4ZmU6ICsvMC80IEMgWz8/P10K
+Attachment extracted from this mbox message.
+Path: attachments/2013-01/message-002829/ddccontrol.HWP26F7
+Original filename: ddccontrol.HWP26F7
+Original content type: text/plain
+Original decoded size: 3432 bytes
+
 --------------080200090108000803020101--
 
 
@@ -472,89 +416,19 @@ Content-Transfer-Encoding: 7bit
 
 
 --------------010407040407030408060306
-Content-Type: text/plain; charset=UTF-8;
- name="ddccontrol_-p_-c_-d.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment;
- filename="ddccontrol_-p_-c_-d.txt"
+Content-Disposition: attachment; filename="ddccontrol_-p_-c_-d.txt.external.txt"
+X-External-Attachment-Path: attachments/2013-01/message-002832/ddccontrol_-p_-c_-d.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 2812
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors.........I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM00E5.xml"
-Document not parsed successfully.
-.............I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/SAM00E5.xml"
-Document not parsed successfully.
-
-Detected monitors :
- - Device: dev:/dev/i2c-12
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-12...
-
-EDID readings:
-	Plug and Play ID: SAM00E5 [VESA standard monitor]
-	Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Raw output: (type(LCD)vcp(04 05 10 12 60(1 3) B0(1 2) B6 C6 C8 C9 D6(1 4) DC(1 2 3 4) DF))
-Parsed output: 
-	VCP: 04 05 10 12 60 b0 b6 c6 c8 c9 d6 dc df 
-	Type: Unknown
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x06: +/0/1   [???]
-Control 0x08: +/0/1   [???]
-Control 0x0e: +/60/120   [???]
-Control 0x10: +/0/100 C [Brightness]
-Control 0x12: +/45/100 C [Contrast]
-Control 0x16: +/32/64   [???]
-Control 0x18: +/32/64   [???]
-Control 0x1a: +/32/64   [???]
-Control 0x1e: +/0/2   [???]
-Control 0x20: +/55/100   [???]
-Control 0x30: +/35/70   [???]
-Control 0x3e: +/24/31   [???]
-Control 0x60: +/3/3 C [Input Source Select - Digital]
-Control 0x62: +/25/50   [???]
-Control 0x6c: +/144/255   [???]
-Control 0x6e: +/146/255   [???]
-Control 0x70: +/125/255   [???]
-Control 0xb0: +/0/2 C [Settings]
-Control 0xb6: +/3/8 C [???]
-Control 0xc6: +/1/1 C [???]
-Control 0xc8: +/5/16 C [???]
-Control 0xc9: +/1/0 C [???]
-Control 0xca: +/2/2   [???]
-Control 0xcc: +/2/11   [???]
-Control 0xd6: +/1/4 C [DPMS Control - On]
-Control 0xdc: +/4/4 C [???]
-Control 0xdf: +/512/0 C [???]
-Control 0xe0: +/0/2   [???]
-Control 0xe1: +/1/1   [???]
-Control 0xe2: +/0/1   [???]
-Control 0xed: +/15/100   [???]
-Control 0xee: +/15/100   [???]
-Control 0xef: +/13/100   [???]
+Attachment extracted from this mbox message.
+Path: attachments/2013-01/message-002832/ddccontrol_-p_-c_-d.txt
+Original filename: ddccontrol_-p_-c_-d.txt
+Original content type: text/plain
+Original decoded size: 2812 bytes
 
 --------------010407040407030408060306--
 
@@ -615,101 +489,19 @@ The monitor is an "Acer V223W"
 
 
 --------------090104000106060000090002
-Content-Type: text/plain; charset=UTF-8;
- name="ddccontrol.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment;
- filename="ddccontrol.txt"
+Content-Disposition: attachment; filename="ddccontrol.txt.external.txt"
+X-External-Attachment-Path: attachments/2013-02/message-002833/ddccontrol.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3955
 
-# LANG= LC_ALL= ddccontrol -p -c -d
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors.....I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR001B.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACRlcd.xml"
-Document not parsed successfully.
-.I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR001B.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACRlcd.xml"
-Document not parsed successfully.
-..
-Detected monitors :
- - Device: dev:/dev/i2c-2
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
- - Device: dev:/dev/i2c-1
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-2...
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x17
-Non-fatal error: Invalid response, magic is 0x03
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR001B.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACRlcd.xml"
-Document not parsed successfully.
-
-EDID readings:
-        Plug and Play ID: ACR001B [VESA standard monitor]
-        Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x23
-Non-fatal error: Invalid response, magic is 0x17
-Non-fatal error: Invalid response, magic is 0x03
-Raw output: (prot(monitor)type(lcd)model(AL1917)cmds(01 02 03 07 0C E3 F3)vcp(04 05 08 10 12 14(05 08 0B) 16 18 1A 60(01 03) AC AE B2 B6 C6 C8 C9 DF)mswhql(1)mccs_ver(2.0)asset_eep(64)mpu(01))
-Parsed output: 
-        VCP: 04 05 08 10 12 14 16 18 1a 60 ac ae b2 b6 c6 c8 c9 df 
-        Type: LCD
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x08: +/0/1 C [Restore Factory Default Color]
-Control 0x10: +/100/100 C [Brightness]
-Control 0x12: +/50/100 C [Contrast]
-Control 0x14: +/5/13 C [???]
-Control 0x16: +/80/100 C [Red maximum level]
-Control 0x18: +/80/100 C [Green maximum level]
-Control 0x1a: +/80/100 C [Blue maximum level]
-Control 0x60: +/3/3 C [Input Source Select - Digital]
-Invalid response, first byte is 0x00, should be 0x6e
-00 00 00 00 00 00 00 00 00 00 00                | ...........     
-Control 0xac: +/65200/0 C [???]
-Control 0xae: +/5990/0 C [???]
-Control 0xb2: +/1/0 C [???]
-Control 0xb6: +/3/0 C [???]
-Control 0xc6: +/120/65535 C [???]
-Control 0xc8: +/5/0 C [???]
-Control 0xc9: +/256/0 C [???]
-Control 0xdf: +/512/0 C [???]
+Attachment extracted from this mbox message.
+Path: attachments/2013-02/message-002833/ddccontrol.txt
+Original filename: ddccontrol.txt
+Original content type: text/plain
+Original decoded size: 3955 bytes
 
 --------------090104000106060000090002--
 
@@ -955,106 +747,19 @@ http://accessories.ap.dell.com/sna/productdetail.aspx?c=au&cs=audhs1&l=en&s=dhs&
 
 
 --------------040306040909020303010205
-Content-Type: text/plain; charset=UTF-8;
-	name="ddccontrol_-p_-c_-d.Dell_U2713HM.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment;
-	filename="ddccontrol_-p_-c_-d.Dell_U2713HM.txt"
+Content-Disposition: attachment; filename="ddccontrol_-p_-c_-d.Dell_U2713HM.txt.external.txt"
+X-External-Attachment-Path: attachments/2013-03/message-002836/ddccontrol_-p_-c_-d.Dell_U2713HM.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3898
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors.........I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DEL407E.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELlcd.xml"
-Document not parsed successfully.
-.............I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DEL407E.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/DELlcd.xml"
-Document not parsed successfully.
-
-Detected monitors :
- - Device: dev:/dev/i2c-12
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-12...
-
-EDID readings:
-	Plug and Play ID: DEL407E [VESA standard monitor]
-	Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Raw output: (prot(monitor)type(lcd)model(U2713HM)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 06 08 10 12 14(01 04 05 06 08 09 0B 0C) 16 18 1A 52 60(01 03 04 0F) AC AE B2 B6 C6 C8 C9 D6(01 04 05) DC(00 02 03 05 ) F0(00 01) DF FD E0 E1 E2(00 01 02 04 06 0B 0C 0D 0F 10 11 13 14) F1 F2)mccs_ver(2.1)mswhql(1))
-Parsed output: 
-	VCP: 02 04 05 06 08 10 12 14 16 18 1a 52 60 ac ae b2 b6 c6 c8 c9 d6 dc df e0 e1 e2 f0 f1 f2 fd 
-	Type: LCD
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x02: +/1/2 C [Secondary Degauss - Secondary Degauss]
-Control 0x04: +/0/255 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x06: +/0/255 C [Restore Factory Default Geometry]
-Control 0x08: +/0/255 C [Restore Factory Default Color]
-Control 0x0b: +/0/24028   [???]
-Control 0x0c: +/1/255   [???]
-Control 0x0e: +/50/100   [???]
-Control 0x10: +/50/100 C [Brightness]
-Control 0x12: +/50/100 C [Contrast]
-Control 0x14: +/5/12 C [???]
-Control 0x16: +/100/100 C [Red maximum level]
-Control 0x18: +/100/100 C [Green maximum level]
-Control 0x1a: +/100/100 C [Blue maximum level]
-Control 0x1e: +/0/2   [???]
-Control 0x20: +/186/100   [???]
-Control 0x30: +/34/100   [???]
-Control 0x3e: +/0/100   [???]
-Control 0x52: +/0/255 C [???]
-Control 0x60: +/3/14 C [Input Source Select - Digital]
-Control 0x6c: +/128/255   [???]
-Control 0x6e: +/128/255   [???]
-Control 0x70: +/128/255   [???]
-Control 0xa8: +/0/3   [???]
-Control 0xac: +/22864/1 C [???]
-Control 0xae: +/5970/0 C [???]
-Control 0xb2: +/1/8 C [???]
-Control 0xb4: +/1/2   [???]
-Control 0xb6: +/3/5 C [???]
-Control 0xc0: +/406/65535   [???]
-Control 0xc6: +/17868/65535 C [???]
-Control 0xc8: +/22021/0 C [???]
-Control 0xc9: +/257/65535 C [???]
-Control 0xca: +/2/2   [???]
-Control 0xcc: +/2/255   [???]
-Control 0xd6: +/1/255 C [DPMS Control - On]
-Control 0xdc: +/0/255 C [???]
-Control 0xdf: +/513/255 C [???]
-Control 0xe0: +/0/1 C [???]
-Control 0xe1: +/0/1 C [Power control - Off]
-Control 0xe2: +/0/255 C [???]
-Control 0xe3: +/0/1   [???]
-Control 0xf0: +/0/255 C [???]
-Control 0xf1: +/7/1 C [???]
-Control 0xf2: +/0/1 C [???]
-Control 0xfa: +/0/65535   [???]
-Control 0xfd: +/116/65535 C [???]
-Control 0xff: +/0/65535   [???]
+Attachment extracted from this mbox message.
+Path: attachments/2013-03/message-002836/ddccontrol_-p_-c_-d.Dell_U2713HM.txt
+Original filename: ddccontrol_-p_-c_-d.Dell_U2713HM.txt
+Original content type: text/plain
+Original decoded size: 3898 bytes
 
 --------------040306040909020303010205--
 
@@ -1225,55 +930,19 @@ cj48YnI+LS0gPGJyPtCf0LXRgtGAINCf0LvRjtGC0LA8L3A+PC9CT0RZPjwvSFRNTD4K
 ----ALT--4rAdI1y01363461874--
 
 ------4rAdI1y0-aqxToysLO2qUMsOw:1363461874
-Content-Type: application/octet-stream; name="=?UTF-8?B?ZmlsZQ==?="
-Content-Disposition: attachment
-Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="UTF-8_B_ZmlsZQ.external.txt"
+X-External-Attachment-Path: attachments/2013-03/message-002838/UTF-8_B_ZmlsZQ
+X-External-Attachment-Content-Type: application/octet-stream
+X-External-Attachment-Size: 2509
 
-ZGRjY29udHJvbCB2ZXJzaW9uIDAuNC4yCkNvcHlyaWdodCAyMDA0LTIwMDUgT2xlZyBJLiBWZG92
-aWtpbiAob2xlZ0Bjcy5tc3Uuc3UpCkNvcHlyaWdodCAyMDA0LTIwMDYgTmljb2xhcyBCb2ljaGF0
-IChuaWNvbGFzQGJvaWNoYXQuY2gpClRoaXMgcHJvZ3JhbSBjb21lcyB3aXRoIEFCU09MVVRFTFkg
-Tk8gV0FSUkFOVFkuCllvdSBtYXkgcmVkaXN0cmlidXRlIGNvcGllcyBvZiB0aGlzIHByb2dyYW0g
-dW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZS4KClByb2Jp
-bmcgZm9yIGF2YWlsYWJsZSBtb25pdG9ycy4uLi4uLgpEZXRlY3RlZCBtb25pdG9ycyA6CiAtIERl
-dmljZTogcGNpOjAxOjAwLjAtMQogICBEREMvQ0kgc3VwcG9ydGVkOiBZZXMKICAgTW9uaXRvciBO
-YW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTogRGlnaXRhbAogIChBdXRv
-bWF0aWNhbGx5IHNlbGVjdGVkKQogLSBEZXZpY2U6IGRldjovZGV2L2kyYy0xCiAgIEREQy9DSSBz
-dXBwb3J0ZWQ6IFllcwogICBNb25pdG9yIE5hbWU6IFZFU0Egc3RhbmRhcmQgbW9uaXRvcgogICBJ
-bnB1dCB0eXBlOiBEaWdpdGFsClJlYWRpbmcgRURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBh
-dCBidXMgcGNpOjAxOjAwLjAtMS4uLgoKRURJRCByZWFkaW5nczoKCVBsdWcgYW5kIFBsYXkgSUQ6
-IEFDUjAwMUQgW1ZFU0Egc3RhbmRhcmQgbW9uaXRvcl0KCUlucHV0IHR5cGU6IERpZ2l0YWwKPT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT0KVGhlcmUgaXMgbm8gc3VwcG9ydCBmb3IgeW91ciBtb25pdG9yIGluIHRoZSBk
-YXRhYmFzZSwgYnV0IGRkY2NvbnRyb2wgaXMKdXNpbmcgYSBiYXNpYyBnZW5lcmljIHByb2ZpbGUu
-IE1hbnkgY29udHJvbHMgd2lsbCBub3QgYmUgc3VwcG9ydGVkLCBhbmQKc29tZSBjb250cm9scyBt
-YXkgbm90IHdvcmsgYXMgZXhwZWN0ZWQuClBsZWFzZSB1cGRhdGUgZGRjY29udHJvbC1kYiwgb3Is
-IGlmIHlvdSBhcmUgYWxyZWFkeSB1c2luZyB0aGUgbGF0ZXN0CnZlcnNpb24sIHBsZWFzZSBzZW5k
-IHRoZSBvdXRwdXQgb2YgdGhlIGZvbGxvd2luZyBjb21tYW5kIHRvCmRkY2NvbnRyb2wtdXNlcnNA
-bGlzdHMuc291cmNlZm9yZ2UubmV0OgoKTEFORz0gTENfQUxMPSBkZGNjb250cm9sIC1wIC1jIC1k
-CgpUaGFuayB5b3UuCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gV0FSTklORyA9PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpDYXBhYmlsaXRpZXM6ClJhdyBvdXRwdXQ6IChw
-cm90KG1vbml0b3IpdHlwZShsY2QpbW9kZWwoQjE5MyljbWRzKDAxIDAyIDAzIDA3IDBDIDRFIEYz
-IEUzKXZjcCgwNCAwNSAwOCAxMCAxMiAxNCgwMSAwNSAwOCAwQikgMTYgMTggMUEgNjAoMDEgMDMp
-IDYyIEM2IEI2IERGIEZBKDAwIDAxIDAyKSBGQiBGQyBGRCBGRSgwMCAwMSAwMiAwNCkgRkYpbXN3
-aHFsKDEpbWNjc192ZXIoMi4wKWFzc2V0X2VlcCgzMiltcHVfdmVyKDAxKSkKUGFyc2VkIG91dHB1
-dDogCglWQ1A6IDA0IDA1IDA4IDEwIDEyIDE0IDE2IDE4IDFhIDYwIDYyIGI2IGM2IGRmIGZhIGZi
-IGZjIGZkIGZlIGZmIAoJVHlwZTogTENECgpDb250cm9scyAodmFsaWQvY3VycmVudC9tYXgpIFtE
-ZXNjcmlwdGlvbiAtIFZhbHVlIG5hbWVdOgpDb250cm9sIDB4MDQ6ICsvMC8xIEMgW1Jlc3RvcmUg
-RmFjdG9yeSBEZWZhdWx0c10KQ29udHJvbCAweDA1OiArLzAvMSBDIFtSZXN0b3JlIEJyaWdodG5l
-c3MgYW5kIENvbnRyYXN0XQpDb250cm9sIDB4MDY6ICsvMC8xICAgWz8/P10KQ29udHJvbCAweDA4
-OiArLzAvMSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdCBDb2xvcl0KQ29udHJvbCAweDEwOiAr
-LzgwLzEwMCBDIFtCcmlnaHRuZXNzXQpDb250cm9sIDB4MTI6ICsvNDAvMTAwIEMgW0NvbnRyYXN0
-XQpDb250cm9sIDB4MTQ6ICsvOC8xMSBDIFs/Pz9dCkNvbnRyb2wgMHgxNjogKy81MC8xMDAgQyBb
-UmVkIG1heGltdW0gbGV2ZWxdCkNvbnRyb2wgMHgxODogKy81MC8xMDAgQyBbR3JlZW4gbWF4aW11
-bSBsZXZlbF0KQ29udHJvbCAweDFhOiArLzUwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxdCkNv
-bnRyb2wgMHg2MDogKy8zLzMgQyBbSW5wdXQgU291cmNlIFNlbGVjdCAtIERpZ2l0YWxdCkNvbnRy
-b2wgMHg2MjogKy8xMDAvMTAwIEMgW0F1ZGlvIFNwZWFrZXIgVm9sdW1lIEFkanVzdF0KQ29udHJv
-bCAweGI2OiArLzMvNCBDIFs/Pz9dCkNvbnRyb2wgMHhjNjogKy8xMjAvNjU1MzUgQyBbPz8/XQpD
-b250cm9sIDB4ZGY6ICsvNTEyLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGZhOiArLzAvNjU1MzUg
-QyBbPz8/XQpDb250cm9sIDB4ZmI6ICsvNS82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhmYzogKy8x
-MjMzNi82NTUzNSBDIFs/Pz9dCkNvbnRyb2wgMHhmZDogKy8xMjMzNi82NTUzNSBDIFs/Pz9dCkNv
-bnRyb2wgMHhmZTogKy8wLzY1NTM1IEMgWz8/P10KQ29udHJvbCAweGZmOiArLzAvMSBDIFs/Pz9d
-Cg==
+Attachment extracted from this mbox message.
+Path: attachments/2013-03/message-002838/UTF-8_B_ZmlsZQ
+Original filename: =?UTF-8?B?ZmlsZQ==?=
+Original content type: application/octet-stream
+Original decoded size: 2509 bytes
 
 ------4rAdI1y0-aqxToysLO2qUMsOw:1363461874--
 
@@ -1642,129 +1311,21 @@ Skype: Ellinturiel
 
 
 --------------ms040702040305050808040008
-Content-Type: application/pkcs7-signature; name="smime.p7s"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="smime.p7s"
 Content-Description: Криптографическая подпись S/MIME
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="smime.p7s.external.txt"
+X-External-Attachment-Path: attachments/2013-04/message-002840/smime.p7s
+X-External-Attachment-Content-Type: application/pkcs7-signature
+X-External-Attachment-Size: 6342
 
-MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIITRTCC
-BjAwggQYoAMCAQICCQDOiOIb18cN4zANBgkqhkiG9w0BAQUFADCBqDELMAkGA1UEBhMCUlUx
-FjAUBgNVBAgTDVR5dW1lbiBSZWdpb24xDzANBgNVBAcTBlR5dW1lbjEPMA0GA1UEChMGTGly
-ZWluMSQwIgYDVQQLExtMaXJlaW4gQ2VydGlmaWNhdGlvbiBDZW50ZXIxGDAWBgNVBAMTD2Nl
-cnQubGlyZWluLm9yZzEfMB0GCSqGSIb3DQEJARYQYWRtaW5AbGlyZWluLm9yZzAgFw0xMjA0
-MjYwMDAwMDBaGA85OTk5MTIzMTIzNTk1OVowgagxCzAJBgNVBAYTAlJVMRYwFAYDVQQIEw1U
-eXVtZW4gUmVnaW9uMQ8wDQYDVQQHEwZUeXVtZW4xDzANBgNVBAoTBkxpcmVpbjEkMCIGA1UE
-CxMbTGlyZWluIENlcnRpZmljYXRpb24gQ2VudGVyMRgwFgYDVQQDEw9tYWlsLmxpcmVpbi5v
-cmcxHzAdBgkqhkiG9w0BCQEWEGFkbWluQGxpcmVpbi5vcmcwggIiMA0GCSqGSIb3DQEBAQUA
-A4ICDwAwggIKAoICAQDYJVvbqD/X13iLZEQd+KyQ7qX6VDCG56k96V0SGly0Oji8UB637SHS
-7DyKaSb5uW4JyWEpdOf7+Zi3YqI4wA7qCLtniwwtPams4578crDhvGSy7rubDcBW7i4QCMbQ
-NVU0RsenhuUDvFgq/S7kjM2q+FzSkzP46g0x5KXNbXBhV/JH8AlW+nlp79Q3bFVtu/Tl7CyY
-Ne/vjkjNujkQBNVqJ5JTIDli/+3OG8NO0fLlrN9BEV1AKCvYxDg8JHxao2JFZLB4zLomq4wB
-7XKNOBUDsPLuQXaCiQLnmmFg/bxgzTASt+LlmVj5pYDeeXc7kN135ZoHDTcMQ7HulMEWTrRY
-ymNecgzQPoNYs8UdWn3R3xTXWrx6GhGWKEA1iqfw548jdJ/QYxrenkoBX1xIoOnUS3SUhxYn
-2jDgtkkruNtMTtpxOffstJVADHIWregA2rzm5/dqqrqPouRcSYA68bbu1alybOiQarc6Jvxd
-8ayIaLuw6XWjg+ZRgHkTqYlGKzUGAyw+7o6Zb0AY20jHeC9iUtoUf/xDvq/Rq1Z1RkASvxSi
-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
-v4t0vFILrMrCZH6RK64PRxuPAAAAAAAA
+Attachment extracted from this mbox message.
+Path: attachments/2013-04/message-002840/smime.p7s
+Original filename: smime.p7s
+Original content type: application/pkcs7-signature
+Original decoded size: 6342 bytes
+
 --------------ms040702040305050808040008--
 
 
@@ -1818,73 +1379,19 @@ report as requested by package (attachment)
 The display is "Nec MultiSync P221w"
 
 --------------000007010907010700080002
-Content-Type: text/plain; charset=UTF-8;
- name="ddccontrol_out"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment;
- filename="ddccontrol_out"
+Content-Disposition: attachment; filename="ddccontrol_out.external.txt"
+X-External-Attachment-Path: attachments/2013-05/message-002841/ddccontrol_out
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 2572
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors..........
-Detected monitors :
- - Device: dev:/dev/i2c-4
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
- - Device: dev:/dev/i2c-2
-   DDC/CI supported: No
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-4...
-
-EDID readings:
-	Plug and Play ID: NEC674A [VESA standard monitor]
-	Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Raw output: (prot(monitor)type(LCD)cmds(01 03 07 0C C0 C2 C4 C6 C8 F3)vcp(02 04 05 08 10 12 14(01 02 04 06 07 08 0B 0C 0D) 16 18 1A 68(01 02 03 04 05 06 07 09) B0 B6 D6 DF E3 F4 F5(01 02 03 04 05 06 07 09) FA FB FC FF)vcp_p02(33 36 38 39 3B 41 52 54 56 57 5F 68(01 03 05 06) AF B0 B1 B5 B6 B7 B9 BE BF CA E4 EA F8 FF)vcp_p10(10 11)gamma_table(size(300)r_ofs(0)g_ofs(100)b_ofs(200))mccs_ver(2.0)asset_eep(20)mswhql(1)mpu_ver(V1.07)model(P221W))
-Parsed output: 
-	VCP: 02 04 05 08 10 12 14 16 18 1a 68 b0 b6 d6 df e3 f4 f5 fa fb fc ff 
-	Type: Unknown
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x02: +/2/2 C [???]
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x08: +/0/1 C [Restore Factory Default Color]
-Control 0x10: +/82/100 C [Brightness]
-Control 0x12: +/45/100 C [Contrast]
-Control 0x14: +/2/13 C [???]
-Control 0x68: +/9/9 C [???]
-Control 0xb0: +/0/2 C [Settings]
-Control 0xb6: +/3/5 C [???]
-Control 0xd6: +/1/4 C [DPMS Control - On]
-Control 0xdf: +/512/512 C [???]
-Control 0xe3: +/0/1 C [???]
-Control 0xf4: +/512/1 C [???]
-Control 0xf5: +/9/9 C [???]
-Control 0xfa: +/60787/65535 C [???]
-Control 0xfb: +/0/1 C [???]
-Control 0xfc: +/8/23 C [???]
-Control 0xff: +/16831/65535 C [???]
+Attachment extracted from this mbox message.
+Path: attachments/2013-05/message-002841/ddccontrol_out
+Original filename: ddccontrol_out
+Original content type: text/plain
+Original decoded size: 2572 bytes
 
 --------------000007010907010700080002--
 
@@ -1933,20 +1440,19 @@ Content-Disposition: inline
 `ddccontrol -p -c -d` for the LG Flatron IPS231
 
 --G4iJoqBmSsgzjUCe
-Content-Type: text/plain; charset=us-ascii
-Content-Disposition: attachment; filename="dump.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="dump.txt.external.txt"
+X-External-Attachment-Path: attachments/2013-05/message-002842/dump.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 566
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors.......I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/FUS0051.xml"
-Document not parsed successfully.
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/GSM5816.xml"
-Document not parsed successfully.
-
+Attachment extracted from this mbox message.
+Path: attachments/2013-05/message-002842/dump.txt
+Original filename: dump.txt
+Original content type: text/plain
+Original decoded size: 566 bytes
 
 --G4iJoqBmSsgzjUCe--
 
@@ -2335,82 +1841,21 @@ Content-Type: text/html; charset=ISO-8859-1
 --089e013d1bee42adb204de023f3f--
 
 --089e013d1bee42adb604de023f41
-Content-Type: application/octet-stream; name=dccontrol output
-Content-Disposition: attachment; filename=dccontrol output
-Content-Transfer-Encoding: base64
 X-Attachment-Id: f_hhdb9c2s0
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="dccontrol_output.external.txt"
+X-External-Attachment-Path: attachments/2013-05/message-002845/dccontrol_output
+X-External-Attachment-Content-Type: application/octet-stream
+X-External-Attachment-Size: 4016
 
-On4kIExBTkc9IExDX0FMTD0gZGRjY29udHJvbCAtcCAtYyAtZApkZGNjb250cm9sIHZlcnNpb24g
-MC40LjIKQ29weXJpZ2h0IDIwMDQtMjAwNSBPbGVnIEkuIFZkb3Zpa2luIChvbGVnQGNzLm1zdS5z
-dSkKQ29weXJpZ2h0IDIwMDQtMjAwNiBOaWNvbGFzIEJvaWNoYXQgKG5pY29sYXNAYm9pY2hhdC5j
-aCkKVGhpcyBwcm9ncmFtIGNvbWVzIHdpdGggQUJTT0xVVEVMWSBOTyBXQVJSQU5UWS4KWW91IG1h
-eSByZWRpc3RyaWJ1dGUgY29waWVzIG9mIHRoaXMgcHJvZ3JhbSB1bmRlciB0aGUgdGVybXMgb2Yg
-dGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlLgoKUHJvYmluZyBmb3IgYXZhaWxhYmxlIG1v
-bml0b3JzcmFkZW9uX29wZW46IGNhbm5vdCBvcGVuIC9kZXYvbWVtOiBQZXJtaXNzaW9uIGRlbmll
-ZAouLi4uSS9PIHdhcm5pbmcgOiBmYWlsZWQgdG8gbG9hZCBleHRlcm5hbCBlbnRpdHkgIi91c3Iv
-c2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9yL0RFTEQwNTMueG1sIgpEb2N1bWVudCBub3QgcGFy
-c2VkIHN1Y2Nlc3NmdWxseS4KSS9PIHdhcm5pbmcgOiBmYWlsZWQgdG8gbG9hZCBleHRlcm5hbCBl
-bnRpdHkgIi91c3Ivc2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9yL0RFTGxjZC54bWwiCkRvY3Vt
-ZW50IG5vdCBwYXJzZWQgc3VjY2Vzc2Z1bGx5LgouCkRldGVjdGVkIG1vbml0b3JzIDoKIC0gRGV2
-aWNlOiBkZXY6L2Rldi9pMmMtMAogICBEREMvQ0kgc3VwcG9ydGVkOiBZZXMKICAgTW9uaXRvciBO
-YW1lOiBWRVNBIHN0YW5kYXJkIG1vbml0b3IKICAgSW5wdXQgdHlwZTogQW5hbG9nCiAgKEF1dG9t
-YXRpY2FsbHkgc2VsZWN0ZWQpClJlYWRpbmcgRURJRCBhbmQgaW5pdGlhbGl6aW5nIEREQy9DSSBh
-dCBidXMgZGV2Oi9kZXYvaTJjLTAuLi4KSS9PIHdhcm5pbmcgOiBmYWlsZWQgdG8gbG9hZCBleHRl
-cm5hbCBlbnRpdHkgIi91c3Ivc2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9yL0RFTEQwNTMueG1s
-IgpEb2N1bWVudCBub3QgcGFyc2VkIHN1Y2Nlc3NmdWxseS4KSS9PIHdhcm5pbmcgOiBmYWlsZWQg
-dG8gbG9hZCBleHRlcm5hbCBlbnRpdHkgIi91c3Ivc2hhcmUvZGRjY29udHJvbC1kYi9tb25pdG9y
-L0RFTGxjZC54bWwiCkRvY3VtZW50IG5vdCBwYXJzZWQgc3VjY2Vzc2Z1bGx5LgoKRURJRCByZWFk
-aW5nczoKCVBsdWcgYW5kIFBsYXkgSUQ6IERFTEQwNTMgW1ZFU0Egc3RhbmRhcmQgbW9uaXRvcl0K
-CUlucHV0IHR5cGU6IEFuYWxvZwo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IFdBUk5J
-TkcgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpUaGVyZSBpcyBubyBzdXBwb3J0IGZv
-ciB5b3VyIG1vbml0b3IgaW4gdGhlIGRhdGFiYXNlLCBidXQgZGRjY29udHJvbCBpcwp1c2luZyBh
-IGJhc2ljIGdlbmVyaWMgcHJvZmlsZS4gTWFueSBjb250cm9scyB3aWxsIG5vdCBiZSBzdXBwb3J0
-ZWQsIGFuZApzb21lIGNvbnRyb2xzIG1heSBub3Qgd29yayBhcyBleHBlY3RlZC4KUGxlYXNlIHVw
-ZGF0ZSBkZGNjb250cm9sLWRiLCBvciwgaWYgeW91IGFyZSBhbHJlYWR5IHVzaW5nIHRoZSBsYXRl
-c3QKdmVyc2lvbiwgcGxlYXNlIHNlbmQgdGhlIG91dHB1dCBvZiB0aGUgZm9sbG93aW5nIGNvbW1h
-bmQgdG8KZGRjY29udHJvbC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ6CgpMQU5HPSBMQ19B
-TEw9IGRkY2NvbnRyb2wgLXAgLWMgLWQKClRoYW5rIHlvdS4KPT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PSBXQVJOSU5HID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkNhcGFi
-aWxpdGllczoKUmF3IG91dHB1dDogKHByb3QobW9uaXRvcil0eXBlKGxjZCltb2RlbChTMjI0MEwp
-Y21kcygwMSAwMiAwMyAwNyAwQyBFMyBGMyl2Y3AoMDIgMDQgMDUgMDYgMDggMEUgMTAgMTIgMTQo
-MDUgMDggMEIgMEMpIDE2IDE4IDFBIDFFIDIwIDMwIDNFIDUyIDYwKDAxIDAzKSBBQyBBRSBCMiBC
-NiBDOCBDOSBENigwMSAwNCAwNSkgREMoMDAgMDIgMDMgMDUgKSBGMCgwMCAwMSkgREYgRTAgRTEg
-RTIoMDAgMDEgMDIgMDQgMDYgMEUgMTIgMTQpIEYxIEYyKW1jY3NfdmVyKDIuMSltc3docWwoMSkp
-ClBhcnNlZCBvdXRwdXQ6IAoJVkNQOiAwMiAwNCAwNSAwNiAwOCAwZSAxMCAxMiAxNCAxNiAxOCAx
-YSAxZSAyMCAzMCAzZSA1MiA2MCBhYyBhZSBiMiBiNiBjOCBjOSBkNiBkYyBkZiBlMCBlMSBlMiBm
-MCBmMSBmMiAKCVR5cGU6IExDRAoKQ29udHJvbHMgKHZhbGlkL2N1cnJlbnQvbWF4KSBbRGVzY3Jp
-cHRpb24gLSBWYWx1ZSBuYW1lXToKQ29udHJvbCAweDAyOiArLzIvMiBDIFs/Pz9dCkNvbnRyb2wg
-MHgwNDogKy8wLzI1NSBDIFtSZXN0b3JlIEZhY3RvcnkgRGVmYXVsdHNdCkNvbnRyb2wgMHgwNTog
-Ky8wLzEgQyBbUmVzdG9yZSBCcmlnaHRuZXNzIGFuZCBDb250cmFzdF0KQ29udHJvbCAweDA2OiAr
-LzAvMjU1IEMgW1Jlc3RvcmUgRmFjdG9yeSBEZWZhdWx0IEdlb21ldHJ5XQpDb250cm9sIDB4MDg6
-ICsvMC8yNTUgQyBbUmVzdG9yZSBGYWN0b3J5IERlZmF1bHQgQ29sb3JdCkNvbnRyb2wgMHgwYjog
-Ky8wLzI0MDI4ICAgWz8/P10KQ29udHJvbCAweDBjOiArLzEvMjU1ICAgWz8/P10KQ29udHJvbCAw
-eDBlOiArLzUwLzEwMCBDIFtJbWFnZSBMb2NrIENvYXJzZSAoQ2xvY2spXQpDb250cm9sIDB4MTA6
-ICsvODAvMTAwIEMgW0JyaWdodG5lc3NdCkNvbnRyb2wgMHgxMjogKy84MC8xMDAgQyBbQ29udHJh
-c3RdCkNvbnRyb2wgMHgxNDogKy81LzEyIEMgWz8/P10KQ29udHJvbCAweDE2OiArLzg5LzEwMCBD
-IFtSZWQgbWF4aW11bSBsZXZlbF0KQ29udHJvbCAweDE4OiArLzg5LzEwMCBDIFtHcmVlbiBtYXhp
-bXVtIGxldmVsXQpDb250cm9sIDB4MWE6ICsvMTAwLzEwMCBDIFtCbHVlIG1heGltdW0gbGV2ZWxd
-CkNvbnRyb2wgMHgxZTogKy8wLzIgQyBbQXV0b21hdGljYWxseSBhZGp1c3RdCkNvbnRyb2wgMHgy
-MDogKy81MC8xMDAgQyBbSG9yaXpvbnRhbCBQb3NpdGlvbl0KQ29udHJvbCAweDMwOiArLzUwLzEw
-MCBDIFtWZXJ0aWNhbCBQb3NpdGlvbl0KQ29udHJvbCAweDNlOiArLzM5LzEwMCBDIFtJbWFnZSBM
-b2NrIEZpbmUgKENsb2NrIFBoYXNlKV0KQ29udHJvbCAweDUyOiArLzMwLzI1NSBDIFs/Pz9dCkNv
-bnRyb2wgMHg2MDogKy8xLzE0IEMgW0lucHV0IFNvdXJjZSBTZWxlY3QgLSBBbmFsb2ddCkNvbnRy
-b2wgMHg2YzogKy8xMjgvMjU1ICAgWz8/P10KQ29udHJvbCAweDZlOiArLzEyOC8yNTUgICBbPz8/
-XQpDb250cm9sIDB4NzA6ICsvMTI4LzI1NSAgIFs/Pz9dCkNvbnRyb2wgMHhhODogKy8wLzMgICBb
-Pz8/XQpDb250cm9sIDB4YWM6ICsvMTk2NC8xIEMgWz8/P10KQ29udHJvbCAweGFlOiArLzYwMDAv
-MCBDIFs/Pz9dCkNvbnRyb2wgMHhiMjogKy8xLzggQyBbPz8/XQpDb250cm9sIDB4YjQ6ICsvMS8y
-ICAgWz8/P10KQ29udHJvbCAweGI2OiArLzMvNSBDIFs/Pz9dCkNvbnRyb2wgMHhjMDogKy82MTcv
-NjU1MzUgICBbPz8/XQpDb250cm9sIDB4YzY6ICsvNjU1MzUvNjU1MzUgICBbPz8/XQpDb250cm9s
-IDB4Yzg6ICsvMjIwMjEvMCBDIFs/Pz9dCkNvbnRyb2wgMHhjOTogKy81MTMvNjU1MzUgQyBbPz8/
-XQpDb250cm9sIDB4Y2E6ICsvMi8yICAgWz8/P10KQ29udHJvbCAweGQ2OiArLzEvMjU1IEMgW0RQ
-TVMgQ29udHJvbCAtIE9uXQpDb250cm9sIDB4ZGM6ICsvMC8yNTUgQyBbPz8/XQpDb250cm9sIDB4
-ZGY6ICsvNTEzLzI1NSBDIFs/Pz9dCkNvbnRyb2wgMHhlMDogKy8wLzEgQyBbPz8/XQpDb250cm9s
-IDB4ZTE6ICsvMC8xIEMgW1Bvd2VyIGNvbnRyb2wgLSBPZmZdCkNvbnRyb2wgMHhlMjogKy8wLzI1
-NSBDIFs/Pz9dCkNvbnRyb2wgMHhlMzogKy8wLzEgICBbPz8/XQpDb250cm9sIDB4ZjA6ICsvMC8y
-NTUgQyBbPz8/XQpDb250cm9sIDB4ZjE6ICsvMS8xIEMgWz8/P10KQ29udHJvbCAweGYyOiArLzAv
-MSBDIFs/Pz9dCkNvbnRyb2wgMHhmYTogKy8wLzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGZkOiAr
-Lzk5LzY1NTM1ICAgWz8/P10KQ29udHJvbCAweGZlOiArLzk5LzI5MSAgIFs/Pz9dCkNvbnRyb2wg
-MHhmZjogKy85OS82NTUzNSAgIFs/Pz9dCgo=
+Attachment extracted from this mbox message.
+Path: attachments/2013-05/message-002845/dccontrol_output
+Original filename: dccontrol output
+Original content type: application/octet-stream
+Original decoded size: 4016 bytes
+
 --089e013d1bee42adb604de023f41--
 
 
@@ -4101,96 +3546,19 @@ I send you the file output ddccontrol.
 
 Regards, Peter.
 --nextPart2276204.IFpas7IcQf
-Content-Disposition: attachment; filename="G246HQL_ddcontrol_out.txt"
-Content-Transfer-Encoding: 7Bit
-Content-Type: text/plain; charset="UTF-8"; name="G246HQL_ddcontrol_out.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="G246HQL_ddcontrol_out.txt.external.txt"
+X-External-Attachment-Path: attachments/2013-09/message-002854/G246HQL_ddcontrol_out.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3441
 
-ddccontrol version 0.4.2
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
-This program comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of this program under the terms of the GNU General Public License.
-
-Probing for available monitors........
-Detected monitors :
- - Device: dev:/dev/i2c-4
-   DDC/CI supported: Yes
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-  (Automatically selected)
- - Device: dev:/dev/i2c-2
-   DDC/CI supported: No
-   Monitor Name: VESA standard monitor
-   Input type: Digital
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-4...
-I/O warning : failed to load external entity "/usr/share/ddccontrol-db/monitor/ACR035B.xml"
-Document not parsed successfully.
-
-EDID readings:
-	Plug and Play ID: ACR035B [VESA standard monitor]
-	Input type: Digital
-=============================== WARNING ===============================
-There is no support for your monitor in the database, but ddccontrol is
-using a basic generic profile. Many controls will not be supported, and
-some controls may not work as expected.
-Please update ddccontrol-db, or, if you are already using the latest
-version, please send the output of the following command to
-ddccontrol-users@lists.sourceforge.net:
-
-LANG= LC_ALL= ddccontrol -p -c -d
-
-Thank you.
-=============================== WARNING ===============================
-
-Capabilities:
-Raw output: (prot(monitor)type(LCD)model(G246HQL)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 06 08 0B 0C 10 12 14(05 08 0B) 16 18 1A 52 60(01 03 0F 11) 62 8D(01 02)  AC AE B2 B6 C0 C6 C8 C9 CA(01 02) CC(01 02 03 04 05 06 0A 0D) D6(01 04 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.1))
-Parsed output: 
-	VCP: 02 04 05 06 08 0b 0c 10 12 14 16 18 1a 52 60 62 8d ac ae b2 b6 c0 c6 c8 c9 ca cc d6 df 
-	Type: Unknown
-
-Controls (valid/current/max) [Description - Value name]:
-Control 0x02: +/2/2 C [???]
-Control 0x04: +/0/1 C [Restore Factory Defaults]
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]
-Control 0x06: +/0/1 C [Restore Factory Default Geometry]
-Control 0x08: +/0/1 C [Restore Factory Default Color]
-Control 0x0b: +/100/0 C [???]
-Control 0x0c: +/65506/63 C [???]
-Control 0x0e: +/11904/100   [???]
-Control 0x10: +/80/100 C [Brightness]
-Control 0x12: +/50/100 C [Contrast]
-Control 0x14: +/11/11 C [???]
-Control 0x16: +/100/100 C [Red maximum level]
-Control 0x18: +/100/100 C [Green maximum level]
-Control 0x1a: +/100/100 C [Blue maximum level]
-Control 0x1e: +/0/1   [???]
-Control 0x1f: +/1/1   [???]
-Control 0x20: +/50/100   [???]
-Control 0x30: +/50/100   [???]
-Control 0x3e: +/242/100   [???]
-Control 0x52: +/20/65535 C [???]
-Control 0x60: +/3/4 C [Input Source Select - Digital]
-Control 0x62: +/70/100 C [Audio Speaker Volume Adjust]
-Control 0x6c: +/80/100   [???]
-Control 0x6e: +/80/100   [???]
-Control 0x70: +/80/100   [???]
-Invalid response, length is 9, should be 8 at most
-Invalid response, length is 9, should be 8 at most
-Invalid response, length is 9, should be 8 at most
-Control 0x87: +/2/4   [???]
-Control 0x8d: +/2/2 C [???]
-Control 0xac: +/1964/1 C [???]
-Control 0xae: +/6000/65535 C [???]
-Control 0xb2: +/1/1 C [???]
-Control 0xb6: +/3/5 C [???]
-Control 0xc0: +/54/65535 C [???]
-Control 0xc6: +/120/255 C [???]
-Control 0xc8: +/9/0 C [???]
-Control 0xc9: +/1/65535 C [???]
-Control 0xca: +/1/2 C [???]
-Control 0xcc: +/9/13 C [???]
-Control 0xd6: +/1/5 C [DPMS Control - On]
-Control 0xdf: +/513/65535 C [???]
+Attachment extracted from this mbox message.
+Path: attachments/2013-09/message-002854/G246HQL_ddcontrol_out.txt
+Original filename: G246HQL_ddcontrol_out.txt
+Original content type: text/plain
+Original decoded size: 3441 bytes
 
 --nextPart2276204.IFpas7IcQf--
 

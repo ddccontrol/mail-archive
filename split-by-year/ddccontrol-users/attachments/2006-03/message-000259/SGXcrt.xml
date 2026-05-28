@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<monitor name="SGI standard CRT">
+	<controls>
+		<control id="colorpreset" address="0x14">
+			<value id="user1"  value="0"/>
+			<value id="user2" value="1"/>
+			<value id="user3" value="2"/>
+		</control>
+		<!--- Control 0x68: +/1/5 C [Language], but what the values mean ? -->
+	</controls>
+	<include file="VESA"/>
+</monitor>

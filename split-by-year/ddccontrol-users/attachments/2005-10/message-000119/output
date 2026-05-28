@@ -1,0 +1,71 @@
+ddccontrol version 0.2
+Copyright 2005 Oleg I. Vdovikin (oleg@cs.msu.su) and Nicolas Boichat (nicolas@boichat.ch)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+Probing for available monitors.....
+Detected monitors :
+ - Device: pci:01:00.0-2
+   DDC/CI supported: Yes
+   Monitor Name: Unknown monitor (SAM0109)
+   Input type: Analog
+  (Automatically selected)
+Reading EDID and initializing DDC/CI at bus pci:01:00.0-2...
+
+EDID readings:
+	Plug and Play ID: SAM0109 [(null)]
+	Input type: Analog
+
+Capabilities:
+(prot(monitor)type(crt)model(LEO96k(LEO Series))cmds(01 02 03 E3 F3)vcp(01 05 06 08 10 0B 0C 12 14(1 8 5 4) 16 18 1A 20 22 24 26 30 32 3A 40 42 44 46 48 4a 4c 6C 6E 70 AC AE B0 E5 E6 E7 56 58 DC(1 2 3))vcpname(14(9300 6500)))0
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x01: +/0/255 [???]
+Control 0x0b: +/100/100 [???]
+Control 0x0c: +/35/63 [???]
+Control 0x10: +/0/127 [???]
+Control 0x12: +/85/85 [???]
+Control 0x14: +/5/3 [???]
+Control 0x16: +/85/127 [???]
+Control 0x18: +/77/127 [???]
+Control 0x1a: +/59/127 [???]
+Control 0x1c: +/64/255 [???]
+Control 0x20: +/44/97 [???]
+Control 0x22: +/129/255 [???]
+Control 0x24: +/33/97 [???]
+Control 0x26: +/62/127 [???]
+Control 0x28: +/0/255 [???]
+Control 0x2a: +/220/255 [???]
+Control 0x30: +/48/97 [???]
+Control 0x32: +/73/100 [???]
+Control 0x38: +/0/255 [???]
+Control 0x3a: +/32/127 [???]
+Control 0x3c: +/64/127 [???]
+Control 0x40: +/34/97 [???]
+Control 0x42: +/54/87 [???]
+Control 0x44: +/64/128 [???]
+Control 0x46: +/29/60 [???]
+Control 0x4a: +/28/60 [???]
+Control 0x56: +/0/127 [???]
+Control 0x58: +/0/127 [???]
+Control 0x6c: +/135/255 [???]
+Control 0x6e: +/123/255 [???]
+Control 0x70: +/132/255 [???]
+Control 0xac: +/21964/2 [???]
+Control 0xae: +/7000/0 [???]
+Control 0xdc: +/1/255 [???]
+Control 0xe0: +/14/14 [???]
+Control 0xe1: +/1/255 [???]
+Control 0xe2: +/0/255 [???]
+Control 0xe3: +/0/255 [???]
+Control 0xe4: +/0/255 [???]
+Control 0xe5: +/14/14 [???]
+Control 0xe6: +/14/14 [???]
+Control 0xe7: +/14/14 [???]
+Control 0xe8: +/0/7 [???]
+Control 0xef: +/64/127 [???]
+Control 0xf5: +/1/255 [???]
+Control 0xf6: +/156/255 [???]
+Control 0xf7: +/0/255 [???]
+Control 0xf8: +/74/127 [???]
+Control 0xff: +/0/127 [???]

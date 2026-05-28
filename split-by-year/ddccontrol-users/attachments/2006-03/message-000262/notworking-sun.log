@@ -1,0 +1,190 @@
+sentinel ~ # ddccontrol -p -c -d -v
+ddccontrol version 0.4.1
+Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)
+Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the terms of the GNU General Public License.
+
+ddcpci initing...
+Starting /usr/bin/ddcpci 1 872579467 &...
+Probing for available monitors...
+i810_open: Using region 0 (d0400000, 80000)
+Found PCI device (pci:00:02.0-0)
+Found PCI device (pci:00:02.0-1)
+Found PCI device (pci:00:02.0-2)
+Device: pci:00:02.0-0
+i810_open: Using region 0 (d0400000, 80000)
+Control colorpreset has been discarded by the caps string.
+Control tlpurity has been discarded by the caps string.
+Control trpurity has been discarded by the caps string.
+Control blpurity has been discarded by the caps string.
+Control brpurity has been discarded by the caps string.
+Control language has been discarded by the caps string.
+Control brightness has been discarded by the caps string.
+Control contrast has been discarded by the caps string.
+Control red has been discarded by the caps string.
+Control green has been discarded by the caps string.
+Control blue has been discarded by the caps string.
+Control redblack has been discarded by the caps string.
+Control greenblack has been discarded by the caps string.
+Control blueblack has been discarded by the caps string.
+Control colortemp has been discarded by the caps string.
+Control hpos has been discarded by the caps string.
+Control vpos has been discarded by the caps string.
+Control hsize has been discarded by the caps string.
+Control vsize has been discarded by the caps string.
+Control auto has been discarded by the caps string.
+Control hpincushion has been discarded by the caps string.
+Control hpincushionbalance has been discarded by the caps string.
+Control vlinearity has been discarded by the caps string.
+Control vlinearitybalance has been discarded by the caps string.
+Control hmisconvergence has been discarded by the caps string.
+Control vmisconvergence has been discarded by the caps string.
+Control keybalance has been discarded by the caps string.
+Control key has been discarded by the caps string.
+Control tdistortionctrl has been discarded by the caps string.
+Control tdistortionbalance has been discarded by the caps string.
+Control bdistortionctrl has been discarded by the caps string.
+Control bdistortionbalance has been discarded by the caps string.
+Control tilt has been discarded by the caps string.
+Control hmoire has been discarded by the caps string.
+Control vmoire has been discarded by the caps string.
+Control focus has been discarded by the caps string.
+Control coarse has been discarded by the caps string.
+Control fine has been discarded by the caps string.
+Control defaults has been discarded by the caps string.
+Control defaultluma has been discarded by the caps string.
+Control defaultgeom has been discarded by the caps string.
+Control defaultcolor has been discarded by the caps string.
+Control settings has been discarded by the caps string.
+Control audiospeakervolume has been discarded by the caps string.
+Control degauss has been discarded by the caps string.
+Control osdorientation has been discarded by the caps string.
+Control inputsource has been discarded by the caps string.
+Control dpms has been discarded by the caps string.
+Control power has been discarded by the caps string.
+ddcci_open returned 0
+Device: pci:00:02.0-1
+i810_open: Using region 0 (d0400000, 80000)
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+ddcci_open returned -2
+Device: pci:00:02.0-2
+i810_open: Using region 0 (d0400000, 80000)
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+ddcci_open returned -2
+Detected monitors :
+ - Device: pci:00:02.0-0
+    DDC/CI supported: Yes
+       Monitor Name: SUN GDM-5410
+          Input type: Analog
+	    (Automatically selected)
+	    Reading EDID and initializing DDC/CI at bus pci:00:02.0-0...
+	    Device: pci:00:02.0-0
+	    i810_open: Using region 0 (d0400000, 80000)
+	    Serial number: 352666188
+	    Manufactured: Week 34, 2000
+	    EDID version: 1.2
+	    Maximum size: 40 x 30 (cm)
+	    Invalid sequence in caps.
+	    Control colorpreset has been discarded by the caps string.
+	    Control tlpurity has been discarded by the caps string.
+	    Control trpurity has been discarded by the caps string.
+	    Control blpurity has been discarded by the caps string.
+	    Control brpurity has been discarded by the caps string.
+	    Control language has been discarded by the caps string.
+	    Control brightness has been discarded by the caps string.
+	    Control contrast has been discarded by the caps string.
+	    Control red has been discarded by the caps string.
+	    Control green has been discarded by the caps string.
+	    Control blue has been discarded by the caps string.
+	    Control redblack has been discarded by the caps string.
+	    Control greenblack has been discarded by the caps string.
+	    Control blueblack has been discarded by the caps string.
+	    Control colortemp has been discarded by the caps string.
+	    Control hpos has been discarded by the caps string.
+	    Control vpos has been discarded by the caps string.
+	    Control hsize has been discarded by the caps string.
+	    Control vsize has been discarded by the caps string.
+	    Control auto has been discarded by the caps string.
+	    Control hpincushion has been discarded by the caps string.
+	    Control hpincushionbalance has been discarded by the caps string.
+	    Control vlinearity has been discarded by the caps string.
+	    Control vlinearitybalance has been discarded by the caps string.
+	    Control hmisconvergence has been discarded by the caps string.
+	    Control vmisconvergence has been discarded by the caps string.
+	    Control keybalance has been discarded by the caps string.
+	    Control key has been discarded by the caps string.
+	    Control tdistortionctrl has been discarded by the caps string.
+	    Control tdistortionbalance has been discarded by the caps string.
+	    Control bdistortionctrl has been discarded by the caps string.
+	    Control bdistortionbalance has been discarded by the caps string.
+	    Control tilt has been discarded by the caps string.
+	    Control hmoire has been discarded by the caps string.
+	    Control vmoire has been discarded by the caps string.
+	    Control focus has been discarded by the caps string.
+	    Control coarse has been discarded by the caps string.
+	    Control fine has been discarded by the caps string.
+	    Control defaults has been discarded by the caps string.
+	    Control defaultluma has been discarded by the caps string.
+	    Control defaultgeom has been discarded by the caps string.
+	    Control defaultcolor has been discarded by the caps string.
+	    Control settings has been discarded by the caps string.
+	    Control audiospeakervolume has been discarded by the caps string.
+	    Control degauss has been discarded by the caps string.
+	    Control osdorientation has been discarded by the caps string.
+	    Control inputsource has been discarded by the caps string.
+	    Control dpms has been discarded by the caps string.
+	    Control power has been discarded by the caps string.
+
+	    EDID readings:
+	            Plug and Play ID: SUN0577 [SUN GDM-5410]
+		            Input type: Analog
+
+			    Capabilities:
+			    Invalid sequence in caps.
+			    Raw output: (prot(monitor)  type(crt) model( SUN7705           edid bin(128(
+			    Parsed output:
+			            VCP:
+				            Type: CRT
+
+					    Controls (valid/current/max) [Description - Value name]:
+					    Control 0x00: +/0/0   [???]
+					    Control 0x01: +/0/0   [???]
+					    Control 0x08: +/0/0   [???]
+					    Control 0x10: +/53/255   [???]
+					    Control 0x12: +/184/255   [???]
+					    Control 0x14: +/2/2   [???]
+					    Control 0x16: +/233/255   [???]
+					    Control 0x18: +/228/255   [???]
+					    Control 0x1a: +/243/255   [???]
+					    Control 0x20: +/129/255   [???]
+					    Control 0x22: +/103/255   [???]
+					    Control 0x24: +/122/255   [???]
+					    Control 0x26: +/129/255   [???]
+					    Control 0x28: +/112/255   [???]
+					    Control 0x30: +/157/255   [???]
+					    Control 0x32: +/155/255   [???]
+					    Control 0x38: +/139/255   [???]
+					    Control 0x40: +/135/255   [???]
+					    Control 0x42: +/152/255   [???]
+					    Control 0x44: +/90/255   [???]
+					    Control 0x54: +/172/240   [???]
+					    Control 0x56: +/0/255   [???]
+					    Control 0x68: +/1/8   [???]
+					    Control 0x6c: +/128/255   [???]
+					    Control 0x6e: +/128/255   [???]
+					    Control 0x70: +/128/255   [???]
+					    Control 0xe0: +/0/0   [???]
+					    Control 0xe2: +/0/0   [???]
+					    Control 0xf1: +/114/255   [???]
+					    Control 0xf2: +/125/255   [???]
+					    Control 0xf3: +/125/255   [???]
+					    Control 0xf4: +/108/255   [???]
+					    Control 0xf5: +/1/2   [???]
+					    Control 0xf6: +/126/255   [???]
+					    Control 0xf7: +/108/255   [???]
+					    ddcpci being released...
+					    ==>ddcpci is quitting.
+

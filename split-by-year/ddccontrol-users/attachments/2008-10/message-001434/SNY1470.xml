@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<monitor name="Sony CPD-E200E">
+	<controls>
+		<control id="colorpreset" address="0x14">
+			<value id="9300k"  value="0x0"/>
+			<value id="5000k"  value="0x1"/>
+			<value id="user"  value="0x2"/>
+		</control>
+        </controls>
+        <include file="VESA"/>
+</monitor>

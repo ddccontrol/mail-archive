@@ -1,0 +1,17 @@
+[...]
+01:00.0 VGA compatible controller: nVidia Corporation G92 [GeForce 9800 GT] (rev a2) (prog-if 00 [VGA controller])
+	Subsystem: Giga-byte Technology Device 34d0
+	Flags: bus master, fast devsel, latency 0, IRQ 19
+	Memory at fd000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at d0000000 (64-bit, prefetchable) [size=256M]
+	Memory at fa000000 (64-bit, non-prefetchable) [size=32M]
+	I/O ports at d800 [size=128]
+	[virtual] Expansion ROM at fe9e0000 [disabled] [size=128K]
+	Capabilities: [60] Power Management version 3
+	Capabilities: [68] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Express Endpoint, MSI 00
+	Capabilities: [100] Virtual Channel
+	Capabilities: [128] Power Budgeting <?>
+	Capabilities: [600] Vendor Specific Information: ID=0001 Rev=1 Len=024 <?>
+	Kernel driver in use: nvidia
+[...]

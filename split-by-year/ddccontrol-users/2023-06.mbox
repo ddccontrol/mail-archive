@@ -302,106 +302,19 @@ Best Regards,
 Tom=C3=A1=C5=A1 Navr=C3=A1til=
 
 --=_0836be7f794644452a6b0b3d=a4d95860-c09d-59da-990d-f4ef4e84ba40_=
-Content-Type: text/plain;
-	name="DELL_P2419H.txt"
-Content-Transfer-Encoding: quoted-printable
-Content-Disposition: attachment;
-	size=3061;
-	filename="DELL_P2419H.txt"
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="DELL_P2419H.txt.external.txt"
+X-External-Attachment-Path: attachments/2023-06/message-003381/DELL_P2419H.txt
+X-External-Attachment-Content-Type: text/plain
+X-External-Attachment-Size: 3057
 
-ddccontrol version 0.6.0=0A=
-Copyright 2004-2005 Oleg I. Vdovikin (oleg@...13...)=0A=
-Copyright 2004-2006 Nicolas Boichat (nicolas@...3...)=0A=
-This program comes with ABSOLUTELY NO WARRANTY.=0A=
-You may redistribute copies of this program under the terms of the GNU Gen=
-eral Public License.=0A=
-=0A=
-Detected monitors :=0A=
- - Device: dev:/dev/i2c-5=0A=
-   DDC/CI supported: Yes=0A=
-   Monitor Name: VESA standard monitor=0A=
-   Input type: Digital=0A=
-  (Automatically selected)=0A=
-Reading EDID and initializing DDC/CI at bus dev:/dev/i2c-5...=0A=
-=0A=
-EDID readings:=0A=
-	Plug and Play ID: DELD0DA [VESA standard monitor]=0A=
-	Input type: Analog=0A=
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A=
-There is no support for your monitor in the database, but ddccontrol is=
-=0A=
-using a basic generic profile. Many controls will not be supported, and=
-=0A=
-some controls may not work as expected.=0A=
-Please update ddccontrol-db, or, if you are already using the latest=0A=
-version, please send the output of the following command to=0A=
-ddccontrol-users@lists.sourceforge.net:=0A=
-=0A=
-LANG=3D LC_ALL=3D ddccontrol -p -c -d=0A=
-=0A=
-Thank you.=0A=
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D WARNING =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A=
-=0A=
-Capabilities:=0A=
-=0A=
-Controls (valid/current/max) [Description - Value name]:=0A=
-Control 0x02: +/1/2 C [New Control Value - No changes]=0A=
-Control 0x04: +/0/255 C [Restore Factory Defaults]=0A=
-Control 0x05: +/0/1 C [Restore Brightness and Contrast]=0A=
-Control 0x06: +/0/255   [???]=0A=
-Control 0x08: +/0/255 C [Restore Factory Default Color]=0A=
-Control 0x0b: +/0/24028   [???]=0A=
-Control 0x0c: +/1/255   [???]=0A=
-Control 0x0e: +/50/100   [???]=0A=
-Control 0x10: +/0/100 C [Brightness]=0A=
-Control 0x12: +/75/100 C [Contrast]=0A=
-Control 0x14: +/5/12 C [???]=0A=
-Control 0x16: +/100/100 C [Red maximum level]=0A=
-Control 0x18: +/100/100 C [Green maximum level]=0A=
-Control 0x1a: +/100/100 C [Blue maximum level]=0A=
-Control 0x1e: +/0/2   [???]=0A=
-Control 0x20: +/242/100   [???]=0A=
-Control 0x30: +/38/100   [???]=0A=
-Control 0x3e: +/0/100   [???]=0A=
-Control 0x52: +/0/255 C [???]=0A=
-Control 0x60: +/4369/14 C [Input Source Select (Main)]=0A=
-Control 0x62: +/0/255   [???]=0A=
-Control 0x6c: +/128/255   [???]=0A=
-Control 0x6e: +/128/255   [???]=0A=
-Control 0x70: +/128/255   [???]=0A=
-Control 0x8d: +/0/255   [???]=0A=
-Control 0xa8: +/0/3   [???]=0A=
-Control 0xaa: +/1/255 C [OSD Orientation - Landscape]=0A=
-Control 0xac: +/1964/1 C [???]=0A=
-Control 0xae: +/6000/0 C [???]=0A=
-Control 0xb2: +/1/8 C [???]=0A=
-Control 0xb4: +/1/2   [???]=0A=
-Control 0xb6: +/3/5 C [???]=0A=
-Control 0xc0: +/1107/65535   [???]=0A=
-Control 0xc6: +/17868/65535 C [???]=0A=
-Control 0xc8: +/22021/0 C [???]=0A=
-Control 0xc9: +/10499/65535 C [???]=0A=
-Control 0xca: +/2/2   [???]=0A=
-Control 0xcc: +/2/14 C [???]=0A=
-Control 0xd6: +/1/255 C [DPMS Control - On]=0A=
-Control 0xdc: +/0/255 C [???]=0A=
-Control 0xdf: +/513/65535 C [???]=0A=
-Control 0xe0: +/0/1 C [???]=0A=
-Control 0xe1: +/0/1 C [Power control - Off]=0A=
-Control 0xe2: +/0/255 C [???]=0A=
-Control 0xe3: +/0/1   [???]=0A=
-Control 0xf0: +/0/255 C [???]=0A=
-Control 0xf1: +/11/255 C [???]=0A=
-Control 0xf2: +/0/255 C [???]=0A=
-Control 0xfa: +/0/65535   [???]=0A=
-Control 0xfb: +/1/1   [???]=0A=
-Control 0xfc: +/18/255   [???]=0A=
-Control 0xfd: +/98/65535 C [???]=0A=
-Control 0xff: +/0/65535   [???]=0A=
+Attachment extracted from this mbox message.
+Path: attachments/2023-06/message-003381/DELL_P2419H.txt
+Original filename: DELL_P2419H.txt
+Original content type: text/plain
+Original decoded size: 3057 bytes
 
 --=_0836be7f794644452a6b0b3d=a4d95860-c09d-59da-990d-f4ef4e84ba40_=--
 

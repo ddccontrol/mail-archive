@@ -1,0 +1,385 @@
+
+EDID version: 1.3
+Mfg id: PHL, model: Philips 220X, sn: DL30925595330
+Product code: 49200, binary serial number 595330 (0x00091582)
+
+How display reports unsupported feature: DREF_DDC_USES_DDC_FLAG_FOR_UNSUPPORTED
+
+Capabilities for display on bus /dev/i2c-0
+Unparsed capabilities string: (prot(monitor)type(lcd)model(Philips 220X1)cmds(01 02 03 07 0C 4E F3 E3)vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 07 08 0A 0B) 16 18 1A 6C 6E 70 72(05 78 FB 50 64 78 8C A0) 86(02 08)AC AE B6 C0 C6 C8 C9 CA CC( 00 02 03 04 05 08 09 0A 0D) D6(01 04) DC(00 01 02 03 08) DF E3 E9(00 02)EB(00 01)F0(00 01) F2(00 01 02 03 04)60(01 03) FA(00 01 02) FB FC FD FE(00 01 02 04) FF)mswhql(1)mccs_ver(2.1)asset_eep(32)mpu_ver(01)SmartManage(1.0))
+Model: Philips 220X1
+MCCS version: 2.1
+Commands:
+   Op Code: 01 (VCP Request)
+   Op Code: 02 (VCP Response)
+   Op Code: 03 (VCP Set)
+   Op Code: 07 (Timing Request)
+   Op Code: 0C (Save Settings)
+   Op Code: 4E (Unrecognized operation code)
+   Op Code: F3 (Capabilities Request)
+   Op Code: E3 (Capabilities Reply)
+VCP Features:
+   Feature: 02 (New control value)
+   Feature: 04 (Restore factory defaults)
+   Feature: 05 (Restore factory brightness/contrast defaults)
+   Feature: 08 (Restore color defaults)
+   Feature: 0B (Color temperature increment)
+   Feature: 0C (Color temperature request)
+   Feature: 10 (Brightness)
+   Feature: 12 (Contrast)
+   Feature: 14 (Select color preset)
+      Values (unparsed): 01 04 05 06 07 08 0A 0B
+      Values (  parsed):
+         01: sRGB
+         04: 5000 K
+         05: 6500 K
+         06: 7500 K
+         07: 8200 K
+         08: 9300 K
+         0a: 11500 K
+         0b: User 1
+   Feature: 16 (Video gain: Red)
+   Feature: 18 (Video gain: Green)
+   Feature: 1A (Video gain: Blue)
+   Feature: 6C (Video black level: Red)
+   Feature: 6E (Video black level: Green)
+   Feature: 70 (Video black level: Blue)
+   Feature: 72 (Gamma)
+      Values (unparsed): 05 78 FB 50 64 78 8C A0
+      Specific presets of absolute adjustment supported (0xfb)
+      Absolute tolerance: +/- 5% (=0x05)
+      Native gamma: 2.20 (0x78)
+      Specific presets:  1.80 (0x50), 2.00 (0x64), 2.20 (0x78), 2.40 (0x8c), 2.60 (0xa0)
+   Feature: 86 (Display Scaling)
+      Values (unparsed): 02 08
+      Values (  parsed):
+         02: Max image, no aspect ration distortion
+         08: Linear expansion (compression) on h and v axes
+   Feature: AC (Horizontal frequency)
+   Feature: AE (Vertical frequency)
+   Feature: B6 (Display technology type)
+   Feature: C0 (Display usage time)
+   Feature: C6 (Application enable key)
+   Feature: C8 (Display controller type)
+   Feature: C9 (Display firmware level)
+   Feature: CA (OSD)
+   Feature: CC (OSD Language)
+      Values (unparsed):  00 02 03 04 05 08 09 0A 0D
+      Values (  parsed):
+         00: Reserved value, must be ignored
+         02: English
+         03: French
+         04: German
+         05: Italian
+         08: Portuguese (Portugal)
+         09: Russian
+         0a: Spanish
+         0d: Chinese (simplified / Kantai)
+   Feature: D6 (Power mode)
+      Values (unparsed): 01 04
+      Values (  parsed):
+         01: DPM: On,  DPMS: Off
+         04: DPM: Off, DPMS: Off
+   Feature: DC (Display Mode)
+      Values (unparsed): 00 01 02 03 08
+      Values (  parsed):
+         00: Standard/Default mode
+         01: Productivity
+         02: Mixed
+         03: Movie
+         08: Standard/Default mode with intermediate power consumption
+   Feature: DF (VCP Version)
+   Feature: E3 (Manufacturer specific feature)
+   Feature: E9 (Manufacturer specific feature)
+      Values (unparsed): 00 02
+      Values (  parsed): 00 02 (interpretation unavailable)
+   Feature: EB (Manufacturer specific feature)
+      Values (unparsed): 00 01
+      Values (  parsed): 00 01 (interpretation unavailable)
+   Feature: F0 (Manufacturer specific feature)
+      Values (unparsed): 00 01
+      Values (  parsed): 00 01 (interpretation unavailable)
+   Feature: F2 (Manufacturer specific feature)
+      Values (unparsed): 00 01 02 03 04
+      Values (  parsed): 00 01 02 03 04 (interpretation unavailable)
+   Feature: 60 (Input Source)
+      Values (unparsed): 01 03
+      Values (  parsed):
+         01: VGA-1
+         03: DVI-1
+   Feature: FA (Manufacturer specific feature)
+      Values (unparsed): 00 01 02
+      Values (  parsed): 00 01 02 (interpretation unavailable)
+   Feature: FB (Manufacturer specific feature)
+   Feature: FC (Manufacturer specific feature)
+   Feature: FD (Manufacturer specific feature)
+   Feature: FE (Manufacturer specific feature)
+      Values (unparsed): 00 01 02 04
+      Values (  parsed): 00 01 02 04 (interpretation unavailable)
+   Feature: FF (Manufacturer specific feature)
+
+May support table reads:   false
+
+Scanning all VCP feature codes for display [i2c: fd=3, busno=0]
+VCP code 0x02 (New control value             ): One or more new control values have been saved (0x02)
+VCP code 0x03 (Soft controls                 ): Unsupported feature code
+VCP code 0x07 (Unknown feature               ): Unsupported feature code
+VCP code 0x09 (Unknown feature               ): Unsupported feature code
+VCP code 0x0b (Color temperature increment   ): 50 degree(s) Kelvin
+VCP code 0x0c (Color temperature request     ): 3000 + 70 * (feature 0B color temp increment) degree(s) Kelvin
+VCP code 0x0d (Unknown feature               ): Unsupported feature code
+VCP code 0x0e (Clock                         ): Unsupported feature code
+VCP code 0x0f (Unknown feature               ): Unsupported feature code
+VCP code 0x10 (Brightness                    ): current value =    89, max value =   100
+VCP code 0x11 (Flesh tone enhancement        ): Unsupported feature code
+VCP code 0x12 (Contrast                      ): current value =    50, max value =   100
+VCP code 0x13 (Backlight control             ): Unsupported feature code
+VCP code 0x14 (Select color preset           ): 6500 K (sl=0x05)
+VCP code 0x15 (Unknown feature               ): Unsupported feature code
+VCP code 0x16 (Video gain: Red               ): current value =   100, max value =   100
+VCP code 0x17 (User color vision compensation): Unsupported feature code
+VCP code 0x18 (Video gain: Green             ): current value =   100, max value =   100
+VCP code 0x19 (Unknown feature               ): Unsupported feature code
+VCP code 0x1a (Video gain: Blue              ): current value =   100, max value =   100
+VCP code 0x1b (Unknown feature               ): Unsupported feature code
+VCP code 0x1c (Focus                         ): Unsupported feature code
+VCP code 0x1d (Unknown feature               ): Unsupported feature code
+VCP code 0x1e (Auto setup                    ): Unsupported feature code
+VCP code 0x1f (Auto color setup              ): Unsupported feature code
+VCP code 0x20 (Horizontal Position (Phase)   ): Unsupported feature code
+VCP code 0x21 (Unknown feature               ): Unsupported feature code
+VCP code 0x22 (Horizontal Size               ): Unsupported feature code
+VCP code 0x23 (Unknown feature               ): Unsupported feature code
+VCP code 0x24 (Horizontal Pincushion         ): Unsupported feature code
+VCP code 0x25 (Unknown feature               ): Unsupported feature code
+VCP code 0x26 (Horizontal Pincushion Balance ): Unsupported feature code
+VCP code 0x27 (Unknown feature               ): Unsupported feature code
+VCP code 0x28 (Horizontal Convergence R/B    ): Unsupported feature code
+VCP code 0x29 (Horizontal Convergence M/G    ): Unsupported feature code
+VCP code 0x2a (Horizontal Linearity          ): Unsupported feature code
+VCP code 0x2b (Unknown feature               ): Unsupported feature code
+VCP code 0x2c (Horizontal Linearity Balance  ): Unsupported feature code
+VCP code 0x2d (Unknown feature               ): Unsupported feature code
+VCP code 0x2e (Gray scale expansion          ): Unsupported feature code
+VCP code 0x2f (Unknown feature               ): Unsupported feature code
+VCP code 0x30 (Vertical Position (Phase)     ): Unsupported feature code
+VCP code 0x31 (Unknown feature               ): Unsupported feature code
+VCP code 0x32 (Vertical Size                 ): Unsupported feature code
+VCP code 0x33 (Unknown feature               ): Unsupported feature code
+VCP code 0x34 (Vertical Pincushion           ): Unsupported feature code
+VCP code 0x35 (Unknown feature               ): Unsupported feature code
+VCP code 0x36 (Vertical Pincushion Balance   ): Unsupported feature code
+VCP code 0x37 (Unknown feature               ): Unsupported feature code
+VCP code 0x38 (Vertical Convergence R/B      ): Unsupported feature code
+VCP code 0x39 (Vertical Convergence M/G      ): Unsupported feature code
+VCP code 0x3a (Vertical Linearity            ): Unsupported feature code
+VCP code 0x3b (Unknown feature               ): Unsupported feature code
+VCP code 0x3c (Vertical Linearity Balance    ): Unsupported feature code
+VCP code 0x3d (Unknown feature               ): Unsupported feature code
+VCP code 0x3e (Clock phase                   ): Unsupported feature code
+VCP code 0x3f (Unknown feature               ): Unsupported feature code
+VCP code 0x40 (Horizontal Parallelogram      ): Unsupported feature code
+VCP code 0x41 (Vertical Parallelogram        ): Unsupported feature code
+VCP code 0x42 (Horizontal Keystone           ): Unsupported feature code
+VCP code 0x43 (Vertical Keystone             ): Unsupported feature code
+VCP code 0x44 (Rotation                      ): Unsupported feature code
+VCP code 0x45 (Unknown feature               ): Unsupported feature code
+VCP code 0x46 (Top Corner Flare              ): Unsupported feature code
+VCP code 0x47 (Unknown feature               ): Unsupported feature code
+VCP code 0x48 (Top Corner Hook               ): Unsupported feature code
+VCP code 0x49 (Unknown feature               ): Unsupported feature code
+VCP code 0x4a (Bottom Corner Flare           ): Unsupported feature code
+VCP code 0x4b (Unknown feature               ): Unsupported feature code
+VCP code 0x4c (Bottom Corner Hook            ): Unsupported feature code
+VCP code 0x4d (Unknown feature               ): Unsupported feature code
+VCP code 0x4e (Unknown feature               ): Unsupported feature code
+VCP code 0x4f (Unknown feature               ): Unsupported feature code
+VCP code 0x50 (Unknown feature               ): Unsupported feature code
+VCP code 0x51 (Unknown feature               ): Unsupported feature code
+VCP code 0x52 (Active control                ): Unsupported feature code
+VCP code 0x53 (Unknown feature               ): Unsupported feature code
+VCP code 0x54 (Performance Preservation      ): Unsupported feature code
+VCP code 0x55 (Unknown feature               ): Unsupported feature code
+VCP code 0x56 (Horizontal Moire              ): Unsupported feature code
+VCP code 0x57 (Unknown feature               ): Unsupported feature code
+VCP code 0x58 (Vertical Moire                ): Unsupported feature code
+VCP code 0x59 (6 axis saturation: Red        ): Unsupported feature code
+VCP code 0x5a (6 axis saturation: Yellow     ): Unsupported feature code
+VCP code 0x5b (6 axis saturation: Green      ): Unsupported feature code
+VCP code 0x5c (6 axis saturation: Cyan       ): Unsupported feature code
+VCP code 0x5d (6 axis saturation: Blue       ): Unsupported feature code
+VCP code 0x5e (6 axis saturation: Magenta    ): Unsupported feature code
+VCP code 0x5f (Unknown feature               ): Unsupported feature code
+VCP code 0x60 (Input Source                  ): DVI-1 (sl=0x03)
+VCP code 0x61 (Unknown feature               ): Unsupported feature code
+VCP code 0x62 (Audio speaker volume          ): Unsupported feature code
+VCP code 0x63 (Speaker Select                ): Unsupported feature code
+VCP code 0x64 (Audio: Microphone Volume      ): Unsupported feature code
+VCP code 0x65 (Unknown feature               ): Unsupported feature code
+VCP code 0x66 (Ambient light sensor          ): Unsupported feature code
+VCP code 0x67 (Unknown feature               ): Unsupported feature code
+VCP code 0x68 (Unknown feature               ): Unsupported feature code
+VCP code 0x69 (Unknown feature               ): Unsupported feature code
+VCP code 0x6a (Unknown feature               ): Unsupported feature code
+VCP code 0x6b (Backlight Level: White        ): Unsupported feature code
+VCP code 0x6c (Video black level: Red        ): current value =   128, max value =   255
+VCP code 0x6d (Backlight Level: Red          ): Unsupported feature code
+VCP code 0x6e (Video black level: Green      ): current value =   128, max value =   255
+VCP code 0x6f (Backlight Level: Green        ): Unsupported feature code
+VCP code 0x70 (Video black level: Blue       ): current value =   128, max value =   255
+VCP code 0x71 (Backlight Level: Blue         ): Unsupported feature code
+VCP code 0x72 (Gamma                         ): 0x0078 - Invalid sl value. sl=0x78, sh=0x00
+VCP code 0x73 (LUT Size                      ): Unsupported feature code (DDC NULL Message)
+VCP code 0x74 (Single point LUT operation    ): Unsupported feature code (DDC NULL Message)
+VCP code 0x75 (Block LUT operation           ): Unsupported feature code (DDC NULL Message)
+VCP code 0x77 (Unknown feature               ): Unsupported feature code
+VCP code 0x78 (EDID operation                ): Unsupported feature code (DDC NULL Message)
+VCP code 0x79 (Unknown feature               ): Unsupported feature code
+VCP code 0x7a (Adjust Focal Plane            ): Unsupported feature code
+VCP code 0x7b (Unknown feature               ): Unsupported feature code
+VCP code 0x7c (Adjust Zoom                   ): Unsupported feature code
+VCP code 0x7d (Unknown feature               ): Unsupported feature code
+VCP code 0x7e (Trapezoid                     ): Unsupported feature code
+VCP code 0x7f (Unknown feature               ): Unsupported feature code
+VCP code 0x80 (Keystone                      ): Unsupported feature code
+VCP code 0x81 (Unknown feature               ): Unsupported feature code
+VCP code 0x82 (Horizontal Mirror (Flip)      ): Unsupported feature code
+VCP code 0x83 (Unknown feature               ): Unsupported feature code
+VCP code 0x84 (Vertical Mirror (Flip)        ): Unsupported feature code
+VCP code 0x85 (Unknown feature               ): Unsupported feature code
+VCP code 0x86 (Display Scaling               ): Linear expansion (compression) on h and v axes (sl=0x08)
+VCP code 0x87 (Sharpness                     ): Unsupported feature code
+VCP code 0x88 (Velocity Scan Modulation      ): Unsupported feature code
+VCP code 0x89 (Unknown feature               ): Unsupported feature code
+VCP code 0x8a (Color Saturation              ): Unsupported feature code
+VCP code 0x8c (TV Sharpness                  ): Unsupported feature code
+VCP code 0x8d (Audio Mute                    ): Unsupported feature code
+VCP code 0x8e (TV Contrast                   ): Unsupported feature code
+VCP code 0x8f (Audio Treble                  ): Unsupported feature code
+VCP code 0x90 (Hue                           ): Unsupported feature code
+VCP code 0x91 (Audio Bass                    ): Unsupported feature code
+VCP code 0x92 (TV Black level/Luminesence    ): Unsupported feature code
+VCP code 0x93 (Audio Balance L/R             ): Unsupported feature code
+VCP code 0x94 (Audio Processor Mode          ): Unsupported feature code
+VCP code 0x95 (Window Position(TL_X)         ): Unsupported feature code
+VCP code 0x96 (Window Position(TL_Y)         ): Unsupported feature code
+VCP code 0x97 (Window Position(BR_X)         ): Unsupported feature code
+VCP code 0x98 (Window Position(BR_Y)         ): Unsupported feature code
+VCP code 0x99 (Window control on/off         ): Unsupported feature code
+VCP code 0x9a (Window background             ): Unsupported feature code
+VCP code 0x9b (6 axis hue control: Red       ): Unsupported feature code
+VCP code 0x9c (6 axis hue control: Yellow    ): Unsupported feature code
+VCP code 0x9d (6 axis hue control: Green     ): Unsupported feature code
+VCP code 0x9e (6 axis hue control: Cyan      ): Unsupported feature code
+VCP code 0x9f (6 axis hue control: Blue      ): Unsupported feature code
+VCP code 0xa0 (6 axis hue control: Magenta   ): Unsupported feature code
+VCP code 0xa1 (Unknown feature               ): Unsupported feature code
+VCP code 0xa3 (Unknown feature               ): Unsupported feature code
+VCP code 0xa4 (Turn the selected window operation on/off): Unsupported feature code
+VCP code 0xa5 (Change the selected window    ): Unsupported feature code
+VCP code 0xa6 (Unknown feature               ): Unsupported feature code
+VCP code 0xa7 (Unknown feature               ): Unsupported feature code
+VCP code 0xa8 (Unknown feature               ): Unsupported feature code
+VCP code 0xa9 (Unknown feature               ): Unsupported feature code
+VCP code 0xaa (Screen Orientation            ): Unsupported feature code
+VCP code 0xab (Unknown feature               ): Unsupported feature code
+VCP code 0xac (Horizontal frequency          ): 64660 hz
+VCP code 0xad (Unknown feature               ): Unsupported feature code
+VCP code 0xae (Vertical frequency            ): 59.90 hz
+VCP code 0xaf (Unknown feature               ): Unsupported feature code
+VCP code 0xb1 (Unknown feature               ): Unsupported feature code
+VCP code 0xb2 (Flat panel sub-pixel layout   ): Unsupported feature code
+VCP code 0xb3 (Unknown feature               ): Unsupported feature code
+VCP code 0xb4 (Source Timing Mode            ): Unsupported feature code
+VCP code 0xb5 (Unknown feature               ): Unsupported feature code
+VCP code 0xb6 (Display technology type       ): LCD (active matrix) (sl=0x03)
+VCP code 0xb7 (Monitor status                ): Unsupported feature code
+VCP code 0xb8 (Packet count                  ): Unsupported feature code
+VCP code 0xb9 (Monitor X origin              ): Unsupported feature code
+VCP code 0xba (Monitor Y origin              ): Unsupported feature code
+VCP code 0xbb (Header error count            ): Unsupported feature code
+VCP code 0xbc (Body CRC error count          ): Unsupported feature code
+VCP code 0xbd (Client ID                     ): Unsupported feature code
+VCP code 0xbe (Link control                  ): Unsupported feature code
+VCP code 0xbf (Unknown feature               ): Unsupported feature code
+VCP code 0xc0 (Display usage time            ): Usage time (hours) = 7115 (0x001bcb) mh=0xff, ml=0xff, sh=0x1b, sl=0xcb
+VCP code 0xc1 (Unknown feature               ): Unsupported feature code
+VCP code 0xc2 (Display descriptor length     ): Unsupported feature code
+VCP code 0xc3 (Transmit display descriptor   ): Unsupported feature code (DDC NULL Message)
+VCP code 0xc4 (Enable display of 'display descriptor'): Unsupported feature code
+VCP code 0xc5 (Unknown feature               ): Unsupported feature code
+VCP code 0xc6 (Application enable key        ): 0x006f
+VCP code 0xc7 (Unknown feature               ): Unsupported feature code
+VCP code 0xc8 (Display controller type       ): Mfg: Novatek (sl=0x12), controller number: mh=0xff, ml=0xff, sh=0x00
+VCP code 0xc9 (Display firmware level        ): 0.3
+VCP code 0xca (OSD                           ): OSD Enabled (sl=0x02)
+VCP code 0xcb (Unknown feature               ): Unsupported feature code
+VCP code 0xcc (OSD Language                  ): German (sl=0x04)
+VCP code 0xcd (Status Indicators             ): Unsupported feature code
+VCP code 0xce (Auxiliary display size        ): Unsupported feature code
+VCP code 0xd0 (Output select                 ): Unsupported feature code
+VCP code 0xd1 (Unknown feature               ): Unsupported feature code
+VCP code 0xd2 (Asset Tag                     ): Unsupported feature code (DDC NULL Message)
+VCP code 0xd3 (Unknown feature               ): Unsupported feature code
+VCP code 0xd4 (Stereo video mode             ): Unsupported feature code
+VCP code 0xd5 (Unknown feature               ): Unsupported feature code
+VCP code 0xd6 (Power mode                    ): DPM: On,  DPMS: Off (sl=0x01)
+VCP code 0xd7 (Auxiliary power output        ): Unsupported feature code
+VCP code 0xd8 (Unknown feature               ): Unsupported feature code
+VCP code 0xd9 (Unknown feature               ): Unsupported feature code
+VCP code 0xda (Scan mode                     ): Unsupported feature code
+VCP code 0xdb (Image Mode                    ): Unsupported feature code
+VCP code 0xdc (Display Mode                  ): Standard/Default mode (sl=0x00)
+VCP code 0xdd (Unknown feature               ): Unsupported feature code
+VCP code 0xde (Scratch Pad                   ): Unsupported feature code
+VCP code 0xdf (VCP Version                   ): 2.1
+VCP code 0xe0 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe1 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe2 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe3 (Manufacturer Specific         ): mh=0x00, ml=0x03, sh=0x00, sl=0x00
+VCP code 0xe4 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe5 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe6 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe7 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe8 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xe9 (Manufacturer Specific         ): mh=0x00, ml=0x02, sh=0x00, sl=0x02
+VCP code 0xea (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xeb (Manufacturer Specific         ): mh=0x00, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xec (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xed (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xee (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xef (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf0 (Manufacturer Specific         ): mh=0x00, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xf1 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf2 (Manufacturer Specific         ): mh=0x00, ml=0x04, sh=0x00, sl=0x01
+VCP code 0xf3 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf4 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf5 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf6 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf7 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf8 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xf9 (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfa (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xfb (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xfc (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfd (Manufacturer Specific         ): Unsupported feature code
+VCP code 0xfe (Manufacturer Specific         ): mh=0xff, ml=0xff, sh=0x00, sl=0x00
+VCP code 0xff (Manufacturer Specific         ): mh=0x00, ml=0x01, sh=0x00, sl=0x00
+
+
+Comparing declared capabilities to observed features...
+
+Readable features declared in capabilities string: 02 0b 0c 10 12 14 16 18 1a 60 6c 6e 70 72 86 ac ae b6 c0 c6 c8 c9 ca cc d6 dc df e3 e9 eb f0 f2 fa fb fc fd fe ff
+
+MCCS (VCP) version reported by capabilities: 2.1
+MCCS (VCP) version reported by feature 0xDf: 2.1
+
+Features declared as readable capabilities but not found by scanning:
+   Feature xfc - Manufacturer Specific
+   Feature xfd - Manufacturer Specific
+
+All features found by scanning were declared in capabilities.
+
+Color temperature increment (x0b) = 50 degrees Kelvin
+Color temperature request   (x0c) = 70
+Requested color temperature = (3000 deg Kelvin) + 70 * (50 degrees Kelvin) = 6500 degrees Kelvin
