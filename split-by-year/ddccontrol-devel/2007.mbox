@@ -1,0 +1,369 @@
+From rohit.dhamija@...36... Wed Mar 07 07:49:02 2007
+Message-ID: <855b43e90703070749i304aa6d7l4e4c46f4e5634628@...37...>
+Date: Wed, 7 Mar 2007 21:19:00 +0530
+From: "rohit dhamija" <rohit.dhamija@...36...>
+To: ddccontrol-devel@lists.sourceforge.net
+MIME-Version: 1.0
+X-Spam-Score: 0.8 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name
+	0.8 DEAR_SOMETHING         BODY: Contains 'Dear (something)'
+Subject: [ddccontrol-devel] NVIDIA GeForce 7300 GT Dual DVI Slot issue
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 07 Mar 2007 15:49:03 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Dear Sir,
+
+I got your reference from sourceforge, ddccontrol-0.4.2 source code.
+
+I am in process of developing a monitor calibration utility for
+windows and Mac OS X and require your help in one of the issue coming
+with "NVIDIA GeForce 7300 GT Dual DVI Slot issue"
+
+The card is a multi-function device having 2 DVI slots.
+
+1st DVI (bus) is assigned to  0x36 (i.e. 0x37 and 0x36)
+2nd DVI (bus) is assigned to 0x3e (i.e. 0x3F and 0x3E)
+
+1st DVI slot always works fine without issues, i am able to set SDA and SCL
+but 2nd DVI slot only WORKS WHEN both MONITORS are attached to the device!!
+
+If monitor is only attached to 2nd DVI, i am  not able to set/reset
+SDA and SCL lines. At the same time it works great it both DVI have
+monitors attached.
+
+I also referred your code with mine, but didnot find any such changes.
+
+Can you please guide what can be the issue ? Why is the behaviour
+strange in this case ?
+
+Also, I shall be helpful if you could suggest some material to study
+for multi-function PCI devices.Please comment.
+
+Thanks and Regards,
+Rohit
+
+
+From doctormo@...36... Fri Apr 27 20:52:53 2007
+Message-ID: <69ff73b20704272052w37484b53p1e0a05a9b22ab347@...37...>
+Date: Fri, 27 Apr 2007 23:52:49 -0400
+From: "Martin Owens" <doctormo@...36...>
+To: "Nicolas Boichat" <nicolas@...1...>
+In-Reply-To: <44F41A67.6010803@...1...>
+MIME-Version: 1.0
+References: <69ff73b20608170857j311fefc3tc638020afe80a12a@...37...>
+	<44F41A67.6010803@...1...>
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Information
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 28 Apr 2007 03:52:53 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello again,
+
+The best thing I need is the pnpname and the Device: pci:01:00.0-2
+part, those two values will allow me to id the monitor and what it's
+plugged into. using a combination of ddcprobe (uses /dev/mem) and
+ddccontrol I might be able to scrape a bit more information about the
+monitors but so long as I have the id and the parent the rest of the
+information isn't too important.
+
+Now I'm going to try and hack the c code, but I'm not terribly good at
+it, could you provide a switch in ddccontrol for dumping this as a
+list?
+
+Best Regards, Martin Owens
+
+On 29/08/06, Nicolas Boichat <nicolas@...1...> wrote:
+> Hello,
+>
+> Have you tried to run ddccontrol, and then have a look at the code ?
+>
+> You may also be interested in the tool parseedid.
+>
+> Best regards,
+>
+> Nicolas
+>
+> Martin Owens wrote:
+> > Hey all,
+> >
+> > I want to learn more about monitor detection via DDC. I've had a look
+> > around and you guys seem like the best people to ask.
+> >
+> > I'm developing a hardware tool and I'd like it to be able to detect or
+> > get information relating to any monitors pluged in.
+> >
+> > Best Regards, Martin Owens
+> > ------------------------------------------------------------------------
+> >
+> > -------------------------------------------------------------------------
+> > Using Tomcat but need to do more? Need to support web services, security?
+> > Get stuff done quickly with pre-integrated technology to make your job easier
+> > Download IBM WebSphere Application Server v.1.0.1 based on Apache Geronimo
+> > http://sel.as-us.falkag.net/sel?cmd=lnk&kid=120709&bid=263057&dat=121642
+> > ------------------------------------------------------------------------
+> >
+> > _______________________________________________
+> > ddccontrol-devel mailing list
+> > ddccontrol-devel@lists.sourceforge.net
+> > https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> >
+>
+>
+
+
+From grayich@...46... Tue Sep 04 16:39:53 2007
+Date: Wed, 5 Sep 2007 02:39:19 +0300
+From: grayich@...46...
+To: ddccontrol-devel@lists.sourceforge.net
+Message-Id: <20070905023919.5cd7c2ae.grayich@...46...>
+X-Mailer: Sylpheed 2.4.4 (GTK+ 2.10.14; i386-portbld-freebsd6.2)
+Mime-Version: 1.0
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-devel] ddccontrol for freebsd
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 04 Sep 2007 23:39:53 -0000
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Whether it is planned ddccontrol to make compatible with FreeBSD?
+
+
+From ulrich.mierendorff@...47... Sun Oct 07 07:42:53 2007
+X-Authenticated: #7655942
+X-Provags-ID: V01U2FsdGVkX181Ie953tE1UYPGsytCnuuYC3NodxXfSzZhDdl2y0
+	cCxbYjtzRTCpgD
+Message-ID: <4708F062.3050605@...47...>
+Date: Sun, 07 Oct 2007 16:42:42 +0200
+From: Ulrich Mierendorff <ulrich.mierendorff@...47...>
+User-Agent: Thunderbird 1.5.0.12 (X11/20070604)
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: [ddccontrol-devel] Fix for the "jittery" sliders in the GUI
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 07 Oct 2007 14:42:53 -0000
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I downloaded the CVS-Version today and did not like the sliders in the 
+GUI, so here is a fix ;-D
+
+diff notebook.c notebook.c_old
+404c404
+<                                               
+100.0/(double)currentMaximum);
+---
+ >                                               
+10.0*100.0/(double)currentMaximum);
+408c408
+<                               g_signal_connect_after(G_OBJECT(widget), 
+"change-value", G_CALLBACK(range_callback), NULL);
+---
+ >                               
+g_signal_connect_after(G_OBJECT(widget), "value-changed", 
+G_CALLBACK(range_callback), NULL);
+
+
+It works for me..
+
+Regards
+-Ulrich
+
+
+From roberto@...40... Sun Oct 07 07:50:32 2007
+Date: Sun, 7 Oct 2007 10:50:26 -0400
+From: Roberto =?iso-8859-1?Q?C=2E_S=E1nchez?= <roberto@...40...>
+To: Ulrich Mierendorff <ulrich.mierendorff@...47...>
+Message-ID: <20071007145026.GA3322@...41...>
+Mail-Followup-To: Ulrich Mierendorff <ulrich.mierendorff@...47...>,
+	ddccontrol-devel@lists.sourceforge.net
+References: <4708F062.3050605@...47...>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="Qxx1br4bt0+wmkIi"
+Content-Disposition: inline
+In-Reply-To: <4708F062.3050605@...47...>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Fix for the "jittery" sliders in the GUI
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 07 Oct 2007 14:50:32 -0000
+
+--Qxx1br4bt0+wmkIi
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Sun, Oct 07, 2007 at 04:42:42PM +0200, Ulrich Mierendorff wrote:
+> Hello,
+>=20
+> I downloaded the CVS-Version today and did not like the sliders in the=20
+> GUI, so here is a fix ;-D
+>=20
+Ulrich,
+
+Thanks for the patch.  It appears that the current developer, Nicolas,
+has lost interest or is too busy with other things.  I use ddccontrol
+and also maintain the Debian package.  In the coming months I hope to
+compile all the patches that have been submitted, fix bugs and also
+update the monitor database.  However, I will not get to it right away.
+
+Regards,
+
+-Roberto
+
+--=20
+Roberto C. S=E1nchez
+http://people.connexer.com/~roberto
+http://www.connexer.com
+
+--Qxx1br4bt0+wmkIi
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFHCPIy5SXWIKfIlGQRAqWlAKCnR/ycxw/IGsPaReewll5Qj6BOxwCeJDWb
+hlvgjCvRqHwZDsf1a1SNfyQ=
+=1WJX
+-----END PGP SIGNATURE-----
+
+--Qxx1br4bt0+wmkIi--
+
+
+From francesco.fumanti@...47... Sun Nov 25 13:14:19 2007
+X-Authenticated: #14577670
+X-Provags-ID: V01U2FsdGVkX1+Qg+10dlKQ796ucr1usqB6+6jUDyjgfuOvXDiJ1R
+	yOX8KYLCB+rGMB
+Mime-Version: 1.0
+Message-Id: <a06240801c36f92c586cd@[192.168.1.7]>
+Date: Sun, 25 Nov 2007 22:13:07 +0100
+To: ddccontrol-devel@lists.sourceforge.net
+From: Francesco Fumanti <francesco.fumanti@...47...>
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: [ddccontrol-devel] gddccontrol crashes when a11y is enabled
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 25 Nov 2007 21:14:19 -0000
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Content-Transfer-Encoding: 8bit
+
+Hello,
+
+OS: Ubuntu 7.10 running GNOME 2.20
+Architecture: i386
+
+Could anybody please fix the bug that makes gddccontrol crash when it 
+is started from the command line in a GNOME session where 
+accessibility is enabled?
+
+In fact, I get the following message:
+GThread-ERROR **: GThread system may only be initialized once.
+
+When I disable accessibility in the GNOME session, gddccontrol starts 
+without a problem.
+
+Best regards.
+
+Francesco
+
+

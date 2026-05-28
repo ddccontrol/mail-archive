@@ -1,0 +1,718 @@
+From nicolas@...1... Thu Oct 28 11:02:22 2004
+From: Nicolas Boichat <nicolas@...1...>
+To: Stijn De Weirdt <stdweird@...2...>
+Cc: "Oleg I. Vdovikin" <oleg@...3...>,  ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <00d301c4bcf2$6e4cf020$8102180a@...4...>
+References: <00d301c4bcf2$6e4cf020$8102180a@...4...>
+Date: Thu, 28 Oct 2004 20:01:45 +0200
+Message-Id: <1098986506.26542.63.camel@...5...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: 0.9 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_AMPERSAND BODY: Text interparsed with &
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.0 SF_CHICKENPOX_PARATHESES_OPEN BODY: Text interparsed with (
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.8 RCVD_IN_SBL            RBL: Received via a relay in Spamhaus SBL
+	[62.167.78.222 listed in sbl-xbl.spamhaus.org]
+Subject: [ddccontrol-devel] Re: Fw: ddccontrol & syncmaster 193p
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+First, thank you for your interest in our project, I invite you to
+subscribe to ddccontrol-devel and users lists. They are not really used
+now, but I think it is the right place for this kind of discussions.
+
+1a) Could you provide the output of a failed compilation, without your
+modifications to i2c-dev.h ? Is this problem solved if you add
+#include <linux/i2c.h>
+just before (or maybe after) :
+#include <linux/i2c-dev.h>
+in src/lib/ddcpci.c (line 26).
+If it is, I will add code to check for this problem at configure time,
+and include this file if needed (on my Gentoo I can't include both, as
+they redefine the same symbols).
+
+2) As Oleg said, this is also to avoid this kind of problems that I'm
+working on direct access to hardware.
+
+3) Could you send me these XML profiles so I add them in the CVS ?
+
+Concerning the files coming from magictune. I don't think there is any
+problem to convert the .inf file to our xml standard, but we could have
+big legal problems to use the images and html files from Samsung without
+their agreement (and I doubt they will accept to put these files under
+the GPL or a similar open license). Also I don't think it is a very good
+idea to keep an html layout for the program, as I don't want ddccontrol
+to depend on Mozilla for example.
+
+Best regards,
+
+Nicolas
+
+On Thu, 2004-10-28 at 17:31 +0400, Oleg I. Vdovikin wrote:
+>     Forwarding to Nicolas.
+> 
+>     My comments regarding devices - this is mandrake problems, i2c entries
+> SHOULD be preconfigured for users. As a side note - Nicolas now working on
+> direct access to hardware, so this will work better.
+> 
+>     1a) I will check on this.
+>     2a) Right.
+> 
+>     3. you are welcome. at the moment gnome program is not so fancy, like
+> magictune, so if you could help with adjusting it - go ahead.
+> 
+> Regards,
+> Oleg.
+> ----- Original Message ----- 
+> From: "Stijn De Weirdt" <stdweird@...2...>
+> To: "Oleg I. Vdovikin" <oleg@...3...>
+> Sent: Thursday, October 28, 2004 5:02 PM
+> Subject: Re: ddccontrol & syncmaster 193p
+> 
+> 
+> > ok, some good news gddccontrol (cvs) works flawlessly. troubles i ran
+> > into (so you'll have some info when someone else has them to):
+> > 1. compilation:
+> > 1.a) the header file i2c-dev.h in 2.6.8 (mdk) and 2.6.9 (vanilla) doesn't
+> > contain all the constants and structures. copy&paste them from i2c.h in
+> > the files that require them, this solved the problem
+> > 2.a) --enable-gnome requires the devel-packages of gtk+2, so you'll have
+> > to install them
+> >
+> > 2. devices:
+> > if you're using devfs, building as modules and modprobing them will work
+> > (didn't try this, but you guys seem to accomplish that)
+> > if using udev/sysfs, i *think* you'll need to edit the modprobe.conf so
+> > udev picks the loaded modules from sysfs and creates them (or maybe they
+> > shouldn't be loaded with a modprobe i2c-dev). since i'll have
+> > to find out how to do this correctly, i've build them in the kernel, so
+> > they showed up in sysfs on boot and udev installed the /dev/i2c-* where
+> > required. (i also have to find out about the permissions).
+> > (oh, funny thing, in the kernel --> device drivers --> graphics there are
+> > 2 possible modules for radeonfb, i didn't use the old one)
+> >
+> > 3. i've made the necessary changes in the ddccontrol-db/db/monitors and
+> > added 2 .xml files for 193p, named SAM00ED.xml (for dvi) and SAM00EC.xml
+> > (for analog), and let them refer to the 173p as is done for 173p digital.
+> > gddccontrol detected the monitor correctly.
+> >
+> > things i could do:
+> >
+> > since the magictune 2.0 version is a html-based something, one could use
+> > the black/grey/white jpgs they use for brightness/contrast settings (with
+> > the black bars and fading numbers) and include them in gddccontrol for
+> > brightness/contrast tuning. this seems not to difficult to do. (actually,
+> > one could use the whole program interface, since it is all available, load
+> > them in mozilla to see what i mean.)
+> >
+> > if you want some more info or have some other ideas to implement, let me
+> > know
+> >
+> > many thanx for the program
+> >
+> > stijn
+> >
+> > >     Well, I've not checked windows dir, that's why as seems I've not
+> found
+> > > this file. I'm using 2.5 now.
+> > >     I've checked vcp.ini, and as seems it contains VESA stuff only...
+> > >
+> > > Regards,
+> > > Oleg.
+> > >
+> > > ----- Original Message ----- 
+> > > From: "Stijn De Weirdt" <stdweird@...2...>
+> > > To: "Oleg I. Vdovikin" <oleg@...3...>
+> > > Sent: Wednesday, October 27, 2004 2:44 PM
+> > > Subject: Re: ddccontrol & syncmaster 193p
+> > >
+> > >
+> > > > the dependence on kernel might be the reason why i can't compile both
+> > > > programs because of different i2c-dev.h. the fact that the devices
+> don't
+> > > > show, is ofcourse something else (and probably mandrake's).
+> > > > (btw, did you install magictune on windows. it's strange that you
+> didn't
+> > > > get the vcp.ini)
+> > > >
+> > > > stijn
+> > > >
+> > > > >     It does not depends on kernel version. I've now 2.6.8 from FC2
+> > > updates
+> > > > > and it works ok. You will need to figure out why i2c entries in the
+> /dev
+> > > is
+> > > > > missing. It's not the kernel problem. Try finding i2c entries
+> launching
+> > > find
+> > > > > like this
+> > > > >
+> > > > >     find /dev -name "i2c*"
+> > > > >
+> > > > > Regards,
+> > > > > Oleg.
+> > > > >
+> > > > > ----- Original Message ----- 
+> > > > > From: "Stijn De Weirdt" <stdweird@...2...>
+> > > > > To: "Oleg I. Vdovikin" <oleg@...3...>
+> > > > > Sent: Wednesday, October 27, 2004 2:06 PM
+> > > > > Subject: Re: ddccontrol & syncmaster 193p
+> > > > >
+> > > > >
+> > > > > > hi,
+> > > > > >
+> > > > > > i'll check the devfs (but i think thy use the newer udev, not
+> really
+> > > sure
+> > > > > > about that). i checked the fedora core 2 rpms, they use 2.6.5.
+> i've
+> > > also a
+> > > > > > 2.6.5 installed somewhere, so i'll see what that gives me.
+> > > > > >
+> > > > > > many thanks
+> > > > > >
+> > > > > > stijn
+> > > > > >
+> > > > > > > Hi,
+> > > > > > >
+> > > > > > >     I've used Fedora Core 2 box. Mandrake is probably uses devfs
+> > > (not
+> > > > > sure
+> > > > > > > about this), try executing mount and check for /dev. Another
+> > > possibility
+> > > > > (if
+> > > > > > > it does not use devfs), is that mandrake is broken a bit, and
+> does
+> > > not
+> > > > > have
+> > > > > > > i2c entries in the /dev - you will need to create them manually
+> by
+> > > > > issuing
+> > > > > > > mknod like this:
+> > > > > > >
+> > > > > > > mknod /dev/i2c-0 c 89 0
+> > > > > > > mknod /dev/i2c-1 c 89 1
+> > > > > > > mknod /dev/i2c-2 c 89 2
+> > > > > > > mknod /dev/i2c-3 c 89 3
+> > > > > > >
+> > > > > > > Regards,
+> > > > > > > Oleg.
+> > > > > > >
+> > > > > > > ----- Original Message ----- 
+> > > > > > > From: "Stijn De Weirdt" <stdweird@...2...>
+> > > > > > > To: "Oleg I. Vdovikin" <oleg@...3...>
+> > > > > > > Cc: <nicolas@...1...>
+> > > > > > > Sent: Wednesday, October 27, 2004 1:05 PM
+> > > > > > > Subject: Re: ddccontrol & syncmaster 193p
+> > > > > > >
+> > > > > > >
+> > > > > > > > the version of magictune is 2.0, and you can find it here:
+> > > > > > > > http://carl.ugent.be/mt-2.tar.bz2. i'll keep it up today,
+> since my
+> > > > > server
+> > > > > > > > isn't patched or anything. it's 12MB. i istalled the new 2.5
+> > > yesterday
+> > > > > and
+> > > > > > > > indeed, there's no more clutter in the windows directory ;)
+> > > > > > > >
+> > > > > > > > about the errors, apparantly my 2.6.8-mandrake-something has
+> some
+> > > > > > > > constants and structures not defined in i2c-dev.h but in
+> i2c.h, so
+> > > > > i've
+> > > > > > > > copied them where necessary, so now it compiles (this was also
+> in
+> > > > > oleg's
+> > > > > > > > progrm). but, still can't use it: reason, no /dev/i2c to see
+> (i've
+> > > > > check
+> > > > > > > > /proc and there also nothing). i did modprobe both i2c-dev and
+> > > > > radeonfb
+> > > > > > > > (have radeon), they show up in lsmod but do nothing. i'd like
+> to
+> > > know
+> > > > > > > > which kernel you guys used. i'll try with vanilla 2.6.9 today.
+> > > > > > > >
+> > > > > > > > stijn
+> > > > > > > >
+> > > > > > > > >     Oh, yeah. I'm really blind. ;-)
+> > > > > > > > >
+> > > > > > > > >     Can you please check version of the magic tune?
+> > > > > > > > >
+> > > > > > > > > Thanks,
+> > > > > > > > > Oleg.
+> > > > > > > > >
+> > > > > > > > > ----- Original Message ----- 
+> > > > > > > > > From: "Stijn De Weirdt" <stdweird@...2...>
+> > > > > > > > > To: "Oleg I. Vdovikin" <oleg@...3...>
+> > > > > > > > > Cc: <nicolas@...1...>
+> > > > > > > > > Sent: Tuesday, October 26, 2004 5:54 PM
+> > > > > > > > > Subject: Re: ddccontrol & syncmaster 193p
+> > > > > > > > >
+> > > > > > > > >
+> > > > > > > > > > thanks for the fast reply :)
+> > > > > > > > > >
+> > > > > > > > > > > Stijn,
+> > > > > > > > > > >
+> > > > > > > > > > >     the code is probably broken at the moment - Nicolas
+> is
+> > > > > adding
+> > > > > > > direct
+> > > > > > > > > > > access to the I2C bus for nvidia cards. You may want to
+> try
+> > > my
+> > > > > old
+> > > > > > > code
+> > > > > > > > > from
+> > > > > > > > > > > the http://jaffar.cs.msu.su/oleg/ddcci/ page if you need
+> > > this
+> > > > > > > > > immediately.
+> > > > > > > > > > >
+> http://jaffar.cs.msu.su/oleg/ddcci/ddcci-tool-0.04.tar.gz is
+> > > the
+> > > > > > > direct
+> > > > > > > > > > > link.
+> > > > > > > > > > ok, i'll give your old code a try. i also forgot to
+> mention
+> > > that
+> > > > > the
+> > > > > > > > > > version of ddccontrol i used was cvs-version i downloaded
+> > > > > yesterday.
+> > > > > > > > > > >
+> > > > > > > > > > >     If you've some experience with gnome programing,
+> please
+> > > > > > > participate.
+> > > > > > > > > ;-)
+> > > > > > > > > > > I'm not familar with gnome, so Nicolas is doing GUI job
+> > > alone.
+> > > > > ;-)
+> > > > > > > > > > i'll give it a shot later. i'm not that familiar with
+> > > programming,
+> > > > > but
+> > > > > > > > > > i'll have to learn it for my new job anyway.
+> > > > > > > > > > >
+> > > > > > > > > > >     Can you please send vcp.ini file to us? It's seems
+> my
+> > > > > magictune
+> > > > > > > 2.0
+> > > > > > > > > from
+> > > > > > > > > > > the CD does not contain it, as well as MagicTune from
+> the
+> > > > > Samsung
+> > > > > > > > > site...
+> > > > > > > > > > i thought i'd attached it (did you receive the other
+> files?)
+> > > to
+> > > > > make
+> > > > > > > sure,
+> > > > > > > > > > i'll dump the file at the end of this mail too.
+> > > > > > > > > >
+> > > > > > > > > > >
+> > > > > > > > > > >     Probably 173p files can be used as-is with 193p, but
+> you
+> > > > > will
+> > > > > > > need
+> > > > > > > > > to
+> > > > > > > > > > > check for magic bright settings - probably 193p has
+> > > something
+> > > > > newer
+> > > > > > > (at
+> > > > > > > > > > > least there are two versions - magic bright & magic
+> bright
+> > > 2,
+> > > > > > > according
+> > > > > > > > > to
+> > > > > > > > > > > samsung).
+> > > > > > > > > > i don't know, will check for both versions and install and
+> > > play
+> > > > > ed.
+> > > > > > > > > > >
+> > > > > > > > > > > Regards,
+> > > > > > > > > > > Oleg.
+> > > > > > > > > > many thanks
+> > > > > > > > > >
+> > > > > > > > > > stijn
+> > > > > > > > > >
+> > > > > > > > > > >
+> > > > > > > > > > > ----- Original Message ----- 
+> > > > > > > > > > > From: "Stijn De Weirdt" <stdweird@...2...>
+> > > > > > > > > > > To: <oleg@...3...>
+> > > > > > > > > > > Cc: <nicolas@...1...>
+> > > > > > > > > > > Sent: Tuesday, October 26, 2004 5:28 PM
+> > > > > > > > > > > Subject: ddccontrol & syncmaster 193p
+> > > > > > > > > > >
+> > > > > > > > > > >
+> > > > > > > > > > > > hello to both of you,
+> > > > > > > > > > > >
+> > > > > > > > > > > > i've recently bought a samsung syncmaster 193p and i
+> was
+> > > > > trying to
+> > > > > > > > > install
+> > > > > > > > > > > > your ddccontrol program on my computer. but compiling
+> > > didn't
+> > > > > > > really
+> > > > > > > > > went
+> > > > > > > > > > > > well (i'm going to try with pci-utils installed
+> tonight,
+> > > and
+> > > > > let
+> > > > > > > you
+> > > > > > > > > guys
+> > > > > > > > > > > > know). i've attached 2 files: the config.log file from
+> > > > > ./configure
+> > > > > > > and
+> > > > > > > > > the
+> > > > > > > > > > > > error-output (error-ddc).
+> > > > > > > > > > > >
+> > > > > > > > > > > > i've also looked a bit around in my windows install
+> and
+> > > found
+> > > > > the
+> > > > > > > file
+> > > > > > > > > > > > vcp.ini in the magic tune directory (magic tune is
+> what
+> > > > > samsung
+> > > > > > > ships
+> > > > > > > > > with
+> > > > > > > > > > > > the display, i think it's version 2.0, will check
+> later).
+> > > this
+> > > > > > > file
+> > > > > > > > > shows
+> > > > > > > > > > > > some hex-codes and some explanation which corresponds
+> to
+> > > some
+> > > > > > > extend
+> > > > > > > > > to
+> > > > > > > > > > > > the 173p xml file i found in the ddccontrol-db
+> directory.
+> > > (i
+> > > > > > > haven't
+> > > > > > > > > > > > made/tried/dared the cable approach). maybe this is
+> useful
+> > > to
+> > > > > you,
+> > > > > > > and
+> > > > > > > > > i
+> > > > > > > > > > > > think i can use the 173p control file.
+> > > > > > > > > > > >
+> > > > > > > > > > > > as a last thing, these are the identifiers from the
+> 193p
+> > > > > according
+> > > > > > > to
+> > > > > > > > > my
+> > > > > > > > > > > > xorg.0.log:
+> > > > > > > > > > > > manufacturer: SAM
+> > > > > > > > > > > > model: ed  ------> for dvi
+> > > > > > > > > > > > model: ec  ------> analog
+> > > > > > > > > > > > ( i presume making the files SAM00ed.xml and
+> SAM00ec.xml
+> > > and
+> > > > > > > referring
+> > > > > > > > > to
+> > > > > > > > > > > > the 173p wil do the trick)
+> > > > > > > > > > > >
+> > > > > > > > > > > >
+> > > > > > > > > > > > well, many thanks for the program, i hope i get
+> working
+> > > soon.
+> > > > > if
+> > > > > > > you
+> > > > > > > > > want
+> > > > > > > > > > > > more info or something else, let me know.
+> > > > > > > > > > > >
+> > > > > > > > > > > > stijn
+> > > > > > > > > > >
+> > > > > > > > > >
+> > > > > > > > > >
+> > > > > > > > > > vcp.ini starts here:
+> > > > > > > > > > -----------------------------------------------------
+> > > > > > > > > > 00 0 0 00
+> > > > > > > > > > 01 0 0 01 Degauss
+> > > > > > > > > > 02 0 0 02
+> > > > > > > > > > 03 0 0 03
+> > > > > > > > > > 04 1 0 04 Restore Factory Defaults
+> > > > > > > > > > 05 1 0 05 Restore Brightness and Contast Defaults
+> > > > > > > > > > 06 1 0 06 Restore Factory Geometry Defaults
+> > > > > > > > > > 07 0 0 07
+> > > > > > > > > > 08 1 0 08 Restore Factory Color Defaults
+> > > > > > > > > > 09 0 0 09
+> > > > > > > > > > 0A 0 0 0A Restore factory TV defaults
+> > > > > > > > > > 0B 0 0 0B
+> > > > > > > > > > 0C 1 0 0C Color temperature request
+> > > > > > > > > > 0D 0 0 0D
+> > > > > > > > > > 0E 1 0 0E CLOCK
+> > > > > > > > > > 0F 0 0 0F
+> > > > > > > > > > 10 1 0 10 Brightness
+> > > > > > > > > > 11 0 0 11
+> > > > > > > > > > 12 1 0 12 Contrast
+> > > > > > > > > > 13 0 0 13
+> > > > > > > > > > 14 1 1 E0 Select Color Preset (01h = sRGB) (White Point)
+> > > > > > > > > > 15 0 0 15
+> > > > > > > > > > 16 1 0 16 Red Video Gain
+> > > > > > > > > > 17 0 0 17
+> > > > > > > > > > 18 1 0 18 Green Video Gain
+> > > > > > > > > > 19 0 0 19
+> > > > > > > > > > 1A 1 0 1A Blue Video Gain
+> > > > > > > > > > 1B 0 0 1B
+> > > > > > > > > > 1C 0 0 1C Focus
+> > > > > > > > > > 1D 0 0 1D
+> > > > > > > > > > 1E 1 0 1E Auto Setup (Auto Reset)
+> > > > > > > > > > 1F 0 0 1F
+> > > > > > > > > > 20 1 0 20 Horizontal Position
+> > > > > > > > > > 21 0 0 21
+> > > > > > > > > > 22 0 0 22 Horizontal Size
+> > > > > > > > > > 23 0 0 23
+> > > > > > > > > > 24 0 0 24 Horizontal Pincushion
+> > > > > > > > > > 25 0 0 25
+> > > > > > > > > > 26 0 0 26 Horizontal Pincushion Balance
+> > > > > > > > > > 27 0 0 27
+> > > > > > > > > > 28 0 0 28 Horizontal Misconvergence
+> > > > > > > > > > 29 0 0 29
+> > > > > > > > > > 2A 0 0 2A Horizontal Linearity
+> > > > > > > > > > 2B 0 0 2B
+> > > > > > > > > > 2C 0 0 2C Horizontal Linearity balance
+> > > > > > > > > > 2D 0 0 2D
+> > > > > > > > > > 2E 0 0 2E
+> > > > > > > > > > 2F 0 0 2F
+> > > > > > > > > > 30 1 0 30 Vertical Position
+> > > > > > > > > > 31 0 0 31
+> > > > > > > > > > 32 0 0 32 Vertical Size
+> > > > > > > > > > 33 0 0 33
+> > > > > > > > > > 34 0 0 34 Vertical pincushion
+> > > > > > > > > > 35 0 0 35
+> > > > > > > > > > 36 0 0 36 Vertical pincushion balance
+> > > > > > > > > > 37 0 0 37
+> > > > > > > > > > 38 0 0 38 Vertical Misconvergence
+> > > > > > > > > > 39 0 0 39
+> > > > > > > > > > 3A 0 0 3A Vertical Linearity
+> > > > > > > > > > 3B 0 0 3B
+> > > > > > > > > > 3C 0 0 3C Vertical Linearity Balance
+> > > > > > > > > > 3D 0 0 3D
+> > > > > > > > > > 3E 1 0 3E CLOCK PHASE
+> > > > > > > > > > 3F 0 0 3F
+> > > > > > > > > > 40 0 0 40 Key Balance
+> > > > > > > > > > 41 0 0 41
+> > > > > > > > > > 42 0 0 42 Horizontal Trapezoidal Distortion
+> > > > > > > > > > 43 0 0 43 Vertical Trapezoidal Distortion
+> > > > > > > > > > 44 0 0 44 Tilt(Rotation)
+> > > > > > > > > > 45 0 0 45
+> > > > > > > > > > 46 0 0 46 Top Corner Distortion
+> > > > > > > > > > 47 0 0 47
+> > > > > > > > > > 48 0 0 48 Top Corner Distortion Balance
+> > > > > > > > > > 49 0 0 49
+> > > > > > > > > > 4A 0 0 4A Bottom Corner Distortion
+> > > > > > > > > > 4B 0 0 4B
+> > > > > > > > > > 4C 0 0 4C Bottom Corner Distortion Balance
+> > > > > > > > > > 4D 0 0 4D
+> > > > > > > > > > 4E 0 0 4E Trapezoid
+> > > > > > > > > > 4F 0 0 4F
+> > > > > > > > > > 50 0 0 50 Keystone
+> > > > > > > > > > 51 0 0 51
+> > > > > > > > > > 52 0 0 52
+> > > > > > > > > > 53 0 0 53
+> > > > > > > > > > 54 0 0 54
+> > > > > > > > > > 55 0 0 55
+> > > > > > > > > > 56 0 0 56 Horizontal Moire
+> > > > > > > > > > 57 0 0 57
+> > > > > > > > > > 58 0 0 58 Vertical Moire
+> > > > > > > > > > 59 0 0 59
+> > > > > > > > > > 5A 0 0 5A
+> > > > > > > > > > 5B 0 0 5B
+> > > > > > > > > > 5C 0 0 5C
+> > > > > > > > > > 5D 0 0 5D
+> > > > > > > > > > 5E 0 0 5E
+> > > > > > > > > > 5F 0 0 5F
+> > > > > > > > > > 60 1 0 60 Input source
+> > > > > > > > > > 61 0 0 61
+> > > > > > > > > > 62 0 0 62 Audio Speaker Volume
+> > > > > > > > > > 63 0 0 63
+> > > > > > > > > > 64 0 0 64 Audio Microphone Volume
+> > > > > > > > > > 65 0 0 65
+> > > > > > > > > > 66 0 0 66
+> > > > > > > > > > 67 0 0 67
+> > > > > > > > > > 68 0 0 68
+> > > > > > > > > > 69 0 0 69
+> > > > > > > > > > 6A 0 0 6A
+> > > > > > > > > > 6B 0 0 6B
+> > > > > > > > > > 6C 0 0 6C Red Video Black Level
+> > > > > > > > > > 6D 0 0 6D
+> > > > > > > > > > 6E 0 0 6E Green Video Black Level
+> > > > > > > > > > 6F 0 0 6F
+> > > > > > > > > > 70 0 0 70 Blue Video Black Level
+> > > > > > > > > > 71 0 0 71
+> > > > > > > > > > 72 0 0 72
+> > > > > > > > > > 73 0 0 73
+> > > > > > > > > > 74 0 0 74
+> > > > > > > > > > 75 0 0 75
+> > > > > > > > > > 76 0 0 76
+> > > > > > > > > > 77 0 0 77
+> > > > > > > > > > 78 0 0 78
+> > > > > > > > > > 79 0 0 79
+> > > > > > > > > > 7A 0 0 7A Adjust focal plane
+> > > > > > > > > > 7B 0 0 7B
+> > > > > > > > > > 7C 0 0 7C Adjust zoom
+> > > > > > > > > > 7D 0 0 7D
+> > > > > > > > > > 7E 0 0 7E
+> > > > > > > > > > 7F 0 0 7F
+> > > > > > > > > > 80 0 0 80
+> > > > > > > > > > 81 0 0 81
+> > > > > > > > > > 82 0 0 82 Horizontal flip
+> > > > > > > > > > 83 0 0 83
+> > > > > > > > > > 84 0 0 84 Vertical flip
+> > > > > > > > > > 85 0 0 85
+> > > > > > > > > > 86 0 0 86 Display scaling
+> > > > > > > > > > 87 0 0 87
+> > > > > > > > > > 88 0 0 88 Velocity scan modulation
+> > > > > > > > > > 89 0 0 89
+> > > > > > > > > > 8A 0 0 8A TV Color Saturation
+> > > > > > > > > > 8B 0 0 8B TV-Channel UP/DOWN
+> > > > > > > > > > 8C 0 0 8C TV-Sharpness
+> > > > > > > > > > 8D 0 0 8D TV-Audio Mute
+> > > > > > > > > > 8E 0 0 8E TV contrast
+> > > > > > > > > > 8F 0 0 8F TV-Audio Control(Treble)
+> > > > > > > > > > 90 0 0 90 TV-HUE(Tint)
+> > > > > > > > > > 91 0 0 91 TV-Audio Control (Bass)
+> > > > > > > > > > 92 0 0 92 TV-Black Level/Brightness
+> > > > > > > > > > 93 0 0 93 TV-Audio Control(Balance)
+> > > > > > > > > > 94 0 0 94 Audio: stereo mode
+> > > > > > > > > > 95 0 0 95 window position(TL_X)
+> > > > > > > > > > 96 0 0 96 window position(TL_Y)
+> > > > > > > > > > 97 0 0 97 window position(BR_X)
+> > > > > > > > > > 98 0 0 98 window position(BR_Y)
+> > > > > > > > > > 99 0 0 99 Window Control ON/OFF
+> > > > > > > > > > 9A 0 0 9A Window BackGround
+> > > > > > > > > > 9B 0 0 9B 6 Axis color control RED
+> > > > > > > > > > 9C 0 0 9C 6 Axis color control YELLOW
+> > > > > > > > > > 9D 0 0 9D 6 Axis color control GREEN
+> > > > > > > > > > 9E 0 0 9E 6 Axis color control CYAN
+> > > > > > > > > > 9F 0 0 9F 6 Axis color control BLUE
+> > > > > > > > > > A0 0 0 A0 6 Axis color control MAGENTA
+> > > > > > > > > > A1 0 0 A1
+> > > > > > > > > > A2 0 0 A2 Auto SetUp ON/OFF
+> > > > > > > > > > A3 0 0 A3
+> > > > > > > > > > A4 0 0 A4
+> > > > > > > > > > A5 0 0 A5
+> > > > > > > > > > A6 0 0 A6
+> > > > > > > > > > A7 0 0 A7
+> > > > > > > > > > A8 0 0 A8
+> > > > > > > > > > A9 0 0 A9
+> > > > > > > > > > AA 1 0 AA Screen Orientation
+> > > > > > > > > > AB 0 0 AB
+> > > > > > > > > > AC 0 0 AC Horizontal frequency
+> > > > > > > > > > AD 0 0 AD
+> > > > > > > > > > AE 0 0 AE Vertical frequency
+> > > > > > > > > > AF 0 0 AF
+> > > > > > > > > > B0 1 0 B0
+> > > > > > > > > > B1 0 0 B1
+> > > > > > > > > > B2 0 0 B2 Flat panel sub-pixel pattern
+> > > > > > > > > > B3 0 0 B3
+> > > > > > > > > > B4 0 0 B4 Flat panel RGB_ordering
+> > > > > > > > > > B5 0 0 B5
+> > > > > > > > > > B6 1 0 B6 Monitor Display technology type
+> > > > > > > > > > B7 0 0 B7 DPVL Protocol Mode
+> > > > > > > > > > B8 0 0 B8 DPVL Protocol Parameter
+> > > > > > > > > > B9 0 0 B9 DPVL Monitor X Origin
+> > > > > > > > > > BA 0 0 BA DPVL Monitor Y Origin
+> > > > > > > > > > BB 0 0 BB DPVL Unrecoverable error count
+> > > > > > > > > > BC 0 0 BC DPVL Recoverable error count
+> > > > > > > > > > BD 0 0 BD
+> > > > > > > > > > BE 0 0 BE
+> > > > > > > > > > BF 0 0 BF
+> > > > > > > > > > C0 0 0 C0
+> > > > > > > > > > C1 0 0 C1
+> > > > > > > > > > C2 0 0 C2
+> > > > > > > > > > C3 0 0 C3
+> > > > > > > > > > C4 0 0 C4
+> > > > > > > > > > C5 0 0 C5
+> > > > > > > > > > C6 0 0 C6
+> > > > > > > > > > C7 0 0 C7
+> > > > > > > > > > C8 0 0 C8
+> > > > > > > > > > C9 0 0 C9
+> > > > > > > > > > CA 1 0 CA OSD
+> > > > > > > > > > CB 0 0 CB
+> > > > > > > > > > CC 0 0 CC
+> > > > > > > > > > CD 0 0 CD
+> > > > > > > > > > CE 0 0 CE
+> > > > > > > > > > CF 0 0 CF
+> > > > > > > > > > D0 0 0 D0 Output selection
+> > > > > > > > > > D1 0 0 D1
+> > > > > > > > > > D2 0 0 D2
+> > > > > > > > > > D3 0 0 D3
+> > > > > > > > > > D4 0 0 D4 Stereo video mode
+> > > > > > > > > > D5 0 0 D5
+> > > > > > > > > > D6 1 0 D6 Power Mode
+> > > > > > > > > > D7 0 0 D7
+> > > > > > > > > > D8 0 0 D8
+> > > > > > > > > > D9 0 0 D9
+> > > > > > > > > > DA 0 0 DA Scan format
+> > > > > > > > > > DB 0 0 DB
+> > > > > > > > > > DC 1 0 DC Display Mode
+> > > > > > > > > > DD 0 0 DD
+> > > > > > > > > > DE 0 0 DE Operation mode
+> > > > > > > > > > DF 1 0 DF VCP Version
+> > > > > > > > > > E0 0 0 E0 Vendor Specific Control
+> > > > > > > > > > E1 0 0 E1 Vendor Specific Control
+> > > > > > > > > > E2 0 0 E2 Vendor Specific Control
+> > > > > > > > > > E3 0 0 E3 Vendor Specific Control
+> > > > > > > > > > E4 0 0 E4 Vendor Specific Control
+> > > > > > > > > > E5 0 0 E5 Vendor Specific Control
+> > > > > > > > > > E6 0 0 E6 Vendor Specific Control
+> > > > > > > > > > E7 0 0 E7 Vendor Specific Control
+> > > > > > > > > > E8 0 0 E8 Vendor Specific Control
+> > > > > > > > > > E9 0 0 E9 Vendor Specific Control
+> > > > > > > > > > EA 0 0 EA Vendor Specific Control
+> > > > > > > > > > EB 0 0 EB Vendor Specific Control
+> > > > > > > > > > EC 0 0 EC Vendor Specific Control
+> > > > > > > > > > ED 0 0 ED Vendor Specific Control
+> > > > > > > > > > EE 0 0 EE Vendor Specific Control
+> > > > > > > > > > EF 0 0 EF Vendor Specific Control
+> > > > > > > > > > F0 0 0 F0 Vendor Specific Control
+> > > > > > > > > > F1 0 0 F1 Vendor Specific Control
+> > > > > > > > > > F2 0 0 F2 Vendor Specific Control
+> > > > > > > > > > F3 0 0 F3 Vendor Specific Control
+> > > > > > > > > > F4 0 0 F4 Vendor Specific Control
+> > > > > > > > > > F5 0 0 F5 Vendor Specific Control
+> > > > > > > > > > F6 0 0 F6 Vendor Specific Control
+> > > > > > > > > > F7 0 0 F7 Vendor Specific Control
+> > > > > > > > > > F8 0 0 F8 Vendor Specific Control
+> > > > > > > > > > F9 0 0 F9 Vendor Specific Control
+> > > > > > > > > > FA 0 0 FA Vendor Specific Control
+> > > > > > > > > > FB 0 0 FB Vendor Specific Control
+> > > > > > > > > > FC 0 0 FC Vendor Specific Control
+> > > > > > > > > > FD 0 0 FD Vendor Specific Control
+> > > > > > > > > > FE 0 0 FE Vendor Specific Control
+> > > > > > > > > > FF 0 0 FF Vendor Specific Control
+> > > > > > > > >
+> > > > > > >
+> > > > >
+> > >
+> 
+> 
+
+
+

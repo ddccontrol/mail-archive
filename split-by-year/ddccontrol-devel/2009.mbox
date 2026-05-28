@@ -1,0 +1,745 @@
+From mittov@...36... Sat Jan 24 21:24:25 2009
+From: Mittov Dmitri <mittov@...36...>
+Organization: OmSU
+To: ddccontrol-devel@lists.sourceforge.net
+Date: Sun, 25 Jan 2009 03:24:18 +0600
+User-Agent: KMail/1.10.3 (Linux/2.6.27.7-9-xen; KDE/4.1.3; i686; ; )
+MIME-Version: 1.0
+Message-Id: <200901250324.18299.mittov@...36...>
+X-Spam-Score: -1.5 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.0 DKIM_VERIFIED Domain Keys Identified Mail: signature passes
+	verification
+	0.0 DKIM_SIGNED Domain Keys Identified Mail: message has a signature
+X-Headers-End: 1LQpzL-0003rF-Au
+Subject: [ddccontrol-devel] ddc listen
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 24 Jan 2009 21:24:25 -0000
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello, All.
+
+I'm user of Samsung SyncMaster 971p. It presence in support base. And I want 
+to use MagicRotate function (portrait mode) of my monitor.
+
+I use nvidia driver (180.22).
+
+It is easy to rotate picture on the screen with xrandr. But I don't know how 
+to get event when display is in portrait mode. 
+
+I can see current mode with ddccontrol util. But it is not good to exec 
+ddccontrol in my daemon every N seconds.
+
+Is it possible to listen socket/pipe/something else to get such event?
+
+---
+WBR, Dmitry.
+
+
+From will@...13... Mon Jan 26 08:45:25 2009
+X-ACL-Warn: 
+X-Spam-Checker-Version: SpamAssassin 3.2.5 (2008-06-10) on wmail-1.airmail.net
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.4 required=8.0 tests=ALL_TRUSTED,MISSING_MID
+	autolearn=disabled version=3.2.5
+X-Mailer: QUALCOMM Windows Eudora Version 7.1.0.9
+Date: Mon, 26 Jan 2009 00:26:54 -0600
+To: Mittov Dmitri <mittov@...36...>,ddccontrol-devel@lists.sourceforge.net
+From: William Hollingworth <will@...13...>
+In-Reply-To: <200901250324.18299.mittov@...36...>
+References: <200901250324.18299.mittov@...36...>
+Mime-Version: 1.0
+X-RCVD-IP: 71.170.76.29
+Message-Id: <E1LRKvy-0001E8-NB@...50...>
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 DKIM_VERIFIED Domain Keys Identified Mail: signature passes
+	verification
+	0.0 DKIM_SIGNED Domain Keys Identified Mail: message has a signature
+X-Headers-End: 1LRN5o-0004VP-Jc
+Subject: Re: [ddccontrol-devel] ddc listen
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 26 Jan 2009 08:45:25 -0000
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Dmitry
+
+DDC/CI does not have the capability to generate events. The display 
+can only respond to a query and can not behave as a master device. 
+The only option is to continually poll the display for changes.
+
+Will
+
+At 03:24 PM 1/24/2009, Mittov Dmitri wrote:
+>Hello, All.
+>
+>I'm user of Samsung SyncMaster 971p. It presence in support base. And I want
+>to use MagicRotate function (portrait mode) of my monitor.
+>
+>I use nvidia driver (180.22).
+>
+>It is easy to rotate picture on the screen with xrandr. But I don't know how
+>to get event when display is in portrait mode.
+>
+>I can see current mode with ddccontrol util. But it is not good to exec
+>ddccontrol in my daemon every N seconds.
+>
+>Is it possible to listen socket/pipe/something else to get such event?
+>
+>---
+>WBR, Dmitry.
+>
+>------------------------------------------------------------------------------
+>This SF.net email is sponsored by:
+>SourcForge Community
+>SourceForge wants to tell your story.
+>http://p.sf.net/sfu/sf-spreadtheword
+>_______________________________________________
+>ddccontrol-devel mailing list
+>ddccontrol-devel@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+
+
+
+From kotlakiran@...36... Fri Jan 30 23:46:14 2009
+MIME-Version: 1.0
+Date: Fri, 30 Jan 2009 15:46:09 -0800
+Message-ID: <965f530d0901301546u70e7b873ub4962125ea9b1665@...37...>
+From: Kiran Kotla <kotlakiran@...36...>
+To: ddccontrol-devel@lists.sourceforge.net
+X-Spam-Score: -1.5 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.0 DKIM_VERIFIED Domain Keys Identified Mail: signature passes
+	verification
+	0.0 DKIM_SIGNED Domain Keys Identified Mail: message has a signature
+X-Headers-End: 1LT33q-0006OI-OO
+Cc: nboichat@...31..., oleg@...3...,
+	vdovikin@...31..., el_cubano@...31...,
+	nicolas@...1..., cschilling@...6...
+Subject: [ddccontrol-devel] Patch: accelerate ddccontrol -r
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 30 Jan 2009 23:46:14 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hello ddccontrol maintainers,
+
+	Here is a patch that makes ddccontrol run substantially faster
+when the i2c device and a field to read or write are specified, by
+skipping the reading of monitor information which is apparently not
+used in that case.  This optimization makes it more feasible to use
+ddccontrol interactively for tasks like adjusting monitor brightness
+or picture position.
+
+	Just as a sample benchmark, here is the difference in times
+to do "ddccontrol -r 0x60 pci:01:00.0-1", in seconds, which shows
+that ddccontrol runs more than twice as fast in this case.
+
+		Real		        User		        Sys
+Before	2.191		0.136		0.052
+After		0.788		0.148		0.044
+
+
+	The change basically chops the end of ddcci_open into a
+separate new function, ddcci_read_details, and changes the two places
+that call ddcci_open to call this second function also, but only when
+necessary.
+
+	Although this patch is against ddccontrol-0.4.2, it should
+apply cleanly in the subversion trunk, as the only intervening
+changes to the effected file in subversion were changes to the
+mailing address of the Free Software Foundation.
+
+	Since I do not have write access to the subversion repository,
+could you please integrate this change or let me know what process you
+would prefer I follow to get this optimization integrated?
+
+	Thanks in advance.
+        Kiran
+
+
+
+
+diff -u -r ddccontrol-0.4.2/src/ddccontrol/main.c
+ddccontrol-0.4.2.faster/src/ddccontrol/main.c
+--- ddccontrol-0.4.2/src/ddccontrol/main.c	2006-07-27 13:45:08.000000000 -0700
++++ ddccontrol-0.4.2.faster/src/ddccontrol/main.c	2009-01-30
+12:45:03.000000000 -0800
+@@ -343,6 +343,10 @@
+ 			"\nDDC/CI at %s is unusable (%d).\n"
+ 			"If your graphics card need it, please check all the required
+kernel modules are loaded (i2c-dev, and your framebuffer driver).\n"
+ 		    ), fn, ret);
++	} else if (probe && (ret = ddcci_read_details(&mon)) < 0) {
++		fprintf(stderr, _(
++			"\nUnable to read monitor details from database (ddc_read_details
+returned %d).\n"
++			), ret);
+ 	} else {
+ 		fprintf(stdout, _("\nEDID readings:\n"));
+ 		fprintf(stdout, _("\tPlug and Play ID: %s [%s]\n"),
+diff -u -r ddccontrol-0.4.2/src/lib/ddcci.c
+ddccontrol-0.4.2.faster/src/lib/ddcci.c
+--- ddccontrol-0.4.2/src/lib/ddcci.c	2006-06-15 09:45:19.000000000 -0700
++++ ddccontrol-0.4.2.faster/src/lib/ddcci.c	2009-01-30 11:23:56.000000000 -0800
+@@ -883,7 +883,7 @@
+   - -2 if EDID is not available
+   - -3 if file can't be opened
+ */
+-static int ddcci_open_with_addr(struct monitor* mon, const char*
+filename, int addr, int edid, int probing)
++static int ddcci_open_with_addr(struct monitor* mon, const char*
+filename, int addr, int probing)
+ {
+ 	memset(mon, 0, sizeof(struct monitor));
+ 	
+@@ -936,6 +936,11 @@
+ 	
+ 	mon->addr = addr;
+ 	
++	return 0;
++}
++
++static int ddcci_read_details_edid(struct monitor* mon, int edid)
++{
+ 	if (ddcci_read_edid(mon, edid) < 0) {
+ 		return -2;
+ 	}
+@@ -987,9 +992,15 @@
+
+ int ddcci_open(struct monitor* mon, const char* filename, int probing)
+ {
+-	return ddcci_open_with_addr(mon, filename, DEFAULT_DDCCI_ADDR,
+DEFAULT_EDID_ADDR, probing);
++	return ddcci_open_with_addr(mon, filename, DEFAULT_DDCCI_ADDR, probing);
+ }
+
++int ddcci_read_details(struct monitor* mon)
++{
+
+
+From Schratzberger.Josef@...51... Thu Nov 19 15:26:46 2009
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01CA692A.87C3647B"
+Date: Thu, 19 Nov 2009 16:11:12 +0100
+Message-ID: <641D644D2F5EDD4C814904A4A280CF7E05A128B5@...52...>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: ddccontrol on windows?
+Thread-Index: AcppKogZml+o6L9IQRiIaqwz7D4Qog==
+From: "Schratzberger Josef" <Schratzberger.Josef@...51...>
+To: <ddccontrol-devel@lists.sourceforge.net>
+X-SEF-Processed: 6_1_0_100__2009_11_19_16_11_07
+X-Spam-Score: -0.5 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	1.0 HTML_MESSAGE           BODY: HTML included in message
+X-Headers-End: 1NB8u6-0002bx-Uv
+Subject: [ddccontrol-devel] ddccontrol on windows?
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 19 Nov 2009 15:26:46 -0000
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01CA692A.87C3647B
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+aGksDQogDQppbiB0aGUgb2ZmaWNlIHdoZXJlIGkgd29yayB3ZSBhcmUgc3R1Y2sgd2l0aCB3aW5k
+b3dzIDooIA0Kc28gZG8geW91IHBsYW4gdG8gcHVibGlzaCBhIHdvbmRvd3MgdmVyc2lvbiBvZiBk
+ZGNjb250cm9sIGFueXRpbWUgc29vbj8NCiANCmdyZWV0aW5ncywgU2VwcA0KIA0KIA0KDQpfX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18NCg0KRGlwbC4tSW5nLiBKb3NlZiBTY2hy
+YXR6YmVyZ2VyDQoNCkZST05JVVMgSW50ZXJuYXRpb25hbCBHbWJIDQpGb3JzY2h1bmcgJiBFbnR3
+aWNrbHVuZw0KTnVtZXJpc2NoZSBTaW11bGF0aW9uDQoNCg0KR8O8bnRlciBGcm9uaXVzIFN0ci4g
+MQ0KQS00NjAwIFRoYWxoZWltDQpBdXN0cmlhDQoNClRlbDogKzQzIC8gKDApNzI0MiAvIDI0MSDi
+gJMgMTM1Nw0KbWFpbHRvOnNjaHJhdHpiZXJnZXIuam9zZWZALi4uNTEuLi4NCmh0dHA6Ly93d3cu
+ZnJvbml1cy5jb20gPGh0dHA6Ly93d3cuZnJvbml1cy5jb20vPiANCg0KX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fDQoNCiANCg==
+
+------_=_NextPart_001_01CA692A.87C3647B
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+77u/PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9u
+YWwvL0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgaHR0cC1lcXVpdj1Db250ZW50LVR5cGUgY29u
+dGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxNRVRBIGNvbnRlbnQ9Ik1TSFRNTCA2
+LjAwLjM3OTAuNDQ3MCIgbmFtZT1HRU5FUkFUT1I+PC9IRUFEPg0KPEJPRFk+DQo8RElWPjxTUEFO
+IGNsYXNzPTkxNzU1MDgxNS0xOTExMjAwOT48Rk9OVCBmYWNlPUFyaWFsIA0Kc2l6ZT0yPmhpLDwv
+Rk9OVD48L1NQQU4+PC9ESVY+DQo8RElWPjxTUEFOIGNsYXNzPTkxNzU1MDgxNS0xOTExMjAwOT48
+Rk9OVCBmYWNlPUFyaWFsIA0Kc2l6ZT0yPjwvRk9OVD48L1NQQU4+Jm5ic3A7PC9ESVY+DQo8RElW
+PjxTUEFOIGNsYXNzPTkxNzU1MDgxNS0xOTExMjAwOT48Rk9OVCBmYWNlPUFyaWFsIHNpemU9Mj5p
+biB0aGUgb2ZmaWNlIHdoZXJlIA0KaSB3b3JrIHdlIGFyZSBzdHVjayB3aXRoIHdpbmRvd3MgOigg
+PC9GT05UPjwvU1BBTj48L0RJVj4NCjxESVY+PFNQQU4gY2xhc3M9OTE3NTUwODE1LTE5MTEyMDA5
+PjxGT05UIGZhY2U9QXJpYWwgc2l6ZT0yPnNvIGRvIHlvdSBwbGFuIHRvIA0KcHVibGlzaCBhIHdv
+bmRvd3MgdmVyc2lvbiBvZiBkZGNjb250cm9sIGFueXRpbWUgc29vbj88L0ZPTlQ+PC9TUEFOPjwv
+RElWPg0KPERJVj48U1BBTiBjbGFzcz05MTc1NTA4MTUtMTkxMTIwMDk+PEZPTlQgZmFjZT1Bcmlh
+bCANCnNpemU9Mj48L0ZPTlQ+PC9TUEFOPiZuYnNwOzwvRElWPg0KPERJVj48U1BBTiBjbGFzcz05
+MTc1NTA4MTUtMTkxMTIwMDk+PEZPTlQgZmFjZT1BcmlhbCBzaXplPTI+Z3JlZXRpbmdzLCANClNl
+cHA8L0ZPTlQ+PC9TUEFOPjwvRElWPg0KPERJVj48U1BBTiBjbGFzcz05MTc1NTA4MTUtMTkxMTIw
+MDk+PEZPTlQgZmFjZT1BcmlhbCANCnNpemU9Mj48L0ZPTlQ+PC9TUEFOPiZuYnNwOzwvRElWPg0K
+PERJVj48U1BBTiBjbGFzcz05MTc1NTA4MTUtMTkxMTIwMDk+PEZPTlQgZmFjZT1BcmlhbCANCnNp
+emU9Mj48L0ZPTlQ+PC9TUEFOPiZuYnNwOzwvRElWPg0KPERJViBjbGFzcz1TZWN0aW9uMT4NCjxQ
+IGNsYXNzPU1zb05vcm1hbCBzdHlsZT0ibXNvLWxheW91dC1ncmlkLWFsaWduOiBub25lIiBhbGln
+bj1sZWZ0PjxTUEFOIA0KbGFuZz1FTi1HQiANCnN0eWxlPSJGT05ULVNJWkU6IDEwcHQ7IEZPTlQt
+RkFNSUxZOiBBcmlhbDsgbXNvLWFuc2ktbGFuZ3VhZ2U6IEVOLUdCIj5fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX188P3htbDpuYW1lc3BhY2UgDQpwcmVmaXggPSBvIG5zID0gInVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgDQovPjxvOnA+PC9vOnA+PC9T
+UEFOPjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0iTUFSR0lOLVRPUDogNnB0OyBtc28t
+bGF5b3V0LWdyaWQtYWxpZ246IG5vbmUiPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogMTBwdDsg
+Rk9OVC1GQU1JTFk6IEFyaWFsIj5EaXBsLi1JbmcuIEpvc2VmIA0KU2NocmF0emJlcmdlcjwvU1BB
+Tj48L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9Ik1BUkdJTi1UT1A6IDZwdDsgbXNvLWxh
+eW91dC1ncmlkLWFsaWduOiBub25lIj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDEwcHQ7IEZP
+TlQtRkFNSUxZOiBBcmlhbCI+RlJPTklVUyBJbnRlcm5hdGlvbmFsIA0KR21iSDxCUj5Gb3JzY2h1
+bmcgJmFtcDsgRW50d2lja2x1bmc8L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxMHB0
+OyBGT05ULUZBTUlMWTogQXJpYWwiPjxCUj5OdW1lcmlzY2hlIFNpbXVsYXRpb248L1NQQU4+PC9Q
+Pg0KPFAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSJNQVJHSU4tVE9QOiA2cHQ7IG1zby1sYXlvdXQt
+Z3JpZC1hbGlnbjogbm9uZSI+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxMHB0OyBGT05ULUZB
+TUlMWTogQXJpYWwiPjxCUj5Hw7xudGVyIEZyb25pdXMgU3RyLiAxPEJSPkEtNDYwMCANClRoYWxo
+ZWltPEJSPkF1c3RyaWE8bzpwPjwvbzpwPjwvU1BBTj48L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwg
+c3R5bGU9Ik1BUkdJTi1UT1A6IDZwdDsgbXNvLWxheW91dC1ncmlkLWFsaWduOiBub25lIj48U1BB
+TiANCnN0eWxlPSJGT05ULVNJWkU6IDEwcHQ7IEZPTlQtRkFNSUxZOiBBcmlhbCI+VGVsOiArNDMg
+LyAoMCk3MjQyIC8gMjQxIOKAkyANCjEzNTc8QlI+PFU+PFNQQU4gc3R5bGU9IkNPTE9SOiBibHVl
+Ij48QSANCmhyZWY9Im1haWx0bzpzY2hyYXR6YmVyZ2VyLmpvc2VmQC4uLjUxLi4uIj5tYWlsdG86
+c2NocmF0emJlcmdlci5qb3NlZkAuLi41MS4uLjwvQT48QlI+PC9TUEFOPjwvVT48QSANCmhyZWY9
+Imh0dHA6Ly93d3cuZnJvbml1cy5jb20vIj5odHRwOi8vd3d3LmZyb25pdXMuY29tPC9BPjxvOnA+
+PC9vOnA+PC9TUEFOPjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbD48U1BBTiANCnN0eWxlPSJGT05U
+LVNJWkU6IDEwcHQ7IEZPTlQtRkFNSUxZOiBBcmlhbCI+X19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fPC9TUEFOPjxTUEFOIA0Kc3R5bGU9IkZPTlQtRkFNSUxZOiBBcmlhbCI+PG86
+cD48L286cD48L1NQQU4+PC9QPjwvRElWPg0KPERJVj4mbmJzcDs8L0RJVj48L0JPRFk+PC9IVE1M
+Pg0K
+
+------_=_NextPart_001_01CA692A.87C3647B--
+
+
+
+From ku.b@...6... Tue Dec 01 13:28:17 2009
+X-Authenticated: #2969065
+X-Provags-ID: V01U2FsdGVkX19LZ7hKqWxL3zB4dXju8wsqWSQ5Pzgd2jLEMLfufi
+	0hfTSm/gPvHXEl
+Date: Tue, 1 Dec 2009 14:28:41 +0100 (CET)
+From: Kai-Uwe Behrmann <ku.b@...6...>
+X-X-Sender: kuwe@...53...
+To: ddccontrol-devel@lists.sourceforge.net
+Message-ID: <alpine.LSU.2.00.0912011409350.4782@...53...>
+User-Agent: Alpine 2.00 (LSU 1167 2008-08-23)
+MIME-Version: 1.0
+X-Y-GMX-Trusted: 0
+X-FuHaFi: 0.73
+X-Spam-Score: -1.6 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.1 AWL AWL: From: address is in the auto white-list
+X-Headers-End: 1NFSm3-00057b-Vm
+Subject: [ddccontrol-devel] non root i2c communication
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 01 Dec 2009 13:28:17 -0000
+Content-Type: TEXT/PLAIN; format=flowed; charset=US-ASCII
+Content-Transfer-Encoding: 8bit
+
+I have monitor here, which supports reading and writing of internal LUTs 
+over a small monitor framework[1]. It accesses the montor over i2c 
+device nodes. That would be nice to integrate in my graphic card LUT 
+viewer[2].
+
+Unfortunedly i2c requires root access on my system. And my understanding 
+is that i2c is a security issue to open for normal users. How can my 
+application nevertheless get the curves. As well there is interesst 
+to do more with this monitor communication channel.
+
+Can this be achieved over DDC/CI as well? What would be needed to make it 
+non root read and writeable.
+
+kind regards
+Kai-Uwe Behrmann
+-- 
+developing for colour management 
+www.behrmann.name + www.oyranos.org
+
+
+[1] http://sourceforge.net/projects/ookala-mcf/
+[2] http://www.oyranos.org/#icc_examin
+
+
+From guneeyoufix@...54... Thu Dec 03 20:25:36 2009
+X-ACL-Warn: 
+X-ME-UUID: 20091203114655857.D14BB1C00A34@...55...
+Message-ID: <4B17A52E.1090806@...54...>
+Date: Thu, 03 Dec 2009 12:46:54 +0100
+From: William OLLIVIER <guneeyoufix@...54...>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; fr;
+	rv:1.9.1.5) Gecko/20091121 Thunderbird/3.0
+MIME-Version: 1.0
+To: Kai-Uwe Behrmann <ku.b@...6...>
+References: <alpine.LSU.2.00.0912011409350.4782@...53...>
+In-Reply-To: <alpine.LSU.2.00.0912011409350.4782@...53...>
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details. _SUMMARY_
+X-Headers-End: 1NGIEy-0006Td-Q0
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] non root i2c communication
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 03 Dec 2009 20:25:36 -0000
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Le 01/12/2009 14:28, Kai-Uwe Behrmann a =E9crit :
+> I have monitor here, which supports reading and writing of internal LUTs=
+=20
+> over a small monitor framework[1]. It accesses the montor over i2c=20
+> device nodes. That would be nice to integrate in my graphic card LUT=20
+> viewer[2].
+>
+> Unfortunedly i2c requires root access on my system. And my understanding=
+=20
+> is that i2c is a security issue to open for normal users.
+I wasn't aware of that. Where did you get this information from?
+> How can my=20
+> application nevertheless get the curves. As well there is interesst=20
+> to do more with this monitor communication channel.
+>
+> Can this be achieved over DDC/CI as well? What would be needed to make it=
+=20
+> non root read and writeable.
+>=20=20=20
+What ddccontrol allows you to do is read and write values that are
+stored in the monitor's internal chip, so that you can control
+parameters like Brightness, Contrast, color temp, etc. from you
+computer, just as you would with the buttons and OSD of your monitor.
+
+ddccontrol can use different low-level protocols to do that : for
+example, I can use i2c, or use my Nvidia graphics card driver's
+capabilities to communicate with my monitor.
+
+DDC/CI is a protocol that works on top of i2c, so as far as I can tell,
+you will still need to run ddccontrol as root to be able to communicate
+with your monitor.
+
+A while ago, I tried to make ddccontrol work at a user level, but I
+didn't manage. I'm the current maintainer of the project, but I'm quite
+busy right now. Maybe we could figure something out together, when we
+both have time.
+
+I hope this answers your question.
+
+Regards,
+
+William
+
+
+
+
+
+
+From ku.b@...6... Fri Dec 04 09:44:15 2009
+X-Authenticated: #2969065
+X-Provags-ID: V01U2FsdGVkX1/towllE6btY3HP1MokWrmyWICsgLWNk5jjuRV6cr
+	A3GOuyxFLu/KhD
+Date: Fri, 4 Dec 2009 10:45:05 +0100 (CET)
+From: Kai-Uwe Behrmann <ku.b@...6...>
+X-X-Sender: kuwe@...53...
+To: William OLLIVIER <guneeyoufix@...54...>
+In-Reply-To: <4B17A52E.1090806@...54...>
+Message-ID: <alpine.LSU.2.00.0912041033060.4702@...53...>
+References: <alpine.LSU.2.00.0912011409350.4782@...53...>
+	<4B17A52E.1090806@...54...>
+User-Agent: Alpine 2.00 (LSU 1167 2008-08-23)
+MIME-Version: 1.0
+Content-Type: MULTIPART/MIXED; BOUNDARY="8323584-11802297-1259919905=:4702"
+X-Y-GMX-Trusted: 0
+X-FuHaFi: 0.58
+X-Spam-Score: -1.1 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.4 AWL AWL: From: address is in the auto white-list
+X-Headers-End: 1NGUhu-0002vr-RO
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] non root i2c communication
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 04 Dec 2009 09:44:15 -0000
+
+  This message is in MIME format.  The first part should be readable text,
+  while the remaining parts are likely unreadable without MIME-aware tools.
+
+--8323584-11802297-1259919905=:4702
+Content-Type: TEXT/PLAIN; charset="ISO-8859-1"; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Hello,
+
+Am 03.12.09, 12:46 +0100 schrieb William OLLIVIER:
+> Le 01/12/2009 14:28, Kai-Uwe Behrmann a écrit :
+>> I have monitor here, which supports reading and writing of internal LUTs
+>> over a small monitor framework[1]. It accesses the montor over i2c
+>> device nodes. That would be nice to integrate in my graphic card LUT
+>> viewer[2].
+>>
+>> Unfortunedly i2c requires root access on my system. And my understanding
+>> is that i2c is a security issue to open for normal users.
+> I wasn't aware of that. Where did you get this information from?
+
+Seeing that i2c is used for several hardware controls, I guessed that it 
+is cruical to not let ordinary users change clock speed and similiar by 
+default. On my distribution the /dev/i2c-xxx devices are owned by root 
+with chmod 0440. This is controled on startup, and again I guess this is 
+similiar on many Linux distributions.
+
+>> How can my
+>> application nevertheless get the curves. As well there is interesst
+>> to do more with this monitor communication channel.
+>>
+>> Can this be achieved over DDC/CI as well? What would be needed to make it
+>> non root read and writeable.
+>>
+> What ddccontrol allows you to do is read and write values that are
+> stored in the monitor's internal chip, so that you can control
+> parameters like Brightness, Contrast, color temp, etc. from you
+> computer, just as you would with the buttons and OSD of your monitor.
+>
+> ddccontrol can use different low-level protocols to do that : for
+> example, I can use i2c, or use my Nvidia graphics card driver's
+> capabilities to communicate with my monitor.
+
+The nvidia extensions regarding ddc/ci I have noticed. They are probably 
+not a general i2c interface but only ddc/ci. So access through them might 
+be restricted to monitor communication than the i2c device nodes.
+
+> DDC/CI is a protocol that works on top of i2c, so as far as I can tell,
+> you will still need to run ddccontrol as root to be able to communicate
+> with your monitor.
+
+Thanks for your confirmation.
+
+> A while ago, I tried to make ddccontrol work at a user level, but I
+> didn't manage. I'm the current maintainer of the project, but I'm quite
+> busy right now. Maybe we could figure something out together, when we
+> both have time.
+
+On the Xorg list, I started a thread about that matter. I think ddc/ci
+would be best integrated therein. Hopefully this opens for a general API 
+that ddccontrol can migrate to as well. Having not to rely on root access 
+is for UI tools essential in order to get generally accepted for desktop 
+use.
+
+kind regards
+Kai-Uwe Behrmann
+-- 
+developing for colour management 
+www.behrmann.name + www.oyranos.org
+
+--8323584-11802297-1259919905=:4702--
+
+
+From oleg@...3... Fri Dec 04 11:20:11 2009
+Message-ID: <9ABB0BFAD8AA49BBB20D078FA837F91D@...4...>
+From: "Oleg I. Vdovikin" <oleg@...3...>
+To: "Kai-Uwe Behrmann" <ku.b@...6...>,
+	"William OLLIVIER" <guneeyoufix@...54...>
+References: <alpine.LSU.2.00.0912011409350.4782@...53...><4B17A52E.1090806@...54...>
+	<alpine.LSU.2.00.0912041033060.4702@...53...>
+Date: Fri, 4 Dec 2009 13:39:07 +0300
+MIME-Version: 1.0
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5843
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	0.0 STOX_REPLY_TYPE        STOX_REPLY_TYPE
+X-Headers-End: 1NGWCh-0003zw-34
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] non root i2c communication
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 04 Dec 2009 11:20:11 -0000
+Content-Type: text/plain; format=flowed; charset="iso-8859-1";
+	reply-type=original
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+> On the Xorg list, I started a thread about that matter. I think ddc/ci
+> would be best integrated therein. Hopefully this opens for a general API
+> that ddccontrol can migrate to as well. Having not to rely on root access
+> is for UI tools essential in order to get generally accepted for desktop
+> use.
+
+    ddccontrol is not limited to graphical mode, it's supposed to work in 
+text mode too, so no X stuff is used at all. Xorg guys has it's own access 
+to i2c for sure, so they of course could provide a way to ddccontrol to 
+access this bus or intergate some part of ddccontrol.
+
+    Keep in mind that project is now mostly dead for several years now...
+
+Regards,
+Oleg.
+
+
+
+From guneeyoufix@...54... Fri Dec 04 11:22:24 2009
+X-ACL-Warn: 
+X-ME-UUID: 20091204112210705.AC2A570005CD@...56...
+Message-ID: <4B18F0E2.2050401@...54...>
+Date: Fri, 04 Dec 2009 12:22:10 +0100
+From: William OLLIVIER <guneeyoufix@...54...>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686 (x86_64); fr;
+	rv:1.9.1.5) Gecko/20091121 Thunderbird/3.0
+MIME-Version: 1.0
+To: "Oleg I. Vdovikin" <oleg@...3...>
+References: <alpine.LSU.2.00.0912011409350.4782@...53...><4B17A52E.1090806@...54...>
+	<alpine.LSU.2.00.0912041033060.4702@...53...>
+	<9ABB0BFAD8AA49BBB20D078FA837F91D@...4...>
+In-Reply-To: <9ABB0BFAD8AA49BBB20D078FA837F91D@...4...>
+X-Spam-Score: 0.7 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	1.4 NO_DNS_FOR_FROM DNS: Envelope sender has no MX or A DNS records
+	-0.7 AWL AWL: From: address is in the auto white-list
+X-Headers-End: 1NGWEt-0004BF-KA
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] non root i2c communication
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 04 Dec 2009 11:22:24 -0000
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Oleg,
+
+It's good to see that I'm not the only one to read the ddccontol
+mailing-lists.
+
+Le 04/12/2009 11:39, Oleg I. Vdovikin a =E9crit :
+>    Keep in mind that project is now mostly dead for several years now...
+If you're speaking of ddccontrol, I intend to change that statement. I
+currently don't have much time to work on it, but once I graduate, I
+should be able to extend the database, and other things.
+
+So far, ddccontrol is the ONLY tool running on Linux that I could find
+to control my button-less, OSD-less monitor. ddccontrol allowed me for
+the first time in several years to lower the brightness of my monitor.
+So there is no way I'm letting it die!
+
+Cheers
+William
+
+
+
+

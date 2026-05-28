@@ -1,0 +1,4216 @@
+From cschilling@...6... Sat Jan 29 09:31:06 2005
+X-Authenticated: #4067640
+Message-ID: <41FBC85F.3090905@...6...>
+Date: Sat, 29 Jan 2005 18:31:11 +0100
+From: Christian Schilling <cschilling@...6...>
+User-Agent: Mozilla Thunderbird 0.9 (X11/20041119)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+X-Enigmail-Version: 0.89.6.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Subject: [ddccontrol-devel] gddccontrol
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+so...
+i think this belongs on the dev list.
+i've looked into the current gddcc source, and i think i now have an
+idea of whats going on...
+
+now i'm thinking of the new gui design, you (nicolas) said you have a
+lot of ideas on this? maybe its the right time to write them down.
+
+i have some ideas, too:
+
+1) use a tree conrol (like in the Gaim properties dialog) on the left,
+or an icon view (like in firefoxes properties)
+
+2) include some pictures to help adjusting the monitor, for example a
+black to white gardient, for brightness and contrast adjustments
+
+3) grouping releated controls on a single page for example brightnes and
+contrast are closely releated in my opinion.
+
+
+Christian Schilling
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFB+8hffPvLVbMq0wMRAvLdAJ4tss/3znzd5DKJAzQ2cdWrSMYz5gCeI+1w
+ic3109jGe2zbdnWaq8daAIk=
+=/goH
+-----END PGP SIGNATURE-----
+
+
+From cschilling@...6... Thu Feb 03 09:58:12 2005
+X-Authenticated: #4067640
+Message-ID: <4202665F.8010908@...6...>
+Date: Thu, 03 Feb 2005 18:58:55 +0100
+From: Christian Schilling <cschilling@...6...>
+User-Agent: Mozilla Thunderbird 0.9 (X11/20041119)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] gddccontrol
+References: <41FBC85F.3090905@...6...> <1107451587.5973.119.camel@...5...>
+In-Reply-To: <1107451587.5973.119.camel@...5...>
+X-Enigmail-Version: 0.89.6.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.5 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.5 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+sorry, i just used the "reply" button, so the mail went to nicolas only...
+
+
+Nicolas Boichat wrote:
+
+| The tree control is a very good idea
+Yes i also thought this would be the best, and its already implemented.
+
+| 6) Better look .-) gddccontrol is quite ugly now, anything to make it
+| look more "professionnal" would be great.
+
+I already changed the look, and rearanged the controls.
+you can get an idea of the changes i made so far in a screenshot:
+http://schilling.mine.nu/pics/gddcc.png
+
+this is actually a working version of gddccontrol and not just a "dummy"
+dialog.
+
+| I would be pleased to give you access to the SourceForge CVS if you want
+| to join us in this project.
+
+Thats a good idea, so i don't have to send all changes via e-mail  ;-)
+
+
+Christian Schilling
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFCAmZffPvLVbMq0wMRAv9jAJ9rBs926plwGkEhC3gXyqCKySZchQCdEP8h
+Wp1oUMcad1GG5ON/vQ61IEo=
+=vJch
+-----END PGP SIGNATURE-----
+
+
+From cschilling@...6... Thu Feb 03 10:26:32 2005
+X-Authenticated: #4067640
+Message-ID: <42026CFE.5070803@...6...>
+Date: Thu, 03 Feb 2005 19:27:10 +0100
+From: Christian Schilling <cschilling@...6...>
+User-Agent: Mozilla Thunderbird 0.9 (X11/20041119)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] gddccontrol
+References: <41FBC85F.3090905@...6...> <1107451587.5973.119.camel@...5...>	 <42026279.5000102@...6...> <1107454583.5973.132.camel@...5...>
+In-Reply-To: <1107454583.5973.132.camel@...5...>
+X-Enigmail-Version: 0.89.6.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 UPPERCASE_25_50        message body is 25-50% uppercase
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Nicolas Boichat wrote:
+
+| Ok, just register on SourceForge if you aren't and give me your
+| user ID.
+
+my user ID is "cs123"
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://enigmail.mozdev.org
+
+iD8DBQFCAmz+fPvLVbMq0wMRAvOUAKCCLqY5fJnQ3I38d/0dXhaPgypf8QCdH4CK
+AHYSRLdLuSBhwNl4xjj9hvI=
+=F/fE
+-----END PGP SIGNATURE-----
+
+
+
+From cschilling@...6... Thu Feb 10 06:52:36 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] gddccontrol
+From: Christian Schilling <cschilling@...6...>
+To: "ddccontrol-devel@lists.sourceforge.net" <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1107470523.5973.175.camel@...5...>
+References: <41FBC85F.3090905@...6...> <1107451587.5973.119.camel@...5...>
+	 <42026279.5000102@...6...> <1107454583.5973.132.camel@...5...>
+	 <42026CFE.5070803@...6...>  <1107470523.5973.175.camel@...5...>
+Date: Thu, 10 Feb 2005 15:53:42 +0100
+Message-Id: <1108047222.6577.9.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.3 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.5 TO_ADDRESS_EQ_REAL     To: repeats address as real name
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.5 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello
+
+I changed all indents to tabs (and using 8 space tabs on the project to
+make sure the code looks the same ;-))
+
+Im now using commit.sh, too.
+
+I don't think a mailing list for commit notification is really
+necessary, at least not for me. Concerning the ChangeLog, i don't think
+i hurts to have autogenerated one, and we can still write one by hand.
+
+now about the programm itself, i think the next changes could be adding
+a menu bar at the top, and adding support for profiles.
+
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From nicolas@...1... Thu Feb 10 09:26:41 2005
+Message-ID: <1108056393.420b994967e7f@...8...>
+Date: Thu, 10 Feb 2005 18:26:33 +0100
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] gddccontrol
+References: <41FBC85F.3090905@...6...> <1107451587.5973.119.camel@...5...>  <42026279.5000102@...6...> <1107454583.5973.132.camel@...5...>  <42026CFE.5070803@...6...>  <1107470523.5973.175.camel@...5...> <1108047222.6577.9.camel@...7...>
+In-Reply-To: <1108047222.6577.9.camel@...7...>
+MIME-Version: 1.0
+User-Agent: Internet Messaging Program (IMP) 3.2.6
+X-Originating-IP: 212.254.138.4
+X-Spam-Score: -0.8 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.9 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+
+Hello,
+
+Selon Christian Schilling <cschilling@...6...>:
+> Hello
+>
+> I changed all indents to tabs (and using 8 space tabs on the project to
+> make sure the code looks the same ;-))
+>
+> Im now using commit.sh, too.
+
+Thank you.
+
+> I don't think a mailing list for commit notification is really
+> necessary, at least not for me. Concerning the ChangeLog, i don't think
+> i hurts to have autogenerated one, and we can still write one by hand.
+
+Ok.
+
+> now about the programm itself, i think the next changes could be adding
+> a menu bar at the top, and adding support for profiles.
+
+These are very nice additions.
+
+I'll be on holiday during the next 3 weeks (I'll return on March 3), so I won't
+work on ddccontrol, but I'll read my emails from time to time so if you have
+questions I'll try to answer.
+
+Best regards,
+
+Nicolas
+
+
+From nicolas@...1... Sat Mar 26 07:40:52 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>
+Date: Sat, 26 Mar 2005 16:42:22 +0100
+Message-Id: <1111851742.27842.11.camel@...5...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.4 
+X-Ovh-Remote: 84.226.45.1 (adsl-84-226-45-1.adslplus.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Ovh-Headers: nicolas|boichat.ch||ddccontrol-devel|lists.sourceforge.net
+X-Virus-Tag: NO
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+Subject: [ddccontrol-devel] ddccontrol website and documentation
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I started to work on DDCcontrol website and documentation, the result
+can be seen there:
+
+http://ddccontrol.sourceforge.net/
+
+I used DocBook for the documentation, and DocBook Website extension for
+the website. There is now a new module, ddccontrol-web, on the CVS,
+which is a copy of the website content.
+
+Comments and corrections are welcome.
+
+By the way, I will release a first version of ddccontrol on the
+beginning of the next week, with source tarballs we will probably get
+more user feedbacks...
+
+Happy Easter .-)
+
+Best regards,
+
+Nicolas
+
+
+
+From oleg@...3... Sun Mar 27 01:46:55 2005
+Message-ID: <000d01c532b1$e0e76b30$0301a8c0@...9...>
+From: "Oleg I. Vdovikin" <oleg@...3...>
+To: <ddccontrol-devel@lists.sourceforge.net>
+References: <1111851742.27842.11.camel@...5...>
+Subject: Re: [ddccontrol-devel] ddccontrol website and documentation
+Date: Sun, 27 Mar 2005 13:46:39 +0400
+MIME-Version: 1.0
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.2527
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2527
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain;
+	format=flowed;
+	charset="koi8-r";
+	reply-type=original
+Content-Transfer-Encoding: 7bit
+
+Nicolas,
+
+    good work. One visible problem: at the left there is a "Last updated: " 
+string, which is included to the <span class="footdate"> tag, the problem is 
+that footdate is not defined and this results in very small font in the IE.
+
+    Also, as for keywords - this is that I've got at my site (according to 
+webalizer).
+
+10 7 0.80% ddc/ci
+12 6 0.69% ddcci
+13 6 0.69% ddccontrol
+14 6 0.69% magictune linux
+
+Regards,
+Oleg.
+
+----- Original Message ----- 
+From: "Nicolas Boichat" <nicolas@...1...>
+To: "ddccontrol devel list" <ddccontrol-devel@lists.sourceforge.net>
+Sent: Saturday, March 26, 2005 7:42 PM
+Subject: [ddccontrol-devel] ddccontrol website and documentation
+
+
+> Hello,
+>
+> I started to work on DDCcontrol website and documentation, the result
+> can be seen there:
+>
+> http://ddccontrol.sourceforge.net/
+>
+> I used DocBook for the documentation, and DocBook Website extension for
+> the website. There is now a new module, ddccontrol-web, on the CVS,
+> which is a copy of the website content.
+>
+> Comments and corrections are welcome.
+>
+> By the way, I will release a first version of ddccontrol on the
+> beginning of the next week, with source tarballs we will probably get
+> more user feedbacks...
+>
+> Happy Easter .-)
+>
+> Best regards,
+>
+> Nicolas
+>
+>
+>
+> -------------------------------------------------------
+> SF email is sponsored by - The IT Product Guide
+> Read honest & candid reviews on hundreds of IT Products from real users.
+> Discover which products truly live up to the hype. Start reading now.
+> http://ads.osdn.com/?ad_id=6595&alloc_id=14396&op=click
+> _______________________________________________
+> ddccontrol-devel mailing list
+> ddccontrol-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> 
+
+
+
+From nicolas@...1... Sun Mar 27 14:22:50 2005
+Subject: Re: [ddccontrol-devel] ddccontrol website and documentation
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <000d01c532b1$e0e76b30$0301a8c0@...9...>
+References: <1111851742.27842.11.camel@...5...>
+	 <000d01c532b1$e0e76b30$0301a8c0@...9...>
+Date: Mon, 28 Mar 2005 00:22:41 +0200
+Message-Id: <1111962161.7775.8.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.3 
+X-Ovh-Remote: 212.254.100.125 (adsl-100-125-zh1.tiscali.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Ovh-Headers: nicolas|boichat.ch||ddccontrol-devel|lists.sourceforge.net
+X-Virus-Tag: NO
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -1.0 (-)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-1.0 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+On Sun, 2005-03-27 at 13:46 +0400, Oleg I. Vdovikin wrote:
+> Nicolas,
+> 
+>     good work.
+
+Thank you.
+
+> One visible problem: at the left there is a "Last updated: " 
+> string, which is included to the <span class="footdate"> tag, the problem is 
+> that footdate is not defined and this results in very small font in the IE.
+
+Yes, right, the css font size of footdate was too small... It also
+occured with mozilla/firefox. I fixed it.
+
+>     Also, as for keywords - this is that I've got at my site (according to 
+> webalizer).
+> 
+> 10 7 0.80% ddc/ci
+> 12 6 0.69% ddcci
+> 13 6 0.69% ddccontrol
+> 14 6 0.69% magictune linux
+
+That's a good idea, I get the same keywords at my site. I updated the
+list.
+
+Best regards,
+
+Nicolas
+
+> ----- Original Message ----- 
+> From: "Nicolas Boichat" <nicolas@...1...>
+> To: "ddccontrol devel list" <ddccontrol-devel@lists.sourceforge.net>
+> Sent: Saturday, March 26, 2005 7:42 PM
+> Subject: [ddccontrol-devel] ddccontrol website and documentation
+> 
+> 
+> > Hello,
+> >
+> > I started to work on DDCcontrol website and documentation, the result
+> > can be seen there:
+> >
+> > http://ddccontrol.sourceforge.net/
+> >
+> > I used DocBook for the documentation, and DocBook Website extension for
+> > the website. There is now a new module, ddccontrol-web, on the CVS,
+> > which is a copy of the website content.
+> >
+> > Comments and corrections are welcome.
+> >
+> > By the way, I will release a first version of ddccontrol on the
+> > beginning of the next week, with source tarballs we will probably get
+> > more user feedbacks...
+> >
+> > Happy Easter .-)
+> >
+> > Best regards,
+> >
+> > Nicolas
+> >
+> >
+> >
+> > -------------------------------------------------------
+> > SF email is sponsored by - The IT Product Guide
+> > Read honest & candid reviews on hundreds of IT Products from real users.
+> > Discover which products truly live up to the hype. Start reading now.
+> > http://ads.osdn.com/?ad_id=6595&alloc_id=14396&op=click
+> > _______________________________________________
+> > ddccontrol-devel mailing list
+> > ddccontrol-devel@lists.sourceforge.net
+> > https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> > 
+> 
+> 
+> 
+> -------------------------------------------------------
+> SF email is sponsored by - The IT Product Guide
+> Read honest & candid reviews on hundreds of IT Products from real users.
+> Discover which products truly live up to the hype. Start reading now.
+> http://ads.osdn.com/?ad_id=6595&alloc_id=14396&op=click
+> _______________________________________________
+> ddccontrol-devel mailing list
+> ddccontrol-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> 
+-- 
+Nicolas Boichat <nicolas@...1...>
+
+
+
+From nicolas@...1... Tue Mar 29 02:04:16 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>,  ddccontrol users list <ddccontrol-users@lists.sourceforge.net>
+Date: Tue, 29 Mar 2005 12:03:06 +0200
+Message-Id: <1112090586.7465.5.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.3 
+X-Ovh-Remote: 212.254.100.42 (adsl-100-42-zh1.tiscali.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Ovh-Headers: nicolas|boichat.ch||ddccontrol-devel|lists.sourceforge.net
+X-Virus-Tag: NO
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -0.5 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	-0.5 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] DDCcontrol version 0.1 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released the first official version of DDCcontrol.
+
+For more information, go to the new project website:
+http://ddccontrol.sourceforge.net/
+
+Best regards,
+
+Nicolas Boichat
+
+
+
+From nicolas@...1... Tue Jun 07 01:48:44 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol users list <ddccontrol-users@lists.sourceforge.net>,  ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>
+Date: Tue, 07 Jun 2005 10:48:34 +0200
+Message-Id: <1118134115.13322.38.camel@...5...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.1.1 
+X-Ovh-Remote: 84.226.140.152 (adsl-84-226-140-152.adslplus.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] DDCcontrol version 0.1.1 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released DDCControl 0.1.1.
+
+ChangeLog :
+ - Add support for newest nVidia cards (e.g. GeForce 6200 TC).
+ - Build ddcpci statically for security reasons.
+ - Add status messages when gddccontrol loads.
+ - Display less error messages when devices are not usable.
+ - Fix compile error with latest kernel headers.
+ - Other minor fixes.
+
+Best regards,
+
+Nicolas
+
+
+
+From nicolas@...1... Wed Jun 08 12:16:07 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>,  ddccontrol users list <ddccontrol-users@lists.sourceforge.net>
+Date: Wed, 08 Jun 2005 21:16:00 +0200
+Message-Id: <1118258160.19148.110.camel@...5...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.1.1 
+X-Ovh-Remote: 84.226.38.254 (adsl-84-226-38-254.adslplus.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: [ddccontrol-devel] DDCcontrol version 0.1.2 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released DDCControl 0.1.2, because there was a compile error in
+0.1.1 which affected Fedora Core 3, and probably other main Linux
+distributions.
+
+ChangeLog :
+ - Fix a compilation error in Fedora Core 3.
+
+Best regards,
+
+Nicolas
+
+
+
+From n001@...11... Mon Jun 13 06:26:10 2005
+From: n001 <n001@...11...>
+To: ddccontrol-devel@lists.sourceforge.net
+Date: Mon, 13 Jun 2005 15:25:58 +0200
+Message-Id: <1118669158.7680.17.camel@...12...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Spam-Score: 1.5 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.5 FROM_ENDS_IN_NUMS      From: ends in numbers
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+Subject: [ddccontrol-devel] MEL4632 [Mitsubishi Diamond Pro 2070 SB]
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Salut,
+
+J'ai test=E9 sur un Mitsubishi Diamond Pro 2070 SB, ca marche, sur
+l'entr=E9e 1 comme sur la 2.
+J'ai copi=E9 le fichier MEL4513.xml en MEL4632.xml pour avoir un peu de
+r=E9sulat, =E9vidament, ca n'a pas l'air exactement pareil:
+
+Les parametres du MEL4513 suivant ne fonctionnent pas:
+- Coussin vertical
+- Balance du coussin horizontal
+- Lin=E9arit=E9 horizontale
+- Balance de la lin=E9arit=E9 horizontale
+
+Les langues ne correspondent pas non plus: (par exemple l'espagnol
+correspond au francais sur mon =E9cran)
+
+En fichier attach=E9, le dump de ddccontrol -p -c -d &> ddccontrol.dump
+
+Je suis =E0 votre disposition pour plus d'infos si n=E9cessaire.
+
+
+--=20
+Nicolas Dimitrijevic - SARL Sengena - http://www.sengena.com/
+Beauvallon 15 - 213, ch de Morgiou - 13009 Marseille - France
+tel: +33 (0)4 91 40 46 50           mob: +33 (0)6 68 81 54 56
+
+
+
+From n001@...11... Mon Jun 13 06:32:08 2005
+Subject: Re: [ddccontrol-devel] MEL4632 [Mitsubishi Diamond Pro 2070 SB]
+From: n001 <n001@...11...>
+To: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <1118669158.7680.17.camel@...12...>
+References: <1118669158.7680.17.camel@...12...>
+Content-Type: multipart/mixed; boundary="=-hW4MiWA8+qdahp0wk6YY"
+Date: Mon, 13 Jun 2005 15:32:02 +0200
+Message-Id: <1118669523.7680.19.camel@...12...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Spam-Score: 1.6 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.5 FROM_ENDS_IN_NUMS      From: ends in numbers
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PARATHESES_OPEN BODY: Text interparsed with (
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--=-hW4MiWA8+qdahp0wk6YY
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+J'avais oubli=E9 d'attacher le fichier...
+
+--=20
+Nicolas Dimitrijevic - SARL Sengena - http://www.sengena.com/
+Beauvallon 15 - 213, ch de Morgiou - 13009 Marseille - France
+tel: +33 (0)4 91 40 46 50           mob: +33 (0)6 68 81 54 56
+
+--=-hW4MiWA8+qdahp0wk6YY
+Content-Disposition: attachment; filename=ddccontrol.dump
+Content-Type: text/plain; name=ddccontrol.dump; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+ioctl(): Fonction non implant=E9e
+ioctl a renvoy=E9 -1
+Echec de lecture de l'EDID 0x50.
+ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
+ioctl a renvoy=E9 -1
+Echec de lecture de l'EDID 0x50.
+EDID corrompu =E0 0x50.
+ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
+ioctl a renvoy=E9 -1
+Echec de lecture de l'EDID 0x50.
+ioctl(): Erreur d'entr=E9e/sortie sur l'h=F4te cible
+ioctl a renvoy=E9 -1
+Echec de lecture de l'EDID 0x50.
+dev:/dev/i2c-6: Aucun p=E9riph=E9rique de ce type
+dev:/dev/i2c-7: Aucun p=E9riph=E9rique de ce type
+ddccontrol, version 0.1.2
+Copyright 2005 Oleg I. Vdovikin (oleg@...3...) et Nicolas Boichat (nicola=
+s@...1...)
+Ce programme est livr=E9 SANS AUCUNE GARANTIE.
+Vous pouvez redistribuer des copies de ce programme sous les termes de la l=
+icence g=E9n=E9rale publique de GNU (GNU General Public License).
+
+Moniteurs d=E9tect=E9s :
+ - P=E9riph=E9rique : dev:/dev/i2c-4
+   DDC/CI support=E9 : Oui
+   Nom du moniteur : Mitsubishi Diamond Pro 2060u
+   Type d'entr=E9e : analogique
+  (Choisi automatiquement)
+Lecture de l'EDID et initialisation du DDC/CI sur le bus dev:/dev/i2c-4...
+
+Lectures EDID :
+	ID Plug and Play: MEL4632 [Mitsubishi Diamond Pro 2060u]
+	Type d'entr=E9e : analogique
+
+Capacit=E9s:
+ mccs_ver(1.1) type(CRT_AG) vcp(00 01 04 06 08 10 12 14(01 04 06 07 08) 16 =
+18 1A 1E 20 22 24 26 28 30 32 38 3A 3C 40 42 44 46 47 48 4A 4C 54 56 68 6C =
+6E 70 D6 E1 E2 E3 E6 E8 E9 EA EB EF F6 F9 FA FC FF) vcp_p02(3B 3C 42 43 44 =
+46 49 4A 4B 4C 4E 4F 54 56) asset_eep(40) mpu_ver(2.1.0)
+
+Contr=F4les (valide/actuel/maximum) [Description - Nom de la valeur]:
+Contr=F4le 0x00: +/0/1 [D=E9magn=E9tiser]
+Contr=F4le 0x01: +/0/1 [???]
+Contr=F4le 0x04: +/0/1 [Restaurer les param=E8tres d'usine]
+Contr=F4le 0x06: +/0/1 [Restaurer les param=E8tres d'usine de g=E9om=E9trie=
+]
+Contr=F4le 0x08: +/0/1 [Restaurer les param=E8tres d'usine de couleur]
+Contr=F4le 0x10: +/67/255 [Luminosit=E9]
+Contr=F4le 0x12: +/255/255 [Contraste]
+Contr=F4le 0x14: +/8/8 [???]
+Contr=F4le 0x16: +/133/164 [Niveau maximum de rouge]
+Contr=F4le 0x18: +/124/164 [Niveau maximum de vert]
+Contr=F4le 0x1a: +/124/164 [Niveau maximum de bleu]
+Contr=F4le 0x1e: +/0/1 [???]
+Contr=F4le 0x20: +/107/255 [Position horizontale]
+Contr=F4le 0x22: +/190/222 [Taille horizontale]
+Contr=F4le 0x24: +/137/255 [Coussin horizontal]
+Contr=F4le 0x26: +/121/255 [Balance du coussin horizontal]
+Contr=F4le 0x28: +/151/255 [D=E9convergence horizontale]
+Contr=F4le 0x30: +/133/254 [Position verticale]
+Contr=F4le 0x32: +/151/255 [Taille verticale]
+Contr=F4le 0x38: +/128/255 [D=E9convergence verticale]
+Contr=F4le 0x3a: +/164/255 [Lin=E9arit=E9 verticale]
+Contr=F4le 0x3c: +/149/255 [Balance de la lin=E9arit=E9 horizontale]
+Contr=F4le 0x40: +/133/255 [Distorsion en parall=E9logramme]
+Contr=F4le 0x42: +/118/255 [Distorsion trap=E9zo=EFdale]
+Contr=F4le 0x44: +/127/255 [Rotation]
+Contr=F4le 0x46: +/99/255 [Contr=F4le de la distorsion des coins sup=E9rieu=
+rs]
+Contr=F4le 0x48: +/127/255 [Balance de la distorsion des coins sup=E9rieurs=
+]
+Contr=F4le 0x4a: +/85/255 [Contr=F4le de la distorsion des coins inf=E9rieu=
+rs]
+Contr=F4le 0x4c: +/86/255 [Balance de la distorsion des coins inf=E9rieurs]
+Contr=F4le 0x54: +/255/255 [???]
+Contr=F4le 0x56: +/0/127 [Moir=E9 vertical]
+Contr=F4le 0x68: +/3/6 [Choix de langue - Espagnol]
+Contr=F4le 0x6c: +/120/255 [???]
+Contr=F4le 0x6e: +/117/255 [???]
+Contr=F4le 0x70: +/170/255 [???]
+Contr=F4le 0xa8: +/1/3 [???]
+Contr=F4le 0xd6: +/1/4 [???]
+Contr=F4le 0xe1: +/1/1 [???]
+Contr=F4le 0xe2: +/0/1 [???]
+Contr=F4le 0xe3: +/0/1 [???]
+Contr=F4le 0xe6: +/143/255 [???]
+Contr=F4le 0xe8: +/136/255 [Puret=E9 du coin sup=E9rieur gauche]
+Contr=F4le 0xe9: +/115/255 [Puret=E9 du coin sup=E9rieur droit]
+Contr=F4le 0xea: +/182/255 [Puret=E9 du coin inf=E9rieur gauche]
+Contr=F4le 0xeb: +/98/255 [Puret=E9 du coin inf=E9rieur droit]
+Contr=F4le 0xef: +/0/4 [???]
+Contr=F4le 0xf6: +/0/1 [???]
+Contr=F4le 0xf9: +/0/2 [???]
+Contr=F4le 0xfa: +/15404/65535 [???]
+Contr=F4le 0xfc: +/9/24 [???]
+Contr=F4le 0xff: +/13769/65535 [???]
+
+--=-hW4MiWA8+qdahp0wk6YY--
+
+
+
+From nicolas@...1... Fri Jul 15 09:15:13 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>,  ddccontrol users list <ddccontrol-users@lists.sourceforge.net>
+Date: Fri, 15 Jul 2005 18:14:59 +0200
+Message-Id: <1121444099.12970.15.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.1.1 
+X-Ovh-Remote: 212.254.102.248 (adsl-102-248-zh1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -0.6 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-0.6 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] DDCcontrol version 0.1.3 and ddccontrol-db-20050715 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released DDCControl 0.1.3 and ddccontrol-db-20050715.
+
+Changes in ddccontrol-0.1.3:
+ - Add support for i810/i815/i830/i845/i855/i865/i915/i945 chipsets,
+    thanks to Chernyavskyy Valentin for his tests.
+ - Add Russian translation, thanks to Sergei Epiphanov.
+---
+
+Changes in ddccontrol-db-20050715:
+ - Add Samsung SyncMaster 173P Plus support.
+ - Add support for the Fujitsu Siemens P17-2, P19-2 and P20-2 (thanks to
+Olaf Tauber, and thanks to Johann Leonhardmair of Fujitsu Siemens)
+ - Add Russian translation, thanks to Sergei Epiphanov.
+---
+
+Best regards,
+
+Nicolas Boichat
+
+
+
+
+From will@...13... Sat Jul 23 15:25:01 2005
+Message-Id: <5.2.0.9.0.20050723110454.040078d0@...14...>
+X-Sender: mail.airmail.net:will@...14...
+X-Mailer: QUALCOMM Windows Eudora Version 5.2.0.9
+Date: Sat, 23 Jul 2005 17:23:18 -0500
+To: Nicolas Boichat <nicolas@...1...>,
+ ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>,
+ ddccontrol users list <ddccontrol-users@lists.sourceforge.net>
+From: William Hollingworth <will@...13...>
+In-Reply-To: <1121444099.12970.15.camel@...10...>
+Mime-Version: 1.0
+X-Spam-Score: 1.1 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_EQUAL    BODY: Text interparsed with =
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Subject: [ddccontrol-devel] DDCcontrol and Intel 82865G Integrated Graphics Controller
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Hi Nicolas
+
+Great to see Intel support I have tried it on a couple of machines and in 
+general it works great with  my 82865G Integrated Graphics Controller and 
+an analog DSUB15 connector.
+
+However this system has an Intel specific AGP daughter card (it's not a 
+full video card, just DVI drivers) that has DVI output.
+
+With a monitor connected to that card I can't communicate with the display 
+using either GPIOA or GPIOB. Communications is always routed to the DSUB15 
+connector.
+
+I had a look through the Intel docs and it seems there is MDDC_CLK and 
+MDDC_DATA (also MDVI_CLK and MDVI_DATA) for communicating with the monitor 
+on the DVI connector. Info as follows:
+-------------------------------
+DDC (Display Data Channel)
+The multiplexed digital display interface uses the MDVI_CLK and MDVI_DATA 
+signals to interrogate the panel. The GMCH supports the DDC2B protocol to 
+initiate the transfer of EDID data. The multiplexed digital display 
+interface uses the M_I2C bus to interrogate the external
+transmitter. A third set of signals (MDDC_CLK and MDDC_DATA) is available 
+for a variety of
+purposes. They can be used as a second DDC pair when two TMDS transmitters 
+are used, or as a second I2C pair if there are multiple devices (e.g., PROM 
+and DVO device) that need I2C and there is a speed or addressing conflict.
+
+The GMCH implements a hardware GMBus controller that can be used to control 
+these signals.
+This allows higher speed transactions (up to 400 kHz) on theses lines than 
+was allowed with
+previous software centric 'bit-bashing' techniques.
+-------------------------------
+
+However I haven't been able to find any programming info (register offsets 
+etc.) for this anywhere.
+
+Has anyone got any info on this?
+
+Thanks
+
+Will
+
+At 06:14 PM 7/15/2005 +0200, Nicolas Boichat wrote:
+>Hello,
+>
+>I just released DDCControl 0.1.3 and ddccontrol-db-20050715.
+>
+>Changes in ddccontrol-0.1.3:
+>  - Add support for i810/i815/i830/i845/i855/i865/i915/i945 chipsets,
+>     thanks to Chernyavskyy Valentin for his tests.
+>  - Add Russian translation, thanks to Sergei Epiphanov.
+>---
+>
+>Changes in ddccontrol-db-20050715:
+>  - Add Samsung SyncMaster 173P Plus support.
+>  - Add support for the Fujitsu Siemens P17-2, P19-2 and P20-2 (thanks to
+>Olaf Tauber, and thanks to Johann Leonhardmair of Fujitsu Siemens)
+>  - Add Russian translation, thanks to Sergei Epiphanov.
+>---
+>
+>Best regards,
+>
+>Nicolas Boichat
+>
+>
+>
+>
+>-------------------------------------------------------
+>SF.Net email is sponsored by: Discover Easy Linux Migration Strategies
+>from IBM. Find simple to follow Roadmaps, straightforward articles,
+>informative Webcasts and more! Get everything you need to get up to
+>speed, fast. http://ads.osdn.com/?ad_id=7477&alloc_id=16492&op=click
+>_______________________________________________
+>ddccontrol-devel mailing list
+>ddccontrol-devel@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+
+
+
+
+From nicolas@...1... Sun Jul 24 03:01:14 2005
+Subject: Re: [ddccontrol-devel] DDCcontrol and Intel 82865G Integrated
+	Graphics Controller
+From: Nicolas Boichat <nicolas@...1...>
+To: William Hollingworth <will@...13...>
+Cc: ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>,  ddccontrol users list <ddccontrol-users@lists.sourceforge.net>
+In-Reply-To: <5.2.0.9.0.20050723110454.040078d0@...14...>
+References: <5.2.0.9.0.20050723110454.040078d0@...14...>
+Date: Sun, 24 Jul 2005 12:01:03 +0200
+Message-Id: <1122199263.13888.15.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.1.1 
+X-Ovh-Remote: 212.254.102.226 (adsl-102-226-zh1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.2 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Will,
+
+Thanks for the infos, we'll see if we can do something with them.
+
+Could you please send me the output of "lspci -v -v"?
+
+Best regards,
+
+Nicolas
+
+On Sat, 2005-07-23 at 17:23 -0500, William Hollingworth wrote:
+> Hi Nicolas
+> 
+> Great to see Intel support I have tried it on a couple of machines and in 
+> general it works great with  my 82865G Integrated Graphics Controller and 
+> an analog DSUB15 connector.
+> 
+> However this system has an Intel specific AGP daughter card (it's not a 
+> full video card, just DVI drivers) that has DVI output.
+> 
+> With a monitor connected to that card I can't communicate with the display 
+> using either GPIOA or GPIOB. Communications is always routed to the DSUB15 
+> connector.
+> 
+> I had a look through the Intel docs and it seems there is MDDC_CLK and 
+> MDDC_DATA (also MDVI_CLK and MDVI_DATA) for communicating with the monitor 
+> on the DVI connector. Info as follows:
+> -------------------------------
+> DDC (Display Data Channel)
+> The multiplexed digital display interface uses the MDVI_CLK and MDVI_DATA 
+> signals to interrogate the panel. The GMCH supports the DDC2B protocol to 
+> initiate the transfer of EDID data. The multiplexed digital display 
+> interface uses the M_I2C bus to interrogate the external
+> transmitter. A third set of signals (MDDC_CLK and MDDC_DATA) is available 
+> for a variety of
+> purposes. They can be used as a second DDC pair when two TMDS transmitters 
+> are used, or as a second I2C pair if there are multiple devices (e.g., PROM 
+> and DVO device) that need I2C and there is a speed or addressing conflict.
+> 
+> The GMCH implements a hardware GMBus controller that can be used to control 
+> these signals.
+> This allows higher speed transactions (up to 400 kHz) on theses lines than 
+> was allowed with
+> previous software centric 'bit-bashing' techniques.
+> -------------------------------
+> 
+> However I haven't been able to find any programming info (register offsets 
+> etc.) for this anywhere.
+> 
+> Has anyone got any info on this?
+> 
+> Thanks
+> 
+> Will
+
+-- 
+Nicolas Boichat <nicolas@...1...>
+
+
+
+From nicolas@...1... Sat Aug 13 06:18:28 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol users list <ddccontrol-users@lists.sourceforge.net>,  ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>
+Date: Sat, 13 Aug 2005 15:18:08 +0200
+Message-Id: <1123939089.7438.20.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.136.100 (adsl-136-100-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] DDCcontrol version 0.2 and ddccontrol-db-20050813 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released ddccontrol-0.2 and ddccontrol-db-20050813.
+
+Changes in ddccontrol-0.2:
+ - Major changes in gddccontrol:
+  + Add restore button for each control.
+  + Add refresh button, and refresh all controls when needed.
+  + Add support for profiles to save some controls values and restore them later.
+  + Add a fullscreen pattern to adjust brightness and contrast.
+ - New database version, please upgrade ddccontrol-db.
+---
+
+Changes in ddccontrol-db-20050813:
+ - Add support for Samsung SyncMaster 912N and 712N.
+ - Add basic fullscreen patterns support.
+ - New db version (add refresh parameter).
+---
+
+Comments are welcome, particularly on new features I added to gddccontrol (profiles, fullscreen pattern), are they easy to use? Could they be improved?
+
+Probably some people on these lists know more than me about color calibration (That's not difficult as I know nothing about it .-)).
+If so, could you please confirm that the brightness/contrast fullscreen pattern and instructions are valid?
+
+Best regards,
+
+Nicolas
+
+
+
+From cschilling@...6... Tue Aug 23 11:15:28 2005
+X-Authenticated: #4067640
+From: Christian Schilling <cschilling@...6...>
+To: ddccontrol-devel@lists.sourceforge.net
+Date: Tue, 23 Aug 2005 20:15:15 +0200
+Message-Id: <1124820916.17625.18.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.1.1 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.5 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.5 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] Panel Applet, libddcci
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hello,
+
+first off, sorry for beeing off the project for so long my spare time
+was quite limited (a-levels...)
+
+i'm currently working on a panel applet for gnome, with allows quick
+changeing of profiles created with gddccontrol.
+
+while doing this i noticed libddcci is build as a static library.
+as i needed it's functionality in my applet i changed the makefiles (and
+headers) to build a shared library and install it in $PREFIX/lib
+(headers in $prefix/include/ddcci)
+
+now i'd suggest to split the project into seperate modules:
+- libgddcc (or libddcci??)
+- ddccontrol
+- gddccontrol
+- ddcc-applet
+
+another benefit of making libddcc a seperate package would be, that fo
+instance someone could write "kddccontrol", or build the funktionality
+into applications like video players (automaticly change to "movie"
+profile, when fullscreen video playback is started)..and so on..
+
+what do you think about this idea?
+
+Regards,
+Christian
+
+
+
+From nicolas@...1... Thu Aug 25 06:48:40 2005
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <1124820916.17625.18.camel@...7...>
+References: <1124820916.17625.18.camel@...7...>
+Date: Thu, 25 Aug 2005 15:48:26 +0200
+Message-Id: <1124977706.7785.49.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.142.141 (adsl-142-141-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|1.2|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Christian,
+
+Nice to hear again from you .-)
+
+On Tue, 2005-08-23 at 20:15 +0200, Christian Schilling wrote:
+> hello,
+> 
+> first off, sorry for beeing off the project for so long my spare time
+> was quite limited (a-levels...)
+
+No problem .-)
+
+> i'm currently working on a panel applet for gnome, with allows quick
+> changeing of profiles created with gddccontrol.
+
+Nice idea .-) One thing you should take care of is multi-screen (which
+monitor are you controlling?).
+
+> while doing this i noticed libddcci is build as a static library.
+> as i needed it's functionality in my applet i changed the makefiles (and
+> headers) to build a shared library and install it in $PREFIX/lib
+> (headers in $prefix/include/ddcci)
+
+There is no problem about it. My only concern is about two applications
+accessing the monitors at the same time. It could create huge problems
+(particularly with ddcpci)... I think we need a mechanism to lock and
+unlock the libraries, but I've no experience on it. Any idea??
+
+> now i'd suggest to split the project into seperate modules:
+> - libgddcc (or libddcci??)
+What do you think of libddccontrol ? (the so file would be
+libddccontrol.so, and be linked with -lddccontrol)
+> - ddccontrol
+> - gddccontrol
+> - ddcc-applet
+Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+
+Now, about the idea of splitting the project in modules, I'm not sure of
+what you mean... Do you suggest to split the project in different
+tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+ddcontrol-db) are already enough to download, and as their size is
+relatively limited I don't see any problem (if you only want some parts
+of ddccontrol, you can enable them with configure flags).
+Of course, if a packager want to split the project, there is no problem
+(you often see this with RPMs: ddccontrol-lib, ddccontrol,
+ddccontrol-devel...).
+
+> another benefit of making libddcc a seperate package would be, that fo
+> instance someone could write "kddccontrol",
+
+If someone want to write kddccontrol, it would very probably be
+integrated into the project.
+
+> or build the funktionality
+> into applications like video players (automaticly change to "movie"
+> profile, when fullscreen video playback is started)..and so on..
+
+Yes, that's a good idea.
+
+> what do you think about this idea?
+
+I think you can commit your modifications. Please just add a tag before
+doing it ("cvs tag Before_shared_lib" for example).
+
+Thanks for working again on this project.
+
+Best regards,
+
+Nicolas
+
+
+
+From roberto@...15... Thu Aug 25 10:35:23 2005
+Date: Thu, 25 Aug 2005 13:35:12 -0400
+From: "Roberto C. Sanchez" <roberto@...15...>
+To: Nicolas Boichat <nicolas@...1...>
+Cc: Christian Schilling <cschilling@...6...>,
+	ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+Message-ID: <20050825173512.GB19145@...16...>
+References: <1124820916.17625.18.camel@...7...> <1124977706.7785.49.camel@...10...>
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="BXVAT5kNtrzKuDFl"
+Content-Disposition: inline
+In-Reply-To: <1124977706.7785.49.camel@...10...>
+User-Agent: mutt-ng devel-r316 (Debian)
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--BXVAT5kNtrzKuDFl
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Thu, Aug 25, 2005 at 03:48:26PM +0200, Nicolas Boichat wrote:
+>=20
+> Now, about the idea of splitting the project in modules, I'm not sure of
+> what you mean... Do you suggest to split the project in different
+> tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> ddcontrol-db) are already enough to download, and as their size is
+> relatively limited I don't see any problem (if you only want some parts
+> of ddccontrol, you can enable them with configure flags).
+> Of course, if a packager want to split the project, there is no problem
+> (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> ddccontrol-devel...).
+>=20
+I would also like to know about this.  I am working on the Debian
+packaging and should have something ready by this weekend.  However, if
+the project is going to be split into different packages, I think it may
+be worthwhile to wait.  What do you think?
+
+-Roberto
+
+--=20
+Roberto C. Sanchez
+http://familiasanchez.net/~roberto
+
+--BXVAT5kNtrzKuDFl
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+
+iD8DBQFDDgFQTfhoonTOp2oRAsZLAJ4xB2+AI06pmCogHao/qlSDhS9rTQCg20Mm
+vrZa0WwxTSIFevXS5OieruU=
+=BjNi
+-----END PGP SIGNATURE-----
+
+--BXVAT5kNtrzKuDFl--
+
+
+From cschilling@...6... Fri Aug 26 03:20:46 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1124977706.7785.49.camel@...10...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+Date: Fri, 26 Aug 2005 12:20:34 +0200
+Message-Id: <1125051634.9599.27.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+> > i'm currently working on a panel applet for gnome, with allows quick
+> > changeing of profiles created with gddccontrol.
+> 
+> Nice idea .-) One thing you should take care of is multi-screen (which
+> monitor are you controlling?).
+yes i am aware of this, the applet is now working with one monitor only
+(first one thats found), but i intend to make an config dialog to chose
+the monitor.
+> 
+> > while doing this i noticed libddcci is build as a static library.
+> > as i needed it's functionality in my applet i changed the makefiles (and
+> > headers) to build a shared library and install it in $PREFIX/lib
+> > (headers in $prefix/include/ddcci)
+> 
+> There is no problem about it. My only concern is about two applications
+> accessing the monitors at the same time. It could create huge problems
+> (particularly with ddcpci)... I think we need a mechanism to lock and
+> unlock the libraries, but I've no experience on it. Any idea??
+not only the library must be locked, but other applications also need to
+get informed of changes.
+or do you mean not allowing to run two applications at the same time?
+> 
+> > now i'd suggest to split the project into seperate modules:
+> > - libgddcc (or libddcci??)
+> What do you think of libddccontrol ? (the so file would be
+> libddccontrol.so, and be linked with -lddccontrol)
+
+yes this name has the atvantage of being a little more self explaining
+
+> > - ddccontrol
+> > - gddccontrol
+> > - ddcc-applet
+> Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+
+maybe gnome-ddcc-applet
+
+> 
+> Now, about the idea of splitting the project in modules, I'm not sure of
+> what you mean... Do you suggest to split the project in different
+> tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> ddcontrol-db) are already enough to download, and as their size is
+> relatively limited I don't see any problem (if you only want some parts
+> of ddccontrol, you can enable them with configure flags).
+> Of course, if a packager want to split the project, there is no problem
+> (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> ddccontrol-devel...).
+
+yes, i meant different tarballs, but mainly because i think it should be
+packaged this way in debs and rpms.
+
+
+> I think you can commit your modifications. Please just add a tag before
+> doing it ("cvs tag Before_shared_lib" for example).
+
+ok, ill do this.
+i think if the headers are "pubilc" and maybe used in different
+applications, not only functions but also types should be prefixed
+("DdcciProfile" instead of "struct profile") to avoid naming conflicts
+with other headers/libs.
+
+
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From nicolas@...1... Fri Sep 02 02:22:04 2005
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Nicolas Boichat <nicolas@...1...>
+To: "Roberto C. Sanchez" <roberto@...15...>
+Cc: Christian Schilling <cschilling@...6...>,  ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <20050825173512.GB19145@...16...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <20050825173512.GB19145@...16...>
+Date: Fri, 02 Sep 2005 11:21:53 +0200
+Message-Id: <1125652914.7554.9.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.142.233 (adsl-142-233-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Roberto,
+
+Back at work... (sorry for the delay)
+
+On Thu, 2005-08-25 at 13:35 -0400, Roberto C. Sanchez wrote:
+> On Thu, Aug 25, 2005 at 03:48:26PM +0200, Nicolas Boichat wrote:
+> > 
+> > Now, about the idea of splitting the project in modules, I'm not sure of
+> > what you mean... Do you suggest to split the project in different
+> > tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> > ddcontrol-db) are already enough to download, and as their size is
+> > relatively limited I don't see any problem (if you only want some parts
+> > of ddccontrol, you can enable them with configure flags).
+> > Of course, if a packager want to split the project, there is no problem
+> > (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> > ddccontrol-devel...).
+> > 
+> I would also like to know about this.  I am working on the Debian
+> packaging and should have something ready by this weekend.  However, if
+> the project is going to be split into different packages, I think it may
+> be worthwhile to wait.  What do you think?
+
+The project will not be splitted in the CVS.
+
+But from the packaging point of view, you may want to split the project
+in different parts, for example:
+ - ddccontrol-base: basic command line ddccontrol tool, and 
+libddccontrol.so
+ - ddccontrol-devel: header files to build apps against libddccontrol.so
+(for the moment it is not needed as no other app use the library)
+ - ddccontrol-gnome: gddccontrol and gnome-ddcc-applet
+
+You may want to create even more packages (Christian presented an
+alternative), or just create one for the moment.
+
+Best regards,
+
+Nicolas
+
+
+
+From nicolas@...1... Fri Sep 02 02:37:55 2005
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125051634.9599.27.camel@...7...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+Date: Fri, 02 Sep 2005 11:37:50 +0200
+Message-Id: <1125653870.7471.26.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.142.233 (adsl-142-233-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|1.2|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Christian,
+
+On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > i'm currently working on a panel applet for gnome, with allows quick
+> > > changeing of profiles created with gddccontrol.
+> > 
+> > Nice idea .-) One thing you should take care of is multi-screen (which
+> > monitor are you controlling?).
+> yes i am aware of this, the applet is now working with one monitor only
+> (first one thats found), but i intend to make an config dialog to chose
+> the monitor.
+> > 
+> > > while doing this i noticed libddcci is build as a static library.
+> > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > headers) to build a shared library and install it in $PREFIX/lib
+> > > (headers in $prefix/include/ddcci)
+> > 
+> > There is no problem about it. My only concern is about two applications
+> > accessing the monitors at the same time. It could create huge problems
+> > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > unlock the libraries, but I've no experience on it. Any idea??
+> not only the library must be locked, but other applications also need to
+> get informed of changes.
+> or do you mean not allowing to run two applications at the same time?
+
+An easy way of doing this thing, which doesn't requires the apps to be
+"informed", would be:
+ - When ddccontrol or gddccontrol run, it locks the library, so no other
+app can access DDC/CI. (so you can't change profile in ddcc-applet)
+ - When ddcc-applet, it doesn't lock the library, unless when it is
+changing of profile.
+
+But again, I don't know how to do this... I'll try to find
+informations...
+
+> > > now i'd suggest to split the project into seperate modules:
+> > > - libgddcc (or libddcci??)
+> > What do you think of libddccontrol ? (the so file would be
+> > libddccontrol.so, and be linked with -lddccontrol)
+> 
+> yes this name has the atvantage of being a little more self explaining
+> 
+> > > - ddccontrol
+> > > - gddccontrol
+> > > - ddcc-applet
+> > Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+> 
+> maybe gnome-ddcc-applet
+> 
+> > 
+> > Now, about the idea of splitting the project in modules, I'm not sure of
+> > what you mean... Do you suggest to split the project in different
+> > tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> > ddcontrol-db) are already enough to download, and as their size is
+> > relatively limited I don't see any problem (if you only want some parts
+> > of ddccontrol, you can enable them with configure flags).
+> > Of course, if a packager want to split the project, there is no problem
+> > (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> > ddccontrol-devel...).
+> 
+> yes, i meant different tarballs, but mainly because i think it should be
+> packaged this way in debs and rpms.
+> 
+> 
+> > I think you can commit your modifications. Please just add a tag before
+> > doing it ("cvs tag Before_shared_lib" for example).
+> 
+> ok, ill do this.
+> i think if the headers are "pubilc" and maybe used in different
+> applications, not only functions but also types should be prefixed
+> ("DdcciProfile" instead of "struct profile") to avoid naming conflicts
+> with other headers/libs.
+
+ddcci_profile is better (more GNU-styled .-)). I'll work on this.
+
+Concerning ddcc-applet, I first had some problems to build it (libtool
+was missing, you added it, then the wrong version was installed), but
+now it builds and gets installed... Could you just explain me how to add
+it in gnome panels??
+
+Best regards,
+
+Nicolas
+
+
+
+From cschilling@...6... Fri Sep 02 04:08:52 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125653870.7471.26.camel@...10...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+Date: Fri, 02 Sep 2005 13:08:40 +0200
+Message-Id: <1125659320.8345.11.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.4 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.4 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> Hello Christian,
+> 
+> On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > changeing of profiles created with gddccontrol.
+> > > 
+> > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > monitor are you controlling?).
+> > yes i am aware of this, the applet is now working with one monitor only
+> > (first one thats found), but i intend to make an config dialog to chose
+> > the monitor.
+> > > 
+> > > > while doing this i noticed libddcci is build as a static library.
+> > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > (headers in $prefix/include/ddcci)
+> > > 
+> > > There is no problem about it. My only concern is about two applications
+> > > accessing the monitors at the same time. It could create huge problems
+> > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > unlock the libraries, but I've no experience on it. Any idea??
+> > not only the library must be locked, but other applications also need to
+> > get informed of changes.
+> > or do you mean not allowing to run two applications at the same time?
+> 
+> An easy way of doing this thing, which doesn't requires the apps to be
+> "informed", would be:
+>  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> app can access DDC/CI. (so you can't change profile in ddcc-applet)
+>  - When ddcc-applet, it doesn't lock the library, unless when it is
+> changing of profile.
+> 
+> But again, I don't know how to do this... I'll try to find
+> informations...
+> 
+> > > > now i'd suggest to split the project into seperate modules:
+> > > > - libgddcc (or libddcci??)
+> > > What do you think of libddccontrol ? (the so file would be
+> > > libddccontrol.so, and be linked with -lddccontrol)
+> > 
+> > yes this name has the atvantage of being a little more self explaining
+> > 
+> > > > - ddccontrol
+> > > > - gddccontrol
+> > > > - ddcc-applet
+> > > Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+> > 
+> > maybe gnome-ddcc-applet
+> > 
+> > > 
+> > > Now, about the idea of splitting the project in modules, I'm not sure of
+> > > what you mean... Do you suggest to split the project in different
+> > > tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> > > ddcontrol-db) are already enough to download, and as their size is
+> > > relatively limited I don't see any problem (if you only want some parts
+> > > of ddccontrol, you can enable them with configure flags).
+> > > Of course, if a packager want to split the project, there is no problem
+> > > (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> > > ddccontrol-devel...).
+> > 
+> > yes, i meant different tarballs, but mainly because i think it should be
+> > packaged this way in debs and rpms.
+> > 
+> > 
+> > > I think you can commit your modifications. Please just add a tag before
+> > > doing it ("cvs tag Before_shared_lib" for example).
+> > 
+> > ok, ill do this.
+> > i think if the headers are "pubilc" and maybe used in different
+> > applications, not only functions but also types should be prefixed
+> > ("DdcciProfile" instead of "struct profile") to avoid naming conflicts
+> > with other headers/libs.
+> 
+> ddcci_profile is better (more GNU-styled .-)). I'll work on this.
+> 
+> Concerning ddcc-applet, I first had some problems to build it (libtool
+> was missing, you added it, then the wrong version was installed), but
+> now it builds and gets installed... Could you just explain me how to add
+> it in gnome panels??
+
+It should be listed in Gnome's "add to panel" dialog after installation.
+Hower if it's not it properbly means the *.server file got in the wrong
+location.
+On Debian all *.server files are placed in /usr/lib/bonobo/servers.
+in the makefile i secified to install it in $(libdir)/bonobo/server (i
+configure with --prefix="/usr")
+
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From cschilling@...6... Fri Sep 02 05:40:28 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125653870.7471.26.camel@...10...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+Date: Fri, 02 Sep 2005 14:40:14 +0200
+Message-Id: <1125664814.9693.5.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> Hello Christian,
+> 
+> On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > changeing of profiles created with gddccontrol.
+> > > 
+> > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > monitor are you controlling?).
+> > yes i am aware of this, the applet is now working with one monitor only
+> > (first one thats found), but i intend to make an config dialog to chose
+> > the monitor.
+> > > 
+> > > > while doing this i noticed libddcci is build as a static library.
+> > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > (headers in $prefix/include/ddcci)
+> > > 
+> > > There is no problem about it. My only concern is about two applications
+> > > accessing the monitors at the same time. It could create huge problems
+> > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > unlock the libraries, but I've no experience on it. Any idea??
+> > not only the library must be locked, but other applications also need to
+> > get informed of changes.
+> > or do you mean not allowing to run two applications at the same time?
+> 
+> An easy way of doing this thing, which doesn't requires the apps to be
+> "informed", would be:
+>  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> app can access DDC/CI. (so you can't change profile in ddcc-applet)
+>  - When ddcc-applet, it doesn't lock the library, unless when it is
+> changing of profile.
+> 
+> But again, I don't know how to do this... I'll try to find
+> informations...
+> 
+
+is it requrired that the whole library is locked, or must just be
+ensured, that only one library function is executed at a time?
+
+i've experienced no problems so far running both apps the same time,
+exept the information they are showing getting out of sync.
+
+what kind of problems do you expect? maybe just adding protection to
+some critical functions is enough.
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From cschilling@...6... Fri Sep 02 05:46:10 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125653870.7471.26.camel@...10...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+Date: Fri, 02 Sep 2005 14:45:58 +0200
+Message-Id: <1125665158.10003.2.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.9 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.2 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> Hello Christian,
+> 
+> On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > changeing of profiles created with gddccontrol.
+> > > 
+> > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > monitor are you controlling?).
+> > yes i am aware of this, the applet is now working with one monitor only
+> > (first one thats found), but i intend to make an config dialog to chose
+> > the monitor.
+> > > 
+> > > > while doing this i noticed libddcci is build as a static library.
+> > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > (headers in $prefix/include/ddcci)
+> > > 
+> > > There is no problem about it. My only concern is about two applications
+> > > accessing the monitors at the same time. It could create huge problems
+> > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > unlock the libraries, but I've no experience on it. Any idea??
+> > not only the library must be locked, but other applications also need to
+> > get informed of changes.
+> > or do you mean not allowing to run two applications at the same time?
+> 
+> An easy way of doing this thing, which doesn't requires the apps to be
+> "informed", would be:
+>  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> app can access DDC/CI. (so you can't change profile in ddcc-applet)
+>  - When ddcc-applet, it doesn't lock the library, unless when it is
+> changing of profile.
+> 
+> But again, I don't know how to do this... I'll try to find
+> informations...
+> 
+> > > > now i'd suggest to split the project into seperate modules:
+> > > > - libgddcc (or libddcci??)
+> > > What do you think of libddccontrol ? (the so file would be
+> > > libddccontrol.so, and be linked with -lddccontrol)
+> > 
+> > yes this name has the atvantage of being a little more self explaining
+> > 
+> > > > - ddccontrol
+> > > > - gddccontrol
+> > > > - ddcc-applet
+> > > Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+> > 
+> > maybe gnome-ddcc-applet
+> > 
+> > > 
+> > > Now, about the idea of splitting the project in modules, I'm not sure of
+> > > what you mean... Do you suggest to split the project in different
+> > > tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> > > ddcontrol-db) are already enough to download, and as their size is
+> > > relatively limited I don't see any problem (if you only want some parts
+> > > of ddccontrol, you can enable them with configure flags).
+> > > Of course, if a packager want to split the project, there is no problem
+> > > (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> > > ddccontrol-devel...).
+> > 
+> > yes, i meant different tarballs, but mainly because i think it should be
+> > packaged this way in debs and rpms.
+> > 
+> > 
+> > > I think you can commit your modifications. Please just add a tag before
+> > > doing it ("cvs tag Before_shared_lib" for example).
+> > 
+> > ok, ill do this.
+> > i think if the headers are "pubilc" and maybe used in different
+> > applications, not only functions but also types should be prefixed
+> > ("DdcciProfile" instead of "struct profile") to avoid naming conflicts
+> > with other headers/libs.
+> 
+> ddcci_profile is better (more GNU-styled .-)). I'll work on this.
+> 
+> Concerning ddcc-applet, I first had some problems to build it (libtool
+> was missing, you added it, then the wrong version was installed), but
+> now it builds and gets installed... Could you just explain me how to add
+> it in gnome panels??
+
+It should be listed in Gnome's "add to panel" dialog after installation.
+Hower if it's not it properbly means the *.server file got in the wrong
+location.
+On Debian all *.server files are placed in /usr/lib/bonobo/servers.
+in the makefile i secified to install it in $(libdir)/bonobo/server (i
+configure with --prefix="/usr")
+
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From cschilling@...6... Fri Sep 02 05:46:28 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125653870.7471.26.camel@...10...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+Date: Fri, 02 Sep 2005 14:46:12 +0200
+Message-Id: <1125665172.10003.3.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.2 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.4 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.4 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> Hello Christian,
+> 
+> On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > changeing of profiles created with gddccontrol.
+> > > 
+> > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > monitor are you controlling?).
+> > yes i am aware of this, the applet is now working with one monitor only
+> > (first one thats found), but i intend to make an config dialog to chose
+> > the monitor.
+> > > 
+> > > > while doing this i noticed libddcci is build as a static library.
+> > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > (headers in $prefix/include/ddcci)
+> > > 
+> > > There is no problem about it. My only concern is about two applications
+> > > accessing the monitors at the same time. It could create huge problems
+> > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > unlock the libraries, but I've no experience on it. Any idea??
+> > not only the library must be locked, but other applications also need to
+> > get informed of changes.
+> > or do you mean not allowing to run two applications at the same time?
+> 
+> An easy way of doing this thing, which doesn't requires the apps to be
+> "informed", would be:
+>  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> app can access DDC/CI. (so you can't change profile in ddcc-applet)
+>  - When ddcc-applet, it doesn't lock the library, unless when it is
+> changing of profile.
+> 
+> But again, I don't know how to do this... I'll try to find
+> informations...
+> 
+
+is it requrired that the whole library is locked, or must just be
+ensured, that only one library function is executed at a time?
+
+i've experienced no problems so far running both apps the same time,
+exept the information they are showing getting out of sync.
+
+what kind of problems do you expect? maybe just adding protection to
+some critical functions is enough.
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From roberto@...15... Fri Sep 02 06:34:38 2005
+Date: Fri, 2 Sep 2005 09:34:24 -0400
+From: "Roberto C. Sanchez" <roberto@...15...>
+To: Nicolas Boichat <nicolas@...1...>
+Cc: Christian Schilling <cschilling@...6...>,
+	ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+Message-ID: <20050902133424.GB27186@...16...>
+References: <1124820916.17625.18.camel@...7...> <1124977706.7785.49.camel@...10...> <20050825173512.GB19145@...16...> <1125652914.7554.9.camel@...10...>
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="SLDf9lqlvOQaIe6s"
+Content-Disposition: inline
+In-Reply-To: <1125652914.7554.9.camel@...10...>
+User-Agent: mutt-ng devel-r316 (Debian)
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--SLDf9lqlvOQaIe6s
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Fri, Sep 02, 2005 at 11:21:53AM +0200, Nicolas Boichat wrote:
+> Hello Roberto,
+>=20
+> The project will not be splitted in the CVS.
+>=20
+> But from the packaging point of view, you may want to split the project
+> in different parts, for example:
+>  - ddccontrol-base: basic command line ddccontrol tool, and=20
+> libddccontrol.so
+>  - ddccontrol-devel: header files to build apps against libddccontrol.so
+> (for the moment it is not needed as no other app use the library)
+>  - ddccontrol-gnome: gddccontrol and gnome-ddcc-applet
+>=20
+> You may want to create even more packages (Christian presented an
+> alternative), or just create one for the moment.
+>=20
+OK.  Thanks for the clarification.  I have become very busy with my
+final projects and final exams.  I jave part of the packaging work
+completed already.  When I finish exams in the middle of next week, I
+will return finishing up the packaging and check the files in on teh
+branch I created in CVS.
+
+-Roberto
+
+--=20
+Roberto C. Sanchez
+http://familiasanchez.net/~roberto
+
+--SLDf9lqlvOQaIe6s
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+
+iD8DBQFDGFTgTfhoonTOp2oRAmeaAJ4qIKNyYwTqhKrqaKlDApz5/JK7bgCfdACZ
+/K4flI0fWmC+NgDAnG36OxA=
+=X7x3
+-----END PGP SIGNATURE-----
+
+--SLDf9lqlvOQaIe6s--
+
+
+From nicolas@...1... Mon Sep 05 06:26:04 2005
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125659320.8345.11.camel@...7...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+	 <1125659320.8345.11.camel@...7...>
+Date: Mon, 05 Sep 2005 15:25:44 +0200
+Message-Id: <1125926744.7474.8.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.142.235 (adsl-142-235-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|1.2|H 0.5
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Christian,
+
+On Fri, 2005-09-02 at 13:08 +0200, Christian Schilling wrote:
+> Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> > Hello Christian,
+> > 
+> > On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > > changeing of profiles created with gddccontrol.
+> > > > 
+> > > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > > monitor are you controlling?).
+> > > yes i am aware of this, the applet is now working with one monitor only
+> > > (first one thats found), but i intend to make an config dialog to chose
+> > > the monitor.
+> > > > 
+> > > > > while doing this i noticed libddcci is build as a static library.
+> > > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > > (headers in $prefix/include/ddcci)
+> > > > 
+> > > > There is no problem about it. My only concern is about two applications
+> > > > accessing the monitors at the same time. It could create huge problems
+> > > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > > unlock the libraries, but I've no experience on it. Any idea??
+> > > not only the library must be locked, but other applications also need to
+> > > get informed of changes.
+> > > or do you mean not allowing to run two applications at the same time?
+> > 
+> > An easy way of doing this thing, which doesn't requires the apps to be
+> > "informed", would be:
+> >  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> > app can access DDC/CI. (so you can't change profile in ddcc-applet)
+> >  - When ddcc-applet, it doesn't lock the library, unless when it is
+> > changing of profile.
+> > 
+> > But again, I don't know how to do this... I'll try to find
+> > informations...
+> > 
+> > > > > now i'd suggest to split the project into seperate modules:
+> > > > > - libgddcc (or libddcci??)
+> > > > What do you think of libddccontrol ? (the so file would be
+> > > > libddccontrol.so, and be linked with -lddccontrol)
+> > > 
+> > > yes this name has the atvantage of being a little more self explaining
+> > > 
+> > > > > - ddccontrol
+> > > > > - gddccontrol
+> > > > > - ddcc-applet
+> > > > Maybe should you a a "g" somewhere, because there are also KDE applets I think.
+> > > 
+> > > maybe gnome-ddcc-applet
+> > > 
+> > > > 
+> > > > Now, about the idea of splitting the project in modules, I'm not sure of
+> > > > what you mean... Do you suggest to split the project in different
+> > > > tarballs?? If so, I disagree. I think two tarballs (ddccontrol and
+> > > > ddcontrol-db) are already enough to download, and as their size is
+> > > > relatively limited I don't see any problem (if you only want some parts
+> > > > of ddccontrol, you can enable them with configure flags).
+> > > > Of course, if a packager want to split the project, there is no problem
+> > > > (you often see this with RPMs: ddccontrol-lib, ddccontrol,
+> > > > ddccontrol-devel...).
+> > > 
+> > > yes, i meant different tarballs, but mainly because i think it should be
+> > > packaged this way in debs and rpms.
+> > > 
+> > > 
+> > > > I think you can commit your modifications. Please just add a tag before
+> > > > doing it ("cvs tag Before_shared_lib" for example).
+> > > 
+> > > ok, ill do this.
+> > > i think if the headers are "pubilc" and maybe used in different
+> > > applications, not only functions but also types should be prefixed
+> > > ("DdcciProfile" instead of "struct profile") to avoid naming conflicts
+> > > with other headers/libs.
+> > 
+> > ddcci_profile is better (more GNU-styled .-)). I'll work on this.
+> > 
+> > Concerning ddcc-applet, I first had some problems to build it (libtool
+> > was missing, you added it, then the wrong version was installed), but
+> > now it builds and gets installed... Could you just explain me how to add
+> > it in gnome panels??
+> 
+> It should be listed in Gnome's "add to panel" dialog after installation.
+> Hower if it's not it properbly means the *.server file got in the wrong
+> location.
+> On Debian all *.server files are placed in /usr/lib/bonobo/servers.
+> in the makefile i secified to install it in $(libdir)/bonobo/server (i
+> configure with --prefix="/usr")
+
+Ok, my prefix was /usr/local... I copied the server file to right
+location and it works. Thanks.
+
+Best regards,
+
+Nicolas
+
+
+
+From nicolas@...1... Mon Sep 05 06:51:30 2005
+Subject: Re: [ddccontrol-devel] Panel Applet, libddcci
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1125664814.9693.5.camel@...7...>
+References: <1124820916.17625.18.camel@...7...>
+	 <1124977706.7785.49.camel@...10...>
+	 <1125051634.9599.27.camel@...7...>
+	 <1125653870.7471.26.camel@...10...>
+	 <1125664814.9693.5.camel@...7...>
+Date: Mon, 05 Sep 2005 15:51:20 +0200
+Message-Id: <1125928280.7470.20.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.142.235 (adsl-142-235-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|1.2|H 0.5
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Christian,
+
+On Fri, 2005-09-02 at 14:40 +0200, Christian Schilling wrote:
+> Am Freitag, den 02.09.2005, 11:37 +0200 schrieb Nicolas Boichat:
+> > Hello Christian,
+> > 
+> > On Fri, 2005-08-26 at 12:20 +0200, Christian Schilling wrote:
+> > > > > i'm currently working on a panel applet for gnome, with allows quick
+> > > > > changeing of profiles created with gddccontrol.
+> > > > 
+> > > > Nice idea .-) One thing you should take care of is multi-screen (which
+> > > > monitor are you controlling?).
+> > > yes i am aware of this, the applet is now working with one monitor only
+> > > (first one thats found), but i intend to make an config dialog to chose
+> > > the monitor.
+> > > > 
+> > > > > while doing this i noticed libddcci is build as a static library.
+> > > > > as i needed it's functionality in my applet i changed the makefiles (and
+> > > > > headers) to build a shared library and install it in $PREFIX/lib
+> > > > > (headers in $prefix/include/ddcci)
+> > > > 
+> > > > There is no problem about it. My only concern is about two applications
+> > > > accessing the monitors at the same time. It could create huge problems
+> > > > (particularly with ddcpci)... I think we need a mechanism to lock and
+> > > > unlock the libraries, but I've no experience on it. Any idea??
+> > > not only the library must be locked, but other applications also need to
+> > > get informed of changes.
+> > > or do you mean not allowing to run two applications at the same time?
+> > 
+> > An easy way of doing this thing, which doesn't requires the apps to be
+> > "informed", would be:
+> >  - When ddccontrol or gddccontrol run, it locks the library, so no other
+> > app can access DDC/CI. (so you can't change profile in ddcc-applet)
+> >  - When ddcc-applet, it doesn't lock the library, unless when it is
+> > changing of profile.
+> > 
+> > But again, I don't know how to do this... I'll try to find
+> > informations...
+> > 
+> 
+> is it requrired that the whole library is locked, or must just be
+> ensured, that only one library function is executed at a time?
+> 
+> i've experienced no problems so far running both apps the same time,
+> exept the information they are showing getting out of sync.
+> 
+> what kind of problems do you expect? maybe just adding protection to
+> some critical functions is enough.
+
+Yes, you're right, locking some functions should be enough...
+
+I'll also find a way to automatically refresh controls/profile list.
+
+Best regards,
+
+Nicolas
+
+
+
+From cschilling@...6... Fri Sep 09 08:53:32 2005
+X-Authenticated: #4067640
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+Date: Fri, 09 Sep 2005 17:53:23 +0200
+Message-Id: <1126281203.11506.5.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.0 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] Compile on GCC 4
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hello,
+
+today i compiled ddccontrol with GCC 4 and got tons of warnings about
+signedness in the files:
+ddcci.c
+monitor_db.c
+conf.c
+maybe gcc4 does some stricter checking of singedness.
+i'll start looking why this happens and possibly fix it.
+
+But at least no errors are reportet, so ddccontrol keeps working with
+gcc4
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From cschilling@...6... Sat Sep 10 04:04:29 2005
+X-Authenticated: #4067640
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>, ddccontrol users <ddccontrol-users@lists.sourceforge.net>
+Date: Sat, 10 Sep 2005 13:04:15 +0200
+Message-Id: <1126350255.6225.8.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.0 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.3 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_AT       BODY: Text interparsed with @
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.3 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] Icon needed
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hello,
+
+I think the next release of ddccontrol should add an entry into the
+gnome menu, and therefore needs an icon. The same icon then could also
+be used for the panel applet (i inserted a random one..)
+
+The problem is, i don't really think am capable of creating a good
+looking icon myself, so is here anybody on the list wo is, or at least
+has a suggestion to use an existing icon?
+
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From sir.mvo@...6... Fri Sep 16 09:40:14 2005
+X-Authenticated: #18895133
+Date: Fri, 16 Sep 2005 18:39:54 +0200
+From: Michael Vogt <mvogt@...17...>
+To: ddccontrol-devel@lists.sourceforge.net
+Message-ID: <20050916163954.GR10548@...18...>
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="YToU2i3Vx8H2dn7O"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.9i
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Subject: [ddccontrol-devel] samsung 930bf xml-file
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--YToU2i3Vx8H2dn7O
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Hi,
+
+attached is a samsung 930bf file. It seems to work fine with the  173P
+settings so the file is rather short :) 
+
+I hope this is the appropriate way to submit new entries. If you need
+more information or if I should test more, please let me know.
+
+Cheers,
+ Michael
+
+P.S. Please CC on answers, I'm not on the list.
+-- 
+Linux is not The Answer. Yes is the answer. Linux is The Question. - Neo
+
+--YToU2i3Vx8H2dn7O
+Content-Type: application/xml
+Content-Disposition: attachment; filename="SAM0194.xml"
+Content-Transfer-Encoding: quoted-printable
+
+<?xml version=3D"1.0"?>=0A<!---The Samsung 930BF seems to work with the set=
+tings of the 173P -->=0A<monitor include=3D"SAM00D3" name=3D"Samsung SyncMa=
+ster 930BF (VGA)"/>=0A
+--YToU2i3Vx8H2dn7O--
+
+
+From nicolas@...1... Tue Sep 20 04:42:32 2005
+Subject: Re: [ddccontrol-devel] samsung 930bf xml-file
+From: Nicolas Boichat <nicolas@...1...>
+To: Michael Vogt <mvogt@...17...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <20050916163954.GR10548@...18...>
+References: <20050916163954.GR10548@...18...>
+Date: Tue, 20 Sep 2005 13:42:11 +0200
+Message-Id: <1127216531.7547.10.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.168.224 (adsl-168-224-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Michael,
+
+Thank you for the file, I added it to the database.
+
+(and yes sending a message to this list is the appropriate way to submit
+new entries .-))
+
+Best regards,
+
+Nicolas
+
+On Fri, 2005-09-16 at 18:39 +0200, Michael Vogt wrote:
+> Hi,
+> 
+> attached is a samsung 930bf file. It seems to work fine with the  173P
+> settings so the file is rather short :) 
+> 
+> I hope this is the appropriate way to submit new entries. If you need
+> more information or if I should test more, please let me know.
+> 
+> Cheers,
+>  Michael
+> 
+> P.S. Please CC on answers, I'm not on the list.
+-- 
+Nicolas Boichat <nicolas@...1...>
+
+
+
+From nicolas@...1... Tue Sep 20 09:08:22 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1126350255.6225.8.camel@...7...>
+References: <1126350255.6225.8.camel@...7...>
+Content-Type: multipart/mixed; boundary="=-gdzrXInzmSqmEwrK53/d"
+Date: Tue, 20 Sep 2005 17:03:11 +0200
+Message-Id: <1127228591.7547.39.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.168.224 (adsl-168-224-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.1 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--=-gdzrXInzmSqmEwrK53/d
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+Hi Christian,
+
+What do you think about using the image attached (on my Gentoo it can be
+found in /usr/share/pixmaps/).
+It is part of GNOME control-center package, so it is under GPL.
+
+Best regards,
+
+Nicolas
+
+On Sat, 2005-09-10 at 13:04 +0200, Christian Schilling wrote:
+> hello,
+> 
+> I think the next release of ddccontrol should add an entry into the
+> gnome menu, and therefore needs an icon. The same icon then could also
+> be used for the panel applet (i inserted a random one..)
+> 
+> The problem is, i don't really think am capable of creating a good
+> looking icon myself, so is here anybody on the list wo is, or at least
+> has a suggestion to use an existing icon?
+> 
+-- 
+Nicolas Boichat <nicolas@...1...>
+
+--=-gdzrXInzmSqmEwrK53/d
+Content-Disposition: attachment; filename=display-capplet.png
+Content-Type: image/png; name=display-capplet.png
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAKvUlE
+QVR42s2aa4wV5RnHf+/M7Fn2IhcX1gJFFmyEteWybSxuTKQIpP2AHxBSbUltNfGSdjHERtOiaW3a
+GNGmVqO1WtJsKlh1G0FbjdGkTRWyQeoCW9EtFxHYGy57jmd3z9lzZuZ9336Yy5k5F3bRiL7JZC5n
+zpnn8n+e5/88cwSFJfwtev5FWLrMcXjNighrFO2/SEv7mypWwooIvcQwjCu01mit+YKuHqAbkFEP
+BNC5YnBwcKy2trbeMAzPLcJzhNY6PD7XUkoVTOYbIbgWPXddF6UUWmuklGitw/Po9ejx9u3b8488
+8shi4F3fEwA6gJABUF9fXz8yMhIKH2xRZSb0tS9o4MlyWyUhlVLhueu64b1KKSzLqi6KVV0cA4Xo
+rSB8JSWiQkevlTuPKhFcjx5X8oqUIWpiMWqVEx5gfHycXC5HAKeJrF7O8gFkio8Dq1baAmGnTp0a
+KhMxhihWoGQJIcjlcixatOhzjdju7m4ymUzMCEVpXlvlrB9d37zl8c9F+Lf/3IZlWSUeLUaMda4A
+DFbr1y5l1oy6c5YYHTVL0e+FiVxr7yByky66bzidZf/7vSHkivBfsqxzYTlYs6bXgY6XxHKKE81v
+uvQLKoyFuOYaTfATU+umxH43GtATKlAuf5fU8iIs6jLCBtd0mQyldeQZWqOUbzQhPMfoeF2JptZJ
+KVBceCgjTExY/zNKBCZ2Pfq50oSCS6VDzwToihbQ81Ig+IIQIg4L/2FaCIwIHLTSofsLMNAxK8fj
+CpT/ufIFV0qj+noaD/7r+TvymKnmld/dAfUphAjxfy56YxVbP1AgCiGpNUpJBAZaFIRHUHavQyjE
+lVK+F7zvg6sUYiw95b97Xt6wbuXMBU4mvWjnrseuumTxNQ+gORy1/qRjQEqJaZrhFwxDoKVEKoUQ
+IITGSwoFqJSDUgEyEa9ErK+1xkx9VP+/zo5b2n6yoWXD2ubE2N4tJEZhx/5/b72scfrjSqnOiTwQ
+K7OO44SRH6QuyzSQSuI4nhKuq5FK4krlbxJXShy3sHcciS0ltiOxXTe2z9suecdBDZxo6Hrp0V9u
+uX3diutbGxNy3/3U5LPcuhLuvEZAdU3bn3730NoojM4rBgIPmIaB7Ti4LmAI/56o9QtWBZCBy7UH
+J1cptAKpVai0meqbfmrPM3fdfvOaOaua0oy/1Y7OngWgCti4FNIjgmcPHvzOstar3557aVN60gpI
+KWMKGIZAugqJwFBeX+G6CmGAlDoW0AqNlH5gaoVS+N7yDOMqDflMYvjQy9f94octTVfOT5J69cWy
+BebGxVCnx7/0l+1P3vP9H932kFIqfV5BHEDIEMIztRBorcjlJAqN48ow20hVYJheilReelQaqTVS
+KqRS1OWS007+56UN0xlavf8w1B8doNEqXxxPj0LPMDjZTNMfn35qy1cXL/4DMDQpCEXTn2kY2K4i
+lcljmkYIG9cXSipPAdAEicKDkB+4SnvVWQv2djx8X2psZI4Qgq4PzlKzvJbVs8sr8NoJ2NmTJZvN
+Alx++tSp3wObJg2hwANCwJG+FMIwqa6ysCyBIYQHC6lwlfJuCiiOny69LOT3Ff6Hy36w7e7o8/r2
+P7jz42QWAFtpLOF5XAHd2Vp27dq5aXBwEKUUr7/+Ou3t7ZODUJBOAYQhMIWFEAJXKVy7Eh+KEDov
+32JM0MQdTdqM+Mcd5nQaBvq5trGOtIThMTvGhc4riKOUwjKN86LB+jxmMtbCJtK9xxhJJHint587
+G2pIj8GHDoiqREkLOqECUkpc1y0N4s9oNTbPZ49l4Bz7kBk5yfGMgV1tMQTI2roYlZhUJbZtu0wd
++OwUGDLWbKIZaIZLgONAosrEdiRd226akMhNKgaMT6mAkq5Q0jXy42NVWroT/phMWORtF4De3l4G
+BwcBSKfDMlDnz4U0oEogFAheUMD4VApoiSA/ctE3ZiSfqNS6lhsKLLvnHt57773QAwsXLmTz5s0o
+pdi9e/fSvr6+Y4CsGANRCBWeV96AUzJD015r//V917Y9dncxFR8bG000T/v455s3b8YwjNi4plwN
+inKxQB7XdXEcJzzu6up6rq+v7xogXwKh4jowEYRMJ5t4f88LG4ZH03N0mY5NKSlM1JeFELzxxhvs
+27dvUiOZ4vGLlJIVK1bQ0tKC1vqKYCQ0oQLP/up7FYWfO23q9Isb6q5rnFG/WghR8d6l994LQGdn
+Jz1iObMb6ktSb3wYEO+XAc4kx6h79wBLly6NwaFsDAghmDt3LocOHaoYA2d6ehq2bfvNXT+9cUnT
+/sMf0PXBWTo7O2MWlFJy+vRpDhw4EF6bPbOeyy+dFQqGLhRBrVXIrwIqopRCA65U6KTGcZxYSq1I
+JZLJJMPDwyFmo67ODZ2tf/LR3/7s5pvWzLlyfpL6owPULK/lmbYbdh5N2lgLm2hsns/Kr39708DA
+AEA469Tao9zEBC3stcJjsppCz6EUtiNjM9OyCgTanWsqbafTU57rePaWu7feNmdVU5rUqy/SaMHq
+2fBxMssIkO49xh7LQC2PD2s9tqqwHbcwXtGewLpIIak8wpjJOYxm84xm8zQqFTZdlSqxllKKINUF
+CgRfGD5+tHH3y3/fcPOt17esbWlg/K32slx+JJHAOfZhLKsECqA1+bwDQhSsrzxi6FFv7VvcZTzv
+MpLJM24X6E05BYK3H7F+oNwc6LkXnr9j7dUzF6xf05yQ++4Pu6jQO0rTYU7nnd5+ZuQk34pkFtd1
+Q1rgKIV0FU5AyaXC9c9t12tLbdeDj1IFPqYcFY2B2HhdAwwNDY2/+eabtZUCdzRnp+xMetHY3i3U
+5LOlZV1Aw4BHyo5nDDo7O0mlUsybNy98cDbn0HtmBMsycFzlN0bxWVFgMtMwiHLJ4OVIJQ/s3bhx
+49XBBx0dHe7w8LBlmiZCCKqqqpjXOHPH0089dVViFG5d6fWvsQmBEB4dHgO72mLVqlX09fXR29uL
+4zhIKXEUOEqCI+ODZgGmWbnmGH4/XimIFdAP7PL76nXt7e3Mnz9fCyGEYRiYpolhGKkrW5Y9sGP/
+wa0X1wg2Li3iPUBaenR4CDhw4ADJZJKampqQKCYs8xNRkjIK6KgHgue7/nnnK6+80lrhtw5f1jjj
+8Yf/WdOWHhHcuNjrX1874XVRw2M2oiqBrK3jrw8+CEBbWxu2bSOlxLI+GbdKWGZFCFH0ClNHvGGW
+eX/M8Y9S/1h+6ZQT29/hx3VaXNYz7PWvqVTftDLPvkhKGXqgyjIQxZxKFCpxsI/2Id5sSqG0Pmca
+jXpC+0MvWYnFHTw18MRX5jR0PHmo+qWEIVr85jtfRoFqpRS2bdPa2sqRI3sqvjcr7sB0pMihNUuW
+LCnhWlaFjlAXTdXLRtex/uH+y+c2rksp8Teg1Ydg8XIDDzQ1NbFgwYKY8AH/CvbRt5XRtF5dXU0m
+kylRwJjgrbgqOi7ZjvR9NDBrirHJh3a5e6SUUgd02HGcki24XqxAoKRpmvT39wcjFoQQgUwX5C8F
+NcuWLdtbXV3dsn79eqmUMk3TxLKsGFGMeiEI1miDBXDmzBnd1dUluru7B6SUi4DMhVDAAuqBG5Ys
+WfJETU2NGaTloMZUioNoi+sXWn3y5MmtwNPAKOBcqD91WEC1388mKkB3wvYasIEskAvi7UL+KyX4
+U8mnabJV0T9W+D/PWroH9xSJaAAAAABJRU5ErkJggg==
+
+
+--=-gdzrXInzmSqmEwrK53/d--
+
+
+
+From cschilling@...6... Tue Sep 20 15:34:34 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1127228591.7547.39.camel@...10...>
+References: <1126350255.6225.8.camel@...7...>
+	 <1127228591.7547.39.camel@...10...>
+Date: Wed, 21 Sep 2005 00:34:22 +0200
+Message-Id: <1127255662.6015.26.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.0 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 1.0 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hi nicolas,
+
+i think we can use this icon for now. as it is a part of gnome there is
+no need for copying it. it can just be accessed via it's iconname:
+"display-capplet".
+i have already made the changes to the applet. and will now create
+the .desktop file for gddcontrol's menu entry with this icon.
+
+i'm also changing some build files, to properly integrate intltool,
+witch translates the menu entrys in the .desktop file and the .server
+and .xml files of the applet. so you sould re-run ./autogen.sh after my
+next commit.
+
+the integration of intltool also changes the way POTFILES.in is
+maintained. the "intltool-update -m" command scans the sources and
+creates a "missing" file containing all sources not mentioned in
+POTFILES.in
+
+while making this changes i noticed there are many autogenerated files
+in the CVS witch in my opinion should not be there. i'll leave this
+as-is but i'd like to know what you think about removing them.
+
+...and one last thing: ;-)
+as you might have noticed in the ChangeLog i added support for ati
+radeon cards to ddcpci. (using framebuffer drivers and ati's closed
+source driver the same time can crash the machine)
+i tested this on a radeon 9800pro, so this should be changed in the
+documentation.
+
+
+best regards
+
+christian
+
+Am Dienstag, den 20.09.2005, 17:03 +0200 schrieb Nicolas Boichat:
+> Hi Christian,
+> 
+> What do you think about using the image attached (on my Gentoo it can be
+> found in /usr/share/pixmaps/).
+> It is part of GNOME control-center package, so it is under GPL.
+> 
+> Best regards,
+> 
+> Nicolas
+> 
+> On Sat, 2005-09-10 at 13:04 +0200, Christian Schilling wrote:
+> > hello,
+> > 
+> > I think the next release of ddccontrol should add an entry into the
+> > gnome menu, and therefore needs an icon. The same icon then could also
+> > be used for the panel applet (i inserted a random one..)
+> > 
+> > The problem is, i don't really think am capable of creating a good
+> > looking icon myself, so is here anybody on the list wo is, or at least
+> > has a suggestion to use an existing icon?
+> > 
+
+
+
+From nicolas@...1... Tue Sep 20 16:45:52 2005
+Subject: Re: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDCcontrol devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1127255662.6015.26.camel@...7...>
+References: <1126350255.6225.8.camel@...7...>
+	 <1127228591.7547.39.camel@...10...>
+	 <1127255662.6015.26.camel@...7...>
+Date: Wed, 21 Sep 2005 01:45:43 +0200
+Message-Id: <1127259943.7548.90.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.168.224 (adsl-168-224-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.1 AWL                    AWL: From: address is in the auto white-list
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Christian,
+
+On Wed, 2005-09-21 at 00:34 +0200, Christian Schilling wrote:
+> hi nicolas,
+> 
+> i think we can use this icon for now. as it is a part of gnome there is
+> no need for copying it. it can just be accessed via it's iconname:
+> "display-capplet".
+> i have already made the changes to the applet. and will now create
+> the .desktop file for gddcontrol's menu entry with this icon.
+
+Ok. Please also test what happens if the icon is not installed on the
+system, it should not display a message box or something like that.
+
+> i'm also changing some build files, to properly integrate intltool,
+> witch translates the menu entrys in the .desktop file and the .server
+> and .xml files of the applet. so you sould re-run ./autogen.sh after my
+> next commit.
+
+Nice, thank you. (I'm waiting for your commit .-))
+
+> the integration of intltool also changes the way POTFILES.in is
+> maintained. the "intltool-update -m" command scans the sources and
+> creates a "missing" file containing all sources not mentioned in
+> POTFILES.in
+
+Great! .-) I thought that my small trick was not the correct way of
+doing this .-) Thanks!
+
+> while making this changes i noticed there are many autogenerated files
+> in the CVS witch in my opinion should not be there. i'll leave this
+> as-is but i'd like to know what you think about removing them.
+
+I think things like configure, aclocal.m4 and Makefile.in could be
+removed safely...
+When I was the only one to develop, it was not a problem to have these
+files, but now, they get regenerated each time you do a commit because
+we don't have the same version of automake (1.9.6 for you and 1.9.7 for
+me).
+So just go on, delete the files you think should not be there (please
+also update the .cvsignore files), and if there is a problem we can
+always add some of them back later.
+
+> ...and one last thing: ;-)
+> as you might have noticed in the ChangeLog i added support for ati
+> radeon cards to ddcpci.
+
+Yes I saw thank you.
+
+> (using framebuffer drivers and ati's closed
+> source driver the same time can crash the machine)
+
+Funny .-) It seems ATI is taking example on nVidia .-) (nVidia
+simplified the problem by making impossible to use their drivers with
+the framebuffer driver loaded)
+
+> i tested this on a radeon 9800pro, so this should be changed in the
+> documentation.
+
+Ok, I'll do the work, and add a note about their incompatibility with
+ATI proprietary drivers.
+
+Thanks for all your work on this project, it is very nice.
+
+Best regards,
+
+Nicolas
+
+> Am Dienstag, den 20.09.2005, 17:03 +0200 schrieb Nicolas Boichat:
+> > Hi Christian,
+> > 
+> > What do you think about using the image attached (on my Gentoo it can be
+> > found in /usr/share/pixmaps/).
+> > It is part of GNOME control-center package, so it is under GPL.
+> > 
+> > Best regards,
+> > 
+> > Nicolas
+> > 
+> > On Sat, 2005-09-10 at 13:04 +0200, Christian Schilling wrote:
+> > > hello,
+> > > 
+> > > I think the next release of ddccontrol should add an entry into the
+> > > gnome menu, and therefore needs an icon. The same icon then could also
+> > > be used for the panel applet (i inserted a random one..)
+> > > 
+> > > The problem is, i don't really think am capable of creating a good
+> > > looking icon myself, so is here anybody on the list wo is, or at least
+> > > has a suggestion to use an existing icon?
+> > > 
+> 
+> 
+> 
+> -------------------------------------------------------
+> SF.Net email is sponsored by:
+> Tame your development challenges with Apache's Geronimo App Server. Download
+> it for free - -and be entered to win a 42" plasma tv or your very own
+> Sony(tm)PSP.  Click here to play: http://sourceforge.net/geronimo.php
+> _______________________________________________
+> ddccontrol-devel mailing list
+> ddccontrol-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> 
+-- 
+Nicolas Boichat <nicolas@...1...>
+
+
+
+From cschilling@...6... Wed Sep 21 10:08:54 2005
+X-Authenticated: #4067640
+Subject: Re: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed
+From: Christian Schilling <cschilling@...6...>
+To: Nicolas Boichat <nicolas@...1...>
+Cc: DDCcontrol devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1127259943.7548.90.camel@...10...>
+References: <1126350255.6225.8.camel@...7...>
+	 <1127228591.7547.39.camel@...10...>
+	 <1127255662.6015.26.camel@...7...>
+	 <1127259943.7548.90.camel@...10...>
+Date: Wed, 21 Sep 2005 19:08:30 +0200
+Message-Id: <1127322510.30076.23.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.0 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PARATHESES_OPEN BODY: Text interparsed with (
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hi nicolas,
+
+Am Mittwoch, den 21.09.2005, 01:45 +0200 schrieb Nicolas Boichat:
+> Hi Christian,
+> 
+> On Wed, 2005-09-21 at 00:34 +0200, Christian Schilling wrote:
+> > hi nicolas,
+> > 
+> > i think we can use this icon for now. as it is a part of gnome there is
+> > no need for copying it. it can just be accessed via it's iconname:
+> > "display-capplet".
+> > i have already made the changes to the applet. and will now create
+> > the .desktop file for gddcontrol's menu entry with this icon.
+> 
+> Ok. Please also test what happens if the icon is not installed on the
+> system, it should not display a message box or something like that.
+
+i think most user will have it, as it is part of gnome. but in case it's
+not on the system there is no error message, but an other icon is shown
+instead (red cross on "paper")
+
+
+> > the integration of intltool also changes the way POTFILES.in is
+> > maintained. the "intltool-update -m" command scans the sources and
+> > creates a "missing" file containing all sources not mentioned in
+> > POTFILES.in
+> 
+> Great! .-) I thought that my small trick was not the correct way of
+> doing this .-) Thanks!
+
+intltool can also handle updating of the .po files themselves:
+intltool-update fr
+will get all marked strings and automaticly merge with existing
+french translations :-)
+
+> 
+> > while making this changes i noticed there are many autogenerated files
+> > in the CVS witch in my opinion should not be there. i'll leave this
+> > as-is but i'd like to know what you think about removing them.
+> 
+> I think things like configure, aclocal.m4 and Makefile.in could be
+> removed safely...
+> When I was the only one to develop, it was not a problem to have these
+> files, but now, they get regenerated each time you do a commit because
+> we don't have the same version of automake (1.9.6 for you and 1.9.7 for
+> me).
+> So just go on, delete the files you think should not be there (please
+> also update the .cvsignore files), and if there is a problem we can
+> always add some of them back later.
+
+i removed a lot of files (and added them to .cvsignore) but all of them
+are generated during ./autogen.sh or a later script. you'll see the dir
+gets quite tidy when doing rm $(cat .cvsignore)
+
+while working on intltool interation i noticed you use the N_() macro
+quite extensivly to do nothing, is there any special reason for this?
+i ask because usually N_() is used for a different purpose: to mark
+static strings with cannot directly translated by a function all, but
+are later translated in place:
+
+const char* foo = N_("whatever");
+.....
+printf(gettext(foo));
+
+i added N_ to xgettext keywords (because intltool needs that), and know
+a lot of strings witch don't need translation are pulled into the .po
+files
+
+best regards
+
+christian
+
+ps.: do you have some kind of instant messaging? maybe this would be
+handy for minor questions/discussions ;-)
+
+
+
+From nicolas@...1... Wed Sep 21 11:20:25 2005
+Subject: Re: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed
+From: Nicolas Boichat <nicolas@...1...>
+To: Christian Schilling <cschilling@...6...>
+Cc: DDCcontrol devel <ddccontrol-devel@lists.sourceforge.net>
+In-Reply-To: <1127322510.30076.23.camel@...7...>
+References: <1126350255.6225.8.camel@...7...>
+	 <1127228591.7547.39.camel@...10...>
+	 <1127255662.6015.26.camel@...7...>
+	 <1127259943.7548.90.camel@...10...>
+	 <1127322510.30076.23.camel@...7...>
+Date: Wed, 21 Sep 2005 20:14:23 +0200
+Message-Id: <1127326463.30179.29.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.168.156 (adsl-168-156-bs1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PARATHESES_OPEN BODY: Text interparsed with (
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Christian,
+
+On Wed, 2005-09-21 at 19:08 +0200, Christian Schilling wrote:
+> hi nicolas,
+> 
+[snip]
+> > Ok. Please also test what happens if the icon is not installed on the
+> > system, it should not display a message box or something like that.
+> 
+> i think most user will have it, as it is part of gnome. but in case it's
+> not on the system there is no error message, but an other icon is shown
+> instead (red cross on "paper")
+
+Ok fine.
+
+> > > the integration of intltool also changes the way POTFILES.in is
+> > > maintained. the "intltool-update -m" command scans the sources and
+> > > creates a "missing" file containing all sources not mentioned in
+> > > POTFILES.in
+> > 
+> > Great! .-) I thought that my small trick was not the correct way of
+> > doing this .-) Thanks!
+> 
+> intltool can also handle updating of the .po files themselves:
+> intltool-update fr
+> will get all marked strings and automaticly merge with existing
+> french translations :-)
+
+Ok, could be useful...
+
+> > > while making this changes i noticed there are many autogenerated files
+> > > in the CVS witch in my opinion should not be there. i'll leave this
+> > > as-is but i'd like to know what you think about removing them.
+> > 
+> > I think things like configure, aclocal.m4 and Makefile.in could be
+> > removed safely...
+> > When I was the only one to develop, it was not a problem to have these
+> > files, but now, they get regenerated each time you do a commit because
+> > we don't have the same version of automake (1.9.6 for you and 1.9.7 for
+> > me).
+> > So just go on, delete the files you think should not be there (please
+> > also update the .cvsignore files), and if there is a problem we can
+> > always add some of them back later.
+> 
+> i removed a lot of files (and added them to .cvsignore) but all of them
+> are generated during ./autogen.sh or a later script. you'll see the dir
+> gets quite tidy when doing rm $(cat .cvsignore)
+
+Yes that's fine. I'll also remove ABOUT-NLS (it is generated by
+gettextize).
+
+> while working on intltool interation i noticed you use the N_() macro
+> quite extensivly to do nothing, is there any special reason for this?
+> i ask because usually N_() is used for a different purpose: to mark
+> static strings with cannot directly translated by a function all, but
+> are later translated in place:
+> 
+> const char* foo = N_("whatever");
+> .....
+> printf(gettext(foo));
+> 
+> i added N_ to xgettext keywords (because intltool needs that), and know
+> a lot of strings witch don't need translation are pulled into the .po
+> files
+
+Yes I misunderstood the use of the N_ keyword... I've learned that I
+used it wrong for weeks, but I forgot to remove them. I'll work on this.
+
+> ps.: do you have some kind of instant messaging? maybe this would be
+> handy for minor questions/discussions ;-)
+
+Ok, just tell me which one you use, I have ICQ/MSN/Skype accounts, tell
+me what do you prefer (I have none running usually).
+
+Best regards,
+
+Nicolas
+
+
+
+From cschilling@...6... Sun Oct 02 15:33:22 2005
+X-Authenticated: #4067640
+From: Christian Schilling <cschilling@...6...>
+To: DDControl devel <ddccontrol-devel@lists.sourceforge.net>
+Date: Sat, 01 Oct 2005 21:07:21 +0200
+Message-Id: <1128193641.26556.3.camel@...7...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.0 
+X-Y-GMX-Trusted: 0
+X-Spam-Score: 0.5 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FORGED_RCVD_HELO       Received: contains a forged HELO
+	-0.5 AWL                    AWL: From: address is in the auto white-list
+Subject: [ddccontrol-devel] ddcprobe
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+hi,
+i accidentially found this on the net:
+https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=138381
+could this effekt our project in any way?
+-- 
+Christian Schilling <cschilling@...6...>
+
+
+
+From roberto@...15... Sun Nov 06 12:57:47 2005
+Date: Sun, 6 Nov 2005 15:57:23 -0500
+From: "Roberto C. Sanchez" <roberto@...15...>
+To: ddccontrol-devel@lists.sourceforge.net
+Message-ID: <20051106205723.GF32052@...16...>
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="udcq9yAoWb9A4FsZ"
+Content-Disposition: inline
+User-Agent: mutt-ng/devel-r472 (Debian)
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Subject: [ddccontrol-devel] Packaging for Debian
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--udcq9yAoWb9A4FsZ
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+I finally made some time to go back and finish up packaging version 0.2.
+However, I have run into an issue.  Debian Sarge, which I am currently
+running, does not have a package for libXinerama.so.  There is only a
+package for libXinerama.a.  This causes the build to fail on my machine
+when building gddccontrol:
+
+main.c: In function `main':
+main.c:312: error: `xineramacurrent' undeclared (first use in this
+function)
+main.c:312: error: (Each undeclared identifier is reported only once
+main.c:312: error: for each function it appears in.)
+main.c:307: warning: unused variable `event_base'
+main.c:307: warning: unused variable `error_base'
+
+The variable xineramacurrent is defined in notebook.h, but is surrounded
+like this:
+
+#ifdef HAVE_XINERAMA
+int xineramacurrent;
+int xineramanumber;
+XineramaScreenInfo* xineramainfo;
+#endif
+
+The cuplrit in main.c is not similarly surrounded.  I am working on a
+branch that I created from the Release-0_2 tag.  I noticed that this is
+no longer a problem in more recent CVS versions.  If necessary, I can
+wait for a new release.
+
+Any suggestions on what to do?
+
+-Roberto
+
+--=20
+Roberto C. Sanchez
+http://familiasanchez.net/~roberto
+
+--udcq9yAoWb9A4FsZ
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+
+iD8DBQFDbm4zjqO5DLK5e7ERAo6QAKDJmx1KLCs7gH6on2NHBSNpGxLmzQCfUyBh
+eBIBsrF2EpDlUJg4IRd8woI=
+=SFSE
+-----END PGP SIGNATURE-----
+
+--udcq9yAoWb9A4FsZ--
+
+
+From nicolas@...1... Mon Nov 07 10:11:21 2005
+Subject: Re: [ddccontrol-devel] Packaging for Debian
+From: Nicolas Boichat <nicolas@...1...>
+To: "Roberto C. Sanchez" <roberto@...15...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <20051106205723.GF32052@...16...>
+References: <20051106205723.GF32052@...16...>
+Date: Mon, 07 Nov 2005 19:11:40 +0100
+Message-Id: <1131387100.31958.49.camel@...19...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.1 
+X-Ovh-Remote: 83.219.110.174 (dhcp-83-219-110-174.customers.tvtnet.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Roberto,
+
+On Sun, 2005-11-06 at 15:57 -0500, Roberto C. Sanchez wrote:
+> I finally made some time to go back and finish up packaging version 0.2.
+> However, I have run into an issue.  Debian Sarge, which I am currently
+> running, does not have a package for libXinerama.so.  There is only a
+> package for libXinerama.a.  This causes the build to fail on my machine
+> when building gddccontrol:
+> 
+> main.c: In function `main':
+> main.c:312: error: `xineramacurrent' undeclared (first use in this
+> function)
+> main.c:312: error: (Each undeclared identifier is reported only once
+> main.c:312: error: for each function it appears in.)
+> main.c:307: warning: unused variable `event_base'
+> main.c:307: warning: unused variable `error_base'
+> 
+> The variable xineramacurrent is defined in notebook.h, but is surrounded
+> like this:
+> 
+> #ifdef HAVE_XINERAMA
+> int xineramacurrent;
+> int xineramanumber;
+> XineramaScreenInfo* xineramainfo;
+> #endif
+
+That's a known bug in 0.2, I provided a patch on the users list.
+
+> The cuplrit in main.c is not similarly surrounded.  I am working on a
+> branch that I created from the Release-0_2 tag.  I noticed that this is
+> no longer a problem in more recent CVS versions.  If necessary, I can
+> wait for a new release.
+> 
+> Any suggestions on what to do?
+
+What I suggest is that you wait a little. I will release 0.3 ASAP
+(probably this week), and a new version of the db too, because several
+major updates has been done since August (many new monitors, gnome
+applet).
+
+Best regards,
+
+Nicolas
+
+
+
+From roberto@...15... Mon Nov 07 12:39:20 2005
+Date: Mon, 7 Nov 2005 15:38:52 -0500
+From: "Roberto C. Sanchez" <roberto@...15...>
+To: Nicolas Boichat <nicolas@...1...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Packaging for Debian
+Message-ID: <20051107203852.GA5412@...16...>
+References: <20051106205723.GF32052@...16...> <1131387100.31958.49.camel@...19...>
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="J/dobhs11T7y2rNN"
+Content-Disposition: inline
+In-Reply-To: <1131387100.31958.49.camel@...19...>
+User-Agent: mutt-ng/devel-r472 (Debian)
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+
+--J/dobhs11T7y2rNN
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Mon, Nov 07, 2005 at 07:11:40PM +0100, Nicolas Boichat wrote:
+> Hi Roberto,
+>=20
+> That's a known bug in 0.2, I provided a patch on the users list.
+>=20
+Oops.  Maybe I should have done a quick Google search.
+
+> > The cuplrit in main.c is not similarly surrounded.  I am working on a
+> > branch that I created from the Release-0_2 tag.  I noticed that this is
+> > no longer a problem in more recent CVS versions.  If necessary, I can
+> > wait for a new release.
+> >=20
+> > Any suggestions on what to do?
+>=20
+> What I suggest is that you wait a little. I will release 0.3 ASAP
+> (probably this week), and a new version of the db too, because several
+> major updates has been done since August (many new monitors, gnome
+> applet).
+>=20
+OK.  I will probably check out against HEAD and work on the Debian
+packaging part outside of CVS.  Once you release I will start a branch
+on your release tag and then do the packagin work for the real Debian
+package on that branch.
+
+> Best regards,
+>=20
+> Nicolas
+>=20
+
+-Roberto
+
+--=20
+Roberto C. Sanchez
+http://familiasanchez.net/~roberto
+
+--J/dobhs11T7y2rNN
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+
+iD8DBQFDb7tcjqO5DLK5e7ERAjLeAJ9IecRGAtn1E4QRnawZbxig0EtxhQCfU8Zh
+QTxDLlpc2/MWwgTy1hGRNIo=
+=E9Zy
+-----END PGP SIGNATURE-----
+
+--J/dobhs11T7y2rNN--
+
+
+From nicolas@...1... Mon Nov 14 11:32:53 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: ddccontrol users list <ddccontrol-users@lists.sourceforge.net>,  ddccontrol devel list <ddccontrol-devel@lists.sourceforge.net>
+Date: Mon, 14 Nov 2005 20:32:49 +0100
+Message-Id: <1131996769.30417.83.camel@...19...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.1 
+X-Ovh-Remote: 83.219.110.174 (dhcp-83-219-110-174.customers.tvtnet.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 1.9 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_UNDERSCORE BODY: Text interparsed with _
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	1.8 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see <http://www.spamcop.net/bl.shtml?213.186.33.56>]
+Subject: [ddccontrol-devel] DDCcontrol version 0.3 and ddccontrol-db-20051114 released
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+I just released a new version of ddccontrol and ddccontrol-db, after a
+rather long delay...
+
+I would like to thanks all the people who helped this project :
+ - Christian Schilling, for his nice addition to the project (the Gnome
+Panel Applet), and for his other internal modifications on how
+translations and autoconf/automake files are handled in CVS.
+ - The translators. ddccontrol is now available in 4 languages:
+Simplified Chinese (provided by "waq_cn"), English, French and Russian
+(provided by Sergei Epiphanov).
+ - "lekma", who provided a nice icon for the project.
+ - Everybody on the lists who sent reports concerning unsupported
+monitors (sometimes providing database files), who sent bug reports, or
+who helped to support new hardware.
+ - Everyone I may have forgotten .-) (Don't hesitate to send me a
+reminder .-))
+
+ddccontrol 0.3 ChangeLog:
+Version 0.3 - 2005-11-14
+ - Use GTK/GDK high-level API to determine current screen (instead of Xinerama API).
+ - Add Chinese translation (Thanks to "waq_cn").
+ - Add Gnome icon, thanks to 'lekma' on ddccontrol-users.
+ - Add a new Gnome Panel Applet to switch between monitor profiles (Thanks to Christian Schilling).
+ - Speed up gddccontrol loading by caching monitor list.
+ - Add new fullscreen patterns.
+----
+
+ddccontrol-db-20051114 ChangeLog:
+Version 20051114:
+ - Add support for new monitors:
+   + Dell 1704FPT (Digital).
+   + Samsung SyncMaster 171P.
+   + Samsung SyncMaster 174T.
+   + Samsung SyncMaster 193P Plus (Thanks to Emil Florea).
+   + Samsung SyncMaster 710T.
+   + Samsung SyncMaster 710TM (Thanks to Fabien Salvi).
+   + Samsung SyncMaster 930BF (Thanks to Michael Vogt).
+   + Samsung SyncMaster 997MB.
+   + Mitsubishi Diamond Plus 92.
+   + Mitsubishi Diamond Pro 2070sb.
+ - Add Chinese translation (Thanks to "waq_cn").
+----
+
+Best regards,
+
+Nicolas
+
+
+
+From nicolas@...1... Fri Nov 18 08:32:36 2005
+From: Nicolas Boichat <nicolas@...1...>
+To: Radoslaw Marcinkowski <radek@...20...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <Pine.LNX.4.58.0511152315440.28013@...21...>
+References: <Pine.LNX.4.58.0511152315440.28013@...21...>
+Date: Fri, 18 Nov 2005 17:31:09 +0100
+Message-Id: <1132331469.23086.35.camel@...19...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.4.1 
+X-Ovh-Remote: 83.219.110.174 (dhcp-83-219-110-174.customers.tvtnet.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 1.8 (+)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.8 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see <http://www.spamcop.net/bl.shtml?213.186.33.56>]
+Subject: [ddccontrol-devel] Re: [ddccontrol-users] Radeon9200 by PCI - confirmation
+ (ddccontrol v0.3)
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+I copied this to ddccontrol-devel as it is more a development issue.
+
+On Tue, 2005-11-15 at 23:36 +0100, Radoslaw Marcinkowski wrote:
+> Hi,
+> 
+> I would like to confirm that ddccontrol version 0.3 works with Radeon 9200 
+> by PCI insted of i2c. My system is:
+[snip]
+
+Thanks for the report.
+
+> I wish you version 1.0 :)
+
+In fact we have no real plan to release version 1.0, but, one day, we'll
+probably come to 1.0 .-)
+
+> PS Could you tell me shortly how to translate ddccontrol to my language 
+> (Polish) - I know that I should do something with .po file(s), what? 
+
+Simply run in ddccontrol/po :
+# msginit -i ddccontrol.pot -l pl_PL
+
+Then add a line containing "pl" in LINGUAS.
+
+(Then repeat the operation for ddccontrol-db)
+
+To translate the strings in pl.po, I recommend "poedit", it is a very
+nice tool.
+
+BTW, if you are interested in maintaining the Polish translation, I'll
+give you a CVS access so you don't have to rely on me to update the
+files.
+
+Best regards,
+
+Nicolas
+
+
+
+From decanderes2003@...22... Thu Dec 22 23:33:44 2005
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=yahoo.co.uk;
+  h=Message-ID:Received:Date:From:Subject:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+  b=b8SeqY9AHmObugAqfVL8TIOIpb4Ps2bRV9GRKKeLl7/m7BazSQiPQvsSZ3dFUBpLeHLBXjwNFxRXzS2j85WVm79Ga1urLNGzu9aP7fztoLjB6uKK+mXRAberlC2NTBEp5lsVTIYfLXf3YU8A5vBT2qBUvAfDzFIiCKh2HbDY1DY=  ;
+Message-ID: <20051223073337.52711.qmail@...23...>
+Date: Fri, 23 Dec 2005 07:33:36 +0000 (GMT)
+From: a a <decanderes2003@...22...>
+To: ddccontrol-devel@lists.sourceforge.net
+MIME-Version: 1.0
+X-Spam-Score: 0.5 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.5 FROM_ENDS_IN_NUMS      From: ends in numbers
+Subject: [ddccontrol-devel] Re: [ddccontrol-users] Radeon9200 by PCI - confirmation (ddccontrol v0.3)
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+
+Hello,
+
+I have a similar setup
+
+radeon 9200
+SyncMaster 910T
+
+"ddccontrol -d   pci:01:00.0-1" gives:
+---start---
+ddccontrol version 0.3
+Copyright 2005 Oleg I. Vdovikin (oleg@...3...) and
+Nicolas Boichat (nicolas@...1...)
+This program comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of this program under the
+terms of the GNU General Public License.
+
+Reading EDID and initializing DDC/CI at bus
+pci:01:00.0-1...
+
+EDID readings:
+        Plug and Play ID: SAM010F [Samsung SyncMaster
+910T]
+        Input type: Digital
+
+Controls (valid/current/max) [Description - Value
+name]:
+Control 0x04: +/0/1 [Restore Factory Defaults]
+Control 0x05: +/0/1 [Restore Brightness and Contrast]
+Control 0x06: +/0/1 [???]
+Control 0x08: +/0/1 [Restore Factory Default Color]
+Control 0x0e: +/60/120 [???]
+Control 0x10: +/80/100 [Brightness]
+Control 0x12: +/80/100 [Contrast]
+Control 0x16: +/32/64 [Red maximum level]
+Control 0x18: +/32/64 [Green maximum level]
+Control 0x1a: +/32/64 [Blue maximum level]
+Control 0x1e: +/0/2 [???]
+Control 0x20: +/41/100 [???]
+Control 0x30: +/36/70 [???]
+Control 0x3e: +/22/31 [???]
+Control 0x60: +/3/3 [Input Source Select - Digital]
+Control 0x62: +/25/50 [???]
+Control 0x6c: +/145/255 [???]
+Control 0x6e: +/147/255 [???]
+Control 0x70: +/145/255 [???]
+Control 0xb0: +/0/2 [Settings]
+Control 0xb6: +/3/8 [???]
+Control 0xc6: +/1/1 [???]
+Control 0xc8: +/5/16 [???]
+Control 0xc9: +/1/0 [???]
+Control 0xca: +/2/2 [???]
+Control 0xcc: +/2/11 [???]
+Control 0xd6: +/1/4 [DPMS Control - On]
+Control 0xdc: +/4/4 [Magic Bright Mode - Custom]
+Control 0xdf: +/512/0 [???]
+Control 0xe0: +/0/3 [Color Preset - Normal]
+Control 0xe1: +/1/1 [???]
+Control 0xe2: +/0/1 [???]
+Control 0xed: +/90/255 [???]
+Control 0xee: +/90/255 [???]
+Control 0xef: +/88/255 [???]
+Control 0xf5: +/0/2 [???]
+---end---
+
+I think the Synchmaster 910T has the same ddc
+functions as the 912N. Therefore I added the file
+"/usr/local/share/ddccontrol-db/monitor/SAM010F.xml",
+containing:
+
+-*-start-*-
+<?xml version="1.0"?>
+<!---The Samsung 910T is identical to 173P -->
+<monitor include="SAM00D3" name="Samsung SyncMaster
+910T"/>
+-*-end-*-
+
+regards,
+Christian
+
+
+		
+___________________________________________________________ 
+NEW Yahoo! Cars - sell your car and browse thousands of new and used cars online! http://uk.cars.yahoo.com/
+
+
+From nicolas@...1... Tue Dec 27 14:09:40 2005
+Subject: Re: [ddccontrol-devel] Re: [ddccontrol-users] Radeon9200 by PCI -
+	confirmation (ddccontrol v0.3)
+From: Nicolas Boichat <nicolas@...1...>
+To: a a <decanderes2003@...22...>
+Cc: ddccontrol-devel@lists.sourceforge.net
+In-Reply-To: <20051223073337.52711.qmail@...23...>
+References: <20051223073337.52711.qmail@...23...>
+Date: Tue, 27 Dec 2005 23:09:35 +0100
+Message-Id: <1135721375.6590.31.camel@...10...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.2.3 
+X-Ovh-Remote: 212.254.103.216 (adsl-103-216-zh1.datacomm.ch)
+X-Ovh-Local: 213.186.33.20 (ns0.ovh.net)
+X-Spam-Check: fait|type 1&3|0.0|H 0.5
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+Sender: ddccontrol-devel-admin@lists.sourceforge.net
+Errors-To: ddccontrol-devel-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-devel>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Thanks for the report.
+
+Best regards,
+
+Nicolas
+
+On Fri, 2005-12-23 at 07:33 +0000, a a wrote:
+> Hello,
+> 
+> I have a similar setup
+> 
+> radeon 9200
+> SyncMaster 910T
+> 
+> "ddccontrol -d   pci:01:00.0-1" gives:
+> ---start---
+> ddccontrol version 0.3
+> Copyright 2005 Oleg I. Vdovikin (oleg@...3...) and
+> Nicolas Boichat (nicolas@...1...)
+> This program comes with ABSOLUTELY NO WARRANTY.
+> You may redistribute copies of this program under the
+> terms of the GNU General Public License.
+> 
+> Reading EDID and initializing DDC/CI at bus
+> pci:01:00.0-1...
+> 
+> EDID readings:
+>         Plug and Play ID: SAM010F [Samsung SyncMaster
+> 910T]
+>         Input type: Digital
+> 
+> Controls (valid/current/max) [Description - Value
+> name]:
+> Control 0x04: +/0/1 [Restore Factory Defaults]
+> Control 0x05: +/0/1 [Restore Brightness and Contrast]
+> Control 0x06: +/0/1 [???]
+> Control 0x08: +/0/1 [Restore Factory Default Color]
+> Control 0x0e: +/60/120 [???]
+> Control 0x10: +/80/100 [Brightness]
+> Control 0x12: +/80/100 [Contrast]
+> Control 0x16: +/32/64 [Red maximum level]
+> Control 0x18: +/32/64 [Green maximum level]
+> Control 0x1a: +/32/64 [Blue maximum level]
+> Control 0x1e: +/0/2 [???]
+> Control 0x20: +/41/100 [???]
+> Control 0x30: +/36/70 [???]
+> Control 0x3e: +/22/31 [???]
+> Control 0x60: +/3/3 [Input Source Select - Digital]
+> Control 0x62: +/25/50 [???]
+> Control 0x6c: +/145/255 [???]
+> Control 0x6e: +/147/255 [???]
+> Control 0x70: +/145/255 [???]
+> Control 0xb0: +/0/2 [Settings]
+> Control 0xb6: +/3/8 [???]
+> Control 0xc6: +/1/1 [???]
+> Control 0xc8: +/5/16 [???]
+> Control 0xc9: +/1/0 [???]
+> Control 0xca: +/2/2 [???]
+> Control 0xcc: +/2/11 [???]
+> Control 0xd6: +/1/4 [DPMS Control - On]
+> Control 0xdc: +/4/4 [Magic Bright Mode - Custom]
+> Control 0xdf: +/512/0 [???]
+> Control 0xe0: +/0/3 [Color Preset - Normal]
+> Control 0xe1: +/1/1 [???]
+> Control 0xe2: +/0/1 [???]
+> Control 0xed: +/90/255 [???]
+> Control 0xee: +/90/255 [???]
+> Control 0xef: +/88/255 [???]
+> Control 0xf5: +/0/2 [???]
+> ---end---
+> 
+> I think the Synchmaster 910T has the same ddc
+> functions as the 912N. Therefore I added the file
+> "/usr/local/share/ddccontrol-db/monitor/SAM010F.xml",
+> containing:
+> 
+> -*-start-*-
+> <?xml version="1.0"?>
+> <!---The Samsung 910T is identical to 173P -->
+> <monitor include="SAM00D3" name="Samsung SyncMaster
+> 910T"/>
+> -*-end-*-
+> 
+> regards,
+> Christian
+> 
+> 
+> 		
+> ___________________________________________________________ 
+> NEW Yahoo! Cars - sell your car and browse thousands of new and used cars online! http://uk.cars.yahoo.com/
+> 
+> 
+> -------------------------------------------------------
+> This SF.net email is sponsored by: Splunk Inc. Do you grep through log files
+> for problems?  Stop!  Download the new AJAX search engine that makes
+> searching your log files as easy as surfing the  web.  DOWNLOAD SPLUNK!
+> http://ads.osdn.com/?ad_id=7637&alloc_id=16865&op=click
+> _______________________________________________
+> ddccontrol-devel mailing list
+> ddccontrol-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> 
+
+
+

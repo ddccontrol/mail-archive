@@ -1,0 +1,1721 @@
+From konst@...1... Sun Nov 21 04:40:20 2004
+Date: Sun, 21 Nov 2004 15:40:02 +0300
+From: Konstantin Abramenko <konst@...1...>
+To: ddccontrol-users@lists.sourceforge.net
+Message-ID: <20041121154002.64c684c7@...2...>
+Organization: OKTET Labs
+X-Mailer: Sylpheed-Claws 0.9.12b (GTK+ 1.2.10; i386-pc-linux-gnu)
+Mime-Version: 1.0
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+Subject: [ddccontrol-users] Some problems with start
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Hi all, 
+
+I have Samsung 173P and try to use this packet to control it. 
+
+With some magic actions I've built it :), but it does not work correctly. 
+
+As I understand, main tool is ddccontrol. It fails.
+I can to study doc/xml-design.txt and try to write correct XML file for my monitor, but I have no yet any thoughts - why it do not see device. 
+
+stderr stream of `sudo ddccontrol -p` was the following: 
+
+==========================
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+I/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/SAM00D3.xml"
+Document not parsed successfully. 
+ioctl(): Function not implemented
+ioctl returned -1
+Reading EDID 0x50 failed.
+ioctl(): Function not implemented
+ioctl returned -1
+Reading EDID 0x50 failed.
+dev:/dev/i2c-2: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+dev:/dev/i2c-3: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+dev:/dev/i2c-4: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+dev:/dev/i2c-5: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+dev:/dev/i2c-6: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+dev:/dev/i2c-7: No such device
+Be sure you've modprobed i2c-dev and correct framebuffer device.
+I/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/SAM00D3.xml"
+Document not parsed successfully. 
+===========================
+
+
+
+-- 
+Konstantin V.Abramenko
+OKTET Labs.
+
+
+From nicolas@...3... Mon Nov 22 00:19:54 2004
+Subject: Re: [ddccontrol-users] Some problems with start
+From: Nicolas Boichat <nicolas@...3...>
+To: Konstantin Abramenko <konst@...1...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <20041121154002.64c684c7@...2...>
+References: <20041121154002.64c684c7@...2...>
+Date: Mon, 22 Nov 2004 09:19:48 +0100
+Message-Id: <1101111588.29348.28.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: 0.0 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.0 SF_CHICKENPOX_SLASH    BODY: Text interparsed with /
+	0.0 SF_CHICKENPOX_MINUS    BODY: Text interparsed with -
+	0.0 SF_CHICKENPOX_APOSTROPHE BODY: Text interparsed with '
+	0.0 SF_CHICKENPOX_PERIOD   BODY: Text interparsed with .
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+It seems you don't have the ddccontrol-db package installed, could you
+fetch it, and install it (with "./configure", then "make install")?
+I think it will solve your problem.
+
+Best regards,
+
+Nicolas Boichat
+
+On Sun, 2004-11-21 at 15:40 +0300, Konstantin Abramenko wrote:
+> Hi all, 
+> 
+> I have Samsung 173P and try to use this packet to control it. 
+> 
+> With some magic actions I've built it :), but it does not work correctly. 
+> 
+> As I understand, main tool is ddccontrol. It fails.
+> I can to study doc/xml-design.txt and try to write correct XML file for my monitor, but I have no yet any thoughts - why it do not see device. 
+> 
+> stderr stream of `sudo ddccontrol -p` was the following: 
+> 
+> ==========================
+> Error while reading write message answer: Bad message
+> Reading EDID 0x50 failed.
+> I/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/SAM00D3.xml"
+> Document not parsed successfully. 
+> ioctl(): Function not implemented
+> ioctl returned -1
+> Reading EDID 0x50 failed.
+> ioctl(): Function not implemented
+> ioctl returned -1
+> Reading EDID 0x50 failed.
+> dev:/dev/i2c-2: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> dev:/dev/i2c-3: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> dev:/dev/i2c-4: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> dev:/dev/i2c-5: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> dev:/dev/i2c-6: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> dev:/dev/i2c-7: No such device
+> Be sure you've modprobed i2c-dev and correct framebuffer device.
+> I/O warning : failed to load external entity "/usr/local/share/ddccontrol-db/monitor/SAM00D3.xml"
+> Document not parsed successfully. 
+> ===========================
+> 
+> 
+> 
+
+
+
+From konst@...1... Fri Dec 03 03:05:22 2004
+Date: Fri, 3 Dec 2004 14:04:54 +0300
+From: Konstantin Abramenko <konst@...1...>
+To: Nicolas Boichat <nicolas@...3...>
+Cc: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] Some problems with start
+Message-ID: <20041203140454.7af9f746@...2...>
+In-Reply-To: <1101111588.29348.28.camel@...4...>
+References: <20041121154002.64c684c7@...2...>
+	<1101111588.29348.28.camel@...4...>
+Organization: OKTET Labs
+X-Mailer: Sylpheed-Claws 0.9.12b (GTK+ 1.2.10; i386-pc-linux-gnu)
+Mime-Version: 1.0
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Thanks, some problems are resolved, but the some errors (probing /dev/i2c-0 device) steel present:
+
+==========
+Error while reading write message answer: Bad message
+Reading EDID 0x50 failed.
+ioctl(): Function not implemented
+ioctl returned -1
+Reading EDID 0x50 failed.
+==========
+
+On Mon, 22 Nov 2004 09:19:48 +0100
+Nicolas Boichat <nicolas@...3...> wrote:
+
+> Hi,
+> 
+> It seems you don't have the ddccontrol-db package installed, could you
+> fetch it, and install it (with "./configure", then "make install")?
+> I think it will solve your problem.
+> 
+> Best regards,
+> 
+> Nicolas Boichat
+> 
+
+
+
+-- 
+Konstantin V.Abramenko
+OKTET Labs.
+
+
+From nicolas@...3... Fri Dec 03 09:28:16 2004
+Subject: Re: [ddccontrol-users] Some problems with start
+From: Nicolas Boichat <nicolas@...3...>
+To: Konstantin Abramenko <konst@...1...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <20041203140454.7af9f746@...2...>
+References: <20041121154002.64c684c7@...2...>
+	 <1101111588.29348.28.camel@...4...>
+	 <20041203140454.7af9f746@...2...>
+Date: Fri, 03 Dec 2004 18:28:06 +0100
+Message-Id: <1102094886.6382.99.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: Auto-whitelist adjustment
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Could you provide the full results of "ddccontrol -p -v -v" and "lsmod"?
+
+Which graphics card are you using?
+
+Thanks.
+
+Best regards,
+
+Nicolas
+
+On Fri, 2004-12-03 at 14:04 +0300, Konstantin Abramenko wrote:
+> Hi,
+> 
+> Thanks, some problems are resolved, but the some errors (probing /dev/i2c-0 device) steel present:
+> 
+> ==========
+> Error while reading write message answer: Bad message
+> Reading EDID 0x50 failed.
+> ioctl(): Function not implemented
+> ioctl returned -1
+> Reading EDID 0x50 failed.
+> ==========
+> 
+> On Mon, 22 Nov 2004 09:19:48 +0100
+> Nicolas Boichat <nicolas@...3...> wrote:
+> 
+> > Hi,
+> > 
+> > It seems you don't have the ddccontrol-db package installed, could you
+> > fetch it, and install it (with "./configure", then "make install")?
+> > I think it will solve your problem.
+> > 
+> > Best regards,
+> > 
+> > Nicolas Boichat
+> > 
+> 
+> 
+> 
+
+
+
+From epo001@...5... Wed Dec 08 22:44:52 2004
+Message-ID: <BAY101-F40C9C406BB873400864F9D84B70@...7...>
+X-Originating-IP: [62.69.36.159]
+X-Originating-Email: [epo001@...5...]
+X-Sender: epo001@...5...
+From: "Ed ." <epo001@...5...>
+To: ddccontrol-users@lists.sourceforge.net
+Bcc: 
+Date: Thu, 09 Dec 2004 06:43:39 +0000
+Mime-Version: 1.0
+X-OriginalArrivalTime: 09 Dec 2004 06:44:00.0696 (UTC) FILETIME=[7736EB80:01C4DDBA]
+X-Spam-Score: -3.2 (---)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	1.0 FROM_ENDS_IN_NUMS      From: ends in numbers
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.7 MSGID_FROM_MTA_HEADER  Message-Id was added by a relay
+Subject: [ddccontrol-users] Hints and tips for how to build ddccontrol under fedora or mandrake
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Well I've tried to build this on mandrake 10.0 and fedora core 3 with no 
+joy. Even a hint of what options to try would be appreciated.
+
+Here is the result of trying make immediately after a ./configure on fedora 
+core 3:
+
+[ed@...6... ddccontrol]$ make
+Making all in src
+/tmp/ddccontrol/src
+make[1]: Entering directory `/tmp/ddccontrol/src'
+make  all-recursive
+make[2]: Entering directory `/tmp/ddccontrol/src'
+Making all in lib
+/tmp/ddccontrol/src/lib
+make[3]: Entering directory `/tmp/ddccontrol/src/lib'
+if gcc -DHAVE_CONFIG_H -I. -I. -I../../src -I.. 
+-DLOCALEDIR=\"/usr/local/share/locale\"    -g -O2 -Wall 
+-I/usr/include/libxml2 -DDATADIR="\"/usr/local/share/ddccontrol-db\"" 
+-DBINDIR="\"/usr/local/bin\"" -MT ddcci.o -MD -MP -MF ".deps/ddcci.Tpo" -c 
+-o ddcci.o ddcci.c; \
+then mv -f ".deps/ddcci.Tpo" ".deps/ddcci.Po"; else rm -f ".deps/ddcci.Tpo"; 
+exit 1; fi
+In file included from ddcci.c:82:
+ddcpci-ipc.h:32: error: syntax error before "word"
+ddcpci-ipc.h:32: warning: no semicolon at end of struct or union
+ddcpci-ipc.h:33: warning: type defaults to `int' in declaration of `dev'
+ddcpci-ipc.h:33: error: 'dev' redeclared as different kind of symbol
+ddcci.h:46: error: previous definition of 'dev' was here
+ddcpci-ipc.h:33: warning: data definition has no type or storage class
+ddcpci-ipc.h:34: error: syntax error before "func"
+ddcpci-ipc.h:34: warning: type defaults to `int' in declaration of `func'
+ddcpci-ipc.h:34: warning: data definition has no type or storage class
+ddcpci-ipc.h:36: error: syntax error before '}' token
+ddcpci-ipc.h:52: error: field `bus' has incomplete type
+ddcpci-ipc.h:66: error: field `bus' has incomplete type
+make[3]: *** [ddcci.o] Error 1
+
+
+Ed
+
+
+
+
+From nicolas@...3... Thu Dec 09 08:06:50 2004
+Subject: Re: [ddccontrol-users] Hints and tips for how to build ddccontrol
+	under fedora or mandrake
+From: Nicolas Boichat <nicolas@...3...>
+To: "Ed ." <epo001@...5...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <BAY101-F40C9C406BB873400864F9D84B70@...7...>
+References: <BAY101-F40C9C406BB873400864F9D84B70@...7...>
+Date: Thu, 09 Dec 2004 17:06:48 +0100
+Message-Id: <1102608408.16983.37.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+It seems you are using a wrong version of PCI utils... Which one are you
+using? (You can get it by typing "/sbin/lspci --version" as root)
+
+Could you send me the files /usr/include/pci/pci.h
+and /usr/include/pci/config.h? It seems they do not define some types as
+they should...
+
+Have you the same problem with Mandrake, or another one?
+
+Best regards,
+
+Nicolas
+
+On Thu, 2004-12-09 at 06:43 +0000, Ed . wrote:
+> Well I've tried to build this on mandrake 10.0 and fedora core 3 with no 
+> joy. Even a hint of what options to try would be appreciated.
+> 
+> Here is the result of trying make immediately after a ./configure on fedora 
+> core 3:
+> 
+> [ed@...6... ddccontrol]$ make
+> Making all in src
+> /tmp/ddccontrol/src
+> make[1]: Entering directory `/tmp/ddccontrol/src'
+> make  all-recursive
+> make[2]: Entering directory `/tmp/ddccontrol/src'
+> Making all in lib
+> /tmp/ddccontrol/src/lib
+> make[3]: Entering directory `/tmp/ddccontrol/src/lib'
+> if gcc -DHAVE_CONFIG_H -I. -I. -I../../src -I.. 
+> -DLOCALEDIR=\"/usr/local/share/locale\"    -g -O2 -Wall 
+> -I/usr/include/libxml2 -DDATADIR="\"/usr/local/share/ddccontrol-db\"" 
+> -DBINDIR="\"/usr/local/bin\"" -MT ddcci.o -MD -MP -MF ".deps/ddcci.Tpo" -c 
+> -o ddcci.o ddcci.c; \
+> then mv -f ".deps/ddcci.Tpo" ".deps/ddcci.Po"; else rm -f ".deps/ddcci.Tpo"; 
+> exit 1; fi
+> In file included from ddcci.c:82:
+> ddcpci-ipc.h:32: error: syntax error before "word"
+> ddcpci-ipc.h:32: warning: no semicolon at end of struct or union
+> ddcpci-ipc.h:33: warning: type defaults to `int' in declaration of `dev'
+> ddcpci-ipc.h:33: error: 'dev' redeclared as different kind of symbol
+> ddcci.h:46: error: previous definition of 'dev' was here
+> ddcpci-ipc.h:33: warning: data definition has no type or storage class
+> ddcpci-ipc.h:34: error: syntax error before "func"
+> ddcpci-ipc.h:34: warning: type defaults to `int' in declaration of `func'
+> ddcpci-ipc.h:34: warning: data definition has no type or storage class
+> ddcpci-ipc.h:36: error: syntax error before '}' token
+> ddcpci-ipc.h:52: error: field `bus' has incomplete type
+> ddcpci-ipc.h:66: error: field `bus' has incomplete type
+> make[3]: *** [ddcci.o] Error 1
+> 
+> 
+> Ed
+> 
+> 
+> 
+> 
+> -------------------------------------------------------
+> SF email is sponsored by - The IT Product Guide
+> Read honest & candid reviews on hundreds of IT Products from real users.
+> Discover which products truly live up to the hype. Start reading now. 
+> http://productguide.itmanagersjournal.com/
+> _______________________________________________
+> ddccontrol-users mailing list
+> ddccontrol-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+> 
+
+
+
+From nicolas@...3... Fri Dec 10 07:21:18 2004
+Subject: Re: [ddccontrol-users] Hints and tips for how to build
+	ddccontrolunder fedora or
+From: Nicolas Boichat <nicolas@...3...>
+To: "Ed ." <epo001@...5...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <BAY101-F36DE277C0DF548C01DA7EA84A80@...7...>
+References: <BAY101-F36DE277C0DF548C01DA7EA84A80@...7...>
+Date: Fri, 10 Dec 2004 16:21:21 +0100
+Message-Id: <1102692082.16983.81.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Ed,
+
+Thank you for the headers. Gentoo still use the stable version of pci
+utils (2.1.11), while Fedora uses the latest test version.
+
+I just commited a fix to the CVS, could you try to "cvs update", and
+tell me if it works?
+
+Best regards,
+
+Nicolas
+
+On Fri, 2004-12-10 at 07:50 +0000, Ed . wrote:
+> Hello Nicolas,
+> 
+> This is a stock redhat fedora core 3, fully patched as of 3 or 4 days ago.
+> 
+> Thanks for offering to help. I have attached the include files. The problem 
+> with Mandrake 10.0 is different and the latest CVS version refuses to even 
+> configure, it just says your headers are broken (can't remember exact msg - 
+> the machine is at customer site). Fedora is of most interest:
+> 
+> [ed@...6... ~]$ sudo /sbin/lspci --version
+> Password:
+> lspci version 2.1.99-test8
+> 
+> Ed
+> 
+> >Hello,
+> >
+> >It seems you are using a wrong version of PCI utils... Which one are you
+> >using? (You can get it by typing "/sbin/lspci --version" as root)
+> >
+> >Could you send me the files /usr/include/pci/pci.h
+> >and /usr/include/pci/config.h? It seems they do not define some types as
+> >they should...
+> >
+> >Have you the same problem with Mandrake, or another one?
+> >
+> >Best regards,
+> >
+> >Nicolas
+> >
+> >On Thu, 2004-12-09 at 06:43 +0000, Ed . wrote:
+> > > Well I've tried to build this on mandrake 10.0 and fedora core 3 with no
+> > > joy. Even a hint of what options to try would be appreciated.
+> > >
+> > > Here is the result of trying make immediately after a ./configure on 
+> >fedora
+> > > core 3:
+> > >
+> > > [ed@...6... ddccontrol]$ make
+> > > Making all in src
+> > > /tmp/ddccontrol/src
+> > > make[1]: Entering directory `/tmp/ddccontrol/src'
+> > > make  all-recursive
+> > > make[2]: Entering directory `/tmp/ddccontrol/src'
+> > > Making all in lib
+> > > /tmp/ddccontrol/src/lib
+> > > make[3]: Entering directory `/tmp/ddccontrol/src/lib'
+> > > if gcc -DHAVE_CONFIG_H -I. -I. -I../../src -I..
+> > > -DLOCALEDIR=\"/usr/local/share/locale\"    -g -O2 -Wall
+> > > -I/usr/include/libxml2 -DDATADIR="\"/usr/local/share/ddccontrol-db\""
+> > > -DBINDIR="\"/usr/local/bin\"" -MT ddcci.o -MD -MP -MF ".deps/ddcci.Tpo" 
+> >-c
+> > > -o ddcci.o ddcci.c; \
+> > > then mv -f ".deps/ddcci.Tpo" ".deps/ddcci.Po"; else rm -f 
+> >".deps/ddcci.Tpo";
+> > > exit 1; fi
+> > > In file included from ddcci.c:82:
+> > > ddcpci-ipc.h:32: error: syntax error before "word"
+> > > ddcpci-ipc.h:32: warning: no semicolon at end of struct or union
+> > > ddcpci-ipc.h:33: warning: type defaults to `int' in declaration of `dev'
+> > > ddcpci-ipc.h:33: error: 'dev' redeclared as different kind of symbol
+> > > ddcci.h:46: error: previous definition of 'dev' was here
+> > > ddcpci-ipc.h:33: warning: data definition has no type or storage class
+> > > ddcpci-ipc.h:34: error: syntax error before "func"
+> > > ddcpci-ipc.h:34: warning: type defaults to `int' in declaration of 
+> >`func'
+> > > ddcpci-ipc.h:34: warning: data definition has no type or storage class
+> > > ddcpci-ipc.h:36: error: syntax error before '}' token
+> > > ddcpci-ipc.h:52: error: field `bus' has incomplete type
+> > > ddcpci-ipc.h:66: error: field `bus' has incomplete type
+> > > make[3]: *** [ddcci.o] Error 1
+> > >
+> > >
+> > > Ed
+> > >
+> > >
+> > >
+> > >
+> > > -------------------------------------------------------
+> > > SF email is sponsored by - The IT Product Guide
+> > > Read honest & candid reviews on hundreds of IT Products from real users.
+> > > Discover which products truly live up to the hype. Start reading now.
+> > > http://productguide.itmanagersjournal.com/
+> > > _______________________________________________
+> > > ddccontrol-users mailing list
+> > > ddccontrol-users@lists.sourceforge.net
+> > > https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+> > >
+> >
+> 
+
+
+
+From nicolas@...3... Fri Dec 10 08:35:29 2004
+Subject: Re: [ddccontrol-users] Hints and tips for how to
+	buildddccontrolunder fedora or
+From: Nicolas Boichat <nicolas@...3...>
+To: "Ed ." <epo001@...5...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <BAY101-F38D7B7E1FF20928406B83484A80@...7...>
+References: <BAY101-F38D7B7E1FF20928406B83484A80@...7...>
+Date: Fri, 10 Dec 2004 17:35:32 +0100
+Message-Id: <1102696532.16983.87.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: Auto-whitelist adjustment
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-users@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+On Fri, 2004-12-10 at 16:26 +0000, Ed . wrote:
+> Thanks very much.
+> 
+> Fedora is my home machine (annoyingly the sample machine we were due to 
+> receive with Fedora is now coming with Suse). Will check it out when I get 
+> home and report back.
+> 
+> Just did a cvs update on mandrake 10.0 (nothing seemed to be updated though) 
+> and on that machine it says it is unable to use linux/i2c-dev.h.
+
+Could you send me the config.log generated on this computer ?
+
+> Is cvs.sourceforge.net:/cvsroot/ddccontrol the right place??
+
+Yes, but the anonymous CVS is synchronized only every a few hours with
+the developer CVS, so just wait a little .-)
+
+Best regards,
+
+Nicolas
+
+
+
+From nicolas@...3... Mon Dec 13 05:46:52 2004
+Subject: Re: [ddccontrol-users] Some problems with start
+From: Nicolas Boichat <nicolas@...3...>
+To: Konstantin Abramenko <konst@...1...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <20041213113252.204dd3c0@...2...>
+References: <20041121154002.64c684c7@...2...>
+	 <1101111588.29348.28.camel@...4...>
+	 <20041203140454.7af9f746@...2...>
+	 <1102094886.6382.99.camel@...4...>
+	 <20041213113252.204dd3c0@...2...>
+Date: Mon, 13 Dec 2004 14:46:36 +0100
+Message-Id: <1102945596.6373.11.camel@...4...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-users@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+As far as I can see, at least in ddc-probe-4-out, it seems to work fine
+(using direct PCI access, not the I2C devices, but it doesn't matter).
+
+Maybe is it not well documented, but you should be able to read the
+contrast value with this command:
+# ddccontrol pci:01:00.0-1 -r 0x12
+and then write to it using:
+# ddccontrol pci:01:00.0-1 -r 0x12 -w X
+(where X is a number between 0 and 100)
+
+Have you tried the Gnome tool? To build it, configure ddccontrol with
+# ./configure --enable-gnome
+
+Then a new application named gddccontrol should be built in
+src/gddccontrol. It is much more user-friendly than the command line
+tool.
+
+Best regards,
+
+Nicolas Boichat
+
+On Mon, 2004-12-13 at 11:32 +0300, Konstantin Abramenko wrote:
+> Hi, 
+> 
+> On Fri, 03 Dec 2004 18:28:06 +0100
+> Nicolas Boichat <nicolas@...3...> wrote:
+> 
+> > Hi,
+> > 
+> > Could you provide the full results of "ddccontrol -p -v -v" and "lsmod"?
+> > 
+> > Which graphics card are you using?
+> 
+> Uff. After some war with i2c modules I've achieved that there is NO message "no such device" for /dev/i2c-0. 
+> 
+> Nevertheless, ddccontrol does not work. I'm afraid, that video card does not support DDC-CI protocol. 
+> I use now GeForce 2 MX with NVidia chip. 
+> 
+> Output streams of `ddccontrol -p -v -v` and `lsmod` are attached. 
+> 
+> Thanks, 
+> 
+
+
+
+From geobert.quach@...8... Tue Dec 28 12:34:00 2004
+Message-ID: <41D1C32A.4060801@...8...>
+Date: Tue, 28 Dec 2004 21:33:46 +0100
+From: Geobert QUACH <geobert.quach@...8...>
+User-Agent: Mozilla Thunderbird 1.0 (X11/20041206)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ddccontrol-users@lists.sourceforge.net
+X-Spam-Score: -4.9 (----)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	-4.9 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Subject: [ddccontrol-users] configure and 2.6.8 ?
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-users@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello
+
+First thank you for this project, it makes the Samsung 193P usable under 
+Linux :)
+
+I'm trying to compile the cvs (28/12/04) and when I configure I got :
+checking if linux/i2c-dev.h works alone... no
+checking if linux/i2c-dev.h works with some tweaks... no
+configure: error: Unable to use linux/i2c-dev.h on your system, this 
+header may be more buggy than usual, or inexistant, try to (re-)install 
+kernel headers.
+
+
+But my kernel headers are freshly installed :/
+
+I'm using Debian Sarge with kernel 2.6.8
+
+Thanks for any help
+
+
+From nicolas@...3... Fri Dec 31 02:38:26 2004
+Subject: Re: [ddccontrol-users] configure and 2.6.8 ?
+From: Nicolas Boichat <nicolas@...3...>
+To: Geobert QUACH <geobert.quach@...8...>
+Cc: ddccontrol-users@lists.sourceforge.net
+In-Reply-To: <41D1C32A.4060801@...8...>
+References: <41D1C32A.4060801@...8...>
+Date: Fri, 31 Dec 2004 11:38:00 +0100
+Message-Id: <1104489480.7428.15.camel@...9...>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.0.2 
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam detection software, running on the system "sc8-sf-spam2.sourceforge.net", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Hello, Could you send me i2c.h and i2c-dev.h which are
+	in /usr/include/linux/ ? It seems that every distribution includes
+	different headers... [...]
+	Content analysis details:   (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-users@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Could you send me i2c.h and i2c-dev.h which are in /usr/include/linux/ ?
+
+It seems that every distribution includes different headers...
+
+Thanks.
+
+Best regards, Happy new year,
+
+Nicolas
+
+On Tue, 2004-12-28 at 21:33 +0100, Geobert QUACH wrote:
+> Hello
+> 
+> First thank you for this project, it makes the Samsung 193P usable under 
+> Linux :)
+> 
+> I'm trying to compile the cvs (28/12/04) and when I configure I got :
+> checking if linux/i2c-dev.h works alone... no
+> checking if linux/i2c-dev.h works with some tweaks... no
+> configure: error: Unable to use linux/i2c-dev.h on your system, this 
+> header may be more buggy than usual, or inexistant, try to (re-)install 
+> kernel headers.
+> 
+> 
+> But my kernel headers are freshly installed :/
+> 
+> I'm using Debian Sarge with kernel 2.6.8
+> 
+> Thanks for any help
+> 
+> 
+> -------------------------------------------------------
+> SF email is sponsored by - The IT Product Guide
+> Read honest & candid reviews on hundreds of IT Products from real users.
+> Discover which products truly live up to the hype. Start reading now. 
+> http://productguide.itmanagersjournal.com/
+> _______________________________________________
+> ddccontrol-users mailing list
+> ddccontrol-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+> 
+-- 
+Nicolas Boichat <nicolas@...3...>
+
+
+
+From geobert.quach@...8... Fri Dec 31 03:14:37 2004
+Message-ID: <41D5348E.6070203@...8...>
+Date: Fri, 31 Dec 2004 12:14:22 +0100
+From: Geobert QUACH <geobert.quach@...8...>
+User-Agent: Mozilla Thunderbird 1.0 (X11/20041206)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ddccontrol-users@lists.sourceforge.net
+Subject: Re: [ddccontrol-users] configure and 2.6.8 ?
+References: <41D1C32A.4060801@...8...> <1104489480.7428.15.camel@...9...>
+In-Reply-To: <1104489480.7428.15.camel@...9...>
+Content-Type: multipart/mixed;
+ boundary="------------070209010806080208050501"
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam detection software, running on the system "sc8-sf-spam2.sourceforge.net", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Hi, Here they are :) Thanks for the answer :) [...]
+	Content analysis details:   (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+Sender: ddccontrol-users-admin@lists.sourceforge.net
+Errors-To: ddccontrol-users-admin@lists.sourceforge.net
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+Reply-To: ddccontrol-users@lists.sourceforge.net
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=ddccontrol-users>
+
+This is a multi-part message in MIME format.
+--------------070209010806080208050501
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Here they are :)
+
+Thanks for the answer :)
+
+Nicolas Boichat wrote:
+> Hello,
+> 
+> Could you send me i2c.h and i2c-dev.h which are in /usr/include/linux/ ?
+> 
+> It seems that every distribution includes different headers...
+> 
+> Thanks.
+> 
+> Best regards, Happy new year,
+> 
+> Nicolas
+> 
+> On Tue, 2004-12-28 at 21:33 +0100, Geobert QUACH wrote:
+> 
+>>Hello
+>>
+>>First thank you for this project, it makes the Samsung 193P usable under 
+>>Linux :)
+>>
+>>I'm trying to compile the cvs (28/12/04) and when I configure I got :
+>>checking if linux/i2c-dev.h works alone... no
+>>checking if linux/i2c-dev.h works with some tweaks... no
+>>configure: error: Unable to use linux/i2c-dev.h on your system, this 
+>>header may be more buggy than usual, or inexistant, try to (re-)install 
+>>kernel headers.
+>>
+>>
+>>But my kernel headers are freshly installed :/
+>>
+>>I'm using Debian Sarge with kernel 2.6.8
+>>
+>>Thanks for any help
+>>
+>>
+>>-------------------------------------------------------
+>>SF email is sponsored by - The IT Product Guide
+>>Read honest & candid reviews on hundreds of IT Products from real users.
+>>Discover which products truly live up to the hype. Start reading now. 
+>>http://productguide.itmanagersjournal.com/
+>>_______________________________________________
+>>ddccontrol-users mailing list
+>>ddccontrol-users@lists.sourceforge.net
+>>https://lists.sourceforge.net/lists/listinfo/ddccontrol-users
+>>
+
+--------------070209010806080208050501
+Content-Type: text/x-chdr; name="i2c-dev.h"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="i2c-dev.h"
+
+/*
+    i2c-dev.h - i2c-bus driver, char device interface
+
+    Copyright (C) 1995-97 Simon G. Vogl
+    Copyright (C) 1998-99 Frodo Looijaard <frodol@...10...>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+*/
+
+/* $Id: i2c-dev.h,v 1.13 2003/01/21 08:08:16 kmalkki Exp $ */
+
+#ifndef _LINUX_I2C_DEV_H
+#define _LINUX_I2C_DEV_H
+
+#include <linux/types.h>
+#include <linux/compiler.h>
+
+/* Some IOCTL commands are defined in <linux/i2c.h> */
+/* Note: 10-bit addresses are NOT supported! */
+
+/* This is the structure as used in the I2C_SMBUS ioctl call */
+struct i2c_smbus_ioctl_data {
+	__u8 read_write;
+	__u8 command;
+	__u32 size;
+	union i2c_smbus_data __user *data;
+};
+
+/* This is the structure as used in the I2C_RDWR ioctl call */
+struct i2c_rdwr_ioctl_data {
+	struct i2c_msg __user *msgs;	/* pointers to i2c_msgs */
+	__u32 nmsgs;			/* number of i2c_msgs */
+};
+
+#endif /* _LINUX_I2C_DEV_H */
+
+--------------070209010806080208050501
+Content-Type: text/x-chdr; charset="utf-8"; name=i2c.h
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline;
+ filename="i2c.h"
+
+/* ------------------------------------------------------------------------=
+- */
+/* 									     */
+/* i2c.h - definitions for the i2c-bus interface			     */
+/* 									     */
+/* ------------------------------------------------------------------------=
+- */
+/*   Copyright (C) 1995-2000 Simon G. Vogl
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.		     */
+/* ------------------------------------------------------------------------=
+- */
+
+/* With some changes from Ky=EF=BF=BDsti M=EF=BF=BDlkki <kmalkki@...11...> =
+and
+   Frodo Looijaard <frodol@...10...> */
+
+/* $Id: i2c.h,v 1.68 2003/01/21 08:08:16 kmalkki Exp $ */
+
+#ifndef _LINUX_I2C_H
+#define _LINUX_I2C_H
+
+#include <linux/module.h>
+#include <linux/types.h>
+#include <linux/i2c-id.h>
+#include <linux/device.h>	/* for struct device */
+#include <asm/semaphore.h>
+
+/* --- General options ------------------------------------------------	*/
+
+struct i2c_msg;
+struct i2c_algorithm;
+struct i2c_adapter;
+struct i2c_client;
+struct i2c_driver;
+struct i2c_client_address_data;
+union i2c_smbus_data;
+
+/*
+ * The master routines are the ones normally used to transmit data to devic=
+es
+ * on a bus (or read from them). Apart from two basic transfer functions to=
+=20
+ * transmit one message at a time, a more complex version can be used to=20
+ * transmit an arbitrary number of messages without interruption.
+ */
+extern int i2c_master_send(struct i2c_client *,const char* ,int);
+extern int i2c_master_recv(struct i2c_client *,char* ,int);
+
+/* Transfer num messages.
+ */
+extern int i2c_transfer(struct i2c_adapter *adap, struct i2c_msg msg[],int =
+num);
+
+/*
+ * Some adapter types (i.e. PCF 8584 based ones) may support slave behaviuo=
+r.=20
+ * This is not tested/implemented yet and will change in the future.
+ */
+extern int i2c_slave_send(struct i2c_client *,char*,int);
+extern int i2c_slave_recv(struct i2c_client *,char*,int);
+
+
+
+/* This is the very generalized SMBus access routine. You probably do not
+   want to use this, though; one of the functions below may be much easier,
+   and probably just as fast.=20
+   Note that we use i2c_adapter here, because you do not need a specific
+   smbus adapter to call this function. */
+extern s32 i2c_smbus_xfer (struct i2c_adapter * adapter, u16 addr,=20
+                           unsigned short flags,
+                           char read_write, u8 command, int size,
+                           union i2c_smbus_data * data);
+
+/* Now follow the 'nice' access routines. These also document the calling
+   conventions of smbus_access. */
+
+extern s32 i2c_smbus_write_quick(struct i2c_client * client, u8 value);
+extern s32 i2c_smbus_read_byte(struct i2c_client * client);
+extern s32 i2c_smbus_write_byte(struct i2c_client * client, u8 value);
+extern s32 i2c_smbus_read_byte_data(struct i2c_client * client, u8 command);
+extern s32 i2c_smbus_write_byte_data(struct i2c_client * client,
+                                     u8 command, u8 value);
+extern s32 i2c_smbus_read_word_data(struct i2c_client * client, u8 command);
+extern s32 i2c_smbus_write_word_data(struct i2c_client * client,
+                                     u8 command, u16 value);
+extern s32 i2c_smbus_process_call(struct i2c_client * client,
+                                  u8 command, u16 value);
+/* Returns the number of read bytes */
+extern s32 i2c_smbus_read_block_data(struct i2c_client * client,
+                                     u8 command, u8 *values);
+extern s32 i2c_smbus_write_block_data(struct i2c_client * client,
+                                      u8 command, u8 length,
+                                      u8 *values);
+extern s32 i2c_smbus_read_i2c_block_data(struct i2c_client * client,
+                                         u8 command, u8 *values);
+extern s32 i2c_smbus_write_i2c_block_data(struct i2c_client * client,
+                                          u8 command, u8 length,
+                                          u8 *values);
+
+
+/*
+ * A driver is capable of handling one or more physical devices present on
+ * I2C adapters. This information is used to inform the driver of adapter
+ * events.
+ */
+
+struct i2c_driver {
+	struct module *owner;
+	char name[32];
+	int id;
+	unsigned int flags;		/* div., see below		*/
+
+	/* Notifies the driver that a new bus has appeared. This routine
+	 * can be used by the driver to test if the bus meets its conditions
+	 * & seek for the presence of the chip(s) it supports. If found, it=20
+	 * registers the client(s) that are on the bus to the i2c admin. via
+	 * i2c_attach_client.
+	 */
+	int (*attach_adapter)(struct i2c_adapter *);
+	int (*detach_adapter)(struct i2c_adapter *);
+
+	/* tells the driver that a client is about to be deleted & gives it=20
+	 * the chance to remove its private data. Also, if the client struct
+	 * has been dynamically allocated by the driver in the function above,
+	 * it must be freed here.
+	 */
+	int (*detach_client)(struct i2c_client *);
+=09
+	/* a ioctl like command that can be used to perform specific functions
+	 * with the device.
+	 */
+	int (*command)(struct i2c_client *client,unsigned int cmd, void *arg);
+
+	struct device_driver driver;
+	struct list_head list;
+};
+#define to_i2c_driver(d) container_of(d, struct i2c_driver, driver)
+
+extern struct bus_type i2c_bus_type;
+
+#define I2C_NAME_SIZE	50
+
+/*
+ * i2c_client identifies a single device (i.e. chip) that is connected to a=
+n=20
+ * i2c bus. The behaviour is defined by the routines of the driver. This
+ * function is mainly used for lookup & other admin. functions.
+ */
+struct i2c_client {
+	int id;
+	unsigned int flags;		/* div., see below		*/
+	unsigned int addr;		/* chip address - NOTE: 7bit 	*/
+					/* addresses are stored in the	*/
+					/* _LOWER_ 7 bits of this char	*/
+	/* addr: unsigned int to make lm_sensors i2c-isa adapter work
+	  more cleanly. It does not take any more memory space, due to
+	  alignment considerations */
+	struct i2c_adapter *adapter;	/* the adapter we sit on	*/
+	struct i2c_driver *driver;	/* and our access routines	*/
+	int usage_count;		/* How many accesses currently  */
+					/* to the client		*/
+	struct device dev;		/* the device structure		*/
+	struct list_head list;
+	char name[I2C_NAME_SIZE];
+	struct completion released;
+};
+#define to_i2c_client(d) container_of(d, struct i2c_client, dev)
+
+static inline void *i2c_get_clientdata (struct i2c_client *dev)
+{
+	return dev_get_drvdata (&dev->dev);
+}
+
+static inline void i2c_set_clientdata (struct i2c_client *dev, void *data)
+{
+	dev_set_drvdata (&dev->dev, data);
+}
+
+#define I2C_DEVNAME(str)	.name =3D str
+
+static inline char *i2c_clientname(struct i2c_client *c)
+{
+	return &c->name[0];
+}
+
+/*
+ * The following structs are for those who like to implement new bus driver=
+s:
+ * i2c_algorithm is the interface to a class of hardware solutions which can
+ * be addressed using the same bus algorithms - i.e. bit-banging or the PCF=
+8584
+ * to name two of the most common.
+ */
+struct i2c_algorithm {
+	char name[32];				/* textual description 	*/
+	unsigned int id;
+
+	/* If an adapter algorithm can't to I2C-level access, set master_xfer
+	   to NULL. If an adapter algorithm can do SMBus access, set=20
+	   smbus_xfer. If set to NULL, the SMBus protocol is simulated
+	   using common I2C messages */
+	int (*master_xfer)(struct i2c_adapter *adap,struct i2c_msg msgs[],=20
+	                   int num);
+	int (*smbus_xfer) (struct i2c_adapter *adap, u16 addr,=20
+	                   unsigned short flags, char read_write,
+	                   u8 command, int size, union i2c_smbus_data * data);
+
+	/* --- these optional/future use for some adapter types.*/
+	int (*slave_send)(struct i2c_adapter *,char*,int);
+	int (*slave_recv)(struct i2c_adapter *,char*,int);
+
+	/* --- ioctl like call to set div. parameters. */
+	int (*algo_control)(struct i2c_adapter *, unsigned int, unsigned long);
+
+	/* To determine what the adapter supports */
+	u32 (*functionality) (struct i2c_adapter *);
+};
+
+/*
+ * i2c_adapter is the structure used to identify a physical i2c bus along
+ * with the access algorithms necessary to access it.
+ */
+struct i2c_adapter {
+	struct module *owner;
+	unsigned int id;/* =3D=3D is algo->id | hwdep.struct->id, 		*/
+			/* for registered values see below		*/
+	unsigned int class;
+	struct i2c_algorithm *algo;/* the algorithm to access the bus	*/
+	void *algo_data;
+
+	/* --- administration stuff. */
+	int (*client_register)(struct i2c_client *);
+	int (*client_unregister)(struct i2c_client *);
+
+	/* data fields that are valid for all devices	*/
+	struct semaphore bus_lock;
+	struct semaphore clist_lock;
+	unsigned int flags;/* flags specifying div. data		*/
+
+	int timeout;
+	int retries;
+	struct device dev;		/* the adapter device */
+	struct class_device class_dev;	/* the class device */
+
+#ifdef CONFIG_PROC_FS=20
+	/* No need to set this when you initialize the adapter          */
+	int inode;
+#endif /* def CONFIG_PROC_FS */
+
+	int nr;
+	struct list_head clients;
+	struct list_head list;
+	char name[I2C_NAME_SIZE];
+	struct completion dev_released;
+	struct completion class_dev_released;
+};
+#define dev_to_i2c_adapter(d) container_of(d, struct i2c_adapter, dev)
+#define class_dev_to_i2c_adapter(d) container_of(d, struct i2c_adapter, cla=
+ss_dev)
+
+static inline void *i2c_get_adapdata (struct i2c_adapter *dev)
+{
+	return dev_get_drvdata (&dev->dev);
+}
+
+static inline void i2c_set_adapdata (struct i2c_adapter *dev, void *data)
+{
+	dev_set_drvdata (&dev->dev, data);
+}
+
+/*flags for the driver struct: */
+#define I2C_DF_NOTIFY	0x01		/* notify on bus (de/a)ttaches 	*/
+#if 0
+/* this flag is gone -- there is a (optional) driver->detach_adapter
+ * callback now which can be used instead */
+# define I2C_DF_DUMMY	0x02
+#endif
+
+/*flags for the client struct: */
+#define I2C_CLIENT_ALLOW_USE		0x01	/* Client allows access */
+#define I2C_CLIENT_ALLOW_MULTIPLE_USE 	0x02  	/* Allow multiple access-lock=
+s */
+						/* on an i2c_client */
+#define I2C_CLIENT_PEC  0x04			/* Use Packet Error Checking */
+#define I2C_CLIENT_TEN	0x10			/* we have a ten bit chip address	*/
+						/* Must equal I2C_M_TEN below */
+
+/* i2c adapter classes (bitmask) */
+#define I2C_ADAP_CLASS_SMBUS		(1<<0)	/* lm_sensors, ... */
+#define I2C_ADAP_CLASS_TV_ANALOG	(1<<1)	/* bttv + friends */
+#define I2C_ADAP_CLASS_TV_DIGITAL	(1<<2)	/* dbv cards */
+#define I2C_ADAP_CLASS_DDC		(1<<3)	/* i2c-matroxfb ? */
+#define I2C_ADAP_CLASS_CAM_ANALOG	(1<<4)	/* camera with analog CCD */
+#define I2C_ADAP_CLASS_CAM_DIGITAL	(1<<5)	/* most webcams */
+
+/* i2c_client_address_data is the struct for holding default client
+ * addresses for a driver and for the parameters supplied on the
+ * command line
+ */
+struct i2c_client_address_data {
+	unsigned short *normal_i2c;
+	unsigned short *normal_i2c_range;
+	unsigned short *probe;
+	unsigned short *probe_range;
+	unsigned short *ignore;
+	unsigned short *ignore_range;
+	unsigned short *force;
+};
+
+/* Internal numbers to terminate lists */
+#define I2C_CLIENT_END		0xfffe
+#define I2C_CLIENT_ISA_END	0xfffefffe
+
+/* The numbers to use to set I2C bus address */
+#define ANY_I2C_BUS		0xffff
+#define ANY_I2C_ISA_BUS		9191
+
+/* The length of the option lists */
+#define I2C_CLIENT_MAX_OPTS 48
+
+
+/* ----- functions exported by i2c.o */
+
+/* administration...
+ */
+extern int i2c_add_adapter(struct i2c_adapter *);
+extern int i2c_del_adapter(struct i2c_adapter *);
+
+extern int i2c_add_driver(struct i2c_driver *);
+extern int i2c_del_driver(struct i2c_driver *);
+
+extern int i2c_attach_client(struct i2c_client *);
+extern int i2c_detach_client(struct i2c_client *);
+
+/* New function: This is to get an i2c_client-struct for controlling the=20
+   client either by using i2c_control-function or having the=20
+   client-module export functions that can be used with the i2c_client
+   -struct. */
+extern struct i2c_client *i2c_get_client(int driver_id, int adapter_id,=20
+					struct i2c_client *prev);
+
+/* Should be used with new function
+   extern struct i2c_client *i2c_get_client(int,int,struct i2c_client *);
+   to make sure that client-struct is valid and that it is okay to access
+   the i2c-client.=20
+   returns -EACCES if client doesn't allow use (default)
+   returns -EBUSY if client doesn't allow multiple use (default) and=20
+   usage_count >0 */
+extern int i2c_use_client(struct i2c_client *);
+extern int i2c_release_client(struct i2c_client *);
+
+/* call the i2c_client->command() of all attached clients with
+ * the given arguments */
+extern void i2c_clients_command(struct i2c_adapter *adap,
+				unsigned int cmd, void *arg);
+
+/* returns -EBUSY if address has been taken, 0 if not. Note that the only
+   other place at which this is called is within i2c_attach_client; so
+   you can cheat by simply not registering. Not recommended, of course! */
+extern int i2c_check_addr (struct i2c_adapter *adapter, int addr);
+
+/* Detect function. It iterates over all possible addresses itself.
+ * It will only call found_proc if some client is connected at the
+ * specific address (unless a 'force' matched);
+ */
+extern int i2c_probe(struct i2c_adapter *adapter,=20
+		struct i2c_client_address_data *address_data,
+		int (*found_proc) (struct i2c_adapter *, int, int));
+
+/* An ioctl like call to set div. parameters of the adapter.
+ */
+extern int i2c_control(struct i2c_client *,unsigned int, unsigned long);
+
+/* This call returns a unique low identifier for each registered adapter,
+ * or -1 if the adapter was not registered.=20
+ */
+extern int i2c_adapter_id(struct i2c_adapter *adap);
+extern struct i2c_adapter* i2c_get_adapter(int id);
+extern void i2c_put_adapter(struct i2c_adapter *adap);
+
+
+/* Return the functionality mask */
+extern u32 i2c_get_functionality (struct i2c_adapter *adap);
+
+/* Return 1 if adapter supports everything we need, 0 if not. */
+extern int i2c_check_functionality (struct i2c_adapter *adap, u32 func);
+
+/*
+ * I2C Message - used for pure i2c transaction, also from /dev interface
+ */
+struct i2c_msg {
+	__u16 addr;	/* slave address			*/
+ 	__u16 flags;=09=09
+#define I2C_M_TEN	0x10	/* we have a ten bit chip address	*/
+#define I2C_M_RD	0x01
+#define I2C_M_NOSTART	0x4000
+#define I2C_M_REV_DIR_ADDR	0x2000
+#define I2C_M_IGNORE_NAK	0x1000
+#define I2C_M_NO_RD_ACK		0x0800
+ 	__u16 len;		/* msg length				*/
+ 	__u8 *buf;		/* pointer to msg data			*/
+};
+
+/* To determine what functionality is present */
+
+#define I2C_FUNC_I2C			0x00000001
+#define I2C_FUNC_10BIT_ADDR		0x00000002
+#define I2C_FUNC_PROTOCOL_MANGLING	0x00000004 /* I2C_M_{REV_DIR_ADDR,NOSTAR=
+T,..} */
+#define I2C_FUNC_SMBUS_HWPEC_CALC	0x00000008 /* SMBus 2.0 */
+#define I2C_FUNC_SMBUS_READ_WORD_DATA_PEC  0x00000800 /* SMBus 2.0 */=20
+#define I2C_FUNC_SMBUS_WRITE_WORD_DATA_PEC 0x00001000 /* SMBus 2.0 */=20
+#define I2C_FUNC_SMBUS_PROC_CALL_PEC	0x00002000 /* SMBus 2.0 */
+#define I2C_FUNC_SMBUS_BLOCK_PROC_CALL_PEC 0x00004000 /* SMBus 2.0 */
+#define I2C_FUNC_SMBUS_BLOCK_PROC_CALL	0x00008000 /* SMBus 2.0 */
+#define I2C_FUNC_SMBUS_QUICK		0x00010000=20
+#define I2C_FUNC_SMBUS_READ_BYTE	0x00020000=20
+#define I2C_FUNC_SMBUS_WRITE_BYTE	0x00040000=20
+#define I2C_FUNC_SMBUS_READ_BYTE_DATA	0x00080000=20
+#define I2C_FUNC_SMBUS_WRITE_BYTE_DATA	0x00100000=20
+#define I2C_FUNC_SMBUS_READ_WORD_DATA	0x00200000=20
+#define I2C_FUNC_SMBUS_WRITE_WORD_DATA	0x00400000=20
+#define I2C_FUNC_SMBUS_PROC_CALL	0x00800000=20
+#define I2C_FUNC_SMBUS_READ_BLOCK_DATA	0x01000000=20
+#define I2C_FUNC_SMBUS_WRITE_BLOCK_DATA 0x02000000=20
+#define I2C_FUNC_SMBUS_READ_I2C_BLOCK	0x04000000 /* I2C-like block xfer  */
+#define I2C_FUNC_SMBUS_WRITE_I2C_BLOCK	0x08000000 /* w/ 1-byte reg. addr. */
+#define I2C_FUNC_SMBUS_READ_I2C_BLOCK_2	 0x10000000 /* I2C-like block xfer =
+ */
+#define I2C_FUNC_SMBUS_WRITE_I2C_BLOCK_2 0x20000000 /* w/ 2-byte reg. addr.=
+ */
+#define I2C_FUNC_SMBUS_READ_BLOCK_DATA_PEC  0x40000000 /* SMBus 2.0 */
+#define I2C_FUNC_SMBUS_WRITE_BLOCK_DATA_PEC 0x80000000 /* SMBus 2.0 */
+
+#define I2C_FUNC_SMBUS_BYTE I2C_FUNC_SMBUS_READ_BYTE | \
+                            I2C_FUNC_SMBUS_WRITE_BYTE
+#define I2C_FUNC_SMBUS_BYTE_DATA I2C_FUNC_SMBUS_READ_BYTE_DATA | \
+                                 I2C_FUNC_SMBUS_WRITE_BYTE_DATA
+#define I2C_FUNC_SMBUS_WORD_DATA I2C_FUNC_SMBUS_READ_WORD_DATA | \
+                                 I2C_FUNC_SMBUS_WRITE_WORD_DATA
+#define I2C_FUNC_SMBUS_BLOCK_DATA I2C_FUNC_SMBUS_READ_BLOCK_DATA | \
+                                  I2C_FUNC_SMBUS_WRITE_BLOCK_DATA
+#define I2C_FUNC_SMBUS_I2C_BLOCK I2C_FUNC_SMBUS_READ_I2C_BLOCK | \
+                                  I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+#define I2C_FUNC_SMBUS_I2C_BLOCK_2 I2C_FUNC_SMBUS_READ_I2C_BLOCK_2 | \
+                                   I2C_FUNC_SMBUS_WRITE_I2C_BLOCK_2
+#define I2C_FUNC_SMBUS_BLOCK_DATA_PEC I2C_FUNC_SMBUS_READ_BLOCK_DATA_PEC | \
+                                      I2C_FUNC_SMBUS_WRITE_BLOCK_DATA_PEC
+#define I2C_FUNC_SMBUS_WORD_DATA_PEC  I2C_FUNC_SMBUS_READ_WORD_DATA_PEC | \
+                                      I2C_FUNC_SMBUS_WRITE_WORD_DATA_PEC
+
+#define I2C_FUNC_SMBUS_READ_BYTE_PEC		I2C_FUNC_SMBUS_READ_BYTE_DATA
+#define I2C_FUNC_SMBUS_WRITE_BYTE_PEC		I2C_FUNC_SMBUS_WRITE_BYTE_DATA
+#define I2C_FUNC_SMBUS_READ_BYTE_DATA_PEC	I2C_FUNC_SMBUS_READ_WORD_DATA
+#define I2C_FUNC_SMBUS_WRITE_BYTE_DATA_PEC	I2C_FUNC_SMBUS_WRITE_WORD_DATA
+#define I2C_FUNC_SMBUS_BYTE_PEC			I2C_FUNC_SMBUS_BYTE_DATA
+#define I2C_FUNC_SMBUS_BYTE_DATA_PEC		I2C_FUNC_SMBUS_WORD_DATA
+
+#define I2C_FUNC_SMBUS_EMUL I2C_FUNC_SMBUS_QUICK | \
+                            I2C_FUNC_SMBUS_BYTE | \
+                            I2C_FUNC_SMBUS_BYTE_DATA | \
+                            I2C_FUNC_SMBUS_WORD_DATA | \
+                            I2C_FUNC_SMBUS_PROC_CALL | \
+                            I2C_FUNC_SMBUS_WRITE_BLOCK_DATA | \
+                            I2C_FUNC_SMBUS_WRITE_BLOCK_DATA_PEC | \
+                            I2C_FUNC_SMBUS_I2C_BLOCK
+
+/*=20
+ * Data for SMBus Messages=20
+ */
+#define I2C_SMBUS_BLOCK_MAX	32	/* As specified in SMBus standard */=09
+#define I2C_SMBUS_I2C_BLOCK_MAX	32	/* Not specified but we use same structu=
+re */
+union i2c_smbus_data {
+	__u8 byte;
+	__u16 word;
+	__u8 block[I2C_SMBUS_BLOCK_MAX + 3]; /* block[0] is used for length */
+                          /* one more for read length in block process call=
+ */
+	                                            /* and one more for PEC */
+};
+
+/* smbus_access read or write markers */
+#define I2C_SMBUS_READ	1
+#define I2C_SMBUS_WRITE	0
+
+/* SMBus transaction types (size parameter in the above functions)=20
+   Note: these no longer correspond to the (arbitrary) PIIX4 internal codes=
+! */
+#define I2C_SMBUS_QUICK		    0
+#define I2C_SMBUS_BYTE		    1
+#define I2C_SMBUS_BYTE_DATA	    2=20
+#define I2C_SMBUS_WORD_DATA	    3
+#define I2C_SMBUS_PROC_CALL	    4
+#define I2C_SMBUS_BLOCK_DATA	    5
+#define I2C_SMBUS_I2C_BLOCK_DATA    6
+#define I2C_SMBUS_BLOCK_PROC_CALL   7		/* SMBus 2.0 */
+#define I2C_SMBUS_BLOCK_DATA_PEC    8		/* SMBus 2.0 */
+#define I2C_SMBUS_PROC_CALL_PEC     9		/* SMBus 2.0 */
+#define I2C_SMBUS_BLOCK_PROC_CALL_PEC  10	/* SMBus 2.0 */
+#define I2C_SMBUS_WORD_DATA_PEC	   11		/* SMBus 2.0 */
+
+
+/* ----- commands for the ioctl like i2c_command call:
+ * note that additional calls are defined in the algorithm and hw=20
+ *	dependent layers - these can be listed here, or see the=20
+ *	corresponding header files.
+ */
+				/* -> bit-adapter specific ioctls	*/
+#define I2C_RETRIES	0x0701	/* number of times a device address      */
+				/* should be polled when not            */
+                                /* acknowledging 			*/
+#define I2C_TIMEOUT	0x0702	/* set timeout - call with int 		*/
+
+
+/* this is for i2c-dev.c	*/
+#define I2C_SLAVE	0x0703	/* Change slave address			*/
+				/* Attn.: Slave address is 7 or 10 bits */
+#define I2C_SLAVE_FORCE	0x0706	/* Change slave address			*/
+				/* Attn.: Slave address is 7 or 10 bits */
+				/* This changes the address, even if it */
+				/* is already taken!			*/
+#define I2C_TENBIT	0x0704	/* 0 for 7 bit addrs, !=3D 0 for 10 bit	*/
+
+#define I2C_FUNCS	0x0705	/* Get the adapter functionality */
+#define I2C_RDWR	0x0707	/* Combined R/W transfer (one stop only)*/
+#define I2C_PEC		0x0708	/* !=3D 0 for SMBus PEC                   */
+#if 0
+#define I2C_ACK_TEST	0x0710	/* See if a slave is at a specific address */
+#endif
+
+#define I2C_SMBUS	0x0720	/* SMBus-level access */
+
+/* ... algo-bit.c recognizes */
+#define I2C_UDELAY	0x0705	/* set delay in microsecs between each	*/
+				/* written byte (except address)	*/
+#define I2C_MDELAY	0x0706	/* millisec delay between written bytes */
+
+/* ----- I2C-DEV: char device interface stuff ------------------------- */
+
+#define I2C_MAJOR	89		/* Device major number		*/
+
+/* These defines are used for probing i2c client addresses */
+/* Default fill of many variables */
+#define I2C_CLIENT_DEFAULTS {I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END=
+, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END, \
+                          I2C_CLIENT_END, I2C_CLIENT_END, I2C_CLIENT_END}
+
+/* This is ugly. We need to evaluate I2C_CLIENT_MAX_OPTS before it is=20
+   stringified */
+#define I2C_CLIENT_MODPARM_AUX1(x) "1-" #x "h"
+#define I2C_CLIENT_MODPARM_AUX(x) I2C_CLIENT_MODPARM_AUX1(x)
+#define I2C_CLIENT_MODPARM I2C_CLIENT_MODPARM_AUX(I2C_CLIENT_MAX_OPTS)
+
+/* I2C_CLIENT_MODULE_PARM creates a module parameter, and puts it in the
+   module header */
+
+#define I2C_CLIENT_MODULE_PARM(var,desc) \
+  static unsigned short var[I2C_CLIENT_MAX_OPTS] =3D I2C_CLIENT_DEFAULTS; \
+  MODULE_PARM(var,I2C_CLIENT_MODPARM); \
+  MODULE_PARM_DESC(var,desc)
+
+/* This is the one you want to use in your own modules */
+#define I2C_CLIENT_INSMOD \
+  I2C_CLIENT_MODULE_PARM(probe, \
+                      "List of adapter,address pairs to scan additionally")=
+; \
+  I2C_CLIENT_MODULE_PARM(probe_range, \
+                      "List of adapter,start-addr,end-addr triples to scan =
+" \
+                      "additionally"); \
+  I2C_CLIENT_MODULE_PARM(ignore, \
+                      "List of adapter,address pairs not to scan"); \
+  I2C_CLIENT_MODULE_PARM(ignore_range, \
+                      "List of adapter,start-addr,end-addr triples not to "=
+ \
+                      "scan"); \
+  I2C_CLIENT_MODULE_PARM(force, \
+                      "List of adapter,address pairs to boldly assume " \
+                      "to be present"); \
+	static struct i2c_client_address_data addr_data =3D {		\
+			.normal_i2c =3D 		normal_i2c,		\
+			.normal_i2c_range =3D	normal_i2c_range,	\
+			.probe =3D		probe,			\
+			.probe_range =3D		probe_range,		\
+			.ignore =3D		ignore,			\
+			.ignore_range =3D		ignore_range,		\
+			.force =3D		force,			\
+		}
+
+/* Detect whether we are on the isa bus. If this returns true, all i2c
+   access will fail! */
+#define i2c_is_isa_client(clientptr) \
+        ((clientptr)->adapter->algo->id =3D=3D I2C_ALGO_ISA)
+#define i2c_is_isa_adapter(adapptr) \
+        ((adapptr)->algo->id =3D=3D I2C_ALGO_ISA)
+
+/* Tiny delay function used by the i2c bus drivers */
+static inline void i2c_delay(signed long timeout)
+{
+	set_current_state(TASK_INTERRUPTIBLE);
+	schedule_timeout(timeout);
+}
+
+#endif /* _LINUX_I2C_H */
+
+--------------070209010806080208050501--
+
+

@@ -1,0 +1,162 @@
+From alleksandar88@...46... Wed Mar 30 15:07:58 2016
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=1e100.net; s=20130820;
+	h=x-gm-message-state:mime-version:date:message-id:subject:from:to;
+	bh=XWXNOLmHngTsxMC1AeHhwOeGwaIAvWU/t9aNBhJsP+4=;
+	b=gTwf3oxX70FFu3W4/oxMnd3BUokrP8ITY25YEKW0UnSfrGwaz6WThA2QAXwv49yMg7
+	ucD8/IFU3uPTLNU17jnDplvHyt7Uppuip962ndk12yKly2UsLGBLdqeyXsAyJbEKyYLT
+	IJ3KPMxkXUcrvbJClu3T1d44EIkEOI3y6xG4GOaoQR7tTumAU6bMNV/E71SKwkZEP8GB
+	S4NqHDnDGLDU1ZLjH4/Q1xBoF0KRvAFqigf814BrvTbKlsWb6GG31gWRxgMqK+Eeefvh
+	uhpzWC6JDzzPBU4K5+bbEmk7RRWneZ52AI2l6m7Zu2jFJYlUiEcOlRu+CKk8W+LxesIE
+	sfrw==
+X-Gm-Message-State: AD7BkJKTviJvfPDyIpOiHUXzUuF0W1T7EGQHhqnv3Z3Ln2eB+WN7ziEZunc+5xr6Oe73dwiWHhe+46yoYhz+mw==
+MIME-Version: 1.0
+X-Received: by 10.28.180.86 with SMTP id d83mr15237333wmf.67.1459350467091;
+	Wed, 30 Mar 2016 08:07:47 -0700 (PDT)
+Date: Wed, 30 Mar 2016 17:07:47 +0200
+Message-ID: <CAGzJrBaDLxo+jQGWgapMYWUBdQUn4eEaCFUgB18oQwugH39+3w@...53...>
+From: =?UTF-8?B?0JDQu9C10LrRgdCw0L3QtNCw0YAg0ILQvtGA0ZLQtdCy0LjRmw==?=
+	<alleksandar88@...46...>
+To: ddccontrol-users@lists.sourceforge.net
+Content-Type: multipart/alternative; boundary=001a114b6b9231a51e052f4582a1
+X-Spam-Score: -0.3 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+	(alleksandar88[at]gmail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+	digit (alleksandar88[at]gmail.com)
+	1.0 HTML_MESSAGE           BODY: HTML included in message
+	-0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+	author's domain
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1alHir-0003HR-97
+Subject: [ddccontrol-users] ddc control output for ASUS WV225N
+X-BeenThere: ddccontrol-users@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol users list <ddccontrol-users.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-users>
+List-Post: <mailto:ddccontrol-users@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-users-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-users>,
+	<mailto:ddccontrol-users-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 30 Mar 2016 15:07:58 -0000
+
+--001a114b6b9231a51e052f4582a1
+Content-Type: text/plain; charset=UTF-8
+
+Capabilities:
+Raw output: (prot(monitor)type(LCD)model(VW202)cmds(01 02 03 07 0C E3
+F3)vcp(02 04 05 08 0B 0C 10 12 14(01 05 06 08 0B) 16 18 1A 52 60(
+01 03) 6C 6E 70 AC AE B2 B6 C0 C8 C9 CC(01 02 03 04 05 06 09 0A 0D 14)
+D6(01 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.0))
+Parsed output:
+       VCP: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 6c 6e 70 ac ae b2 b6
+c0 c8 c9 cc d6 df
+       Type: Unknown
+
+Controls (valid/current/max) [Description - Value name]:
+Control 0x02: +/3/2 C [???]
+Control 0x04: +/0/65535 C [Restore Factory Defaults]
+Control 0x05: +/0/65535 C [Restore Brightness and Contrast]
+Control 0x06: +/0/65535   [???]
+Control 0x08: +/0/65535 C [Restore Factory Default Color]
+Control 0x0b: +/2/2 C [???]
+Control 0x0c: +/2/2 C [???]
+Control 0x0e: +/0/100   [???]
+Control 0x10: +/90/100 C [Brightness]
+Control 0x12: +/61/100 C [Contrast]
+Control 0x14: +/11/11 C [???]
+Control 0x16: +/100/100 C [Red maximum level]
+Control 0x18: +/95/100 C [Green maximum level]
+Control 0x1a: +/90/100 C [Blue maximum level]
+Control 0x1e: +/0/255   [???]
+Control 0x20: +/100/100   [???]
+Control 0x30: +/100/100   [???]
+Control 0x3e: +/100/100   [???]
+Control 0x52: +/0/2 C [???]
+Control 0x60: +/3/3 C [Input Source Select - Digital]
+Control 0x6c: +/50/100 C [Red minimum level]
+Control 0x6e: +/50/100 C [Green minimum level]
+Control 0x70: +/50/100 C [Blue minimum level]
+Invalid response, first byte is 0xbe, should be 0x6e
+be 80 be 6e 80 be 6e 80 be 6e 80                | ...n..n..n.
+ioctl(): Input/output error
+ioctl returned -1
+Control 0xac: +/64/1 C [???]
+Control 0xae: +/6030/65535 C [???]
+Control 0xb2: +/1/2 C [???]
+Control 0xb6: +/3/5 C [???]
+Control 0xc0: +/4297/0 C [???]
+Control 0xc8: +/17673/37 C [???]
+Control 0xc9: +/512/255 C [???]
+Control 0xcc: +/2/16 C [???]
+Control 0xd6: +/1/4 C [DPMS Control - On]
+Control 0xdf: +/512/65535 C [???]
+
+--001a114b6b9231a51e052f4582a1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"font-family:monospace"><span style=3D"color=
+:rgb(0,0,0)">Capabilities:
+</span><br>Raw output: (prot(monitor)type(LCD)model(VW202)cmds(01 02 03 07 =
+0C E3 F3)vcp(02 04 05 08 0B 0C 10 12 14(01 05 06 08 0B) 16 18 1A 52 60(<br>=
+01 03) 6C 6E 70 AC AE B2 B6 C0 C8 C9 CC(01 02 03 04 05 06 09 0A 0D 14) D6(0=
+1 05) DF)mswhql(1)asset_eep(40)mccs_ver(2.0))
+<br>Parsed output: =C2=A0<br> =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0VCP=
+: 02 04 05 08 0b 0c 10 12 14 16 18 1a 52 60 6c 6e 70 ac ae b2 b6 c0 c8 c9 c=
+c d6 df =C2=A0<br> =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0Type: Unknown
+<br>
+<br>Controls (valid/current/max) [Description - Value name]:
+<br>Control 0x02: +/3/2 C [???]
+<br>Control 0x04: +/0/65535 C [Restore Factory Defaults]
+<br>Control 0x05: +/0/65535 C [Restore Brightness and Contrast]
+<br>Control 0x06: +/0/65535 =C2=A0=C2=A0[???]
+<br>Control 0x08: +/0/65535 C [Restore Factory Default Color]
+<br>Control 0x0b: +/2/2 C [???]
+<br>Control 0x0c: +/2/2 C [???]
+<br>Control 0x0e: +/0/100 =C2=A0=C2=A0[???]
+<br>Control 0x10: +/90/100 C [Brightness]
+<br>Control 0x12: +/61/100 C [Contrast]
+<br>Control 0x14: +/11/11 C [???]
+<br>Control 0x16: +/100/100 C [Red maximum level]
+<br>Control 0x18: +/95/100 C [Green maximum level]
+<br>Control 0x1a: +/90/100 C [Blue maximum level]
+<br>Control 0x1e: +/0/255 =C2=A0=C2=A0[???]
+<br>Control 0x20: +/100/100 =C2=A0=C2=A0[???]
+<br>Control 0x30: +/100/100 =C2=A0=C2=A0[???]
+<br>Control 0x3e: +/100/100 =C2=A0=C2=A0[???]
+<br>Control 0x52: +/0/2 C [???]
+<br>Control 0x60: +/3/3 C [Input Source Select - Digital]
+<br>Control 0x6c: +/50/100 C [Red minimum level]
+<br>Control 0x6e: +/50/100 C [Green minimum level]
+<br>Control 0x70: +/50/100 C [Blue minimum level]
+<br>Invalid response, first byte is 0xbe, should be 0x6e
+<br>be 80 be 6e 80 be 6e 80 be 6e 80 =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0| ...n..n..n. =C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0<br>ioctl(): Input/output error
+<br>ioctl returned -1
+<br>Control 0xac: +/64/1 C [???]
+<br>Control 0xae: +/6030/65535 C [???]
+<br>Control 0xb2: +/1/2 C [???]
+<br>Control 0xb6: +/3/5 C [???]
+<br>Control 0xc0: +/4297/0 C [???]
+<br>Control 0xc8: +/17673/37 C [???]
+<br>Control 0xc9: +/512/255 C [???]
+<br>Control 0xcc: +/2/16 C [???]
+<br>Control 0xd6: +/1/4 C [DPMS Control - On]
+<br>Control 0xdf: +/512/65535 C [???]<br>
+<br></span></div>
+
+--001a114b6b9231a51e052f4582a1--
+
+

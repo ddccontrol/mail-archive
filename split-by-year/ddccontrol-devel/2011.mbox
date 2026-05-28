@@ -1,0 +1,51 @@
+From marko.martinovic00@...36... Fri Feb 25 19:36:03 2011
+Message-ID: <4D680496.5030704@...36...>
+Date: Fri, 25 Feb 2011 20:35:50 +0100
+From: =?ISO-8859-2?Q?Marko_Martinovi=E6?= <marko.martinovic00@...36...>
+User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US;
+	rv:1.9.2.13) Gecko/20101208 Thunderbird/3.1.7
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+X-Spam-Score: 0.6 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM          Sender email is freemail
+	(marko.martinovic00[at]gmail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	2.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+	digit (marko.martinovic00[at]gmail.com)
+	-0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+	author's domain
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+	0.0 T_TO_NO_BRKTS_FREEMAIL T_TO_NO_BRKTS_FREEMAIL
+X-Headers-End: 1Pt3SM-0003rw-1z
+Subject: [ddccontrol-devel] ddccontrol as non root solution
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Fri, 25 Feb 2011 19:36:03 -0000
+Content-Type: text/plain; charset=ISO-8859-2; format=flowed
+Content-Transfer-Encoding: 7bit
+
+After years of figuring out the solution to run ddccontrol and its 
+applet as non-root user on my Ubuntu PC, here is the procedure. Actually 
+its really simple. I dont't know is posting links allowed here but here 
+is the solution on my blog cause I don't want to type it again.
+
+http://www.techytalk.info/2011/02/debian-ubuntu-gddccontrol-non-root/
+
+Hope I saved someone lots of pain. Bye.
+
+

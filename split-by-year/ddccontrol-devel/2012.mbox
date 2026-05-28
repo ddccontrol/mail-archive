@@ -1,0 +1,1511 @@
+From nicolas.boichat@...36... Wed Jan 25 02:22:01 2012
+Sender: Nicolas Boichat <nicolas.boichat@...36...>
+Message-ID: <4F1F673E.1030102@...1...>
+Date: Wed, 25 Jan 2012 10:21:50 +0800
+From: Nicolas Boichat <nicolas@...1...>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64;
+	rv:8.0) Gecko/20111118 Thunderbird/8.0
+MIME-Version: 1.0
+To: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>,
+	William Ollivier <guneeyoufix@...36...>
+References: <1327457632-21362-1-git-send-email-vapier@...65...>
+In-Reply-To: <1327457632-21362-1-git-send-email-vapier@...65...>
+X-Forwarded-Message-Id: <1327457632-21362-1-git-send-email-vapier@...65...>
+X-Spam-Score: -1.5 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+	(nicolas.boichat[at]gmail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1RpsUq-0005TQ-Ei
+Cc: Mike Frysinger <vapier@...65...>
+Subject: [ddccontrol-devel] Fwd: [PATCH] doc: respect --htmldir
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 25 Jan 2012 02:22:01 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+FYI.
+
+-------- Original Message --------
+Subject: 	[PATCH] doc: respect --htmldir
+Date: 	Tue, 24 Jan 2012 21:13:52 -0500
+From: 	Mike Frysinger <vapier@...65...>
+To: 	nicolas@...1...
+
+
+
+The configure script already sets up $(htmldir) for us (which the user
+can override), so just use that rather than hardcoding our own path.
+
+Signed-off-by: Mike Frysinger <vapier@...65...>
+---
+ doc/Makefile.am |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+diff --git a/doc/Makefile.am b/doc/Makefile.am
+index 09b8eb5..1e8aa14 100644
+--- a/doc/Makefile.am
++++ b/doc/Makefile.am
+@@ -2,7 +2,6 @@ XSLTPROC=@XSLTPROC@
+ XSLTPROC_FLAGS=@XSLTPROC_FLAGS@
+ XHTML_STYLESHEET=style.xsl
+ 
+-htmldir = $(prefix)/share/doc/@PACKAGE@/html
+ dist_html_DATA = html/*
+ EXTRA_DIST = main.xml gpl.xml install.xml about.xml report.xml supportedgc.xml supportedmonitors.xml thanks.xml techdocs.xml usage.xml style.xsl style-fo.xsl
+ 
+-- 
+1.7.8.3
+
+
+
+
+From nicolas.boichat@...36... Wed Jan 25 02:23:39 2012
+Sender: Nicolas Boichat <nicolas.boichat@...36...>
+Message-ID: <4F1F67A1.9040906@...1...>
+Date: Wed, 25 Jan 2012 10:23:29 +0800
+From: Nicolas Boichat <nicolas@...1...>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64;
+	rv:8.0) Gecko/20111118 Thunderbird/8.0
+MIME-Version: 1.0
+To: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>,
+	William Ollivier <guneeyoufix@...36...>
+References: <1327457808-21803-1-git-send-email-vapier@...65...>
+In-Reply-To: <1327457808-21803-1-git-send-email-vapier@...65...>
+X-Spam-Score: -1.5 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+	(nicolas.boichat[at]gmail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1RpsWQ-0003Im-Tj
+Cc: Mike Frysinger <vapier@...65...>
+Subject: Re: [ddccontrol-devel] [PATCH] gddccontrol: fix build with
+	--disable-ddcpci
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 25 Jan 2012 02:23:39 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+FYI. (William took over the maintenance of ddccontrol)
+
+On 01/25/2012 10:16 AM, Mike Frysinger wrote:
+> The gddccontrol code uses the common header to get at the timeout
+> define, but that fails when ddcpci is disabled.  This replaces the
+> header with a copy of the define, but this kind of sucks.  Not sure
+> how best to address this.
+>
+> Signed-off-by: Mike Frysinger <vapier@...65...>
+> ---
+>  src/gddccontrol/main.c |    2 +-
+>  1 files changed, 1 insertions(+), 1 deletions(-)
+>
+> diff --git a/src/gddccontrol/main.c b/src/gddccontrol/main.c
+> index b76e98d..766125e 100644
+> --- a/src/gddccontrol/main.c
+> +++ b/src/gddccontrol/main.c
+> @@ -24,7 +24,7 @@
+>  #include <stdio.h>
+>  #include <unistd.h>
+>  
+> -#include "ddcpci-ipc.h"
+> +#define IDLE_TIMEOUT 60
+>  
+>  #include "notebook.h"
+>  
+
+
+
+From vapier@...65... Wed Jan 25 02:51:16 2012
+From: Mike Frysinger <vapier@...65...>
+Organization: wh0rd.org
+To: Nicolas Boichat <nicolas@...1...>
+Date: Tue, 24 Jan 2012 21:51:46 -0500
+User-Agent: KMail/1.13.7 (Linux/3.2.0; KDE/4.6.5; x86_64; ; )
+References: <1327457808-21803-1-git-send-email-vapier@...65...>
+	<4F1F67A1.9040906@...1...>
+In-Reply-To: <4F1F67A1.9040906@...1...>
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="nextPart1859000.ZUIon7p6QU";
+	protocol="application/pgp-signature"; micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <201201242151.48357.vapier@...65...>
+X-Spam-Score: -1.6 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.1 AWL AWL: From: address is in the auto white-list
+X-Headers-End: 1Rpsx9-00014f-6a
+X-Mailman-Approved-At: Wed, 25 Jan 2012 07:01:54 +0000
+Cc: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>
+Subject: Re: [ddccontrol-devel] [PATCH] gddccontrol: fix build with
+	--disable-ddcpci
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 25 Jan 2012 02:51:16 -0000
+
+--nextPart1859000.ZUIon7p6QU
+Content-Type: Text/Plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+On Tuesday 24 January 2012 21:23:29 Nicolas Boichat wrote:
+> FYI. (William took over the maintenance of ddccontrol)
+
+ah, thanks.  i'll update the Gentoo metadata so you don't get hassled anymore.
+-mike
+
+--nextPart1859000.ZUIon7p6QU
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.17 (GNU/Linux)
+
+iQIcBAABAgAGBQJPH25EAAoJEEFjO5/oN/WBoGUQAIyxBAWsidlZUOtaD1UMQw2d
+SsQzUeHV8LENkvXmuwEbnVf+1D/+mGREp21nn/Paka25AMoYJaoCkEip/xooSD9s
+fzCPZ8SwrbwIS/tjZdCti7HrVRZe43AOTZNx7svW27+xNSmS7riBFfKrBVWaFyt2
+tsRHQHsMM5PvTyLGDC39rHUzl5F8xwdOuZO1hoqVn1y3MFCL7AXYXvzYYPyWO7Mo
+JGikXfWwTwgpX38Vl2l8HL6dFAZpJJRqu3zV6Ec1pgVXNjGcEuQ1JBe9WS0ehaFw
+4HKw2ggWaCwDlu2KEIsBN6V+iHFJzI5Fn1g/B4iQ3ZuWFGU9an6YVKMP4+gP++rX
+3/HKEhdud4sJgksjbsMRdfoUcUk44c8qf//58NYeM2YBU+iNf1uYieTrCjwHcJj/
+Ld62wC2MZ8S2eR/fep/4qvHnksJ0bWftqvect53CklNrhW8Qu+Z9iONyOednsmP0
+0bvOIwPl5y5PAUNBfpZubaUjtupMJ+D72HIjvagc7kV00htUhbwHx2BS/tpfvEm+
+HeBmR5JCKWJ4VXE0o3n12DiRD6VtD4UnomyRVfQrJ8uC/2yvanJYveoeWjrQtU9w
+K28wncA1uBrNU50z9Tw1WiXgDF1QLr8YJwHsoFUF2waVfSkkJPlEZlQn0OJwJikM
+F2ZM0LeSEtPRImYRR/WX
+=Jiby
+-----END PGP SIGNATURE-----
+
+--nextPart1859000.ZUIon7p6QU--
+
+
+From lists@...57... Wed Jan 25 07:41:56 2012
+X-ACL-Warn: 
+Message-ID: <4F1FAE1E.5090202@...57...>
+Date: Wed, 25 Jan 2012 08:24:14 +0100
+From: =?ISO-8859-1?Q?Lars_Tobias_Skjong-B=F8rsting?= <lists@...57...>
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7;
+	rv:9.0) Gecko/20111222 Thunderbird/9.0.1
+MIME-Version: 1.0
+To: Nicolas Boichat <nicolas@...1...>
+References: <1327457632-21362-1-git-send-email-vapier@...65...>
+	<4F1F673E.1030102@...1...>
+In-Reply-To: <4F1F673E.1030102@...1...>
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1RpxUR-0003Me-JD
+Cc: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>
+Subject: Re: [ddccontrol-devel] Fwd: [PATCH] doc: respect --htmldir
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 25 Jan 2012 07:41:56 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+On 1/25/12 3:21 AM, Nicolas Boichat wrote:
+
+> The configure script already sets up $(htmldir) for us (which the user
+> can override), so just use that rather than hardcoding our own path.
+>
+> Signed-off-by: Mike Frysinger<vapier@...65...>
+> ---
+>   doc/Makefile.am |    1 -
+>   1 files changed, 0 insertions(+), 1 deletions(-)
+>
+> diff --git a/doc/Makefile.am b/doc/Makefile.am
+> index 09b8eb5..1e8aa14 100644
+> --- a/doc/Makefile.am
+> +++ b/doc/Makefile.am
+> @@ -2,7 +2,6 @@ XSLTPROC=@XSLTPROC@
+>   XSLTPROC_FLAGS=@XSLTPROC_FLAGS@
+>   XHTML_STYLESHEET=style.xsl
+>
+> -htmldir = $(prefix)/share/doc/@PACKAGE@/html
+>   dist_html_DATA = html/*
+>   EXTRA_DIST = main.xml gpl.xml install.xml about.xml report.xml supportedgc.xml supportedmonitors.xml thanks.xml techdocs.xml usage.xml style.xsl style-fo.xsl
+
+Thanks! Applied.
+
+-- 
+Regards, Lars Tobias
+
+
+From lists@...57... Wed Jan 25 07:41:56 2012
+X-ACL-Warn: 
+Message-ID: <4F1FAE8A.8050909@...57...>
+Date: Wed, 25 Jan 2012 08:26:02 +0100
+From: =?ISO-8859-1?Q?Lars_Tobias_Skjong-B=F8rsting?= <lists@...57...>
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7;
+	rv:9.0) Gecko/20111222 Thunderbird/9.0.1
+MIME-Version: 1.0
+To: DDCcontrol Developers <ddccontrol-devel@lists.sourceforge.net>
+References: <1327457808-21803-1-git-send-email-vapier@...65...>
+	<4F1F67A1.9040906@...1...>
+In-Reply-To: <4F1F67A1.9040906@...1...>
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1RpxUR-0006i5-Ie
+Cc: Mike Frysinger <vapier@...65...>
+Subject: Re: [ddccontrol-devel] [PATCH] gddccontrol: fix build with
+	--disable-ddcpci
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 25 Jan 2012 07:41:56 -0000
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+On 01/25/2012 10:16 AM, Mike Frysinger wrote:
+
+> The gddccontrol code uses the common header to get at the timeout
+> define, but that fails when ddcpci is disabled.  This replaces the
+> header with a copy of the define, but this kind of sucks.  Not sure
+> how best to address this.
+>
+> Signed-off-by: Mike Frysinger<vapier@...65...>
+> ---
+>   src/gddccontrol/main.c |    2 +-
+>   1 files changed, 1 insertions(+), 1 deletions(-)
+>
+> diff --git a/src/gddccontrol/main.c b/src/gddccontrol/main.c
+> index b76e98d..766125e 100644
+> --- a/src/gddccontrol/main.c
+> +++ b/src/gddccontrol/main.c
+> @@ -24,7 +24,7 @@
+>   #include<stdio.h>
+>   #include<unistd.h>
+>
+> -#include "ddcpci-ipc.h"
+> +#define IDLE_TIMEOUT 60
+>
+>   #include "notebook.h"
+
+Thanks! Applied.
+
+-- 
+Regards, Lars Tobias
+
+
+From jskarvad@...66... Mon Sep 03 16:10:34 2012
+Date: Mon, 3 Sep 2012 12:10:24 -0400 (EDT)
+From: Jaroslav Skarvada <jskarvad@...66...>
+To: ddccontrol-devel@lists.sourceforge.net
+Message-ID: <1340977984.2892726.1346688624867.JavaMail.root@...66...>
+In-Reply-To: <1349370170.2891725.1346688367680.JavaMail.root@...66...>
+MIME-Version: 1.0
+X-Originating-IP: [10.34.24.56]
+X-Mailer: Zimbra 7.2.0_GA_2669 (ZimbraWebClient - FF3.0 (Linux)/7.2.0_GA_2669)
+X-Spam-Score: -1.7 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.2 RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1T8ZEM-0003ET-KJ
+Subject: [ddccontrol-devel] ddccontrol-db license question
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 03 Sep 2012 16:10:35 -0000
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+FYI we are currently trying to get ddccontrol into Fedora,
+there are review requests (feel free to comment there :)
+https://bugzilla.redhat.com/show_bug.cgi?id=852893
+https://bugzilla.redhat.com/show_bug.cgi?id=852892
+
+My question is, what is the license for ddccontrol-db?
+According to https://bugzilla.redhat.com/show_bug.cgi?id=852892#c2
+the current state seems to be GPL+, but according to
+ddccontrol package itself I suspect the ddccontrol-db license
+is intended to be GPLv2+. Could you clarify?
+
+thanks & regards
+
+Jaroslav
+
+
+From nicolas.boichat@...36... Mon Sep 03 22:41:30 2012
+Sender: Nicolas Boichat <nicolas.boichat@...36...>
+Message-ID: <5045320E.2000700@...1...>
+Date: Tue, 04 Sep 2012 06:41:18 +0800
+From: Nicolas Boichat <nicolas@...1...>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64;
+	rv:15.0) Gecko/20120828 Thunderbird/15.0
+MIME-Version: 1.0
+To: Jaroslav Skarvada <jskarvad@...66...>
+References: <1340977984.2892726.1346688624867.JavaMail.root@...66...>
+In-Reply-To: <1340977984.2892726.1346688624867.JavaMail.root@...66...>
+X-Spam-Score: -1.5 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+	(nicolas.boichat[at]gmail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1T8fKj-0006yj-Bx
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] ddccontrol-db license question
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 03 Sep 2012 22:41:30 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Well, at the time we started the project the version 3 wasn't out, so I
+have no idea what we "indented" to do.
+
+For ddccontrol, it's very clear. COPYING contains GPLv2, but all sources
+files clearly use the header stating GPLv2+.
+
+For ddccontrol-db, COPYING also contains GPLv2, but we do not put any
+copyright header in the files contributed by ourselves or users, so I'm
+not clear if we meant GPLv2+ or just GPLv2 (or even public domain,
+actually).
+
+I'd say the conservative option is GPLv2. But I assume no one would be
+offended if you put GPLv2+.
+
+Hope this helps.
+
+Best,
+
+Nicolas
+
+On 04/09/12 00:10, Jaroslav Skarvada wrote:
+> Hi,
+> 
+> FYI we are currently trying to get ddccontrol into Fedora,
+> there are review requests (feel free to comment there :)
+> https://bugzilla.redhat.com/show_bug.cgi?id=852893
+> https://bugzilla.redhat.com/show_bug.cgi?id=852892
+> 
+> My question is, what is the license for ddccontrol-db?
+> According to https://bugzilla.redhat.com/show_bug.cgi?id=852892#c2
+> the current state seems to be GPL+, but according to
+> ddccontrol package itself I suspect the ddccontrol-db license
+> is intended to be GPLv2+. Could you clarify?
+> 
+> thanks & regards
+> 
+> Jaroslav
+> 
+> ------------------------------------------------------------------------------
+> Live Security Virtual Conference
+> Exclusive live event will cover all the ways today's security and 
+> threat landscape has changed and how IT managers can respond. Discussions 
+> will include endpoint security, mobile security and the latest in malware 
+> threats. http://www.accelacomm.com/jaw/sfrnl04242012/114/50122263/
+> _______________________________________________
+> ddccontrol-devel mailing list
+> ddccontrol-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel
+> 
+
+
+
+From jskarvad@...66... Tue Sep 04 07:13:49 2012
+Date: Tue, 4 Sep 2012 03:13:39 -0400 (EDT)
+From: Jaroslav Skarvada <jskarvad@...66...>
+To: Nicolas Boichat <nicolas@...1...>
+Message-ID: <573491560.3175315.1346742819904.JavaMail.root@...66...>
+In-Reply-To: <5045320E.2000700@...1...>
+MIME-Version: 1.0
+X-Originating-IP: [10.34.24.56]
+X-Mailer: Zimbra 7.2.0_GA_2669 (ZimbraWebClient - FF3.0 (Linux)/7.2.0_GA_2669)
+X-Spam-Score: -1.7 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.2 RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1T8nKW-0002ji-Cg
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] ddccontrol-db license question
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 04 Sep 2012 07:13:50 -0000
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+thanks for your reply
+
+> For ddccontrol-db, COPYING also contains GPLv2, but we do not put any
+> copyright header in the files contributed by ourselves or users, so
+> I'm
+> not clear if we meant GPLv2+ or just GPLv2 (or even public domain,
+> actually).
+> 
+Actually it could be GPL+ as the GPLv2 license text states:
+  If the Program does not specify a version number of this License,
+  you may choose any version ever published by the Free Software
+  Foundation.
+
+Also confirmed by our Fedora licensing wiki / guidelines:
+https://fedoraproject.org/wiki/Licensing/FAQ#How_do_I_figure_out_what_version_of_the_GPL.2FLGPL_my_package_is_under.3F
+
+> I'd say the conservative option is GPLv2. But I assume no one would
+> be
+> offended if you put GPLv2+.
+> 
+Therefore we will use GPLv2+ to be consistent with ddccontrol
+package
+
+thanks & regards
+
+Jaroslav
+
+
+From jskarvad@...66... Tue Sep 04 09:31:54 2012
+Date: Tue, 4 Sep 2012 05:31:42 -0400 (EDT)
+From: Jaroslav Skarvada <jskarvad@...66...>
+To: ddccontrol-devel@lists.sourceforge.net
+Message-ID: <1132063114.3214925.1346751102897.JavaMail.root@...66...>
+In-Reply-To: <1200590121.3213977.1346750773759.JavaMail.root@...66...>
+MIME-Version: 1.0
+X-Originating-IP: [10.34.24.56]
+X-Mailer: Zimbra 7.2.0_GA_2669 (ZimbraWebClient - FF3.0 (Linux)/7.2.0_GA_2669)
+X-Spam-Score: -1.7 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.2 RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1T8pU4-0001n7-Lx
+Subject: [ddccontrol-devel] Minor problem with included license files
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 04 Sep 2012 09:31:54 -0000
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+we spotted minor problem with included license files during
+the Fedora review process:
+https://bugzilla.redhat.com/show_bug.cgi?id=852892
+
+  ddccontrol.x86_64: E: incorrect-fsf-address /usr/share/doc/ddccontrol-0.4.2/COPYING
+
+There is wrong snail-mail address in the license text.
+
+Included COPYING file contains:
+  59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Up-to-date license from http://www.gnu.org/licenses/gpl-2.0.txt contains:
+  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+Same problem with ddccontrol-db. Could you update the license files?
+
+thanks & regards
+
+Jaroslav
+
+
+From lists@...57... Wed Sep 05 08:06:36 2012
+X-ACL-Warn: 
+Message-ID: <50470801.4030304@...57...>
+Date: Wed, 05 Sep 2012 10:06:25 +0200
+From: =?ISO-8859-1?Q?Lars_Tobias_Skjong-B=F8rsting?= <lists@...57...>
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7;
+	rv:15.0) Gecko/20120824 Thunderbird/15.0
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+References: <1132063114.3214925.1346751102897.JavaMail.root@...66...>
+In-Reply-To: <1132063114.3214925.1346751102897.JavaMail.root@...66...>
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1T9Ad5-00063v-9K
+Subject: Re: [ddccontrol-devel] Minor problem with included license files
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 05 Sep 2012 08:06:36 -0000
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+On 9/4/12 11:31 AM, Jaroslav Skarvada wrote:
+
+> we spotted minor problem with included license files during
+> the Fedora review process:
+> https://bugzilla.redhat.com/show_bug.cgi?id=852892
+> 
+>   ddccontrol.x86_64: E: incorrect-fsf-address /usr/share/doc/ddccontrol-0.4.2/COPYING
+> 
+> There is wrong snail-mail address in the license text.
+> 
+> Included COPYING file contains:
+>   59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+> Up-to-date license from http://www.gnu.org/licenses/gpl-2.0.txt contains:
+>   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+> 
+> Same problem with ddccontrol-db. Could you update the license files?
+
+Thanks for spotting that. I'll update the license files.
+
+-- 
+Regards, Lars Tobias
+
+
+From lists@...57... Wed Sep 05 12:47:23 2012
+X-ACL-Warn: 
+Message-ID: <504749CF.5000603@...57...>
+Date: Wed, 05 Sep 2012 14:47:11 +0200
+From: =?ISO-8859-1?Q?Lars_Tobias_Skjong-B=F8rsting?= <lists@...57...>
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7;
+	rv:15.0) Gecko/20120824 Thunderbird/15.0
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+References: <1132063114.3214925.1346751102897.JavaMail.root@...66...>
+	<50470801.4030304@...57...>
+In-Reply-To: <50470801.4030304@...57...>
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+X-Headers-End: 1T9F0o-0003MO-Cj
+Subject: Re: [ddccontrol-devel] Minor problem with included license files
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 05 Sep 2012 12:47:24 -0000
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Jaroslav,
+
+On 9/5/12 10:06 AM, Lars Tobias Skjong-B=F8rsting wrote:
+
+> On 9/4/12 11:31 AM, Jaroslav Skarvada wrote:
+>> Could you update the license files?
+>=20
+> Thanks for spotting that. I'll update the license files.
+
+I've updated the license files and pushed to master, but the address was
+already corrected in master, and the update was mostly whitespace and
+reflowing of text.
+
+--=20
+Regards, Lars Tobias
+
+
+From jskarvad@...66... Wed Sep 05 13:34:47 2012
+Date: Wed, 5 Sep 2012 09:34:37 -0400 (EDT)
+From: Jaroslav Skarvada <jskarvad@...66...>
+To: Lars Tobias =?utf-8?Q?Skjong-B=C3=B8rsting?= <lists@...57...>
+Message-ID: <1212514462.4195367.1346852077483.JavaMail.root@...66...>
+In-Reply-To: <504749CF.5000603@...57...>
+MIME-Version: 1.0
+X-Originating-IP: [10.34.24.56]
+X-Mailer: Zimbra 7.2.0_GA_2669 (ZimbraWebClient - FF3.0 (Linux)/7.2.0_GA_2669)
+X-Spam-Score: -1.6 (-)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+	-0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+	domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.1 AWL AWL: From: address is in the auto white-list
+X-Headers-End: 1T9Fkh-0007S7-Hx
+Cc: ddccontrol-devel@lists.sourceforge.net
+Subject: Re: [ddccontrol-devel] Minor problem with included license files
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 05 Sep 2012 13:34:47 -0000
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+----- Original Message -----
+> Hi Jaroslav,
+>=20
+> On 9/5/12 10:06 AM, Lars Tobias Skjong-B=C3=B8rsting wrote:
+>=20
+> > On 9/4/12 11:31 AM, Jaroslav Skarvada wrote:
+> >> Could you update the license files?
+> >=20
+> > Thanks for spotting that. I'll update the license files.
+>=20
+> I've updated the license files and pushed to master, but the address
+> was
+> already corrected in master, and the update was mostly whitespace and
+> reflowing of text.
+>=20
+Hi,
+
+thanks for info, the problem seems to be in released version,
+we didn't check master, sorry :)
+
+Jaroslav
+
+
+From vitaly@...67... Sat Dec 08 11:56:24 2012
+X-ACL-Warn: 
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=google.com; s=20120113;
+	h=message-id:date:from:user-agent:mime-version:to:subject
+	:content-type:content-transfer-encoding:x-gm-message-state;
+	bh=4Jc/L+uYvteFj2Hjb9OiTC+8MC7F0QmZYCxDsUBI+G4=;
+	b=YYc9ogqN22JFgVNCjnkwREVVDkOCfYLYRiEqbzPGl1GNC9KzKyoJdAA58abcLWMU4X
+	NZqEVHZ+wdGGLxn9jw6z2eT37rCrAVJxXW8M2mgyJvRz9jOU/7c2BMzowK1epmLKWcqJ
+	RcVdR3bRhcHlCW5jBwoP21p0Y6tbQ1JNBkfRpJLfAgSOMStgd2GJDtYP/Y8eIiVe4jQT
+	Ik6vcW8btq3JycnSUGzqiLUxN1gvpcO8favFmIi/Nd7D58hcl0yp4HoYgrg9225vx4GL
+	bDePqQcBLN11z1uttH2qu3Y1Ar3xF2ImCAbPcW5RkyLt2iugNQPWwVRflAMNA0RGMWrZ
+	aj8w==
+Message-ID: <50C324CF.6090806@...67...>
+Date: Sat, 08 Dec 2012 13:30:23 +0200
+From: "Vitaly V. Bursov" <vitaly@...67...>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64;
+	rv:10.0.10) Gecko/20121111 Thunderbird/10.0.10
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+X-Gm-Message-State: ALoCoQlS4udOKLiK4YtzqAVT8sRdT82EePFtod2G3TJ6OogTHANFWmXXKIQiQwTx9RrhRd1747TZ
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+	author's domain
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1ThJ14-0007g3-SR
+Subject: [ddccontrol-devel] [PATCH 2/2] Support for AMD ADL as a backend
+	(autoconf)
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 08 Dec 2012 11:56:24 -0000
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+diff --git a/configure.ac b/configure.ac
+index 8ee47f3..79e831e 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -112,6 +112,39 @@ fi
+
+  AC_SUBST([DDCPCI])
+
++# AMD ADL support check
++support_amdadl=
++AC_ARG_ENABLE(amdadl,
++  [  --enable-amdadl	  enable AMD Display Library support (autodetect) ],
++  [if test x$enableval = xno; then
++    support_amdadl=no
++  else
++    support_amdadl=yes
++  fi])
++
++AMDADL=
++if test x$support_amdadl = xyes; then
++   AC_CHECK_HEADERS([ADL/adl_sdk.h], [], [AC_MSG_ERROR([ADL headers not found, but ADL support requested.], [1])],
++   [#ifndef __stdcall
++    #define __stdcall
++    #endif
++    ])
++   AMDADL=amdadl
++elif test x$support_amdadl = x; then
++   AC_CHECK_HEADERS([ADL/adl_sdk.h], [
++     AMDADL=amdadl
++   ], [], [#ifndef __stdcall
++           #define __stdcall
++           #endif
++           ])
++fi
++
++if test x$AMDADL = xamdadl; then
++   AC_DEFINE_UNQUOTED(HAVE_AMDADL, 1, [Define if ddccontrol is built with ADL support.])
++fi
++
++AC_SUBST([AMDADL])
++
+  # Gnome check
+  support_gnome=yes
+  AC_ARG_ENABLE(gnome,
+diff --git a/src/config.h.in b/src/config.h.in
+index 971ec71..e0f31c6 100644
+--- a/src/config.h.in
++++ b/src/config.h.in
+@@ -4,6 +4,12 @@
+     language is requested. */
+  #undef ENABLE_NLS
+
++/* Define to 1 if you have the <ADL/adl_sdk.h> header file. */
++#undef HAVE_ADL_ADL_SDK_H
++
++/* Define if ddccontrol is built with ADL support. */
++#undef HAVE_AMDADL
++
+  /* Define if linux/i2c-dev.h is buggy on your system, so defaults constants
+     and structures must be used */
+  #undef HAVE_BUGGY_I2C_DEV
+@@ -41,7 +47,7 @@
+  /* Define if ddccontrol is built with /dev/i2c-* support. */
+  #undef HAVE_I2C_DEV
+
+-/* Define if you have the iconv() function. */
++/* Define if you have the iconv() function and it works. */
+  #undef HAVE_ICONV
+
+  /* Define to 1 if you have the <inttypes.h> header file. */
+@@ -50,6 +56,9 @@
+  /* Define to 1 if you have the `pci' library (-lpci). */
+  #undef HAVE_LIBPCI
+
++/* Define to 1 if you have the `z' library (-lz). */
++#undef HAVE_LIBZ
++
+  /* Define to 1 if you have the <linux/types.h> header file. */
+  #undef HAVE_LINUX_TYPES_H
+
+@@ -89,6 +98,10 @@
+  /* Define to 1 if you have the <unistd.h> header file. */
+  #undef HAVE_UNISTD_H
+
++/* Define to the sub-directory in which libtool stores uninstalled libraries.
++   */
++#undef LT_OBJDIR
++
+  /* Name of package */
+  #undef PACKAGE
+
+@@ -104,6 +117,9 @@
+  /* Define to the one symbol short name of this package. */
+  #undef PACKAGE_TARNAME
+
++/* Define to the home page for this package. */
++#undef PACKAGE_URL
++
+  /* Define to the version of this package. */
+  #undef PACKAGE_VERSION
+
+diff --git a/src/lib/Makefile.am b/src/lib/Makefile.am
+index ce18dcf..775629e 100644
+--- a/src/lib/Makefile.am
++++ b/src/lib/Makefile.am
+@@ -11,6 +11,7 @@ $(pkgconfig_DATA): $(srcdir)/ddccontrol.pc.in $(top_builddir)/config.status
+  lib_LTLIBRARIES = libddccontrol.la
+
+  libddccontrol_la_SOURCES = ddcci.c ddcci.h monitor_db.c monitor_db.h \
+-   ddcpci-ipc.h i2c-dev.h conf.c conf.h
++   ddcpci-ipc.h i2c-dev.h conf.c conf.h amd_adl.c amd_adl.h
++
+  libddccontrol_la_LIBADD = $(LIBXML2_LDFLAGS)
+  AM_CFLAGS = $(LIBXML2_CFLAGS)
+
+
+From vitaly@...67... Sat Dec 08 12:00:15 2012
+X-ACL-Warn: 
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=google.com; s=20120113;
+	h=message-id:date:from:user-agent:mime-version:to:subject
+	:content-type:content-transfer-encoding:x-gm-message-state;
+	bh=dHDmUsZ95Q6x3G6jPO6y5y/FvBVbrkDF+0ibaAcLHRo=;
+	b=F6gJOCrrYoXaOPI1s9DTl/cywaS4PRBM3uATHjzMAwW/gwrRYSxwQqjBpogFdPEl8A
+	jLdpjFUCxkiiu9ivoYWJZ7+Qou7tulrPIBR9DqjyM73rGcN2YqTPaofh4NmO6F8//SzL
+	ptSqNmIQl22lptBKFESYu6FCzSu5Ajc+GZFrjlF9FLrfP1quJnW4lfZLw/RgZlP8scPQ
+	pOGz33RPoIRSTKFkxIfr8BkQNn5bPUgu6V0Nxl0ZWcsVTcGhHGredkLQD5DToXgLqNTt
+	acL3KZKC6PXOtWts2T9mNojR8wjoJuepQSYCJnCh/yqwibkLaI6VxMHAByaO5C2nk1Rg
+	bKBQ==
+Message-ID: <50C324CC.2030907@...67...>
+Date: Sat, 08 Dec 2012 13:30:20 +0200
+From: "Vitaly V. Bursov" <vitaly@...67...>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64;
+	rv:10.0.10) Gecko/20121111 Thunderbird/10.0.10
+MIME-Version: 1.0
+To: ddccontrol-devel@lists.sourceforge.net
+X-Gm-Message-State: ALoCoQlEFmWmFW5y4mUk2prSNnQs1opqu8JWQRw7wvmKjbUWFfJ2RCPhU6vaIRoWoJFDKegMEXUd
+X-Spam-Score: -0.1 (/)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+	author's domain
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+X-Headers-End: 1ThJ4m-0001YN-Mh
+Subject: [ddccontrol-devel] [PATCH 1/2]  Support for AMD ADL as a backend
+X-BeenThere: ddccontrol-devel@lists.sourceforge.net
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: ddccontrol devel list <ddccontrol-devel.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-devel>
+List-Post: <mailto:ddccontrol-devel@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-devel>,
+	<mailto:ddccontrol-devel-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sat, 08 Dec 2012 12:00:15 -0000
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello!
+
+AMD ADL is a part of the proprietary AMD Catalyst driver that is capable to
+provide access to displays' DDC interface. And it looks like there is no
+other way to implement DDC/CI on a Catalyst (direct PCI access for
+newer adapters is broken, no /dev/i2c either).
+
+Patch provides adapter and display enumeration (probing) and access to the
+corresponding i2c bus functionality (EDID, DDC/CI).
+
+Device naming scheme is like this: "adl:<adapter>:<display>".
+
+Please note that for unknown reason ADL thinks that there's multiple
+active adapters and yet they're the same.
+
+
+diff --git a/src/lib/amd_adl.c b/src/lib/amd_adl.c
+new file mode 100644
+index 0000000..40ca909
+--- /dev/null
++++ b/src/lib/amd_adl.c
+@@ -0,0 +1,306 @@
++/*
++    ddc/ci interface functions header
++    Copyright(c) 2012 Vitaly V. Bursov (vitaly@...67...)
++
++    This program is free software; you can redistribute it and/or modify
++    it under the terms of the GNU General Public License as published by
++    the Free Software Foundation; either version 2 of the License, or
++    (at your option) any later version.
++
++    This program is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this program; if not, write to the Free Software
++    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++*/
++
++#include "config.h"
++
++#ifdef HAVE_AMDADL
++#include <errno.h>
++#include <stdlib.h>
++#include <stdio.h>
++#include <fcntl.h>
++#include <string.h>
++#include <unistd.h>
++#include <sys/types.h>
++#include <sys/stat.h>
++#include <stdint.h>
++#include <dlfcn.h>
++
++#define MAX_DISPLAYS (64)
++
++#ifndef LINUX
++#define LINUX /* not Windows */
++#endif
++#include <ADL/adl_sdk.h>
++
++#include "amd_adl.h"
++#include "ddcci.h"
++
++#if 1
++# define D(x)
++#else
++# define D(x) x
++#endif
++
++struct adl_state {
++    int initialized;
++
++    void *lib;
++
++    int (*ADL_Main_Control_Create)(ADL_MAIN_MALLOC_CALLBACK, int );
++    int (*ADL_Main_Control_Destroy)();
++
++    int (*ADL_Adapter_NumberOfAdapters_Get)(int *lpNumAdapters);
++    int (*ADL_Adapter_AdapterInfo_Get)(LPAdapterInfo lpInfo, int iInputSize);
++    int (*ADL_Display_NumberOfDisplays_Get)(int iAdapterIndex, int *lpNumDisplays);
++    int (*ADL_Display_DisplayInfo_Get)(int  iAdapterIndex, int *lpNumDisplays, ADLDisplayInfo **lppInfo, int iForceDetect);
++    int (*ADL_Display_DDCBlockAccess_Get)(int iAdapterIndex, int iDisplayIndex, int iOption, int iCommandIndex, int iSendMsgLen, char *lpucSendMsgBuf, int *lpulRecvMsgLen, char *lpucRecvMsgBuf);
++
++    struct _displays {
++	int adapter_index;
++	int display_index;
++    } displays[MAX_DISPLAYS];
++    int displays_count;
++};
++
++static struct adl_state *adl;
++
++static void* __stdcall adl_malloc (int size)
++{
++    void* buffer = malloc (size);
++    if (buffer)
++	memset(buffer, 0, size);
++    return buffer;
++}
++
++static void __stdcall adl_free ( void **buffer )
++{
++    if (*buffer != NULL) {
++	free (*buffer);
++	*buffer = NULL;
++    }
++}
++
++int amd_adl_get_displays_count()
++{
++    if (!adl->initialized)
++	return -1;
++
++    return adl->displays_count;
++}
++
++int amd_adl_get_display(int idx, int *adapter, int *display)
++{
++    if (!adl->initialized)
++	return -1;
++
++    if (idx < 0 || idx >= adl->displays_count)
++	return -1;
++
++    if (adapter)
++	*adapter = adl->displays[idx].adapter_index;
++    if (display)
++	*display = adl->displays[idx].display_index;
++
++    return 0;
++}
++
++int amd_adl_check_display(int adapter, int display)
++{
++    int i;
++
++    if (!adl->initialized)
++	return -1;
++
++    for (i=0;i<adl->displays_count;i++){
++	if (adl->displays[i].adapter_index == adapter &&
++	    adl->displays[i].display_index == display)
++	    return 0;
++    }
++    return -1;
++}
++
++int amd_adl_i2c_read(int adapter, int display, unsigned int addr, unsigned char *buf, unsigned int len)
++{
++    int res;
++    char wbuf = addr << 1 | 1;
++
++    res = adl->ADL_Display_DDCBlockAccess_Get(adapter, display, 0, 0, 1, &wbuf, (int*)&len, (char*)buf);
++
++    D(fprintf(stderr, " >>>>>>>> adl i2c r on %d:%d a %x l %d err %d\n", adapter,  display, addr, len, res));
++
++    if (res != ADL_OK){
++	return -1;
++    }
++
++    return len;
++}
++
++int amd_adl_i2c_write(int adapter, int display, unsigned int addr, unsigned char *buf, unsigned int len)
++{
++    int res, rlen;
++    char *wbuf = alloca(len+1);
++
++    wbuf[0] = addr << 1;
++    memcpy(&wbuf[1], buf, len);
++
++    rlen = 0;
++    res = adl->ADL_Display_DDCBlockAccess_Get(adapter, display, 0, 0, len+1, wbuf, &rlen, NULL);
++
++    D(fprintf(stderr, " >>>>>>>> adl i2c w on %d:%d a %x l %d err %d\n", adapter,  display, addr, len, res));
++
++    if (res != ADL_OK){
++	return -1;
++    }
++
++    return len;
++}
++
++
++int amd_adl_init()
++{
++    int i;
++    int res;
++    int adapters_count;
++    AdapterInfo *adapter_info;
++
++    adl = adl_malloc(sizeof(struct adl_state));
++
++    if (!adl){
++	fprintf(stderr, "ADL error: malloc failed\n");
++	return 0;
++    }
++
++    adl->lib = dlopen("libatiadlxx.so", RTLD_LAZY|RTLD_GLOBAL);
++    if (!adl->lib){
++	if (get_verbosity())
++	    perror("ADL error: dlopen() failed\n");
++	return 0;
++    }
++#define LOADFUNC(_n_) \
++    do { \
++	adl->_n_ = dlsym(adl->lib, #_n_); \
++	if (!adl->_n_) { \
++	    fprintf(stderr, "ADL error: loading symbol %s\n", #_n_); \
++	    return 0; \
++	} \
++    } while (0)
++
++    LOADFUNC(ADL_Main_Control_Create);
++    LOADFUNC(ADL_Main_Control_Destroy);
++
++    LOADFUNC(ADL_Adapter_NumberOfAdapters_Get);
++    LOADFUNC(ADL_Adapter_AdapterInfo_Get);
++    LOADFUNC(ADL_Display_NumberOfDisplays_Get);
++    LOADFUNC(ADL_Display_DisplayInfo_Get);
++    LOADFUNC(ADL_Display_DDCBlockAccess_Get);
++
++#undef LOADFUNC
++
++    res = adl->ADL_Main_Control_Create(adl_malloc, 1); // retrieve adapter information only for adapters that are physically present and enabled
++
++    if (res != ADL_OK){
++	if (get_verbosity())
++		fprintf(stderr, "Failed to initialize ADL: %d\n", res);
++	return 0;
++    }
++
++    res = adl->ADL_Adapter_NumberOfAdapters_Get(&adapters_count);
++    if (res != ADL_OK){
++	if (get_verbosity())
++	    fprintf(stderr, "Failed to get number of ADL adapters: %d\n", res);
++	return 0;
++    }
++
++    if (adapters_count < 1){
++	if (get_verbosity())
++	    fprintf(stderr, "No ADL adapters found.\n");
++	return 0;
++    }
++
++    adapter_info = adl_malloc(sizeof(AdapterInfo) * adapters_count);
++    if (!adapter_info){
++	fprintf(stderr, "ADL error: malloc failed\n");
++	return 0;
++    }
++
++    res = adl->ADL_Adapter_AdapterInfo_Get(adapter_info, sizeof(AdapterInfo) * adapters_count);
++    if (res != ADL_OK){
++	fprintf(stderr, "Failed to get ADL adapters info: %d\n", res);
++	return 0;
++    }
++
++    for (i=0;i<adapters_count;i++){
++	int aidx = adapter_info[i].iAdapterIndex;
++	int numdisplays;
++	int j;
++	ADLDisplayInfo *display_info;
++
++	if (adl->ADL_Display_DisplayInfo_Get(aidx, &numdisplays, &display_info, 0) != ADL_OK)
++	    continue;
++
++	D(printf("\t ================================\n"));
++	D(printf("\t %d: %s - %s %d %x:%x.%x %s\n", adapter_info[i].iAdapterIndex, adapter_info[i].strAdapterName, adapter_info[i].strDisplayName,
++		adapter_info[i].iPresent,
++		adapter_info[i].iBusNumber,
++		adapter_info[i].iDeviceNumber,
++		adapter_info[i].iFunctionNumber,
++		adapter_info[i].strUDID));
++
++	for (j=0;j<numdisplays;j++){
++	    int didx;
++
++	    if ((display_info[j].iDisplayInfoValue & ADL_DISPLAY_DISPLAYINFO_DISPLAYCONNECTED) &&
++		(display_info[j].iDisplayInfoValue & ADL_DISPLAY_DISPLAYINFO_DISPLAYMAPPED)){
++
++		didx = display_info[j].displayID.iDisplayLogicalIndex;
++
++		D(printf("\t\t found display %s at %d:%d\n",
++		    display_info[j].strDisplayName, aidx, didx));
++
++		adl->displays[adl->displays_count].adapter_index = aidx;
++		adl->displays[adl->displays_count].display_index = didx;
++		adl->displays_count++;
++		if (adl->displays_count >= MAX_DISPLAYS){
++		    break;
++		}
++	    }
++	}
++
++	adl_free((void**)&display_info);
++
++	if (adl->displays_count >= MAX_DISPLAYS){
++	    break;
++	}
++    }
++
++    adl_free((void**)&adapter_info);
++
++    D(fprintf(stderr, "adl initialized, %d displays\n", adl->displays_count));
++
++    adl->initialized = 1;
++    return 1;
++}
++
++void amd_adl_free()
++{
++    if (!adl)
++	return;
++
++    adl->ADL_Main_Control_Destroy();
++
++    if (adl->lib){
++	dlclose(adl->lib);
++	adl->lib = NULL;
++    }
++
++    adl_free((void**)&adl);
++}
++
++#endif /* HAVE_AMDADL */
++
+diff --git a/src/lib/amd_adl.h b/src/lib/amd_adl.h
+new file mode 100644
+index 0000000..d6c7bc1
+--- /dev/null
++++ b/src/lib/amd_adl.h
+@@ -0,0 +1,33 @@
++/*
++    ddc/ci interface functions header
++    Copyright(c) 2012 Vitaly V. Bursov (vitaly@...67...)
++
++    This program is free software; you can redistribute it and/or modify
++    it under the terms of the GNU General Public License as published by
++    the Free Software Foundation; either version 2 of the License, or
++    (at your option) any later version.
++
++    This program is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this program; if not, write to the Free Software
++    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++*/
++
++#ifndef AMD_ADL_H
++#define AMD_ADL_H
++
++int amd_adl_init();
++void amd_adl_free();
++
++int amd_adl_get_displays_count();
++int amd_adl_get_display(int idx, int *adapter, int *display);
++int amd_adl_check_display(int adapter, int display);
++
++int amd_adl_i2c_read(int adapter, int display, unsigned int addr, unsigned char *buf, unsigned int len);
++int amd_adl_i2c_write(int adapter, int display, unsigned int addr, unsigned char *buf, unsigned int len);
++
++#endif /* AMD_ADL_H */
+diff --git a/src/lib/ddcci.c b/src/lib/ddcci.c
+index 4492df5..186d597 100644
+--- a/src/lib/ddcci.c
++++ b/src/lib/ddcci.c
+@@ -38,6 +38,7 @@
+  #include <sys/stat.h>
+
+  #include "ddcci.h"
++#include "amd_adl.h"
+
+  #include "conf.h"
+
+@@ -239,12 +240,22 @@ int ddcci_init(char* usedatadir)
+  		printf(_("Failed to initialize ddccontrol database...\n"));
+  		return 0;
+  	}
++#ifdef HAVE_AMDADL
++	if (!amd_adl_init()){
++		if (verbosity) {
++			printf(_("Failed to initialize ADL...\n"));
++		}
++	}
++#endif
+  	return ddcpci_init();
+  }
+
+  void ddcci_release() {
+  	ddcpci_release();
+  	ddcci_release_db();
++#ifdef HAVE_AMDADL
++	amd_adl_free();
++#endif
+  }
+
+  /* write len bytes (stored in buf) to i2c address addr */
+@@ -318,6 +329,12 @@ static int i2c_write(struct monitor* mon, unsigned int addr, unsigned char *buf,
+  		return adata.status;
+  	}
+  #endif
++#ifdef HAVE_AMDADL
++	case type_adl:
++	{
++		return amd_adl_i2c_write(mon->adl_adapter, mon->adl_display, addr, buf, len);
++	}
++#endif
+  	default:
+  		return -1;
+  	}
+@@ -396,6 +413,12 @@ static int i2c_read(struct monitor* mon, unsigned int addr, unsigned char *buf,
+  		return ret - ANSWER_SIZE;
+  	}
+  #endif
++#ifdef HAVE_AMDADL
++	case type_adl:
++	{
++		return amd_adl_i2c_read(mon->adl_adapter, mon->adl_display, addr, buf, len);
++	}
++#endif
+  	default:
+  		return -1;
+  	}
+@@ -929,6 +952,23 @@ static int ddcci_open_with_addr(struct monitor* mon, const char* filename, int a
+  		mon->type = pci;
+  	}
+  #endif
++#ifdef HAVE_AMDADL
++	else if (strncmp(filename, "adl:", 4) == 0) {
++		mon->adl_adapter = -1;
++		mon->adl_display = -1;
++		if (sscanf(filename, "adl:%d:%d", &mon->adl_adapter, &mon->adl_display) != 2){
++			fprintf(stderr, _("Invalid filename (%s).\n"), filename);
++			return -3;
++		}
++
++		if (amd_adl_check_display(mon->adl_adapter, mon->adl_display)){
++			fprintf(stderr, _("ADL display not found (%s).\n"), filename);
++			return -3;
++		}
++
++		mon->type = type_adl;
++	}
++#endif
+  	else {
+  		fprintf(stderr, _("Invalid filename (%s).\n"), filename);
+  		return -3;
+@@ -1167,6 +1207,28 @@ struct monitorlist* ddcci_probe() {
+  	
+  	closedir(dirp);
+  	
++#ifdef HAVE_AMDADL
++	/* ADL probe */
++	int adl_disp;
++
++	for (adl_disp=0; adl_disp<amd_adl_get_displays_count(); adl_disp++){
++		int adapter, display;
++		if (amd_adl_get_display(adl_disp, &adapter, &display))
++		    break;
++
++			filename = malloc(64);
++			snprintf(filename, 64, "adl:%d:%d", adapter, display);
++			if (verbosity) {
++				printf(_("Found ADL display (%s)\n"), filename);
++			}
++			ddcci_probe_device(filename, &current, &last);
++			if (!verbosity) {
++				printf(".");
++				fflush(stdout);
++		}
++	}
++#endif
++
+  	if (!verbosity)
+  		printf("\n");
+  	
+diff --git a/src/lib/ddcci.h b/src/lib/ddcci.h
+index c058051..cac907b 100644
+--- a/src/lib/ddcci.h
++++ b/src/lib/ddcci.h
+@@ -63,6 +63,9 @@ struct caps {
+  struct monitor {
+  	int fd;
+  	unsigned int addr;
++#ifdef HAVE_AMDADL
++	int adl_adapter, adl_display;
++#endif
+  	char pnpid[8];
+  	unsigned char digital; /* 0 - digital, 1 - analog */
+  	struct timeval last;
+@@ -76,6 +79,9 @@ struct monitor {
+  #ifdef HAVE_DDCPCI
+  		,pci
+  #endif
++#ifdef HAVE_AMDADL
++		,type_adl
++#endif
+  	} type;
+  	int probing; /* are we probing? */
+  	
+
+

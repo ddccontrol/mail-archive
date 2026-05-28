@@ -1,0 +1,2920 @@
+From el_cubano@...1... Wed Jan 16 19:22:21 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFLKc-0004aT-6k@...25...>
+Date: Wed, 16 Jan 2008 19:22:18 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [762]
+	debian/ddccontrol/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 03:22:21 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 762
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=762&view=rev
+Author:   el_cubano
+Date:     2008-01-16 19:22:17 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+debian/control: Add armel to arch list (Closes: #461089)
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/changelog
+    debian/ddccontrol/trunk/debian/control
+
+Modified: debian/ddccontrol/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol/trunk/debian/changelog	2007-11-17 21:20:22 UTC (rev 761)
++++ debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:22:17 UTC (rev 762)
+@@ -1,14 +1,14 @@
+ ddccontrol (0.4.2-4) UNRELEASED; urgency=low
+ 
+-  * NOT RELEASED YET
+   * debian/watch: Switch to Debian QA's SourceForge redirector.
+   * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
+   * debian/ddccontrol.doc-base: add file
+   * debian/rules: placate lintian by properly calling '$(MAKE) distclean'
+   * debian/control: Update to modern substvars (e.g., ${source:Version})
+   * debian/gddccontrol.menu: Update to comply with new menu policy
++  * debian/control: Add armel to arch list (Closes: #461089)
+ 
+- -- Roberto C. Sanchez <roberto@...24...>  Sat, 17 Nov 2007 16:19:34 -0500
++ -- Roberto C. Sanchez <roberto@...24...>  Wed, 16 Jan 2008 22:15:15 -0500
+ 
+ ddccontrol (0.4.2-3) unstable; urgency=low
+ 
+
+Modified: debian/ddccontrol/trunk/debian/control
+===================================================================
+--- debian/ddccontrol/trunk/debian/control	2007-11-17 21:20:22 UTC (rev 761)
++++ debian/ddccontrol/trunk/debian/control	2008-01-17 03:22:17 UTC (rev 762)
+@@ -9,7 +9,7 @@
+ Vcs-Svn: https://ddccontrol.svn.sourceforge.net/svnroot/ddccontrol
+ 
+ Package: gddccontrol
+-Architecture: i386 amd64 ia64 alpha arm
++Architecture: i386 amd64 ia64 alpha arm armel
+ Depends: ddccontrol (= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
+ Description: a program to control monitor parameters
+  DDCcontrol is a tool used to control monitor parameters, like brightness
+@@ -17,7 +17,7 @@
+  in front of the monitor.  This package includes a GNOME-based GUI.
+ 
+ Package: ddccontrol
+-Architecture: i386 amd64 ia64 alpha arm
++Architecture: i386 amd64 ia64 alpha arm armel
+ Depends: ddccontrol-db (>= 20060308), ${shlibs:Depends}, ${misc:Depends}
+ Description: a program to control monitor parameters
+  DDCcontrol is a tool used to control monitor parameters, like brightness
+@@ -26,14 +26,14 @@
+ 
+ Package: libddccontrol-dev
+ Section: libdevel
+-Architecture: i386 amd64 ia64 alpha arm
++Architecture: i386 amd64 ia64 alpha arm armel
+ Depends: libddccontrol0 (= ${binary:Version})
+ Description: development library for ddccontrol
+  Header files and static library for compiling against libddccontrol.
+ 
+ Package: libddccontrol0
+ Section: libs
+-Architecture: i386 amd64 ia64 alpha arm
++Architecture: i386 amd64 ia64 alpha arm armel
+ Depends: ${shlibs:Depends}
+ Description: shared library for ddccontrol
+  Shared library for use by ddccontrol.
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Wed Jan 16 19:22:50 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFLL6-0004ar-GG@...25...>
+Date: Wed, 16 Jan 2008 19:22:48 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [763]
+	debian/ddccontrol/trunk/debian/changelog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 03:22:50 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 763
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=763&view=rev
+Author:   el_cubano
+Date:     2008-01-16 19:22:48 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+Prepare for unstable upload.
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/changelog
+
+Modified: debian/ddccontrol/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:22:17 UTC (rev 762)
++++ debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:22:48 UTC (rev 763)
+@@ -1,4 +1,4 @@
+-ddccontrol (0.4.2-4) UNRELEASED; urgency=low
++ddccontrol (0.4.2-4) unstable; urgency=low
+ 
+   * debian/watch: Switch to Debian QA's SourceForge redirector.
+   * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Wed Jan 16 19:46:48 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFLiJ-0001AE-A2@...25...>
+Date: Wed, 16 Jan 2008 19:46:47 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [764]
+	debian/ddccontrol/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 03:46:48 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 764
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=764&view=rev
+Author:   el_cubano
+Date:     2008-01-16 19:46:46 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+* debian/control: Update to Standards-Version 3.7.3 (no changes)
+* debian/ddccontrol.menu: Don't use obsolete Apps section
+* debian/control: Make gddccontrol bin-nmuable
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/changelog
+    debian/ddccontrol/trunk/debian/control
+    debian/ddccontrol/trunk/debian/ddccontrol.menu
+
+Modified: debian/ddccontrol/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:22:48 UTC (rev 763)
++++ debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:46:46 UTC (rev 764)
+@@ -7,8 +7,11 @@
+   * debian/control: Update to modern substvars (e.g., ${source:Version})
+   * debian/gddccontrol.menu: Update to comply with new menu policy
+   * debian/control: Add armel to arch list (Closes: #461089)
++  * debian/control: Update to Standards-Version 3.7.3 (no changes)
++  * debian/ddccontrol.menu: Don't use obsolete Apps section
++  * debian/control: Make gddccontrol bin-nmuable
+ 
+- -- Roberto C. Sanchez <roberto@...24...>  Wed, 16 Jan 2008 22:15:15 -0500
++ -- Roberto C. Sanchez <roberto@...24...>  Wed, 16 Jan 2008 22:44:36 -0500
+ 
+ ddccontrol (0.4.2-3) unstable; urgency=low
+ 
+
+Modified: debian/ddccontrol/trunk/debian/control
+===================================================================
+--- debian/ddccontrol/trunk/debian/control	2008-01-17 03:22:48 UTC (rev 763)
++++ debian/ddccontrol/trunk/debian/control	2008-01-17 03:46:46 UTC (rev 764)
+@@ -4,13 +4,13 @@
+ Maintainer: Roberto C. Sanchez <roberto@...24...>
+ Homepage: http://ddccontrol.sourceforge.net/
+ Build-Depends: debhelper (>= 5), autotools-dev, pciutils-dev, libpanel-applet2-dev, intltool, libxml2-dev, xml-core, xsltproc, tidy, zlib1g-dev
+-Standards-Version: 3.7.2
++Standards-Version: 3.7.3
+ Vcs-Browser: http://ddccontrol.svn.sourceforge.net/viewvc/ddccontrol/
+ Vcs-Svn: https://ddccontrol.svn.sourceforge.net/svnroot/ddccontrol
+ 
+ Package: gddccontrol
+ Architecture: i386 amd64 ia64 alpha arm armel
+-Depends: ddccontrol (= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
++Depends: ddccontrol (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+ Description: a program to control monitor parameters
+  DDCcontrol is a tool used to control monitor parameters, like brightness
+  and contrast, without using the OSD (On Screen Display) and the buttons
+
+Modified: debian/ddccontrol/trunk/debian/ddccontrol.menu
+===================================================================
+--- debian/ddccontrol/trunk/debian/ddccontrol.menu	2008-01-17 03:22:48 UTC (rev 763)
++++ debian/ddccontrol/trunk/debian/ddccontrol.menu	2008-01-17 03:46:46 UTC (rev 764)
+@@ -1,2 +1,2 @@
+-?package(ddccontrol):needs="text" section="Apps/System"\
++?package(ddccontrol):needs="text" section="Applications/System"\
+   title="DDCcontrol" command="/usr/bin/ddccontrol"
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Wed Jan 16 19:47:12 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFLih-0001NC-It@...25...>
+Date: Wed, 16 Jan 2008 19:47:11 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [765]
+	debian/ddccontrol/trunk/debian/changelog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 03:47:12 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 765
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=765&view=rev
+Author:   el_cubano
+Date:     2008-01-16 19:47:08 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+Fix wrong changelog entry
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/changelog
+
+Modified: debian/ddccontrol/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:46:46 UTC (rev 764)
++++ debian/ddccontrol/trunk/debian/changelog	2008-01-17 03:47:08 UTC (rev 765)
+@@ -1,7 +1,7 @@
+ ddccontrol (0.4.2-4) unstable; urgency=low
+ 
+   * debian/watch: Switch to Debian QA's SourceForge redirector.
+-  * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
++  * debian/control: Add Vcs-Browser and Vcs-Svn fields.
+   * debian/ddccontrol.doc-base: add file
+   * debian/rules: placate lintian by properly calling '$(MAKE) distclean'
+   * debian/control: Update to modern substvars (e.g., ${source:Version})
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Wed Jan 16 19:59:21 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFLuR-0003uL-BU@...25...>
+Date: Wed, 16 Jan 2008 19:59:19 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [766]
+	debian/ddccontrol/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 03:59:21 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 766
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=766&view=rev
+Author:   el_cubano
+Date:     2008-01-16 19:59:18 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+Clean up menu file and doc-base file.
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/ddccontrol.doc-base
+    debian/ddccontrol/trunk/debian/ddccontrol.menu
+
+Modified: debian/ddccontrol/trunk/debian/ddccontrol.doc-base
+===================================================================
+--- debian/ddccontrol/trunk/debian/ddccontrol.doc-base	2008-01-17 03:47:08 UTC (rev 765)
++++ debian/ddccontrol/trunk/debian/ddccontrol.doc-base	2008-01-17 03:59:18 UTC (rev 766)
+@@ -1,6 +1,6 @@
+ Document: ddccontrol
+ Title: DDCControl Documentation
+-Athor: Nicolas Boichat (2004-2006)
++Author: Nicolas Boichat (2004-2006)
+ Abstract: Documentation on how to use DDCControl and what devices are supported.
+ Section: Apps/System
+ 
+@@ -8,4 +8,3 @@
+ Index: /usr/share/doc/ddccontrol/html/index.html
+ Files: /usr/share/doc/ddccontrol/html/*.html
+ 
+-  
+
+Modified: debian/ddccontrol/trunk/debian/ddccontrol.menu
+===================================================================
+--- debian/ddccontrol/trunk/debian/ddccontrol.menu	2008-01-17 03:47:08 UTC (rev 765)
++++ debian/ddccontrol/trunk/debian/ddccontrol.menu	2008-01-17 03:59:18 UTC (rev 766)
+@@ -1,2 +1,2 @@
+-?package(ddccontrol):needs="text" section="Applications/System"\
++?package(ddccontrol):needs="text" section="Applications/System/Hardware"\
+   title="DDCcontrol" command="/usr/bin/ddccontrol"
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Wed Jan 16 20:09:45 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JFM4W-00062N-PM@...25...>
+Date: Wed, 16 Jan 2008 20:09:44 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [767]
+	debian/ddccontrol/tags/0.4.2-4/
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Thu, 17 Jan 2008 04:09:45 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 767
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=767&view=rev
+Author:   el_cubano
+Date:     2008-01-16 20:09:44 -0800 (Wed, 16 Jan 2008)
+
+Log Message:
+-----------
+[svn-buildpackage] Tagging ddccontrol (0.4.2-4)
+
+Added Paths:
+-----------
+    debian/ddccontrol/tags/0.4.2-4/
+
+Copied: debian/ddccontrol/tags/0.4.2-4 (from rev 766, debian/ddccontrol/trunk)
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Sun Jan 20 19:05:00 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JGmy2-0005hY-Og@...25...>
+Date: Sun, 20 Jan 2008 19:04:58 -0800
+X-Spam-Score: -2.6 (--)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+	-2.8 ALL_TRUSTED            Did not pass through any untrusted hosts
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [768]
+	debian/ddccontrol-db/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 21 Jan 2008 03:05:00 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 768
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=768&view=rev
+Author:   el_cubano
+Date:     2008-01-20 19:04:58 -0800 (Sun, 20 Jan 2008)
+
+Log Message:
+-----------
+Sync arch list of recommends since ddccontrol was uploaded to include armel
+
+Modified Paths:
+--------------
+    debian/ddccontrol-db/trunk/debian/changelog
+    debian/ddccontrol-db/trunk/debian/control
+
+Modified: debian/ddccontrol-db/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/changelog	2008-01-17 04:09:44 UTC (rev 767)
++++ debian/ddccontrol-db/trunk/debian/changelog	2008-01-21 03:04:58 UTC (rev 768)
+@@ -2,12 +2,12 @@
+ 
+   * NOT RELEASED YET
+   * Updated to debhelper compatibility level 5.
+-  * Recommends applies only to alpha, amd64, arm, i386, ia64 (Closes: #436649)
++  * Recommends applies to i386 amd64 ia64 alpha arm armel (Closes: #436649)
+   * debian/watch: Switch to Debian QA's SourceForge redirector
+   * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
+   * debian/rules: placate lintian by properly calling '$(MAKE) distclean'
+ 
+- -- Roberto C. Sanchez <roberto@...24...>  Sat, 17 Nov 2007 16:02:41 -0500
++ -- Roberto C. Sanchez <roberto@...24...>  Sun, 20 Jan 2008 22:03:11 -0500
+ 
+ ddccontrol-db (20061014-1) unstable; urgency=low
+ 
+
+Modified: debian/ddccontrol-db/trunk/debian/control
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/control	2008-01-17 04:09:44 UTC (rev 767)
++++ debian/ddccontrol-db/trunk/debian/control	2008-01-21 03:04:58 UTC (rev 768)
+@@ -12,7 +12,7 @@
+ Package: ddccontrol-db
+ Architecture: all
+ Depends: 
+-Recommends: ddccontrol [alpha amd64 arm i386 ia64]
++Recommends: ddccontrol [i386 amd64 ia64 alpha arm armel]
+ Description: monitor database for ddccontrol
+  Database of monitors used by ddccontrol.  This is mostly useless without
+  ddccontrol.
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:13:02 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDII-00088q-A5@...25...>
+Date: Mon, 18 Feb 2008 13:12:58 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [769]
+	trunk/ddccontrol-db/db/monitor/DEL400D.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:13:03 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 769
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=769&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:12:57 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Typo fix
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/db/monitor/DEL400D.xml
+
+Modified: trunk/ddccontrol-db/db/monitor/DEL400D.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/DEL400D.xml	2008-01-21 03:04:58 UTC (rev 768)
++++ trunk/ddccontrol-db/db/monitor/DEL400D.xml	2008-02-18 21:12:57 UTC (rev 769)
+@@ -2,7 +2,7 @@
+ <!--- File provided by David R. Piegdon -->
+ <monitor name="Dell 1905FP (digital)" init="standard">
+ 	<caps add="(vcp(04 06 08 10 14 16 18 1A 68))"/>
+-	<!-- DVI: the following do not work or do not make sence
++	<!-- DVI: the following do not work or do not make sense
+ 		0x0e	coarse
+ 		0x12	contrast
+ 		0x1e	auto
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:16:00 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDLC-0000Mf-4Q@...25...>
+Date: Mon, 18 Feb 2008 13:15:58 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [770]
+	trunk/ddccontrol-db/db/monitor/DELA017.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:16:00 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 770
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=770&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:15:57 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Support for Dell 2407WFP
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/DELA017.xml
+
+Added: trunk/ddccontrol-db/db/monitor/DELA017.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/DELA017.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/DELA017.xml	2008-02-18 21:15:57 UTC (rev 770)
+@@ -0,0 +1,33 @@
++<?xml version="1.0"?>
++<monitor name="Dell 2407WFP (DVI)" init="standard">
++	<!--- CAPS: type(LCD)vcp(page0(02 04 05 08 10 14(01 06 08 0B) 16 18 1A 1D 1E 20 30 52 AC AE B2 B6 C0 C6 C8 C9 CA D6(01 02 03 04) DF)) -->
++	<caps add="(type(lcd)vcp(page0(02 04 05 08 10 14(01 06 08 0B) 16 18 1A 1D 1E 20 30 52 AC AE B2 B6 C0 C6 C8 C9 CA D6(01 02 03 04) DF)))"/>
++	<controls>
++		<!--- Control 0x02: +/256/65535 [???] -->
++		<control id="colorpreset" address="0x14">
++			<value id="warm"  value="0x04"/>
++			<value id="srgb"  value="0x05"/>
++			<value id="cool"  value="0x08"/>
++			<value id="user1" value="0x0b"/>
++		</control>
++		<!--- Control 0x68: +/256/65535 [???] -->
++		<!--- Control 0x95: +/0/2047 [???] -->
++		<!--- Control 0x96: +/0/2047 [???] -->
++		<!--- Control 0x97: +/0/2047 [???] -->
++		<!--- Control 0x98: +/0/2047 [???] -->
++		<!--- Control 0x9b: +/255/255 [???] -->
++		<!--- Control 0x9d: +/255/255 [???] -->
++		<!--- Control 0x9f: +/255/255 [???] -->
++		<!--- Control 0xac: +/45058/65535 [???] -->
++		<!--- Control 0xae: +/12546/65535 [???] -->
++		<!--- Control 0xb6: +/768/65535 [???] -->
++		<!--- Control 0xc0: +/0/65535 [???] -->
++		<!--- Control 0xc6: +/65535/65535 [???] -->
++		<!--- Control 0xc8: +/18946/65535 [???] -->
++		<!--- Control 0xc9: +/258/65535 [???] -->
++		<!--- Control 0xca: +/256/65535 [???] -->
++		<!--- Control 0xdf: +/512/65535 [???] -->
++		<!--- Control 0xff: +/0/65535 [???] -->
++	</controls>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:16:16 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDLR-0000Ph-9B@...25...>
+Date: Mon, 18 Feb 2008 13:16:13 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [771]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:16:16 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 771
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=771&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:16:11 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 21:15:57 UTC (rev 770)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 21:16:11 UTC (rev 771)
+@@ -1,3 +1,7 @@
++2008-02-18 21:15  Roberto C. Sanchez <roberto@...24...>
++
++	* [r770] db/monitor/DELA017.xml: Support for Dell 2407WFP
++
+ 2007-10-29 07:06  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r756] po/LINGUAS, po/es.po: Add Spanish translation
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:21:21 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDQJ-0001dp-MV@...25...>
+Date: Mon, 18 Feb 2008 13:21:15 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [772]
+	trunk/ddccontrol-db/db/monitor/DEL4016.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:21:21 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 772
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=772&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:21:14 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Dell 3007WFP, thanks to Aurobinda Maharana
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/DEL4016.xml
+
+Added: trunk/ddccontrol-db/db/monitor/DEL4016.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/DEL4016.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/DEL4016.xml	2008-02-18 21:21:14 UTC (rev 772)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="Dell 3007WFP" init="standard">
++	<!--- CAPS: prot(monitor)type(LCD)model(DELL3007)cmds(01 03 0C F3)vcp(04 10 ) -->
++	<caps add="(type(lcd)vcp(01 03 0C F3)vcp(04 10))"/>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:21:49 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDQg-0001gF-02@...25...>
+Date: Mon, 18 Feb 2008 13:21:38 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [773]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:21:49 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 773
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=773&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:21:37 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 21:21:14 UTC (rev 772)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 21:21:37 UTC (rev 773)
+@@ -1,3 +1,8 @@
++2008-02-18 21:21  Roberto C. Sanchez <roberto@...24...>
++
++	* [r772] db/monitor/DEL4016.xml: Add support for Dell 3007WFP,
++	  thanks to Aurobinda Maharana
++
+ 2008-02-18 21:15  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r770] db/monitor/DELA017.xml: Support for Dell 2407WFP
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:41:43 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDk5-0004Io-OL@...25...>
+Date: Mon, 18 Feb 2008 13:41:41 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [775]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:41:43 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 775
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=775&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:41:26 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 21:40:46 UTC (rev 774)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 21:41:26 UTC (rev 775)
+@@ -1,3 +1,7 @@
++2008-02-18 21:40  Roberto C. Sanchez <roberto@...24...>
++
++	* [r774] db/monitor/ACRAD63.xml: Add support for Acer AL1916
++
+ 2008-02-18 21:21  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r772] db/monitor/DEL4016.xml: Add support for Dell 3007WFP,
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:41:43 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDjb-0004Gn-0h@...25...>
+Date: Mon, 18 Feb 2008 13:41:11 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [774]
+	trunk/ddccontrol-db/db/monitor/ACRAD63.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:41:44 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 774
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=774&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:40:46 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Acer AL1916
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/ACRAD63.xml
+
+Added: trunk/ddccontrol-db/db/monitor/ACRAD63.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/ACRAD63.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/ACRAD63.xml	2008-02-18 21:40:46 UTC (rev 774)
+@@ -0,0 +1,18 @@
++<?xml version="1.0"?>
++<monitor name="Acer AL1916" init="standard">
++	<!--- CAPS: (prot(monitor)type(lcd)model(AL1917)cmds(01 02 03 07 0C E3 F3)vcp(02 04 05 06 08 0B 0C 0E 10 12 14(01 02 05 08 0B) 16 18 1A 1E 20 30 3E 6C 6E 70 AC AE B2 B6 C6 C8 C9 D6(01 04) DF FF)mswhql(1)mccs_ver(2.0)asset_eep(64)mpu(01)) -->
++	<caps add="(vcp(02 04 05 06 08 0b 0c 0e 10 12 14 16 18 1a 1e 20 30 3e 6c 6e 70 ac ae b2 b6 c6 c8 c9 d6 df ff))" />
++	<!--- Control 0x02: +/1/2 C [???] -->
++	<!--- Control 0x0b: +/100/0 C [???] -->
++	<!--- Control 0x0c: +/63/63 C [???] -->
++	<!--- Control 0x14: +/8/13 C [???] -->
++	<!--- Control 0xac: +/8000/0 C [???] -->
++	<!--- Control 0xae: +/7500/0 C [???] -->
++	<!--- Control 0xb2: +/1/0 C [???] -->
++	<!--- Control 0xb6: +/3/0 C [???] -->
++	<!--- Control 0xc6: +/0/0 C [???] -->
++	<!--- Control 0xc8: +/5/0 C [???] -->
++	<!--- Control 0xc9: +/256/0 C [???] -->
++	<!--- Control 0xdf: +/512/0 C [???] -->
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:55:48 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDwm-0004o7-31@...25...>
+Date: Mon, 18 Feb 2008 13:54:48 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [776]
+	trunk/ddccontrol-db/db/monitor/DELD014.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:55:49 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 776
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=776&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:53:58 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Dell E228WFP
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/DELD014.xml
+
+Added: trunk/ddccontrol-db/db/monitor/DELD014.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/DELD014.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/DELD014.xml	2008-02-18 21:53:58 UTC (rev 776)
+@@ -0,0 +1,30 @@
++<?xml version="1.0"?>
++<monitor name="Dell E228WFP" init="standard">
++	<!--- CAPS: vcp(02 04 05 06 08 0B 0C 0E 10 12 14(05 06 08 0B) 16 18 1A 1E 20 30 3E 52 6C 6E 70 AC AE B2 B6 C0 C6 C8 C9 CA D6 DF) type(LCD) mccs_ver(2.0) asset_eep(32) mswhql(1) -->
++	<caps add="(type(lcd)vcp(02 04 05 06 08 0B 0C 0E 10 12 14(05 06 08 0B) 16 18 1A 1E 20 30 3E 52 6C 6E 70 AC AE B2 B6 C0 C6 C8 C9 CA D6 DF))"/>
++	<controls>
++		<!--- Control 0x02: +/2/2   [???] -->
++		<control id="colorpreset" address="0x14">
++			<value id="warm"  value="0x05"/>
++			<value id="srgb"  value="0x06"/>
++			<value id="cool"  value="0x08"/>
++			<value id="user1" value="0x0b"/>
++		</control>
++		<!--- Control 0x68: +/2/65535   [???] -->
++		<!--- Control 0x9b: +/255/255   [???] -->
++		<!--- Control 0x9d: +/255/255   [???] -->
++		<!--- Control 0x9f: +/255/255   [???] -->
++		<!--- Control 0xac: +/65300/65280   [???] -->
++		<!--- Control 0xae: +/6000/65535   [???] -->
++		<!--- Control 0xb2: +/0/8   [???] -->
++		<!--- Control 0xb6: +/3/8   [???] -->
++		<!--- Control 0xc0: +/0/65535   [???] -->
++		<!--- Control 0xc6: +/65535/65535   [???] -->
++		<!--- Control 0xc8: +/2/87   [???] -->
++		<!--- Control 0xc9: +/258/65535   [???] -->
++		<!--- Control 0xca: +/2/2   [???] -->
++		<!--- Control 0xcc: +/10/16   [???] -->
++		<!--- Control 0xdf: +/512/0   [???] -->
++	</controls>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 13:56:54 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRDy9-0004rE-57@...25...>
+Date: Mon, 18 Feb 2008 13:56:13 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [777]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 21:56:55 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 777
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=777&view=rev
+Author:   el_cubano
+Date:     2008-02-18 13:55:17 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 21:53:58 UTC (rev 776)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 21:55:17 UTC (rev 777)
+@@ -1,3 +1,7 @@
++2008-02-18 21:53  Roberto C. Sanchez <roberto@...24...>
++
++	* [r776] db/monitor/DELD014.xml: Add support for Dell E228WFP
++
+ 2008-02-18 21:40  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r774] db/monitor/ACRAD63.xml: Add support for Acer AL1916
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:21:52 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREMm-0007W6-Sl@...25...>
+Date: Mon, 18 Feb 2008 14:21:40 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [778]
+	trunk/ddccontrol-db/db/monitor/BNQ76CD.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:21:52 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 778
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=778&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:21:10 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for BenQ FP222WH
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/BNQ76CD.xml
+
+Added: trunk/ddccontrol-db/db/monitor/BNQ76CD.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/BNQ76CD.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/BNQ76CD.xml	2008-02-18 22:21:10 UTC (rev 778)
+@@ -0,0 +1,18 @@
++<?xml version="1.0"?>
++<monitor name="BenQ FP222WH" init="standard">
++	<!--- CAPS: (vcp(02 04 05 06 08 0E 10 12 14(02 04 05 08) 16 18 1A 1E 20 30 3E 52 6C 6E 70 AC AE B2 B6 C6 C8 C9 CA D6(01 05) DF)type(LCD)mccs_ver(2.0)mswhql(1)) -->
++	<caps add="(vcp(02 04 05 06 08 0e 10 12 14 16 18 1a 1e 20 30 3e 52 6c 6e 70 ac ae b2 b6 c6 c8 c9 ca d6 df))"/>
++	<!--- Control 0x02: +/1/65535 C [???] -->
++	<!--- Control 0x14: +/2/8 C [???] -->
++	<!--- Control 0x52: +/0/65535 C [???] -->
++	<!--- Control 0xac: +/65/65535 C [???] -->
++	<!--- Control 0xae: +/59/65535 C [???] -->
++	<!--- Control 0xb2: +/1/8 C [???] -->
++	<!--- Control 0xb6: +/3/5 C [???] -->
++	<!--- Control 0xc6: +/90/255 C [???] -->
++	<!--- Control 0xc8: +/5/146 C [???] -->
++	<!--- Control 0xc9: +/257/65535 C [???] -->
++	<!--- Control 0xca: +/2/2 C [???] -->
++	<!--- Control 0xdf: +/512/65535 C [???] -->
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:22:58 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRENT-0007Yl-3P@...25...>
+Date: Mon, 18 Feb 2008 14:22:31 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [779]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:22:58 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 779
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=779&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:21:52 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:21:10 UTC (rev 778)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:21:52 UTC (rev 779)
+@@ -1,3 +1,7 @@
++2008-02-18 22:21  Roberto C. Sanchez <roberto@...24...>
++
++	* [r778] db/monitor/BNQ76CD.xml: Add support for BenQ FP222WH
++
+ 2008-02-18 21:53  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r776] db/monitor/DELD014.xml: Add support for Dell E228WFP
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:29:59 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREUR-0008AP-Ug@...25...>
+Date: Mon, 18 Feb 2008 14:29:36 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [780]
+	trunk/ddccontrol-db/db/monitor/SNY07B0.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:29:59 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 780
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=780&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:29:33 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Sony G520, thanks to Gavin Dunse
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/SNY07B0.xml
+
+Added: trunk/ddccontrol-db/db/monitor/SNY07B0.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/SNY07B0.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/SNY07B0.xml	2008-02-18 22:29:33 UTC (rev 780)
+@@ -0,0 +1,7 @@
++<?xml version="1.0"?>
++<monitor name="SONY G520">
++	<!--- CAPS: (prot(monitor) type(crt) model(SNYB007 ) edid
++	bin(128(################################################################################################################################))cmds(01 02 03 04 05 06 0C)vcp(00 01 04 06 08 10 12 14 16 18 1A 20 22 24 26 28 30 32 38 40 42 44 54 56 68 6C 6E 70 E0 E2 F1 F2 F3 F4 F5 F6 F7)) -->
++	<caps add="prot(monitor) type(crt) model(SNYB007 ) vcp(00 01 04 06 08 10 12 14 16 18 1a 20 22 24 26 28 30 32 38 40 42 44 54 56 68 6c 6e 70 e0 e2 f1 f2 f3 f4 f5 f6 f7)"/>
++	<include file="SNYcrt"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:31:06 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREVQ-0008M8-IS@...25...>
+Date: Mon, 18 Feb 2008 14:30:36 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [781]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:31:07 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 781
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=781&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:30:10 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:29:33 UTC (rev 780)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:30:10 UTC (rev 781)
+@@ -1,3 +1,8 @@
++2008-02-18 22:29  Roberto C. Sanchez <roberto@...24...>
++
++	* [r780] db/monitor/SNY07B0.xml: Add support for Sony G520, thanks
++	  to Gavin Dunse
++
+ 2008-02-18 22:21  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r778] db/monitor/BNQ76CD.xml: Add support for BenQ FP222WH
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:36:51 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREai-0000b9-QM@...25...>
+Date: Mon, 18 Feb 2008 14:36:04 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [782]
+	trunk/ddccontrol-db/db/monitor/GSM4B3E.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:36:51 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 782
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=782&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:35:38 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for LG 1953S
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/GSM4B3E.xml
+
+Added: trunk/ddccontrol-db/db/monitor/GSM4B3E.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/GSM4B3E.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/GSM4B3E.xml	2008-02-18 22:35:38 UTC (rev 782)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="LG L1953S">
++	<!--- CAPS: Raw output: prot(monitor)type(lcd)model(L1x52)vcp(02 04 05 06 08 0B 0C 0E 10 12 14(01 05 06 07 08 0B) 16 18 1A 1E 20 30 3E 60 6C 6E 70 87 AC AE B6 C0 C6 C8 C9 D6(01 04) DF F1 F2(00 01 02) F3(00 01 02 03) FC(00 01 02 03) FD(00 01) FE(00 01 02) )mswhql(1)mccs_ver(2.0) -->
++	<caps add="(vcp(02 04 05 06 08 0B 0C 0E 10 12 14(01 05 06 07 08 0B) 16 18 1A 1E 20 30 3E 60 6C 6E 70 87 AC AE B6 C0 C6 C8 C9 D6(01 04) DF F1 F2(00 01 02) F3(00 01 02 03) FC(00 01 02 03) FD(00 01) FE(00 01 02))"/>
++	<include file="GSMlcd"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:37:07 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREbE-0000e5-5i@...25...>
+Date: Mon, 18 Feb 2008 14:36:36 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [783]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:37:07 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 783
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=783&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:36:20 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:35:38 UTC (rev 782)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:36:20 UTC (rev 783)
+@@ -1,3 +1,7 @@
++2008-02-18 22:35  Roberto C. Sanchez <roberto@...24...>
++
++	* [r782] db/monitor/GSM4B3E.xml: Add support for LG 1953S
++
+ 2008-02-18 22:29  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r780] db/monitor/SNY07B0.xml: Add support for Sony G520, thanks
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:41:43 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREg7-0001ay-E1@...25...>
+Date: Mon, 18 Feb 2008 14:41:39 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [784]
+	trunk/ddccontrol-db/db/monitor/HWP0A72.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:41:43 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 784
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=784&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:41:35 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for HP LP2065, thanks to Joerg Ditzel and Pieter De Wit
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/HWP0A72.xml
+
+Added: trunk/ddccontrol-db/db/monitor/HWP0A72.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/HWP0A72.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/HWP0A72.xml	2008-02-18 22:41:35 UTC (rev 784)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="HP LP2065">
++	<!--- CAPS: prot(monitor)type(lcd)cmds(010203070CE3F3)vcp(02 04 05 08 0B 0C 10 12 14(01 05 08 0B) 16 18 1A 1E 52 60(01 02 03 04) 6C 6E 70 86(01 02 07) AC AE B2 B6 C0 C6 C8 C9 CA D6(01 05) DF FA(00 01 02) FB FC FD FE(00 01 02) )mswhql(1)model(LP2065N)mccs_ver(2.0) -->
++	<caps add="(vcp(02 04 05 08 0B 0C 10 12 14(01 05 08 0B) 16 18 1A 1E 52 60(01 02 03 04) 6C 6E 70 86(01 02 07) AC AE B2 B6 C0 C6 C8 C9 CA D6(01 05) DF FA(00 01 02) FB FC FD FE(00 01 02))"/>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:42:22 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREgY-0001bl-Qk@...25...>
+Date: Mon, 18 Feb 2008 14:42:06 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [785]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:42:22 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 785
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=785&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:41:59 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:41:35 UTC (rev 784)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:41:59 UTC (rev 785)
+@@ -1,3 +1,8 @@
++2008-02-18 22:41  Roberto C. Sanchez <roberto@...24...>
++
++	* [r784] db/monitor/HWP0A72.xml: Add support for HP LP2065, thanks
++	  to Joerg Ditzel and Pieter De Wit
++
+ 2008-02-18 22:35  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r782] db/monitor/GSM4B3E.xml: Add support for LG 1953S
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:49:41 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREnh-0003Of-Qe@...25...>
+Date: Mon, 18 Feb 2008 14:49:29 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [786]
+	trunk/ddccontrol-db/db/monitor/MED89DD.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:49:42 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 786
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=786&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:49:29 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Medion MD30699, thanks to Carsten Raehder
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/MED89DD.xml
+
+Added: trunk/ddccontrol-db/db/monitor/MED89DD.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/MED89DD.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/MED89DD.xml	2008-02-18 22:49:29 UTC (rev 786)
+@@ -0,0 +1,32 @@
++<?xml version="1.0"?>
++<monitor name="Medion MD30699">
++	<!--- CAPS: (prot(monitor)type(LCD)model(LCD-DVI)cmds(01 02 03 07 0C F3)vcp(02 04 05 06 08 0B 0C 0E 10 12 14(01 02 05 08 0B) 16 18 1A 60 68(01 02 03 04 05 06 0A) 6C 6E 70 A8 AC AE B0 B2 B6 C0 C6 C8 C9 CA D6 DF)mccs_ver(2)mswhql(1)) -->
++	<caps add="(vcp(02 04 05 06 08 0b 0c 0e 10 12 14 16 18 1a 60 68 6c 6e 70 a8 ac ae b0 b2 b6 c0 c6 c8 c9 ca d6 df))"/>
++	<controls>
++		<!--- Control 0x02: +/1/255 C [???] -->
++		<control id="colorpreset" address="0x14">
++			<value id="warm"  value="0x04"/>
++			<value id="srgb"  value="0x05"/>
++			<value id="cool"  value="0x08"/>
++			<value id="user1" value="0x0b"/>
++		</control>
++		<!--- Control 0x0b: +/100/255 C [???] -->
++		<!--- Control 0x0c: +/6500/10000 C [???] -->
++		<!--- Control 0x68: +/1/10 C [???] -->
++		<!--- Control 0xa8: +/0/3 C [???] -->
++		<!--- Control 0xac: +/80/65535 C [???] -->
++		<!--- Control 0xae: +/3095/65535 C [???] -->
++		<!--- Control 0xb2: +/1/8 C [???] -->
++		<!--- Control 0xb4: +/1/2 [???] -->
++		<!--- Control 0xb6: +/3/5 C [???] -->
++		<!--- Control 0xc0: +/268/65535 C [???] -->
++		<!--- Control 0xc8: +/5/65535 C [???] -->
++		<!--- Control 0xc9: +/40/65535 C [???] -->
++		<!--- Control 0xca: +/2/2 C [???] -->
++		<!--- Control 0xdf: +/514/65535 C [???] -->
++		<!--- Control 0xe3: +/0/1 [???] -->
++		<!--- Control 0xfa: +/0/65535 [???] -->
++		<!--- Control 0xff: +/0/65535 [???] -->
++	</controls>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:50:02 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREo4-0003PA-UC@...25...>
+Date: Mon, 18 Feb 2008 14:49:52 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [787]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:50:03 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 787
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=787&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:49:52 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:49:29 UTC (rev 786)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:49:52 UTC (rev 787)
+@@ -1,3 +1,8 @@
++2008-02-18 22:49  Roberto C. Sanchez <roberto@...24...>
++
++	* [r786] db/monitor/MED89DD.xml: Add support for Medion MD30699,
++	  thanks to Carsten Raehder
++
+ 2008-02-18 22:41  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r784] db/monitor/HWP0A72.xml: Add support for HP LP2065, thanks
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:57:57 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREvZ-0004pB-71@...25...>
+Date: Mon, 18 Feb 2008 14:57:37 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [788]
+	trunk/ddccontrol-db/db/monitor/DEL5000.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:57:58 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 788
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=788&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:57:24 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Dell P1100, thanks to Alexadre Lissy
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/DEL5000.xml
+
+Added: trunk/ddccontrol-db/db/monitor/DEL5000.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/DEL5000.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/DEL5000.xml	2008-02-18 22:57:24 UTC (rev 788)
+@@ -0,0 +1,9 @@
++<?xml version="1.0"?>
++<monitor name="DELL P1130" init="standard">
++	<!--- CAPS: (prot(monitor) type(crt) model(DEL0050 ) edid bin(128
++	(################################################################################################################################))cmds(01 02 03 04 05 06 0C)
++	vcp(00 01 04 06 08 10 12 14 16 18 1A 20 22 24 26 28 30 32 38 40 42 44 54 56 68 6C 6E 70 E0 E2 F1 F2 F3 F4 F5 F6 F7)) -->
++	<caps add="(prot(monitor) type(crt) model(DEL0050 ) vcp(00 01 04 06 08 10 12 14 16 18 1a 20 22 24 26 28 30 32 38 40 42 44 54 56 68 6c 6e 70 e0 e2 f1 f2 f3 f4 f5 f6 f7))"/>
++
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 14:59:21 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREwl-0004w7-Nj@...25...>
+Date: Mon, 18 Feb 2008 14:58:51 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [789]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 22:59:21 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 789
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=789&view=rev
+Author:   el_cubano
+Date:     2008-02-18 14:58:18 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 22:57:24 UTC (rev 788)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 22:58:18 UTC (rev 789)
+@@ -1,3 +1,8 @@
++2008-02-18 22:57  Roberto C. Sanchez <roberto@...24...>
++
++	* [r788] db/monitor/DEL5000.xml: Add support for Dell P1100, thanks
++	  to Alexadre Lissy
++
+ 2008-02-18 22:49  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r786] db/monitor/MED89DD.xml: Add support for Medion MD30699,
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:01:35 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREzN-0005TF-SZ@...25...>
+Date: Mon, 18 Feb 2008 15:01:33 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [790]
+	trunk/ddccontrol-db/db/monitor/PHL082F.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:01:35 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 790
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=790&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:01:32 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Philips 190S6, thanks to Nicolas Damgaard Larsen
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/PHL082F.xml
+
+Added: trunk/ddccontrol-db/db/monitor/PHL082F.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/PHL082F.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/PHL082F.xml	2008-02-18 23:01:32 UTC (rev 790)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="Philips 190S6" init="standard">
++<!--- CAPS: prot(monitor)type(lcd)model(PHILIPS 190S6)cmds(01 02 03 07 0C 4E F3 E3)vcp(04 05 0E 10 12 14(01 02 05 08 0B) 16 18 1A 1E 20 30 3E)SmartManage(1.0) (INVALID, no surrounding parenthesis) -->
++<caps add="(vcp(04 05 0E 10 12 14(01 02 05 08 0B) 16 18 1A 1E 20 30 3E)"/>
++<include file="PHLlcd"/>
++</monitor>
+\ No newline at end of file
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:01:44 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JREzX-0005TX-FE@...25...>
+Date: Mon, 18 Feb 2008 15:01:43 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [791]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:01:44 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 791
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=791&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:01:43 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 23:01:32 UTC (rev 790)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 23:01:43 UTC (rev 791)
+@@ -1,3 +1,8 @@
++2008-02-18 23:01  Roberto C. Sanchez <roberto@...24...>
++
++	* [r790] db/monitor/PHL082F.xml: Add support for Philips 190S6,
++	  thanks to Nicolas Damgaard Larsen
++
+ 2008-02-18 22:57  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r788] db/monitor/DEL5000.xml: Add support for Dell P1100, thanks
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:38:25 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFZ0-0003gG-Oz@...25...>
+Date: Mon, 18 Feb 2008 15:38:22 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [792]
+	trunk/ddccontrol-db/db/monitor/ENC1887.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:38:25 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 792
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=792&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:38:20 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for Eizo FlexScan S2431W, thanks to Robert Siemer
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/ENC1887.xml
+
+Added: trunk/ddccontrol-db/db/monitor/ENC1887.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/ENC1887.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/ENC1887.xml	2008-02-18 23:38:20 UTC (rev 792)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="Eizo FlexScan S2431W">
++	<!--- (prot(monitor)type(LCD)model(S2431W)cmds(01 02 03 07 0C E3 F3)vcp(02 04 08 10 12 14(01 02 03 04 05 06 08 09) 16 18 1A 60(01 02 03) 62 87 B6 C0 DF)ms whql(1)mccs_ver(2.0)) -->
++	<caps add="(vcp(02 04 08 10 12 14 16 18 1a 60 62 87 b6 c0 df)"/>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:38:41 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFZF-0003gq-So@...25...>
+Date: Mon, 18 Feb 2008 15:38:37 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [793]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:38:41 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 793
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=793&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:38:36 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 23:38:20 UTC (rev 792)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 23:38:36 UTC (rev 793)
+@@ -1,3 +1,8 @@
++2008-02-18 23:38  Roberto C. Sanchez <roberto@...24...>
++
++	* [r792] db/monitor/ENC1887.xml: Add support for Eizo FlexScan
++	  S2431W, thanks to Robert Siemer
++
+ 2008-02-18 23:01  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r790] db/monitor/PHL082F.xml: Add support for Philips 190S6,
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:47:35 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFhY-0004bK-GT@...25...>
+Date: Mon, 18 Feb 2008 15:47:12 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [794]
+	trunk/ddccontrol-db/db/monitor/VSCE41B.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:47:35 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 794
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=794&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:46:35 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for ViewSonic VP930, thanks to Wolfgang Frisch
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/VSCE41B.xml
+
+Added: trunk/ddccontrol-db/db/monitor/VSCE41B.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/VSCE41B.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/VSCE41B.xml	2008-02-18 23:46:35 UTC (rev 794)
+@@ -0,0 +1,6 @@
++<?xml version="1.0"?>
++<monitor name="ViewSonic VP930">
++	<!--- CAPS: vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 08 0B 0C)16 18 1A 60(01 02 03) 87 AA AC AE B6 C0 C6 C8 C9 CA D6(01 04) DF E5 FA FB FC FD FE) -->
++	<caps add="(vcp(02 04 05 08 0B 0C 10 12 14(01 04 05 06 08 0B 0C)16 18 1A 60(01 02 03) 87 AA AC AE B6 C0 C6 C8 C9 CA D6(01 04) DF E5 FA FB FC FD FE))"/>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:48:01 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFi9-0004dO-97@...25...>
+Date: Mon, 18 Feb 2008 15:47:49 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [795]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:48:01 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 795
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=795&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:47:38 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 23:46:35 UTC (rev 794)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 23:47:38 UTC (rev 795)
+@@ -1,3 +1,8 @@
++2008-02-18 23:46  Roberto C. Sanchez <roberto@...24...>
++
++	* [r794] db/monitor/VSCE41B.xml: Add support for ViewSonic VP930,
++	  thanks to Wolfgang Frisch
++
+ 2008-02-18 23:38  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r792] db/monitor/ENC1887.xml: Add support for Eizo FlexScan
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:51:04 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFlB-0004t0-AY@...25...>
+Date: Mon, 18 Feb 2008 15:50:58 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [796]
+	trunk/ddccontrol-db/db/monitor/HWP2647.xml
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:51:04 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 796
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=796&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:50:53 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Add support for HP VS17E, thanks to Ramadhian Moestafa
+
+Added Paths:
+-----------
+    trunk/ddccontrol-db/db/monitor/HWP2647.xml
+
+Added: trunk/ddccontrol-db/db/monitor/HWP2647.xml
+===================================================================
+--- trunk/ddccontrol-db/db/monitor/HWP2647.xml	                        (rev 0)
++++ trunk/ddccontrol-db/db/monitor/HWP2647.xml	2008-02-18 23:50:53 UTC (rev 796)
+@@ -0,0 +1,8 @@
++<?xml version="1.0"?>
++<monitor name="HP VS17E">
++	<!--- CAPS: vcp(02 04 05 08 0E 10 12 14(08 05 0B 01) 16 18 1A 1E 20 30 3E 52
++	AC AE B2 B6 C0 C6 C8 C9 CA D6 DF) vcp_p2(37 38 39 3B) type(LCD) mccs_ver(1.1)
++	asset_eep(64) mpu(0.04) -->
++	<caps add="(vcp(02 04 05 08 0E 10 12 14(08 05 0B 01) 16 18 1A 1E 20 30 3E 52 AC AE B2 B6 C0 C6 C8 C9 CA D6 DF))"/>
++	<include file="VESA"/>
++</monitor>
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Feb 18 15:51:50 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JRFli-00051G-9v@...25...>
+Date: Mon, 18 Feb 2008 15:51:30 -0800
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [797]
+	trunk/ddccontrol-db/ChangeLog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Mon, 18 Feb 2008 23:51:50 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 797
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=797&view=rev
+Author:   el_cubano
+Date:     2008-02-18 15:51:12 -0800 (Mon, 18 Feb 2008)
+
+Log Message:
+-----------
+Update ChangeLog
+
+Modified Paths:
+--------------
+    trunk/ddccontrol-db/ChangeLog
+
+Modified: trunk/ddccontrol-db/ChangeLog
+===================================================================
+--- trunk/ddccontrol-db/ChangeLog	2008-02-18 23:50:53 UTC (rev 796)
++++ trunk/ddccontrol-db/ChangeLog	2008-02-18 23:51:12 UTC (rev 797)
+@@ -1,3 +1,8 @@
++2008-02-18 23:50  Roberto C. Sanchez <roberto@...24...>
++
++	* [r796] db/monitor/HWP2647.xml: Add support for HP VS17E, thanks
++	  to Ramadhian Moestafa
++
+ 2008-02-18 23:46  Roberto C. Sanchez <roberto@...24...>
+ 
+ 	* [r794] db/monitor/VSCE41B.xml: Add support for ViewSonic VP930,
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Tue Apr 08 19:35:46 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JjQA1-0000i1-9j@...25...>
+Date: Tue, 08 Apr 2008 19:35:41 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [798] debian/ddccontrol
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Wed, 09 Apr 2008 02:35:47 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 798
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=798&view=rev
+Author:   el_cubano
+Date:     2008-04-08 19:35:40 -0700 (Tue, 08 Apr 2008)
+
+Log Message:
+-----------
+Add directories to make a complete debian tree.
+
+Added Paths:
+-----------
+    debian/ddccontrol/build-area/
+    debian/ddccontrol/tarballs/
+    debian/ddccontrol/tarballs/ddccontrol_0.4.2.orig.tar.gz
+    debian/ddccontrol-db/build-area/
+    debian/ddccontrol-db/tarballs/
+    debian/ddccontrol-db/tarballs/ddccontrol-db_20061014.orig.tar.gz
+
+Added: debian/ddccontrol/tarballs/ddccontrol_0.4.2.orig.tar.gz
+===================================================================
+(Binary files differ)
+
+
+Property changes on: debian/ddccontrol/tarballs/ddccontrol_0.4.2.orig.tar.gz
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+Added: debian/ddccontrol-db/tarballs/ddccontrol-db_20061014.orig.tar.gz
+===================================================================
+(Binary files differ)
+
+
+Property changes on: debian/ddccontrol-db/tarballs/ddccontrol-db_20061014.orig.tar.gz
+___________________________________________________________________
+Name: svn:mime-type
+   + application/octet-stream
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Apr 28 23:31:27 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JqjN5-0004uQ-PP@...25...>
+Date: Mon, 28 Apr 2008 23:31:23 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [799]
+	debian/ddccontrol/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 29 Apr 2008 06:31:28 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 799
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=799&view=rev
+Author:   el_cubano
+Date:     2008-04-28 23:31:23 -0700 (Mon, 28 Apr 2008)
+
+Log Message:
+-----------
+* Change to build with libpci-dev, fixes FTBFS (Closes: #478369)
+* Use updated doc-base section.
+
+Modified Paths:
+--------------
+    debian/ddccontrol/trunk/debian/changelog
+    debian/ddccontrol/trunk/debian/control
+    debian/ddccontrol/trunk/debian/ddccontrol.doc-base
+
+Modified: debian/ddccontrol/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol/trunk/debian/changelog	2008-04-09 02:35:40 UTC (rev 798)
++++ debian/ddccontrol/trunk/debian/changelog	2008-04-29 06:31:23 UTC (rev 799)
+@@ -1,3 +1,10 @@
++ddccontrol (0.4.2-5) unstable; urgency=low
++
++  * Change to build with libpci-dev, fixes FTBFS (Closes: #478369)
++  * Use updated doc-base section.
++
++ -- Roberto C. Sanchez <roberto@...24...>  Tue, 29 Apr 2008 02:02:56 -0400
++
+ ddccontrol (0.4.2-4) unstable; urgency=low
+ 
+   * debian/watch: Switch to Debian QA's SourceForge redirector.
+
+Modified: debian/ddccontrol/trunk/debian/control
+===================================================================
+--- debian/ddccontrol/trunk/debian/control	2008-04-09 02:35:40 UTC (rev 798)
++++ debian/ddccontrol/trunk/debian/control	2008-04-29 06:31:23 UTC (rev 799)
+@@ -3,7 +3,7 @@
+ Priority: optional
+ Maintainer: Roberto C. Sanchez <roberto@...24...>
+ Homepage: http://ddccontrol.sourceforge.net/
+-Build-Depends: debhelper (>= 5), autotools-dev, pciutils-dev, libpanel-applet2-dev, intltool, libxml2-dev, xml-core, xsltproc, tidy, zlib1g-dev
++Build-Depends: debhelper (>= 5), autotools-dev, libpci-dev, libpanel-applet2-dev, intltool, libxml2-dev, xml-core, xsltproc, tidy, zlib1g-dev
+ Standards-Version: 3.7.3
+ Vcs-Browser: http://ddccontrol.svn.sourceforge.net/viewvc/ddccontrol/
+ Vcs-Svn: https://ddccontrol.svn.sourceforge.net/svnroot/ddccontrol
+
+Modified: debian/ddccontrol/trunk/debian/ddccontrol.doc-base
+===================================================================
+--- debian/ddccontrol/trunk/debian/ddccontrol.doc-base	2008-04-09 02:35:40 UTC (rev 798)
++++ debian/ddccontrol/trunk/debian/ddccontrol.doc-base	2008-04-29 06:31:23 UTC (rev 799)
+@@ -2,7 +2,7 @@
+ Title: DDCControl Documentation
+ Author: Nicolas Boichat (2004-2006)
+ Abstract: Documentation on how to use DDCControl and what devices are supported.
+-Section: Apps/System
++Section: System/Hardware
+ 
+ Format: HTML
+ Index: /usr/share/doc/ddccontrol/html/index.html
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Mon Apr 28 23:31:42 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JqjNM-0004us-Qr@...25...>
+Date: Mon, 28 Apr 2008 23:31:40 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [800]
+	debian/ddccontrol/tags/0.4.2-5/
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Tue, 29 Apr 2008 06:31:43 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 800
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=800&view=rev
+Author:   el_cubano
+Date:     2008-04-28 23:31:40 -0700 (Mon, 28 Apr 2008)
+
+Log Message:
+-----------
+[svn-buildpackage] Tagging ddccontrol (0.4.2-5)
+
+Added Paths:
+-----------
+    debian/ddccontrol/tags/0.4.2-5/
+
+Copied: debian/ddccontrol/tags/0.4.2-5 (from rev 799, debian/ddccontrol/trunk)
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Sat May 17 20:10:33 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JxZI5-0000N8-Bx@...25...>
+Date: Sat, 17 May 2008 20:10:29 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [801]
+	debian/ddccontrol-db/trunk/debian/changelog
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 18 May 2008 03:10:33 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 801
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=801&view=rev
+Author:   el_cubano
+Date:     2008-05-17 20:10:28 -0700 (Sat, 17 May 2008)
+
+Log Message:
+-----------
+Add note acknowledging NMU
+
+Modified Paths:
+--------------
+    debian/ddccontrol-db/trunk/debian/changelog
+
+Modified: debian/ddccontrol-db/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/changelog	2008-04-29 06:31:40 UTC (rev 800)
++++ debian/ddccontrol-db/trunk/debian/changelog	2008-05-18 03:10:28 UTC (rev 801)
+@@ -2,13 +2,21 @@
+ 
+   * NOT RELEASED YET
+   * Updated to debhelper compatibility level 5.
+-  * Recommends applies to i386 amd64 ia64 alpha arm armel (Closes: #436649)
++  * Acknowledge NMU, thanks to Amaya.
+   * debian/watch: Switch to Debian QA's SourceForge redirector
+   * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
+   * debian/rules: placate lintian by properly calling '$(MAKE) distclean'
+ 
+  -- Roberto C. Sanchez <roberto@...24...>  Sun, 20 Jan 2008 22:03:11 -0500
+ 
++ddccontrol-db (20061014-1.1) unstable; urgency=low
++
++  * Non-maintainer upload.
++  * debian/control: Add arches to the Recommends field as per release goal.
++    (Closes: #436649).
++
++ -- Amaya Rodrigo Sastre <amaya@...28...>  Mon, 31 Mar 2008 01:22:12 +0200
++
+ ddccontrol-db (20061014-1) unstable; urgency=low
+ 
+   * New upstream release
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Sat May 17 20:19:02 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JxZQI-00023f-KL@...25...>
+Date: Sat, 17 May 2008 20:18:58 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [802]
+	debian/ddccontrol-db/trunk/debian
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 18 May 2008 03:19:03 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 802
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=802&view=rev
+Author:   el_cubano
+Date:     2008-05-17 20:18:58 -0700 (Sat, 17 May 2008)
+
+Log Message:
+-----------
+* Move rules to binary-indep target since package is arch: all
+* Update to Standards-Version 3.7.3 (no changes required)
+
+Modified Paths:
+--------------
+    debian/ddccontrol-db/trunk/debian/changelog
+    debian/ddccontrol-db/trunk/debian/control
+    debian/ddccontrol-db/trunk/debian/rules
+
+Modified: debian/ddccontrol-db/trunk/debian/changelog
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/changelog	2008-05-18 03:10:28 UTC (rev 801)
++++ debian/ddccontrol-db/trunk/debian/changelog	2008-05-18 03:18:58 UTC (rev 802)
+@@ -1,13 +1,14 @@
+-ddccontrol-db (20061014-2) UNRELEASED; urgency=low
++ddccontrol-db (20061014-2) unstable; urgency=low
+ 
+-  * NOT RELEASED YET
+   * Updated to debhelper compatibility level 5.
+   * Acknowledge NMU, thanks to Amaya.
+   * debian/watch: Switch to Debian QA's SourceForge redirector
+   * debian/control: Add Vcs-Browser and Vcs-Cvs fields.
+   * debian/rules: placate lintian by properly calling '$(MAKE) distclean'
++  * Move rules to binary-indep target since package is arch: all
++  * Update to Standards-Version 3.7.3 (no changes required)
+ 
+- -- Roberto C. Sanchez <roberto@...24...>  Sun, 20 Jan 2008 22:03:11 -0500
++ -- Roberto C. Sanchez <roberto@...24...>  Sat, 17 May 2008 23:17:53 -0400
+ 
+ ddccontrol-db (20061014-1.1) unstable; urgency=low
+ 
+
+Modified: debian/ddccontrol-db/trunk/debian/control
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/control	2008-05-18 03:10:28 UTC (rev 801)
++++ debian/ddccontrol-db/trunk/debian/control	2008-05-18 03:18:58 UTC (rev 802)
+@@ -5,7 +5,7 @@
+ Homepage: http://ddccontrol.sourceforge.net/
+ Build-Depends: debhelper (>= 5)
+ Build-Depends-Indep: autotools-dev, intltool
+-Standards-Version: 3.7.2
++Standards-Version: 3.7.3
+ Vcs-Browser: http://ddccontrol.svn.sourceforge.net/viewvc/ddccontrol/
+ Vcs-Svn: https://ddccontrol.svn.sourceforge.net/svnroot/ddccontrol
+ 
+
+Modified: debian/ddccontrol-db/trunk/debian/rules
+===================================================================
+--- debian/ddccontrol-db/trunk/debian/rules	2008-05-18 03:10:28 UTC (rev 801)
++++ debian/ddccontrol-db/trunk/debian/rules	2008-05-18 03:18:58 UTC (rev 802)
+@@ -60,10 +60,6 @@
+ 
+ # Build architecture-independent files here.
+ binary-indep: build install
+-# We have nothing to do by default.
+-
+-# Build architecture-dependent files here.
+-binary-arch: build install
+ 	dh_testdir
+ 	dh_testroot
+ 	dh_installchangelogs ChangeLog
+@@ -77,5 +73,9 @@
+ 	dh_md5sums
+ 	dh_builddeb
+ 
++# Build architecture-dependent files here.
++binary-arch: build install
++# We have nothing to do by default.
++
+ binary: binary-indep binary-arch
+ .PHONY: build clean binary-indep binary-arch binary install 
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
+From el_cubano@...1... Sat May 17 20:24:00 2008
+MIME-Version: 1.0
+From: el_cubano@...1...
+Errors-To: el_cubano@...1...
+To: ddccontrol-cvs@lists.sourceforge.net
+X-Mailer: SVN::Notify 2.63: http://search.cpan.org/dist/SVN-Notify/
+Message-Id: <E1JxZV6-000377-UU@...25...>
+Date: Sat, 17 May 2008 20:23:56 -0700
+X-Spam-Score: 0.2 (/)
+X-Spam-Report: Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&group_id=1&atid=200001
+	0.2 NO_REAL_NAME           From: does not include a real name
+Subject: [ddccontrol-cvs] SF.net SVN: ddccontrol: [803]
+	debian/ddccontrol-db/tags/20061014-2/
+X-BeenThere: ddccontrol-cvs@lists.sourceforge.net
+X-Mailman-Version: 2.1.8
+Precedence: list
+Reply-To: ddccontrol-devel@lists.sourceforge.net
+List-Id: <ddccontrol-cvs.lists.sourceforge.net>
+List-Unsubscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum_name=ddccontrol-cvs>
+List-Post: <mailto:ddccontrol-cvs@lists.sourceforge.net>
+List-Help: <mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=help>
+List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/ddccontrol-cvs>,
+	<mailto:ddccontrol-cvs-request@lists.sourceforge.net?subject=subscribe>
+X-List-Received-Date: Sun, 18 May 2008 03:24:01 -0000
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Revision: 803
+          http://ddccontrol.svn.sourceforge.net/ddccontrol/?rev=803&view=rev
+Author:   el_cubano
+Date:     2008-05-17 20:23:55 -0700 (Sat, 17 May 2008)
+
+Log Message:
+-----------
+[svn-buildpackage] Tagging ddccontrol-db (20061014-2)
+
+Added Paths:
+-----------
+    debian/ddccontrol-db/tags/20061014-2/
+
+Copied: debian/ddccontrol-db/tags/20061014-2 (from rev 802, debian/ddccontrol-db/trunk)
+
+
+This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site.
+
+
